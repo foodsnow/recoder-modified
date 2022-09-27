@@ -641,24 +641,24 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             lnode, mnode = getSubroot(current_root)
             if mnode is None:
                 continue
-            
+
             funcname, startline, endline = get_method_range(tree, mnode, buggy_line_number)
             if buggy_class_java_path not in func_map:
                 func_map[buggy_class_java_path] = list()
             func_map[buggy_class_java_path].append({"function": funcname, "begin": startline, "end": endline})
-            
+
             oldcode = buggy_class_src_lines[buggy_line_number - 1]
-            
+
             is_if = True
             subroot = lnode     # line root
             treeroot = mnode    # method decl
             pre_subroot = None
             after_subroot = None
             line_nodes = getLineNode(treeroot, "")
-            
+
             # print(treeroot.printTreeWithLine(treeroot))
             # print(lineid, 2)
-            
+
             if subroot not in line_nodes:
                 # print(treeroot.getTreestr(), subroot.getTreestr())
                 # if buggy_location_idx == 19:
@@ -671,12 +671,16 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 pre_subroot = line_nodes[current_id - 1]  # previous root
             if current_id < len(line_nodes) - 1:
                 after_subroot = line_nodes[current_id + 1]  # after root
+
             setProb(treeroot, 2)
             addter(treeroot)
+
             if subroot is None:
                 continue
+
             # print(lineid, 3, liness[lineid - 1], subroot.getTreestr(), len(data))
             # print(treeroot.printTreeWithLine(subroot))
+
             if True:  # 2: treeroot, 1: subroot, 3: prev, 4: after
                 setProb(treeroot, 2)
                 if subroot is not None:
@@ -685,24 +689,31 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     setProb(after_subroot, 4)
                 if pre_subroot is not None:
                     setProb(pre_subroot, 3)
+
                 # print(containID(subroot))
                 # range of subroot statement's line number
+
                 cid = set(containID(subroot))
                 maxl = -1
                 minl = 1e10
                 for l in cid:
                     maxl = max(maxl, l - 1)
                     minl = min(minl, l - 1)
+
                 # print(maxl, liness[maxl + 1])
+
                 precode = "\n".join(buggy_class_src_lines[0:minl])
                 aftercode = "\n".join(buggy_class_src_lines[maxl + 1:])
                 oldcode = "\n".join(buggy_class_src_lines[minl:maxl + 1])
+
                 # troot: treeroot
                 # vardic: variable dict
                 # typedic: type of variables
+
                 troot, vardic, typedic = solveLongTree(treeroot, subroot)
                 if troot is None:
                     continue
+
                 data.append({'bugid': user_given_bug_id, 'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode,
                              'filepath': buggy_class_java_path, 'subroot': subroot, 'vardic': vardic,
                              'typedic': typedic, 'idss': bug_id, 'classname': buggy_class_name,
