@@ -2,7 +2,7 @@
 # from graphviz import Digraph
 
 from copy import deepcopy
-from typing import Union
+from typing import Union, List
 from repair import save_code_as_file
 from run import *
 from Searchnode import Node
@@ -227,7 +227,7 @@ def findSubtree(root, subroot):
     return None
 
 
-def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]):
+def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[str]:
     sub = []
 
     if not tree:
@@ -258,74 +258,74 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]):
 
     position = None
     if hasattr(tree, 'position'):
-        # assert(0)
         position = tree.position
     curr = type(tree).__name__
-    # print(curr)
-    if True:
-        if False:
-            assert (0)  # sub.append((str(getLiteral(tree.children)))
-        else:
-            sub.append((curr, position))
-            try:
-                for x in tree.attrs:
-                    if x == "documentation":
-                        continue
-                    if not getattr(tree, x):
-                        continue
-                    '''if x == 'prefix_operators':
-                        node = getattr(tree, x)
-                        print(type(node))
-                        print(len(node))
-                        print(node[0])
-                        assert(0)
-                    if type(getattr(tree, x)).__name__ not in nodes:
-                        print(type(getattr(tree, x)).__name__)
-                        continue'''
-                    sub.append(x)
-                    node = getattr(tree, x)
-                    if isinstance(node, list):
-                        if len(node) == 0:
-                            sub.append("empty")
-                            sub.append("^")
-                        else:
-                            for ch in node:
-                                subtree = generateAST(ch)
-                                sub.extend(subtree)
-                    elif isinstance(node, javalang.tree.Node):
-                        subtree = generateAST(node)
-                        sub.extend(subtree)
-                    elif not node:
-                        continue
-                    elif isinstance(node, str):
-                        tmpStr = node
-                        tmpStr = tmpStr.replace(" ", "").replace(":", "")
-                        if "\t" in tmpStr or "'" in tmpStr or "\"" in tmpStr:
-                            tmpStr = "<string>"
-                        if len(tmpStr) == 0:
-                            tmpStr = "<empty>"
-                        if tmpStr[-1] == "^":
-                            tmpStr += "<>"
-                        sub.append(tmpStr)
-                        sub.append("^")
-                    elif isinstance(node, set):
-                        for ch in node:
-                            subtree = generateAST(ch)
-                            sub.extend(subtree)
-                    elif isinstance(node, bool):
-                        sub.append(str(node))
-                        sub.append("^")
-                    else:
-                        print(type(node))
-                        assert (0)
+
+    sub.append((curr, position))
+
+    try:
+        for x in tree.attrs:
+            if x == "documentation":
+                continue
+
+            if not getattr(tree, x):
+                continue
+
+            '''
+            if x == 'prefix_operators':
+                node = getattr(tree, x)
+                print(type(node))
+                print(len(node))
+                print(node[0])
+                assert(0)
+            if type(getattr(tree, x)).__name__ not in nodes:
+                print(type(getattr(tree, x)).__name__)
+                continue
+            '''
+
+            sub.append(x)
+            node = getattr(tree, x)
+            if isinstance(node, list):
+                if len(node) == 0:
+                    sub.append("empty")
                     sub.append("^")
-            except AttributeError:
+                else:
+                    for ch in node:
+                        subtree = generateAST(ch)
+                        sub.extend(subtree)
+            elif isinstance(node, javalang.tree.Node):
+                subtree = generateAST(node)
+                sub.extend(subtree)
+            elif not node:
+                continue
+            elif isinstance(node, str):
+                tmpStr = node
+                tmpStr = tmpStr.replace(" ", "").replace(":", "")
+                if "\t" in tmpStr or "'" in tmpStr or "\"" in tmpStr:
+                    tmpStr = "<string>"
+                if len(tmpStr) == 0:
+                    tmpStr = "<empty>"
+                if tmpStr[-1] == "^":
+                    tmpStr += "<>"
+                sub.append(tmpStr)
+                sub.append("^")
+            elif isinstance(node, set):
+                for ch in node:
+                    subtree = generateAST(ch)
+                    sub.extend(subtree)
+            elif isinstance(node, bool):
+                sub.append(str(node))
+                sub.append("^")
+            else:
+                print(type(node))
                 assert (0)
-                pass
-        sub.append('^')
-        return sub
-    else:
-        print(curr)
+            sub.append("^")
+
+    except AttributeError:
+        assert False
+
+    sub.append('^')
+
     return sub
 
 
