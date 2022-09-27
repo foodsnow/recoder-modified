@@ -259,9 +259,8 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
     position = None
     if hasattr(tree, 'position'):
         position = tree.position
-    curr = type(tree).__name__
-
-    sub.append((curr, position))
+    current_node = type(tree).__name__
+    sub.append((current_node, position))
 
     try:
         for x in tree.attrs:
