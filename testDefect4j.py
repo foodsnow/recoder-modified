@@ -293,25 +293,32 @@ def get_line_numbers(node: Node) -> List[int]:
     return line_numbers
 
 
-def get_line_node(node: Node, block: str, add=True):
-    ans = []
+def get_line_node(node: Node, block: str, add=True) -> List[Node]:
+    '''
+    NOTE Mutates node
+    NOTE recursive
+    '''
+
+    result = []
     block = block + node.name
 
     for child in node.child:
+
         if child.name in LINENODE:
-            if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or 'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
+            child_str = child.getTreestr()
+            if 'info' in child_str or 'assert' in child_str or 'logger' in child_str or 'LOGGER' in child_str or 'system.out' in child_str.lower():
                 continue
             child.block = block
-            ans.append(child)
+            result.append(child)
+
         else:
-            # print(x.name)
-            s = ""
+            # this part of the code is unused
+            s = ''
             if not add:
                 s = block
-                #tmp = getLineNode(x, block)
             else:
                 s = block + node.name
-            #print(block + root.name + "--------")
+
             tmp = get_line_node(child, block)
             '''
             if x.name == 'then_statement' and tmp == []:
@@ -319,8 +326,9 @@ def get_line_node(node: Node, block: str, add=True):
                 print(x.father.printTree(x.father))
                 assert(0)
             '''
-            ans.extend(tmp)
-    return ans
+            result.extend(tmp)
+
+    return result
 
 
 def getLocVar(node):
