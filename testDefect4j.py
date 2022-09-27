@@ -548,30 +548,29 @@ ids_v1_2 = [
 
 decoder_model = test()
 
-bugid = sys.argv[1]
+user_given_bug_id = sys.argv[1]
 
 # import pdb; pdb.set_trace()
 
-prlist = [bugid.split("-")[0]]
-ids = [[int(bugid.split("-")[1])]]
+project_names_list = [user_given_bug_id.split("-")[0]]
+ids_list = [[int(user_given_bug_id.split("-")[1])]]
 
-for i, xss in enumerate(prlist):
-    for idx in ids[i]:
-        idss = xss + "-" + str(idx)
-        # if idss not in lst:
-        #    continue
-        if idss != bugid:
+for i, project_name in enumerate(project_names_list):
+    for idx in ids_list[i]:
+        bug_id = project_name + "-" + str(idx)
+
+        if bug_id != user_given_bug_id:
             continue
-        print('p')
-        # idxs = lst.index(idss)
 
-        x = xss
+        print('p')
+
+        x = project_name
         locationdir = 'location/groundtruth/%s/%d' % (x.lower(), idx)
         if not os.path.exists(locationdir):
             continue
         os.makedirs(f"buggy", exist_ok=True)
         os.system('defects4j checkout -p %s -v %db -w buggy/%s' %
-                  (x, idx, idss))  # os.system('defects4j')
+                  (x, idx, bug_id))  # os.system('defects4j')
 
         patchnum = 0
 
@@ -591,7 +590,7 @@ for i, xss in enumerate(prlist):
             classname = ".".join(classname.split(".")[:-1])
             location.append((classname, 1, eval(lineid)))
         dirs = os.popen(
-            f'defects4j export -p dir.src.classes -w buggy/{idss}').readlines()[-1]
+            f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
 
         # correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
         # fpath = "fixed/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
@@ -617,7 +616,7 @@ for i, xss in enumerate(prlist):
                 classname = classname[:classname.index('$')]
             s = classname
             print('path', s)
-            filepath = f"buggy/{idss}/{dirs}/{s.replace('.', '/')}.java"
+            filepath = f"buggy/{bug_id}/{dirs}/{s.replace('.', '/')}.java"
             filepathx = "fixed/%s/%s.java" % (dirs, s.replace('.', '/'))
             try:
                 lines1 = open(filepath, "r").read().strip()
@@ -694,23 +693,23 @@ for i, xss in enumerate(prlist):
                 troot, vardic, typedic = solveLongTree(treeroot, subroot)
                 if troot is None:
                     continue
-                data.append({'bugid': bugid, 'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode,
+                data.append({'bugid': user_given_bug_id, 'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode,
                              'filepath': filepath, 'subroot': subroot, 'vardic': vardic,
-                             'typedic': typedic, 'idss': idss, 'classname': classname,
+                             'typedic': typedic, 'idss': bug_id, 'classname': classname,
                              'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
                              'prob': troot.getTreeProb(troot), 'mode': 0, 'line': lineid, 'isa': False, 'fl_score': fl_score})
                 # patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
 
-        os.makedirs(f"d4j/{bugid}", exist_ok=True)
+        os.makedirs(f"d4j/{user_given_bug_id}", exist_ok=True)
 
-        with open(f"d4j/{bugid}/func_loc.json", "w") as f:
+        with open(f"d4j/{user_given_bug_id}/func_loc.json", "w") as f:
             json.dump(func_map, f, indent=4)
 
         print(data)
 
         ans = solveone(data, decoder_model)
 
-        with open(f"d4j/{bugid}/{bugid}.json", "w") as f:
+        with open(f"d4j/{user_given_bug_id}/{user_given_bug_id}.json", "w") as f:
             json.dump(ans, f, indent=4)
 
         # save_code_as_file("./d4j", bugid, ans, func_map)
