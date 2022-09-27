@@ -723,7 +723,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         wf.close()
         '''
 
-        data = []
+        data: List[Dict] = []
         method_map: Dict[str, List[dict]] = dict()
 
         for buggy_location_idx, buggy_location in enumerate(buggy_locations):

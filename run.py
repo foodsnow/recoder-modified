@@ -734,13 +734,13 @@ def test():
     args.cnum = rulead.size(1)
     tmpast = getAstPkl(dev_set)
     a, b = getRulePkl(dev_set)
-    
+
     tmpf = gVar(a).unsqueeze(0).repeat(2, 1).long()
     tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
     tmpindex = gVar(np.arange(len(dev_set.ruledict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
     tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))).unsqueeze(0).repeat(2, 1).long()
-    
+
     args.Nl_Vocsize = len(dev_set.Nl_Voc)
     args.Code_Vocsize = len(dev_set.Code_Voc)
     args.Vocsize = len(dev_set.Char_Voc)
@@ -1188,9 +1188,9 @@ def extarctmode(root):
 
 
 # data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
-def solve_one(data, model: Decoder) -> list:
-    #os.environ["CUDA_VISIBLE_DEVICES"]="2, 3"
-    #assert(len(data) <= 40)
+def solve_one(data: List[Dict], model: Decoder) -> list:
+    # os.environ["CUDA_VISIBLE_DEVICES"]="2, 3"
+    # assert(len(data) <= 40)
     args.batch_size = 20
     dev_set = SumDataset(args, "test")
     dev_set.preProcessOne(data)  # x = dev_set.preProcessOne(treestr, prob)
