@@ -240,18 +240,18 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
     if isinstance(tree, str):
         tree_as_str = tree
         tree_as_str = tree_as_str.replace(" ", "").replace(":", "")
-        
+
         if "\t" in tree_as_str or "'" in tree_as_str or "\"" in tree_as_str:
             tree_as_str = "<string>"
-        
+
         if len(tree_as_str) == 0:
             tree_as_str = "<empty>"
         if tree_as_str[-1] == "^":
             tree_as_str += "<>"
-        
+
         tree_as_list.append(tree_as_str)
         tree_as_list.append("^")
-        
+
         return tree_as_list
 
     if isinstance(tree, list):
@@ -335,7 +335,8 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
     return tree_as_list
 
 
-'''def setProb(root, subroot, prob):
+'''
+def setProb(root, subroot, prob):
     root.possibility = max(min(max(root.possibility, prob), 0.98), 0.01)
     index = 0
     assert(len(subroot.child) <= len(root.child))
@@ -345,7 +346,8 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
             #print(root.child[index].name, x.name)
             index += 1
         setProb(root.child[index], x, prob)
-        index += 1'''
+        index += 1
+'''
 
 
 def getSubroot(treeroot: Node):
