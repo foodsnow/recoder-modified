@@ -1,24 +1,29 @@
-import sys
-import os
+# from ast import nodes
+# from graphviz import Digraph
+
+from copy import deepcopy
+from repair import save_code_as_file
+from run import *
+from Searchnode import Node
+from stringfycode import stringfyRoot
+from tqdm import tqdm
+
+import io
 import javalang
 import javalang.tree
-#from ast import nodes
-#from graphviz import Digraph
 import json
-import pickle
-from tqdm import tqdm
 import numpy as np
-from run import *
-from stringfycode import stringfyRoot
-from copy import deepcopy
-import time
-import io
+import os
+import pickle
 import subprocess
-from Searchnode import Node
-from repair import save_code_as_file
+import sys
+import time
+
+
 linenode = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration',
             'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
-#os.environ["CUDA_VISIBLE_DEVICES"]="1, 4"
+
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1, 4"
 
 
 def getLocVar(node):
@@ -531,19 +536,25 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
     return "0no_function_found", 0, 0
 
 
-prlist = ['Chart', 'Closure', 'Lang', 'Math', 'Mockito', 'Time']
-ids = [range(1, 27), list(range(1, 134)), list(range(1, 66)), range(1, 107), range(1, 39), list(range(1, 28)), list(range(1, 25)), list(
-    range(1, 23)), list(range(1, 13)), list(range(1, 15)), list(range(1, 14)), list(range(1, 40)), list(range(1, 6)), list(range(1, 64))]
-#ids = [[1, 4, 7, 8, 9, 11, 12, 13, 15, 19, 20, 24, 26]]
-#lst = ['Chart-1', 'Chart-3', 'Chart-4', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-13', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-1', 'Closure-10', 'Closure-14', 'Closure-15', 'Closure-18', 'Closure-31', 'Closure-33', 'Closure-38', 'Closure-51', 'Closure-62', 'Closure-63', 'Closure-70', 'Closure-73', 'Closure-86', 'Closure-92', 'Closure-93', 'Closure-107', 'Closure-118', 'Closure-113', 'Closure-124', 'Closure-125', 'Closure-129', 'Lang-6', 'Lang-16', 'Lang-26', 'Lang-29', 'Lang-33', 'Lang-38', 'Lang-39', 'Lang-43', 'Lang-45', 'Lang-51', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-5', 'Math-25', 'Math-30', 'Math-33', 'Math-34', 'Math-41', 'Math-57', 'Math-58', 'Math-59', 'Math-69', 'Math-70', 'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-105', 'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Lang-43', 'Math-50', 'Math-98', 'Time-7', 'Mockito-38', 'Mockito-22', 'Mockito-29', 'Mockito-34', 'Closure-104', 'Math-27']
-# lst = ['Lang-27', 'Lang-39', 'Lang-50', 'Lang-60', 'Lang-63', 'Math-88', 'Math-82', 'Math-20', 'Math-28', 'Math-6', 'Math-72', 'Math-79', 'Math-8']#['Closure-38', 'Closure-123', 'Closure-124', 'Lang-61', 'Math-3', 'Math-11', 'Math-48', 'Math-53', 'Math-63', 'Math-73', 'Math-101', 'Math-98', 'Lang-16']
-#ids = [[20, 24, 26]]
-lst = ['Chart-1', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-14', 'Closure-15', 'Closure-62', 'Closure-63', 'Closure-73', 'Closure-86', 'Closure-92', 'Closure-93', 'Closure-104', 'Closure-118', 'Closure-124', 'Lang-6',
-       'Lang-26', 'Lang-33', 'Lang-38', 'Lang-43', 'Lang-45', 'Lang-51', 'Lang-55', 'Lang-57', 'Lang-59', 'Math-5', 'Math-27', 'Math-30', 'Math-33', 'Math-34', 'Math-41', 'Math-50', 'Math-57', 'Math-59', 'Math-70', 'Math-75', 'Math-80', 'Math-94', 'Math-105', 'Time-4', 'Time-7']
-model = test()
+projects_v1_2 = ['Chart', 'Closure', 'Lang', 'Math', 'Mockito', 'Time']
+ids_v1_2 = [
+    list(range(1, 27)),
+    list(range(1, 134)),
+    list(range(1, 66)),
+    list(range(1, 107)),
+    list(range(1, 39)),
+    list(range(1, 28)),
+]
+
+decoderModel = test()
+
 bugid = sys.argv[1]
+
+# import pdb; pdb.set_trace()
+
 prlist = [bugid.split("-")[0]]
 ids = [[int(bugid.split("-")[1])]]
+
 for i, xss in enumerate(prlist):
     for idx in ids[i]:
         idss = xss + "-" + str(idx)
@@ -552,7 +563,7 @@ for i, xss in enumerate(prlist):
         if idss != bugid:
             continue
         print('p')
-        #idxs = lst.index(idss)
+        # idxs = lst.index(idss)
         timecurr = time.time()
         x = xss
         locationdir = 'location/groundtruth/%s/%d' % (x.lower(), idx)
@@ -561,12 +572,16 @@ for i, xss in enumerate(prlist):
         os.makedirs(f"buggy", exist_ok=True)
         os.system('defects4j checkout -p %s -v %db -w buggy/%s' %
                   (x, idx, idss))  # os.system('defects4j')
-        #os.system('defects4j checkout -p %s -v %df -w fixed'%(x, idx))
+
         patchnum = 0
-        '''s = os.popen('defects4j export -p classes.modified -w buggy').readlines()
+
+        '''
+        s = os.popen('defects4j export -p classes.modified -w buggy').readlines()
         if len(s) != 1:
             continue
-        s = s[-1]'''
+        s = s[-1]
+        '''
+
         lines = open(locationdir, 'r').readlines()
         location = []
         locationdict = {}
@@ -577,14 +592,18 @@ for i, xss in enumerate(prlist):
             location.append((classname, 1, eval(lineid)))
         dirs = os.popen(
             f'defects4j export -p dir.src.classes -w buggy/{idss}').readlines()[-1]
-        #correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
-        #fpath = "fixed/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
-        #fpathx = "buggy/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
-        #testmethods = os.popen('defects4j export -w buggy -p tests.trigger').readlines()
-        '''wf = open(patchpath + 'correct.txt', 'w')
+
+        # correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
+        # fpath = "fixed/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
+        # fpathx = "buggy/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
+        # testmethods = os.popen('defects4j export -w buggy -p tests.trigger').readlines()
+        '''
+        wf = open(patchpath + 'correct.txt', 'w')
         wf.write(fpath + "\n")
         wf.write("".join(os.popen('diff -u %s %s'%(fpath, fpathx)).readlines()) + "\n")
-        wf.close()'''
+        wf.close()
+        '''
+
         data = []
         func_map: Dict[str, List[dict]] = dict()
         for j in range(len(location)):
@@ -598,7 +617,6 @@ for i, xss in enumerate(prlist):
                 classname = classname[:classname.index('$')]
             s = classname
             print('path', s)
-            #print(dirs, s)
             filepath = f"buggy/{idss}/{dirs}/{s.replace('.', '/')}.java"
             filepathx = "fixed/%s/%s.java" % (dirs, s.replace('.', '/'))
             try:
@@ -632,12 +650,12 @@ for i, xss in enumerate(prlist):
             aftersubroot = None
             # print(treeroot.printTreeWithLine(treeroot))
             linenodes = getLineNode(treeroot, "")
-            #print(lineid, 2)
+            # print(lineid, 2)
             if subroot not in linenodes:
-                #print(treeroot.getTreestr(), subroot.getTreestr())
+                # print(treeroot.getTreestr(), subroot.getTreestr())
                 # if j == 19:
-                #    assert(0)
-                #print(j, subroot, '3')
+                #     assert(0)
+                # print(j, subroot, '3')
                 continue
             currid = linenodes.index(subroot)   # index of linenode in treeroot
             if currid > 0:
@@ -648,7 +666,7 @@ for i, xss in enumerate(prlist):
             addter(treeroot)
             if subroot is None:
                 continue
-            #print(lineid, 3, liness[lineid - 1], subroot.getTreestr(), len(data))
+            # print(lineid, 3, liness[lineid - 1], subroot.getTreestr(), len(data))
             # print(treeroot.printTreeWithLine(subroot))
             if True:  # 2: treeroot, 1: subroot, 3: prev, 4: after
                 setProb(treeroot, 2)
@@ -666,7 +684,7 @@ for i, xss in enumerate(prlist):
                 for l in cid:
                     maxl = max(maxl, l - 1)
                     minl = min(minl, l - 1)
-                #print(maxl, liness[maxl + 1])
+                # print(maxl, liness[maxl + 1])
                 precode = "\n".join(liness[0:minl])
                 aftercode = "\n".join(liness[maxl + 1:])
                 oldcode = "\n".join(liness[minl:maxl + 1])
@@ -681,14 +699,18 @@ for i, xss in enumerate(prlist):
                              'typedic': typedic, 'idss': idss, 'classname': classname,
                              'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
                              'prob': troot.getTreeProb(troot), 'mode': 0, 'line': lineid, 'isa': False, 'fl_score': fl_score})
-                #patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
-        os.makedirs(f"d4j/{bugid}", exist_ok=True)
-        with open(f"d4j/{bugid}/func_loc.json", "w") as f:
-            json.dump(func_map, f, indent=2)
-        print(data)
-        ans = solveone(data, model)
-        with open(f"d4j/{bugid}/{bugid}.json", "w") as f:
-            json.dump(ans, f, indent=2)
-        #save_code_as_file("./d4j", bugid, ans, func_map)
+                # patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
 
-        # assert(0)
+        os.makedirs(f"d4j/{bugid}", exist_ok=True)
+
+        with open(f"d4j/{bugid}/func_loc.json", "w") as f:
+            json.dump(func_map, f, indent=4)
+
+        print(data)
+
+        ans = solveone(data, decoderModel)
+
+        with open(f"d4j/{bugid}/{bugid}.json", "w") as f:
+            json.dump(ans, f, indent=4)
+
+        # save_code_as_file("./d4j", bugid, ans, func_map)
