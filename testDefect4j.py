@@ -646,7 +646,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             parser = javalang.parser.Parser(tokens)
 
             tree = parser.parse()
-            tmp_root = getroottree(generateAST(tree))
+            ast_as_list = generateAST(tree)
+            tmp_root = getroottree(ast_as_list)
 
             # current node by line number
             current_root = getNodeById(tmp_root, buggy_line_number)
