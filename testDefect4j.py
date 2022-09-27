@@ -601,7 +601,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         data = []
         func_map: Dict[str, List[dict]] = dict()
         
-        for j, buggy_location in enumerate(buggy_locations):
+        for buggy_location_idx, buggy_location in enumerate(buggy_locations):
             patch_dict = {}
             buggy_class_name = buggy_location[0]
             fl_score = buggy_location[1]
@@ -645,9 +645,9 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             # print(lineid, 2)
             if subroot not in linenodes:
                 # print(treeroot.getTreestr(), subroot.getTreestr())
-                # if j == 19:
+                # if buggy_location_idx == 19:
                 #     assert(0)
-                # print(j, subroot, '3')
+                # print(buggy_location_idx, subroot, '3')
                 continue
             currid = linenodes.index(subroot)   # index of linenode in treeroot
             if currid > 0:
