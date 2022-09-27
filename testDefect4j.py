@@ -564,7 +564,7 @@ for i, xss in enumerate(prlist):
             continue
         print('p')
         # idxs = lst.index(idss)
-        timecurr = time.time()
+
         x = xss
         locationdir = 'location/groundtruth/%s/%d' % (x.lower(), idx)
         if not os.path.exists(locationdir):
