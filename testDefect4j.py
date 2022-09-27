@@ -549,14 +549,11 @@ IDS_V1_2 = [
 decoder_model = test()
 
 user_given_bug_id = sys.argv[1]
+user_given_project_name = [user_given_bug_id.split("-")[0]]
+user_given_project_id = [[int(user_given_bug_id.split("-")[1])]]
 
-# import pdb; pdb.set_trace()
-
-project_names_list = [user_given_bug_id.split("-")[0]]
-ids_list = [[int(user_given_bug_id.split("-")[1])]]
-
-for i, project_name in enumerate(project_names_list):
-    for idx in ids_list[i]:
+for i, project_name in enumerate(PROJECTS_V1_2):
+    for idx in IDS_V1_2[i]:
         bug_id = project_name + "-" + str(idx)
 
         if bug_id != user_given_bug_id:
