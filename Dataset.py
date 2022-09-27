@@ -208,18 +208,18 @@ class SumDataset(data.Dataset):
         return seq
 
     def preProcessOne(self, data):
-        """
+        '''
         preprocess data:
         Remove terminal node and their position
         Get embedding, character embedding, 
-        """
-        # print(tree)
-        # print(self.nl[0])
+        '''
+        
         inputNl = []
         inputNlchar = []
         inputPos = []
         inputNlad = []
         Nl: List[List[str]] = []
+        
         for x in data:
             # 2: treeroot, 1: subroot, 3: prev, 4: after
             inputpos: List[int] = x['prob']
