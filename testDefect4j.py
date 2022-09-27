@@ -45,7 +45,13 @@ n = 0
 
 def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[Union[str, tuple]]:
     '''
-    Convert the argument into a Recoder compatible AST.
+    Recursively convert the argument into a Recoder compatible
+    AST as list.
+
+    Example:
+    IfStatement condition BinaryOperation operator &&_ter ^ ^ 
+    operandl BinaryOperation operator !=_ter ^ ^ operandl 
+    MemberReference member loc2 ^ ^ ^ ^ operandr
     '''
 
     tree_as_list = []
@@ -152,6 +158,12 @@ def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]
 
 
 def convert_AST_as_list_to_tree(tree_as_list: List[Union[str, tuple]]) -> Node:
+    '''
+    Convert AST as list to a tree. Return tree root.
+    The Node class that makes up the tree is defined in 
+    Searchnode.py
+    '''
+
     root = Node(name=tree_as_list[0], id_=0)
 
     current_node = root
@@ -176,6 +188,10 @@ def convert_AST_as_list_to_tree(tree_as_list: List[Union[str, tuple]]) -> Node:
 
 
 def get_node_by_line_number(root: Node, line: int) -> Node:
+    '''
+    Given a line number, return a Node that is positioned there.
+    '''
+
     if root.position:
         if root.position.line == line and root.name != 'IfStatement' and root.name != 'ForStatement':
             return root
@@ -187,6 +203,14 @@ def get_node_by_line_number(root: Node, line: int) -> Node:
 
 
 def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
+    '''
+    lnode is a parent node of tree_root, 
+    and is one of nodes defined in LINENODE
+
+    mnode is a parent node of tree_root,
+    and is one of {method decl, constructor decl}
+    '''
+
     current_node = tree_root
 
     lnode = None
