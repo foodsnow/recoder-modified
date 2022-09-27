@@ -327,8 +327,7 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
                 tree_as_list.append("^")
 
             else:
-                print(type(node))
-                assert (0)
+                raise RuntimeError('Cannot parse this node: ' + str(type(node)))
 
             tree_as_list.append("^")
 
