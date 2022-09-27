@@ -263,6 +263,15 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
     return "0no_function_found", 0, 0
 
 
+def containID(root):
+    ans = []
+    if root.position is not None:
+        ans.extend([root.position.line])
+    for x in root.child:
+        ans.extend(containID(x))
+    return ans
+
+
 def getLocVar(node):
     varnames = []
     if node.name == 'VariableDeclarator':
@@ -546,15 +555,6 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
             if patchnum >= 5:
                 return patchnum
     return patchnum
-
-
-def containID(root):
-    ans = []
-    if root.position is not None:
-        ans.extend([root.position.line])
-    for x in root.child:
-        ans.extend(containID(x))
-    return ans
 
 
 def getAssignMent(root):
