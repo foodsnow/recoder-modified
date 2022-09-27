@@ -562,10 +562,10 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         print('p')
 
-        locationdir = 'location/groundtruth/%s/%d' % (project_name.lower(), idx)
-        if not os.path.exists(locationdir):
+        file_with_buggy_line_info = 'location/groundtruth/%s/%d' % (project_name.lower(), idx)
+        if not os.path.exists(file_with_buggy_line_info):
             continue
-        
+
         os.makedirs(f"buggy", exist_ok=True)
         os.system('defects4j checkout -p %s -v %db -w buggy/%s' % (project_name, idx, bug_id))
 
@@ -578,14 +578,15 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         s = s[-1]
         '''
 
-        lines = open(locationdir, 'r').readlines()
+        buggy_lines_info = open(
+            file_with_buggy_line_info, 'r').readlines()
         location = []
         locationdict = {}
-        for loc in lines:
-            loc = loc.split("||")[0]
-            classname, lineid = loc.split(':')
-            classname = ".".join(classname.split(".")[:-1])
-            location.append((classname, 1, eval(lineid)))
+        for buggy_line_info in buggy_lines_info:
+            buggy_line_info = buggy_line_info.split("||")[0]
+            buggy_class_name, buggy_line_number = buggy_line_info.split(':')
+            buggy_class_name = ".".join(buggy_class_name.split(".")[:-1])
+            location.append((buggy_class_name, 1, eval(buggy_line_number)))
         dirs = os.popen(
             f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
 
@@ -607,11 +608,11 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 break
             patchdict = {}
             ac = location[j]
-            classname = ac[0]
+            buggy_class_name = ac[0]
             fl_score = ac[1]
-            if '$' in classname:
-                classname = classname[:classname.index('$')]
-            s = classname
+            if '$' in buggy_class_name:
+                buggy_class_name = buggy_class_name[:buggy_class_name.index('$')]
+            s = buggy_class_name
             print('path', s)
             filepath = f"buggy/{bug_id}/{dirs}/{s.replace('.', '/')}.java"
             filepathx = "fixed/%s/%s.java" % (dirs, s.replace('.', '/'))
@@ -625,15 +626,15 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             parser = javalang.parser.Parser(tokens)
             tree = parser.parse()
             tmproot = getroottree(generateAST(tree))
-            lineid = ac[2]
+            buggy_line_number = ac[2]
             # current node by line number
-            currroot = getNodeById(tmproot, lineid)
+            currroot = getNodeById(tmproot, buggy_line_number)
             # Subroot from curroot
             lnode, mnode = getSubroot(currroot)
             if mnode is None:
                 continue
             funcname, startline, endline = get_method_range(
-                tree, mnode, lineid)
+                tree, mnode, buggy_line_number)
             if filepath not in func_map:
                 func_map[filepath] = list()
             func_map[filepath].append(
@@ -692,9 +693,9 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     continue
                 data.append({'bugid': user_given_bug_id, 'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode,
                              'filepath': filepath, 'subroot': subroot, 'vardic': vardic,
-                             'typedic': typedic, 'idss': bug_id, 'classname': classname,
+                             'typedic': typedic, 'idss': bug_id, 'classname': buggy_class_name,
                              'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
-                             'prob': troot.getTreeProb(troot), 'mode': 0, 'line': lineid, 'isa': False, 'fl_score': fl_score})
+                             'prob': troot.getTreeProb(troot), 'mode': 0, 'line': buggy_line_number, 'isa': False, 'fl_score': fl_score})
                 # patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
 
         os.makedirs(f"d4j/{user_given_bug_id}", exist_ok=True)
