@@ -349,7 +349,7 @@ def getSubroot(treeroot):
 def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, mode, subroot, vardic, typedic, idxs, testmethods, idss, classname):
     global aftercode
     global precode
-    actionlist = solveone(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
+    actionlist = solve_one(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
         troot), model, subroot, vardic, typedic, idxs, idss, classname, mode)
     for x in actionlist:
         if x.strip() in patchdict:
@@ -688,6 +688,6 @@ for i, xss in enumerate(prlist):
                 #print(aftercode.splitlines()[:10])
                 troot, vardic, typedic = solveLongTree(treeroot, subroot)
                 data.append({'treeroot':treeroot, 'troot':troot, 'oldcode':'methodinit', 'filepath':filepath, 'subroot':subroot, 'vardic':vardic, 'typedic':typedic, 'idss':idss, 'classname':classname, 'precode':precode, 'aftercode':aftercode, 'tree':troot.printTreeWithVar(troot, vardic), 'prob':troot.getTreeProb(troot), 'mode':1, 'line':lineid, 'isa':False})'''
-        solveone(data, model)
+        solve_one(data, model)
 
         # assert(0)

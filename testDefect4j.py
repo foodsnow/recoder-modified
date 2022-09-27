@@ -531,7 +531,7 @@ def setProb(root, subroot, prob):
 def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, mode, subroot, vardic, typedic, idxs, testmethods, idss, classname):
     global after_code
     global pre_code
-    actionlist = solveone(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
+    actionlist = solve_one(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
         troot), model, subroot, vardic, typedic, idxs, idss, classname, mode)
     for x in actionlist:
         if x.strip() in patch_dict:
@@ -853,7 +853,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         print(data)
 
-        ans = solveone(data, decoder_model)
+        ans = solve_one(data, decoder_model)
 
         with open(f"d4j/{user_given_bug_id}/{user_given_bug_id}.json", "w") as f:
             json.dump(ans, f)

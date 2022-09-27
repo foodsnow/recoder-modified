@@ -1188,7 +1188,7 @@ def extarctmode(root):
 
 
 # data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
-def solveone(data, model: Decoder) -> list:
+def solve_one(data, model: Decoder) -> list:
     #os.environ["CUDA_VISIBLE_DEVICES"]="2, 3"
     #assert(len(data) <= 40)
     args.batch_size = 20
