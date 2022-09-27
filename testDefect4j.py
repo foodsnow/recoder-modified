@@ -773,18 +773,18 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 # print(containID(subroot))
                 # range of subroot statement's line number
 
-                cid = set(get_line_numbers(sub_root))
-                maxl = -1
-                minl = 1e10
-                for l in cid:
-                    maxl = max(maxl, l - 1)
-                    minl = min(minl, l - 1)
+                unique_line_numbers = set(get_line_numbers(sub_root))
+                max_line_number = -1
+                min_line_number = 1e10
+                for unique_line_number in unique_line_numbers:
+                    max_line_number = max(max_line_number, unique_line_number - 1)
+                    min_line_number = min(min_line_number, unique_line_number - 1)
 
                 # print(maxl, liness[maxl + 1])
 
-                precode = "\n".join(buggy_class_src_lines[0:minl])
-                aftercode = "\n".join(buggy_class_src_lines[maxl + 1:])
-                old_code = "\n".join(buggy_class_src_lines[minl:maxl + 1])
+                precode = "\n".join(buggy_class_src_lines[0:min_line_number])
+                aftercode = "\n".join(buggy_class_src_lines[max_line_number + 1:])
+                old_code = "\n".join(buggy_class_src_lines[min_line_number:max_line_number + 1])
 
                 # troot: treeroot
                 # vardic: variable dict
