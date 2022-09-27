@@ -664,10 +664,10 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
             tree = parser.parse()
             ast_as_list = convert_to_AST_as_list(tree)
-            tmp_root = convert_AST_as_list_to_tree(ast_as_list)
+            tmp_tree_root = convert_AST_as_list_to_tree(ast_as_list)
 
             # current node by line number
-            current_root = get_node_by_line_number(tmp_root, buggy_line_number)
+            current_root = get_node_by_line_number(tmp_tree_root, buggy_line_number)
             # Subroot from current_root
             lnode, mnode = getSubroot(current_root)
             if mnode is None:
