@@ -761,11 +761,11 @@ def test():
         model = model.cuda()
 
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size, shuffle=False, drop_last=False, num_workers=0)
-    
+
     model = model.eval()
     load_model(model)
     return model
-    
+
     # return model
     f = open("outval.txt", "w")
     index = 0
@@ -803,7 +803,7 @@ def test():
             # print(x.getTreestr())
         indexs += 1
         # exit(0)
-        #f.write(" ".join(ans.ans[1:-1]))
+        # f.write(" ".join(ans.ans[1:-1]))
         # f.write("\n")
         # f.flush()#print(ans)
 
