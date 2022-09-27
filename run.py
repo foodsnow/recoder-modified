@@ -1,25 +1,27 @@
-import re
-import torch
-from torch import optim
-from Dataset import SumDataset
-import os
-from tqdm import tqdm
-from Model import *
-import numpy as np
-#import wandb
+# wandb.init("sql")
+# from pythonBottom.run import finetune
+# from pythonBottom.run import pre
+# import wandb
+
 from copy import deepcopy
-import pickle
-from ScheduledOptim import *
-import sys
+from Dataset import SumDataset
+from Model import *
 from Radam import RAdam
+from ScheduledOptim import *
 from Searchnode import Node
+from torch import optim
+from tqdm import tqdm
+from typing import List, Dict, Set, Tuple
+
 import json
+import numpy as np
+import os
+import pickle
+import re
+import sys
+import torch
 import torch.nn.functional as F
 import traceback
-from typing import List, Dict, Set, Tuple
-#from pythonBottom.run import finetune
-#from pythonBottom.run import pre
-# wandb.init("sql")
 
 
 class dotdict(dict):
@@ -43,7 +45,8 @@ args = dotdict({
     'rulenum': 10,
     'cnum': 695
 })
-#os.environ["CUDA_VISIBLE_DEVICES"]="5, 7"
+
+# os.environ["CUDA_VISIBLE_DEVICES"]="5, 7"
 # os.environ['CUDA_LAUNCH_BLOCKING']="2"
 
 
@@ -54,11 +57,9 @@ def save_model(model, dirs='checkpointSearch/'):
 
 
 def load_model(model, dirs='checkpointSearch/'):
-    assert os.path.exists(
-        dirs + 'best_model.ckpt'), 'Weights for saved model not found'
-    # cprint(dirs)
-    model.load_state_dict(torch.load(dirs + 'best_model.ckpt',
-                          map_location=torch.device("cuda" if torch.cuda.is_available() else "cpu")))
+    assert os.path.exists(dirs + 'best_model.ckpt'), 'Weights for saved model not found'
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.load_state_dict(torch.load(dirs + 'best_model.ckpt', map_location=device))
 
 
 use_cuda = torch.cuda.is_available()  # True#True#torch.cuda.is_available()
