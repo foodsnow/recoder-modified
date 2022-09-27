@@ -819,18 +819,14 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 aftercode = "\n".join(buggy_class_src_lines[max_line_number + 1:])
                 old_code = "\n".join(buggy_class_src_lines[min_line_number:max_line_number + 1])
 
-                # troot: treeroot
-                # vardic: variable dict
-                # typedic: type of variables
-
-                troot, vardic, typedic = solve_long_tree(tree_root, sub_root)
+                troot, var_dict, type_dict = solve_long_tree(tree_root, sub_root)
                 if troot is None:
                     continue
 
                 data.append({'bugid': user_given_bug_id, 'treeroot': tree_root, 'troot': troot, 'oldcode': old_code,
-                             'filepath': buggy_class_java_path, 'subroot': sub_root, 'vardic': vardic,
-                             'typedic': typedic, 'idss': bug_id, 'classname': buggy_class_name,
-                             'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
+                             'filepath': buggy_class_java_path, 'subroot': sub_root, 'vardic': var_dict,
+                             'typedic': type_dict, 'idss': bug_id, 'classname': buggy_class_name,
+                             'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, var_dict),
                              'prob': troot.getTreeProb(troot), 'mode': 0, 'line': buggy_line_number, 'isa': False, 'fl_score': fl_score})
                 # patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
 
