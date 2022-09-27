@@ -401,36 +401,44 @@ def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
 
     N = 0
 
-    set_id(troot)  # set id: root is 0, and increase the id by preorder traversal
-    varnames = get_loc_var(troot)
+    # set id: root is 0, and increase the id by preorder traversal
+    set_id(troot)
+
+    var_names = get_loc_var(troot)
+
     fnum = -1
     vnum = -1
-    vardic = {}
-    vardic[m] = 'meth0'
-    typedic = {}
-    for child in varnames:
+    var_dict: Dict[str, str] = {}
+    var_dict[m] = 'meth0'
+    type_dict = {}
+
+    for child in var_names:
+
         if child[1].name == 'VariableDeclarator':
             vnum += 1
-            vardic[child[0]] = 'loc' + str(vnum)
-            t = -1
+            var_dict[child[0]] = 'loc' + str(vnum)
+
+            type_name = -1
             for s in child[1].father.father.child:
-                # print(s.name)
                 if s.name == 'type':
-                    t = s.child[0].child[0].child[0].name[:-4]
+                    type_name = s.child[0].child[0].child[0].name[:-4]
                     break
-            assert (t != -1)
-            typedic[child[0]] = t
+            assert (type_name != -1)
+            type_dict[child[0]] = type_name
+
         else:
             fnum += 1
-            vardic[child[0]] = 'par' + str(fnum)
-            t = -1
+            var_dict[child[0]] = 'par' + str(fnum)
+
+            type_name = -1
             for s in child[1].child:
                 if s.name == 'type':
-                    t = s.child[0].child[0].child[0].name[:-4]
+                    type_name = s.child[0].child[0].child[0].name[:-4]
                     break
-            assert (t != -1)
-            typedic[child[0]] = t
-    return troot, vardic, typedic
+            assert (type_name != -1)
+            type_dict[child[0]] = type_name
+
+    return troot, var_dict, type_dict
 
 
 def set_id(root):
@@ -441,32 +449,42 @@ def set_id(root):
         set_id(child)
 
 
-def get_loc_var(node):
-    varnames = []
+def get_loc_var(node: Node) -> Tuple[str, Node]:
+    '''
+    NOTE recursive: down to children
+    '''
+
+    var_names = []
+
     if node.name == 'VariableDeclarator':
-        currnode = -1
-        for x in node.child:
-            if x.name == 'name':
-                currnode = x
+        current_node = -1
+        for child in node.child:
+            if child.name == 'name':
+                current_node = child
                 break
-        varnames.append((currnode.child[0].name, node))
+        var_names.append((current_node.child[0].name, node))
+
     if node.name == 'FormalParameter':
-        currnode = -1
-        for x in node.child:
-            if x.name == 'name':
-                currnode = x
+        current_node = -1
+        for child in node.child:
+            if child.name == 'name':
+                current_node = child
                 break
-        varnames.append((currnode.child[0].name, node))
+        var_names.append((current_node.child[0].name, node))
+
     if node.name == 'InferredFormalParameter':
-        currnode = -1
-        for x in node.child:
-            if x.name == 'name':
-                currnode = x
+        current_node = -1
+        for child in node.child:
+            if child.name == 'name':
+                current_node = child
                 break
-        varnames.append((currnode.child[0].name, node))
-    for x in node.child:
-        varnames.extend(get_loc_var(x))
-    return varnames
+        var_names.append((current_node.child[0].name, node))
+
+    # recursive call
+    for child in node.child:
+        var_names.extend(get_loc_var(child))
+
+    return var_names
 
 
 def ismatch(root, subroot):
