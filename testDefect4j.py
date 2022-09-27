@@ -649,27 +649,28 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             
             oldcode = buggy_class_src_lines[buggy_line_number - 1]
             
-            isIf = True
+            is_if = True
             subroot = lnode     # line root
             treeroot = mnode    # method decl
-            presubroot = None
-            aftersubroot = None
-            linenodes = getLineNode(treeroot, "")
+            pre_subroot = None
+            after_subroot = None
+            line_nodes = getLineNode(treeroot, "")
             
             # print(treeroot.printTreeWithLine(treeroot))
             # print(lineid, 2)
             
-            if subroot not in linenodes:
+            if subroot not in line_nodes:
                 # print(treeroot.getTreestr(), subroot.getTreestr())
                 # if buggy_location_idx == 19:
                 #     assert(0)
                 # print(buggy_location_idx, subroot, '3')
                 continue
-            currid = linenodes.index(subroot)   # index of linenode in treeroot
-            if currid > 0:
-                presubroot = linenodes[currid - 1]  # previous root
-            if currid < len(linenodes) - 1:
-                aftersubroot = linenodes[currid + 1]  # after root
+
+            current_id = line_nodes.index(subroot)   # index of linenode in treeroot
+            if current_id > 0:
+                pre_subroot = line_nodes[current_id - 1]  # previous root
+            if current_id < len(line_nodes) - 1:
+                after_subroot = line_nodes[current_id + 1]  # after root
             setProb(treeroot, 2)
             addter(treeroot)
             if subroot is None:
@@ -680,10 +681,10 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 setProb(treeroot, 2)
                 if subroot is not None:
                     setProb(subroot, 1)
-                if aftersubroot is not None:
-                    setProb(aftersubroot, 4)
-                if presubroot is not None:
-                    setProb(presubroot, 3)
+                if after_subroot is not None:
+                    setProb(after_subroot, 4)
+                if pre_subroot is not None:
+                    setProb(pre_subroot, 3)
                 # print(containID(subroot))
                 # range of subroot statement's line number
                 cid = set(containID(subroot))
