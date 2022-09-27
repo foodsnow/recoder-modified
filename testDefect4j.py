@@ -181,7 +181,7 @@ def getLineNode(root, block, add=True):
     return ans
 
 
-def getroottree(tokens, isex=False):
+def get_root_tree(tokens, isex=False):
     root = Node(tokens[0], 0)
     currnode = root
     idx = 1
@@ -227,7 +227,7 @@ def findSubtree(root, subroot):
     return None
 
 
-def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[str]:
+def generate_AST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[str]:
     '''
     Convert the argument into a Recoder compatible AST.
     '''
@@ -260,7 +260,7 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
             tree_as_list.append("^")
         else:
             for ch in tree:
-                subtree = generateAST(ch)
+                subtree = generate_AST(ch)
                 tree_as_list.extend(subtree)
         return tree_as_list
 
@@ -299,23 +299,23 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
                     tree_as_list.append("^")
                 else:
                     for ch in node:
-                        subtree = generateAST(ch)
+                        subtree = generate_AST(ch)
                         tree_as_list.extend(subtree)
 
             elif isinstance(node, javalang.tree.Node):
-                subtree = generateAST(node)
+                subtree = generate_AST(node)
                 tree_as_list.extend(subtree)
 
             elif not node:
                 continue
 
             elif isinstance(node, str):
-                subtree = generateAST(node)
+                subtree = generate_AST(node)
                 tree_as_list.extend(subtree)
 
             elif isinstance(node, set):
                 for ch in node:
-                    subtree = generateAST(ch)
+                    subtree = generate_AST(ch)
                     tree_as_list.extend(subtree)
 
             elif isinstance(node, bool):
@@ -379,7 +379,7 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
         #print('-', x)
         patch_dict[x.strip()] = 1
         # print(x.split())
-        root = getroottree(x.split())
+        root = get_root_tree(x.split())
         code = stringfyRoot(root, isIf, mode)
         # print(oldcode)
         print(precode[-1000:])
@@ -646,8 +646,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             parser = javalang.parser.Parser(tokens)
 
             tree = parser.parse()
-            ast_as_list = generateAST(tree)
-            tmp_root = getroottree(ast_as_list)
+            ast_as_list = generate_AST(tree)
+            tmp_root = get_root_tree(ast_as_list)
 
             # current node by line number
             current_root = getNodeById(tmp_root, buggy_line_number)
