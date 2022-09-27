@@ -556,6 +556,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
     for idx in IDS_V1_2[i]:
         bug_id = project_name + "-" + str(idx)
 
+        # comment this if to run for all versions
         if bug_id != user_given_bug_id:
             continue
 
