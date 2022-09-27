@@ -181,23 +181,27 @@ def getLineNode(root, block, add=True):
     return ans
 
 
-def get_root_tree(tree_as_list: List[Union[str, tuple]], isex=False):
+def get_root_tree(tree_as_list: List[Union[str, tuple]]) -> Node:
     root = Node(name=tree_as_list[0], id_=0)
-    currnode = root
+
+    current_node = root
     idx = 1
-    for i, x in enumerate(tree_as_list[1:]):
-        if x != "^":
-            if isinstance(x, tuple):
-                nnode = Node(x[0], idx)
-                nnode.position = x[1]
+
+    for tree_elem in tree_as_list[1:]:
+        if tree_elem != "^":
+            if isinstance(tree_elem, tuple):
+                next_node = Node(name=tree_elem[0], id_=idx)
+                next_node.position = tree_elem[1]
             else:
-                nnode = Node(x, idx)
-            nnode.father = currnode
-            currnode.child.append(nnode)
-            currnode = nnode
+                next_node = Node(tree_elem, idx)
+
+            next_node.father = current_node
+            current_node.child.append(next_node)
+            current_node = next_node
             idx += 1
         else:
-            currnode = currnode.father
+            current_node = current_node.father
+
     return root
 
 
