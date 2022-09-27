@@ -565,9 +565,9 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         locationdir = 'location/groundtruth/%s/%d' % (project_name.lower(), idx)
         if not os.path.exists(locationdir):
             continue
+        
         os.makedirs(f"buggy", exist_ok=True)
-        os.system('defects4j checkout -p %s -v %db -w buggy/%s' %
-                  (project_name, idx, bug_id))  # os.system('defects4j')
+        os.system('defects4j checkout -p %s -v %db -w buggy/%s' % (project_name, idx, bug_id))
 
         patchnum = 0
 
