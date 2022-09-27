@@ -293,7 +293,7 @@ def get_line_numbers(node: Node) -> List[int]:
     return line_numbers
 
 
-def getLineNode(root, block, add=True):
+def get_line_node(root, block, add=True):
     ans = []
     block = block + root.name
     #print(root.name, 'lll')
@@ -312,7 +312,7 @@ def getLineNode(root, block, add=True):
             else:
                 s = block + root.name
             #print(block + root.name + "--------")
-            tmp = getLineNode(x, block)
+            tmp = get_line_node(x, block)
             '''if x.name == 'then_statement' and tmp == []:
         print(tmp)
         print(x.father.printTree(x.father))
@@ -727,50 +727,43 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             old_code = buggy_class_src_lines[buggy_line_number - 1]
 
             is_if = True
-            subroot = lnode  # line root
-            treeroot = mnode  # method decl
-            pre_subroot = None
-            after_subroot = None
-            line_nodes = getLineNode(treeroot, "")
+            sub_root = lnode  # line root
+            tree_root = mnode  # method decl
+            pre_sub_root = None
+            after_sub_root = None
+            line_nodes = get_line_node(tree_root, "")
 
-            # print(treeroot.printTreeWithLine(treeroot))
-            # print(lineid, 2)
-
-            if subroot not in line_nodes:
-                # print(treeroot.getTreestr(), subroot.getTreestr())
-                # if buggy_location_idx == 19:
-                #     assert(0)
-                # print(buggy_location_idx, subroot, '3')
+            if sub_root not in line_nodes:
                 continue
 
-            current_id = line_nodes.index(subroot)   # index of linenode in treeroot
+            current_id = line_nodes.index(sub_root)   # index of linenode in treeroot
             if current_id > 0:
-                pre_subroot = line_nodes[current_id - 1]  # previous root
+                pre_sub_root = line_nodes[current_id - 1]  # previous root
             if current_id < len(line_nodes) - 1:
-                after_subroot = line_nodes[current_id + 1]  # after root
+                after_sub_root = line_nodes[current_id + 1]  # after root
 
-            setProb(treeroot, 2)
-            addter(treeroot)
+            setProb(tree_root, 2)
+            addter(tree_root)
 
-            if subroot is None:
+            if sub_root is None:
                 continue
 
             # print(lineid, 3, liness[lineid - 1], subroot.getTreestr(), len(data))
             # print(treeroot.printTreeWithLine(subroot))
 
             if True:  # 2: treeroot, 1: subroot, 3: prev, 4: after
-                setProb(treeroot, 2)
-                if subroot is not None:
-                    setProb(subroot, 1)
-                if after_subroot is not None:
-                    setProb(after_subroot, 4)
-                if pre_subroot is not None:
-                    setProb(pre_subroot, 3)
+                setProb(tree_root, 2)
+                if sub_root is not None:
+                    setProb(sub_root, 1)
+                if after_sub_root is not None:
+                    setProb(after_sub_root, 4)
+                if pre_sub_root is not None:
+                    setProb(pre_sub_root, 3)
 
                 # print(containID(subroot))
                 # range of subroot statement's line number
 
-                cid = set(get_line_numbers(subroot))
+                cid = set(get_line_numbers(sub_root))
                 maxl = -1
                 minl = 1e10
                 for l in cid:
@@ -787,12 +780,12 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 # vardic: variable dict
                 # typedic: type of variables
 
-                troot, vardic, typedic = solveLongTree(treeroot, subroot)
+                troot, vardic, typedic = solveLongTree(tree_root, sub_root)
                 if troot is None:
                     continue
 
-                data.append({'bugid': user_given_bug_id, 'treeroot': treeroot, 'troot': troot, 'oldcode': old_code,
-                             'filepath': buggy_class_java_path, 'subroot': subroot, 'vardic': vardic,
+                data.append({'bugid': user_given_bug_id, 'treeroot': tree_root, 'troot': troot, 'oldcode': old_code,
+                             'filepath': buggy_class_java_path, 'subroot': sub_root, 'vardic': vardic,
                              'typedic': typedic, 'idss': bug_id, 'classname': buggy_class_name,
                              'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
                              'prob': troot.getTreeProb(troot), 'mode': 0, 'line': buggy_line_number, 'isa': False, 'fl_score': fl_score})
