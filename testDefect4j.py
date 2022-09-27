@@ -536,8 +536,8 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
     return "0no_function_found", 0, 0
 
 
-projects_v1_2 = ['Chart', 'Closure', 'Lang', 'Math', 'Mockito', 'Time']
-ids_v1_2 = [
+PROJECTS_V1_2 = ['Chart', 'Closure', 'Lang', 'Math', 'Mockito', 'Time']
+IDS_V1_2 = [
     list(range(1, 27)),
     list(range(1, 134)),
     list(range(1, 66)),
