@@ -332,6 +332,19 @@ def get_line_node(node: Node, block: str, add=True) -> List[Node]:
     return result
 
 
+def set_probability(node: Node, prob) -> None:
+    node.possibility = prob  # max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
+    for child in node.child:
+        set_probability(child, prob)
+
+
+def add_label_ter(node: Node) -> None:
+    if len(node.child) == 0:
+        node.name += "_ter"
+    for child in node.child:
+        add_label_ter(child)
+
+
 def getLocVar(node):
     varnames = []
     if node.name == 'VariableDeclarator':
@@ -439,20 +452,6 @@ def solveLongTree(root, subroot) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
             assert (t != -1)
             typedic[x[0]] = t
     return troot, vardic, typedic
-
-
-def addter(root):
-    if len(root.child) == 0:
-        root.name += "_ter"
-    for x in root.child:
-        addter(x)
-    return
-
-
-def setProb(r: Node, p):
-    r.possibility = p  # max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
-    for x in r.child:
-        setProb(x, p)
 
 
 def ismatch(root, subroot):
@@ -753,8 +752,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             if current_id < len(line_nodes) - 1:
                 after_sub_root = line_nodes[current_id + 1]  # after root
 
-            setProb(tree_root, 2)
-            addter(tree_root)
+            set_probability(tree_root, 2)
+            add_label_ter(tree_root)
 
             if sub_root is None:
                 continue
@@ -763,13 +762,13 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             # print(treeroot.printTreeWithLine(subroot))
 
             if True:  # 2: treeroot, 1: subroot, 3: prev, 4: after
-                setProb(tree_root, 2)
+                set_probability(tree_root, 2)
                 if sub_root is not None:
-                    setProb(sub_root, 1)
+                    set_probability(sub_root, 1)
                 if after_sub_root is not None:
-                    setProb(after_sub_root, 4)
+                    set_probability(after_sub_root, 4)
                 if pre_sub_root is not None:
-                    setProb(pre_sub_root, 3)
+                    set_probability(pre_sub_root, 3)
 
                 # print(containID(subroot))
                 # range of subroot statement's line number
