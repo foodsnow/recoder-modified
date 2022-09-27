@@ -21,10 +21,169 @@ import sys
 import time
 
 
-LINENODE = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration',
-            'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
-
 # os.environ["CUDA_VISIBLE_DEVICES"] = "1, 4"
+
+LINENODE = [
+    'Statement_ter',
+    'BreakStatement_ter',
+    'ReturnStatement_ter',
+    'ContinueStatement',
+    'ContinueStatement_ter',
+    'LocalVariableDeclaration',
+    'condition',
+    'control',
+    'BreakStatement',
+    'ContinueStatement',
+    'ReturnStatement',
+    "parameters",
+    'StatementExpression',
+    'return_type'
+]
+
+n = 0
+
+
+def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[Union[str, tuple]]:
+    '''
+    Convert the argument into a Recoder compatible AST.
+    '''
+
+    tree_as_list = []
+
+    if not tree:
+        return ['None', '^']
+
+    if isinstance(tree, str):
+        tree_as_str = tree
+        tree_as_str = tree_as_str.replace(" ", "").replace(":", "")
+
+        if "\t" in tree_as_str or "'" in tree_as_str or "\"" in tree_as_str:
+            tree_as_str = "<string>"
+
+        if len(tree_as_str) == 0:
+            tree_as_str = "<empty>"
+        if tree_as_str[-1] == "^":
+            tree_as_str += "<>"
+
+        tree_as_list.append(tree_as_str)
+        tree_as_list.append("^")
+
+        return tree_as_list
+
+    if isinstance(tree, list):
+        if len(tree) == 0:
+            tree_as_list.append("empty")
+            tree_as_list.append("^")
+        else:
+            for ch in tree:
+                subtree = convert_to_AST_as_list(ch)
+                tree_as_list.extend(subtree)
+        return tree_as_list
+
+    position = None
+    if hasattr(tree, 'position'):
+        position = tree.position
+    current_node = type(tree).__name__
+    tree_as_list.append((current_node, position))
+
+    try:
+        for tree_attr in tree.attrs:
+            if tree_attr == "documentation":
+                continue
+
+            if not getattr(tree, tree_attr):
+                continue
+
+            '''
+            if x == 'prefix_operators':
+                node = getattr(tree, x)
+                print(type(node))
+                print(len(node))
+                print(node[0])
+                assert(0)
+            if type(getattr(tree, x)).__name__ not in nodes:
+                print(type(getattr(tree, x)).__name__)
+                continue
+            '''
+
+            tree_as_list.append(tree_attr)
+            node = getattr(tree, tree_attr)
+
+            if isinstance(node, list):
+                if len(node) == 0:
+                    tree_as_list.append("empty")
+                    tree_as_list.append("^")
+                else:
+                    for ch in node:
+                        subtree = convert_to_AST_as_list(ch)
+                        tree_as_list.extend(subtree)
+
+            elif isinstance(node, javalang.tree.Node):
+                subtree = convert_to_AST_as_list(node)
+                tree_as_list.extend(subtree)
+
+            elif not node:
+                continue
+
+            elif isinstance(node, str):
+                subtree = convert_to_AST_as_list(node)
+                tree_as_list.extend(subtree)
+
+            elif isinstance(node, set):
+                for ch in node:
+                    subtree = convert_to_AST_as_list(ch)
+                    tree_as_list.extend(subtree)
+
+            elif isinstance(node, bool):
+                tree_as_list.append(str(node))
+                tree_as_list.append("^")
+
+            else:
+                raise RuntimeError('Cannot parse this node: ' + str(type(node)))
+
+            tree_as_list.append("^")
+
+    except AttributeError:
+        assert False
+
+    tree_as_list.append('^')
+
+    return tree_as_list
+
+
+def convert_AST_as_list_to_tree(tree_as_list: List[Union[str, tuple]]) -> Node:
+    root = Node(name=tree_as_list[0], id_=0)
+
+    current_node = root
+    idx = 1
+
+    for tree_elem in tree_as_list[1:]:
+        if tree_elem != "^":
+            if isinstance(tree_elem, tuple):
+                next_node = Node(name=tree_elem[0], id_=idx)
+                next_node.position = tree_elem[1]
+            else:
+                next_node = Node(tree_elem, idx)
+
+            next_node.father = current_node
+            current_node.child.append(next_node)
+            current_node = next_node
+            idx += 1
+        else:
+            current_node = current_node.father
+
+    return root
+
+
+def get_node_by_line_number(root: Node, line: int) -> Node:
+    if root.position:
+        if root.position.line == line and root.name != 'IfStatement' and root.name != 'ForStatement':
+            return root
+    for child in root.child:
+        node_ = get_node_by_line_number(child, line)
+        if node_:
+            return node_
+    return None
 
 
 def getLocVar(node):
@@ -53,9 +212,6 @@ def getLocVar(node):
     for x in node.child:
         varnames.extend(getLocVar(x))
     return varnames
-
-
-n = 0
 
 
 def setid(root):
@@ -181,30 +337,6 @@ def getLineNode(root, block, add=True):
     return ans
 
 
-def convert_AST_as_list_to_tree(tree_as_list: List[Union[str, tuple]]) -> Node:
-    root = Node(name=tree_as_list[0], id_=0)
-
-    current_node = root
-    idx = 1
-
-    for tree_elem in tree_as_list[1:]:
-        if tree_elem != "^":
-            if isinstance(tree_elem, tuple):
-                next_node = Node(name=tree_elem[0], id_=idx)
-                next_node.position = tree_elem[1]
-            else:
-                next_node = Node(tree_elem, idx)
-
-            next_node.father = current_node
-            current_node.child.append(next_node)
-            current_node = next_node
-            idx += 1
-        else:
-            current_node = current_node.father
-
-    return root
-
-
 def ismatch(root, subroot):
     index = 0
     #assert(len(subroot.child) <= len(root.child))
@@ -229,114 +361,6 @@ def findSubtree(root, subroot):
         if tmp:
             return tmp
     return None
-
-
-def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[Union[str, tuple]]:
-    '''
-    Convert the argument into a Recoder compatible AST.
-    '''
-
-    tree_as_list = []
-
-    if not tree:
-        return ['None', '^']
-
-    if isinstance(tree, str):
-        tree_as_str = tree
-        tree_as_str = tree_as_str.replace(" ", "").replace(":", "")
-
-        if "\t" in tree_as_str or "'" in tree_as_str or "\"" in tree_as_str:
-            tree_as_str = "<string>"
-
-        if len(tree_as_str) == 0:
-            tree_as_str = "<empty>"
-        if tree_as_str[-1] == "^":
-            tree_as_str += "<>"
-
-        tree_as_list.append(tree_as_str)
-        tree_as_list.append("^")
-
-        return tree_as_list
-
-    if isinstance(tree, list):
-        if len(tree) == 0:
-            tree_as_list.append("empty")
-            tree_as_list.append("^")
-        else:
-            for ch in tree:
-                subtree = convert_to_AST_as_list(ch)
-                tree_as_list.extend(subtree)
-        return tree_as_list
-
-    position = None
-    if hasattr(tree, 'position'):
-        position = tree.position
-    current_node = type(tree).__name__
-    tree_as_list.append((current_node, position))
-
-    try:
-        for tree_attr in tree.attrs:
-            if tree_attr == "documentation":
-                continue
-
-            if not getattr(tree, tree_attr):
-                continue
-
-            '''
-            if x == 'prefix_operators':
-                node = getattr(tree, x)
-                print(type(node))
-                print(len(node))
-                print(node[0])
-                assert(0)
-            if type(getattr(tree, x)).__name__ not in nodes:
-                print(type(getattr(tree, x)).__name__)
-                continue
-            '''
-
-            tree_as_list.append(tree_attr)
-            node = getattr(tree, tree_attr)
-
-            if isinstance(node, list):
-                if len(node) == 0:
-                    tree_as_list.append("empty")
-                    tree_as_list.append("^")
-                else:
-                    for ch in node:
-                        subtree = convert_to_AST_as_list(ch)
-                        tree_as_list.extend(subtree)
-
-            elif isinstance(node, javalang.tree.Node):
-                subtree = convert_to_AST_as_list(node)
-                tree_as_list.extend(subtree)
-
-            elif not node:
-                continue
-
-            elif isinstance(node, str):
-                subtree = convert_to_AST_as_list(node)
-                tree_as_list.extend(subtree)
-
-            elif isinstance(node, set):
-                for ch in node:
-                    subtree = convert_to_AST_as_list(ch)
-                    tree_as_list.extend(subtree)
-
-            elif isinstance(node, bool):
-                tree_as_list.append(str(node))
-                tree_as_list.append("^")
-
-            else:
-                raise RuntimeError('Cannot parse this node: ' + str(type(node)))
-
-            tree_as_list.append("^")
-
-    except AttributeError:
-        assert False
-
-    tree_as_list.append('^')
-
-    return tree_as_list
 
 
 '''
@@ -463,17 +487,6 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
             if patchnum >= 5:
                 return patchnum
     return patchnum
-
-
-def get_node_by_line_number(root: Node, line: int) -> Node:
-    if root.position:
-        if root.position.line == line and root.name != 'IfStatement' and root.name != 'ForStatement':
-            return root
-    for child in root.child:
-        node_ = get_node_by_line_number(child, line)
-        if node_:
-            return node_
-    return None
 
 
 def containID(root):
