@@ -177,15 +177,15 @@ class Node:
         # max(min(np.random.normal(0.1, 0.08, 10)[0], 1), 0)
 
     def printTree(self, r):
-        s = r.name + "" + " "
+        result = r.name + "" + " "
         if len(r.child) == 0:
-            s += "^ "
-            return s
-        #r.child = sorted(r.child, key=lambda x:x.name)
+            result += "^ "
+            return result
+        # r.child = sorted(r.child, key=lambda x:x.name)
         for c in r.child:
-            s += self.printTree(c)
-        s += "^ "  # print(r.name + "^")
-        return s
+            result += self.printTree(c)
+        result += "^ "
+        return result
 
     def getNum(self):
         return len(self.getTreestr().strip().split())
