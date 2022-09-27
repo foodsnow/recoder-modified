@@ -297,6 +297,7 @@ def get_line_node(node: Node, block: str, add=True) -> List[Node]:
     '''
     NOTE Mutates node
     NOTE recursive
+    NOTE goes down to children recursively on Node
     '''
 
     result = []
