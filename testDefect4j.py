@@ -345,7 +345,7 @@ def add_label_ter(node: Node) -> None:
         add_label_ter(child)
 
 
-def solve_long_tree(root: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
+def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
     '''
     '''
 
@@ -354,11 +354,11 @@ def solve_long_tree(root: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
     m = 'None'
     troot = 'None'
 
-    for child in root.child:
+    for child in node.child:
         if child.name == 'name':
             m = child.child[0].name
 
-    if len(root.getTreestr().strip().split()) >= 1000:
+    if len(node.getTreestr().strip().split()) >= 1000:
         temp_node = sub_root
         tree_str = temp_node.getTreestr().strip()
 
@@ -374,30 +374,35 @@ def solve_long_tree(root: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
             temp_node = temp_node.father
 
         index = temp_node.child.index(last_temp_node)
-        ansroot = Node(temp_node.name, 0)
-        ansroot.child.append(last_temp_node)
-        ansroot.num = 2 + len(last_temp_node.getTreestr().strip().split())
+        answer_node = Node(temp_node.name, 0)
+        answer_node.child.append(last_temp_node)
+        answer_node.num = 2 + len(last_temp_node.getTreestr().strip().split())
+
         while True:
             b = True
-            afternode = temp_node.child.index(ansroot.child[-1]) + 1
-            if afternode < len(temp_node.child) and ansroot.num + temp_node.child[afternode].getNum() < 1000:
+
+            after_node = temp_node.child.index(answer_node.child[-1]) + 1
+            if after_node < len(temp_node.child) and answer_node.num + temp_node.child[after_node].getNum() < 1000:
                 b = False
-                ansroot.child.append(temp_node.child[afternode])
-                ansroot.num += temp_node.child[afternode].getNum()
-            prenode = temp_node.child.index(ansroot.child[0]) - 1
-            if prenode >= 0 and ansroot.num + temp_node.child[prenode].getNum() < 1000:
+                answer_node.child.append(temp_node.child[after_node])
+                answer_node.num += temp_node.child[after_node].getNum()
+
+            pre_node = temp_node.child.index(answer_node.child[0]) - 1
+            if pre_node >= 0 and answer_node.num + temp_node.child[pre_node].getNum() < 1000:
                 b = False
-                ansroot.child.append(temp_node.child[prenode])
-                ansroot.num += temp_node.child[prenode].getNum()
+                answer_node.child.append(temp_node.child[pre_node])
+                answer_node.num += temp_node.child[pre_node].getNum()
+
             if b:
                 break
-        troot = ansroot
+        troot = answer_node
     else:
-        troot = root
+        troot = node
 
     N = 0
-    setid(troot)  # set id: root is 0, and increase the id by preorder traversal
-    varnames = getLocVar(troot)
+
+    set_id(troot)  # set id: root is 0, and increase the id by preorder traversal
+    varnames = get_loc_var(troot)
     fnum = -1
     vnum = -1
     vardic = {}
@@ -428,7 +433,15 @@ def solve_long_tree(root: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
     return troot, vardic, typedic
 
 
-def getLocVar(node):
+def set_id(root):
+    global N
+    root.id = N
+    N += 1
+    for child in root.child:
+        set_id(child)
+
+
+def get_loc_var(node):
     varnames = []
     if node.name == 'VariableDeclarator':
         currnode = -1
@@ -452,16 +465,8 @@ def getLocVar(node):
                 break
         varnames.append((currnode.child[0].name, node))
     for x in node.child:
-        varnames.extend(getLocVar(x))
+        varnames.extend(get_loc_var(x))
     return varnames
-
-
-def setid(root):
-    global N
-    root.id = N
-    N += 1
-    for x in root.child:
-        setid(x)
 
 
 def ismatch(root, subroot):
