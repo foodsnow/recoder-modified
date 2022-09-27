@@ -186,6 +186,28 @@ def get_node_by_line_number(root: Node, line: int) -> Node:
     return None
 
 
+def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
+    current_node = tree_root
+
+    lnode = None
+    mnode = None
+
+    while current_node:
+        if current_node.name in LINENODE:
+            lnode = current_node
+            break
+        current_node = current_node.father
+
+    current_node = tree_root
+    while current_node:
+        if current_node.name == 'MethodDeclaration' or current_node.name == 'ConstructorDeclaration':
+            mnode = current_node
+            break
+        current_node = current_node.father
+
+    return lnode, mnode
+
+
 def getLocVar(node):
     varnames = []
     if node.name == 'VariableDeclarator':
@@ -376,24 +398,6 @@ def setProb(root, subroot, prob):
         setProb(root.child[index], x, prob)
         index += 1
 '''
-
-
-def getSubroot(treeroot: Node):
-    currnode = treeroot
-    lnode = None
-    mnode = None
-    while currnode:
-        if currnode.name in LINENODE:
-            lnode = currnode
-            break
-        currnode = currnode.father
-    currnode = treeroot
-    while currnode:
-        if currnode.name == 'MethodDeclaration' or currnode.name == 'ConstructorDeclaration':
-            mnode = currnode
-            break
-        currnode = currnode.father
-    return lnode, mnode
 
 
 def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, mode, subroot, vardic, typedic, idxs, testmethods, idss, classname):
