@@ -600,9 +600,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         data = []
         func_map: Dict[str, List[dict]] = dict()
+        
         for j in range(len(buggy_locations)):
-            if j >= len(buggy_locations):
-                break
             patchdict = {}
             ac = buggy_locations[j]
             buggy_class_name = ac[0]
