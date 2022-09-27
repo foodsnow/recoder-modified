@@ -3,7 +3,7 @@
 #from pythonBottom.run import pre
 # wandb.init("sql")
 import time
-from typing import List, Dict, Set, Tuple
+from typing import List, Dict, Set, Tuple, Union
 
 
 class dotdict(dict):
@@ -160,11 +160,11 @@ def train():
 
 
 class Node:
-    def __init__(self, name: str, d: int):
+    def __init__(self, name: Union[str, tuple], id_: int):
         self.name = name
-        self.id = d
-        self.father: 'Node' = None
-        self.child: List['Node'] = []
+        self.id = id_
+        self.father: Node = None
+        self.child: List[Node] = []
         self.sibiling = None
         self.expanded = False
         self.fatherlistID = 0
