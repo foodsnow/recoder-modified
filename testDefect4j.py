@@ -306,16 +306,8 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
                 continue
 
             elif isinstance(node, str):
-                tmpStr = node
-                tmpStr = tmpStr.replace(" ", "").replace(":", "")
-                if "\t" in tmpStr or "'" in tmpStr or "\"" in tmpStr:
-                    tmpStr = "<string>"
-                if len(tmpStr) == 0:
-                    tmpStr = "<empty>"
-                if tmpStr[-1] == "^":
-                    tmpStr += "<>"
-                tree_as_list.append(tmpStr)
-                tree_as_list.append("^")
+                subtree = generateAST(node)
+                tree_as_list.extend(subtree)
 
             elif isinstance(node, set):
                 for ch in node:
