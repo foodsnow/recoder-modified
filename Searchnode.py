@@ -165,7 +165,7 @@ class Node:
         self.id = id_
         self.father: Node = None
         self.child: List[Node] = []
-        self.sibiling = None
+        self.sibling = None
         self.expanded = False
         self.fatherlistID = 0
         self.treestr = ""
