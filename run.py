@@ -725,41 +725,46 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
 
 def test():
     # pre()
-    #os.environ["CUDA_VISIBLE_DEVICES"]="5, 7"
+    # os.environ["CUDA_VISIBLE_DEVICES"] = "5, 7"
+
     dev_set = SumDataset(args, "test")
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
-                  ).float().unsqueeze(0).repeat(2, 1, 1)
+
+    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
     args.cnum = rulead.size(1)
     tmpast = getAstPkl(dev_set)
     a, b = getRulePkl(dev_set)
+    
     tmpf = gVar(a).unsqueeze(0).repeat(2, 1).long()
     tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex = gVar(np.arange(len(dev_set.ruledict))
-                    ).unsqueeze(0).repeat(2, 1).long()
+    tmpindex = gVar(np.arange(len(dev_set.ruledict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))
-                     ).unsqueeze(0).repeat(2, 1).long()
-    # print(len(dev_set))
+    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))).unsqueeze(0).repeat(2, 1).long()
+    
     args.Nl_Vocsize = len(dev_set.Nl_Voc)
     args.Code_Vocsize = len(dev_set.Code_Voc)
     args.Vocsize = len(dev_set.Char_Voc)
     args.rulenum = len(dev_set.ruledict) + args.NlLen
-    print(dev_set.rrdict[152])
     args.batch_size = 12
+
+    print(dev_set.rrdict[152])
+
     rdic = {}
     for x in dev_set.Nl_Voc:
         rdic[dev_set.Nl_Voc[x]] = x
-    # print(dev_set.Nl_Voc)
+
     model = Decoder(args)
+
     if torch.cuda.is_available():
         print('using GPU')
-        #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+        # os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
-    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
-                                            shuffle=False, drop_last=False, num_workers=0)
+
+    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size, shuffle=False, drop_last=False, num_workers=0)
+    
     model = model.eval()
     load_model(model)
     return model
+    
     # return model
     f = open("outval.txt", "w")
     index = 0
