@@ -2,6 +2,7 @@
 # from graphviz import Digraph
 
 from copy import deepcopy
+from typing import Union
 from repair import save_code_as_file
 from run import *
 from Searchnode import Node
@@ -226,10 +227,12 @@ def findSubtree(root, subroot):
     return None
 
 
-def generateAST(tree):
+def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]):
     sub = []
+
     if not tree:
         return ['None', '^']
+
     if isinstance(tree, str):
         tmpStr = tree
         tmpStr = tmpStr.replace(" ", "").replace(":", "")
@@ -242,6 +245,7 @@ def generateAST(tree):
         sub.append(tmpStr)
         sub.append("^")
         return sub
+
     if isinstance(tree, list):
         if len(tree) == 0:
             sub.append("empty")
@@ -251,6 +255,7 @@ def generateAST(tree):
                 subtree = generateAST(ch)
                 sub.extend(subtree)
         return sub
+
     position = None
     if hasattr(tree, 'position'):
         # assert(0)
