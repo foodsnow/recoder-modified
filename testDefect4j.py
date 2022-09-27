@@ -233,7 +233,6 @@ def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
 
 
 def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
-    func_list = list()
     found_method = False
     result = containID(mnode)
     start_line = min(result)
