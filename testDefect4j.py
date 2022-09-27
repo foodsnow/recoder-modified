@@ -233,6 +233,12 @@ def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
 
 
 def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
+    '''
+    Return a method|constructor name, and its starting and ending lines.
+
+    Which method is returned? not clear
+    '''
+    
     found_method = False
 
     line_numbers = get_line_numbers(mnode)
@@ -241,7 +247,8 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
 
     last_node = None
 
-    for func, node in tree.filter(javalang.tree.MethodDeclaration):
+    # iterate method decls in tree
+    for path, node in tree.filter(javalang.tree.MethodDeclaration):
         if start_line <= node.position.line <= end_line:
             print(node.name)
             print(node.position)
@@ -249,10 +256,14 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
             found_method = True
             last_node = node
             break
+    
     if found_method:
         return last_node.name, start_line, end_line
+    
     last_node = None
-    for func, node in tree.filter(javalang.tree.ConstructorDeclaration):
+    
+    # iterate constructor decls in tree
+    for path, node in tree.filter(javalang.tree.ConstructorDeclaration):
         if start_line <= node.position.line <= end_line:
             print(node.name)
             print(node.position)
@@ -260,9 +271,11 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
             found_method = True
             last_node = node
             break
+   
     if found_method:
         return last_node.name, start_line, end_line
-    print("CANNOT FOUND FUNCTION LOCATION!!!!")
+    
+    print("CANNOT FIND FUNCTION LOCATION!")
     return "0no_function_found", 0, 0
 
 
