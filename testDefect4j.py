@@ -181,7 +181,7 @@ def getLineNode(root, block, add=True):
     return ans
 
 
-def get_root_tree(tokens, isex=False):
+def get_root_tree(tokens: List[Union[str, tuple]], isex=False):
     root = Node(tokens[0], 0)
     currnode = root
     idx = 1
@@ -227,7 +227,7 @@ def findSubtree(root, subroot):
     return None
 
 
-def generate_AST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[str]:
+def generate_AST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[Union[str, tuple]]:
     '''
     Convert the argument into a Recoder compatible AST.
     '''
