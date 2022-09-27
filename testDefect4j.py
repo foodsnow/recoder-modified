@@ -529,8 +529,8 @@ def setProb(root, subroot, prob):
 
 
 def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, mode, subroot, vardic, typedic, idxs, testmethods, idss, classname):
-    global aftercode
-    global precode
+    global after_code
+    global pre_code
     actionlist = solveone(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
         troot), model, subroot, vardic, typedic, idxs, idss, classname, mode)
     for x in actionlist:
@@ -542,9 +542,9 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
         root = convert_AST_as_list_to_tree(x.split())
         code = stringfyRoot(root, isIf, mode)
         # print(oldcode)
-        print(precode[-1000:])
+        print(pre_code[-1000:])
         print(code)
-        print(aftercode[:1000])
+        print(after_code[:1000])
         #copycode = deepcopy(liness)
         #copycode[lineid - 1] = code
         lnum = 0
@@ -557,7 +557,7 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
         if lnum == 1 and 'if' in code:
             if mode == 0:
                 continue
-            afterlines = aftercode.splitlines()
+            afterlines = after_code.splitlines()
             lnum = 0
             rnum = 0
             for p, x in enumerate(afterlines):
@@ -565,17 +565,17 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
                     lnum += 1
                 if '}' in x:
                     if lnum == 0:
-                        aftercode = "\n".join(
+                        after_code = "\n".join(
                             afterlines[:p] + ['}'] + afterlines[p:])
                         # print(aftercode)
                         # assert(0)
                         break
                     lnum -= 1
-            tmpcode = precode + "\n" + code + aftercode
+            tmpcode = pre_code + "\n" + code + after_code
             tokens = javalang.tokenizer.tokenize(tmpcode)
             parser = javalang.parser.Parser(tokens)
         else:
-            tmpcode = precode + "\n" + code + aftercode
+            tmpcode = pre_code + "\n" + code + after_code
             tokens = javalang.tokenizer.tokenize(tmpcode)
             parser = javalang.parser.Parser(tokens)
         try:
@@ -815,8 +815,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
                 # print(maxl, liness[maxl + 1])
 
-                precode = "\n".join(buggy_class_src_lines[0:min_line_number])
-                aftercode = "\n".join(buggy_class_src_lines[max_line_number + 1:])
+                pre_code = "\n".join(buggy_class_src_lines[0:min_line_number])
+                after_code = "\n".join(buggy_class_src_lines[max_line_number + 1:])
                 old_code = "\n".join(buggy_class_src_lines[min_line_number:max_line_number + 1])
 
                 troot, var_dict, type_dict = solve_long_tree(tree_root, sub_root)
@@ -826,7 +826,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 data.append({'bugid': user_given_bug_id, 'treeroot': tree_root, 'troot': troot, 'oldcode': old_code,
                              'filepath': buggy_class_java_path, 'subroot': sub_root, 'vardic': var_dict,
                              'typedic': type_dict, 'idss': bug_id, 'classname': buggy_class_name,
-                             'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, var_dict),
+                             'precode': pre_code, 'aftercode': after_code, 'tree': troot.printTreeWithVar(troot, var_dict),
                              'prob': troot.getTreeProb(troot), 'mode': 0, 'line': buggy_line_number, 'isa': False, 'fl_score': fl_score})
                 # patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
 
