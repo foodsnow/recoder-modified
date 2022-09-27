@@ -1187,14 +1187,20 @@ def extarctmode(root):
     return mode, root
 
 
-# data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
 def solve_one(data: List[Dict], model: Decoder) -> list:
-    # os.environ["CUDA_VISIBLE_DEVICES"]="2, 3"
-    # assert(len(data) <= 40)
+    '''
+    data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
+    '''
+
+    # os.environ["CUDA_VISIBLE_DEVICES"] = "2, 3"
+
     args.batch_size = 20
     dev_set = SumDataset(args, "test")
-    dev_set.preProcessOne(data)  # x = dev_set.preProcessOne(treestr, prob)
-    #dev_set.nl = [treestr.split()]
+    dev_set.preProcessOne(data)
+
+    # x = dev_set.preProcessOne(treestr, prob)
+    # dev_set.nl = [treestr.split()]
+
     indexs = 0
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
                                             shuffle=False, drop_last=False, num_workers=0)
