@@ -1,0 +1,554 @@
+stdout: StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventY, eventY);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member eventY_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((eventY != null)){
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ MemberReference member eventT_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventY, eventT);
+
+StatementExpression expression MethodInvocation qualifier eventY_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+eventY.stepAccepted(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventT_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, eventT);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member setInterpolatedTime_ter ^ ^ ^ ^ ^ 
+currentEvent.setInterpolatedTime(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member setSoftPreviousTime_ter ^ ^ ^ ^ ^ 
+currentEvent.setSoftPreviousTime(eventT, eventY);
+
+IfStatement condition MemberReference member needReset_ter ^ ^ ^ ^ ^ 
+if(needReset){
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member handleStep_ter ^ ^ ^ ^ ^ 
+currentEvent.handleStep(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member setSoftCurrentTime_ter ^ ^ ^ ^ ^ 
+currentEvent.setSoftCurrentTime(eventT, eventY);
+
+IfStatement condition MemberReference member isLastStep_ter ^ ^ ^ ^ ^ 
+if(isLastStep){
+
+StatementExpression expression MethodInvocation member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+clearStepHandlers();
+
+StatementExpression expression MethodInvocation member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+clearEventHandlers();
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventY, false);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted();
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member currentEvent_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, currentEvent);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventY, true);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member acceptStep_ter ^ ^ ^ ^ ^ 
+currentEvent.acceptStep(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member currentEvent_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(currentEvent, eventY);
+
+IfStatement condition MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+if(currentEvent.stepAccepted(eventT, eventY)){
+
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member computeDerivatives_ter ^ ^ ^ ^ ^ 
+currentEvent.computeDerivatives(eventT, eventY);
+
+StatementExpression expression Assignment expressionl MemberReference member currentEvent_ter ^ ^ ^ ^ value MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentEvent = currentEvent.stepAccepted(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member needReset_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, needReset);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member eventY_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((eventY == null)){
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member needReset_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(needReset, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member isLastStep_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, isLastStep);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member isLastStep_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(isLastStep, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, );
+
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member iterator_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, iterator);
+
+StatementExpression expression Assignment expressionl MemberReference member eventT_ter ^ ^ ^ ^ value MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+eventT = currentEvent.stepAccepted(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member stepHandlers_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, stepHandlers);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(, eventY);
+
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member iterator_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(iterator, eventY);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member stepHandlers_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(stepHandlers, eventY);
+
+StatementExpression expression MethodInvocation qualifier eventT_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+eventT.stepAccepted(eventT, eventY);
+
+StatementExpression expression MethodInvocation member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+clearStepHandlers();
+
+StatementExpression expression MethodInvocation member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+clearEventHandlers();
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+System.clearStepHandlers();
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+System.clearEventHandlers();
+
+                    for (final EventState remaining : occuringEvents) {if(0!=1)break;
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+interpolator.clearStepHandlers();
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+interpolator.clearEventHandlers();
+
+StatementExpression expression MethodInvocation qualifier loc5 ^ ^ member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+.clearStepHandlers();
+
+
+StatementExpression expression MethodInvocation qualifier loc5 ^ ^ member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+.clearEventHandlers();
+
+
+ReturnStatement expression MemberReference member eventT_ter ^ ^ ^ ^ ^ 
+if (true) { return eventT; }
+
+StatementExpression expression MethodInvocation qualifier handler_ter ^ ^ arguments MemberReference member interpolator_ter ^ ^ ^ MemberReference member isLastStep_ter ^ ^ ^ ^ member handleStep_ter ^ ^ ^ ^ ^ 
+handler.handleStep(interpolator, isLastStep);
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ arguments MemberReference member currentT_ter ^ ^ ^ ^ member setInterpolatedTime_ter ^ ^ ^ ^ ^ 
+interpolator.setInterpolatedTime(currentT);
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member eventT_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:eventT)
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member occuringEvents_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:occuringEvents)
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member currentT_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:currentT)
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member isLastStep_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:isLastStep)
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member y_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:y)
+
+StatementExpression expression MethodInvocation qualifier remaining_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+remaining.stepAccepted(eventT, eventY);
+
+IfStatement condition MemberReference member needReset_ter ^ ^ ^ ^ ^ 
+if(needReset){
+
+StatementExpression expression MethodInvocation qualifier occuringEvents_ter ^ ^ arguments MemberReference member currentEvent_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+occuringEvents.add(currentEvent);
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member yDot_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:yDot)
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member eventY_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:eventY)
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member y_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference qualifier y_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(eventY, 0, y, 0, y.length);
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member stepHandlers_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:stepHandlers)
+
+StatementExpression expression MethodInvocation arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member y_ter ^ ^ ^ MemberReference member yDot_ter ^ ^ ^ ^ member computeDerivatives_ter ^ ^ ^ ^ ^ 
+computeDerivatives(eventT, y, yDot);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member occuringEvents_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((occuringEvents != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member resetOccurred_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+resetOccurred = true;
+
+IfStatement condition MemberReference member isLastStep_ter ^ ^ ^ ^ ^ 
+if(isLastStep){
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, eventY);
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member remaining_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((remaining != null)){
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable This selectors MemberReference member occuringEvents_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:this.occuringEvents)
+
+IfStatement condition MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member interpolator_ter ^ ^ ^ ^ member evaluateStep_ter ^ ^ ^ ^ ^ 
+if(currentEvent.evaluateStep(interpolator)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member needReset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((needReset != null)){
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventT_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, eventT);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventY, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier eventY_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = eventY.reset(eventT, eventY);
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+final boolean needReset = currentEvent.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier eventT_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = eventT.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier loc5 ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = .reset(eventT, eventY);
+
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member currentEvent_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, currentEvent);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member currentT_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, currentT);
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ 
+currentEvent.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member yDot_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, yDot);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member eventY_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((eventY != null)){
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member previousT_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, previousT);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member currentEvent_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(currentEvent, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member currentT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(currentT, eventY);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+int needReset = currentEvent.reset(eventT, eventY);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] needReset = currentEvent.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member isLastStep_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, isLastStep);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member yDot_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(yDot, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member resetOccurred_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT, resetOccurred);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member previousT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(previousT, eventY);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member eventT_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((eventT != null)){
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+long needReset = currentEvent.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member isLastStep_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(isLastStep, eventY);
+
+ContinueStatement_ter ^ 
+continue;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member resetOccurred_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(resetOccurred, eventY);
+
+ReturnStatement expression MemberReference member eventT_ter ^ ^ ^ ^ ^ 
+if (true) { return eventT; }
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier handler_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = handler.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier interpolator_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = interpolator.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier needReset_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = needReset.reset(eventT, eventY);
+
+StatementExpression expression MethodInvocation member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+clearStepHandlers();
+
+StatementExpression expression MethodInvocation member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+clearEventHandlers();
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier iterator_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = iterator.reset(eventT, eventY);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+double[] needReset = currentEvent.reset(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier handler_ter ^ ^ arguments MemberReference member interpolator_ter ^ ^ ^ MemberReference member isLastStep_ter ^ ^ ^ ^ member handleStep_ter ^ ^ ^ ^ ^ 
+handler.handleStep(interpolator, isLastStep);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier remaining_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = remaining.reset(eventT, eventY);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventY);
+
+IfStatement condition MemberReference member needReset_ter ^ ^ ^ ^ ^ 
+if(needReset){
+
+StatementExpression expression MethodInvocation qualifier remaining_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+remaining.stepAccepted(eventT, eventY);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member y_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference qualifier y_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(eventY, 0, y, 0, y.length);
+
+IfStatement condition MemberReference member isLastStep_ter ^ ^ ^ ^ ^ 
+if(isLastStep){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventT);
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ arguments MemberReference member currentT_ter ^ ^ ^ ^ member setInterpolatedTime_ter ^ ^ ^ ^ ^ 
+interpolator.setInterpolatedTime(currentT);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name needReset_ter ^ ^ initializer MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ MemberReference member eventT_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean needReset = currentEvent.reset(eventY, eventT);
+
+StatementExpression expression MethodInvocation member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+clearStepHandlers();
+
+StatementExpression expression MethodInvocation member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+clearEventHandlers();
+
+BreakStatement_ter ^ 
+break;
+
+                    for (final EventState remaining : occuringEvents) {if(0!=1)break;
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+System.clearStepHandlers();
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+System.clearEventHandlers();
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member eventT_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:eventT)
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+interpolator.clearStepHandlers();
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+interpolator.clearEventHandlers();
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member eventY_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:eventY)
+
+StatementExpression expression MethodInvocation qualifier loc5 ^ ^ member clearStepHandlers_ter ^ ^ ^ ^ ^ 
+.clearStepHandlers();
+
+
+StatementExpression expression MethodInvocation qualifier loc5 ^ ^ member clearEventHandlers_ter ^ ^ ^ ^ ^ 
+.clearEventHandlers();
+
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member currentT_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:currentT)
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member eventT_ter ^ ^ ^ ^ ^ 
+if (true) { return eventT; }
+
+StatementExpression expression MethodInvocation qualifier handler_ter ^ ^ arguments MemberReference member interpolator_ter ^ ^ ^ MemberReference member isLastStep_ter ^ ^ ^ ^ member handleStep_ter ^ ^ ^ ^ ^ 
+handler.handleStep(interpolator, isLastStep);
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ arguments MemberReference member currentT_ter ^ ^ ^ ^ member setInterpolatedTime_ter ^ ^ ^ ^ ^ 
+interpolator.setInterpolatedTime(currentT);
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member interpolator_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:interpolator)
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member currentEvent_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:currentEvent)
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member yDot_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:yDot)
+
+StatementExpression expression MethodInvocation qualifier occuringEvents_ter ^ ^ arguments MemberReference member currentEvent_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+occuringEvents.add(currentEvent);
+
+StatementExpression expression MethodInvocation qualifier remaining_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+remaining.stepAccepted(eventT, eventY);
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member previousT_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:previousT)
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member remaining_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((remaining != null)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member isLastStep_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:isLastStep)
+
+IfStatement condition MemberReference member needReset_ter ^ ^ ^ ^ ^ 
+if(needReset){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member occuringEvents_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((occuringEvents != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member y_ter ^ ^ ^ MemberReference member yDot_ter ^ ^ ^ ^ member computeDerivatives_ter ^ ^ ^ ^ ^ 
+computeDerivatives(eventT, y, yDot);
+
+StatementExpression expression Assignment expressionl MemberReference member resetOccurred_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+resetOccurred = true;
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member eventY_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member y_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference qualifier y_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(eventY, 0, y, 0, y.length);
+
+IfStatement condition MemberReference member isLastStep_ter ^ ^ ^ ^ ^ 
+if(isLastStep){
+
+StatementExpression expression MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member eventT_ter ^ ^ ^ MemberReference member eventY_ter ^ ^ ^ ^ member stepAccepted_ter ^ ^ ^ ^ ^ 
+currentEvent.stepAccepted(eventT, eventY);
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member needReset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((needReset != null)){
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EventState_ter ^ ^ ^ ^ declarators VariableDeclarator name remaining_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member occuringEvents_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final EventState remaining = ;
+:occuringEvents)
+
+IfStatement condition MethodInvocation qualifier currentEvent_ter ^ ^ arguments MemberReference member interpolator_ter ^ ^ ^ ^ member evaluateStep_ter ^ ^ ^ ^ ^ 
+if(currentEvent.evaluateStep(interpolator)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member currentT_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((currentT != null)){
+
+stderr: 

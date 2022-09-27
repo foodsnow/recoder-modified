@@ -1,0 +1,164 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseAndRecordTypeNode_ter ^ ^ ^ ^ ^ 
+return parseAndRecordTypeNode(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseAndRecordParamTypeNode_ter ^ ^ ^ ^ ^ 
+return parseAndRecordParamTypeNode(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeExpressionAnnotation_ter ^ ^ ^ ^ ^ 
+return parseTypeExpressionAnnotation(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseParamTypeExpressionAnnotation_ter ^ ^ ^ ^ ^ 
+return parseParamTypeExpressionAnnotation(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeNameAnnotation_ter ^ ^ ^ ^ ^ 
+return parseTypeNameAnnotation(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTopLevelTypeExpression_ter ^ ^ ^ ^ ^ 
+return parseTopLevelTypeExpression(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeExpressionList_ter ^ ^ ^ ^ ^ 
+return parseTypeExpressionList(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeExpression_ter ^ ^ ^ ^ ^ 
+return parseTypeExpression(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseContextTypeExpression_ter ^ ^ ^ ^ ^ 
+return parseContextTypeExpression(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseBasicTypeExpression_ter ^ ^ ^ ^ ^ 
+return parseBasicTypeExpression(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseFunctionType_ter ^ ^ ^ ^ ^ 
+return parseFunctionType(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseParametersType_ter ^ ^ ^ ^ ^ 
+return parseParametersType(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseResultType_ter ^ ^ ^ ^ ^ 
+return parseResultType(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseUnionType_ter ^ ^ ^ ^ ^ 
+return parseUnionType(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseArrayType_ter ^ ^ ^ ^ ^ 
+return parseArrayType(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseRecordType_ter ^ ^ ^ ^ ^ 
+return parseRecordType(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseFieldTypeList_ter ^ ^ ^ ^ ^ 
+return parseFieldTypeList(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseFieldType_ter ^ ^ ^ ^ ^ 
+return parseFieldType(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseFieldName_ter ^ ^ ^ ^ ^ 
+return parseFieldName(token);
+StatementExpression expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+skipEOLs();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token, true);
+ReturnStatement expression MemberReference member token_ter ^ ^ ^ ^ ^ 
+return token;
+ReturnStatement expression Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Node)parseTypeName(token);
+ReturnStatement expression MethodInvocation member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName();
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token, null);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((token == null)){
+return null;}
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(token);
+ReturnStatement expression Cast type ReferenceType name JsDocToken_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (JsDocToken)parseTypeName(token);
+ReturnStatement expression MethodInvocation qualifier token_ter ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return token.parseTypeName();
+ReturnStatement expression MethodInvocation arguments MemberReference member NO_UNREAD_TOKEN_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(NO_UNREAD_TOKEN, token);
+ReturnStatement expression MethodInvocation arguments MemberReference member unreadToken_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(unreadToken, token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token, token);
+ReturnStatement expression MemberReference member token_ter ^ ^ ^ ^ ^ 
+if (true) { return token; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token != null)){
+
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token, "null");
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member restoreLookAhead_ter ^ ^ ^ ^ ^ 
+return restoreLookAhead(token);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ This_ter ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token, this);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return max(token);
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member skipEOLs_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = skipEOLs();
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(parseTypeName(token));
+StatementExpression expression SuperMethodInvocation member parseContextTypeExpression_ter ^ ^ ^ ^ ^ 
+super.parseContextTypeExpression();
+
+ReturnStatement expression MethodInvocation qualifier token_ter ^ ^ arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return token.parseTypeName(token);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == null)){
+
+ReturnStatement expression MemberReference member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName;
+ReturnStatement expression This selectors MemberReference member token_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.token;
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token, 0);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return put(token);
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member parse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(!parse()){
+return null;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(!hasParsedFileOverviewDocInfo()){
+return null;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(!hasParsedJSDocInfo()){
+return null;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member lookAheadForType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(!lookAheadForType()){
+return null;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member lookAheadForAnnotation_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(!lookAheadForAnnotation()){
+return null;}
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return e(token);
+IfStatement condition MethodInvocation member parse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(parse()){
+return null;}
+IfStatement condition MethodInvocation member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(hasParsedFileOverviewDocInfo()){
+return null;}
+IfStatement condition MethodInvocation member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(hasParsedJSDocInfo()){
+return null;}
+IfStatement condition MethodInvocation member lookAheadForType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(lookAheadForType()){
+return null;}
+IfStatement condition MethodInvocation member lookAheadForAnnotation_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(lookAheadForAnnotation()){
+return null;}
+stderr: 

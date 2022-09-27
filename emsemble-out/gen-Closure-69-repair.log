@@ -1,0 +1,122 @@
+stdout: StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, functionType);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member isExtern_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(isExtern, n, functionType);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member isExtern_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, isExtern, functionType);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member isExtern_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, isExtern);
+
+StatementExpression expression MethodInvocation arguments MemberReference member CONSTRUCTOR_NOT_CALLABLE_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(CONSTRUCTOR_NOT_CALLABLE, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(n, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member ensureTyped_ter ^ ^ ^ ^ ^ 
+ensureTyped(t, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t);
+
+StatementExpression expression MethodInvocation member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList();
+
+StatementExpression expression MethodInvocation arguments MemberReference member functionType_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(functionType, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member CONSTRUCTOR_NOT_CALLABLE_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, CONSTRUCTOR_NOT_CALLABLE, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, functionType, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member CONSTRUCTOR_NOT_CALLABLE_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, CONSTRUCTOR_NOT_CALLABLE);
+
+StatementExpression expression MethodInvocation arguments MemberReference member childType_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(childType, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, functionType, n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member functionJSDocInfo_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(functionJSDocInfo, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member CONSTRUCTOR_NOT_CALLABLE_ter ^ ^ ^ MethodInvocation qualifier childType_ter ^ ^ member toString_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, CONSTRUCTOR_NOT_CALLABLE, childType.toString());
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member childType_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, childType, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(child, n, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member ensureTyped_ter ^ ^ ^ ^ ^ 
+ensureTyped(t, n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member NOT_CALLABLE_ter ^ ^ ^ MethodInvocation qualifier childType_ter ^ ^ member toString_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, NOT_CALLABLE, childType.toString());
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member functionJSDocInfo_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, functionJSDocInfo, functionType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member childType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, childType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member par2 ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(, n, functionType);
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member functionType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((functionType != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member functionJSDocInfo_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, functionJSDocInfo);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, child, functionType);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ MemberReference member isExtern_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, functionType, isExtern);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, , functionType);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member CONSTRUCTOR_NOT_CALLABLE_ter ^ ^ ^ MethodInvocation qualifier childType_ter ^ ^ member toString_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, CONSTRUCTOR_NOT_CALLABLE, childType.toString());
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member visitParameterList_ter ^ ^ ^ ^ ^ 
+visitParameterList(t, n, child);
+
+StatementExpression expression Assignment expressionl MemberReference member isExtern_ter ^ ^ ^ ^ value MethodInvocation qualifier functionSource_ter ^ ^ member isExtern_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isExtern = functionSource.isExtern();
+
+stderr: 

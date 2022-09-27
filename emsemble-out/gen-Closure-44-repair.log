@@ -1,0 +1,227 @@
+stdout: condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && isWordChar(getLastChar()))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) || (c == "null"))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) && isWordChar(getLastChar()))){
+
+IfStatement condition MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ 
+if(isWordChar(getLastChar())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) && isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) && (c == "null")) && isWordChar(getLastChar()))){
+
+IfStatement condition MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ 
+if(isWordChar(c)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member length_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && isWordChar(length()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) || isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member continueProcessing_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && continueProcessing())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && shouldPreserveExtraBlocks())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && ((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && (c == "null")) && isWordChar(getLastChar()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getName_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && isWordChar(getName()))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) || isWordChar(getLastChar()))){
+
+StatementExpression expression MethodInvocation member appendBlockStart_ter ^ ^ ^ ^ ^ 
+appendBlockStart();
+
+StatementExpression expression MethodInvocation member appendBlockEnd_ter ^ ^ ^ ^ ^ 
+appendBlockEnd();
+
+StatementExpression expression MethodInvocation member startNewLine_ter ^ ^ ^ ^ ^ 
+startNewLine();
+
+StatementExpression expression MethodInvocation member maybeLineBreak_ter ^ ^ ^ ^ ^ 
+maybeLineBreak();
+
+StatementExpression expression MethodInvocation member maybeCutLine_ter ^ ^ ^ ^ ^ 
+maybeCutLine();
+
+StatementExpression expression MethodInvocation member endLine_ter ^ ^ ^ ^ ^ 
+endLine();
+
+StatementExpression expression MethodInvocation member notePreferredLineBreak_ter ^ ^ ^ ^ ^ 
+notePreferredLineBreak();
+
+StatementExpression expression MethodInvocation member beginBlock_ter ^ ^ ^ ^ ^ 
+beginBlock();
+
+StatementExpression expression MethodInvocation member endBlock_ter ^ ^ ^ ^ ^ 
+endBlock();
+
+StatementExpression expression MethodInvocation member listSeparator_ter ^ ^ ^ ^ ^ 
+listSeparator();
+
+StatementExpression expression MethodInvocation member endStatement_ter ^ ^ ^ ^ ^ 
+endStatement();
+
+StatementExpression expression MethodInvocation member maybeEndStatement_ter ^ ^ ^ ^ ^ 
+maybeEndStatement();
+
+StatementExpression expression MethodInvocation member endFunction_ter ^ ^ ^ ^ ^ 
+endFunction();
+
+StatementExpression expression MethodInvocation member beginCaseBody_ter ^ ^ ^ ^ ^ 
+beginCaseBody();
+
+StatementExpression expression MethodInvocation member endCaseBody_ter ^ ^ ^ ^ ^ 
+endCaseBody();
+
+StatementExpression expression MethodInvocation member endFile_ter ^ ^ ^ ^ ^ 
+endFile();
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c >= "null")) && isWordChar(getLastChar()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(getLastChar()) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) || isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) && ((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c <= "null")) && isWordChar(getLastChar()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) || isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) && (c == "null")) && isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c != "null")) && isWordChar(getLastChar()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation member continueProcessing_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((continueProcessing() && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((shouldPreserveExtraBlocks() && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c == "null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member continueProcessing_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && continueProcessing())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && shouldPreserveExtraBlocks())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) || isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && isWordChar(getLastChar())) && isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && (isWordChar(c) || isWordChar(getLastChar())))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && (c == "null")) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member continueProcessing_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && continueProcessing(c))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && shouldPreserveExtraBlocks(c))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) && (c == "null"))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(getLastChar()) && isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && (isWordChar(c) || (c == "null")))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && (((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) || isWordChar(getLastChar())))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c > "null")) && isWordChar(getLastChar()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) && (isWordChar(c) || (c == "null"))) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) || (c == "null"))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && (isWordChar(c) && isWordChar(getLastChar())))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && (((isWordChar(c) || (c == "null")) && isWordChar(getLastChar())) && isWordChar(getLastChar())))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && (isWordChar(c) || (c == "null")))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) && isWordChar(getLastChar())) && isWordChar(getLastChar())) && isWordChar(getLastChar()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member maybeEndStatement_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && maybeEndStatement(getLastChar()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member continueProcessing_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((continueProcessing(c) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((shouldPreserveExtraBlocks(c) && isWordChar(getLastChar()))){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ 
+isWordChar(getLastChar());
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation member continueProcessing_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) && continueProcessing())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isWordChar(c) && shouldPreserveExtraBlocks())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && isWordChar(c))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member maybeEndStatement_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) || (c == "null")) && isWordChar(maybeEndStatement()))){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier newcode_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((newcode.length() == 0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isWordChar(c) && isWordChar(c)) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member continueProcessing_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && continueProcessing()) && isWordChar(getLastChar()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member isWordChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((isWordChar(c) || (c == "null")) && shouldPreserveExtraBlocks()) && isWordChar(getLastChar()))){
+
+stderr: 

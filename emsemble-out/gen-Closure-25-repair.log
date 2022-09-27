@@ -1,0 +1,1774 @@
+stdout: LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getLastSibling_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getLastSibling();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getParent();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.detachFromParent();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member removeFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.removeFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member removeChildren_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.removeChildren();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member cloneNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.cloneNode();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member cloneTree_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.cloneTree();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier scope_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = scope.getFirstChild();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member scope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((scope != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = constructor.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.isUnknownType();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member traverseNew_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.traverseNew();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.restrictByNotNullOrUndefined();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return scope;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier constructorType_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = constructorType.getFirstChild();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.hasChildren()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isFromExterns()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.hasOneChild()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.hasMoreThanOneChild()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isQualifiedName()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isUnscopedQualifiedName()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isVarArgs()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isOptionalArg()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isSyntheticBlock()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.wasEmptyNode()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isOnlyModifiesThisCall()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isNoSideEffectsCall()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isLocalResultCall()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isQuotedString()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isAdd()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isAnd()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isArrayLit()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isAssign()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isAssignAdd()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isBlock()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isBreak()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isCall()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isCase()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isCatch()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isComma()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isContinue()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isDebugger()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isDec()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isDefaultCase()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isDelProp()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isDo()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isEmpty()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isExprResult()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isFalse()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isFor()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isFunction()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isGetterDef()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isGetElem()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isGetProp()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isHook()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isIf()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isIn()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isInc()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isInstanceOf()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isLabel()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isLabelName()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isName()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isNE()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isNew()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isNot()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isNull()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isNumber()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isObjectLit()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isOr()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isParamList()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isRegExp()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isReturn()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isScript()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isSetterDef()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isString()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isStringKey()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isSwitch()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isThis()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isThrow()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isTrue()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isTry()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isTypeOf()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isVar()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isVoid()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isWhile()){
+return scope;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(n.isWith()){
+return scope;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.isConstructor();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member scope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if((scope == null)){
+return scope;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return null;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member scope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((scope == null)){
+return null;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node constructor = n.getFirstChild();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member scope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((scope == null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member toMaybeFunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.toMaybeFunctionType();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n == null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getJSType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getJSType();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getInstanceType();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getFirstChild() != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier par2 ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = .getFirstChild();
+
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.hasChildren()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isFromExterns()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.hasOneChild()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.hasMoreThanOneChild()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isQualifiedName()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isUnscopedQualifiedName()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isVarArgs()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isOptionalArg()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isSyntheticBlock()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.wasEmptyNode()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isOnlyModifiesThisCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isNoSideEffectsCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isLocalResultCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isQuotedString()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isAdd()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isAnd()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isArrayLit()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isAssign()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isAssignAdd()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isBlock()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isBreak()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isCase()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isCatch()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isComma()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isContinue()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isDebugger()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isDec()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isDefaultCase()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isDelProp()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isDo()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isEmpty()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isExprResult()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isFalse()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isFor()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isFunction()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isGetterDef()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isGetElem()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isGetProp()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isHook()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isIf()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isIn()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isInc()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isInstanceOf()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isLabel()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isLabelName()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isName()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isNE()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isNew()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isNot()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isNull()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isNumber()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isObjectLit()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isOr()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isParamList()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isRegExp()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isReturn()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isScript()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isSetterDef()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isString()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isStringKey()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isSwitch()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isThis()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isThrow()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isTrue()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isTry()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isTypeOf()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isVar()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isVoid()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isWhile()){
+return null;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(n.isWith()){
+return null;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier type_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = type.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = ;
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if (true) { return scope; }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member ensurePropertyDeclared_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = ensurePropertyDeclared(n);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node constructor = (Node)n.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier ct_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = ct.getFirstChild();
+
+StatementExpression expression SuperMethodInvocation member traverseNew_ter ^ ^ ^ ^ ^ 
+super.traverseNew();
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.hasChildren()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isFromExterns()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.hasOneChild()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.hasMoreThanOneChild()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isQualifiedName()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isUnscopedQualifiedName()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isVarArgs()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isOptionalArg()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isSyntheticBlock()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.wasEmptyNode()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isOnlyModifiesThisCall()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isNoSideEffectsCall()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isLocalResultCall()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isQuotedString()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isAdd()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isAnd()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isArrayLit()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isAssign()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isAssignAdd()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isBlock()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isBreak()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isCall()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isCase()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isCatch()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isComma()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isContinue()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isDebugger()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isDec()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isDefaultCase()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isDelProp()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isDo()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isEmpty()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isExprResult()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isFalse()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isFor()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isFunction()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isGetterDef()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isGetElem()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isGetProp()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isHook()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isIf()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isIn()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isInc()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isInstanceOf()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isLabel()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isLabelName()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isName()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isNE()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isNew()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isNot()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isNull()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isNumber()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isObjectLit()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isOr()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isParamList()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isRegExp()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isReturn()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isScript()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isSetterDef()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isString()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isStringKey()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isSwitch()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isThis()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isThrow()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isTrue()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isTry()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isTypeOf()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isVar()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isVoid()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isWhile()){
+return scope;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if(!n.isWith()){
+return scope;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name constructor_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node constructor = n.getFirstChild(false);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = n.detachChildren();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = n.setQuotedString();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member flowThrough_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = flowThrough(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseReturn_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseReturn(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseCatch_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseCatch(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseAssign_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseAssign(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseName(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseArrayLiteral_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseArrayLiteral(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseObjectLiteral_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseObjectLiteral(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseAdd(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseHook_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseHook(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseCall_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseCall(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseNew_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseNew(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseChildren(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseGetElem_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseGetElem(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseGetProp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseGetProp(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member dereferencePointer_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = dereferencePointer(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, scope);
+
+StatementExpression expression MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member functionScope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, functionScope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member bottomScope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, bottomScope);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constructor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constructor != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member constructor_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructor, constructor);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MemberReference member scope_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = scope;
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, );
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member scope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((scope != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation qualifier scope_ter ^ ^ arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = scope.traverse(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, );
+
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MemberReference member n_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = n;
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member constructor_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, constructor);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation qualifier scope_ter ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = scope.traverse();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, false);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(UNKNOWN_TYPE);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, n);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, false);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, true);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member functionScope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, functionScope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member bottomScope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, bottomScope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, true);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(traverse(constructor, scope));
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member ensurePropertyDeclared_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = ensurePropertyDeclared(n);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member constructorType_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, constructorType);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = n.traverse(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructor, n);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, n);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member par2 ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(, scope);
+
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member setJSType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = setJSType(constructor, scope);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member constructor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constructor == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = getNativeType(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getPrototype_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getPrototype();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getTypeOfThis_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getTypeOfThis();
+
+StatementExpression expression MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ ^ 
+ct.getInstanceType();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.isConstructor();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getName();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.isUnknownType();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member traverseNew_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.traverseNew();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getNext();
+
+StatementExpression expression Assignment expressionl MemberReference member ct_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ct = ct.getInstanceType();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member toMaybeFunctionType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.toMaybeFunctionType();
+
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.restrictByNotNullOrUndefined();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member clearCachedValues_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.clearCachedValues();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference member type_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = type;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getJSType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getJSType();
+
+StatementExpression expression Assignment expressionl MemberReference member ct_ter ^ ^ ^ ^ value Cast type ReferenceType name FunctionType_ter ^ ^ ^ ^ expression MemberReference member constructorType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+ct = (FunctionType)constructorType;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = getNativeType(UNKNOWN_TYPE);
+
+StatementExpression expression Assignment expressionl MemberReference member ct_ter ^ ^ ^ ^ value Cast type ReferenceType name FunctionType_ter ^ ^ ^ ^ expression MemberReference member constructorType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+ct = (FunctionType)constructorType;
+
+StatementExpression expression Assignment expressionl MemberReference member constructorType_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+constructorType = constructorType.restrictByNotNullOrUndefined();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier constructor_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = constructor.getInstanceType();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = getNativeType(UNKNOWN_TYPE);
+
+StatementExpression expression Assignment expressionl MemberReference member constructorType_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+constructorType = constructorType.restrictByNotNullOrUndefined();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = constructorType.getInstanceType();
+
+IfStatement condition MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ ^ 
+if(ct.getInstanceType()){
+
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier scope_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = scope.getInstanceType();
+
+StatementExpression expression MethodInvocation qualifier ct_ter ^ ^ member clearCachedValues_ter ^ ^ ^ ^ ^ 
+ct.clearCachedValues();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType(type);
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = constructorType.restrictByNotNullOrUndefined();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ arguments MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType(ct.getInstanceType());
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = n.getInstanceType();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = constructorType.isUnknownType();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ arguments MemberReference member scope_ter ^ ^ ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType(scope);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier type_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = type.getInstanceType();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ct_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ct != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType(UNKNOWN_TYPE);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = null;
+
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if (true) { return scope; }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ct_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier ct_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((ct != null) && ct.isConstructor())){
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType(null);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType("null");
+
+StatementExpression expression Assignment expressionl MemberReference member constructor_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+constructor = ct.getInstanceType();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference member scope_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = scope;
+
+StatementExpression expression Assignment expressionl MemberReference member constructorType_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+constructorType = ct.getInstanceType();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member setJSType_ter ^ ^ ^ ^ ^ 
+n.setJSType(type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = ct.getInstanceType();
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getFirstChild()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getLastChild()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getLastSibling_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getLastSibling()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getParent()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.detachFromParent()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member removeFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.removeFirstChild()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member removeChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.removeChildren()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member cloneNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.cloneNode()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member cloneTree_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.cloneTree()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg == null);arg = arg.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = ct.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier ct_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = ct.getNext();(arg != null);arg = arg.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(type != null);arg = arg.getNext()) {
+ReturnStatement expression MemberReference member scope_ter ^ ^ ^ ^ ^ 
+if (true) { return scope; }
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = constructorType.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.isUnknownType()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier type_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = type.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constructorType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(constructorType != null);arg = arg.getNext()) {
+StatementExpression expression MethodInvocation qualifier type_ter ^ ^ member clearResolved_ter ^ ^ ^ ^ ^ 
+type.clearResolved();
+
+StatementExpression expression Assignment expressionl MemberReference member constructorType_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+constructorType = constructorType.restrictByNotNullOrUndefined();
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ct_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(ct != null);arg = arg.getNext()) {
+StatementExpression expression MethodInvocation qualifier constructorType_ter ^ ^ member clearResolved_ter ^ ^ ^ ^ ^ 
+constructorType.clearResolved();
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getName()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getInstanceType()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructorType_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructorType.getNext();(arg != null);arg = arg.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = constructor.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.isConstructor()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier type_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = type.getNext();(arg != null);arg = arg.getNext()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier scope_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = scope.getNext()) {
+control ForControl_ter ^ ^ 
+(;;)
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member setJSType_ter ^ ^ ^ ^ ^ 
+n.setJSType(type);
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier scope_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = scope.getNext();(arg != null);arg = arg.getNext()) {
+StatementExpression expression Assignment expressionl MemberReference member ct_ter ^ ^ ^ ^ value Cast type ReferenceType name FunctionType_ter ^ ^ ^ ^ expression MemberReference member constructorType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+ct = (FunctionType)constructorType;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = getNativeType(UNKNOWN_TYPE);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType();
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.restrictByNotNullOrUndefined()) {
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = n.getNext()) {
+control n_ter ^ ^ 
+1 n_ter
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+((arg != null))
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = n.getNext();(arg != null);arg = arg.getNext()) {
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, scope);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((arg != null)){
+
+BreakStatement_ter ^ 
+break;
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(UNKNOWN_TYPE != null);arg = arg.getNext()) {
+control scope_ter ^ ^ 
+1 scope_ter
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();;arg = arg.getNext()) {
+    for (Node arg = constructor.getNext(); arg != null; arg = arg.getNext()) {if(0!=1)break;
+StatementExpression expression MethodInvocation qualifier constructor_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+constructor.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier constructor_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+constructor.setQuotedString();
+
+control ForControl condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+for((arg != null);arg = arg.getNext()) {
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member toMaybeFunctionType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.toMaybeFunctionType()) {
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructor, scope);
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc5 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();( != null);arg = arg.getNext()) {
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constructor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(constructor != null);arg = arg.getNext()) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type != null)){
+
+control ForControl init VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arg_ter ^ ^ initializer MethodInvocation qualifier constructor_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ update Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation qualifier arg_ter ^ ^ member getJSType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+for(Node arg = constructor.getNext();(arg != null);arg = arg.getJSType()) {
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member flowThrough_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = flowThrough(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseReturn_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseReturn(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseCatch_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseCatch(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseAssign_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseAssign(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseName(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseArrayLiteral_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseArrayLiteral(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseObjectLiteral_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseObjectLiteral(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseAdd(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseHook_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseHook(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseCall_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseCall(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseNew_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseNew(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseChildren(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseGetElem_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseGetElem(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverseGetProp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverseGetProp(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member dereferencePointer_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = dereferencePointer(arg, scope);
+
+StatementExpression expression MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member arg_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, arg);
+
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member constructorType_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, constructorType);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructorType_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructorType, type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructorType_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructorType, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member setJSType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = setJSType(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructorType_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructorType);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member ct_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, ct);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member ct_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(ct, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructorType_ter ^ ^ ^ MemberReference member constructorType_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructorType, constructorType);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(UNKNOWN_TYPE);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse();
+
+StatementExpression expression Assignment expressionl MemberReference member ct_ter ^ ^ ^ ^ value Cast type ReferenceType name FunctionType_ter ^ ^ ^ ^ expression MemberReference member constructorType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+ct = (FunctionType)constructorType;
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, type);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = getNativeType(UNKNOWN_TYPE);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member constructorType_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, constructorType);
+
+StatementExpression expression Assignment expressionl MemberReference member constructorType_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+constructorType = constructorType.restrictByNotNullOrUndefined();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member ct_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(ct);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation qualifier ct_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ct.getInstanceType();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member arg_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, arg);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member ct_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, ct);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member functionScope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, functionScope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member bottomScope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, bottomScope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructorType_ter ^ ^ ^ MemberReference member ct_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructorType, ct);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n);
+
+StatementExpression expression Assignment expressionl MemberReference member arg_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg = traverse(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member constructorType_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, constructorType);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member constructor_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, constructor);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member scope_ter ^ ^ ^ MemberReference member ct_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(scope, ct);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, n);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = traverse(arg, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructor, scope);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructor_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructor, type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member constructor_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(type, constructor);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member ct_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(ct, type);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member constructorType_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(constructorType, n);
+
+StatementExpression expression Assignment expressionl MemberReference member ct_ter ^ ^ ^ ^ value Cast type ReferenceType name FunctionType_ter ^ ^ ^ ^ expression MemberReference member constructorType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+ct = (FunctionType)constructorType;
+
+StatementExpression expression Assignment expressionl MemberReference member constructorType_ter ^ ^ ^ ^ value MethodInvocation qualifier constructorType_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+constructorType = constructorType.restrictByNotNullOrUndefined();
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member ct_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(n, ct);
+
+StatementExpression expression Assignment expressionl MemberReference member scope_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+scope = traverse(arg, UNKNOWN_TYPE);
+
+stderr: 

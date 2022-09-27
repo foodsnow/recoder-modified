@@ -1,0 +1,376 @@
+stdout: LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member parent_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(parent);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member jsDoc_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(jsDoc);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final JSDocInfo jsDoc = getFunctionJsDocInfo(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, true);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member parent_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, parent);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo();
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(t);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignLhsChild_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(assignLhsChild);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = equals(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(lhs);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, null);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ 
+getFunctionJsDocInfo(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier jsDoc_ter ^ ^ member hasThisType_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(jsDoc.hasThisType());
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member shouldTraverse_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = shouldTraverse(n);
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+StatementExpression expression Assignment expressionl MemberReference member assignLhsChild_ter ^ ^ ^ ^ value MemberReference member lhs_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignLhsChild = lhs;
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member par3 ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo();
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = contains(n);
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasChildren()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasOneChild()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasMoreThanOneChild()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasSideEffects()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isQualifiedName()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isUnscopedQualifiedName()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isVarArgs()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isOptionalArg()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isSyntheticBlock()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.wasEmptyNode()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isNoSideEffectsCall()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isQuotedString()){
+return false;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier jsDoc_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(jsDoc.isConstructor());
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer Cast type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+JSDocInfo jsDoc = (JSDocInfo)getFunctionJsDocInfo(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+JSDocInfo<?> jsDoc = getFunctionJsDocInfo(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg n
+arg n
+JSDocInfo<n> jsDoc = getFunctionJsDocInfo(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = n.getFunctionJsDocInfo();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return false;}
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member par3 ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, );
+
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = isConstructor(n);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(t, n);
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+n.setIsNoSideEffectsCall();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(rhs);
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier jsDoc_ter ^ ^ member hasThisType_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, jsDoc.hasThisType());
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, "null");
+
+LocalVariableDeclaration type ReferenceType name JSDocInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name jsDoc_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member getFunctionJsDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JSDocInfo jsDoc = getFunctionJsDocInfo(n, 0);
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression MemberReference member parent_ter ^ ^ ^ ^ ^ 
+return parent;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression MemberReference member assignLhsChild_ter ^ ^ ^ ^ ^ 
+return assignLhsChild;
+ReturnStatement expression MethodInvocation member shouldReportThis_ter ^ ^ ^ ^ ^ 
+return shouldReportThis();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((parent == null)){
+return true;}
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+return n;
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MemberReference member parent_ter ^ ^ ^ ^ ^ 
+if (true) { return parent; }
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+
+ReturnStatement expression MethodInvocation qualifier parent_ter ^ ^ member shouldReportThis_ter ^ ^ ^ ^ ^ 
+return parent.shouldReportThis();
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+parent.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+parent.setIsNoSideEffectsCall();
+
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+parent.setQuotedString();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((parent != null)){
+return true;}
+ReturnStatement expression This selectors MemberReference member assignLhsChild_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.assignLhsChild;
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((parent == null)){
+return false;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.hasChildren()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.hasOneChild()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.hasMoreThanOneChild()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.hasSideEffects()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.isQualifiedName()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.isUnscopedQualifiedName()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.isVarArgs()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.isOptionalArg()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.isSyntheticBlock()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.wasEmptyNode()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.isNoSideEffectsCall()){
+return true;}
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent.isQuotedString()){
+return true;}
+IfStatement condition MemberReference member parent_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(parent){
+return true;}
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression MethodInvocation qualifier par2 ^ ^ member shouldReportThis_ter ^ ^ ^ ^ ^ 
+return .shouldReportThis();
+
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member shouldReportThis_ter ^ ^ ^ ^ ^ 
+return n.shouldReportThis();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member assignLhsChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((assignLhsChild == null)){
+return true;}
+ReturnStatement expression MemberReference member assignLhsChild_ter ^ ^ ^ ^ ^ 
+if (true) { return assignLhsChild; }
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+n.setIsNoSideEffectsCall();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value true_ter ^ ^ ^ ^ ^ 
+return -true;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((parent != null)){
+return false;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return true;}
+stderr: 

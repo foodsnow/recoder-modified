@@ -1,0 +1,73 @@
+stdout: 
+
+condition MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ 
+if(val.length("null")){
+condition MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ 
+if(val.startsWith("null")){
+condition MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ 
+if(val.getName("null")){
+BreakStatement_ter ^ 
+break;
+
+
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(val.startsWith("null")){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(!val.startsWith("null")){
+
+condition MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ 
+if(val.get("null")){
+condition MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ 
+if(val.toString("null")){
+condition MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member createNumber_ter ^ ^ ^ ^ 
+if(val.createNumber("null")){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if((val.startsWith("null") && val.startsWith("null"))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((val.length() == 0) && val.startsWith("null"))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if((val.startsWith("null") || val.startsWith("null"))){
+
+ContinueStatement_ter ^ 
+continue;
+
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((val.length() == 0) || val.startsWith("null"))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((val.startsWith("null") && 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((val.length() == 0)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((val.startsWith("null") || 0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((val.startsWith("null") && (val.length() == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((val.startsWith("null") || (val.length() == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((val.startsWith("null") || val.startsWith("null")) && val.startsWith("null"))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((val.length() == 0)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier val_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if((val.startsWith("null") || val.startsWith("null"))){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+stderr: 

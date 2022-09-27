@@ -1,0 +1,185 @@
+stdout: BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >>> rvalInt);
+
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator <=_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt <= rvalInt);
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >= rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >> rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator <<_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt << rvalInt);
+
+StatementExpression expression MethodInvocation arguments MemberReference member SHIFT_AMOUNT_OUT_OF_BOUNDS_ter ^ ^ ^ MemberReference member right_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(SHIFT_AMOUNT_OUT_OF_BOUNDS, right);
+
+StatementExpression expression MethodInvocation arguments MemberReference member FRACTIONAL_BITWISE_OPERAND_ter ^ ^ ^ MemberReference member right_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(FRACTIONAL_BITWISE_OPERAND, right);
+
+StatementExpression expression MethodInvocation arguments MemberReference member BITWISE_OPERAND_OUT_OF_RANGE_ter ^ ^ ^ MemberReference member left_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(BITWISE_OPERAND_OUT_OF_RANGE, left);
+
+StatementExpression expression MethodInvocation arguments MemberReference member FRACTIONAL_BITWISE_OPERAND_ter ^ ^ ^ MemberReference member left_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(FRACTIONAL_BITWISE_OPERAND, left);
+
+StatementExpression expression MethodInvocation member reportCodeChange_ter ^ ^ ^ ^ ^ 
+reportCodeChange();
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member rvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (rvalInt >>> rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt - rvalInt);
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member newNumber_ter ^ ^ ^ ^ member replaceChild_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+n.getParent().replaceChild(n, newNumber);
+
+StatementExpression expression MethodInvocation arguments MemberReference member SHIFT_AMOUNT_OUT_OF_BOUNDS_ter ^ ^ ^ MemberReference member right_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(SHIFT_AMOUNT_OUT_OF_BOUNDS, right);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >> rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member lvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >>> lvalInt);
+
+StatementExpression expression MethodInvocation arguments MemberReference member BITWISE_OPERAND_OUT_OF_RANGE_ter ^ ^ ^ MemberReference member left_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(BITWISE_OPERAND_OUT_OF_RANGE, left);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt > rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+result = (lvalInt >> rvalInt);
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member FRACTIONAL_BITWISE_OPERAND_ter ^ ^ ^ MemberReference member left_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(FRACTIONAL_BITWISE_OPERAND, left);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator <<_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+result = (lvalInt << rvalInt);
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member SHIFT_AMOUNT_OUT_OF_BOUNDS_ter ^ ^ ^ MemberReference member right_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+error(SHIFT_AMOUNT_OUT_OF_BOUNDS, right);
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator <_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt < rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator <<_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt << rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rval_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >>> rval);
+
+StatementExpression expression MethodInvocation arguments MemberReference member FRACTIONAL_BITWISE_OPERAND_ter ^ ^ ^ MemberReference member right_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+error(FRACTIONAL_BITWISE_OPERAND, right);
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member FRACTIONAL_BITWISE_OPERAND_ter ^ ^ ^ MemberReference member right_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+error(FRACTIONAL_BITWISE_OPERAND, right);
+
+StatementExpression expression MethodInvocation arguments MemberReference member FRACTIONAL_BITWISE_OPERAND_ter ^ ^ ^ MemberReference member left_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+error(FRACTIONAL_BITWISE_OPERAND, left);
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member rval_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (rval >>> rvalInt);
+
+StatementExpression expression MethodInvocation arguments MemberReference member BITWISE_OPERAND_OUT_OF_RANGE_ter ^ ^ ^ MemberReference member left_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+error(BITWISE_OPERAND_OUT_OF_RANGE, left);
+break;
+
+StatementExpression expression MethodInvocation member reportCodeChange_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+reportCodeChange();
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member lval_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >>> lval);
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member newNumber_ter ^ ^ ^ ^ member replaceChild_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+n.getParent().replaceChild(n, newNumber);
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lval_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lval >>> rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator %_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt % rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+result += (lvalInt >>> rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member left_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >>> left);
+
+StatementExpression expression Assignment expressionl MemberReference member rvalInt_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rvalInt = (lvalInt >>> rvalInt);
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member newNumber_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (newNumber >>> rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator &_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt & rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member newNumber_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt >>> newNumber);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MemberReference member result_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = result;
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member newNumber_ter ^ ^ ^ ^ member replaceChild_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+n.getParent().replaceChild(n, newNumber);
+
+StatementExpression expression MethodInvocation member reportCodeChange_ter ^ ^ ^ ^ ^ 
+reportCodeChange();
+
+StatementExpression expression Assignment expressionl MemberReference member lvalInt_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lvalInt = (lvalInt >>> rvalInt);
+
+IfStatement condition BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lvalInt >>> rvalInt)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (lvalInt / rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member left_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = (left >>> rvalInt);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value BinaryOperation operator >>_ter ^ ^ operandl MemberReference member lvalInt_ter ^ ^ ^ ^ operandr MemberReference member rvalInt_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+result = (lvalInt >> rvalInt);
+break;
+break;
+
+stderr: 

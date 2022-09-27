@@ -1,0 +1,515 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || Double.isInfinite(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isInfinite_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isInfinite = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = Double.isNaN(real);
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member Complex_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || Double.Complex(imaginary));
+
+StatementExpression expression MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+Double.isNaN(real);
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = Double.isNaN(imaginary);
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value MemberReference member real_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = real;
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value MemberReference member isNaN_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = isNaN;
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) && Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member imaginary_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+imaginary = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+Double.isNaN(imaginary);
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(imaginary) || Double.isNaN(imaginary));
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Double.isInfinite(real) || Double.isInfinite(imaginary))){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+isNaN += (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || Double.isNaN(real));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || (Double.isNaN(real) || Double.isNaN(imaginary)));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((imaginary != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value MemberReference member imaginary_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = imaginary;
+
+StatementExpression expression Assignment expressionl MemberReference member real_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+real = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = Double.isNaN(real, imaginary);
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier real_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || real.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = ((Double.isNaN(real) || Double.isNaN(imaginary)) || Double.isNaN(imaginary));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN != null)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier isNaN_ter ^ ^ member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN.isNaN = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference qualifier isInfinite_ter ^ ^ member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isInfinite.isNaN = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN().isNaN = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isInfinite().isNaN = (Double.isNaN(real) || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN() || Double.isNaN(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isInfinite(real) || Double.isInfinite(imaginary));
+
+StatementExpression expression SuperMethodInvocation member Complex_ter ^ ^ ^ ^ ^ 
+super.Complex();
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || Double.isNaN());
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || Double.add(imaginary));
+
+StatementExpression expression Assignment expressionl MemberReference member isNaN_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member real_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isNaN = (Double.isNaN(real) || Double.debug(imaginary));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((divisor.getReal() == 0.0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((divisor.getImaginary() == 0.0)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.abs() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getReal() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getArgument_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getArgument() == 0.0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) || (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.abs() == 0.0) && (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getImaginary() == 0.0) && (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getArgument_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getArgument() == 0.0) && (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() >= 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() <= 0.0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0))){
+
+IfStatement condition MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ ^ 
+if(divisor.getReal()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier c_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((c.getReal() == 0.0) && (divisor.getImaginary() == 0.0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0)) && (divisor.getImaginary() == 0.0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && ((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0)))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && divisor.isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && divisor.isInfinite())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0)) && divisor.isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0)) && divisor.isInfinite())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.isInfinite() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() > 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((FastMath.getReal() == 0.0) && (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier par1 ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (.getImaginary() == 0.0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0)) && !divisor.isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && (divisor.getImaginary() == 0.0)) && !divisor.isInfinite())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() - 0.0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && ((divisor.getReal() == 0.0) || (divisor.getImaginary() == 0.0)))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && !divisor.isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && !divisor.isInfinite())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.isInfinite() == 0.0) && (divisor.getImaginary() == 0.0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && divisor.isNaN()) && (divisor.getImaginary() == 0.0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && divisor.isInfinite()) && (divisor.getImaginary() == 0.0))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() < 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier d_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((d.getReal() == 0.0) && (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >>_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() >> 0.0))){
+IfStatement condition MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ ^ 
+if(divisor.getImaginary()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((divisor.getReal() == 0.0) && (divisor.getReal() == 0.0)) && (divisor.getImaginary() == 0.0))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() != 0.0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getReal() == 0.0))){
+
+StatementExpression expression MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member divisor_ter ^ ^ ^ ^ member checkNotNull_ter ^ ^ ^ ^ ^ 
+MathUtils.checkNotNull(divisor);
+
+IfStatement condition MethodInvocation qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(divisor.isNaN()){
+
+IfStatement condition MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(divisor.isInfinite()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >>>_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getImaginary() >>> 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member divide_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.divide() == 0.0))){
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+if (true) { return NaN; }
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier MathUtils_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((MathUtils.getReal() == 0.0) && (divisor.getImaginary() == 0.0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getReal() == 0.0) && (divisor.getName() == 0.0))){
+IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
+if(isNaN()){
+
+IfStatement condition MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ 
+if(isInfinite()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MemberReference qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || divisor.isNaN)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((divisor.isInfinite() && !isInfinite())){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((divisor.getReal() == 0.0) && divisor.isNaN()) && (divisor.getImaginary() == 0.0)) && (divisor.getImaginary() == 0.0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((divisor.getReal() == 0.0) && divisor.isInfinite()) && (divisor.getImaginary() == 0.0)) && (divisor.getImaginary() == 0.0))){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member d_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+if((FastMath.abs(c) < FastMath.abs(d))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((divisor.getName() == 0.0) && (divisor.getImaginary() == 0.0))){
+ReturnStatement expression MemberReference member I_ter ^ ^ ^ ^ ^ 
+return I;
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+return NaN;
+ReturnStatement expression MemberReference member INF_ter ^ ^ ^ ^ ^ 
+return INF;
+ReturnStatement expression MemberReference member ONE_ter ^ ^ ^ ^ ^ 
+return ONE;
+ReturnStatement expression MemberReference member ZERO_ter ^ ^ ^ ^ ^ 
+return ZERO;
+StatementExpression expression MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member divisor_ter ^ ^ ^ ^ member checkNotNull_ter ^ ^ ^ ^ ^ 
+MathUtils.checkNotNull(divisor);
+
+ReturnStatement expression MemberReference member d_ter ^ ^ ^ ^ ^ 
+return d;
+ReturnStatement expression MemberReference member isNaN_ter ^ ^ ^ ^ ^ 
+return isNaN;
+ReturnStatement expression MemberReference member imaginary_ter ^ ^ ^ ^ ^ 
+return imaginary;
+ReturnStatement expression MemberReference member c_ter ^ ^ ^ ^ ^ 
+return c;
+ReturnStatement expression MemberReference member real_ter ^ ^ ^ ^ ^ 
+return real;
+
+ReturnStatement expression MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ ^ 
+return divisor.getReal();
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation qualifier divisor_ter ^ ^ member getImaginary_ter ^ ^ ^ ^ ^ 
+return divisor.getImaginary();
+ReturnStatement expression MemberReference qualifier divisor_ter ^ ^ member I_ter ^ ^ ^ ^ ^ 
+return divisor.I;
+ReturnStatement expression MemberReference qualifier divisor_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return divisor.NaN;
+ReturnStatement expression MemberReference qualifier divisor_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ 
+return divisor.INF;
+ReturnStatement expression MemberReference qualifier divisor_ter ^ ^ member ONE_ter ^ ^ ^ ^ ^ 
+return divisor.ONE;
+ReturnStatement expression MemberReference qualifier divisor_ter ^ ^ member ZERO_ter ^ ^ ^ ^ ^ 
+return divisor.ZERO;
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member imaginary_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member real_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+return createComplex((((real * q) + imaginary) / denominator), (((imaginary * q) - real) / denominator));
+ReturnStatement expression MethodInvocation qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+return divisor.isInfinite();
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member real_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+return createComplex((((imaginary * q) + real) / denominator), ((imaginary - (real * q)) / denominator));
+ReturnStatement expression MemberReference member ZERO_ter ^ ^ ^ ^ ^ 
+if (true) { return ZERO; }
+
+ReturnStatement expression MemberReference qualifier I_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return I.NaN;
+ReturnStatement expression MemberReference qualifier NaN_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return NaN.NaN;
+ReturnStatement expression MemberReference qualifier INF_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return INF.NaN;
+ReturnStatement expression MemberReference qualifier ONE_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return ONE.NaN;
+ReturnStatement expression MemberReference qualifier ZERO_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return ZERO.NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return conjugate().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return negate().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return acos().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return asin().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return atan().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return cos().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return cosh().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return exp().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return log().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sin().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sinh().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sqrt().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sqrt1z().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return tan().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return tanh().NaN;
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+if (true) { return NaN; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member divisor_ter ^ ^ ^ ^ member checkNotNull_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member divisor_ter ^ ^ ^ ^ member checkNotNull_ter ^ ^ ^ ^ ^ 
+MathUtils.checkNotNull(divisor);
+MathUtils.checkNotNull(divisor);
+
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression This selectors MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.NaN;
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier divisor_ter ^ ^ member getReal_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (divisor.getReal() == 0.0);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member NaN_ter ^ ^ ^ ^ operandr MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+return (NaN + NaN);
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member real_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+if (true) { return createComplex((((imaginary * q) + real) / denominator), ((imaginary - (real * q)) / denominator)); }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member imaginary_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member real_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+if (true) { return createComplex((((real * q) + imaginary) / denominator), (((imaginary * q) - real) / denominator)); }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member I_ter ^ ^ ^ ^ ^ 
+return I;
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+return NaN;
+ReturnStatement expression MemberReference member INF_ter ^ ^ ^ ^ ^ 
+return INF;
+ReturnStatement expression MemberReference member ONE_ter ^ ^ ^ ^ ^ 
+return ONE;
+ReturnStatement expression MemberReference member ZERO_ter ^ ^ ^ ^ ^ 
+return ZERO;
+ReturnStatement expression MemberReference member divisor_ter ^ ^ ^ ^ ^ 
+return divisor;
+ReturnStatement expression MemberReference member isNaN_ter ^ ^ ^ ^ ^ 
+return isNaN;
+ReturnStatement expression MemberReference member imaginary_ter ^ ^ ^ ^ ^ 
+return imaginary;
+ReturnStatement expression MemberReference member real_ter ^ ^ ^ ^ ^ 
+return real;
+ReturnStatement expression MemberReference qualifier I_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return I.NaN;
+ReturnStatement expression MemberReference qualifier NaN_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return NaN.NaN;
+ReturnStatement expression MemberReference qualifier INF_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return INF.NaN;
+ReturnStatement expression MemberReference qualifier ONE_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return ONE.NaN;
+ReturnStatement expression MemberReference qualifier ZERO_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return ZERO.NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return conjugate().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return negate().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return acos().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return asin().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return atan().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return cos().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return cosh().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return exp().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return log().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sin().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sinh().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sqrt().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sqrt1z().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return tan().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return tanh().NaN;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression TernaryExpression condition MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ if_true MemberReference member ZERO_ter ^ ^ ^ ^ if_false MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+return (!isInfinite())?ZERO:NaN;
+ReturnStatement expression Cast type ReferenceType name Complex_ter ^ ^ ^ ^ expression MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Complex)NaN;
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member divisor_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member divisor_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+return createComplex((real / divisor), (imaginary / divisor));
+ReturnStatement expression MemberReference qualifier divisor_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return divisor.NaN;
+
+ReturnStatement expression This selectors MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.NaN;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member NaN_ter ^ ^ ^ ^ operandr MemberReference member divisor_ter ^ ^ ^ ^ ^ ^ ^ 
+return (NaN + divisor);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member NaN_ter ^ ^ ^ ^ operandr Literal value 0d_ter ^ ^ ^ ^ ^ ^ ^ 
+return (NaN + 0d);
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+if (true) { return NaN; }
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression Cast type ReferenceType name Complex_ter ^ ^ ^ ^ expression MemberReference member divisor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Complex)divisor;
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return -NaN;
+ReturnStatement expression MemberReference qualifier Double_ter ^ ^ member I_ter ^ ^ ^ ^ ^ 
+return Double.I;
+ReturnStatement expression MemberReference qualifier Double_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return Double.NaN;
+ReturnStatement expression MemberReference qualifier Double_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ 
+return Double.INF;
+ReturnStatement expression MemberReference qualifier Double_ter ^ ^ member ONE_ter ^ ^ ^ ^ ^ 
+return Double.ONE;
+ReturnStatement expression MemberReference qualifier Double_ter ^ ^ member ZERO_ter ^ ^ ^ ^ ^ 
+return Double.ZERO;
+ReturnStatement expression MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member divisor_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+return Double.isNaN(divisor);
+ReturnStatement expression MemberReference member divisor_ter ^ ^ ^ ^ ^ 
+if (true) { return divisor; }
+
+ReturnStatement expression MemberReference prefix_operators !_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return !NaN;
+ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+return !isInfinite();
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression TernaryExpression condition MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ if_true MemberReference member ZERO_ter ^ ^ ^ ^ if_false MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (!isInfinite())?ZERO:NaN; }
+
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member divisor_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member divisor_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+if (true) { return createComplex((real / divisor), (imaginary / divisor)); }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member NaN_ter ^ ^ ^ ^ member divide_ter ^ ^ ^ ^ ^ 
+return divide(NaN);
+ReturnStatement expression MethodInvocation arguments MemberReference member NaN_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+return isInfinite(NaN);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member NaN_ter ^ ^ ^ ^ operandr MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+return (NaN + NaN);
+ReturnStatement expression ClassCreator type ReferenceType name Complex_ter ^ ^ ^ ^ arguments MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new Complex(NaN);
+ReturnStatement expression MethodInvocation qualifier Double_ter ^ ^ arguments MemberReference member NaN_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+return Double.isInfinite(NaN);
+stderr: 

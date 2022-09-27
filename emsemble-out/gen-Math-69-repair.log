@@ -1,0 +1,180 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 0_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (0 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 0_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (0 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ 
+tDistribution.cumulativeProbability(t);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = out[i].[j];
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier i_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - i.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (1 - tDistribution.cumulativeProbability(t));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - Math.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+i[i].[j] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - t.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (1 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value MemberReference member out_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = out;
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member getCorrelationPValues_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - tDistribution.getCorrelationPValues(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value Literal value 0d_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = 0d;
+
+
+StatementExpression expression Assignment expressionl MemberReference member t_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+t = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+out[i].[j] += (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 0d_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (0d * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier r_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - r.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member j_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+j[i].[j] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference member nObs_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nObs = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = tDistribution.cumulativeProbability(t);
+
+
+StatementExpression expression Assignment expressionl MemberReference member r_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+r = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member setDegreesOfFreedom_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = tDistribution.setDegreesOfFreedom(t);
+
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ 
+if((1 - tDistribution.cumulativeProbability(t))){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier correlationMatrix_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - correlationMatrix.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference member i_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+i = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (-1 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier j_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - j.cumulativeProbability(t)));
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i != null)){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (-1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[j] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member nObs_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nObs[i].[j] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (2 * (1 - tDistribution.cumulativeProbability(t))));
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((t != null)){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member r_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+r[i].[j] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - out.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference member j_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+j = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - tDistribution.debug(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - tDistribution.e(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * out[i].[j]);
+
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ ^ 
+if((r * r)){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member nVars_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nVars[i].[j] = (2 * (1 - tDistribution.cumulativeProbability(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - tDistribution.add(t)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 * (1 - tDistribution.cumulativeProbability(i)));
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tDistribution_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member cumulativeProbability_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = ((2 * (1 - tDistribution.cumulativeProbability(t))) * 1);
+
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((1 - (r * r))){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member out_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out[i].[j] = (2 + out[i].[j]);
+
+
+stderr: 

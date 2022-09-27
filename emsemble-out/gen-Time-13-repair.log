@@ -1,0 +1,294 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 1);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 2);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, false);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum);
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+Math.max(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, true);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MemberReference member sum_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = sum;
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, -1);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 4, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member valueLong_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(valueLong);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member appendField_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = appendField(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = max(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member SECONDS_MILLIS_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(SECONDS_MILLIS, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 0);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(locale, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member iFieldType_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(iFieldType, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member valueLong_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(valueLong, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ MemberReference member sum_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, sum);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, null);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += Math.max(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ MemberReference member period_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, period);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member period_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(period);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member iPrefix_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(iPrefix, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member calculatePrintedLength_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.calculatePrintedLength(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member iMinPrintedDigits_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(iMinPrintedDigits, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member SECONDS_OPTIONAL_MILLIS_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(SECONDS_OPTIONAL_MILLIS, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ MemberReference member locale_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, locale);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, "null");
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member iFieldType_ter ^ ^ ^ ^ operandr MemberReference member SECONDS_MILLIS_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iFieldType >= SECONDS_MILLIS)){
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member getFieldValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.getFieldValue(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments Literal value 4_ter ^ ^ ^ MemberReference member sum_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(4, sum);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ MemberReference member iFieldType_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, iFieldType);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ MemberReference member SECONDS_MILLIS_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, SECONDS_MILLIS);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier sum_ter ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = sum.max();
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ MemberReference member valueLong_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, valueLong);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ This_ter ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, this);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(value);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member appendField_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.appendField(sum);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 4, 0);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 4, 2);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 4, 1);
+
+StatementExpression expression Assignment expressionl MemberReference member valueLong_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+valueLong = Math.max(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.debug(sum, 4);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, value);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ Literal value 4_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = Math.max(sum, 1, 4);
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member dp_ter ^ ^ ^ Literal value 3_ter ^ ^ ^ ^ member appendPaddedInteger_ter ^ ^ ^ ^ ^ 
+FormatUtils.appendPaddedInteger(buf, dp, 3);
+
+StatementExpression expression MethodInvocation qualifier iSuffix_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member printTo_ter ^ ^ ^ ^ ^ 
+iSuffix.printTo(buf, value);
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member appendUnpaddedInteger_ter ^ ^ ^ ^ ^ 
+FormatUtils.appendUnpaddedInteger(buf, value);
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ MemberReference member minDigits_ter ^ ^ ^ ^ member appendPaddedInteger_ter ^ ^ ^ ^ ^ 
+FormatUtils.appendPaddedInteger(buf, value, minDigits);
+
+StatementExpression expression MethodInvocation qualifier iPrefix_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member printTo_ter ^ ^ ^ ^ ^ 
+iPrefix.printTo(buf, value);
+
+StatementExpression expression Assignment expressionl MemberReference member value_ter ^ ^ ^ ^ value Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator /_ter ^ ^ operandl MemberReference member valueLong_ter ^ ^ ^ ^ operandr MemberReference qualifier DateTimeConstants_ter ^ ^ member MILLIS_PER_SECOND_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+value = (int)(valueLong / DateTimeConstants.MILLIS_PER_SECOND);
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member valueLong_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(valueLong);
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+FormatUtils.append(".");
+
+StatementExpression expression Assignment expressionl MemberReference member value_ter ^ ^ ^ ^ value Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator /_ter ^ ^ operandl MemberReference member valueLong_ter ^ ^ ^ ^ operandr MemberReference qualifier DateTimeConstants_ter ^ ^ member MILLIS_PER_SECOND_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+value = (int)(valueLong / DateTimeConstants.MILLIS_PER_SECOND);
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member appendUnpaddedInteger_ter ^ ^ ^ ^ ^ 
+FormatUtils.appendUnpaddedInteger(buf, value);
+
+StatementExpression expression MethodInvocation qualifier iPrefix_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member printTo_ter ^ ^ ^ ^ ^ 
+iPrefix.printTo(buf, value);
+
+StatementExpression expression MethodInvocation qualifier iSuffix_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member printTo_ter ^ ^ ^ ^ ^ 
+iSuffix.printTo(buf, value);
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ MemberReference member minDigits_ter ^ ^ ^ ^ member appendPaddedInteger_ter ^ ^ ^ ^ ^ 
+FormatUtils.appendPaddedInteger(buf, value, minDigits);
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member dp_ter ^ ^ ^ Literal value 3_ter ^ ^ ^ ^ member appendPaddedInteger_ter ^ ^ ^ ^ ^ 
+FormatUtils.appendPaddedInteger(buf, dp, 3);
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(".");
+
+StatementExpression expression MethodInvocation qualifier value_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+value.append(".");
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member SECONDS_MILLIS_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(SECONDS_MILLIS);
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member iFieldType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(iFieldType);
+
+StatementExpression expression MethodInvocation qualifier valueLong_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+valueLong.append(".");
+
+StatementExpression expression MethodInvocation qualifier iSuffix_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+iSuffix.append(".");
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ MemberReference member dp_ter ^ ^ ^ Literal value 3_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(buf, dp, 3);
+
+StatementExpression expression MethodInvocation qualifier period_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+period.append(".");
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member dp_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((dp > 0)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member buf_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append(buf);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iFieldType_ter ^ ^ ^ ^ operandr MemberReference member SECONDS_MILLIS_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iFieldType == SECONDS_MILLIS)){
+
+StatementExpression expression MethodInvocation qualifier minDigits_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+minDigits.append(".");
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments This_ter ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(this);
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member buf_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(buf);
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iFieldType_ter ^ ^ ^ ^ operandr MemberReference member SECONDS_MILLIS_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member dp_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iFieldType == SECONDS_MILLIS) || (dp > 0))){
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(".", ".");
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member period_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(period);
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member appendUnpaddedInteger_ter ^ ^ ^ ^ ^ 
+buf.appendUnpaddedInteger(".");
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+StatementExpression expression MethodInvocation member clearPrefix_ter ^ ^ ^ ^ ^ 
+clearPrefix();
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member appendPaddedInteger_ter ^ ^ ^ ^ ^ 
+buf.appendPaddedInteger(".");
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+buf.debug(".");
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member value_ter ^ ^ ^ ^ value MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+value = buf.append(".");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iSuffix_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iSuffix != null)){
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+buf.add(".");
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+FormatUtils.clear();
+
+StatementExpression expression MethodInvocation qualifier FormatUtils_ter ^ ^ member clearPrefix_ter ^ ^ ^ ^ ^ 
+FormatUtils.clearPrefix();
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member iSuffix_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(iSuffix);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments MemberReference member iMinPrintedDigits_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(iMinPrintedDigits);
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+buf.max(".");
+
+StatementExpression expression MethodInvocation qualifier buf_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member iFieldType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+buf.append(".", iFieldType);
+
+stderr: 

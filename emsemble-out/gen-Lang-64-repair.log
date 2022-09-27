@@ -1,0 +1,163 @@
+stdout: ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (iValue - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member other_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (other - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) - other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+return (iValue - other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier iValue_ter ^ ^ member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (iValue.iValue - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getValue_ter ^ ^ ^ ^ member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (getValue().iValue - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (this.iValue - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((ValuedEnum)other - other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return ((ValuedEnum)other - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (iValue + (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member other_ter ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (other - iValue);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) + other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((ValuedEnum)other - iValue);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (iValue - iValue);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) - iValue);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member other_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (other + (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member other_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (other - (iValue - (ValuedEnum)other));
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+return (this.iValue - other);
+ReturnStatement expression BinaryOperation operator /_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (iValue / (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) - 0);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) + (ValuedEnum)other);
+ReturnStatement expression MemberReference member other_ter ^ ^ ^ ^ ^ 
+return other;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+return (iValue + other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (iValue - (iValue - (ValuedEnum)other));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return ((ValuedEnum)other + (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl This selectors MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (this.iValue + (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((ValuedEnum)other + other);
+ReturnStatement expression MemberReference member iValue_ter ^ ^ ^ ^ ^ 
+return iValue;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) + iValue);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member other_ter ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (other + iValue);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (this.other - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((ValuedEnum)other - 0);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) - this);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ ^ 
+return (iValue - this);
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (iValue * (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((iValue - (ValuedEnum)other) * other);
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member par1 ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ( - (ValuedEnum)other);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((ValuedEnum)other + iValue);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member iValue_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return Math.max(iValue);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (iValue - 0);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member other_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (other - 0);
+ReturnStatement expression BinaryOperation operator /_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ 
+return (iValue / other);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (this.iValue - iValue);
+ReturnStatement expression BinaryOperation operator %_ter ^ ^ operandl MemberReference member iValue_ter ^ ^ ^ ^ operandr Cast type ReferenceType name ValuedEnum_ter ^ ^ ^ ^ expression MemberReference member other_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (iValue % (ValuedEnum)other);
+stderr: 

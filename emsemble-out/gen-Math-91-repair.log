@@ -1,0 +1,92 @@
+stdout: LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments MemberReference member object_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(object);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+long nOd = doubleValue();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+final double nOd = doubleValue();
+
+StatementExpression expression MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ 
+doubleValue();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member object_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((object == null)){
+return 0;}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(0);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments This_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(this);
+
+StatementExpression expression Assignment expressionl MemberReference member nOd_ter ^ ^ ^ ^ value MethodInvocation member doubleValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nOd = doubleValue();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier object_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(object.doubleValue());
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member doubleValue_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(doubleValue());
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ ^ ^ ^ 
+double nOd = ;
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(false);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(1);
+
+StatementExpression expression SuperMethodInvocation member compareTo_ter ^ ^ ^ ^ ^ 
+super.compareTo();
+
+LocalVariableDeclaration type ReferenceType name Fraction_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Fraction nOd = doubleValue();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member object_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((object != null)){
+return 0;}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(true);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean nOd = doubleValue();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member object_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression TernaryExpression condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member nOd_ter ^ ^ ^ ^ operandr MemberReference member dOn_ter ^ ^ ^ ^ ^ ^ if_true Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ if_false TernaryExpression condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member nOd_ter ^ ^ ^ ^ operandr MemberReference member dOn_ter ^ ^ ^ ^ ^ ^ if_true Literal prefix_operators +_ter ^ ^ value 1_ter ^ ^ ^ ^ if_false Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((object == null)){
+return ((nOd < dOn))?-1:((nOd > dOn))?+1:0;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member object_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((object != null)){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MemberReference member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation arguments MemberReference member doubleValue_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = doubleValue(doubleValue);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member object_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((object == null)){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MethodInvocation member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = compareTo();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer Cast type BasicType name double_ter ^ ^ ^ ^ expression MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+double nOd = (double)doubleValue();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name nOd_ter ^ ^ initializer MemberReference member object_ter ^ ^ ^ ^ ^ ^ ^ 
+double nOd = object;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member object_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((object == null)){
+return null;}
+stderr: 

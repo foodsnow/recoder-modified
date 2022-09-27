@@ -1,0 +1,190 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member reduce_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.reduce(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member invert_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.invert(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member negate_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.negate(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member hashCode_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), hashCode);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member denominator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(denominator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member hashCode_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(hashCode), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member denominator_ter ^ ^ ^ MemberReference member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(denominator, numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member denominator_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(denominator, denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member denominator_ter ^ ^ ^ MemberReference member hashCode_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(denominator, hashCode);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(denominator);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+final int gcd = greatestCommonDivisor(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+long gcd = greatestCommonDivisor(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member denominator_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(denominator, Math.abs(numerator));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member numerator_ter ^ ^ ^ MemberReference member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(numerator, numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member numerator_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(numerator, denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member numerator_ter ^ ^ ^ MemberReference member hashCode_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(numerator, hashCode);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ 
+greatestCommonDivisor(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member hashCode_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(hashCode);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = Math.abs(numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member numerator_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(numerator, Math.abs(numerator));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member gcd_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(gcd), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier numerator_ter ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), numerator.numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier denominator_ter ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), denominator.numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier hashCode_ter ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), hashCode.numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getNumerator_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), getNumerator().numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getDenominator_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), getDenominator().numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getProperNumerator_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), getProperNumerator().numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getProperWhole_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), getProperWhole().numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier MethodInvocation member intValue_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), intValue().numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference qualifier MethodInvocation member hashCode_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), hashCode().numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), false);
+
+StatementExpression expression SuperMethodInvocation member reduce_ter ^ ^ ^ ^ ^ 
+super.reduce();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier numerator_ter ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator.numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier denominator_ter ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(denominator.numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier hashCode_ter ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(hashCode.numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getNumerator_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(getNumerator().numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getDenominator_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(getDenominator().numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getProperNumerator_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(getProperNumerator().numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getProperWhole_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(getProperWhole().numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier MethodInvocation member intValue_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(intValue().numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference qualifier MethodInvocation member hashCode_ter ^ ^ ^ ^ member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(hashCode().numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member hashCode_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(hashCode, denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member hashCode_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(hashCode, Math.abs(numerator));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member par0 ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), );
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member denominator_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(denominator, 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), true);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member getFraction_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = getFraction(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member par0 ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(), denominator);
+
+LocalVariableDeclaration type ReferenceType name Fraction_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Fraction gcd = greatestCommonDivisor(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member hashCode_ter ^ ^ ^ MemberReference member numerator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(hashCode, numerator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(Math.abs(numerator), 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int gcd = (int)greatestCommonDivisor(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MemberReference member denominator_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = greatestCommonDivisor(denominator, false);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member denominator_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((denominator != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member numerator_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ MemberReference member denominator_ter ^ ^ ^ ^ member reduce_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = reduce(Math.abs(numerator), denominator);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name gcd_ter ^ ^ initializer MemberReference member denominator_ter ^ ^ ^ ^ ^ ^ ^ 
+int gcd = denominator;
+
+stderr: 

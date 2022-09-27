@@ -1,0 +1,278 @@
+stdout: control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toParameterizedType_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toParameterizedType.entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier entry_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:entry.entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier fromTypeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:fromTypeVarAssigns.entrySet())
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member toTypeVarAssigns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((toTypeVarAssigns != null)){
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier type_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:type.entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier typeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:typeVarAssigns.entrySet())
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(final Map entry = ;
+:toTypeVarAssigns.entrySet())
+
+        for (Map.Entry<TypeVariable<?>, Type> entry : toTypeVarAssigns.entrySet()) {if(0!=1)break;
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toClass_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toClass.entrySet())
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg ?
+arg 
+arg TypeVariable<?>, Type
+arg ?
+arg 
+arg TypeVariable<?>, Type
+(final Entry<TypeVariable<?>, Type> entry = ;
+:toTypeVarAssigns.entrySet())
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member toTypeVarAssigns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((toTypeVarAssigns == null)){
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member toTypeVarAssigns_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns)
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member toTypeVarAssigns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((toTypeVarAssigns == null)){
+continue;
+}
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member getValue_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.getValue())
+
+control EnhancedForControl var VariableDeclaration modifiers final_ter ^ ^ type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+(final TypeVariable<?> entry = ;
+:toTypeVarAssigns.entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:entrySet())
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member toTypeVarAssigns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((toTypeVarAssigns == null)){
+return false;}
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier fromTypeArg_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:fromTypeArg.entrySet())
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member toTypeVarAssigns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((toTypeVarAssigns == null)){
+return true;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((toTypeVarAssigns.entrySet() != null)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ selectors MethodInvocation member entrySet_ter ^ ^ ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.entrySet().entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name TypeVariable_ter ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(TypeVariable entry = ;
+:toTypeVarAssigns.entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.entrySet("null"))
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member getRawType_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.getRawType())
+
+IfStatement condition MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(toTypeVarAssigns.isEmpty()){
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ arguments MemberReference member toParameterizedType_ter ^ ^ ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.entrySet(toParameterizedType))
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fromTypeArg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier toTypeArg_ter ^ ^ arguments MemberReference member fromTypeArg_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fromTypeArg != null) && !toTypeArg.equals(fromTypeArg))){
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member getKey_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.getKey())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ member getTypeArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.getTypeArguments())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeArg_ter ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeArg.entrySet())
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Map_ter ^ ^ sub_type ReferenceType name Entry_ter ^ ^ arguments TypeArgument type ReferenceType name TypeVariable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ TypeArgument type ReferenceType name Type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier toTypeVarAssigns_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member entrySet_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Map entry = ;
+:toTypeVarAssigns.entrySet(type))
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length >= 0) || toClass.equals(cls))){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cls.getTypeParameters().length > 0)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member typeVarAssigns_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals(typeVarAssigns))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length <= 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length == 0) || toClass.equals(cls))){
+IfStatement condition MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(toClass.equals(cls)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier typeVarAssigns_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || typeVarAssigns.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member typeVarAssigns_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().typeVarAssigns > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length != 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getName().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length < 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member toClass_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals(toClass))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier cls_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || cls.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member isPrimitive_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.isPrimitive().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member subtypeVarAssigns_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals(subtypeVarAssigns))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) && toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member primitiveToWrapper_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.primitiveToWrapper(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier ClassUtils_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || ClassUtils.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals())){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier toClass_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((toClass.getTypeParameters().length > 0) || toClass.equals(cls))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals(cls))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier subtypeVarAssigns_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || subtypeVarAssigns.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member toClass_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().toClass > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member getClosestParentType_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.getClosestParentType(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier typeVarAssigns_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((typeVarAssigns.getTypeParameters().length > 0) || toClass.equals(cls))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((cls.getTypeParameters().length > 0) || toClass.equals(cls)) || toClass.equals(cls))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member subtypeVarAssigns_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().subtypeVarAssigns > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier ClassUtils_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((ClassUtils.getTypeParameters().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getClosestParentType_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getClosestParentType().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.toString().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member cls_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().cls > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member getTypeArguments_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.getTypeArguments(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member isPrimitive_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.isPrimitive(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier par3 ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || .equals(cls))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member loc1 ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters(). > 0) || toClass.equals(cls))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member par3 ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals())){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier subtypeVarAssigns_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((subtypeVarAssigns.getTypeParameters().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 1) || toClass.equals(cls))){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cls.getTypeParameters().length > 0)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier loc1 ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || .equals(cls))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || !toClass.equals(cls))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member isAssignable_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.isAssignable(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member primitiveToWrapper_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.primitiveToWrapper().length > 0) || toClass.equals(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference qualifier typeVarAssigns_ter ^ ^ member length_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.equals(typeVarAssigns.length))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 0) || toClass.debug(cls))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier cls_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getTypeParameters_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier toClass_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if(((cls.getTypeParameters().length > 2) || toClass.equals(cls))){
+stderr: 

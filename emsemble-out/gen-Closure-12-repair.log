@@ -1,0 +1,78 @@
+stdout: ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression MemberReference member cfgNode_ter ^ ^ ^ ^ ^ 
+return cfgNode;
+ReturnStatement expression MethodInvocation member hasExceptionHandler_ter ^ ^ ^ ^ ^ 
+return hasExceptionHandler();
+ReturnStatement expression MethodInvocation qualifier cfgNode_ter ^ ^ member hasExceptionHandler_ter ^ ^ ^ ^ ^ 
+return cfgNode.hasExceptionHandler();
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+StatementExpression expression SuperMethodInvocation member hasExceptionHandler_ter ^ ^ ^ ^ ^ 
+super.hasExceptionHandler();
+
+ReturnStatement expression This selectors MemberReference member cfgNode_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.cfgNode;
+StatementExpression expression MethodInvocation qualifier cfgNode_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+cfgNode.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier cfgNode_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+cfgNode.setQuotedString();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member cfgNode_ter ^ ^ ^ ^ member hasExceptionHandler_ter ^ ^ ^ ^ ^ 
+return hasExceptionHandler(cfgNode);
+StatementExpression expression SuperMethodInvocation arguments MemberReference member cfgNode_ter ^ ^ ^ ^ member hasExceptionHandler_ter ^ ^ ^ ^ ^ 
+super.hasExceptionHandler(cfgNode);
+
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member cfgNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (cfgNode != null);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cfgNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((cfgNode == null)){
+return true;}
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+return ;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cfgNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((cfgNode == null)){
+return false;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member cfgNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cfgNode != null)){
+
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cfgNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cfgNode == null)){
+
+ReturnStatement expression This selectors MethodInvocation member hasExceptionHandler_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.hasExceptionHandler();
+StatementExpression expression Assignment expressionl MemberReference member cfgNode_ter ^ ^ ^ ^ value MemberReference member cfgNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+cfgNode = cfgNode;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member cfgNode_ter ^ ^ ^ ^ ^ 
+cfgNode++;
+
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value true_ter ^ ^ ^ ^ ^ 
+return -true;
+StatementExpression expression Assignment expressionl MemberReference member cfgNode_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+cfgNode = true;
+
+StatementExpression expression Assignment expressionl MemberReference member cfgNode_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+cfgNode = false;
+
+ReturnStatement expression Cast type BasicType name boolean_ter ^ ^ ^ ^ expression MemberReference member cfgNode_ter ^ ^ ^ ^ ^ ^ ^ 
+return (boolean)cfgNode;
+StatementExpression expression Assignment expressionl This selectors MemberReference member cfgNode_ter ^ ^ ^ ^ ^ ^ value MemberReference member cfgNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.cfgNode = cfgNode;
+
+ReturnStatement expression SuperMethodInvocation member hasExceptionHandler_ter ^ ^ ^ ^ ^ 
+return super.hasExceptionHandler();
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isForward_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(!isForward()){
+return true;}
+ReturnStatement expression This selectors MemberReference member cfgNode_ter ^ ^ ^ MethodInvocation member hasExceptionHandler_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.cfgNode.hasExceptionHandler();
+stderr: 

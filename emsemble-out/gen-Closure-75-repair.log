@@ -1,0 +1,257 @@
+stdout: LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final String s = trimJsWhiteSpace(rawJsString);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString, true);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ 
+trimJsWhiteSpace(rawJsString);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = valueOf(rawJsString);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rawJsString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0.0_ter ^ ^ ^ ^ ^ 
+if((rawJsString == 0)){
+return 0.0;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer Cast type ReferenceType name String_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+String s = (String)trimJsWhiteSpace(rawJsString);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rawJsString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier Double_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+if((rawJsString == 0)){
+return Double.NaN;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member JSC_PROPERTY_NAME_FN_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(JSC_PROPERTY_NAME_FN);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString, "null");
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier s_ter ^ ^ member length_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(s.length());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rawJsString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rawJsString != 0)){
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString, 1);
+
+ReturnStatement expression Literal value 0.0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0.0; }
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString, 0);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rawJsString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0.0_ter ^ ^ ^ ^ ^ 
+if((rawJsString != 0)){
+return 0.0;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(false);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ arguments MemberReference member rawJsString_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg rawJsString
+arg rawJsString
+String<rawJsString> s = trimJsWhiteSpace(rawJsString);
+
+StatementExpression expression Assignment expressionl MemberReference member rawJsString_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rawJsString = trimJsWhiteSpace(rawJsString);
+
+IfStatement condition MemberReference member rawJsString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0.0_ter ^ ^ ^ ^ ^ 
+if(rawJsString){
+return 0.0;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(true);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ MemberReference member rawJsString_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(rawJsString, rawJsString);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rawJsString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Double_ter ^ ^ arguments MethodInvocation qualifier Integer_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 2_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ Literal value 16_ter ^ ^ ^ ^ member parseInt_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ ^ 
+if((rawJsString == 0)){
+return Double.valueOf(Integer.parseInt(s.substring(2), 16));}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(0);
+
+StatementExpression expression SuperMethodInvocation member getStringNumberValue_ter ^ ^ ^ ^ ^ 
+super.getStringNumberValue();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member trimJsWhiteSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = trimJsWhiteSpace(1);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = charAt(rawJsString);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name s_ter ^ ^ initializer MethodInvocation arguments MemberReference member rawJsString_ter ^ ^ ^ ^ member getStringNumberValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String s = getStringNumberValue(rawJsString);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member TRUE_ter ^ ^ ^ ^ ^ 
+return TRUE;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MemberReference member c_ter ^ ^ ^ ^ ^ 
+return c;
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member SPACE_SEPARATOR_ter ^ ^ ^ ^ ^ 
+return TernaryValue.SPACE_SEPARATOR;
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference member c_ter ^ ^ ^ ^ ^ 
+if (true) { return c; }
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member TRUE_ter ^ ^ ^ ^ ^ 
+return TernaryValue.TRUE;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c + 0); }
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member FALSE_ter ^ ^ ^ ^ ^ 
+return TernaryValue.FALSE;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((c == null)){
+return null;}
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr MemberReference qualifier Character_ter ^ ^ member SPACE_SEPARATOR_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c + Character.SPACE_SEPARATOR); }
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+if (true) { return "null"; }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c + 1); }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c != null)){
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr MemberReference member c_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c + c); }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c == null)){
+
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Character_ter ^ ^ member SPACE_SEPARATOR_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (Character.getType(c) + Character.SPACE_SEPARATOR); }
+
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Character_ter ^ ^ member SPACE_SEPARATOR_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (Character.getType(c) == Character.SPACE_SEPARATOR); }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((c != null)){
+return null;}
+ReturnStatement expression MemberReference qualifier Character_ter ^ ^ member TRUE_ter ^ ^ ^ ^ ^ 
+return Character.TRUE;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c + "null"); }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c - 0); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member c_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (Character.getType(c) + c); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference qualifier TernaryValue_ter ^ ^ member TRUE_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (TernaryValue.TRUE + 0); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member c_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ("null" + c); }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member FALSE_ter ^ ^ ^ ^ ^ 
+return FALSE;
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c - 1); }
+
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member TRUE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (TRUE != null);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member TRUE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((TRUE == null)){
+return null;}
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((c == null)){
+return false;}
+stderr: 

@@ -1,0 +1,314 @@
+stdout: ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+return n;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasChildren()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasOneChild()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasMoreThanOneChild()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.hasSideEffects()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isQualifiedName()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isUnscopedQualifiedName()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isVarArgs()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isOptionalArg()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isSyntheticBlock()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.wasEmptyNode()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isOnlyModifiesThisCall()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isNoSideEffectsCall()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isLocalResultCall()){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isQuotedString()){
+return false;}
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return false;}
+ReturnStatement expression MethodInvocation member isBooleanResultHelper_ter ^ ^ ^ ^ ^ 
+return isBooleanResultHelper();
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((n != null)){
+return false;}
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ 
+return n.getType();
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.hasChildren()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.hasOneChild()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.hasMoreThanOneChild()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.hasSideEffects()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isQualifiedName()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isUnscopedQualifiedName()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isVarArgs()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isOptionalArg()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isSyntheticBlock()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.wasEmptyNode()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isOnlyModifiesThisCall()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isNoSideEffectsCall()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isLocalResultCall()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!n.isQuotedString()){
+return false;}
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member maybeAddFinally_ter ^ ^ ^ ^ ^ 
+return maybeAddFinally(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member redeclareVarsInsideBranch_ter ^ ^ ^ ^ ^ 
+return redeclareVarsInsideBranch(n);
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member isBooleanResultHelper_ter ^ ^ ^ ^ ^ 
+return n.isBooleanResultHelper();
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value MemberReference member n_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = n;
+
+ReturnStatement expression This_ter ^ ^ ^ 
+if (true) { return this; }
+
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ 
+if (true) { return n.getType(); }
+
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+
+
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = false;
+
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = true;
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return false;break;
+ }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n == null)){
+
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isSimpleOperator_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (isAssignmentOp(value) || isSimpleOperator(value)); }
+
+
+ReturnStatement expression MethodInvocation qualifier value_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+if (true) { return value.getParent(); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (("null" + value) + "null"); }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member newHasLocalResult_ter ^ ^ ^ ^ operandr MethodInvocation qualifier locals_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (newHasLocalResult(value) || locals.apply(value)); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ("null" + value); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier value_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ((("null" + value) + "null") + value.getParent()); }
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+if (true) { return "null"; }
+
+ReturnStatement expression MemberReference member value_ter ^ ^ ^ ^ ^ 
+if (true) { return value; }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true;return true; }
+
+
+ReturnStatement expression MemberReference member par0 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member callHasLocalResult_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isToStringMethodCall_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier locals_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ((callHasLocalResult(value) || isToStringMethodCall(value)) || locals.apply(value)); }
+
+ReturnStatement expression MethodInvocation qualifier locals_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ 
+if (true) { return locals.apply(value); }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return true;break;
+ }
+
+ReturnStatement expression MemberReference member loc0 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isSimpleOperator_ter ^ ^ ^ ^ ^ 
+if (true) { return isSimpleOperator(value); }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member callHasLocalResult_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isToStringMethodCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (callHasLocalResult(value) || isToStringMethodCall(value)); }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isSimpleOperator_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ((isAssignmentOp(value) || isSimpleOperator(value)) || isImmutableValue(value)); }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if (true) { return isImmutableValue(value); }
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier value_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member locals_ter ^ ^ ^ ^ member evaluatesToLocalValue_ter ^ ^ ^ ^ ^ 
+if (true) { return evaluatesToLocalValue(value.getFirstChild(), locals); }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier locals_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (isImmutableValue(value) || locals.apply(value)); }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+ReturnStatement expression ClassCreator type ReferenceType name IllegalStateException_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier value_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new IllegalStateException(((("null" + value) + "null") + value.getParent())); }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ContinueStatement_ter ^ 
+continue;
+
+BreakStatement_ter ^ 
+break;
+
+BreakStatement_ter ^ 
+ContinueStatement_ter ^ 
+break;
+continue;
+
+ReturnStatement_ter ^ 
+BreakStatement_ter ^ 
+if (true) { return;
+break;
+ }
+
+stderr: 

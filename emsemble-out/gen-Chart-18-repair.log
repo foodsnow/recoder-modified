@@ -1,0 +1,429 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index >= this.keys.size())){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index <= this.keys.size())){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this.keys.size())){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member values_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this.values.size())){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index > this.keys.size())){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member index_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this.index.size())){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation member rebuildIndex_ter ^ ^ ^ ^ ^ 
+rebuildIndex();
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference qualifier keys_ter ^ ^ member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this.keys.keys.size())){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference qualifier values_ter ^ ^ member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this.values.keys.size())){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index == this.keys.size())){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member values_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((values < this.keys.size())){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member keys_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((keys < this.keys.size())){
+IfStatement condition This prefix_operators !_ter ^ ^ selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.keys.size()){
+
+IfStatement condition This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.keys.size()){
+
+IfStatement condition This selectors MemberReference member index_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.index.size()){
+
+condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index - this.keys.size())){
+IfStatement condition MethodInvocation member size_ter ^ ^ ^ ^ ^ 
+if(size()){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((this.keys.size() < this.keys.size())){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member removeValue_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this.keys.removeValue())){
+IfStatement condition MemberReference member index_ter ^ ^ ^ ^ ^ 
+if(index){
+
+StatementExpression expression This selectors MemberReference member values_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ 
+this.values.size();
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member rebuildIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this.keys.rebuildIndex())){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member par1 ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < this..size())){
+
+IfStatement condition This selectors MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.index){
+
+StatementExpression expression This selectors MemberReference member index_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ 
+this.index.size();
+
+StatementExpression expression This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ 
+this.keys.size();
+
+IfStatement condition This qualifier index_ter ^ ^ selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.index..keys.size()){
+
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index != this.keys.size())){
+StatementExpression expression This selectors MethodInvocation member rebuildIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+this.rebuildIndex();
+
+StatementExpression expression This selectors MethodInvocation member clear_ter ^ ^ ^ ^ ^ ^ ^ 
+this.clear();
+
+IfStatement condition This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation arguments MemberReference member index_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.keys.remove(index)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.keys.size() != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member index_ter ^ ^ ^ ^ ^ ^ value MemberReference member index_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.index = index;
+
+StatementExpression expression This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member rebuildIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+this.keys.rebuildIndex();
+
+StatementExpression expression This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member clear_ter ^ ^ ^ ^ ^ ^ ^ 
+this.keys.clear();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member keys_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.keys != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member index_ter ^ ^ ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.index = 0;
+
+IfStatement condition This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation arguments This selectors MemberReference member keys_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.keys.remove(this.keys.size())){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((index >= 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((index <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((index > 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((index < 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((index == 0)){
+StatementExpression expression MethodInvocation member rebuildIndex_ter ^ ^ ^ ^ ^ 
+rebuildIndex();
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+IfStatement condition MemberReference member index_ter ^ ^ ^ ^ ^ 
+if(index){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((index != 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member key_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((key < 0)){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((index < (index < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index < index))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index <= index))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index < key))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc1 ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(( < 0)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index <= key))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index > index))){
+
+condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((index - 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index > key))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index >= index))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index >= key))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index <= 0))){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index > index)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((index == null)){
+return;
+}
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index > 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index >= 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || key)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index != null)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member loc1 ^ ^ ^ ^ ^ ^ ^ 
+if((index < )){
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) && (index > index))){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ 
+index++;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || index)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) && (index > key))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) && (index < index))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member index_ter ^ ^ ^ ^ ^ 
+if(!index){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) && (index <= 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) && (index < key))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((index != null)){
+return;
+}
+StatementExpression expression Assignment expressionl MemberReference member index_ter ^ ^ ^ ^ value MemberReference member index_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+index = index;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) && (index >= index))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) && (index >= key))){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index <= index)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index < index)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member key_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index < key)){
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member rowKeys_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.rowKeys.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member columnKeys_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.columnKeys.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.rows.iterator();
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member columnKey_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.columnKey.iterator();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Iterator iterator = this.rows.iterator();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+this.rows.iterator();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.rows.iterator() != null)){
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = ;
+
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = null;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((this.rows.iterator() == null)){
+return;
+}
+StatementExpression expression SuperMethodInvocation member removeColumn_ter ^ ^ ^ ^ ^ 
+super.removeColumn();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((this.rows == null)){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member columnKey_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((columnKey == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer MemberReference member rows_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = rows;
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference qualifier rowKeys_ter ^ ^ member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.rowKeys.rows.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference qualifier columnKeys_ter ^ ^ member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.columnKeys.rows.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference qualifier rows_ter ^ ^ member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.rows.rows.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference qualifier MethodInvocation member getRowKeys_ter ^ ^ ^ ^ member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.getRowKeys().rows.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference qualifier MethodInvocation member getColumnKeys_ter ^ ^ ^ ^ member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.getColumnKeys().rows.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.rows;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((rows == null)){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member columnKey_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((columnKey != null)){
+
+StatementExpression expression MethodInvocation member iterator_ter ^ ^ ^ ^ ^ 
+iterator();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((this.rows != null)){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.rows != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.rows.iterator() == null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ value MemberReference member columnKey_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.columnKey = columnKey;
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member removeColumn_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.rows.removeColumn();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows != null)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member columnKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!columnKey){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.rows == null)){
+
+StatementExpression expression This selectors MethodInvocation member clear_ter ^ ^ ^ ^ ^ ^ ^ 
+this.clear();
+
+StatementExpression expression This selectors MemberReference member columnKey_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+this.columnKey.iterator();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((this.rows.iterator() != null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = this.rows.iterator().iterator();
+
+IfStatement condition MemberReference member columnKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(columnKey){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer MethodInvocation qualifier columnKey_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = columnKey.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer MethodInvocation qualifier iterator_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = iterator.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iterator_ter ^ ^ initializer MethodInvocation member columnKey_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iterator = columnKey();
+
+stderr: 

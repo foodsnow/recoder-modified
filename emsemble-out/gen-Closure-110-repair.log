@@ -1,0 +1,567 @@
+stdout: LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.detachFromParent();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.isQualifiedName();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member isBleedingFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.isBleedingFunction();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member findAliases_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.findAliases();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member getInitialValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.getInitialValue();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.getJSDocInfo();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.getType();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = n.getNode();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = v.getNode();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier compiler_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = compiler.getNode();
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member recordAlias_ter ^ ^ ^ ^ ^ 
+recordAlias(v);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier scopedAliasNames_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = scopedAliasNames.getNode();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = getNode();
+
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value MethodInvocation qualifier v_ter ^ ^ member getNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = v.getNode();
+
+StatementExpression expression MethodInvocation qualifier scopedAliasNames_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+scopedAliasNames.add(name);
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member ensureLibraryInjected_ter ^ ^ ^ ^ ^ 
+compiler.ensureLibraryInjected("null");
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ 
+v.getNode();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node n = v.getNode();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier v_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node n = (Node)v.getNode();
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier newDecl_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member setDebugInformation_ter ^ ^ ^ ^ ^ 
+NodeUtil.setDebugInformation(newDecl.getFirstChild().getFirstChild(), n, name);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, varNode);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String n = v.getNode();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && (n.getFirstChild() != null))){
+continue;
+}
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v != null)){
+continue;
+}
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member GOOG_SCOPE_NON_ALIAS_LOCAL_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, GOOG_SCOPE_NON_ALIAS_LOCAL, n.getString());
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier compiler_ter ^ ^ member getCodingConvention_ter ^ ^ ^ MemberReference member globalName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member newQualifiedNameNode_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ member getNameNode_ter ^ ^ ^ ^ ^ 
+v.getNameNode().addChildToFront(NodeUtil.newQualifiedNameNode(compiler.getCodingConvention(), globalName, n, name));
+continue;
+}
+
+
+StatementExpression expression SuperMethodInvocation member findAliases_ter ^ ^ ^ ^ ^ 
+super.findAliases();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name n_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node n = ;
+
+
+condition MemberReference member grandparent_ter ^ ^ ^ ^ 
+if(grandparent){
+
+condition MemberReference member isVar_ter ^ ^ ^ ^ 
+if(isVar){
+
+condition MemberReference prefix_operators !_ter ^ ^ member isVar_ter ^ ^ ^ ^ 
+if(!isVar){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition MemberReference member parent_ter ^ ^ ^ ^ 
+if(parent){
+
+
+IfStatement condition MemberReference member isVar_ter ^ ^ ^ ^ ^ 
+if(isVar){
+
+
+condition MemberReference member value_ter ^ ^ ^ ^ 
+if(value){
+
+StatementExpression expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member recordAlias_ter ^ ^ ^ ^ ^ 
+recordAlias(v);
+
+condition MemberReference member n_ter ^ ^ ^ ^ 
+if(n){
+
+condition MemberReference member varNode_ter ^ ^ ^ ^ 
+if(varNode){
+
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+parent.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+parent.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier scopedAliasNames_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+scopedAliasNames.add(name);
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member ensureLibraryInjected_ter ^ ^ ^ ^ ^ 
+compiler.ensureLibraryInjected("null");
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier newDecl_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member setDebugInformation_ter ^ ^ ^ ^ ^ 
+NodeUtil.setDebugInformation(newDecl.getFirstChild().getFirstChild(), n, name);
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(!isVar){
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && (n.getFirstChild() != null))){
+
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, varNode);
+
+condition MemberReference member v_ter ^ ^ ^ ^ 
+if(v){
+
+condition MemberReference prefix_operators -_ter ^ ^ member isVar_ter ^ ^ ^ ^ 
+if(-isVar){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member isQualifiedName_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && n.getFirstChild().isQualifiedName())){
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr MemberReference member isVar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && isVar)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getFirstChild() != null)){
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member GOOG_SCOPE_NON_ALIAS_LOCAL_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, GOOG_SCOPE_NON_ALIAS_LOCAL, n.getString());
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr MemberReference member isVar_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar || isVar)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+
+condition MemberReference postfix_operators ++_ter ^ ^ member isVar_ter ^ ^ ^ ^ 
+if(isVar++){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member name_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + name)){
+
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier compiler_ter ^ ^ member getCodingConvention_ter ^ ^ ^ MemberReference member globalName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member newQualifiedNameNode_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ member getNameNode_ter ^ ^ ^ ^ ^ 
+v.getNameNode().addChildToFront(NodeUtil.newQualifiedNameNode(compiler.getCodingConvention(), globalName, n, name));
+
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member isQualifiedName_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar || n.getFirstChild().isQualifiedName())){
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && parent.getParent())){
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LP_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && (parent.getType() == Token.LP))){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar != 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v.getJSDocInfo() != null)){
+
+
+condition MemberReference member name_ter ^ ^ ^ ^ 
+if(name){
+
+condition MemberReference prefix_operators !_ter ^ ^ member parent_ter ^ ^ ^ ^ 
+if(!parent){
+
+condition MemberReference prefix_operators !_ter ^ ^ member grandparent_ter ^ ^ ^ ^ 
+if(!grandparent){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar || parent.getParent())){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isVar != null)){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && (n.getFirstChild() != null))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LP_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LP)){
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isVar || (n.getFirstChild() != null))){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v.getJSDocInfo() != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) && (v.getJSDocInfo() != null))){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getJSDocInfo() == null))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getCodingConvention_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getCodingConvention() != null))){
+
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getJSDocInfo() != null))){
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member ensureLibraryInjected_ter ^ ^ ^ ^ ^ 
+compiler.ensureLibraryInjected("null");
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, varNode);
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getString() != null))){
+StatementExpression expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member recordAlias_ter ^ ^ ^ ^ ^ 
+recordAlias(v);
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier newDecl_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member setDebugInformation_ter ^ ^ ^ ^ ^ 
+NodeUtil.setDebugInformation(newDecl.getFirstChild().getFirstChild(), n, name);
+
+StatementExpression expression MethodInvocation qualifier scopedAliasNames_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+scopedAliasNames.add(name);
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getFirstChild() != null))){
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member GOOG_SCOPE_NON_ALIAS_LOCAL_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, GOOG_SCOPE_NON_ALIAS_LOCAL, n.getString());
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member varNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((varNode != null) || (v.getJSDocInfo() != null))){
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier compiler_ter ^ ^ member getCodingConvention_ter ^ ^ ^ MemberReference member globalName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member newQualifiedNameNode_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ member getNameNode_ter ^ ^ ^ ^ ^ 
+v.getNameNode().addChildToFront(NodeUtil.newQualifiedNameNode(compiler.getCodingConvention(), globalName, n, name));
+
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getName() != null))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((value != null) || (v.getJSDocInfo() != null)) || (v.getJSDocInfo() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((isVar && (n.getFirstChild() != null))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member grandparent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((grandparent != null) || (v.getJSDocInfo() != null))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((name != null) || (v.getJSDocInfo() != null))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier compiler_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (compiler.getJSDocInfo() != null))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getJSDocInfo() != null))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getInitialValue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getInitialValue() != null))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((value != null) || (v.getJSDocInfo() != null)) && (v.getJSDocInfo() != null))){
+
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (NodeUtil.getJSDocInfo() != null))){
+IfStatement condition MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ ^ 
+if(v.getJSDocInfo()){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member name_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + name)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (n.getJSDocInfo() != null))){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getFirstChild() != null)){
+
+IfStatement condition MemberReference member isVar_ter ^ ^ ^ ^ ^ 
+if(isVar){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || ((value != null) || (v.getJSDocInfo() != null)))){
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ 
+compiler.reportCodeChange();
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+grandparent.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+grandparent.setQuotedString();
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getJSDocInfo() >= null))){
+IfStatement condition MemberReference member value_ter ^ ^ ^ ^ ^ 
+if(value){
+
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ 
+if(parent.getType()){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getJSDocInfo() > null))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (value != null))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isVar_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((isVar != null) || (v.getJSDocInfo() != null))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((value != null) || (v.getJSDocInfo() != null)) || (value != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) && (v.getJSDocInfo() != null))){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ 
+if(n.getFirstChild()){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nameCount_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nameCount == 0)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier name_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (name.getJSDocInfo() != null))){
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildAfter_ter ^ ^ ^ ^ ^ 
+grandparent.addChildAfter(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildrenAfter_ter ^ ^ ^ ^ ^ 
+grandparent.addChildrenAfter(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member replaceChild_ter ^ ^ ^ ^ ^ 
+grandparent.replaceChild(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member replaceChildAfter_ter ^ ^ ^ ^ ^ 
+grandparent.replaceChildAfter(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(name, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, name);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+              grandparent.addChildBefore(newDecl, varNode);if(0!=1)break;
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member grandparent_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(grandparent, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member grandparent_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, grandparent);
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier newDecl_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member setDebugInformation_ter ^ ^ ^ ^ ^ 
+NodeUtil.setDebugInformation(newDecl.getFirstChild().getFirstChild(), n, name);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member nameCount_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(nameCount, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+grandparent.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+grandparent.setQuotedString();
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member GOOG_SCOPE_NON_ALIAS_LOCAL_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, GOOG_SCOPE_NON_ALIAS_LOCAL, n.getString());
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member nameCount_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, nameCount);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member varNode_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(varNode, varNode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member recordAlias_ter ^ ^ ^ ^ ^ 
+recordAlias(v);
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member ensureLibraryInjected_ter ^ ^ ^ ^ ^ 
+compiler.ensureLibraryInjected("null");
+
+StatementExpression expression MethodInvocation qualifier scopedAliasNames_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+scopedAliasNames.add(name);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(name, name);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier compiler_ter ^ ^ member getCodingConvention_ter ^ ^ ^ MemberReference member globalName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member newQualifiedNameNode_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ member getNameNode_ter ^ ^ ^ ^ ^ 
+v.getNameNode().addChildToFront(NodeUtil.newQualifiedNameNode(compiler.getCodingConvention(), globalName, n, name));
+
+
+StatementExpression expression MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+name.addChildBefore(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(name);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(value, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, value);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member nameCount_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(name, nameCount);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((name != 0)){
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member setDebugInformation_ter ^ ^ ^ ^ ^ 
+grandparent.setDebugInformation(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member recordAlias_ter ^ ^ ^ ^ ^ 
+grandparent.recordAlias(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MethodInvocation qualifier compiler_ter ^ ^ member getCodingConvention_ter ^ ^ ^ MemberReference member globalName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(compiler.getCodingConvention(), globalName, n, name);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(n, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member nameCount_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(nameCount, name);
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+NodeUtil.addChildBefore(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, n);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member varNode_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(varNode, name);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((name != null)){
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member nameCount_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(nameCount);
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+v.addChildBefore(newDecl, varNode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member GOOG_SCOPE_NON_ALIAS_LOCAL_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+report(t, n, GOOG_SCOPE_NON_ALIAS_LOCAL, n.getString());
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(n);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member ensureLibraryInjected_ter ^ ^ ^ ^ ^ 
+grandparent.ensureLibraryInjected(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(v);
+
+StatementExpression expression MethodInvocation qualifier varNode_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+varNode.addChildBefore(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(v, varNode);
+
+stderr: 

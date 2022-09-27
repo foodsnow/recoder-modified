@@ -1,0 +1,108 @@
+stdout: 
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n, n.getParent())){
+
+BreakStatement_ter ^ 
+break;
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getName_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n, n.getName())){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isObjectLitKey(n, n.getParent())){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member NUMBER_TYPE_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(t, n, NUMBER_TYPE)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier Token_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n, Token.getParent())){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member STRING_TYPE_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(t, n, STRING_TYPE)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!NodeUtil.isObjectLitKey(n, n.getParent()) && !NodeUtil.isObjectLitKey(n, n.getParent()))){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member NUMBER_TYPE_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isObjectLitKey(t, n, NUMBER_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member STRING_TYPE_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isObjectLitKey(t, n, STRING_TYPE)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isObjectLitKey(n.getParent())){
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+!NodeUtil.isObjectLitKey(n, n.getParent());
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getParent() != null)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier NodeUtil_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n, NodeUtil.getParent())){
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member NUMBER_TYPE_ter ^ ^ ^ ^ member ensureTyped_ter ^ ^ ^ ^ ^ 
+ensureTyped(t, n, NUMBER_TYPE);
+
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!isObjectLitKey(n, n.getParent())){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n, n.getParent())){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!NodeUtil.isObjectLitKey(n, n.getParent()) || !NodeUtil.isObjectLitKey(n, n.getParent()))){
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member STRING_TYPE_ter ^ ^ ^ ^ member ensureTyped_ter ^ ^ ^ ^ ^ 
+ensureTyped(t, n, STRING_TYPE);
+
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member toString_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n, n.toString())){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member STRING_TYPE_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(STRING_TYPE, n.getParent())){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member visit_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n, n.visit())){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member NUMBER_TYPE_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(NUMBER_TYPE, n.getParent())){
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((n.getParent() != null) && !NodeUtil.isObjectLitKey(n, n.getParent()))){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member STRING_TYPE_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isObjectLitKey(STRING_TYPE, n.getParent())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(n.getParent(), false)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isObjectLitKey(t, n.getParent())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isObjectLitKey_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((!NodeUtil.isObjectLitKey(n, n.getParent()) && (n.getParent() != null))){
+
+BreakStatement_ter ^ 
+ContinueStatement_ter ^ 
+break;
+continue;
+
+
+stderr: 

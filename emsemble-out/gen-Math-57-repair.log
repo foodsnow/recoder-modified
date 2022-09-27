@@ -1,0 +1,122 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = 1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ ^ ^ ^ 
+int sum = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = 2;
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier resultSet_ter ^ ^ arguments ClassCreator type ReferenceType name Cluster_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member firstPoint_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+resultSet.add(new Cluster<T>(firstPoint));
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member d_ter ^ ^ ^ ^ operandr MemberReference member d_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (d * d);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dx2_ter ^ ^ ^ ^ value MemberReference member sum_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dx2[i] = sum;
+
+ReturnStatement expression MemberReference member resultSet_ter ^ ^ ^ ^ ^ 
+if (true) { return resultSet; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = -1;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long sum = 0;
+
+
+StatementExpression expression MethodInvocation qualifier resultSet_ter ^ ^ arguments ClassCreator type ReferenceType name Cluster_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member p_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+resultSet.add(new Cluster<T>(p));
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double[] sum = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ ^ ^ ^ 
+double sum = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double sum = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ ^ ^ ^ 
+double[] sum = ;
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+final int sum = 0;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MethodInvocation qualifier pointSet_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < pointSet.size());i++) {
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k != null)){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member points_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((points != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = false;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k == null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member sum_ter ^ ^ ^ ^ ^ 
+sum++;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier dx2_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < dx2.length);i++) {
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member firstPoint_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((firstPoint != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member resultSet_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((resultSet != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = "null";
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member firstPoint_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((firstPoint == null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = k;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member points_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((points == null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer MemberReference member points_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = points;
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dx2_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ ^ 
+if((dx2[i] >= r)){
+
+stderr: 

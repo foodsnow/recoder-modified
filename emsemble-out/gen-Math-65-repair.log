@@ -1,0 +1,345 @@
+stdout: LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ ^ ^ ^ 
+double criterion = ;
+
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long criterion = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int criterion = 0;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+final double criterion = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double criterion = 0;
+
+StatementExpression expression MethodInvocation member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter();
+
+StatementExpression expression MethodInvocation member updateJacobian_ter ^ ^ ^ ^ ^ 
+updateJacobian();
+
+StatementExpression expression MethodInvocation member updateResidualsAndCost_ter ^ ^ ^ ^ ^ 
+updateResidualsAndCost();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double criterion = 1;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((rows == null)){
+return 0;}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer MemberReference member rows_ter ^ ^ ^ ^ ^ ^ ^ 
+double criterion = rows;
+
+StatementExpression expression SuperMethodInvocation member getRMS_ter ^ ^ ^ ^ ^ 
+super.getRMS();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer MemberReference member residuals_ter ^ ^ ^ ^ ^ ^ ^ 
+double criterion = residuals;
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+Math.incrementIterationsCounter();
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member updateJacobian_ter ^ ^ ^ ^ ^ 
+Math.updateJacobian();
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member updateResidualsAndCost_ter ^ ^ ^ ^ ^ 
+Math.updateResidualsAndCost();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member residuals_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((residuals != null)){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double criterion = -1;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows > 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member residuals_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((residuals == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member criterion_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+criterion += ((residual * residual) * residualsWeights[i]);
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows < 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member residuals_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((residuals == null)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member criterion_ter ^ ^ ^ ^ operandr MemberReference member rows_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((rows == null)){
+return Math.sqrt((criterion / rows));}
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member criterion_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+criterion = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer MemberReference member residualsWeights_ter ^ ^ ^ ^ ^ ^ ^ 
+double criterion = residualsWeights;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member residualsWeights_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((residualsWeights != null)){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+double criterion = 2;
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ ^ 
+if((residual * residual)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name criterion_ter ^ ^ ^ ^ ^ 
+int criterion = ;
+
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows >= 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member jacobian_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / jacobian);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member targetValues_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / targetValues);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member point_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / point);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / objective);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residuals);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / cost);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / jacobian[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member targetValues_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / targetValues[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member point_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / point[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member objective_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / objective[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member cost_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / cost[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+chiSquare = ((residual * residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+chiSquare -= ((residual * residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+chiSquare *= ((residual * residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residual);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / i[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += (residual * residual);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residualsWeights[((residual * residual) / residualsWeights[i])]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / i);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member rows_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / rows);
+
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += residualsWeights[i];
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) - residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier jacobian_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / jacobian.residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier targetValues_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / targetValues.residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier residualsWeights_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residualsWeights.residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier point_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / point.residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier objective_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / objective.residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier residuals_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residuals.residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier cost_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / cost.residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member getRMS_ter ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / getRMS().residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member getChiSquare_ter ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / getChiSquare().residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member getCovariances_ter ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / getCovariances().residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member guessParametersErrors_ter ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / guessParametersErrors().residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value MemberReference member residualsWeights_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += residualsWeights;
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / rows[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chiSquare_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / chiSquare[i]);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((residual != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type |=_ter ^ ^ ^ ^ ^ 
+chiSquare |= ((residual * residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+chiSquare &= ((residual * residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member chiSquare_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / chiSquare);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residualsWeights[i].[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual - residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) * residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residual_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residual[i]);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member residualsWeights_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((residualsWeights != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member loc3 ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / );
+
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residualsWeights[1]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) * residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / -residualsWeights);
+
+ReturnStatement expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ 
+return residualsWeights[i];
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member rows_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i < rows)){
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ ^ 
+if((residual * residual)){
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier jacobian_ter ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / jacobian.residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier targetValues_ter ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / targetValues.residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier residualsWeights_ter ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residualsWeights.residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier point_ter ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / point.residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier objective_ter ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / objective.residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier residuals_ter ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / residuals.residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier cost_ter ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / cost.residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member getRMS_ter ^ ^ ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / getRMS().residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member getChiSquare_ter ^ ^ ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / getChiSquare().residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member getCovariances_ter ^ ^ ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / getCovariances().residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier MethodInvocation member guessParametersErrors_ter ^ ^ ^ ^ selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / guessParametersErrors().residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residualsWeights[i]) / residualsWeights[i]);
+
+StatementExpression expression MethodInvocation member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter();
+
+StatementExpression expression MethodInvocation member updateJacobian_ter ^ ^ ^ ^ ^ 
+updateJacobian();
+
+StatementExpression expression MethodInvocation member updateResidualsAndCost_ter ^ ^ ^ ^ ^ 
+updateResidualsAndCost();
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+residualsWeights[i] += ((residual * residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual[i]) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member residual_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) / -residual);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member residualsWeights_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += (residualsWeights / i);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member residualsWeights_ter ^ ^ ^ ^ operandr MemberReference member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += (residualsWeights / residualsWeights);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual / residual) / residualsWeights[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member chiSquare_ter ^ ^ ^ ^ value BinaryOperation operator %_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member residual_ter ^ ^ ^ ^ operandr MemberReference member residual_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residualsWeights_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+chiSquare += ((residual * residual) % residualsWeights[i]);
+
+stderr: 

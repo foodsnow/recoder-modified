@@ -1,0 +1,149 @@
+stdout: ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member exceptionCauseMessageIfAvailable_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return details.getCause().exceptionCauseMessageIfAvailable();
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ member exceptionCauseMessageIfAvailable_ter ^ ^ ^ ^ ^ 
+return details.exceptionCauseMessageIfAvailable().getMessage();
+ReturnStatement expression MemberReference member details_ter ^ ^ ^ ^ ^ 
+return details;
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return details.getCause();
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ member getMessage_ter ^ ^ ^ ^ ^ 
+return details.getMessage();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member details_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((details == null)){
+return null;}
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ member exceptionCauseMessageIfAvailable_ter ^ ^ ^ ^ ^ 
+return details.exceptionCauseMessageIfAvailable();
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+StatementExpression expression MethodInvocation member cannotStubWithNullThrowable_ter ^ ^ ^ ^ ^ 
+cannotStubWithNullThrowable();
+
+StatementExpression expression MethodInvocation member incorrectUseOfApi_ter ^ ^ ^ ^ ^ 
+incorrectUseOfApi();
+
+StatementExpression expression MethodInvocation member missingMethodInvocation_ter ^ ^ ^ ^ ^ 
+missingMethodInvocation();
+
+StatementExpression expression MethodInvocation member nullPassedToVerify_ter ^ ^ ^ ^ ^ 
+nullPassedToVerify();
+
+
+StatementExpression expression MethodInvocation member notAMockPassedToWhenMethod_ter ^ ^ ^ ^ ^ 
+notAMockPassedToWhenMethod();
+
+StatementExpression expression MethodInvocation member nullPassedToWhenMethod_ter ^ ^ ^ ^ ^ 
+nullPassedToWhenMethod();
+
+StatementExpression expression MethodInvocation member mocksHaveToBePassedToVerifyNoMoreInteractions_ter ^ ^ ^ ^ ^ 
+mocksHaveToBePassedToVerifyNoMoreInteractions();
+
+
+StatementExpression expression MethodInvocation member notAMockPassedToVerifyNoMoreInteractions_ter ^ ^ ^ ^ ^ 
+notAMockPassedToVerifyNoMoreInteractions();
+
+
+StatementExpression expression MethodInvocation member nullPassedToVerifyNoMoreInteractions_ter ^ ^ ^ ^ ^ 
+nullPassedToVerifyNoMoreInteractions();
+
+
+StatementExpression expression MethodInvocation member notAMockPassedWhenCreatingInOrder_ter ^ ^ ^ ^ ^ 
+notAMockPassedWhenCreatingInOrder();
+
+StatementExpression expression MethodInvocation member nullPassedWhenCreatingInOrder_ter ^ ^ ^ ^ ^ 
+nullPassedWhenCreatingInOrder();
+
+StatementExpression expression MethodInvocation member mocksHaveToBePassedWhenCreatingInOrder_ter ^ ^ ^ ^ ^ 
+mocksHaveToBePassedWhenCreatingInOrder();
+
+StatementExpression expression MethodInvocation member inOrderRequiresFamiliarMock_ter ^ ^ ^ ^ ^ 
+inOrderRequiresFamiliarMock();
+
+StatementExpression expression MethodInvocation member stubPassedToVerify_ter ^ ^ ^ ^ ^ 
+stubPassedToVerify();
+
+
+StatementExpression expression MethodInvocation member onlyVoidMethodsCanBeSetToDoNothing_ter ^ ^ ^ ^ ^ 
+onlyVoidMethodsCanBeSetToDoNothing();
+
+StatementExpression expression MethodInvocation member noArgumentValueWasCaptured_ter ^ ^ ^ ^ ^ 
+noArgumentValueWasCaptured();
+
+StatementExpression expression MethodInvocation member extraInterfacesDoesNotAcceptNullParameters_ter ^ ^ ^ ^ ^ 
+extraInterfacesDoesNotAcceptNullParameters();
+
+StatementExpression expression MethodInvocation member extraInterfacesRequiresAtLeastOneInterface_ter ^ ^ ^ ^ ^ 
+extraInterfacesRequiresAtLeastOneInterface();
+
+StatementExpression expression MethodInvocation member cannotCallAbstractRealMethod_ter ^ ^ ^ ^ ^ 
+cannotCallAbstractRealMethod();
+
+StatementExpression expression MethodInvocation member cannotVerifyToString_ter ^ ^ ^ ^ ^ 
+cannotVerifyToString();
+
+
+StatementExpression expression MethodInvocation member atMostAndNeverShouldNotBeUsedWithTimeout_ter ^ ^ ^ ^ ^ 
+atMostAndNeverShouldNotBeUsedWithTimeout();
+
+StatementExpression expression MethodInvocation member invocationListenerDoesNotAcceptNullParameters_ter ^ ^ ^ ^ ^ 
+invocationListenerDoesNotAcceptNullParameters();
+
+StatementExpression expression MethodInvocation member invocationListenersRequiresAtLeastOneListener_ter ^ ^ ^ ^ ^ 
+invocationListenersRequiresAtLeastOneListener();
+
+StatementExpression expression MethodInvocation member spyAndDelegateAreMutuallyExclusive_ter ^ ^ ^ ^ ^ 
+spyAndDelegateAreMutuallyExclusive();
+
+StatementExpression expression MethodInvocation member invalidArgumentRangeAtIdentityAnswerCreationTime_ter ^ ^ ^ ^ ^ 
+invalidArgumentRangeAtIdentityAnswerCreationTime();
+
+StatementExpression expression MethodInvocation member defaultAnswerDoesNotAcceptNullParameter_ter ^ ^ ^ ^ ^ 
+defaultAnswerDoesNotAcceptNullParameter();
+
+ReturnStatement expression This selectors MemberReference member details_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.details;
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member lastIndexOf_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return details.getCause().lastIndexOf();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier details_ter ^ ^ member getCause_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((details.getCause() == null)){
+return null;}
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ arguments MethodInvocation qualifier details_ter ^ ^ member getCause_ter ^ ^ ^ ^ member getMessage_ter ^ ^ ^ ^ ^ 
+return details.getMessage(details.getCause());
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member details_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((details != null)){
+
+ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ qualifier details_ter ^ ^ selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return !details.getCause().getMessage();
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ member getMessage_ter ^ ^ ^ ^ ^ 
+return details.getMessage().getMessage();
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ qualifier details_ter ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return !details.getCause();
+ReturnStatement expression This selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.getMessage();
+ReturnStatement expression MethodInvocation selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return getCause().getMessage();
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member get_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return details.getCause().get();
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ operandr MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ ^ ^ 
+return (details.getCause().getMessage() + details.getCause().getMessage());
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member getMessage_ter ^ ^ ^ ^ arguments MemberReference member details_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return details.getCause(details).getMessage();
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ arguments MemberReference member details_ter ^ ^ ^ ^ member exceptionCauseMessageIfAvailable_ter ^ ^ ^ ^ ^ 
+return details.exceptionCauseMessageIfAvailable(details);
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ arguments MemberReference member details_ter ^ ^ ^ ^ member getMessage_ter ^ ^ ^ ^ ^ 
+return details.getMessage(details);
+ReturnStatement expression Cast type ReferenceType name String_ter ^ ^ ^ ^ expression MemberReference member details_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (String)details;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member details_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((details == null)){
+
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return details.getCause().getName();
+ReturnStatement expression MethodInvocation qualifier details_ter ^ ^ selectors MethodInvocation member add_ter ^ ^ ^ ^ member getCause_ter ^ ^ ^ ^ ^ 
+return details.getCause().add();
+stderr: 

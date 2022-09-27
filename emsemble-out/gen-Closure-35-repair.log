@@ -1,0 +1,256 @@
+stdout: IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj != null)){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ 
+if(constraintObj.isRecordType()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj == null) && constraintObj.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member restrictByNotNullOrUndefined_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.restrictByNotNullOrUndefined())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.getName())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.getOwnPropertyNames())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraint_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraint.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && type.isRecordType())){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) || constraintObj.isRecordType())){
+IfStatement condition MemberReference member constraintObj_ter ^ ^ ^ ^ ^ 
+if(constraintObj){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member inferPropertyTypesToMatchConstraint_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.inferPropertyTypesToMatchConstraint())){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type == null)){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ 
+if(constraintObj.detectImplicitPrototypeCycle()){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ 
+if(constraintObj.hasReferenceName()){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ 
+if(constraintObj.isUnknownType()){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ 
+if(constraintObj.isObject()){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ 
+if(constraintObj.hasCachedValues()){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ 
+if(constraintObj.isNativeObjectType()){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ 
+if(constraintObj.isFunctionPrototypeType()){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member constraint_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraint == null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.detectImplicitPrototypeCycle())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.hasReferenceName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.isUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.isObject())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.isFunctionPrototypeType())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier objType_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && objType.isRecordType())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && (constraintObj != null))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj >= null) && constraintObj.isRecordType())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.detectImplicitPrototypeCycle())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.hasReferenceName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.isUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.isObject())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.isFunctionPrototypeType())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraint_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraint != null) && constraintObj.isRecordType())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && !constraintObj.detectImplicitPrototypeCycle())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && !constraintObj.hasReferenceName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && !constraintObj.isUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && !constraintObj.isObject())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && !constraintObj.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && !constraintObj.isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && !constraintObj.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && constraintObj.isRecordType())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj > null) && constraintObj.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.toString())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.detectImplicitPrototypeCycle())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.hasReferenceName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.isUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.isObject())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.isRecordType())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member VOID_TYPE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((VOID_TYPE != null) && constraintObj.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member objType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((objType != null) && constraintObj.isRecordType())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && !constraintObj.isRecordType())){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member constraintObj_ter ^ ^ ^ ^ ^ 
+if(!constraintObj){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier ObjectType_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && ObjectType.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier propType_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && propType.isRecordType())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isRecordType()) && (constraintObj != null))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((type != null) && constraintObj.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj <= null) && constraintObj.isRecordType())){
+IfStatement condition MemberReference member type_ter ^ ^ ^ ^ ^ 
+if(type){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj < null) && constraintObj.isRecordType())){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier objType_ter ^ ^ arguments MemberReference member prop_ter ^ ^ ^ ^ member hasProperty_ter ^ ^ ^ ^ ^ 
+if(!objType.hasProperty(prop)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier constraintObj_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj.detectImplicitPrototypeCycle() && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier constraintObj_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj.hasReferenceName() && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier constraintObj_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj.isUnknownType() && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier constraintObj_ter ^ ^ member isObject_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj.isObject() && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier constraintObj_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj.hasCachedValues() && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier constraintObj_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj.isNativeObjectType() && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier constraintObj_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj.isFunctionPrototypeType() && constraintObj.isRecordType())){
+
+IfStatement condition MethodInvocation qualifier constraintObj_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ ^ 
+if(constraintObj.getOwnPropertyNames()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member objType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((objType != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && (constraintObj != null)) && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj != null)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier prop_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && prop.isRecordType())){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier par2 ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && .isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((constraintObj && constraintObj.isRecordType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier objType_ter ^ ^ arguments MemberReference member prop_ter ^ ^ ^ ^ member isPropertyTypeDeclared_ter ^ ^ ^ ^ ^ 
+if(!objType.isPropertyTypeDeclared(prop)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.detectImplicitPrototypeCycle()) && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.hasReferenceName()) && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isUnknownType()) && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isObject()) && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.hasCachedValues()) && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isNativeObjectType()) && constraintObj.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((constraintObj != null) && constraintObj.isFunctionPrototypeType()) && constraintObj.isRecordType())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constraintObj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier constraintObj_ter ^ ^ member getNativeType_ter ^ ^ ^ ^ ^ ^ 
+if(((constraintObj != null) && constraintObj.getNativeType())){
+
+
+stderr: 

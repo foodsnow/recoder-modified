@@ -1,0 +1,250 @@
+stdout: 
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, previous, isMinim);
+ReturnStatement expression MemberReference member previous_ter ^ ^ ^ ^ ^ 
+return previous;
+ReturnStatement expression MemberReference member isMinim_ter ^ ^ ^ ^ ^ 
+return isMinim;
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+return current;
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = u;
+
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fu;
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name UnivariatePointValuePair_ter ^ ^ ^ ^ arguments MemberReference member u_ter ^ ^ ^ TernaryExpression condition MemberReference member isMinim_ter ^ ^ ^ ^ if_true MemberReference member fu_ter ^ ^ ^ ^ if_false MemberReference prefix_operators -_ter ^ ^ member fu_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new UnivariatePointValuePair(u, (isMinim)?fu:-fu);
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MemberReference member x_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = x;
+
+StatementExpression expression Assignment expressionl MemberReference member fw_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fw = fu;
+
+StatementExpression expression Assignment expressionl MemberReference member b_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+b = u;
+
+StatementExpression expression Assignment expressionl MemberReference member w_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+w = u;
+
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fw_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fw;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member w_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = w;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+return converged(current, previous, isMinim);
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(iter, previous, current);
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(iter, previous, current)){
+
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current);
+IfStatement condition MemberReference member isMinim_ter ^ ^ ^ ^ ^ 
+if(isMinim){
+
+ReturnStatement expression MethodInvocation member best_ter ^ ^ ^ ^ ^ 
+return best();
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(v, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, previous, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, previous, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ MemberReference member w_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(v, w);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, isMinim, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member fu_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, fu, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, previous, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, isMinim);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker != null)){
+
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, isMinim, isMinim);
+ReturnStatement expression MemberReference member checker_ter ^ ^ ^ ^ ^ 
+return checker;
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, isMinim, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, previous, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, current);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, previous, isMinim);
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+return current;
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, current, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, previous, current);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, previous, previous);
+ReturnStatement expression MemberReference member previous_ter ^ ^ ^ ^ ^ 
+return previous;
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current);
+ReturnStatement expression MemberReference member isMinim_ter ^ ^ ^ ^ ^ 
+return isMinim;
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, previous, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, isMinim, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, previous);
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, isMinim);
+ReturnStatement expression MethodInvocation member best_ter ^ ^ ^ ^ ^ 
+return best();
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, previous, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, current);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, previous, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(current, previous, isMinim);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, isMinim, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, current);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, previous, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member current_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(current, current);
+ReturnStatement expression MethodInvocation arguments MemberReference member isMinim_ter ^ ^ ^ MemberReference member isMinim_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(isMinim, isMinim, previous);
+ReturnStatement expression MethodInvocation arguments MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member best_ter ^ ^ ^ ^ ^ 
+return best(previous, current, previous);
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 2;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = false;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = "null";
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = null;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 1;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = true;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+Object iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 2;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = fx;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+String iter = 0;
+
+LocalVariableDeclaration type BasicType name par0 ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ iter = 0;
+
+LocalVariableDeclaration type BasicType name List_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+List iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -2;
+
+LocalVariableDeclaration type BasicType name UnivariatePointValuePair_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+UnivariatePointValuePair iter = 0;
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+stderr: 

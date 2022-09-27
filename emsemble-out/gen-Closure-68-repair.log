@@ -1,0 +1,423 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = eatTokensUntilEOL();
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = next();
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member current_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = current();
+
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation member eatTokensUntilEOL_ter ^ ^ ^ ^ ^ 
+eatTokensUntilEOL();
+
+StatementExpression expression MethodInvocation qualifier parser_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member lineno_ter ^ ^ ^ MemberReference member charno_ter ^ ^ ^ ^ member addTypeWarning_ter ^ ^ ^ ^ ^ 
+parser.addTypeWarning("null", lineno, charno);
+
+StatementExpression expression MethodInvocation qualifier parser_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member lineno_ter ^ ^ ^ MemberReference member charno_ter ^ ^ ^ ^ member addParserWarning_ter ^ ^ ^ ^ ^ 
+parser.addParserWarning("null", lineno, charno);
+
+StatementExpression expression MethodInvocation qualifier parser_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member lineno_ter ^ ^ ^ MemberReference member charno_ter ^ ^ ^ ^ member addTypeWarning_ter ^ ^ ^ ^ ^ 
+parser.addTypeWarning("null", lineno, charno);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier parser_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member lineno_ter ^ ^ ^ MemberReference member charno_ter ^ ^ ^ ^ member addParserWarning_ter ^ ^ ^ ^ ^ 
+parser.addParserWarning("null", lineno, charno);
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MemberReference qualifier returnDescriptionInfo_ter ^ ^ member token_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = returnDescriptionInfo.token;
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member returnDescription_ter ^ ^ ^ ^ member recordReturnDescription_ter ^ ^ ^ ^ ^ 
+jsdocBuilder.recordReturnDescription(returnDescription);
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = eatTokensUntilEOL(token);
+
+StatementExpression expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+skipEOLs();
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = eatTokensUntilEOL(token);
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MemberReference qualifier returnDescriptionInfo_ter ^ ^ member token_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = returnDescriptionInfo.token;
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member returnDescription_ter ^ ^ ^ ^ member recordReturnDescription_ter ^ ^ ^ ^ ^ 
+jsdocBuilder.recordReturnDescription(returnDescription);
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member typeNode_ter ^ ^ ^ ^ member createJSTypeExpression_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = createJSTypeExpression(typeNode);
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member extractMultilineTextualBlock_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = extractMultilineTextualBlock();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = eatTokensUntilEOL();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member typeNode_ter ^ ^ ^ ^ member createJSTypeExpression_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = createJSTypeExpression(typeNode);
+
+IfStatement condition MethodInvocation member eatTokensUntilEOL_ter ^ ^ ^ ^ ^ 
+if(eatTokensUntilEOL()){
+
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member recordReturnType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = recordReturnType();
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member recordDefineType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = recordDefineType();
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member recordTypedef_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = recordTypedef();
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member createJSTypeExpression_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = createJSTypeExpression();
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member recordType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = recordType();
+
+ReturnStatement_ter ^ 
+return;
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation member parse_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(parse()){
+return;
+}
+IfStatement condition MethodInvocation member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(hasParsedFileOverviewDocInfo()){
+return;
+}
+IfStatement condition MethodInvocation member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(hasParsedJSDocInfo()){
+return;
+}
+IfStatement condition MethodInvocation member lookAheadForTypeAnnotation_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(lookAheadForTypeAnnotation()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member parse_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!parse()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!hasParsedFileOverviewDocInfo()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!hasParsedJSDocInfo()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member lookAheadForTypeAnnotation_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!lookAheadForTypeAnnotation()){
+return;
+}
+StatementExpression expression MethodInvocation qualifier parser_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member lineno_ter ^ ^ ^ MemberReference member charno_ter ^ ^ ^ ^ member addTypeWarning_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+parser.addTypeWarning("null", lineno, charno);
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member NO_UNREAD_TOKEN_ter ^ ^ ^ ^ member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = eatTokensUntilEOL(NO_UNREAD_TOKEN);
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member unreadToken_ter ^ ^ ^ ^ member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = eatTokensUntilEOL(unreadToken);
+
+StatementExpression expression MethodInvocation qualifier parser_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member lineno_ter ^ ^ ^ MemberReference member charno_ter ^ ^ ^ ^ member addParserWarning_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+parser.addParserWarning("null", lineno, charno);
+break;
+
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MemberReference qualifier returnDescriptionInfo_ter ^ ^ member token_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+token = returnDescriptionInfo.token;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+token = eatTokensUntilEOL(token);
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member typeNode_ter ^ ^ ^ ^ member eatTokensUntilEOL_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = eatTokensUntilEOL(typeNode);
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member returnDescription_ter ^ ^ ^ ^ member recordReturnDescription_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+jsdocBuilder.recordReturnDescription(returnDescription);
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type == null)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member recordDefineType_ter ^ ^ ^ ^ ^ 
+if(!jsdocBuilder.recordDefineType(type)){
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member recordTypedef_ter ^ ^ ^ ^ ^ 
+if(!jsdocBuilder.recordTypedef(type)){
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member typeNode_ter ^ ^ ^ ^ member createJSTypeExpression_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+type = createJSTypeExpression(typeNode);
+break;
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member recordType_ter ^ ^ ^ ^ ^ 
+if(!jsdocBuilder.recordType(type)){
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier returnDescription_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((returnDescription.length() > 0)){
+
+ReturnStatement expression MethodInvocation member createTemplateNode_ter ^ ^ ^ ^ ^ 
+return createTemplateNode();
+ReturnStatement expression MethodInvocation member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning(token);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+if (true) { return parseTypeName(token); }
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseArrayType_ter ^ ^ ^ ^ ^ 
+return parseArrayType(next());
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(token);
+ReturnStatement expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+return skipEOLs();
+StatementExpression expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+skipEOLs();
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseRecordType_ter ^ ^ ^ ^ ^ 
+return parseRecordType(next());
+ReturnStatement expression MethodInvocation member parseRecordType_ter ^ ^ ^ ^ ^ 
+return parseRecordType();
+ReturnStatement expression MethodInvocation member parseArrayType_ter ^ ^ ^ ^ ^ 
+return parseArrayType();
+ReturnStatement expression MethodInvocation member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName();
+ReturnStatement expression MethodInvocation member parseUnionType_ter ^ ^ ^ ^ ^ 
+return parseUnionType();
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseFunctionType_ter ^ ^ ^ ^ ^ 
+return parseFunctionType(next());
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseUnionType_ter ^ ^ ^ ^ ^ 
+return parseUnionType(next());
+ReturnStatement expression MemberReference member token_ter ^ ^ ^ ^ ^ 
+return token;
+ReturnStatement expression MethodInvocation arguments MemberReference qualifier Token_ter ^ ^ member STAR_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ 
+return newNode(Token.STAR);
+ReturnStatement expression MethodInvocation member parseFunctionType_ter ^ ^ ^ ^ ^ 
+return parseFunctionType();
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseArrayType_ter ^ ^ ^ ^ ^ 
+if (true) { return parseArrayType(next()); }
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseRecordType_ter ^ ^ ^ ^ ^ 
+if (true) { return parseRecordType(next()); }
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseFunctionType_ter ^ ^ ^ ^ ^ 
+if (true) { return parseFunctionType(next()); }
+
+ReturnStatement expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+if (true) { return skipEOLs(); }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member string_ter ^ ^ ^ ^ member newStringNode_ter ^ ^ ^ ^ ^ 
+return newStringNode(string);
+ReturnStatement expression MethodInvocation arguments MethodInvocation member next_ter ^ ^ ^ ^ member parseUnionType_ter ^ ^ ^ ^ ^ 
+if (true) { return parseUnionType(next()); }
+
+ReturnStatement expression MemberReference member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning;
+ReturnStatement expression MemberReference member string_ter ^ ^ ^ ^ ^ 
+return string;
+ReturnStatement expression MethodInvocation arguments MemberReference qualifier Token_ter ^ ^ member STAR_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ 
+if (true) { return newNode(Token.STAR); }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member string_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning(string);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member restoreLookAhead_ter ^ ^ ^ ^ ^ 
+return restoreLookAhead(token);
+IfStatement condition MethodInvocation member parse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+if(parse()){
+return parseTypeName(token);}
+IfStatement condition MethodInvocation member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+if(hasParsedFileOverviewDocInfo()){
+return parseTypeName(token);}
+IfStatement condition MethodInvocation member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+if(hasParsedJSDocInfo()){
+return parseTypeName(token);}
+IfStatement condition MethodInvocation member lookAheadForTypeAnnotation_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+if(lookAheadForTypeAnnotation()){
+return parseTypeName(token);}
+ReturnStatement expression MethodInvocation arguments MemberReference member string_ter ^ ^ ^ ^ member newStringNode_ter ^ ^ ^ ^ ^ 
+if (true) { return newStringNode(string); }
+
+ReturnStatement expression MemberReference member token_ter ^ ^ ^ ^ ^ 
+if (true) { return token; }
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning(reportGenericTypeSyntaxWarning());
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression MethodInvocation arguments This_ter ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning(this);
+ReturnStatement expression MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning(false);
+ReturnStatement expression MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning(true);
+StatementExpression expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+reportGenericTypeSyntaxWarning(token);
+
+ReturnStatement expression MethodInvocation member next_ter ^ ^ ^ ^ ^ 
+return next();
+ReturnStatement expression SuperMethodInvocation member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return super.reportGenericTypeSyntaxWarning();
+ReturnStatement expression MemberReference member string_ter ^ ^ ^ ^ ^ 
+if (true) { return string; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning("null");
+StatementExpression expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+parseTypeName(token);
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier stream_ter ^ ^ member getString_ter ^ ^ ^ ^ member reportGenericTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportGenericTypeSyntaxWarning(stream.getString());
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member parseTypeString_ter ^ ^ ^ ^ ^ 
+return parseTypeString("null");
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member newStringNode_ter ^ ^ ^ ^ ^ 
+return newStringNode("null");
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning("null");
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ 
+return newNode("null");
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member sourceName_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(sourceName);
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member match_ter ^ ^ ^ ^ ^ 
+return match("null");
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member skipEOLs_ter ^ ^ ^ ^ ^ 
+return skipEOLs("null");
+StatementExpression expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+skipEOLs();
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MethodInvocation arguments Literal value null_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(null);
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(token);
+ReturnStatement expression MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(true);
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member next_ter ^ ^ ^ ^ ^ 
+return next("null");
+ReturnStatement expression MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(false);
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = next();
+
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning("null", "null");
+StatementExpression expression MethodInvocation member next_ter ^ ^ ^ ^ ^ 
+next();
+
+ReturnStatement expression MethodInvocation arguments MemberReference qualifier Token_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(Token.FUNCTION);
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member wrapNode_ter ^ ^ ^ ^ ^ 
+return wrapNode("null");
+StatementExpression expression MethodInvocation qualifier functionType_ter ^ ^ arguments MemberReference member contextType_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ ^ 
+functionType.addChildToFront(contextType);
+
+ReturnStatement expression MethodInvocation member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning();
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member parseFunctionType_ter ^ ^ ^ ^ ^ 
+return parseFunctionType("null");
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member tokenStr_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(tokenStr);
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member parameters_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member parseParametersType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parameters = parseParametersType(token);
+
+ReturnStatement expression MemberReference member token_ter ^ ^ ^ ^ ^ 
+return token;
+ReturnStatement expression MethodInvocation arguments MemberReference qualifier JsDocToken_ter ^ ^ member RP_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(JsDocToken.RP);
+ReturnStatement expression MethodInvocation arguments MemberReference qualifier Token_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ 
+return newNode(Token.FUNCTION);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ operandr MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ ^ ^ 
+return (reportTypeSyntaxWarning("null") && reportTypeSyntaxWarning("null"));
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+if (true) { return reportTypeSyntaxWarning("null"); }
+
+ReturnStatement expression MethodInvocation arguments This_ter ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(this);
+ReturnStatement expression MethodInvocation arguments MemberReference member NO_UNREAD_TOKEN_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(NO_UNREAD_TOKEN);
+ReturnStatement expression MethodInvocation arguments MemberReference member unreadToken_ter ^ ^ ^ ^ member parseTypeName_ter ^ ^ ^ ^ ^ 
+return parseTypeName(unreadToken);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ operandr MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ ^ ^ 
+return (reportTypeSyntaxWarning("null") || reportTypeSyntaxWarning("null"));
+ReturnStatement expression MethodInvocation arguments MemberReference member token_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning(token, "null");
+ReturnStatement expression MethodInvocation arguments MemberReference member NO_UNREAD_TOKEN_ter ^ ^ ^ ^ member match_ter ^ ^ ^ ^ ^ 
+return match(NO_UNREAD_TOKEN);
+ReturnStatement expression MethodInvocation arguments MemberReference member unreadToken_ter ^ ^ ^ ^ member match_ter ^ ^ ^ ^ ^ 
+return match(unreadToken);
+ReturnStatement expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ member reportTypeSyntaxWarning_ter ^ ^ ^ ^ ^ 
+return reportTypeSyntaxWarning("null", token);
+BreakStatement_ter ^ 
+break;
+
+stderr: 

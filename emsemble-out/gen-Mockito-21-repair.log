@@ -1,0 +1,364 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return newInstance(cls);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member noArgConstructor_ter ^ ^ ^ ^ ^ 
+return noArgConstructor(cls);
+ReturnStatement expression MemberReference member cls_ter ^ ^ ^ ^ ^ 
+return cls;
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass();
+ReturnStatement expression MethodInvocation member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass();
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, cls);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression Cast type ReferenceType name Class_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+return (Class<T>)withOuterClass(cls);
+ReturnStatement expression MemberReference member cls_ter ^ ^ ^ ^ ^ 
+if (true) { return cls; }
+
+ReturnStatement expression MemberReference member outerClassInstance_ter ^ ^ ^ ^ ^ 
+return outerClassInstance;
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(outerClassInstance);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(cls);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cls_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((cls == null)){
+return null;}
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(cls);
+ReturnStatement expression MethodInvocation qualifier cls_ter ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return cls.withOuterClass();
+ReturnStatement expression Cast type ReferenceType name T_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (T)withOuterClass(cls);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ This_ter ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, this);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member noArgConstructor_ter ^ ^ ^ ^ ^ 
+if (true) { return noArgConstructor(cls); }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member outerClassInstance_ter ^ ^ ^ MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(outerClassInstance, cls);
+ReturnStatement expression MethodInvocation arguments MemberReference member loc0 ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass();
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ MemberReference member outerClassInstance_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, outerClassInstance);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return e(cls);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, 0);
+ReturnStatement expression This selectors MemberReference member outerClassInstance_ter ^ ^ ^ MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.outerClassInstance.withOuterClass(cls);
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return max(cls);
+ReturnStatement expression MethodInvocation arguments Literal value null_ter ^ ^ ^ MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(null, cls);
+ReturnStatement expression MemberReference member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass;
+ReturnStatement expression MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(cls, "null");
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member cls_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((cls != null)){
+return null;}
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return withOuterClass(withOuterClass(cls));
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+StatementExpression expression MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ 
+cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier cls_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(cls.getClass());
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+final Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member withOuterClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.withOuterClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cls_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((cls == null)){
+return null;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member cls_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cls != null)){
+
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier c_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = c.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Constructor<?> c = cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getName_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.getName());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Constructor c = cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(cls, e);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cls_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cls == null)){
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cls_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+if((cls == null)){
+return c.newInstance(outerClassInstance);}
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.getClass(outerClassInstance));
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer Cast type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ expression MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = (Constructor<T>)cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation arguments MemberReference member cls_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = getDeclaredConstructor(cls);
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(cls);
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg ?
+arg 
+arg ?
+Constructor<?> c = cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.getClass(cls, e));
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((outerClassInstance.getClass() == null)){
+return null;}
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member paramsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.paramsException(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name Class_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg Class<T>
+arg 
+arg T
+arg Class<T>
+Constructor<Class<T>> c = cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name Class_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg ?
+arg 
+arg T
+arg ?
+Constructor<?> c = cls.getDeclaredConstructor(outerClassInstance.getClass());
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.getClass(), false);
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = outerClassInstance.getClass();
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation member getClass_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(getClass());
+
+StatementExpression expression SuperMethodInvocation member withOuterClass_ter ^ ^ ^ ^ ^ 
+super.withOuterClass();
+
+LocalVariableDeclaration type ReferenceType name Constructor_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier cls_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member toString_ter ^ ^ ^ ^ member getDeclaredConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+Constructor<T> c = cls.getDeclaredConstructor(outerClassInstance.toString());
+
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(cls);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(c);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance();
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference qualifier outerClassInstance_ter ^ ^ member outerClassInstance_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance.outerClassInstance);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((c == null)){
+return null;}
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, c);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c != null)){
+
+
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(false);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance();
+ReturnStatement expression MemberReference member c_ter ^ ^ ^ ^ ^ 
+return c;
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member e_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(e);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ MemberReference member cls_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, cls);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance("null");
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, false);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance();
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member cls_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(cls, e);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(true);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c == null)){
+
+
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(null);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments This_ter ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(this);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance();
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, true);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, e);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, null);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MethodInvocation qualifier outerClassInstance_ter ^ ^ member getClass_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance.getClass());
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(0);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, 0);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member withOuterClass_ter ^ ^ ^ ^ ^ 
+return c.withOuterClass(outerClassInstance);
+ReturnStatement expression MethodInvocation arguments MemberReference member outerClassInstance_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return newInstance(outerClassInstance, c);
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, "null");
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member paramsException_ter ^ ^ ^ ^ ^ 
+return c.paramsException(outerClassInstance);
+ReturnStatement expression MethodInvocation qualifier cls_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return cls.newInstance(outerClassInstance);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outerClassInstance_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((outerClassInstance != null)){
+
+
+ReturnStatement expression MethodInvocation qualifier c_ter ^ ^ arguments MemberReference member outerClassInstance_ter ^ ^ ^ MemberReference member outerClassInstance_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return c.newInstance(outerClassInstance, outerClassInstance);
+stderr: 

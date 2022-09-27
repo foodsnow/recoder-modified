@@ -1,0 +1,446 @@
+stdout: StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p, context);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p, p);
+
+StatementExpression expression MethodInvocation arguments MemberReference member p_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(p, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member opstr_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p, opstr);
+
+StatementExpression expression MethodInvocation arguments MemberReference member opstr_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(opstr, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p, type);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p, n);
+
+StatementExpression expression MethodInvocation member tagAsStrict_ter ^ ^ ^ ^ ^ 
+tagAsStrict();
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p, rhsContext);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member context_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(context, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(n, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(type, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhsContext_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(rhsContext, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member type_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(type);
+
+StatementExpression expression MethodInvocation arguments MemberReference member last_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(last, p, rhsContext);
+
+StatementExpression expression MethodInvocation arguments MemberReference member last_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(last, (p + 1), rhsContext);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member opstr_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member addOp_ter ^ ^ ^ ^ ^ 
+cc.addOp(opstr, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member last_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(last, p, rhsContext);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member opstr_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, opstr, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addOp_ter ^ ^ ^ ^ ^ 
+addOp(first, p, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member startSourceMapping_ter ^ ^ ^ ^ ^ 
+startSourceMapping(first, p, context);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member opstr_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member addOp_ter ^ ^ ^ ^ ^ 
+cc.addOp(opstr, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member last_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(last, (p + 1), rhsContext);
+
+StatementExpression expression MethodInvocation arguments MemberReference member last_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(last);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, context, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, type, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, rhsContext, context);
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, n, context);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MemberReference member childCount_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ Literal value <string>_ter ^ ^ ^ MemberReference member opstr_ter ^ ^ ^ MemberReference member childCount_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((childCount == 2), "null", opstr, childCount);
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(n);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member startSourceMapping_ter ^ ^ ^ ^ ^ 
+cc.startSourceMapping(n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member context_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(context, p);
+
+StatementExpression expression MethodInvocation member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr();
+
+StatementExpression expression MethodInvocation arguments MemberReference member p_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(p);
+
+StatementExpression expression MethodInvocation arguments MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(context);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier last_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member type_ter ^ ^ ^ ^ ^ ^ ^ 
+if((last.getType() == type)){
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member first_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first, p);
+
+StatementExpression expression MethodInvocation arguments MemberReference member context_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member first_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(context, p, first);
+
+StatementExpression expression MethodInvocation arguments MemberReference member context_ter ^ ^ ^ MemberReference member p_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(context, p, n);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier last_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member type_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member isAssociative_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((last.getType() == type) && NodeUtil.isAssociative(type))){
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member appendBlockStart_ter ^ ^ ^ ^ ^ 
+cc.appendBlockStart();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member appendBlockEnd_ter ^ ^ ^ ^ ^ 
+cc.appendBlockEnd();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member startNewLine_ter ^ ^ ^ ^ ^ 
+cc.startNewLine();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member maybeLineBreak_ter ^ ^ ^ ^ ^ 
+cc.maybeLineBreak();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member maybeCutLine_ter ^ ^ ^ ^ ^ 
+cc.maybeCutLine();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endLine_ter ^ ^ ^ ^ ^ 
+cc.endLine();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member notePreferredLineBreak_ter ^ ^ ^ ^ ^ 
+cc.notePreferredLineBreak();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member beginBlock_ter ^ ^ ^ ^ ^ 
+cc.beginBlock();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endBlock_ter ^ ^ ^ ^ ^ 
+cc.endBlock();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endStatement_ter ^ ^ ^ ^ ^ 
+cc.endStatement();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member maybeEndStatement_ter ^ ^ ^ ^ ^ 
+cc.maybeEndStatement();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endFunction_ter ^ ^ ^ ^ ^ 
+cc.endFunction();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member beginCaseBody_ter ^ ^ ^ ^ ^ 
+cc.beginCaseBody();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endCaseBody_ter ^ ^ ^ ^ ^ 
+cc.endCaseBody();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endFile_ter ^ ^ ^ ^ ^ 
+cc.endFile();
+
+StatementExpression expression MethodInvocation member tagAsStrict_ter ^ ^ ^ ^ ^ 
+tagAsStrict();
+
+
+StatementExpression expression MethodInvocation member listSeparator_ter ^ ^ ^ ^ ^ 
+listSeparator();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+cc.addExpr();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member appendBlockStart_ter ^ ^ ^ ^ ^ 
+cc.appendBlockStart();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member appendBlockEnd_ter ^ ^ ^ ^ ^ 
+cc.appendBlockEnd();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member startNewLine_ter ^ ^ ^ ^ ^ 
+cc.startNewLine();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member maybeLineBreak_ter ^ ^ ^ ^ ^ 
+cc.maybeLineBreak();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member maybeCutLine_ter ^ ^ ^ ^ ^ 
+cc.maybeCutLine();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endLine_ter ^ ^ ^ ^ ^ 
+cc.endLine();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member notePreferredLineBreak_ter ^ ^ ^ ^ ^ 
+cc.notePreferredLineBreak();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member beginBlock_ter ^ ^ ^ ^ ^ 
+cc.beginBlock();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endBlock_ter ^ ^ ^ ^ ^ 
+cc.endBlock();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endStatement_ter ^ ^ ^ ^ ^ 
+cc.endStatement();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member maybeEndStatement_ter ^ ^ ^ ^ ^ 
+cc.maybeEndStatement();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endFunction_ter ^ ^ ^ ^ ^ 
+cc.endFunction();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member beginCaseBody_ter ^ ^ ^ ^ ^ 
+cc.beginCaseBody();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endCaseBody_ter ^ ^ ^ ^ ^ 
+cc.endCaseBody();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member endFile_ter ^ ^ ^ ^ ^ 
+cc.endFile();
+
+StatementExpression expression Assignment expressionl MemberReference member firstNonOperator_ter ^ ^ ^ ^ value MethodInvocation qualifier firstNonOperator_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+firstNonOperator = firstNonOperator.getFirstChild();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier current_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member rightPrecedence_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(current.getFirstChild().getNext(), rightPrecedence, rhsContext);
+
+StatementExpression expression MethodInvocation qualifier current_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+current.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier current_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+current.setQuotedString();
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value MethodInvocation qualifier current_ter ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+current = current.getParent();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier current_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member rightPrecedence_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+listSeparator(current.getFirstChild().getNext(), rightPrecedence, rhsContext);
+
+StatementExpression expression MethodInvocation arguments MemberReference member firstNonOperator_ter ^ ^ ^ MemberReference member leftPrecedence_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(firstNonOperator, leftPrecedence, context);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member opStr_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(opStr);
+
+StatementExpression expression Assignment expressionl MemberReference member firstNonOperator_ter ^ ^ ^ ^ value MethodInvocation qualifier firstNonOperator_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+firstNonOperator = firstNonOperator.getFirstChild();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(n);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member op_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(op);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ member unrollBinaryOperator_ter ^ ^ ^ ^ ^ 
+cc.unrollBinaryOperator();
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member context_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(context);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member firstNonOperator_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(firstNonOperator);
+
+StatementExpression expression MethodInvocation arguments MemberReference member firstNonOperator_ter ^ ^ ^ MemberReference member leftPrecedence_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(firstNonOperator, leftPrecedence, context);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier current_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member rightPrecedence_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(current.getFirstChild().getNext(), rightPrecedence, rhsContext);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MethodInvocation qualifier current_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(current.getFirstChild().getNext());
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value MethodInvocation qualifier current_ter ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+current = current.getParent();
+
+StatementExpression expression MethodInvocation qualifier firstNonOperator_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+firstNonOperator.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier firstNonOperator_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+firstNonOperator.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+n.listSeparator();
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(false);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MethodInvocation qualifier current_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member rightPrecedence_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(current.getFirstChild().getNext(), rightPrecedence, rhsContext);
+
+IfStatement condition MethodInvocation qualifier cc_ter ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+if(cc.listSeparator()){
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member firstNonOperator_ter ^ ^ ^ MemberReference member leftPrecedence_ter ^ ^ ^ MemberReference member context_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+listSeparator(firstNonOperator, leftPrecedence, context);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(true);
+
+StatementExpression expression MethodInvocation qualifier loc2 ^ ^ member tagAsStrict_ter ^ ^ ^ ^ ^ 
+.tagAsStrict();
+
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member rhsContext_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(rhsContext);
+
+StatementExpression expression MethodInvocation qualifier cc_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+cc.listSeparator(current);
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression MethodInvocation qualifier op_ter ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+op.listSeparator();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier firstNonOperator_ter ^ ^ member listSeparator_ter ^ ^ ^ ^ ^ 
+firstNonOperator.listSeparator();
+
+IfStatement condition MethodInvocation member getLastChar_ter ^ ^ ^ ^ ^ 
+if(getLastChar()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((getLastChar() != "null") && "null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((getLastChar() != "null") && (getLastChar() != "null"))){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member getLastChar_ter ^ ^ ^ ^ ^ 
+if(!getLastChar()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((getLastChar() != "null") || "null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member getLastChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((getLastChar() != "null") && getLastChar())){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((getLastChar() != "null")){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((getLastChar() != "null") || (getLastChar() != "null"))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((getLastChar() != "null")){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member appendOp_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((appendOp() != "null")){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((getLastChar() && (getLastChar() != "null"))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((getLastChar() == "null")){
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getName_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((getName() != "null")){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append("null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member op_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append(op);
+
+StatementExpression expression MethodInvocation member getLastChar_ter ^ ^ ^ ^ ^ 
+getLastChar();
+
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member binOp_ter ^ ^ ^ ^ ^ 
+if(!binOp){
+
+IfStatement condition MethodInvocation arguments MemberReference member binOp_ter ^ ^ ^ ^ member getLastChar_ter ^ ^ ^ ^ ^ 
+if(getLastChar(binOp)){
+
+IfStatement condition MemberReference member op_ter ^ ^ ^ ^ ^ 
+if(op){
+
+IfStatement condition MethodInvocation selectors MethodInvocation member getLastChar_ter ^ ^ ^ ^ member getLastChar_ter ^ ^ ^ ^ ^ 
+if(getLastChar().getLastChar()){
+
+IfStatement condition This selectors MethodInvocation member getLastChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.getLastChar()){
+
+IfStatement condition MemberReference member binOp_ter ^ ^ ^ ^ ^ 
+if(binOp){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member getLastChar_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((getLastChar() != "null") || getLastChar())){
+
+IfStatement condition MethodInvocation arguments MemberReference member op_ter ^ ^ ^ ^ member getLastChar_ter ^ ^ ^ ^ ^ 
+if(getLastChar(op)){
+
+IfStatement condition MethodInvocation arguments MethodInvocation member getLastChar_ter ^ ^ ^ ^ member getLastChar_ter ^ ^ ^ ^ ^ 
+if(getLastChar(getLastChar())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((getLastChar() || (getLastChar() != "null"))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member op_ter ^ ^ ^ ^ ^ 
+if(!op){
+
+IfStatement condition MemberReference member binOp_ter ^ ^ ^ ^ ^ 
+if(binOp){
+
+IfStatement condition MethodInvocation qualifier binOp_ter ^ ^ member getLastChar_ter ^ ^ ^ ^ ^ 
+if(binOp.getLastChar()){
+
+IfStatement condition MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member getLastChar_ter ^ ^ ^ ^ ^ 
+if(getLastChar("null")){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member binOp_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((binOp != "null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation member getLastChar_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((getLastChar() && "null")){
+
+stderr: 

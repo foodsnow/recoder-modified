@@ -1,0 +1,564 @@
+stdout: LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg 
+arg T
+arg 
+MockHandler<T> newMockHandler = new MockHandler(oldMockHandler);
+
+StatementExpression expression ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+new MockHandler<T>(oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>();
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member oldMockHandler_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((oldMockHandler != null)){
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg 
+arg T
+arg 
+MockHandler<T> newMockHandler = new MockHandler();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member oldMockHandler_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((oldMockHandler == null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+final MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member oldMockHandler_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((oldMockHandler == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ MemberReference member mock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, mock);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(mock);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, false);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name ArrayList_ter ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg 
+arg T
+arg 
+MockHandler<T> newMockHandler = new ArrayList(oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, true);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ This_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, this);
+
+StatementExpression expression Assignment expressionl MemberReference member newMockHandler_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+newMockHandler = new MockHandler<T>(oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ MemberReference member newMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, newMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg T
+arg 
+arg 
+arg T
+MockHandler newMockHandler = new MockHandler<T>(oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, null);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(mock, oldMockHandler);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member oldMockHandler_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+oldMockHandler = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg T, T
+arg 
+arg T
+arg 
+arg 
+arg T, T
+arg 
+arg T
+MockHandler<T, T> newMockHandler = new MockHandler<T>(oldMockHandler);
+
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, 0);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg 
+arg T
+arg ?
+arg 
+arg T
+MockHandler<?> newMockHandler = new MockHandler<T>(oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler, );
+
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg 
+arg 
+arg T
+arg 
+arg 
+MockHandler<T> newMockHandler = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member oldMockHandler_ter ^ ^ ^ ^ operandr ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+if((oldMockHandler instanceof MockHandler<T>)){
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name ArrayList_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new ArrayList<T>(oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name newMockHandler_ter ^ ^ initializer ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+arg 
+arg T
+MockHandler<T> newMockHandler = new MockHandler<T>(newMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_SMART_NULLS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_SMART_NULLS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_MOCKS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_MOCKS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEEP_STUBS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEEP_STUBS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member CALLS_REAL_METHODS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.CALLS_REAL_METHODS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference member newMockHandler_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(newMockHandler));
+
+StatementExpression expression ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, org.mockito.Mockito.RETURNS_DEFAULTS);
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference member mock_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(mock));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(oldMockHandler));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member newMockHandler_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((newMockHandler != null)){
+
+StatementExpression expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ 
+org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS);
+
+StatementExpression expression Assignment expressionl MemberReference member newFilter_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter();
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ MemberReference member newMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, newMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(oldMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ MemberReference member newMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter((MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS), newMockHandler);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member newMockHandler_ter ^ ^ ^ ^ operandr ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((newMockHandler instanceof MethodInterceptorFilter)){
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+final MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newFilter_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newFilter, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member newMockHandler_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((newMockHandler == null)){
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(org.mockito.Mockito.RETURNS_DEFAULTS);
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member getMockHandler_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().getMockHandler(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter((MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(mock, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member resetMock_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().resetMock(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier mock_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier org.mockito.Mockito_ter ^ ^ member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)mock.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference member RETURNS_DEFAULTS_ter ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer(RETURNS_DEFAULTS));
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ MemberReference member RETURNS_DEFAULTS_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, RETURNS_DEFAULTS);
+
+StatementExpression expression Assignment expressionl MemberReference member newMockHandler_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name MockHandler_ter ^ ^ arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member oldMockHandler_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg T
+arg 
+arg T
+newMockHandler = new MockHandler<T>(oldMockHandler);
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ selectors MethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member defaultAnswer_ter ^ ^ ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl)org.mockito.Mockito.withSettings().defaultAnswer());
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ declarators VariableDeclarator name newFilter_ter ^ ^ initializer ClassCreator type ReferenceType name MethodInterceptorFilter_ter ^ ^ ^ ^ arguments MemberReference member newMockHandler_ter ^ ^ ^ MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ member withSettings_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, org.mockito.Mockito.withSettings());
+
+stderr: 

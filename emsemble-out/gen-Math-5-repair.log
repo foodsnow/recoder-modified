@@ -1,0 +1,113 @@
+stdout: ReturnStatement expression MemberReference member I_ter ^ ^ ^ ^ ^ 
+return I;
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+return NaN;
+ReturnStatement expression MemberReference member INF_ter ^ ^ ^ ^ ^ 
+return INF;
+ReturnStatement expression MemberReference member ONE_ter ^ ^ ^ ^ ^ 
+return ONE;
+ReturnStatement expression MemberReference member ZERO_ter ^ ^ ^ ^ ^ 
+return ZERO;
+ReturnStatement expression MemberReference member isNaN_ter ^ ^ ^ ^ ^ 
+return isNaN;
+ReturnStatement expression MemberReference member isInfinite_ter ^ ^ ^ ^ ^ 
+return isInfinite;
+ReturnStatement expression MemberReference member imaginary_ter ^ ^ ^ ^ ^ 
+return imaginary;
+ReturnStatement expression MemberReference member scale_ter ^ ^ ^ ^ ^ 
+return scale;
+ReturnStatement expression MemberReference qualifier I_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return I.NaN;
+ReturnStatement expression MemberReference qualifier NaN_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return NaN.NaN;
+ReturnStatement expression MemberReference qualifier INF_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return INF.NaN;
+ReturnStatement expression MemberReference qualifier ONE_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return ONE.NaN;
+ReturnStatement expression MemberReference qualifier ZERO_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return ZERO.NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return conjugate().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member reciprocal_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return reciprocal().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return negate().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return acos().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return asin().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return atan().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return cos().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return cosh().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return exp().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return log().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sin().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sinh().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sqrt().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return sqrt1z().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return tan().NaN;
+ReturnStatement expression MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return tanh().NaN;
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return -NaN;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MemberReference member ZERO_ter ^ ^ ^ ^ ^ 
+if (true) { return ZERO; }
+
+
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member scale_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ MemberReference prefix_operators -_ter ^ ^ member scale_ter ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+return createComplex((scale * q), -scale);
+ReturnStatement expression MemberReference prefix_operators !_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return !NaN;
+ReturnStatement expression MethodInvocation arguments MemberReference member scale_ter ^ ^ ^ BinaryOperation operator *_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member scale_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+return createComplex(scale, (-scale * q));
+ReturnStatement expression This selectors MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.NaN;
+ReturnStatement expression MemberReference member q_ter ^ ^ ^ ^ ^ 
+return q;
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+if (true) { return NaN; }
+
+ReturnStatement expression Cast type ReferenceType name Complex_ter ^ ^ ^ ^ expression MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Complex)NaN;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member imaginary_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ 
+return FastMath.abs(imaginary);
+ReturnStatement expression MemberReference postfix_operators ++_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ 
+return NaN++;
+ReturnStatement expression MethodInvocation arguments MemberReference member scale_ter ^ ^ ^ BinaryOperation operator *_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member scale_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+if (true) { return createComplex(scale, (-scale * q)); }
+
+ReturnStatement expression MemberReference member real_ter ^ ^ ^ ^ ^ 
+return real;
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member scale_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ MemberReference prefix_operators -_ter ^ ^ member scale_ter ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
+if (true) { return createComplex((scale * q), -scale); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member NaN_ter ^ ^ ^ ^ operandr MemberReference member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
+return (NaN + NaN);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ContinueStatement_ter ^ 
+continue;
+
+stderr: 

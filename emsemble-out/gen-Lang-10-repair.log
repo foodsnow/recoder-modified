@@ -1,0 +1,132 @@
+stdout: LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = true;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = false;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ ^ ^ ^ 
+boolean wasWhite = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = null;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = "null";
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member regex_ter ^ ^ ^ ^ ^ 
+if((value == null)){
+return regex;}
+StatementExpression expression MethodInvocation member init_ter ^ ^ ^ ^ ^ 
+init();
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = 1;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = 0;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((value == null)){
+return null;}
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = value;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = 2;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((value != null)){
+return null;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member regex_ter ^ ^ ^ ^ ^ 
+if((value != null)){
+return regex;}
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = -1;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((value == null)){
+return false;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member regex_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((regex != null)){
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+long wasWhite = false;
+
+StatementExpression expression MethodInvocation qualifier regex_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+regex.append("null");
+
+StatementExpression expression Assignment expressionl MemberReference member wasWhite_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+wasWhite = false;
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+StatementExpression expression Assignment expressionl MemberReference member wasWhite_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+wasWhite = true;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((value == null)){
+return true;}
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member c_ter ^ ^ ^ ^ value MethodInvocation qualifier value_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c = value.charAt(i);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer MemberReference member regex_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = regex;
+
+IfStatement condition MemberReference member value_ter ^ ^ ^ ^ ^ 
+if(value){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation member isNextNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isNextNumber()){
+return false;}
+StatementExpression expression MethodInvocation qualifier regex_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+regex.append(c);
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member value_ter ^ ^ ^ ^ ^ 
+if(!value){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member regex_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member regex_ter ^ ^ ^ ^ ^ 
+if((regex == null)){
+return regex;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((value != null)){
+return false;}
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer MemberReference member unquote_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean wasWhite = unquote;
+
+StatementExpression expression MethodInvocation qualifier Character_ter ^ ^ member init_ter ^ ^ ^ ^ ^ 
+Character.init();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+final boolean wasWhite = false;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name wasWhite_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int wasWhite = false;
+
+stderr: 

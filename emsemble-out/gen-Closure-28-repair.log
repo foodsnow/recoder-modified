@@ -1,0 +1,174 @@
+stdout: StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member addIdentifier_ter ^ ^ ^ ^ ^ 
+addIdentifier(newcode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append(newcode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member addConstant_ter ^ ^ ^ ^ ^ 
+addConstant(newcode);
+
+StatementExpression expression MethodInvocation member appendBlockStart_ter ^ ^ ^ ^ ^ 
+appendBlockStart();
+
+StatementExpression expression MethodInvocation member appendBlockEnd_ter ^ ^ ^ ^ ^ 
+appendBlockEnd();
+
+StatementExpression expression MethodInvocation member startNewLine_ter ^ ^ ^ ^ ^ 
+startNewLine();
+
+StatementExpression expression MethodInvocation member maybeLineBreak_ter ^ ^ ^ ^ ^ 
+maybeLineBreak();
+
+StatementExpression expression MethodInvocation member maybeCutLine_ter ^ ^ ^ ^ ^ 
+maybeCutLine();
+
+StatementExpression expression MethodInvocation member endLine_ter ^ ^ ^ ^ ^ 
+endLine();
+
+StatementExpression expression MethodInvocation member notePreferredLineBreak_ter ^ ^ ^ ^ ^ 
+notePreferredLineBreak();
+
+StatementExpression expression MethodInvocation member beginBlock_ter ^ ^ ^ ^ ^ 
+beginBlock();
+
+StatementExpression expression MethodInvocation member endBlock_ter ^ ^ ^ ^ ^ 
+endBlock();
+
+StatementExpression expression MethodInvocation member listSeparator_ter ^ ^ ^ ^ ^ 
+listSeparator();
+
+StatementExpression expression MethodInvocation member endStatement_ter ^ ^ ^ ^ ^ 
+endStatement();
+
+StatementExpression expression MethodInvocation member maybeEndStatement_ter ^ ^ ^ ^ ^ 
+maybeEndStatement();
+
+StatementExpression expression MethodInvocation member endFunction_ter ^ ^ ^ ^ ^ 
+endFunction();
+
+StatementExpression expression MethodInvocation member beginCaseBody_ter ^ ^ ^ ^ ^ 
+beginCaseBody();
+
+StatementExpression expression MethodInvocation member endCaseBody_ter ^ ^ ^ ^ ^ 
+endCaseBody();
+
+StatementExpression expression MethodInvocation member endFile_ter ^ ^ ^ ^ ^ 
+endFile();
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode, true);
+
+StatementExpression expression MethodInvocation member add_ter ^ ^ ^ ^ ^ 
+add();
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode, "null");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member newcode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((newcode != null)){
+
+StatementExpression expression SuperMethodInvocation member addConstant_ter ^ ^ ^ ^ ^ 
+super.addConstant();
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode, null);
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member continueProcessing_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!continueProcessing()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!shouldPreserveExtraBlocks()){
+return;
+}
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member newcode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((newcode == null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+debug(newcode);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member addConstant_ter ^ ^ ^ ^ ^ 
+super.addConstant(newcode);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+super.add(newcode);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(newcode);
+StatementExpression expression MethodInvocation qualifier newcode_ter ^ ^ arguments MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+newcode.add(newcode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode, newcode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+e(newcode);
+
+StatementExpression expression Assignment expressionl MemberReference member newcode_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+newcode = add(newcode);
+
+StatementExpression expression MethodInvocation qualifier newcode_ter ^ ^ member add_ter ^ ^ ^ ^ ^ 
+newcode.add();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member newcode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((newcode == null)){
+return;
+}
+StatementExpression expression Assignment expressionl This selectors MemberReference member newcode_ter ^ ^ ^ ^ ^ ^ value MemberReference member newcode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.newcode = newcode;
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+max(newcode);
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ This_ter ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(newcode, this);
+
+IfStatement condition MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+if(add(newcode)){
+
+
+IfStatement condition MethodInvocation member continueProcessing_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(continueProcessing()){
+return;
+}
+IfStatement condition MethodInvocation member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(shouldPreserveExtraBlocks()){
+return;
+}
+StatementExpression expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add("null", newcode);
+
+StatementExpression expression This selectors MethodInvocation arguments MemberReference member newcode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+this.add(newcode);
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member newcode_ter ^ ^ ^ ^ member continueProcessing_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!continueProcessing(newcode)){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member newcode_ter ^ ^ ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!shouldPreserveExtraBlocks(newcode)){
+return;
+}
+stderr: 

@@ -1,0 +1,74 @@
+stdout: ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.contains(locale);
+ReturnStatement expression MethodInvocation qualifier MethodInvocation member availableLocaleSet_ter ^ ^ ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return availableLocaleSet().contains(locale);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member isAvailableLocale_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.isAvailableLocale(locale);
+ReturnStatement expression MethodInvocation arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(locale);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.add(locale);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.debug(locale);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.contains(locale, false);
+ReturnStatement expression MemberReference member locale_ter ^ ^ ^ ^ ^ 
+return locale;
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.contains(locale, true);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((locale == null) && cAvailableLocaleSet.contains(locale));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((locale != null) && cAvailableLocaleSet.contains(locale));
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.e(locale);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.max(locale);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.contains(locale, null);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.put(locale);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ operandr MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+return (cAvailableLocaleSet.contains(locale) && cAvailableLocaleSet.contains(locale));
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.get(locale);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((locale == null) || cAvailableLocaleSet.contains(locale));
+ReturnStatement expression MethodInvocation member contains_ter ^ ^ ^ ^ ^ 
+return contains();
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member locale_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.locale(locale);
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((locale == null)){
+return false;}
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (locale != null);
+ReturnStatement expression MethodInvocation qualifier locale_ter ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return locale.contains();
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ selectors MethodInvocation arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.contains(locale).contains(locale);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ operandr MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+return (cAvailableLocaleSet.contains(locale) || cAvailableLocaleSet.contains(locale));
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((locale != null) || cAvailableLocaleSet.contains(locale));
+ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return !cAvailableLocaleSet.contains(locale);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((locale != null)){
+
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (locale == null);
+ReturnStatement expression MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return cAvailableLocaleSet.contains(locale, "null");
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member locale_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((locale == null)){
+return true;}
+ReturnStatement expression Assignment expressionl MemberReference member locale_ter ^ ^ ^ ^ value MethodInvocation qualifier cAvailableLocaleSet_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+return locale = cAvailableLocaleSet.contains(locale);
+stderr: 

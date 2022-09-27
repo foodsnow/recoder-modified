@@ -1,0 +1,101 @@
+stdout: 
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference member locals_ter ^ ^ ^ ^ ^ 
+if (true) { return locals; }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression MemberReference member value_ter ^ ^ ^ ^ ^ 
+if (true) { return value; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MethodInvocation qualifier locals_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ 
+if (true) { return locals.apply(value); }
+
+ReturnStatement expression MethodInvocation qualifier value_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+if (true) { return value.getParent(); }
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier value_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member locals_ter ^ ^ ^ ^ member evaluatesToLocalValue_ter ^ ^ ^ ^ ^ 
+if (true) { return evaluatesToLocalValue(value.getFirstChild(), locals); }
+
+ReturnStatement expression MethodInvocation qualifier value_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+if (true) { return value.detachChildren(); }
+
+ReturnStatement expression MethodInvocation qualifier value_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+if (true) { return value.setQuotedString(); }
+
+ReturnStatement expression MethodInvocation qualifier value_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ 
+if (true) { return value.getFirstChild(); }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member callHasLocalResult_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isToStringMethodCall_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier locals_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ((callHasLocalResult(value) || isToStringMethodCall(value)) || locals.apply(value)); }
+
+ReturnStatement expression MemberReference member loc0 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MemberReference member locals_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return locals;break;
+ }
+
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier value_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ((("null" + value) + "null") + value.getParent()); }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isSimpleOperator_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (isAssignmentOp(value) || isSimpleOperator(value)); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (("null" + value) + "null"); }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isSimpleOperator_ter ^ ^ ^ ^ ^ 
+if (true) { return isSimpleOperator(value); }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member callHasLocalResult_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isToStringMethodCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (callHasLocalResult(value) || isToStringMethodCall(value)); }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ("null" + value); }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if (true) { return isImmutableValue(value); }
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier locals_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (isImmutableValue(value) || locals.apply(value)); }
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return true;break;
+ }
+
+stderr: 

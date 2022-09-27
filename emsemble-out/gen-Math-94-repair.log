@@ -1,0 +1,155 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) >= 0)){
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ 
+if((u * v)){
+
+condition BinaryOperation operator <=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) <= 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) == 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) > 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) || (v == 0))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) != 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) < 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) || ((u * v) == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) || (u == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u != 0) || (v == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) && (v == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) || (v != 0))){
+
+condition BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) - 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member u_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == u) || ((u * v) == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == v) || ((u * v) == 0))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((v * v) == 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u != 0) || ((u * v) == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (v < v))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (v > v))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (u == 0))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member u_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * u) == 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (v == 0))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u >= v) == 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u & 1) == 0) && ((v & 1) == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u != 0) || (u == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) && ((u * v) == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) && (u == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) || (u != 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (u > v))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u != 0) && (v == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (u < v))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (u == v))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) && (v != 0))){
+
+condition BinaryOperation operator >>_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) >> 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (v == v))){
+
+condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) + 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u != 0) || (v != 0))){
+
+StatementExpression expression Assignment expressionl MemberReference member u_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+u = -u;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (v >= v))){
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member v_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = -v;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || Math.abs(v))){
+
+condition BinaryOperation operator >>>_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u * v) >>> 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((u <= v) == 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || v)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member u_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == u) && ((u * v) == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == v) && ((u * v) == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u * v) || (u == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) || (v >= 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (v <= v))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u == 0) || (v > 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((u != 0) && ((u * v) == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member u_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (u > u))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) || (v > 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((u * v) == 0) && (v == 0))){
+
+IfStatement condition MemberReference member u_ter ^ ^ ^ ^ ^ 
+if(u){
+
+stderr: 

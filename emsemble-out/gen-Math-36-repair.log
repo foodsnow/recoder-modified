@@ -1,0 +1,170 @@
+stdout: ReturnStatement expression MemberReference member result_ter ^ ^ ^ ^ ^ 
+return result;
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+return result.doubleValue();
+ReturnStatement expression MethodInvocation qualifier denominator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+return denominator.doubleValue();
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression MethodInvocation member result_ter ^ ^ ^ ^ ^ 
+return result();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((result == null)){
+return 0;}
+ReturnStatement expression This selectors MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.result;
+ReturnStatement expression MemberReference member par0 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MethodInvocation qualifier numerator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+return numerator.doubleValue();
+StatementExpression expression MethodInvocation qualifier denominator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+denominator.doubleValue();
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((result != null)){
+
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member size_ter ^ ^ ^ ^ ^ 
+return result.size();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((result == null)){
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+return result.doubleValue(result);
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+result++;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((result != null)){
+return 0;}
+ReturnStatement expression MethodInvocation qualifier numerator_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+return numerator.result();
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+return result.doubleValue(0);
+ReturnStatement expression Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+return (double)result;
+ReturnStatement expression This selectors MemberReference member result_ter ^ ^ ^ MethodInvocation member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.result.doubleValue();
+ReturnStatement expression BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier numerator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier denominator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (numerator.doubleValue() / denominator.doubleValue());
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MemberReference member result_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = result;
+
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+StatementExpression expression MethodInvocation qualifier numerator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+numerator.doubleValue();
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((result == result)){
+return 0;}
+ReturnStatement expression MethodInvocation qualifier denominator_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+return denominator.result();
+ReturnStatement expression MethodInvocation arguments MemberReference member result_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ 
+return doubleValue(result);
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return result.get();
+IfStatement condition BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier numerator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier denominator_ter ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+if((numerator.doubleValue() / denominator.doubleValue())){
+
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+return (result * result);
+StatementExpression expression MethodInvocation qualifier result_ter ^ ^ member e_ter ^ ^ ^ ^ ^ 
+result.e();
+
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return result.toString();
+ReturnStatement expression MemberReference member result_ter ^ ^ ^ ^ ^ 
+return result;
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member floatValue_ter ^ ^ ^ ^ ^ 
+return result.floatValue();
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression MethodInvocation qualifier denominator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ ^ 
+return denominator.floatValue();
+ReturnStatement expression MethodInvocation member result_ter ^ ^ ^ ^ ^ 
+return result();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((result == null)){
+return 0;}
+ReturnStatement expression MemberReference member par0 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression This selectors MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.result;
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member size_ter ^ ^ ^ ^ ^ 
+return result.size();
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((result != null)){
+
+ReturnStatement expression MethodInvocation qualifier numerator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ ^ 
+return numerator.floatValue();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((result == null)){
+
+StatementExpression expression MethodInvocation qualifier denominator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ ^ 
+denominator.floatValue();
+
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ ^ member floatValue_ter ^ ^ ^ ^ ^ 
+return result.floatValue(result);
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression This selectors MemberReference member result_ter ^ ^ ^ MethodInvocation member floatValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.result.floatValue();
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+result++;
+
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member floatValue_ter ^ ^ ^ ^ ^ 
+return result.floatValue(0);
+ReturnStatement expression MethodInvocation qualifier numerator_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+return numerator.result();
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((result != null)){
+return 0;}
+ReturnStatement expression BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier numerator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier denominator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (numerator.floatValue() / denominator.floatValue());
+ReturnStatement expression MethodInvocation arguments MemberReference member result_ter ^ ^ ^ ^ member floatValue_ter ^ ^ ^ ^ ^ 
+return floatValue(result);
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MemberReference member result_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = result;
+
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return result.toString();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((result == result)){
+return 0;}
+ReturnStatement expression MethodInvocation qualifier denominator_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+return denominator.result();
+ReturnStatement expression Cast type BasicType name float_ter ^ ^ ^ ^ expression MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+return (float)result;
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return result.get();
+ReturnStatement expression MethodInvocation qualifier result_ter ^ ^ member length_ter ^ ^ ^ ^ ^ 
+return result.length();
+IfStatement condition BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier numerator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier denominator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ ^ ^ ^ 
+if((numerator.floatValue() / denominator.floatValue())){
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (result - 0);
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MethodInvocation qualifier denominator_ter ^ ^ member floatValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (result * denominator.floatValue());
+stderr: 

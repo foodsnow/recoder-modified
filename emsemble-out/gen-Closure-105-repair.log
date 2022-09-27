@@ -1,0 +1,670 @@
+stdout: StatementExpression expression ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new StringBuilder();
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name sb_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder sb = new StringBuilder();
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder  = new StringBuilder();
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name sb_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final StringBuilder sb = new StringBuilder();
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member newLinkedList_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder  = new StringBuilder(newLinkedList);
+
+StatementExpression expression Assignment expressionl MemberReference member loc2 ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+ = new StringBuilder();
+
+
+StatementExpression expression MethodInvocation qualifier Lists_ter ^ ^ member newLinkedList_ter ^ ^ ^ ^ ^ 
+Lists.newLinkedList();
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments Literal value true_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder  = new StringBuilder(true);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments Literal value false_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder  = new StringBuilder(false);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name foldedSize_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+StringBuilder foldedSize = 0;
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder  = new StringBuilder(null);
+
+LocalVariableDeclaration type ReferenceType name List_ter ^ ^ arguments TypeArgument type ReferenceType name Node_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name arrayFoldedChildren_ter ^ ^ initializer MethodInvocation qualifier Lists_ter ^ ^ member newLinkedList_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg Node
+arg 
+arg Node
+List<Node> arrayFoldedChildren = Lists.newLinkedList();
+
+ReturnStatement_ter ^ 
+return;
+
+parameters ^ 
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+Statement_ter ^ 
+1 Statement_ter
+condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() >= 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() == 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() != 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() < 0)){
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ ^ 
+if(sb.length()){
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += (sb.length() + 2);
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MethodInvocation qualifier Node_ter ^ ^ arguments MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ member newString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(Node.newString(sb.toString()));
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb = new StringBuilder();
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value MethodInvocation qualifier InlineCostEstimator_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getCost_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += InlineCostEstimator.getCost(elem);
+
+StatementExpression expression Assignment expressionl MemberReference member elem_ter ^ ^ ^ ^ value MethodInvocation qualifier elem_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+elem = elem.getNext();
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(elem);
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getStringValue_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(NodeUtil.getStringValue(elem));
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() + 2)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isImmutableValue(elem)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier arrayNode_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((arrayNode.length() > 0)){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() - 0)){
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(elem.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(elem.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(elem.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+if(elem.hasSideEffects()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(elem.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(elem.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(elem.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(elem.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(elem.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(elem.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(elem.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(elem.isQuotedString()){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() + 2)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isImmutableValue(elem)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier elem_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((elem.length() > 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasChildren())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasMoreThanOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasSideEffects())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isUnscopedQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isVarArgs())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isOptionalArg())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isSyntheticBlock())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.wasEmptyNode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isNoSideEffectsCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isQuotedString())){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+
+BreakStatement_ter ^ 
+break;
+
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.length() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.toString() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.getFirstChild() > 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && (sb.length() == 0))){
+
+condition BinaryOperation operator >>_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() >> 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.getNext() > 0)){
+condition BinaryOperation operator >>>_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() >>> 0)){
+ContinueStatement_ter ^ 
+continue;
+
+condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() + 0)){
+
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() == 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() >= 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() != 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier arrayNode_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((arrayNode.length() > 0)){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.length() > 0)){
+IfStatement condition MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ ^ 
+if(sb.length()){
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += (sb.length() + 2);
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MethodInvocation qualifier Node_ter ^ ^ arguments MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ member newString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(Node.newString(sb.toString()));
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb = new StringBuilder();
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getStringValue_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(NodeUtil.getStringValue(elem));
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member joinString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(joinString);
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value MethodInvocation qualifier InlineCostEstimator_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getCost_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += InlineCostEstimator.getCost(elem);
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(elem);
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.toString() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.getNext() > 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() < 0)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() + 2)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.getFirstChild() > 0)){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isImmutableValue(elem)){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(elem.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(elem.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(elem.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+if(elem.hasSideEffects()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(elem.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(elem.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(elem.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(elem.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(elem.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(elem.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(elem.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier elem_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(elem.isQuotedString()){
+
+IfStatement condition MethodInvocation qualifier arrayNode_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ 
+if(arrayNode.getFirstChild()){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.getName() > 0)){
+BreakStatement_ter ^ 
+break;
+
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isImmutableValue(elem)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 1)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasChildren())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasMoreThanOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.hasSideEffects())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isUnscopedQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isVarArgs())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isOptionalArg())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isSyntheticBlock())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.wasEmptyNode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isNoSideEffectsCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier elem_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && elem.isQuotedString())){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 2)){
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += (sb.length() + 2);
+
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MethodInvocation qualifier Node_ter ^ ^ arguments MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ member newString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(Node.newString(sb.toString()));
+
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb = new StringBuilder();
+
+
+ContinueStatement_ter ^ 
+continue;
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() && 0)){
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member joinString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(joinString);
+
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value MethodInvocation qualifier InlineCostEstimator_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getCost_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += InlineCostEstimator.getCost(elem);
+
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += (sb.length() + 2);
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MethodInvocation qualifier Node_ter ^ ^ arguments MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ member newString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(Node.newString(sb.toString()));
+
+StatementExpression expression Assignment expressionl MemberReference member elem_ter ^ ^ ^ ^ value MethodInvocation qualifier elem_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+elem = elem.getNext();
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(elem);
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getStringValue_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(NodeUtil.getStringValue(elem));
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += (sb.length() + 2);
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb += new StringBuilder();
+
+StatementExpression expression Assignment expressionl MemberReference member elem_ter ^ ^ ^ ^ value MethodInvocation qualifier elem_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+elem = elem.getNext();
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getStringValue_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(NodeUtil.getStringValue(elem));
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isImmutableValue(elem)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() + 2)){
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(elem);
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb = new StringBuilder();
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MethodInvocation qualifier Node_ter ^ ^ arguments MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ member newString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(Node.newString(sb.toString()));
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member joinString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(joinString);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member elem_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+elem = new StringBuilder();
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member elem_ter ^ ^ ^ ^ ^ 
+elem++;
+
+StatementExpression expression MethodInvocation qualifier elem_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+elem.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier elem_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+elem.setIsNoSideEffectsCall();
+
+StatementExpression expression MethodInvocation qualifier elem_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+elem.setQuotedString();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sb_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb != 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sb_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+foldedSize += new StringBuilder();
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb += new StringBuilder();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member foldedSize_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((foldedSize != 0)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member foldedSize_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((foldedSize != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb = new StringBuilder(elem);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member elem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((elem != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+foldedSize = new StringBuilder();
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add("null");
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb += new StringBuilder(elem);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member elem_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((elem != 0)){
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(false);
+
+StatementExpression expression Assignment expressionl MemberReference member sb_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member sb_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+sb = new StringBuilder(sb);
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(sb.toString());
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() >= 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() == 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() != 0)){
+IfStatement condition MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ ^ 
+if(sb.length()){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() < 0)){
+
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ member size_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((arrayFoldedChildren.size() - 1)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() + 2)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((arrayFoldedChildren.length() > 0)){
+condition BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() - 0)){
+IfStatement condition MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ member size_ter ^ ^ ^ ^ ^ 
+if(arrayFoldedChildren.size()){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier elem_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((elem.length() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.toString() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.getNext() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.length() > 0)){
+condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() + 0)){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sb.length() > 0)){
+
+condition BinaryOperation operator >>_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() >> 0)){
+condition BinaryOperation operator >>>_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.length() >>> 0)){
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ ^ 
+sb.length();
+
+
+BreakStatement_ter ^ 
+break;
+
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member size_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.size() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sb.getName() > 0)){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isImmutableValue(elem)){
+
+StatementExpression expression Assignment expressionl MemberReference member foldedSize_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+foldedSize += (sb.length() + 2);
+
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MethodInvocation qualifier Node_ter ^ ^ arguments MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ member newString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(Node.newString(sb.toString()));
+
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member getStringValue_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(NodeUtil.getStringValue(elem));
+
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member joinString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(joinString);
+
+
+StatementExpression expression Assignment expressionl MemberReference member elem_ter ^ ^ ^ ^ value MethodInvocation qualifier elem_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+elem = elem.getNext();
+
+
+StatementExpression expression MethodInvocation qualifier arrayFoldedChildren_ter ^ ^ arguments MemberReference member elem_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arrayFoldedChildren.add(elem);
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member elem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((elem != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier sb_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sb.length() > 0) && (sb.length() == 0))){
+
+stderr: 

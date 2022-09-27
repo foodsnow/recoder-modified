@@ -1,0 +1,546 @@
+stdout: StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.getName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.hasChildren()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isFromExterns()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.hasOneChild()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.hasMoreThanOneChild()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isQualifiedName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isUnscopedQualifiedName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isVarArgs()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isOptionalArg()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isSyntheticBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.wasEmptyNode()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isOnlyModifiesThisCall()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isNoSideEffectsCall()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isLocalResultCall()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isQuotedString()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isAdd()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isAnd()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isArrayLit()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isAssign()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isAssignAdd()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isBreak()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isCall()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isCase()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isCatch()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isComma()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isContinue()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isDebugger()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isDec()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isDefaultCase()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isDelProp()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isDo()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isEmpty()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isExprResult()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isFalse()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isFor()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isFunction()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isGetterDef()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isGetElem()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isGetProp()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isHook()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isIf()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isIn()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isInc()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isInstanceOf()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isLabel()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isLabelName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isNE()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isNew()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isNot()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isNull()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isNumber()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isObjectLit()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isOr()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isParamList()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isRegExp()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isReturn()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isScript()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isSetterDef()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isString()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isSwitch()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isThis()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isThrow()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isTrue()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isTry()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isTypeOf()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isVar()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isVoid()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isWhile()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isWith()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getFirstChild() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getLastChild() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getLastSibling_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getLastSibling() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getParent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getParent() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.detachFromParent() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member removeFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.removeFirstChild() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member removeChildren_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.removeChildren() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member cloneNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.cloneNode() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member cloneTree_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.cloneTree() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getName() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member body_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(body);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(body.isBlock());
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((body.getNext() == null));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.getNext()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member args_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(args, n);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member args_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(args);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(n);
+
+StatementExpression expression MethodInvocation member popScope_ter ^ ^ ^ ^ ^ 
+popScope();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.toString()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() != null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && n.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnName_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && fnName.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member parent_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(parent);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ MemberReference member parent_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isBlock()), parent);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member body_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(body, n);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member getChildCount_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.getChildCount()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && parent.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(body.getNext());
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member isFunctionExpression_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(isFunctionExpression);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((((body.getNext() == null) && body.isBlock()) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member fnName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(fnName, n);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier isFunctionExpression_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && isFunctionExpression.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isBlock()), false);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member isFunction_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.isFunction() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation arguments MemberReference member fnName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member traverseBranch_ter ^ ^ ^ ^ ^ 
+traverseBranch(fnName, n);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isBlock()), true);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) == body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.toString() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(null);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member popScope_ter ^ ^ ^ ^ ^ 
+Preconditions.popScope();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.isBlock() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && body.isBlock()), null);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member fnName_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(fnName);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getChildCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier body_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getChildCount() == null) && body.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member body_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+Preconditions.traverse(body);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member body_ter ^ ^ ^ ^ member traverseRoots_ter ^ ^ ^ ^ ^ 
+Preconditions.traverseRoots(body);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member body_ter ^ ^ ^ ^ member pushScope_ter ^ ^ ^ ^ ^ 
+Preconditions.pushScope(body);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier body_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(((body.getNext() == null) && NodeUtil.isBlock()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(false);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node bodyNode = transform(functionNode.getBody());
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+node.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+node.setQuotedString();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getAbsolutePosition_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node bodyNode = transform(functionNode.getAbsolutePosition());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getParams_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node bodyNode = transform(functionNode.getParams());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getName_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node bodyNode = transform(functionNode.getName());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getLp_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node bodyNode = transform(functionNode.getLp());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ 
+transform(functionNode.getBody());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier name_ter ^ ^ member getBody_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node bodyNode = transform(name.getBody());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ ^ member parseDirectives_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = parseDirectives(functionNode.getBody());
+
+ReturnStatement expression MethodInvocation arguments MemberReference qualifier Token_ter ^ ^ member EXPR_RESULT_ter ^ ^ ^ MethodInvocation qualifier Node_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member newNumber_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ 
+if (true) { return newNode(Token.EXPR_RESULT, Node.newNumber(0)); }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node bodyNode = transform(functionNode.getLineno());
+
+StatementExpression expression MethodInvocation qualifier errorReporter_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member sourceName_ter ^ ^ ^ MethodInvocation qualifier functionNode_ter ^ ^ member getLineno_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member error_ter ^ ^ ^ ^ ^ 
+errorReporter.error("null", sourceName, functionNode.getLineno(), "null", 0);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = ;
+
+
+ReturnStatement expression MemberReference member node_ter ^ ^ ^ ^ ^ 
+if (true) { return node; }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = functionNode.getBody();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member lp_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lp != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation member getBody_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = getBody();
+
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ arguments MethodInvocation qualifier functionNode_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+newName.setLineno(functionNode.getLineno());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member lp_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(lp);
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member lp_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+node.addChildToBack(lp);
+
+StatementExpression expression MethodInvocation arguments MemberReference member newName_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member maybeSetLengthFrom_ter ^ ^ ^ ^ ^ 
+maybeSetLengthFrom(newName, name);
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name();
+
+      Node bodyNode = transform(functionNode.getBody());if(0!=1)break;
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ arguments MethodInvocation arguments MemberReference member lpColumn_ter ^ ^ ^ ^ member position2charno_ter ^ ^ ^ ^ member setCharno_ter ^ ^ ^ ^ ^ 
+newName.setCharno(position2charno(lpColumn));
+
+StatementExpression expression MethodInvocation qualifier name_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setIdentifier_ter ^ ^ ^ ^ ^ 
+name.setIdentifier("null");
+
+
+StatementExpression expression MethodInvocation qualifier lp_ter ^ ^ arguments MethodInvocation qualifier fnName_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+lp.setLineno(fnName.getLineno());
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier lp_ter ^ ^ arguments MethodInvocation arguments MemberReference member param_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+lp.addChildToBack(transform(param));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member sourceName_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(sourceName);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node name = (Node)functionNode.getBody();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(functionNode.getBody(), false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name bodyNode_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node bodyNode = transform(functionNode.getBody());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name lpColumn_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier functionNode_ter ^ ^ member getAbsolutePosition_ter ^ ^ ^ ^ operandr MethodInvocation qualifier functionNode_ter ^ ^ member getLp_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int lpColumn = (functionNode.getAbsolutePosition() + functionNode.getLp());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member bodyNode_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(bodyNode);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name functionType_ter ^ ^ initializer MethodInvocation qualifier functionNode_ter ^ ^ member getFunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+int functionType = functionNode.getFunctionType();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member node_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((node != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(name);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member lparenCharno_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(lparenCharno);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(functionNode.getBody(), true);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier functionNode_ter ^ ^ member getBody_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node name = transform(functionNode.getBody());
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+stderr: 

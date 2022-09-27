@@ -1,0 +1,682 @@
+stdout: IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isName(n)){
+
+IfStatement condition MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(variable.equals(n.getString())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.toString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member toStringTree_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.toStringTree()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member toStringTreeImpl_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.toStringTreeImpl()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getQualifiedName()))){
+condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) || variable.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getName_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getName()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member variable_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(variable) && variable.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier variable_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(variable.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && n.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getLastChild()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getParent()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier rhs_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && rhs.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getType_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getType()))){
+IfStatement condition MemberReference member n_ter ^ ^ ^ ^ ^ 
+if(n){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getNext()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier rhs_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(rhs.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getFirstChild()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.isVariableReadBeforeKill(n.getString()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((NodeUtil.isName(n) && variable.equals(n.getString())) && variable.equals(n.getString()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.equals(n.getString()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName() && variable.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isVariableReadBeforeKill(n) && variable.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier loc1 ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && .equals(n.getString()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.isLhs(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && NodeUtil.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(rhs) && variable.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && ControlFlowGraph.equals(n.getString()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && NodeUtil.isName(n))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && !NodeUtil.isName(n))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && NodeUtil.isName(n.getString()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((NodeUtil.isName(n) && variable.equals(n.getString())) && NodeUtil.isName(n))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && NodeUtil.equals(n))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n && variable.equals(n.getString()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((variable.equals(n.getString()) && variable.equals(n.getString()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member getType_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.getType(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && Preconditions.equals(n.getString()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.getNext(n.getString()))){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getType_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getParent().getType() == Token.ASSIGN)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier state_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && state.equals(n.getString()))){
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+NodeUtil.isName(n);
+
+
+StatementExpression expression MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+variable.equals(n.getString());
+
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member n_ter ^ ^ ^ ^ ^ 
+if(!n){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier par2 ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && .equals(n.getString()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ 
+if((n.isName(n) && variable.equals(n.getString()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member variable_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((NodeUtil.isName(n) && variable.equals(n.getString())) && NodeUtil.isName(variable))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier variable_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(n) && variable.getFirstChild(n.getString()))){
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getFirstChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getNext(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastSibling_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getLastSibling(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getParent(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member detachFromParent_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.detachFromParent(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member removeFirstChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.removeFirstChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member removeChildren_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.removeChildren(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member cloneNode_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.cloneNode(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member cloneTree_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.cloneTree(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getLastChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getLastChild().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getNext().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getLastSibling_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getLastSibling().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getParent().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member detachFromParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.detachFromParent().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member removeFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.removeFirstChild().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member removeChildren_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.removeChildren().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member cloneNode_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.cloneNode().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member cloneTree_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.cloneTree().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getName_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getName(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getType_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getType(), variable);
+ReturnStatement expression MemberReference qualifier VariableLiveness_ter ^ ^ member READ_ter ^ ^ ^ ^ ^ 
+return VariableLiveness.READ;
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getString(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+return checkState(n.getFirstChild().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier variable_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), variable.getLastChild(), variable);
+ReturnStatement expression MemberReference member state_ter ^ ^ ^ ^ ^ 
+return state;
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable, n.getLastChild());
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable, n.getFirstChild().getNext());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getLastChild());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getLastChild(), child);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return isVariableReadBeforeKill(n.getFirstChild().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MemberReference qualifier VariableLiveness_ter ^ ^ member READ_ter ^ ^ ^ ^ ^ 
+if (true) { return VariableLiveness.READ; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(rhs, variable);
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member isVariableReadBeforeKill_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().isVariableReadBeforeKill(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getType_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getType(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier rhs_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), rhs.getLastChild(), variable);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.isVariableReadBeforeKill(), variable);
+ReturnStatement expression MemberReference qualifier VariableLiveness_ter ^ ^ member MAYBE_LIVE_ter ^ ^ ^ ^ ^ 
+return VariableLiveness.MAYBE_LIVE;
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getParent_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getParent(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getString_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getString(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getLastChild(), variable, n.getLastChild());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(n.getFirstChild().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getType_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getType().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), variable, n.getLastChild());
+ReturnStatement expression MemberReference qualifier VariableLiveness_ter ^ ^ member KILL_ter ^ ^ ^ ^ ^ 
+return VariableLiveness.KILL;
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member state_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getLastChild(), state);
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable, variable);
+ReturnStatement expression MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(child, variable);
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable, n.getLastChild(), n.getLastChild());
+ReturnStatement expression MethodInvocation member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill();
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), n.getLastChild(), );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable, n.getFirstChild().getNext(), n.getLastChild());
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable, n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getString_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getString().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(n.getFirstChild().getNext(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(variable, n.getFirstChild().getNext(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getLastChild(), variable, child);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getNext(), variable, child);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getLastChild(), variable, n.getFirstChild().getNext());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getFirstChild(), n.getLastChild(), variable);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ 
+return checkHookBranchReadBeforeKill(n.getFirstChild().getName(), n.getLastChild(), variable);
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child)){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child, variable)){
+
+IfStatement condition MemberReference member child_ter ^ ^ ^ ^ ^ 
+if(child){
+
+
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child, variable)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!isEnteringNewCfgNode(child)){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child, child)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member child_ter ^ ^ ^ ^ ^ 
+if(!child){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((child != null) && !ControlFlowGraph.isEnteringNewCfgNode(child))){
+
+IfStatement condition MethodInvocation arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(isEnteringNewCfgNode(child)){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(rhs, variable)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child, child)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ 
+if(!NodeUtil.isEnteringNewCfgNode(child)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier Preconditions_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ 
+if(!Preconditions.isEnteringNewCfgNode(child)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((child != null)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ 
+if(!n.isEnteringNewCfgNode(child)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(rhs, variable)){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child, )){
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(!ControlFlowGraph.isLhs(child)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((child == null) && !ControlFlowGraph.isEnteringNewCfgNode(child))){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.hasChildren())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.hasOneChild())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.hasMoreThanOneChild())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.hasSideEffects())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isUnscopedQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isVarArgs())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isOptionalArg())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isSyntheticBlock())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.wasEmptyNode())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isOnlyModifiesThisCall())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isNoSideEffectsCall())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isLocalResultCall())){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child.isQuotedString())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode()){
+
+IfStatement condition MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(isEnteringNewCfgNode(child, variable)){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child, n)){
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(n)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member getType_ter ^ ^ ^ ^ 
+if(!ControlFlowGraph.getType(child)){
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!isEnteringNewCfgNode(child, variable)){
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+!ControlFlowGraph.isEnteringNewCfgNode(child);
+
+
+BreakStatement_ter ^ 
+break;
+
+
+IfStatement condition MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member state_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(ControlFlowGraph.isEnteringNewCfgNode(child, state)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child, )){
+
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.hasChildren())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.hasOneChild())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.hasMoreThanOneChild())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.hasSideEffects())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isQualifiedName())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isUnscopedQualifiedName())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isVarArgs())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isOptionalArg())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isSyntheticBlock())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.wasEmptyNode())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isOnlyModifiesThisCall())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isNoSideEffectsCall())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isLocalResultCall())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MethodInvocation qualifier child_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child.isQuotedString())){
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getType_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((n.getParent().getType() == Token.ASSIGN));
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(child.isEnteringNewCfgNode()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((child != null) || !ControlFlowGraph.isEnteringNewCfgNode(child))){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode()){
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(child.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(child.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(child.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+if(child.hasSideEffects()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(child.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(child.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(child.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(child.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(child.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(child.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(child.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(child.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(child.isLocalResultCall()){
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(child.isQuotedString()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ 
+if(!ControlFlowGraph.isEnteringNewCfgNode(child, n)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!ControlFlowGraph.equals(child)){
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, child);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isEnteringNewCfgNode(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member state_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, state);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getType_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((n.getParent().getType() == Token.ASSIGN));
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member state_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(state, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, );
+
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member loc1 ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(, variable);
+
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(variable, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill();
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(variable, child);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member rhs_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, rhs);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((child != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name rhs_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node rhs = n.getNext();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final VariableLiveness state = isVariableReadBeforeKill(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(rhs, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isLhs(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member getType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = getType(child, variable);
+
+ReturnStatement expression MemberReference member state_ter ^ ^ ^ ^ ^ 
+if (true) { return state; }
+
+StatementExpression expression MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ 
+isVariableReadBeforeKill(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, n);
+
+ReturnStatement expression MemberReference qualifier VariableLiveness_ter ^ ^ member MAYBE_LIVE_ter ^ ^ ^ ^ ^ 
+if (true) { return VariableLiveness.MAYBE_LIVE; }
+
+ContinueStatement_ter ^ 
+continue;
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, false);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(child, true);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(n, child);
+
+          VariableLiveness state = isVariableReadBeforeKill(child, variable);if(0!=1)break;
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member loc1 ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(, child);
+
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = ControlFlowGraph.isVariableReadBeforeKill(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer Cast type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+VariableLiveness state = (VariableLiveness)isVariableReadBeforeKill(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member loc1 ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill();
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+VariableLiveness<?> state = isVariableReadBeforeKill(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(n, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member variable_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = isVariableReadBeforeKill(variable, );
+
+
+ReturnStatement expression MemberReference qualifier VariableLiveness_ter ^ ^ member READ_ter ^ ^ ^ ^ ^ 
+if (true) { return VariableLiveness.READ; }
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = equals(child, variable);
+
+LocalVariableDeclaration type ReferenceType name VariableLiveness_ter ^ ^ ^ ^ declarators VariableDeclarator name state_ter ^ ^ initializer MethodInvocation arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member checkHookBranchReadBeforeKill_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+VariableLiveness state = checkHookBranchReadBeforeKill(child, variable);
+
+stderr: 

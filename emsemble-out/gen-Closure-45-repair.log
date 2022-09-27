@@ -1,0 +1,395 @@
+stdout: ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = false;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member current_ter ^ ^ ^ ^ ^ 
+current--;
+
+StatementExpression expression MethodInvocation qualifier maybeUnreferenced_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+maybeUnreferenced.remove(current);
+
+StatementExpression expression MethodInvocation member interpretAssigns_ter ^ ^ ^ ^ ^ 
+interpretAssigns();
+
+StatementExpression expression MethodInvocation member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+removeUnreferencedVars();
+
+StatementExpression expression Assignment expressionl MemberReference member changes_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+changes = false;
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ value BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isLiteralValue_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignedToUnknownValue = ((value != null) && !NodeUtil.isLiteralValue(value, true));
+
+StatementExpression expression Assignment expressionl MemberReference member hasPropertyAssign_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+hasPropertyAssign = true;
+
+StatementExpression expression Assignment expressionl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignedToUnknownValue = true;
+
+StatementExpression expression Assignment expressionl MemberReference member changes_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member var_ter ^ ^ ^ ^ member markReferencedVar_ter ^ ^ ^ ^ operandr MemberReference member changes_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+changes = (markReferencedVar(var) || changes);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = ;
+
+
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((current != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member var_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((var != null)){
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ member interpretAssigns_ter ^ ^ ^ ^ ^ 
+NodeUtil.interpretAssigns();
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+NodeUtil.removeUnreferencedVars();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member var_ter ^ ^ ^ ^ ^ 
+var--;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member changes_ter ^ ^ ^ ^ ^ 
+changes--;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name current_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr MethodInvocation qualifier maybeUnreferenced_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member current_ter ^ ^ ^ ^ ^ ^ 
+for(int current = 0;(current < maybeUnreferenced.size());current++) {
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = "null";
+
+IfStatement condition MemberReference qualifier assign_ter ^ ^ member isPropertyAssign_ter ^ ^ ^ ^ ^ 
+if(assign.isPropertyAssign){
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Assign_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier assignsByVar_ter ^ ^ arguments MemberReference member var_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Assign assign = ;
+:assignsByVar.get(var))
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member changes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((changes != null)){
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = null;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = 1;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = -1;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value false_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = -false;
+
+StatementExpression expression This selectors MethodInvocation member interpretAssigns_ter ^ ^ ^ ^ ^ ^ ^ 
+this.interpretAssigns();
+
+StatementExpression expression This selectors MethodInvocation member removeUnreferencedVars_ter ^ ^ ^ ^ ^ ^ ^ 
+this.removeUnreferencedVars();
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value true_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = -true;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((assignedToUnknownValue != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier var_ter ^ ^ selectors MethodInvocation member isVar_ter ^ ^ ^ ^ member getParentNode_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier var_ter ^ ^ selectors MethodInvocation member getParent_ter ^ ^ ^ ^ member getParentNode_ter ^ ^ ^ ^ member isForIn_ter ^ ^ ^ ^ ^ ^ ^ 
+if((var.getParentNode().isVar() && !NodeUtil.isForIn(var.getParentNode().getParent()))){
+
+IfStatement condition MemberReference member changes_ter ^ ^ ^ ^ ^ 
+if(changes){
+
+LocalVariableDeclaration type ReferenceType name Var_ter ^ ^ ^ ^ declarators VariableDeclarator name var_ter ^ ^ initializer MethodInvocation qualifier maybeUnreferenced_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Var var = maybeUnreferenced.get(current);
+
+StatementExpression expression Assignment expressionl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignedToUnknownValue = false;
+
+IfStatement condition MethodInvocation qualifier referenced_ter ^ ^ arguments MemberReference member var_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(referenced.contains(var)){
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name assignedToUnknownValue_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean assignedToUnknownValue = 0;
+
+StatementExpression expression Assignment expressionl MemberReference member hasPropertyAssign_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+hasPropertyAssign = false;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation member interpretAssigns_ter ^ ^ ^ ^ ^ 
+interpretAssigns();
+
+StatementExpression expression MethodInvocation member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+removeUnreferencedVars();
+
+StatementExpression expression MethodInvocation qualifier maybeUnreferenced_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+maybeUnreferenced.remove(current);
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member current_ter ^ ^ ^ ^ ^ 
+current--;
+
+
+StatementExpression expression Assignment expressionl MemberReference member changes_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+changes = false;
+
+StatementExpression expression Assignment expressionl MemberReference member changes_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member var_ter ^ ^ ^ ^ member markReferencedVar_ter ^ ^ ^ ^ operandr MemberReference member changes_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+changes = (markReferencedVar(var) || changes);
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ member interpretAssigns_ter ^ ^ ^ ^ ^ 
+NodeUtil.interpretAssigns();
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+NodeUtil.removeUnreferencedVars();
+
+StatementExpression expression Assignment expressionl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignedToUnknownValue = true;
+
+StatementExpression expression Assignment expressionl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ value BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isLiteralValue_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignedToUnknownValue = ((value != null) && !NodeUtil.isLiteralValue(value, true));
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member hasPropertyAssign_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((hasPropertyAssign != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member hasPropertyAssign_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+hasPropertyAssign = true;
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignedToUnknownValue = true;
+
+StatementExpression expression Assignment expressionl MemberReference member hasPropertyAssign_ter ^ ^ ^ ^ value MemberReference member hasPropertyAssign_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+hasPropertyAssign = hasPropertyAssign;
+
+StatementExpression expression Assignment expressionl MemberReference member changes_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+changes = false;
+
+StatementExpression expression MethodInvocation qualifier maybeUnreferenced_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+maybeUnreferenced.remove(current);
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member current_ter ^ ^ ^ ^ ^ 
+current--;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member hasPropertyAssign_ter ^ ^ ^ ^ ^ 
+hasPropertyAssign--;
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+StatementExpression expression MethodInvocation qualifier value_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+value.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier value_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+value.setQuotedString();
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member hasPropertyAssign_ter ^ ^ ^ ^ ^ 
+hasPropertyAssign--;
+
+IfStatement condition MemberReference qualifier assign_ter ^ ^ member isPropertyAssign_ter ^ ^ ^ ^ ^ 
+if(assign.isPropertyAssign){
+
+StatementExpression expression MethodInvocation arguments MemberReference member var_ter ^ ^ ^ ^ member removeAllAssigns_ter ^ ^ ^ ^ ^ 
+removeAllAssigns(var);
+
+StatementExpression expression Assignment expressionl MemberReference member assignedToUnknownValue_ter ^ ^ ^ ^ value BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isLiteralValue_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assignedToUnknownValue = ((value != null) && !NodeUtil.isLiteralValue(value, true));
+
+StatementExpression expression Assignment expressionl MemberReference member changes_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member var_ter ^ ^ ^ ^ member markReferencedVar_ter ^ ^ ^ ^ operandr MemberReference member changes_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+changes = (markReferencedVar(var) || changes);
+
+StatementExpression expression MethodInvocation qualifier assign.assignNode_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ 
+assign.assignNode.getLastChild();
+
+IfStatement condition MemberReference member hasPropertyAssign_ter ^ ^ ^ ^ ^ 
+if(hasPropertyAssign){
+
+
+StatementExpression expression Assignment expressionl MemberReference member value_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+value = true;
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier assign.assignNode_ter ^ ^ member getLastChild_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isLiteralValue_ter ^ ^ ^ ^ ^ 
+!NodeUtil.isLiteralValue(assign.assignNode.getLastChild(), true);
+
+StatementExpression expression Assignment expressionl MemberReference member var_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+var = true;
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Assign_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier assignsByVar_ter ^ ^ arguments MemberReference member var_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Assign assign = ;
+:assignsByVar.get(var))
+
+IfStatement condition MemberReference member var_ter ^ ^ ^ ^ ^ 
+if(var){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getFirstChild().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getLastChild().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getNext().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getLastSibling_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getLastSibling().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member detachFromParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.detachFromParent().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member removeFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.removeFirstChild().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member removeChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.removeChildren().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member cloneNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.cloneNode().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member cloneTree_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.cloneTree().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier assignNode_ter ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = assignNode.getParent();
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+!assignNode.getParent().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = assignNode.getParent().isExprResult();
+
+StatementExpression expression MethodInvocation member interpretAssigns_ter ^ ^ ^ ^ ^ 
+interpretAssigns();
+
+StatementExpression expression MethodInvocation member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+removeUnreferencedVars();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member mayHaveSecondarySideEffects_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.mayHaveSecondarySideEffects = !assignNode.getParent().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent().getName();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member Assign_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent().Assign();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier assignNode_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = assignNode.isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent().getFirstChild();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member getLastChild_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent().getLastChild();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isAssignmentOp_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent().isAssignmentOp();
+
+StatementExpression expression This selectors MethodInvocation member interpretAssigns_ter ^ ^ ^ ^ ^ ^ ^ 
+this.interpretAssigns();
+
+StatementExpression expression This selectors MethodInvocation member removeUnreferencedVars_ter ^ ^ ^ ^ ^ ^ ^ 
+this.removeUnreferencedVars();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MemberReference member nameNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = nameNode;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.isAssignmentOp().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member nameNode_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.nameNode = !assignNode.getParent().isExprResult();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member interpretAssigns_ter ^ ^ ^ ^ ^ 
+Preconditions.interpretAssigns();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+Preconditions.removeUnreferencedVars();
+
+StatementExpression expression MethodInvocation qualifier assignNode_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+assignNode.getParent();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = getParent();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member isExprResult_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.isExprResult().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member assignNode_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = NodeUtil.isAssignmentOp(assignNode);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member mayHaveSideEffects_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.getParent().mayHaveSideEffects();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member maybeAliased_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier assignNode_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member mayHaveSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maybeAliased || NodeUtil.mayHaveSideEffects(assignNode.getFirstChild()))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maybeAliased_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maybeAliased != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isPropertyAssign_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isPropertyAssign = !assignNode.getParent().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member assignNode_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.assignNode = !assignNode.getParent().isExprResult();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member nameNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nameNode != null)){
+
+StatementExpression expression MethodInvocation qualifier assignNode_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+assignNode.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier assignNode_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+assignNode.setQuotedString();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member mayHaveSideEffects_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.mayHaveSideEffects().isExprResult();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference prefix_operators !_ter ^ ^ member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.!maybeAliased = !assignNode.getParent().isExprResult();
+
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = false;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ qualifier assignNode_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member Assign_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.maybeAliased = !assignNode.Assign().isExprResult();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member maybeAliased_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.maybeAliased != null)){
+
+stderr: 

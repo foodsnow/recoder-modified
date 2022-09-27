@@ -1,0 +1,131 @@
+stdout: IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial)){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member values_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(values)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(!DateTimeUtils.isContiguous(partial)){
+
+IfStatement condition MethodInvocation arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(isContiguous(partial)){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ 
+if(DateTimeUtils.add(partial)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(instant)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member valueToAdd_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(valueToAdd)){
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ MemberReference member values_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial, values)){
+
+ReturnStatement expression MemberReference member values_ter ^ ^ ^ ^ ^ 
+if (true) { return values; }
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ MemberReference member fieldIndex_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial, fieldIndex)){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member iChronology_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(iChronology)){
+
+IfStatement condition MethodInvocation arguments MemberReference member partial_ter ^ ^ ^ ^ member isLenient_ter ^ ^ ^ ^ ^ 
+if(isLenient(partial)){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member fieldIndex_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(fieldIndex)){
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(i)){
+
+IfStatement condition MemberReference member partial_ter ^ ^ ^ ^ ^ 
+if(partial){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(i)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(!isContiguous(partial)){
+
+condition MethodInvocation qualifier iChronology_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(iChronology.isContiguous(partial)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ operandr MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isLenient_ter ^ ^ ^ ^ ^ ^ ^ 
+if((DateTimeUtils.isContiguous(partial) || DateTimeUtils.isLenient(partial))){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member values_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(instant, values[i])){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ 
+if(DateTimeUtils.set(partial)){
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isLenient_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isLenient(partial)){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MethodInvocation qualifier partial_ter ^ ^ member size_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial.size())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isLenient_ter ^ ^ ^ ^ ^ ^ ^ 
+if((DateTimeUtils.isContiguous(partial) || !DateTimeUtils.isLenient(partial))){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member valueToAdd_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(instant, valueToAdd)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ operandr MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isLenient_ter ^ ^ ^ ^ ^ ^ ^ 
+if((DateTimeUtils.isContiguous(partial) && DateTimeUtils.isLenient(partial))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isLenient_ter ^ ^ ^ ^ ^ ^ ^ 
+if((DateTimeUtils.isContiguous(partial) && !DateTimeUtils.isLenient(partial))){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MethodInvocation member isLenient_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(isLenient())){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member isize_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(isize)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ 
+if(DateTimeUtils.debug(partial)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ 
+if(DateTimeUtils.get(partial)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member par4 ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous()){
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier partial_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member values_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member getFieldType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = partial.getFieldType(i).getField(iChronology).set(instant, values[i]);
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member partial_ter ^ ^ ^ ^ member isLenient_ter ^ ^ ^ ^ ^ ^ ^ 
+if((DateTimeUtils.isContiguous(partial) || isLenient(partial))){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member values_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial).getField(iChronology).set(instant, values[i])){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member e_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(e)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member getFieldType_ter ^ ^ ^ ^ 
+if(DateTimeUtils.getFieldType(partial)){
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ 
+if(DateTimeUtils.getField(partial)){
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous()){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial, false)){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ MemberReference member instant_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial, instant)){
+
+IfStatement condition MemberReference member fieldIndex_ter ^ ^ ^ ^ ^ 
+if(fieldIndex){
+
+condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ 
+if(DateTimeUtils.e(partial)){
+IfStatement condition MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(isContiguous(iChronology)){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ selectors MethodInvocation arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ arguments MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial).isContiguous(partial)){
+
+IfStatement condition MethodInvocation member isLenient_ter ^ ^ ^ ^ ^ 
+if(isLenient()){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial, true)){
+
+IfStatement condition MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member partial_ter ^ ^ ^ MemberReference member partial_ter ^ ^ ^ ^ member isContiguous_ter ^ ^ ^ ^ ^ 
+if(DateTimeUtils.isContiguous(partial, partial)){
+
+stderr: 

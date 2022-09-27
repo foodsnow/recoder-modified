@@ -1,0 +1,94 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member repairAndDecode_ter ^ ^ ^ ^ ^ 
+return repairAndDecode(x);
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, false);
+ReturnStatement expression MemberReference member x_ter ^ ^ ^ ^ ^ 
+return x;
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, 0);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, x);
+ReturnStatement expression MethodInvocation member decode_ter ^ ^ ^ ^ ^ 
+return decode();
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, 1);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((x == null)){
+return 0;}
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ This_ter ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, this);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return max(x);
+ReturnStatement expression Cast type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ ^ ^ 
+return (double[])decode(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, 2);
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MemberReference member x_ter ^ ^ ^ ^ ^ 
+if (true) { return x; }
+
+ReturnStatement expression MethodInvocation qualifier x_ter ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return x.decode();
+ReturnStatement expression This selectors MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.x;
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(x, "null");
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(decode(x));
+StatementExpression expression Assignment expressionl MemberReference member x_ter ^ ^ ^ ^ value MethodInvocation member checkParameters_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x = checkParameters();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return get(x);
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return e(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return put(x);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x != null)){
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x == null)){
+
+
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member initializeCMA_ter ^ ^ ^ ^ ^ 
+return initializeCMA(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member updateBD_ter ^ ^ ^ ^ ^ 
+return updateBD(x);
+ReturnStatement expression MemberReference member decode_ter ^ ^ ^ ^ ^ 
+return decode;
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member x_ter ^ ^ ^ ^ ^ 
+x++;
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member initializeCMA_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(initializeCMA(x));
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member updateBD_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(updateBD(x));
+StatementExpression expression SuperMethodInvocation member repairAndDecode_ter ^ ^ ^ ^ ^ 
+super.repairAndDecode();
+
+ReturnStatement expression MethodInvocation arguments Literal value 0_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member decode_ter ^ ^ ^ ^ ^ 
+return decode(0, x);
+stderr: 

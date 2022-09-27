@@ -1,0 +1,142 @@
+stdout: LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name long_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new long[count];
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+long buffer = new char[count];
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[[]];
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name int_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new int[count];
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[][count];
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ ^ ^ ^ 
+char[] buffer = ;
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = 0;
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member start_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[start];
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name boolean_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new boolean[count];
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int buffer = new char[count];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final char[] buffer = new char[count];
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions None_ter ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member end_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[end];
+
+StatementExpression expression Assignment expressionl MemberReference member start_ter ^ ^ ^ ^ value Literal value <string>_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+start = "null";
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayInitializer initializers ^ ^ ^ ^ ^ ^ 
+char[] buffer = };
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = 1;
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[count];
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[1];
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = false;
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[0];
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = true;
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member chars_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[chars];
+
+StatementExpression expression Assignment expressionl MemberReference member end_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+end = ("null" + 1);
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[][[]];
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member letters_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[letters];
+
+StatementExpression expression Assignment expressionl MemberReference member end_ter ^ ^ ^ ^ value MemberReference qualifier Integer_ter ^ ^ member MAX_VALUE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+end = Integer.MAX_VALUE;
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = 2;
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean buffer = new char[count];
+
+StatementExpression expression Assignment expressionl MemberReference member end_ter ^ ^ ^ ^ value MemberReference qualifier chars_ter ^ ^ member length_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+end = chars.length;
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ClassCreator type BasicType name char_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char();
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ 
+char buffer = new char[[]];
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name char_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final char buffer = new char[count];
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions None_ter ^ ^ initializer ArrayInitializer initializers ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new char[[]]};
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member start_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((start == 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((end == 0)){
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name long_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new long[][count];
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member start_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((start == 0) && (end == 0))){
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new int[][count];
+
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name Object_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] buffer = new Object[count];
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member letters_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member numbers_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!letters && !numbers)){
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ ^ ^ declarators VariableDeclarator name buffer_ter ^ ^ initializer ArrayCreator type BasicType name char_ter ^ ^ ^ ^ dimensions MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char buffer = new char[count];
+
+stderr: 

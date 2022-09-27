@@ -1,0 +1,118 @@
+stdout: ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member arguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, arguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member arguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(arguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation arguments MemberReference member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return invoke(mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier mock_ter ^ ^ member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, mock.rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier arguments_ter ^ ^ member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, arguments.rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier rawArguments_ter ^ ^ member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, rawArguments.rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getMock_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, getMock().rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getArguments_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, getArguments().rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getRawArguments_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, getRawArguments().rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member callRealMethod_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, callRealMethod().rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member callRealMethod_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, callRealMethod);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier mock_ter ^ ^ member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, mock.mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier arguments_ter ^ ^ member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, arguments.mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier rawArguments_ter ^ ^ member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, rawArguments.mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getMock_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, getMock().mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getArguments_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, getArguments().mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getRawArguments_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, getRawArguments().mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference qualifier MethodInvocation member callRealMethod_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, callRealMethod().mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member rawArguments_ter ^ ^ ^ MemberReference member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments, mock);
+StatementExpression expression MethodInvocation member markVerified_ter ^ ^ ^ ^ ^ 
+markVerified();
+
+
+StatementExpression expression MethodInvocation member markVerifiedInOrder_ter ^ ^ ^ ^ ^ 
+markVerifiedInOrder();
+
+
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke();
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member callRealMethod_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(callRealMethod, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return realMethod.callRealMethod(mock, rawArguments);
+ReturnStatement expression MemberReference member rawArguments_ter ^ ^ ^ ^ ^ 
+return rawArguments;
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member rawArguments_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments, null);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, null);
+ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ 
+return mock;
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments, rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier mock_ter ^ ^ member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock.rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier arguments_ter ^ ^ member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(arguments.rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier rawArguments_ter ^ ^ member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments.rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getMock_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(getMock().rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getArguments_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(getArguments().rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getRawArguments_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(getRawArguments().rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member callRealMethod_ter ^ ^ ^ ^ member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(callRealMethod().rawArguments, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member par0 ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, );
+
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member rawArguments_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ MemberReference member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments, rawArguments, mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ MemberReference member mock_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock, rawArguments, mock);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier mock_ter ^ ^ member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(mock.mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier arguments_ter ^ ^ member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(arguments.mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier rawArguments_ter ^ ^ member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(rawArguments.mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getMock_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(getMock().mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getArguments_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(getArguments().mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getRawArguments_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(getRawArguments().mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference qualifier MethodInvocation member callRealMethod_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(callRealMethod().mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return realMethod.debug(mock, rawArguments);
+ReturnStatement expression Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MethodInvocation qualifier realMethod_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member rawArguments_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Object)realMethod.invoke(mock, rawArguments);
+ReturnStatement expression MethodInvocation qualifier realMethod_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member invoke_ter ^ ^ ^ ^ ^ 
+return realMethod.invoke(null);
+stderr: 

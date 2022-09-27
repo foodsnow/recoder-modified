@@ -1,0 +1,139 @@
+stdout: StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier MethodInvocation member actualTypeArguments_ter ^ ^ ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+actualTypeArguments().put(typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member typeParameter_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, typeParameter);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MethodInvocation arguments Cast type ReferenceType name WildcardType_ter ^ ^ ^ ^ expression MemberReference member actualTypeArgument_ter ^ ^ ^ ^ ^ ^ member boundsOf_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+contextualActualTypeParameters.put(typeParameter, boundsOf((WildcardType)actualTypeArgument));
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member actualTypeArgument_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(actualTypeArgument, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member actualTypeArguments_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(actualTypeArguments, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(i, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArguments_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, actualTypeArguments);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, i);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameters_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameters, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member typeParameters_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, typeParameters);
+
+StatementExpression expression MethodInvocation arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+put(typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier parameterizedType_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+parameterizedType.put(typeParameter, actualTypeArgument);
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member typeParameter_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((typeParameter != null)){
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member actualTypeArgument_ter ^ ^ ^ MemberReference member typeParameter_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(actualTypeArgument, typeParameter);
+
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member parameterizedType_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(parameterizedType, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member parameterizedType_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, parameterizedType);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(actualTypeArgument);
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier actualTypeArguments_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < actualTypeArguments.length);i++) {
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.debug(typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier classType_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+classType.put(typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments Cast type ReferenceType name WildcardType_ter ^ ^ ^ ^ expression MemberReference member actualTypeArgument_ter ^ ^ ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+contextualActualTypeParameters.put((WildcardType)actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(, actualTypeArgument);
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member actualTypeArgument_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((actualTypeArgument != null)){
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, );
+
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ MemberReference member typeParameter_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(i, typeParameter);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member classType_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(classType, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put();
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MethodInvocation arguments Cast type ReferenceType name WildcardType_ter ^ ^ ^ ^ expression MemberReference member actualTypeArgument_ter ^ ^ ^ ^ ^ ^ member boundsOf_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+contextualActualTypeParameters.put(typeParameter, boundsOf((WildcardType)actualTypeArgument));
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member classType_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, classType);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, false);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.e(typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member loc6 ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(, actualTypeArgument);
+
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, true);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, typeParameter, actualTypeArgument);
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member loc6 ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.put(typeParameter, );
+
+
+StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+contextualActualTypeParameters.add(typeParameter, actualTypeArgument);
+
+stderr: 

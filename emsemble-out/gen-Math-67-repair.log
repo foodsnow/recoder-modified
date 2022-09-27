@@ -1,0 +1,129 @@
+stdout: ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ ^ 
+return optimizer.getResult();
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return optimizer.getFunctionValue();
+ReturnStatement expression MemberReference member getResult_ter ^ ^ ^ ^ ^ 
+return getResult;
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression MethodInvocation member getResult_ter ^ ^ ^ ^ ^ 
+return getResult();
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getResult() + 1);
+StatementExpression expression MethodInvocation member resetAbsoluteAccuracy_ter ^ ^ ^ ^ ^ 
+resetAbsoluteAccuracy();
+
+StatementExpression expression MethodInvocation member resetMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+resetMaximalIterationCount();
+
+StatementExpression expression MethodInvocation member resetRelativeAccuracy_ter ^ ^ ^ ^ ^ 
+resetRelativeAccuracy();
+
+ReturnStatement expression This selectors MemberReference member getResult_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.getResult;
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return optimizer.add();
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getResult() + 0);
+ReturnStatement expression This selectors MethodInvocation member getResult_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.getResult();
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getResult() - 1);
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ selectors MethodInvocation member getResult_ter ^ ^ ^ ^ member getResult_ter ^ ^ ^ ^ ^ 
+return optimizer.getResult().getResult();
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getResult_ter ^ ^ ^ ^ ^ 
+return optimizer.getResult(0);
+ReturnStatement expression Cast type BasicType name double_ter ^ ^ ^ ^ expression MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ ^ ^ ^ 
+return (double)optimizer.getResult();
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression SuperMethodInvocation member getResult_ter ^ ^ ^ ^ ^ 
+return super.getResult();
+ReturnStatement expression This selectors MemberReference member par0 ^ ^ ^ ^ ^ ^ ^ 
+return this.;
+
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getResult() * 1);
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ arguments This_ter ^ ^ member getResult_ter ^ ^ ^ ^ ^ 
+return optimizer.getResult(this);
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return optimizer.debug();
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return optimizer.get();
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ arguments MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ member getResult_ter ^ ^ ^ ^ ^ 
+return optimizer.getResult(optimizer.getResult());
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return optimizer.max();
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getResult() - 0);
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member getResult_ter ^ ^ ^ ^ ^ 
+return optimizer.getResult();
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return optimizer.getFunctionValue();
+ReturnStatement expression MemberReference member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return getFunctionValue;
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression MethodInvocation member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return getFunctionValue();
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getFunctionValue() + 1);
+StatementExpression expression MethodInvocation member resetAbsoluteAccuracy_ter ^ ^ ^ ^ ^ 
+resetAbsoluteAccuracy();
+
+StatementExpression expression MethodInvocation member resetMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+resetMaximalIterationCount();
+
+StatementExpression expression MethodInvocation member resetRelativeAccuracy_ter ^ ^ ^ ^ ^ 
+resetRelativeAccuracy();
+
+ReturnStatement expression This selectors MemberReference member getFunctionValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.getFunctionValue;
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return optimizer.add();
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getFunctionValue() + 0);
+ReturnStatement expression This selectors MethodInvocation member getFunctionValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.getFunctionValue();
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getFunctionValue() - 1);
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ selectors MethodInvocation member getFunctionValue_ter ^ ^ ^ ^ member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return optimizer.getFunctionValue().getFunctionValue();
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return optimizer.getFunctionValue(0);
+ReturnStatement expression Cast type BasicType name double_ter ^ ^ ^ ^ expression MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ ^ ^ ^ 
+return (double)optimizer.getFunctionValue();
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression SuperMethodInvocation member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return super.getFunctionValue();
+ReturnStatement expression This selectors MemberReference member par0 ^ ^ ^ ^ ^ ^ ^ 
+return this.;
+
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getFunctionValue() * 1);
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ arguments This_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return optimizer.getFunctionValue(this);
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return optimizer.debug();
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return optimizer.get();
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ arguments MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ member getFunctionValue_ter ^ ^ ^ ^ ^ 
+return optimizer.getFunctionValue(optimizer.getFunctionValue());
+ReturnStatement expression MethodInvocation qualifier optimizer_ter ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return optimizer.max();
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier optimizer_ter ^ ^ member getFunctionValue_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (optimizer.getFunctionValue() - 0);
+stderr: 

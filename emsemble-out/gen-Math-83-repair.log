@@ -1,0 +1,441 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumVariables_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumVariables();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getWidth_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getWidth();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getHeight_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getHeight();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getSlackVariableOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getSlackVariableOffset();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getArtificialVariableOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getArtificialVariableOffset();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getRhsOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getRhsOffset();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNegativeDecisionVariableOffset();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumDecisionVariables_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumDecisionVariables();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getOriginalNumDecisionVariables_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getOriginalNumDecisionVariables();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumSlackVariables_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumSlackVariables();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumArtificialVariables_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumArtificialVariables();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member hashCode_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = hashCode();
+
+StatementExpression expression MethodInvocation member initialize_ter ^ ^ ^ ^ ^ 
+initialize();
+
+StatementExpression expression MethodInvocation member discardArtificialVariables_ter ^ ^ ^ ^ ^ 
+discardArtificialVariables();
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getEntry_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getEntry();
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+long start = getNumObjectiveFunctions();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+final int start = getNumObjectiveFunctions();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = equals();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MemberReference member epsilon_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(epsilon);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MemberReference member ignoreObjectiveRows_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(ignoreObjectiveRows);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((row == null)){
+return null;}
+StatementExpression expression MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ 
+getNumObjectiveFunctions();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((row != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MemberReference member col_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(col);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(i, col);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getBasicRow();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getHeight_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(getHeight());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 1.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(getEntry(i, col), 1.0, epsilon);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(getEntry(i, col), 0.0, epsilon);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((row != null)){
+return null;}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(false);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ ^ ^ ^ 
+int start = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member epsilon_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((epsilon != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member epsilon_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((epsilon == null)){
+return null;}
+StatementExpression expression Assignment expressionl MemberReference member start_ter ^ ^ ^ ^ value MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+start = getNumObjectiveFunctions();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member row_ter ^ ^ ^ ^ ^ 
+if((row == null)){
+return row;}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(true);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int start = (int)getNumObjectiveFunctions();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member col_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((col == null)){
+return null;}
+StatementExpression expression Assignment expressionl MemberReference member row_ter ^ ^ ^ ^ value MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+row = getNumObjectiveFunctions();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member col_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = col();
+
+StatementExpression expression Assignment expressionl MemberReference member row_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+row = null;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member col_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((col != null)){
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean start = getNumObjectiveFunctions();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(getNumObjectiveFunctions());
+
+StatementExpression expression MethodInvocation qualifier MathUtils_ter ^ ^ member initialize_ter ^ ^ ^ ^ ^ 
+MathUtils.initialize();
+
+StatementExpression expression MethodInvocation qualifier MathUtils_ter ^ ^ member discardArtificialVariables_ter ^ ^ ^ ^ ^ 
+MathUtils.discardArtificialVariables();
+
+
+StatementExpression expression Assignment expressionl MemberReference member row_ter ^ ^ ^ ^ value MemberReference member i_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+row = i;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ignoreObjectiveRows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((ignoreObjectiveRows == null)){
+return null;}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MemberReference member par2 ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MemberReference member row_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(row);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name start_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int start = getNumObjectiveFunctions(getEntry(i, col));
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNumVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNumVariables());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNumObjectiveFunctions_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNumObjectiveFunctions());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getWidth_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getWidth());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getHeight_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getHeight());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getSlackVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getSlackVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getArtificialVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getArtificialVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getRhsOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getRhsOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNumDecisionVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNumDecisionVariables());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getOriginalNumDecisionVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getOriginalNumDecisionVariables());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNumSlackVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNumSlackVariables());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNumArtificialVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNumArtificialVariables());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member hashCode_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(hashCode());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member numDecisionVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(numDecisionVariables);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member numSlackVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(numSlackVariables);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member numArtificialVariables_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(numArtificialVariables);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member epsilon_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(epsilon);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow();
+
+StatementExpression expression MethodInvocation member initialize_ter ^ ^ ^ ^ ^ 
+initialize();
+
+StatementExpression expression MethodInvocation member discardArtificialVariables_ter ^ ^ ^ ^ ^ 
+discardArtificialVariables();
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member coefficients_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((coefficients != null)){
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ MemberReference member restrictToNonNegative_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset(), restrictToNonNegative);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member coefficients_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(coefficients);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getNegativeDecisionVariableOffset();
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member negativeVarBasicRow_ter ^ ^ ^ MethodInvocation member getRhsOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(negativeVarBasicRow, getRhsOffset());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ 
+getBasicRow(getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset(), false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset(), true);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member coefficients_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((coefficients == null)){
+return null;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member coefficients_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((coefficients == null)){
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer Cast type ReferenceType name Integer_ter ^ ^ ^ ^ expression MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Integer negativeVarBasicRow = (Integer)getNegativeDecisionVariableOffset();
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member par0 ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow();
+
+StatementExpression expression MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ ^ 
+getNegativeDecisionVariableOffset();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member coefficients_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression ClassCreator type ReferenceType name RealPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member coefficients_ter ^ ^ ^ MethodInvocation qualifier f_ter ^ ^ arguments MemberReference member coefficients_ter ^ ^ ^ ^ member getValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((coefficients == null)){
+return new RealPointValuePair(coefficients, f.getValue(coefficients));}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((getNegativeDecisionVariableOffset() == null)){
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member restrictToNonNegative_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(restrictToNonNegative);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getEntry_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getEntry());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset(), null);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getBasicRow(getNegativeDecisionVariableOffset()));
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member negativeVarBasicRow_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(negativeVarBasicRow);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member negativeVarBasicRow_ter ^ ^ ^ MethodInvocation member getRhsOffset_ter ^ ^ ^ ^ member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset(negativeVarBasicRow, getRhsOffset()));
+
+StatementExpression expression Assignment expressionl MemberReference member negativeVarBasicRow_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((getNegativeDecisionVariableOffset() != null)){
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset(), 0);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer Cast type ReferenceType name Integer_ter ^ ^ ^ ^ expression MethodInvocation arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Integer negativeVarBasicRow = (Integer)getBasicRow(getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member numDecisionVariables_ter ^ ^ ^ MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(numDecisionVariables, getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member numSlackVariables_ter ^ ^ ^ MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(numSlackVariables, getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member numArtificialVariables_ter ^ ^ ^ MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(numArtificialVariables, getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member epsilon_ter ^ ^ ^ MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(epsilon, getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getName_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getName());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MemberReference member basicRow_ter ^ ^ ^ MethodInvocation member getRhsOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(basicRow, getRhsOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = ;
+
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation qualifier f_ter ^ ^ arguments MethodInvocation member getNegativeDecisionVariableOffset_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = f.getBasicRow(getNegativeDecisionVariableOffset());
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name negativeVarBasicRow_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getSolution_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer negativeVarBasicRow = getBasicRow(getSolution());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member restrictToNonNegative_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((restrictToNonNegative != null)){
+
+stderr: 

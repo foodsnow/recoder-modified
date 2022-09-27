@@ -1,0 +1,188 @@
+stdout: LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member getAnnotations_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.getAnnotations();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member getDataRange_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.getDataRange();
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MethodInvocation qualifier Range_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ MethodInvocation qualifier DatasetUtilities_ter ^ ^ arguments MemberReference member d_ter ^ ^ ^ ^ member findRangeBounds_ter ^ ^ ^ ^ member combine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = Range.combine(result, DatasetUtilities.findRangeBounds(d));
+
+StatementExpression expression MethodInvocation qualifier includedAnnotations_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+includedAnnotations.add(a);
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MethodInvocation qualifier Range_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ MethodInvocation qualifier r_ter ^ ^ arguments MemberReference member d_ter ^ ^ ^ ^ member findDomainBounds_ter ^ ^ ^ ^ member combine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = Range.combine(result, r.findDomainBounds(d));
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MethodInvocation qualifier Range_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ MethodInvocation qualifier r_ter ^ ^ arguments MemberReference member d_ter ^ ^ ^ ^ member findRangeBounds_ter ^ ^ ^ ^ member combine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = Range.combine(result, r.findRangeBounds(d));
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MethodInvocation qualifier Range_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ MethodInvocation qualifier DatasetUtilities_ter ^ ^ arguments MemberReference member d_ter ^ ^ ^ ^ member findDomainBounds_ter ^ ^ ^ ^ member combine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = Range.combine(result, DatasetUtilities.findDomainBounds(d));
+
+StatementExpression expression MethodInvocation member clearDomainAxes_ter ^ ^ ^ ^ ^ 
+clearDomainAxes();
+
+StatementExpression expression MethodInvocation member configureDomainAxes_ter ^ ^ ^ ^ ^ 
+configureDomainAxes();
+
+StatementExpression expression MethodInvocation member clearRangeAxes_ter ^ ^ ^ ^ ^ 
+clearRangeAxes();
+
+StatementExpression expression MethodInvocation member configureRangeAxes_ter ^ ^ ^ ^ ^ 
+configureRangeAxes();
+
+StatementExpression expression MethodInvocation member clearDomainMarkers_ter ^ ^ ^ ^ ^ 
+clearDomainMarkers();
+
+StatementExpression expression MethodInvocation member clearRangeMarkers_ter ^ ^ ^ ^ ^ 
+clearRangeMarkers();
+
+StatementExpression expression MethodInvocation member clearAnnotations_ter ^ ^ ^ ^ ^ 
+clearAnnotations();
+
+StatementExpression expression MethodInvocation member clearSelection_ter ^ ^ ^ ^ ^ 
+clearSelection();
+
+StatementExpression expression MethodInvocation qualifier r_ter ^ ^ member removeAnnotations_ter ^ ^ ^ ^ ^ 
+r.removeAnnotations();
+
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr ReferenceType name XYAnnotationBoundsInfo_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((a instanceof XYAnnotationBoundsInfo)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c != null)){
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member findDomainBounds_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.findDomainBounds();
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member findRangeBounds_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.findRangeBounds();
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier d_ter ^ ^ member getAnnotations_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = d.getAnnotations();
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.getName();
+
+IfStatement condition MethodInvocation qualifier r_ter ^ ^ member getBaseSeriesVisible_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(r.getBaseSeriesVisible()){
+return;
+}
+IfStatement condition MethodInvocation qualifier r_ter ^ ^ member getBaseSeriesVisibleInLegend_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(r.getBaseSeriesVisibleInLegend()){
+return;
+}
+IfStatement condition MethodInvocation qualifier r_ter ^ ^ member getBaseItemLabelsVisible_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(r.getBaseItemLabelsVisible()){
+return;
+}
+IfStatement condition MethodInvocation qualifier r_ter ^ ^ member getBaseCreateEntities_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(r.getBaseCreateEntities()){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((r != null)){
+
+IfStatement condition MemberReference member isDomainAxis_ter ^ ^ ^ ^ ^ 
+if(isDomainAxis){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((result != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member d_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((d != null)){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.hasNext();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier r_ter ^ ^ member getAnnotations_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((r.getAnnotations() != null)){
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier i_ter ^ ^ member getAnnotations_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = i.getAnnotations();
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.get();
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier r_ter ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = r.add();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((r == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((r == null)){
+return;
+}
+StatementExpression expression MethodInvocation qualifier r_ter ^ ^ member getAnnotations_ter ^ ^ ^ ^ ^ 
+r.getAnnotations();
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MethodInvocation qualifier r_ter ^ ^ member removeAnnotations_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = r.removeAnnotations();
+
+IfStatement condition MethodInvocation qualifier i_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ 
+if(i.hasNext()){
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier c_ter ^ ^ member getAnnotations_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = c.getAnnotations();
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier a_ter ^ ^ member getAnnotations_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = a.getAnnotations();
+
+LocalVariableDeclaration type ReferenceType name XYItemRenderer_ter ^ ^ ^ ^ declarators VariableDeclarator name r_ter ^ ^ initializer MethodInvocation arguments MemberReference member d_ter ^ ^ ^ ^ member getRendererForDataset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+XYItemRenderer r = getRendererForDataset(d);
+
+LocalVariableDeclaration type ReferenceType name Collection_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer MethodInvocation qualifier par0 ^ ^ member getAnnotations_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Collection c = .getAnnotations();
+
+
+stderr: 

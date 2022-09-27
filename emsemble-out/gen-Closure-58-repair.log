@@ -1,0 +1,250 @@
+stdout: StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, kill);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member lhs_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, lhs);
+
+StatementExpression expression MethodInvocation member markAllParametersEscaped_ter ^ ^ ^ ^ ^ 
+markAllParametersEscaped();
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, gen);
+
+StatementExpression expression Assignment expressionl MemberReference member lhs_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lhs = lhs.getLastChild();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, c);
+
+StatementExpression expression MethodInvocation member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getConditionExpression_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill, conditional);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation arguments MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(gen, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(c, kill);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier c_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(c.getFirstChild(), gen, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, gen);
+
+StatementExpression expression MethodInvocation qualifier lhs_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+lhs.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier lhs_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+lhs.setQuotedString();
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(c, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member conditional_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(conditional, kill);
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member lhs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lhs != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member kill_ter ^ ^ ^ MemberReference member lhs_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(kill, lhs);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getConditionExpression_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill, conditional);
+
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+isVar(lhs, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member kill_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(kill, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(lhs, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(kill);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier c_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(c.getFirstChild(), gen, kill, conditional);
+
+StatementExpression expression Assignment expressionl MemberReference member lhs_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lhs = addToSetIfLocal(lhs, kill);
+
+IfStatement condition MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+if(addToSetIfLocal(lhs, kill)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member lhs_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lhs = lhs.getLastChild();
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, null);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, conditional);
+
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member lhs_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lhs = lhs.getLastChild();
+
+StatementExpression expression MethodInvocation member markAllParametersEscaped_ter ^ ^ ^ ^ ^ 
+markAllParametersEscaped();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getConditionExpression_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member lhs_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, lhs);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(c, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, gen);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier c_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(c.getFirstChild(), gen, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member lhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, lhs, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(lhs, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, gen);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member lhs_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, lhs, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(lhs, gen, kill, conditional);
+
+StatementExpression expression Assignment expressionl MemberReference member lhs_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lhs = lhs.getLastChild();
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, c);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, gen, conditional);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getConditionExpression_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill, conditional);
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+isVar(rhs, gen, kill, conditional);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member addToSetIfLocal_ter ^ ^ ^ ^ ^ 
+addToSetIfLocal(c, kill);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(lhs, gen);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, c, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, conditional, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, kill);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier c_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(c.getFirstChild(), gen, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member gen_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(gen, gen, kill, conditional);
+
+StatementExpression expression MethodInvocation qualifier lhs_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+lhs.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier lhs_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+lhs.setQuotedString();
+
+StatementExpression expression MethodInvocation member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill();
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, c, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, kill, kill, conditional);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ MemberReference member conditional_ter ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, conditional, conditional);
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member conditional_ter ^ ^ ^ ^ ^ 
+if(!conditional){
+
+StatementExpression expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ MemberReference member gen_ter ^ ^ ^ MemberReference member kill_ter ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ member computeGenKill_ter ^ ^ ^ ^ ^ 
+computeGenKill(rhs, gen, kill, );
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member lhs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lhs != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rhs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rhs != null)){
+
+stderr: 

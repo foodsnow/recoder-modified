@@ -1,0 +1,139 @@
+stdout: 
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(input, pos);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member toChars_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.toChars(Character.codePointAt(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member pt_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(pt, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.write(Character.codePointAt(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pt_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(input, pt));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = Character.charCount(input, pos);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(input, pos));
+
+StatementExpression expression MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ ^ 
+Character.charCount(Character.codePointAt(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member len_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(len, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member toChars_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.toChars(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.codePointAt(input, pos);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member translate_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.translate(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member consumed_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(consumed, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member len_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(input, len));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = Character.codePointAt(input, pos);
+
+StatementExpression expression MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ ^ 
+Character.codePointAt(input, pos);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member consumed_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(input, consumed));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(c, pos));
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(c);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member len_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(input, len);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference qualifier c_ter ^ ^ member length_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += c.length;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(input, c));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(input);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.debug(Character.codePointAt(input, pos));
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member translate_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.translate(Character.codePointAt(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member pos_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(pos, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference qualifier c_ter ^ ^ member length_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += c.length;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(c);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(input, input));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference member input_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += input;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member consumed_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((consumed == 0)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference member input_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = input;
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.add(Character.codePointAt(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(input));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += charCount(input, pos);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.add(input, pos));
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = Character.charCount(Character.codePointAt(input, pos));
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member pt_ter ^ ^ ^ ^ operandr MemberReference member consumed_ter ^ ^ ^ ^ ^ ^ ^ 
+if((pt < consumed)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.debug(input, pos));
+
+StatementExpression expression MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ ^ 
+Character.charCount(input, pos);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member out_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pos += Character.charCount(Character.codePointAt(out, pos));
+
+stderr: 

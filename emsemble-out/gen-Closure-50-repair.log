@@ -1,0 +1,201 @@
+stdout: 
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isImmutableValue(right)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isImmutableValue(right)){
+
+IfStatement condition MethodInvocation arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(isImmutableValue(right)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member tryFoldArrayJoin_ter ^ ^ ^ ^ 
+if(!NodeUtil.tryFoldArrayJoin(right)){
+IfStatement condition MethodInvocation qualifier callTarget_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(callTarget.isImmutableValue(right)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(!isImmutableValue(right)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member right_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((right != null) && !NodeUtil.isImmutableValue(right))){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier callTarget_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ 
+if(!callTarget.isImmutableValue(right)){
+IfStatement condition MemberReference member arrayNode_ter ^ ^ ^ ^ ^ 
+if(arrayNode){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ 
+if(!NodeUtil.getNext(right)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier callTarget_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+if(!callTarget.isImmutableValue(right)){
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ 
+!NodeUtil.isImmutableValue(right);
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!NodeUtil.isImmutableValue(right) && !NodeUtil.isImmutableValue(right))){
+
+IfStatement condition MemberReference member loc1 ^ ^ ^ ^ ^ 
+if(){
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member arrayNode_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ 
+if(!NodeUtil.isImmutableValue(arrayNode)){
+BreakStatement_ter ^ 
+break;
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ 
+if(!NodeUtil.isImmutableValue()){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ 
+if(!NodeUtil.getName(right)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc1 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ ^ ^ 
+if((( != null) && !NodeUtil.isImmutableValue(right))){
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ 
+if(!NodeUtil.getFirstChild(right)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ 
+if(!NodeUtil.get(right)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ 
+if(!NodeUtil.toString(right)){
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member right_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((right != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier NodeUtil_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node arrayNode = NodeUtil.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member tryFoldArrayJoin_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node arrayNode = callTarget.tryFoldArrayJoin();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node arrayNode = callTarget.getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node arrayNode = callTarget.getName();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node arrayNode = callTarget.isImmutableValue();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node arrayNode = callTarget.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node arrayNode = callTarget.get();
+
+StatementExpression expression MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ 
+callTarget.getFirstChild();
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name arrayNode_ter ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node arrayNode = callTarget.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node  = (Node)callTarget.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier NodeUtil_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = NodeUtil.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = ;
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild(callTarget.getFirstChild());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild(false);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild(true);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.isImmutableValue(callTarget.getFirstChild());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild(null);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild(0);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments MemberReference member right_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild(right);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier callTarget_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = callTarget.getFirstChild(n);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier callTarget_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isImmutableValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = NodeUtil.isImmutableValue(callTarget.getFirstChild());
+
+parameters ^ 
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name functionName_ter ^ ^ initializer MethodInvocation qualifier arrayNode_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node functionName = arrayNode.getNext();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+stderr: 

@@ -1,0 +1,103 @@
+stdout: StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member parseInto_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.parseInto(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.startsWith(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(id);
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.substring(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier bucket_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(bucket.forID(id));
+
+StatementExpression expression MethodInvocation qualifier str_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+str.setZone(DateTimeZone.forID(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.debug(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.get(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(forID(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.add(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(str));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier str_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(str.forID(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.e(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MethodInvocation qualifier id_ter ^ ^ member length_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(id.length()));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member bucket_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(bucket));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member loc2 ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member id_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((id != null)){
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier text_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(text.forID(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(position));
+
+StatementExpression expression MethodInvocation qualifier text_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+text.setZone(DateTimeZone.forID(id));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member text_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(text));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier id_ter ^ ^ member length_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(id.length());
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member ALL_IDS_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(ALL_IDS));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.toString(id));
+
+StatementExpression expression MethodInvocation arguments MemberReference member id_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+setZone(id);
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+bucket.debug(DateTimeZone.forID(id));
+
+StatementExpression expression MethodInvocation arguments MemberReference member bucket_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+setZone(bucket);
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MemberReference member bucket_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(bucket);
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ MemberReference member text_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(id, text));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MemberReference member loc2 ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone();
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(str);
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ MemberReference member position_ter ^ ^ ^ ^ member forID_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.forID(id, position));
+
+StatementExpression expression MethodInvocation qualifier bucket_ter ^ ^ arguments MethodInvocation qualifier DateTimeZone_ter ^ ^ arguments MemberReference member id_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ member setZone_ter ^ ^ ^ ^ ^ 
+bucket.setZone(DateTimeZone.getName(id));
+
+stderr: 

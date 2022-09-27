@@ -1,0 +1,188 @@
+stdout: StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value MemberReference member classLoader_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = classLoader;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = this.classLoader;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value MemberReference member classLoader_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = classLoader;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = null;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member in_ter ^ ^ ^ ^ ^ ^ value MemberReference member classLoader_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.in = classLoader;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = false;
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = true;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member in_ter ^ ^ ^ ^ ^ ^ value MemberReference member classLoader_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.in = classLoader;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value MemberReference member par2 ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member classLoader_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classLoader != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = 0;
+
+StatementExpression expression SuperMethodInvocation member ClassLoaderAwareObjectInputStream_ter ^ ^ ^ ^ ^ 
+super.ClassLoaderAwareObjectInputStream();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ value MemberReference member classLoader_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this. = classLoader;
+
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value Cast type ReferenceType name InputStream_ter ^ ^ ^ ^ expression MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+this.classLoader = (InputStream)classLoader;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value Cast type ReferenceType name ClassLoader_ter ^ ^ ^ ^ expression MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+this.classLoader = (ClassLoader)classLoader;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value This selectors MemberReference member in_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = this.in;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ value MemberReference member classLoader_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this. = classLoader;
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classLoader_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classLoader == null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member in_ter ^ ^ ^ ^ ^ ^ value MemberReference member in_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.in = in;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value Literal value <string>_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = "null";
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = this.;
+
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value MemberReference member in_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = in;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ value MemberReference member par2 ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.classLoader = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member classLoader_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.classLoader != null)){
+
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, true, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, false, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ ^ 
+return Thread.currentThread().getContextClassLoader();
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member classLoader_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+if (true) { return Class.forName(name, false, classLoader); }
+
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, Thread.currentThread().getContextClassLoader(), false);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, name);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, Thread.currentThread().getContextClassLoader(), true);
+ReturnStatement expression MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return forName(name, false, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, "null", Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member resolveClass_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, false, Thread.currentThread().resolveClass());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member classLoader_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(classLoader, false, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, name, false);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member desc_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(desc, false, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, name, true);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, true, true);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, true, false);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, false, false);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, false, true);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, true);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(Thread.currentThread().getContextClassLoader(), name, false);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, false);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(Thread.currentThread().getContextClassLoader(), name, true);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, Thread.currentThread().getContextClassLoader(), name);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value null_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, null, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MemberReference member name_ter ^ ^ ^ ^ ^ 
+if (true) { return name; }
+
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member resolveClass_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, false, Thread.resolveClass().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(Thread.currentThread().getContextClassLoader(), name);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, );
+
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ MemberReference member classLoader_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, Thread.currentThread().getContextClassLoader(), classLoader);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(Thread.currentThread().getContextClassLoader(), false, name);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, Thread.currentThread().getContextClassLoader(), Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member classLoader_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return forName(name, false, classLoader);
+ReturnStatement expression MemberReference member name_ter ^ ^ ^ ^ ^ 
+return name;
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member classLoader_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, classLoader);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(Thread.currentThread().getContextClassLoader(), true, name);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((name != null)){
+
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(Thread.currentThread().getContextClassLoader(), Thread.currentThread().getContextClassLoader());
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member classLoader_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+if((name == null)){
+return Class.forName(name, false, classLoader);}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((name == null)){
+return null;}
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, name, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments Literal value true_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(true, Thread.currentThread().getContextClassLoader());
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member desc_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(name, desc);
+ReturnStatement expression MethodInvocation qualifier Class_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ Literal value false_ter ^ ^ ^ MethodInvocation qualifier Thread_ter ^ ^ selectors MethodInvocation member getContextClassLoader_ter ^ ^ ^ ^ member currentThread_ter ^ ^ ^ ^ member forName_ter ^ ^ ^ ^ ^ 
+return Class.forName(, false, Thread.currentThread().getContextClassLoader());
+
+stderr: 

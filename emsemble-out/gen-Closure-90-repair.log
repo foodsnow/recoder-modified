@@ -1,0 +1,1585 @@
+stdout: condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.getNativeType(OBJECT_TYPE))){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member createUnionType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.createUnionType(OBJECT_TYPE))){
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(OBJECT_TYPE)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.getNativeType(type))){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(OBJECT_TYPE)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member THIS_TYPE_NON_OBJECT_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.getNativeType(THIS_TYPE_NON_OBJECT))){
+IfStatement condition MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ ^ 
+if(OBJECT_TYPE){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ member shouldTolerateUndefinedValues_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(typeRegistry.shouldTolerateUndefinedValues())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ member isLastGeneration_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(typeRegistry.isLastGeneration())){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member OBJECT_TYPE_ter ^ ^ ^ ^ ^ 
+if(!OBJECT_TYPE){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!isSubtype(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNoType_ter ^ ^ ^ ^ ^ 
+if(type.isNoType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ 
+if(type.isNoObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ 
+if(type.isEmptyType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ 
+if(type.isNumberObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ 
+if(type.isNumberValueType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ 
+if(type.isFunctionPrototypeType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ 
+if(type.isStringObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ 
+if(type.isTheObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ 
+if(type.isStringValueType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(type.isString(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(type.isNumber(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ 
+if(type.isArrayType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ 
+if(type.isBooleanObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ 
+if(type.isBooleanValueType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ 
+if(type.isRegexpType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isDateType_ter ^ ^ ^ ^ ^ 
+if(type.isDateType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNullType_ter ^ ^ ^ ^ ^ 
+if(type.isNullType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ 
+if(type.isVoidType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isAllType_ter ^ ^ ^ ^ ^ 
+if(type.isAllType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ 
+if(type.isUnknownType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ 
+if(type.isCheckedUnknownType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ 
+if(type.isUnionType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ 
+if(type.isFunctionType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ 
+if(type.isEnumElementType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ 
+if(type.isEnumType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ 
+if(type.isNamedType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ 
+if(type.isRecordType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ 
+if(type.isTemplateType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isObject_ter ^ ^ ^ ^ ^ 
+if(type.isObject(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(type.isConstructor(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ 
+if(type.isNominalType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(type.isInstanceType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(type.isInterface(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(type.isOrdinaryFunction(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ 
+if(type.matchesInt32Context(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ 
+if(type.matchesUint32Context(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ 
+if(type.matchesNumberContext(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ 
+if(type.matchesStringContext(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ 
+if(type.matchesObjectContext(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(type.canBeCalled(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNullable_ter ^ ^ ^ ^ ^ 
+if(type.isNullable(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isResolved_ter ^ ^ ^ ^ ^ 
+if(type.isResolved(OBJECT_TYPE)){
+
+IfStatement condition MemberReference member type_ter ^ ^ ^ ^ ^ 
+if(type){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member toString_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.toString())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member THIS_TYPE_NON_OBJECT_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(THIS_TYPE_NON_OBJECT)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ member shouldTolerateUndefinedValues_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.shouldTolerateUndefinedValues())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ member isLastGeneration_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.isLastGeneration())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNoType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNoType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNoObjectType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isEmptyType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNumberObjectType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNumberValueType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isFunctionPrototypeType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isStringObjectType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isTheObjectType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isStringValueType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isString_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isString())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNumber_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNumber())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isArrayType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isBooleanObjectType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isBooleanValueType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isRegexpType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isDateType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isDateType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNullType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNullType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isVoidType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isAllType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isAllType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isUnknownType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isCheckedUnknownType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isUnionType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isFunctionType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isEnumElementType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isEnumType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNamedType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isRecordType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isTemplateType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isObject_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isObject())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isConstructor())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNominalType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isInstanceType())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isInterface_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isInterface())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isOrdinaryFunction())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.matchesInt32Context())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.matchesUint32Context())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.matchesNumberContext())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.matchesStringContext())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.matchesObjectContext())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.canBeCalled())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNullable_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isNullable())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isResolved_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(type.isResolved())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member shouldTolerateUndefinedValues_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(typeRegistry.shouldTolerateUndefinedValues(OBJECT_TYPE))){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isLastGeneration_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(typeRegistry.isLastGeneration(OBJECT_TYPE))){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member THIS_TYPE_NON_OBJECT_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(THIS_TYPE_NON_OBJECT)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((OBJECT_TYPE != null) && !type.isSubtype(typeRegistry.getNativeType(OBJECT_TYPE)))){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member toString_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.toString())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!isSubtype(type)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member type_ter ^ ^ ^ ^ ^ 
+if(!type){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(typeRegistry.getNativeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((type != null) && !type.isSubtype(typeRegistry.getNativeType(OBJECT_TYPE)))){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.getNativeType())){
+IfStatement condition MethodInvocation arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(isSubtype(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNoType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNoType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNoObjectType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isEmptyType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNumberObjectType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNumberValueType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isFunctionPrototypeType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isStringObjectType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isTheObjectType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isStringValueType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isString_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isString())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNumber_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNumber())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isArrayType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isBooleanObjectType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isBooleanValueType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isRegexpType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isDateType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isDateType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNullType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNullType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isVoidType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isAllType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isAllType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isUnknownType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isCheckedUnknownType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isUnionType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isFunctionType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isEnumElementType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isEnumType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNamedType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isRecordType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isTemplateType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isObject_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isObject())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isConstructor())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNominalType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isInstanceType())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isInterface_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isInterface())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isOrdinaryFunction())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.matchesInt32Context())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.matchesUint32Context())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.matchesNumberContext())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.matchesStringContext())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.matchesObjectContext())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.canBeCalled())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isNullable_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isNullable())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier type_ter ^ ^ member isResolved_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(type.isResolved())){
+
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member THIS_TYPE_NON_OBJECT_ter ^ ^ ^ MethodInvocation qualifier type_ter ^ ^ member toString_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(THIS_TYPE_NON_OBJECT, type.toString())){
+
+IfStatement condition MethodInvocation arguments MemberReference member type_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(isSubtype(type)){
+
+StatementExpression expression MethodInvocation qualifier type_ter ^ ^ member forgiveUnknownNames_ter ^ ^ ^ ^ ^ 
+type.forgiveUnknownNames();
+
+StatementExpression expression MethodInvocation qualifier type_ter ^ ^ member clearResolved_ter ^ ^ ^ ^ ^ 
+type.clearResolved();
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.getName(OBJECT_TYPE))){
+IfStatement condition MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(type.isSubtype(typeRegistry.getNativeType(OBJECT_TYPE))){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!typeRegistry.isSubtype(OBJECT_TYPE)){
+
+StatementExpression expression MethodInvocation qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+type.isSubtype(OBJECT_TYPE);
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.apply(OBJECT_TYPE))){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member isSubtype_ter ^ ^ ^ ^ ^ 
+if(!type.isSubtype(typeRegistry.getNativeType(OBJECT_TYPE))){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNoType_ter ^ ^ ^ ^ ^ 
+if(!type.isNoType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ 
+if(!type.isNoObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ 
+if(!type.isEmptyType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ 
+if(!type.isNumberObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ 
+if(!type.isNumberValueType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ 
+if(!type.isFunctionPrototypeType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ 
+if(!type.isStringObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ 
+if(!type.isTheObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ 
+if(!type.isStringValueType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(!type.isString(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(!type.isNumber(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ 
+if(!type.isArrayType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ 
+if(!type.isBooleanObjectType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ 
+if(!type.isBooleanValueType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ 
+if(!type.isRegexpType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isDateType_ter ^ ^ ^ ^ ^ 
+if(!type.isDateType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNullType_ter ^ ^ ^ ^ ^ 
+if(!type.isNullType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ 
+if(!type.isVoidType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isAllType_ter ^ ^ ^ ^ ^ 
+if(!type.isAllType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ 
+if(!type.isUnknownType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ 
+if(!type.isCheckedUnknownType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ 
+if(!type.isUnionType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ 
+if(!type.isFunctionType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ 
+if(!type.isEnumElementType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ 
+if(!type.isEnumType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ 
+if(!type.isNamedType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ 
+if(!type.isRecordType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ 
+if(!type.isTemplateType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isObject_ter ^ ^ ^ ^ ^ 
+if(!type.isObject(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(!type.isConstructor(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ 
+if(!type.isNominalType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(!type.isInstanceType(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(!type.isInterface(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(!type.isOrdinaryFunction(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ 
+if(!type.matchesInt32Context(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ 
+if(!type.matchesUint32Context(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ 
+if(!type.matchesNumberContext(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ 
+if(!type.matchesStringContext(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ 
+if(!type.matchesObjectContext(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(!type.canBeCalled(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isNullable_ter ^ ^ ^ ^ ^ 
+if(!type.isNullable(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier type_ter ^ ^ arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member isResolved_ter ^ ^ ^ ^ ^ 
+if(!type.isResolved(OBJECT_TYPE)){
+
+IfStatement condition MethodInvocation member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(isInstanceType()){
+
+IfStatement condition MethodInvocation member isConstructor_ter ^ ^ ^ ^ ^ 
+if(isConstructor()){
+
+IfStatement condition MethodInvocation member isInterface_ter ^ ^ ^ ^ ^ 
+if(isInterface()){
+
+IfStatement condition MethodInvocation member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(isOrdinaryFunction()){
+
+IfStatement condition MethodInvocation member isFunctionType_ter ^ ^ ^ ^ ^ 
+if(isFunctionType()){
+
+IfStatement condition MethodInvocation member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(canBeCalled()){
+
+IfStatement condition MethodInvocation member isReturnTypeInferred_ter ^ ^ ^ ^ ^ 
+if(isReturnTypeInferred()){
+
+IfStatement condition MethodInvocation member hasUnknownSupertype_ter ^ ^ ^ ^ ^ 
+if(hasUnknownSupertype()){
+
+IfStatement condition MethodInvocation member hasInstanceType_ter ^ ^ ^ ^ ^ 
+if(hasInstanceType()){
+
+IfStatement condition MethodInvocation member hasCachedValues_ter ^ ^ ^ ^ ^ 
+if(hasCachedValues()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member resolvedIface_ter ^ ^ ^ ^ operandr MemberReference member iface_ter ^ ^ ^ ^ ^ ^ ^ 
+if((resolvedIface != iface)){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNoType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNoType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNoObjectType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isEmptyType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNumberObjectType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNumberValueType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isFunctionPrototypeType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isStringObjectType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isTheObjectType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isStringValueType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isString()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNumber()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isArrayType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isBooleanObjectType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isBooleanValueType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isRegexpType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isDateType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isDateType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNullType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNullType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isVoidType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isAllType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isAllType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isUnknownType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isCheckedUnknownType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isUnionType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isFunctionType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isEnumElementType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isEnumType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNamedType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isRecordType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isTemplateType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isObject()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isConstructor()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNominalType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isInstanceType()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isInterface()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isOrdinaryFunction()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.matchesInt32Context()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.matchesUint32Context()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.matchesNumberContext()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.matchesStringContext()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.matchesObjectContext()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.canBeCalled()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNullable_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isNullable()){
+
+IfStatement condition MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isResolved_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis.isResolved()){
+
+IfStatement condition MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ ^ 
+if(maybeTypeOfThis){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maybeTypeOfThis != null)){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis instanceof ObjectType)){
+StatementExpression expression MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member forgiveUnknownNames_ter ^ ^ ^ ^ ^ 
+maybeTypeOfThis.forgiveUnknownNames();
+
+StatementExpression expression MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member clearResolved_ter ^ ^ ^ ^ ^ 
+maybeTypeOfThis.clearResolved();
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(!isInstanceType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(!isConstructor()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(!isInterface()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(!isOrdinaryFunction()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ 
+if(!isFunctionType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(!canBeCalled()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ 
+if(!isReturnTypeInferred()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasUnknownSupertype_ter ^ ^ ^ ^ ^ 
+if(!hasUnknownSupertype()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ 
+if(!hasInstanceType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ 
+if(!hasCachedValues()){
+
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member resolvedIface_ter ^ ^ ^ ^ operandr MemberReference member iface_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && (resolvedIface != iface))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member maybeTypeOfThis_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis){
+
+StatementExpression expression Assignment expressionl MemberReference member typeOfThis_ter ^ ^ ^ ^ value Cast type ReferenceType name ObjectType_ter ^ ^ ^ ^ expression MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+typeOfThis = (ObjectType)maybeTypeOfThis;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member subTypes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && (subTypes != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNoType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNoType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNoObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isEmptyType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNumberObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNumberValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isStringObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isTheObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isStringValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isString())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNumber())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isArrayType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isBooleanObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isBooleanValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isRegexpType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isDateType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isDateType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNullType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNullType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isVoidType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isAllType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isAllType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isCheckedUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isUnionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isFunctionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isEnumElementType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isEnumType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNamedType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isTemplateType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isObject())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNominalType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.matchesInt32Context())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.matchesUint32Context())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.matchesNumberContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.matchesStringContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.matchesObjectContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.canBeCalled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isNullable_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isNullable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier maybeTypeOfThis_ter ^ ^ member isResolved_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && maybeTypeOfThis.isResolved())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && isInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && isConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && isInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isFunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && isFunctionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && canBeCalled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && isReturnTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasUnknownSupertype_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && hasUnknownSupertype())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && hasInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && hasCachedValues())){
+
+StatementExpression expression MethodInvocation qualifier resolvedInterfaces_ter ^ ^ arguments MemberReference member resolvedIface_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+resolvedInterfaces.add(resolvedIface);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis instanceof ObjectType)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name Builder_ter ^ ^ arguments TypeArgument type ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg ObjectType
+arg 
+arg ObjectType
+if((maybeTypeOfThis instanceof Builder<ObjectType>)){
+
+StatementExpression expression Assignment expressionl MemberReference member changed_ter ^ ^ ^ ^ value BinaryOperation operator !=_ter ^ ^ operandl MemberReference member resolvedIface_ter ^ ^ ^ ^ operandr MemberReference member iface_ter ^ ^ ^ ^ ^ ^ type |=_ter ^ ^ ^ ^ ^ 
+changed |= (resolvedIface != iface);
+
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis == ObjectType)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis != ObjectType)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !isInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !isConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !isInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !isFunctionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !canBeCalled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !isReturnTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasUnknownSupertype_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !hasUnknownSupertype())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !hasInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !hasCachedValues())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis != ObjectType)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNoType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNoType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNoObjectType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isEmptyType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNumberObjectType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNumberValueType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isFunctionPrototypeType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isStringObjectType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isTheObjectType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isStringValueType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isString()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNumber()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isArrayType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isBooleanObjectType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isBooleanValueType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isRegexpType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isDateType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isDateType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNullType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNullType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isVoidType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isAllType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isAllType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isUnknownType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isCheckedUnknownType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isUnionType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isFunctionType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isEnumElementType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isEnumType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNamedType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isRecordType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isTemplateType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isObject()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isConstructor()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNominalType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isInstanceType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isInterface()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isOrdinaryFunction()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.matchesInt32Context()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.matchesUint32Context()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.matchesNumberContext()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.matchesStringContext()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.matchesObjectContext()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.canBeCalled()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNullable_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isNullable()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isResolved_ter ^ ^ ^ ^ ^ 
+if(!maybeTypeOfThis.isResolved()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis && (maybeTypeOfThis instanceof ObjectType))){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member scope_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((scope instanceof ObjectType)){
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name FunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis instanceof FunctionType)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && (maybeTypeOfThis != null))){
+
+StatementExpression expression MethodInvocation qualifier subTypes_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ Cast type ReferenceType name FunctionType_ter ^ ^ ^ ^ expression MethodInvocation qualifier subTypes_ter ^ ^ selectors MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member resolve_ter ^ ^ ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+subTypes.set(i, (FunctionType)subTypes.get(i).resolve(t, scope));
+
+StatementExpression expression Assignment expressionl MemberReference member implementedInterfaces_ter ^ ^ ^ ^ value MethodInvocation qualifier resolvedInterfaces_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+implementedInterfaces = resolvedInterfaces.build();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name ObjectType_ter ^ ^ ^ ^ expression MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && (ObjectType)maybeTypeOfThis)){
+
+IfStatement condition Cast type ReferenceType name ObjectType_ter ^ ^ ^ ^ expression MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((ObjectType)maybeTypeOfThis){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MethodInvocation qualifier subTypes_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && (i < subTypes.size()))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((t != null)){
+
+IfStatement condition MemberReference member changed_ter ^ ^ ^ ^ ^ 
+if(changed){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maybeTypeOfThis instanceof ObjectType)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNoType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNoType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNoObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isEmptyType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNumberObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNumberValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isStringObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isTheObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isStringValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isString())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNumber())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isArrayType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isBooleanObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isBooleanValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isRegexpType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isDateType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isDateType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNullType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNullType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isVoidType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isAllType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isAllType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isCheckedUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isUnionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isFunctionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isEnumElementType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isEnumType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNamedType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isTemplateType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isObject())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNominalType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.matchesInt32Context())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.matchesUint32Context())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.matchesNumberContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.matchesStringContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.matchesObjectContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.canBeCalled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isNullable_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isNullable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr ReferenceType name ObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier maybeTypeOfThis_ter ^ ^ member isResolved_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((maybeTypeOfThis instanceof ObjectType) && !maybeTypeOfThis.isResolved())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member subTypes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((subTypes != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maybeTypeOfThis_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maybeTypeOfThis == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member prototype_ter ^ ^ ^ ^ value Cast type ReferenceType name FunctionPrototypeType_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member prototype_ter ^ ^ ^ MemberReference member t_ter ^ ^ ^ MemberReference member scope_ter ^ ^ ^ ^ member safeResolve_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+prototype = (FunctionPrototypeType)safeResolve(prototype, t, scope);
+
+stderr: 

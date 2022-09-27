@@ -1,0 +1,156 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen > 4)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= 4)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= 1)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen == 4)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen <= 4)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen < 4)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= null)){
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen != 4)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value true_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= true)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value false_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= false)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= "null")){
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MemberReference qualifier TwoDigitYearField_ter ^ ^ member INSTANCE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+rule = TwoDigitYearField.INSTANCE;
+break;
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= 4)){
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MemberReference qualifier TwoDigitYearField_ter ^ ^ member INSTANCE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rule = TwoDigitYearField.INSTANCE;
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference qualifier Calendar_ter ^ ^ member YEAR_ter ^ ^ ^ MemberReference member tokenLen_ter ^ ^ ^ ^ member selectNumberRule_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+rule = selectNumberRule(Calendar.YEAR, tokenLen);
+break;
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen && 4)){
+
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen || 4)){
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name TextField_ter ^ ^ ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member ERA_ter ^ ^ ^ MemberReference member ERAs_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+BreakStatement_ter ^ 
+rule = new TextField(Calendar.ERA, ERAs);
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference qualifier Calendar_ter ^ ^ member YEAR_ter ^ ^ ^ MemberReference member tokenLen_ter ^ ^ ^ ^ member selectNumberRule_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rule = selectNumberRule(Calendar.YEAR, tokenLen);
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name TextField_ter ^ ^ ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member ERA_ter ^ ^ ^ MemberReference member ERAs_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+rule = new TextField(Calendar.ERA, ERAs);
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= -1)){
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MemberReference qualifier TwoDigitYearField_ter ^ ^ member INSTANCE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rule = TwoDigitYearField.INSTANCE;
+
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference qualifier Calendar_ter ^ ^ member YEAR_ter ^ ^ ^ MemberReference member tokenLen_ter ^ ^ ^ ^ member selectNumberRule_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rule = selectNumberRule(Calendar.YEAR, tokenLen);
+
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen instanceof 4)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 3_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= 3)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member rule_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((rule >= 4)){
+IfStatement condition MemberReference member tokenLen_ter ^ ^ ^ ^ ^ 
+if(tokenLen){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member ERAs_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((ERAs >= 4)){
+BreakStatement_ter ^ 
+break;
+
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name TextField_ter ^ ^ ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member ERA_ter ^ ^ ^ MemberReference member ERAs_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+rule = new TextField(Calendar.ERA, ERAs);
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 2_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= -2)){
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MemberReference qualifier TwoDigitYearField_ter ^ ^ member INSTANCE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+rule = TwoDigitYearField.INSTANCE;
+break;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference qualifier Calendar_ter ^ ^ member YEAR_ter ^ ^ ^ MemberReference member tokenLen_ter ^ ^ ^ ^ member selectNumberRule_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+rule = selectNumberRule(Calendar.YEAR, tokenLen);
+break;
+break;
+
+IfStatement condition MemberReference member rule_ter ^ ^ ^ ^ ^ 
+if(rule){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((tokenLen >= 4) && (tokenLen >= 4))){
+
+condition BinaryOperation operator &_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen & 4)){
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MemberReference qualifier TwoDigitMonthField_ter ^ ^ member INSTANCE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rule = TwoDigitMonthField.INSTANCE;
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MemberReference qualifier TwoDigitMonthField_ter ^ ^ member INSTANCE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rule = TwoDigitMonthField.INSTANCE;
+
+
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name TextField_ter ^ ^ ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member MONTH_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+rule = new TextField(Calendar.MONTH, months);
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ 
+if((tokenLen >= 2)){
+StatementExpression expression Assignment expressionl MemberReference member rule_ter ^ ^ ^ ^ value MemberReference qualifier TwoDigitMonthField_ter ^ ^ member INSTANCE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+rule = TwoDigitMonthField.INSTANCE;
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member tokenLen_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tokenLen == 2)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ContinueStatement_ter ^ 
+continue;
+
+stderr: 

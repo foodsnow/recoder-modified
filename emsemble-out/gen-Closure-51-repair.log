@@ -1,0 +1,195 @@
+stdout: ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator >=_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x >= x)){
+StatementExpression expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add("null");
+
+condition BinaryOperation operator <=_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x <= x)){
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x == x)){
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x == value)){
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member mantissa_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x == mantissa)){
+condition BinaryOperation operator >_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x > x)){
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 10_ter ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+mantissa /= 10;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member exp_ter ^ ^ ^ ^ ^ 
+exp++;
+
+StatementExpression expression MethodInvocation arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Long_ter ^ ^ arguments MemberReference member mantissa_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Integer_ter ^ ^ arguments MemberReference member exp_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(((Long.toString(mantissa) + "null") + Integer.toString(exp)));
+
+IfStatement condition Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ 
+if((long)x){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x != x)){
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier Long_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(Long.toString(value));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier String_ter ^ ^ arguments MemberReference member x_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(String.valueOf(x));
+
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member prev_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x == prev)){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x < 0)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x < x)){
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prev_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((prev == "null")){
+
+StatementExpression expression MethodInvocation member appendBlockStart_ter ^ ^ ^ ^ ^ 
+appendBlockStart();
+
+StatementExpression expression MethodInvocation member appendBlockEnd_ter ^ ^ ^ ^ ^ 
+appendBlockEnd();
+
+StatementExpression expression MethodInvocation member startNewLine_ter ^ ^ ^ ^ ^ 
+startNewLine();
+
+StatementExpression expression MethodInvocation member maybeLineBreak_ter ^ ^ ^ ^ ^ 
+maybeLineBreak();
+
+StatementExpression expression MethodInvocation member maybeCutLine_ter ^ ^ ^ ^ ^ 
+maybeCutLine();
+
+StatementExpression expression MethodInvocation member endLine_ter ^ ^ ^ ^ ^ 
+endLine();
+
+StatementExpression expression MethodInvocation member notePreferredLineBreak_ter ^ ^ ^ ^ ^ 
+notePreferredLineBreak();
+
+StatementExpression expression MethodInvocation member beginBlock_ter ^ ^ ^ ^ ^ 
+beginBlock();
+
+StatementExpression expression MethodInvocation member endBlock_ter ^ ^ ^ ^ ^ 
+endBlock();
+
+StatementExpression expression MethodInvocation member listSeparator_ter ^ ^ ^ ^ ^ 
+listSeparator();
+
+StatementExpression expression MethodInvocation member endStatement_ter ^ ^ ^ ^ ^ 
+endStatement();
+
+StatementExpression expression MethodInvocation member maybeEndStatement_ter ^ ^ ^ ^ ^ 
+maybeEndStatement();
+
+StatementExpression expression MethodInvocation member endFunction_ter ^ ^ ^ ^ ^ 
+endFunction();
+
+StatementExpression expression MethodInvocation member beginCaseBody_ter ^ ^ ^ ^ ^ 
+beginCaseBody();
+
+StatementExpression expression MethodInvocation member endCaseBody_ter ^ ^ ^ ^ ^ 
+endCaseBody();
+
+StatementExpression expression MethodInvocation member endFile_ter ^ ^ ^ ^ ^ 
+endFile();
+
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member exp_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x == exp)){
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member par1 ^ ^ ^ ^ ^ ^ 
+if(((long)x == )){
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl MemberReference member mantissa_ter ^ ^ ^ ^ operandr Literal value 10_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments Literal value 10_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MemberReference member exp_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member pow_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((mantissa / 10) * Math.pow(10, (exp + 1)))){
+
+IfStatement condition MemberReference member x_ter ^ ^ ^ ^ ^ 
+if(x){
+
+condition BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x - x)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prev_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) || (prev == "null"))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prev_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) && (prev == "null"))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member x_ter ^ ^ ^ ^ ^ 
+if(!x){
+
+IfStatement condition MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member continueProcessing_ter ^ ^ ^ ^ ^ 
+if(continueProcessing(x)){
+
+IfStatement condition MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ 
+if(shouldPreserveExtraBlocks(x)){
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member x_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 100_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Math.abs(x) >= 100)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x < 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((long)x == x)){
+
+IfStatement condition BinaryOperation operator /_ter ^ ^ operandl MemberReference member mantissa_ter ^ ^ ^ ^ operandr Literal value 10_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mantissa / 10)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member exp_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((exp > 2)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x != null)){
+
+IfStatement condition MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ ^ member continueProcessing_ter ^ ^ ^ ^ ^ 
+if(continueProcessing(exp)){
+
+IfStatement condition MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ 
+if(shouldPreserveExtraBlocks(exp)){
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prev_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((prev == "null")){
+
+condition BinaryOperation operator >>_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x >> x)){
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name int_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((int)x == x)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prev_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((x < 0) && (prev == "null"))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) || (long)x)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member continueProcessing_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) && continueProcessing(x))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) && shouldPreserveExtraBlocks(x))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member par2 ^ ^ ^ ^ ^ ^ 
+if(((long)x == )){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) && (long)x)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) || x)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member continueProcessing_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) || continueProcessing(x))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member shouldPreserveExtraBlocks_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((long)x == x) || shouldPreserveExtraBlocks(x))){
+
+condition BinaryOperation operator +_ter ^ ^ operandl Cast type BasicType name long_ter ^ ^ ^ ^ expression MemberReference member x_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ 
+if(((long)x + x)){
+stderr: 

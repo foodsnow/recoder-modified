@@ -1,0 +1,195 @@
+stdout: condition MemberReference member isNaN_ter ^ ^ ^ ^ 
+if(isNaN){
+condition MemberReference member isInfinite_ter ^ ^ ^ ^ 
+if(isInfinite){
+condition MemberReference qualifier isNaN_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isNaN.isNaN){
+condition MemberReference qualifier isInfinite_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isInfinite.isNaN){
+condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isNaN().isNaN){
+condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isInfinite().isNaN){
+IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
+if(isNaN()){
+
+IfStatement condition MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ 
+if(isInfinite()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || isInfinite())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && isInfinite())){
+
+IfStatement condition MethodInvocation arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(isNaN(isNaN)){
+
+IfStatement condition MethodInvocation arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(isInfinite(isNaN)){
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(FastMath.isNaN()){
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(FastMath.isInfinite()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(!isNaN()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(!isInfinite()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(!isNaN){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && !isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && !isInfinite())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || !isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || !isInfinite())){
+
+condition MemberReference member par0 ^ ^ ^ ^ 
+if(){
+
+condition MemberReference prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(!isNaN){
+condition MemberReference prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ 
+if(!isInfinite){
+StatementExpression expression SuperMethodInvocation member tan_ter ^ ^ ^ ^ ^ 
+super.tan();
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(FastMath.isNaN(isNaN)){
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(FastMath.isInfinite(isNaN)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN == null)){
+
+condition MemberReference qualifier FastMath_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(FastMath.isNaN){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+if((isNaN == null)){
+return NaN;}
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || FastMath.isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || FastMath.isInfinite())){
+
+condition MemberReference member isNaN_ter ^ ^ ^ ^ 
+if(isNaN){
+condition MemberReference member isInfinite_ter ^ ^ ^ ^ 
+if(isInfinite){
+condition MemberReference qualifier isNaN_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isNaN.isNaN){
+condition MemberReference qualifier isInfinite_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isInfinite.isNaN){
+condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isNaN().isNaN){
+condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(isInfinite().isNaN){
+IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
+if(isNaN()){
+
+IfStatement condition MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ 
+if(isInfinite()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || isInfinite())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && isInfinite())){
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(FastMath.isNaN()){
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(FastMath.isInfinite()){
+
+IfStatement condition MethodInvocation arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(isNaN(isNaN)){
+
+IfStatement condition MethodInvocation arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(isInfinite(isNaN)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(!isNaN()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(!isInfinite()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(!isNaN){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && !isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN && !isInfinite())){
+
+condition MemberReference member par0 ^ ^ ^ ^ 
+if(){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || !isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || !isInfinite())){
+
+StatementExpression expression SuperMethodInvocation member tanh_ter ^ ^ ^ ^ ^ 
+super.tanh();
+
+condition MemberReference prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(!isNaN){
+condition MemberReference prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ 
+if(!isInfinite){
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(FastMath.isNaN(isNaN)){
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member isNaN_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(FastMath.isInfinite(isNaN)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN != null)){
+
+condition MemberReference qualifier FastMath_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
+if(FastMath.isNaN){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || FastMath.isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isNaN || FastMath.isInfinite())){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member isNaN_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
+if((isNaN == null)){
+return NaN;}
+stderr: 

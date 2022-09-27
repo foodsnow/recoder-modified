@@ -1,0 +1,259 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weight_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weight = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member dim_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dim = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier weightMatrix_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = weightMatrix.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.setEntry(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member weightMatrix_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(weightMatrix, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member Weight_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.Weight(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member weightMatrix_ter ^ ^ ^ MemberReference member weight_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(weightMatrix, weight);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member weight_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(weight, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member par1 ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member weightMatrix_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(weightMatrix);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member weightMatrix_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((weightMatrix != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.debug(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier weight_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = weight.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member weightMatrix_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((weightMatrix == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(, dim);
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dim_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((dim != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.e(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = LOG.createRealMatrix(dim, dim);
+
+StatementExpression expression MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ ^ 
+org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier weightMatrix_ter ^ ^ member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix.weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier MethodInvocation member getWeight_ter ^ ^ ^ ^ member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+getWeight().weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member weightMatrix_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ ^ 
+org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(weightMatrix, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.add(dim, dim);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dim_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((dim == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MemberReference member weightMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = weightMatrix;
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member weight_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.weight(dim, dim);
+
+IfStatement condition MemberReference member weightMatrix_ter ^ ^ ^ ^ ^ 
+if(weightMatrix){
+
+StatementExpression expression Assignment expressionl MemberReference member i_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+i = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression Assignment expressionl MemberReference member length_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+length = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+
+StatementExpression expression MethodInvocation arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ ^ 
+createRealMatrix(dim, dim);
+
+IfStatement condition MemberReference member dim_ter ^ ^ ^ ^ ^ 
+if(dim){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dim_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((dim == 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member weight_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(i, i, weight[i]);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member weightMatrix_ter ^ ^ ^ ^ operandr MemberReference member dim_ter ^ ^ ^ ^ ^ ^ ^ 
+if((weightMatrix == dim)){
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member weightMatrix_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, weightMatrix);
+
+StatementExpression expression Assignment expressionl MemberReference member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.max(dim, dim);
+
+StatementExpression expression ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new EigenDecomposition(m);
+
+LocalVariableDeclaration type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+EigenDecomposition dec = new EigenDecomposition(m);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((m == null)){
+return null;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m, true);
+
+StatementExpression expression Assignment expressionl MemberReference member dec_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+dec = new EigenDecomposition(m);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ This_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m, this);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m, null);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m, m);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((m != null)){
+return null;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition();
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m, 0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(m, "null");
+
+StatementExpression expression SuperMethodInvocation member squareRoot_ter ^ ^ ^ ^ ^ 
+super.squareRoot();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments MemberReference member dec_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(dec);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments Literal value true_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(true);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer ClassCreator type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ arguments Literal value false_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = new EigenDecomposition(false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ declarators VariableDeclarator name dec_ter ^ ^ initializer Cast type ReferenceType name EigenDecomposition_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final EigenDecomposition dec = (EigenDecomposition)m;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+if((m == null)){
+return "null";}
+stderr: 

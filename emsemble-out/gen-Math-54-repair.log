@@ -1,0 +1,306 @@
+stdout: 
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 0x000fffffffffffffL_ter ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+mantissa &= 0x000fffffffffffffL;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+exponent--;
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type <<=_ter ^ ^ ^ ^ ^ 
+mantissa <<= 1;
+
+StatementExpression expression Assignment expressionl MemberReference member sign_ter ^ ^ ^ ^ value Cast type BasicType name byte_ter ^ ^ ^ ^ expression Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sign = (byte)1;
+
+StatementExpression expression Assignment expressionl MemberReference member nans_ter ^ ^ ^ ^ value MemberReference member INFINITE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nans = INFINITE;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+exponent++;
+
+StatementExpression expression Assignment expressionl MemberReference member sign_ter ^ ^ ^ ^ value Cast type BasicType name byte_ter ^ ^ ^ ^ expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sign = (byte)-1;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression MethodInvocation member shiftLeft_ter ^ ^ ^ ^ ^ 
+shiftLeft();
+
+
+StatementExpression expression MethodInvocation member shiftRight_ter ^ ^ ^ ^ ^ 
+shiftRight();
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x == 0)){
+
+BreakStatement_ter ^ 
+break;
+
+Statement_ter ^ 
+1 Statement_ter
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 0x000fffffffffffffL_ter ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+mantissa &= 0x000fffffffffffffL;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member exponent_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1023_ter ^ ^ ^ ^ ^ ^ ^ 
+if((exponent == -1023)){
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type <<=_ter ^ ^ ^ ^ ^ 
+mantissa <<= 1;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+exponent--;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member mantissa_ter ^ ^ ^ ^ operandr Literal value 0x0010000000000000L_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((mantissa & 0x0010000000000000L) == 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member sign_ter ^ ^ ^ ^ value Cast type BasicType name byte_ter ^ ^ ^ ^ expression Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sign = (byte)1;
+
+IfStatement condition BinaryOperation operator &_ter ^ ^ operandl MemberReference member bits_ter ^ ^ ^ ^ operandr Literal value 0x7ff0000000000000L_ter ^ ^ ^ ^ ^ ^ ^ 
+if((bits & 0x7ff0000000000000L)){
+
+StatementExpression expression Assignment expressionl MemberReference member nans_ter ^ ^ ^ ^ value MemberReference member INFINITE_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nans = INFINITE;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+exponent++;
+
+StatementExpression expression Assignment expressionl MemberReference member sign_ter ^ ^ ^ ^ value Cast type BasicType name byte_ter ^ ^ ^ ^ expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sign = (byte)-1;
+
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 0x000fffffffffffffL_ter ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+mantissa &= 0x000fffffffffffffL;
+exponent--;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member exponent_ter ^ ^ ^ ^ operandr Literal value 1024_ter ^ ^ ^ ^ ^ ^ ^ 
+if((exponent == 1024)){
+
+IfStatement condition BinaryOperation operator &_ter ^ ^ operandl MemberReference member mantissa_ter ^ ^ ^ ^ operandr Literal value 0x0010000000000000L_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mantissa & 0x0010000000000000L)){
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+exponent--;
+exponent--;
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x < 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type <<=_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+mantissa <<= 1;
+exponent--;
+
+ReturnStatement expression MemberReference member bits_ter ^ ^ ^ ^ ^ 
+return bits;
+ReturnStatement expression MemberReference member exponent_ter ^ ^ ^ ^ ^ 
+return exponent;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x != x)){
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 0x000fffffffffffffL_ter ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type <<=_ter ^ ^ ^ ^ ^ 
+mantissa &= 0x000fffffffffffffL;
+mantissa <<= 1;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type <<=_ter ^ ^ ^ ^ ^ 
+exponent--;
+mantissa <<= 1;
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 0x000fffffffffffffL_ter ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 0x000fffffffffffffL_ter ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+mantissa &= 0x000fffffffffffffL;
+mantissa &= 0x000fffffffffffffL;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+exponent++;
+exponent--;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member exponent_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 0x000fffffffffffffL_ter ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+exponent--;
+mantissa &= 0x000fffffffffffffL;
+
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type <<=_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member mantissa_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type <<=_ter ^ ^ ^ ^ ^ 
+mantissa <<= 1;
+mantissa <<= 1;
+
+condition MethodInvocation arguments MethodInvocation member newInstance_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(newInstance())){
+condition MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(getZero())){
+condition MethodInvocation arguments MethodInvocation member getOne_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(getOne())){
+condition MethodInvocation arguments MethodInvocation member getTwo_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(getTwo())){
+condition MethodInvocation arguments MethodInvocation member rint_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(rint())){
+condition MethodInvocation arguments MethodInvocation member floor_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(floor())){
+condition MethodInvocation arguments MethodInvocation member ceil_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(ceil())){
+condition MethodInvocation arguments MethodInvocation member negate_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(negate())){
+condition MethodInvocation arguments MethodInvocation member sqrt_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(sqrt())){
+IfStatement condition MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ 
+if(isInfinite()){
+
+IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
+if(isNaN()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || isInfinite())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || isNaN())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) && isInfinite())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) && isNaN())){
+
+IfStatement condition MethodInvocation arguments MethodInvocation member isInfinite_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ 
+if(lessThan(isInfinite())){
+
+IfStatement condition MethodInvocation arguments MethodInvocation member isNaN_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ 
+if(lessThan(isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation member getZero_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || getZero())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || lessThan(getZero()))){
+
+IfStatement condition MethodInvocation member getZero_ter ^ ^ ^ ^ ^ 
+if(getZero()){
+
+IfStatement condition MethodInvocation qualifier y_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+if(y.isInfinite()){
+
+IfStatement condition MethodInvocation qualifier y_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+if(y.isNaN()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr Literal value 3.32_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || 3.32)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) && lessThan(getZero()))){
+
+IfStatement condition MethodInvocation member lessThan_ter ^ ^ ^ ^ ^ 
+if(lessThan()){
+
+condition MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member toDouble_ter ^ ^ ^ ^ 
+if(toDouble(getZero())){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || !isInfinite())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || !isNaN())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || false)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation member getZero_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) && getZero())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation qualifier y_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || y.isInfinite())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation qualifier y_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || y.isNaN())){
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MethodInvocation qualifier y_ter ^ ^ member log10_ter ^ ^ ^ ^ operandr Literal value 3.32_ter ^ ^ ^ ^ ^ ^ ^ 
+if((y.log10() * 3.32)){
+
+condition MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member negate_ter ^ ^ ^ ^ 
+if(negate(getZero())){
+
+
+condition MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ 
+if(debug(getZero())){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member isInfinite_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || lessThan(isInfinite()))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member isNaN_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || lessThan(isNaN()))){
+
+condition MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member y_ter ^ ^ ^ ^ 
+if(y(getZero())){
+condition MethodInvocation arguments MethodInvocation member log10_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(log10())){
+StatementExpression expression MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ 
+lessThan(getZero());
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member isInfinite_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) && lessThan(isInfinite()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr MethodInvocation arguments MethodInvocation member isNaN_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) && lessThan(isNaN()))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getZero_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || (getZero() != null))){
+
+condition MethodInvocation arguments MethodInvocation member toDouble_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(toDouble())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getZero_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) && (getZero() != null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getZero_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || (getZero() == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getZero_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((lessThan(getZero()) || (getZero() == null))){
+
+condition MethodInvocation arguments MethodInvocation member getName_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ 
+if(lessThan(getName())){
+IfStatement condition MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ ^ 
+if(lessThan(getZero())){
+
+StatementExpression expression Assignment expressionl MemberReference member y_ter ^ ^ ^ ^ value MethodInvocation member negate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+y = negate();
+
+IfStatement condition MethodInvocation arguments MethodInvocation member getZero_ter ^ ^ ^ ^ member lessThan_ter ^ ^ ^ ^ then_statement BlockStatement statements StatementExpression expression Assignment expressionl MemberReference member y_ter ^ ^ ^ ^ value MethodInvocation member negate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ StatementExpression expression Assignment expressionl MemberReference member negate_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(lessThan(getZero())){
+y = negate();
+negate = true;
+
+}
+
+StatementExpression expression Assignment expressionl MemberReference member negate_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+negate = true;
+
+StatementExpression expression Assignment expressionl MemberReference member y_ter ^ ^ ^ ^ value MethodInvocation member negate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+y = negate();
+
+
+StatementExpression expression Assignment expressionl MemberReference member negate_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+negate = true;
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+stderr: 

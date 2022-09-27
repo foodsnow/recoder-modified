@@ -1,0 +1,125 @@
+stdout: condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((relationship != null)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((relationship == null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier value_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ operandr MethodInvocation qualifier reference_ter ^ ^ selectors MethodInvocation member isCall_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value.isGetProp() && reference.getParent().isCall())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member declaration_ter ^ ^ ^ ^ member isValidDeclaration_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member initialization_ter ^ ^ ^ ^ member isValidInitialization_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!isValidDeclaration(declaration) || !isValidInitialization(initialization))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier declaration_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ operandr MethodInvocation qualifier initialization_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+if((declaration.getBasicBlock() != initialization.getBasicBlock())){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier reference_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ operandr MethodInvocation qualifier reference_ter ^ ^ member getNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if((reference.getParent().getFirstChild() == reference.getNode())){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member convention_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((convention != null)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member declaration_ter ^ ^ ^ ^ operandr MemberReference member initialization_ter ^ ^ ^ ^ ^ ^ ^ 
+if((declaration != initialization)){
+
+IfStatement condition MemberReference member relationship_ter ^ ^ ^ ^ ^ 
+if(relationship){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier declaration_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ operandr MethodInvocation qualifier reference_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+if((declaration.getBasicBlock() != reference.getBasicBlock())){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member callNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((callNode != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((relationship != null) && (relationship == null))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+IfStatement condition MethodInvocation qualifier relationship_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(relationship.isEmpty()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier relationship_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(!relationship.isEmpty()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member relationship_ter ^ ^ ^ ^ ^ 
+if(!relationship){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((relationship && (relationship != null))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value true_ter ^ ^ ^ ^ ^ ^ 
+if((relationship != true)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((relationship == null)){
+return false;}
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier value_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ operandr MethodInvocation qualifier reference_ter ^ ^ selectors MethodInvocation member isCall_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value.isGetProp() && reference.getParent().isCall()) && (relationship != null))){
+
+IfStatement condition MethodInvocation qualifier declaration_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ ^ 
+if(declaration.getBasicBlock()){
+
+IfStatement condition MethodInvocation qualifier initialization_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ ^ 
+if(initialization.getBasicBlock()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier initialization_ter ^ ^ selectors MethodInvocation member isExprResult_ter ^ ^ ^ ^ member getGrandparent_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((relationship != null) && !initialization.getGrandparent().isExprResult())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier value_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((value.isGetProp() && (relationship != null))){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((value != null));
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member initialization_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((initialization != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member canMoveAggressively_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((canMoveAggressively(value) && (relationship != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member relationship_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((relationship != null) && relationship)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((relationship > null)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((relationship != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier declaration_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ operandr MethodInvocation qualifier initialization_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((declaration.getBasicBlock() != initialization.getBasicBlock()) && (relationship != null))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((relationship != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member declaration_ter ^ ^ ^ ^ operandr MemberReference member initialization_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((declaration != initialization) && (relationship != null))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((relationship && null)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((relationship != null)){
+return false;}
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier relationship_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((relationship != null) && !relationship.isEmpty())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier declaration_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((declaration.getBasicBlock() && (relationship != null))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value false_ter ^ ^ ^ ^ ^ ^ 
+if((relationship != false)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier relationship_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((relationship != null) && relationship.isEmpty())){
+
+IfStatement condition MethodInvocation qualifier relationship_ter ^ ^ arguments MemberReference member relationship_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(relationship.equals(relationship)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((relationship != null) && (value != null))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member relationship_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier declaration_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ operandr MethodInvocation qualifier reference_ter ^ ^ member getBasicBlock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((relationship != null) && (declaration.getBasicBlock() != reference.getBasicBlock()))){
+
+stderr: 

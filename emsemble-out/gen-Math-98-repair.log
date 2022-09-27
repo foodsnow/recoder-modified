@@ -1,0 +1,393 @@
+stdout: LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[v.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final BigDecimal [] out = null;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference member nCols_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[nCols];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[[]];
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v != null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[0];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final BigDecimal [] out = "null";
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member nCols_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nCols != null)){
+
+LocalVariableDeclaration type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+BigDecimal [] out = new BigDecimal[v.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal [][[]];
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions None_ter ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+1 ArrayInitializer_ter
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nCols_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nCols == null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+1 ArrayInitializer_ter
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nCols_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member out_ter ^ ^ ^ ^ ^ 
+if((nCols == null)){
+return out;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal [][v.length];
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v == null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final BigDecimal [] out = v.length;
+
+StatementExpression expression MethodInvocation member luDecompose_ter ^ ^ ^ ^ ^ 
+luDecompose();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member out_ter ^ ^ ^ ^ ^ 
+if((v == null)){
+return out;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference member nRows_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[nRows];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[1];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Assignment expressionl MemberReference member out_ter ^ ^ ^ ^ value ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = out = new BigDecimal[v.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[v];
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression Assignment expressionl MemberReference member out_ter ^ ^ ^ ^ value ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+out = new BigDecimal[v.length];
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member nRows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nRows != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nCols_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((nCols == null)){
+return null;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+final BigDecimal [] out = ;
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member data_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[v.data];
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((v == null)){
+return null;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nCols_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((nCols == null)){
+continue;
+}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions None_ter ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal(v.length);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Assignment expressionl MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ value ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = v.length = new BigDecimal[v.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference member length_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ClassCreator type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal []();
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MemberReference qualifier nRows_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[nRows.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayInitializer initializers ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final BigDecimal [] out = };
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ dimensions MethodInvocation qualifier v_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final BigDecimal [] out = new BigDecimal[v.size()];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type ReferenceType name BigDecimal_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[v.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[[]];
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name long_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new long[v.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member nCols_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[nCols];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = 0;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[1];
+
+StatementExpression expression MethodInvocation member luDecompose_ter ^ ^ ^ ^ ^ 
+luDecompose();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = 1;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[length];
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v != null)){
+
+ReturnStatement expression MemberReference member out_ter ^ ^ ^ ^ ^ 
+if (true) { return out; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member nRows_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[nRows];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions None_ter ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final long out = new double[v.length];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[v];
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member out_ter ^ ^ ^ ^ ^ 
+if((v == null)){
+return out;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member out_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[out];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name int_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new int[v.length];
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = v.length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[0];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayInitializer initializers ^ ^ ^ ^ ^ ^ 
+final double[] out = };
+
+
+ReturnStatement expression MemberReference member nCols_ter ^ ^ ^ ^ ^ 
+if (true) { return nCols; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ClassCreator type BasicType name double_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double();
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[][v.length];
+
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ ^ ^ ^ 
+final double[] out = ;
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = 2;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[][[]];
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = false;
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = null;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions Literal value 1_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ClassCreator type ReferenceType name IllegalArgumentException_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final double[] out = new IllegalArgumentException();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member row_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[row];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member length_ter ^ ^ ^ ^ initializer ArrayInitializer_ter ^ ^ ^ ^ ^ ^ ^ 
+1 ArrayInitializer_ter
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference member dataRow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[dataRow];
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = -1;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member data_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = new double[v.data];
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions MemberReference qualifier v_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+double[] out = new double[v.length];
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dataRow_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member v_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (dataRow[i] * v[i]);
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+if (true) { return 2; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+final double[] out = true;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((v == null)){
+return 0;}
+stderr: 

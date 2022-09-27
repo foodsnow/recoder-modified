@@ -1,0 +1,847 @@
+stdout: condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ 
+if(!qVar.isTypeInferred()){
+IfStatement condition MethodInvocation qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ 
+if(qVar.isTypeInferred()){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member getScope_ter ^ ^ ^ ^ 
+if(!qVar.getScope()){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier scope_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ 
+if(!scope.isTypeInferred()){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member getJSType_ter ^ ^ ^ ^ 
+if(!qVar.getJSType()){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier rhsValue_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ 
+if(!rhsValue.isTypeInferred()){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ 
+if(!qVar.isTypeInferred()){
+
+IfStatement condition MethodInvocation qualifier rhsValue_ter ^ ^ member getJSType_ter ^ ^ ^ ^ ^ 
+if(rhsValue.getJSType()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member qVar_ter ^ ^ ^ ^ ^ 
+if(!qVar){
+
+IfStatement condition MethodInvocation qualifier qVar_ter ^ ^ member getScope_ter ^ ^ ^ ^ ^ 
+if(qVar.getScope()){
+
+IfStatement condition MemberReference member qVar_ter ^ ^ ^ ^ ^ 
+if(qVar){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier loc1 ^ ^ member isTypeInferred_ter ^ ^ ^ ^ 
+if(!.isTypeInferred()){
+
+IfStatement condition MethodInvocation qualifier t_ter ^ ^ member getInput_ter ^ ^ ^ ^ ^ 
+if(t.getInput()){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member valueType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((valueType == null)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier loc3 ^ ^ member isTypeInferred_ter ^ ^ ^ ^ 
+if(!.isTypeInferred()){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member getInput_ter ^ ^ ^ ^ 
+if(!qVar.getInput()){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rhsValue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((!qVar.isTypeInferred() && (rhsValue != null))){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isExtern_ter ^ ^ ^ ^ 
+if(!qVar.isExtern()){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rhsValue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rhsValue != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier t_ter ^ ^ member getInput_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((t.getInput() != null)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member getType_ter ^ ^ ^ ^ 
+if(!qVar.getType()){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member getName_ter ^ ^ ^ ^ 
+if(!qVar.getName()){
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member valueType_ter ^ ^ ^ ^ value MethodInvocation qualifier rhsValue_ter ^ ^ member getJSType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+valueType = rhsValue.getJSType();
+
+StatementExpression expression MethodInvocation qualifier scope_ter ^ ^ arguments MemberReference member qVar_ter ^ ^ ^ ^ member undeclare_ter ^ ^ ^ ^ ^ 
+scope.undeclare(qVar);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier qVar_ter ^ ^ member getScope_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if((qVar.getScope() && !qVar.isTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation member isExtern_ter ^ ^ ^ ^ member getInput_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!qVar.isTypeInferred() && t.getInput().isExtern())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member qVar_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((qVar != null) && !qVar.isTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ operandr MethodInvocation qualifier rhsValue_ter ^ ^ member getJSType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!qVar.isTypeInferred() && rhsValue.getJSType())){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier qVar_ter ^ ^ member getScope_ter ^ ^ ^ ^ operandr MemberReference member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+if((qVar.getScope() == scope)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member qVar_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!qVar && !qVar.isTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier t_ter ^ ^ member getInput_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation member isExtern_ter ^ ^ ^ ^ member getInput_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((t.getInput() != null) && t.getInput().isExtern())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member valueType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rhsValue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((valueType == null) && (rhsValue != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier qVar_ter ^ ^ member getScope_ter ^ ^ ^ ^ operandr MemberReference member scope_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((qVar.getScope() == scope) && !qVar.isTypeInferred())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member qVar_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((qVar != null)){
+
+IfStatement condition Literal selectors MethodInvocation arguments MemberReference member propName_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ value <string>_ter ^ ^ ^ ^ ^ 
+if("null"){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member valueType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((valueType == null) && !qVar.isTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member qVar_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if((qVar && !qVar.isTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier qVar_ter ^ ^ member isTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!qVar.isTypeInferred() && !qVar.isTypeInferred())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member qVar_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((qVar != null)){
+
+StatementExpression expression MethodInvocation qualifier stubDeclarations_ter ^ ^ arguments ClassCreator type ReferenceType name StubDeclaration_ter ^ ^ ^ ^ arguments MemberReference member n_ter ^ ^ ^ BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier t_ter ^ ^ member getInput_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation member isExtern_ter ^ ^ ^ ^ member getInput_ter ^ ^ ^ ^ ^ MemberReference member ownerName_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+stubDeclarations.add(new StubDeclaration(n, ((t.getInput() != null) && t.getInput().isExtern()), ownerName));
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType())){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.detectImplicitPrototypeCycle()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.hasReferenceName()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isUnknownType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isObject()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.hasCachedValues()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isNativeObjectType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((baseType.hasReferenceName() || baseType.isUnknownType())){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.detectImplicitPrototypeCycle()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.hasReferenceName()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isObject()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.hasCachedValues()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isNativeObjectType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isFunctionPrototypeType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((baseType.hasReferenceName() || baseType.isUnknownType()) || (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((baseType instanceof PrototypeObjectType)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((baseType.hasReferenceName() || (baseType instanceof PrototypeObjectType))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member getReferenceName_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.getReferenceName()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.getName()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ 
+if(isNativeObjectType()){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.detectImplicitPrototypeCycle() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.isUnknownType() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member isObject_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.isObject() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasCachedValues() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.isNativeObjectType() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.isFunctionPrototypeType() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || isInstanceType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || isConstructor())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || isInterface())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || canBeCalled())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || hasImplementedInterfaces())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || isReturnTypeInferred())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || hasInstanceType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || hasCachedValues())){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType > PrototypeObjectType))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) && (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if(((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || (baseType instanceof PrototypeObjectType)) || (baseType instanceof PrototypeObjectType))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType < PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.detectImplicitPrototypeCycle())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.hasReferenceName())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.isUnknownType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.isObject())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) && (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) && (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || isInstanceType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || isConstructor())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || isInterface())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || canBeCalled())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || hasImplementedInterfaces())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || isReturnTypeInferred())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || hasInstanceType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || hasCachedValues())){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member getReferenceName_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || getReferenceName()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((baseType.hasReferenceName() || baseType.isUnknownType()) || baseType.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((baseType.hasReferenceName() || baseType.isUnknownType()) && (baseType instanceof PrototypeObjectType))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member getReferenceName_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.getReferenceName()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((baseType.hasReferenceName() || baseType.isUnknownType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !isInstanceType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !isConstructor())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !isInterface())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !canBeCalled())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !hasImplementedInterfaces())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !isReturnTypeInferred())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !hasInstanceType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || !hasCachedValues())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || isNativeObjectType()) || (baseType instanceof PrototypeObjectType))){
+
+StatementExpression expression MethodInvocation member clearCachedValues_ter ^ ^ ^ ^ ^ 
+clearCachedValues();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || (baseType instanceof PrototypeObjectType)) || (baseType instanceof PrototypeObjectType))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) && (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((baseType.hasReferenceName() || baseType.isUnknownType()) || (baseType instanceof PrototypeObjectType)) || (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || ((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((baseType.hasReferenceName() || baseType.isUnknownType()) || ((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || ((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member detectImplicitPrototypeCycle_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || baseType.detectImplicitPrototypeCycle())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || baseType.hasReferenceName())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || baseType.isUnknownType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || baseType.isObject())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || baseType.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || baseType.isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || baseType.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((baseType.hasReferenceName() || baseType.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((baseType.hasReferenceName() || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((baseType.hasReferenceName() || isNativeObjectType()) || (baseType instanceof PrototypeObjectType))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.getName()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType)) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+
+StatementExpression expression SuperMethodInvocation member setPrototypeBasedOn_ter ^ ^ ^ ^ ^ 
+super.setPrototypeBasedOn();
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType || PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((baseType.hasReferenceName() || isNativeObjectType())){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType == PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member getName_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || getName()) || baseType.isFunctionPrototypeType()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member setPrototypeBasedOn_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.setPrototypeBasedOn()) || (baseType instanceof PrototypeObjectType))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.toString()) || (baseType instanceof PrototypeObjectType))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier baseType_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier baseType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member baseType_ter ^ ^ ^ ^ operandr ReferenceType name PrototypeObjectType_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((((baseType.hasReferenceName() || baseType.isUnknownType()) || isNativeObjectType()) || baseType.isFunctionPrototypeType()) || (baseType >= PrototypeObjectType))){
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ ^ ^ ^ 
+boolean replacedPrototype = ;
+
+
+StatementExpression expression MethodInvocation member clearCachedValues_ter ^ ^ ^ ^ ^ 
+clearCachedValues();
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = (prototype == null);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = (prototype != null);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final boolean replacedPrototype = (prototype != null);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int replacedPrototype = (prototype != null);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+long replacedPrototype = (prototype != null);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MethodInvocation member isInstanceType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isInstanceType()){
+return false;}
+IfStatement condition MethodInvocation member isConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isConstructor()){
+return false;}
+IfStatement condition MethodInvocation member isInterface_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isInterface()){
+return false;}
+IfStatement condition MethodInvocation member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isOrdinaryFunction()){
+return false;}
+IfStatement condition MethodInvocation member canBeCalled_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(canBeCalled()){
+return false;}
+IfStatement condition MethodInvocation member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(hasImplementedInterfaces()){
+return false;}
+IfStatement condition MethodInvocation member isReturnTypeInferred_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isReturnTypeInferred()){
+return false;}
+IfStatement condition MethodInvocation member hasInstanceType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(hasInstanceType()){
+return false;}
+IfStatement condition MethodInvocation member hasCachedValues_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(hasCachedValues()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isInstanceType()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isConstructor()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isInterface()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isOrdinaryFunction()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!canBeCalled()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!hasImplementedInterfaces()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isReturnTypeInferred()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!hasInstanceType()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!hasCachedValues()){
+return false;}
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer MemberReference member prototype_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = prototype;
+
+StatementExpression expression SuperMethodInvocation member setPrototype_ter ^ ^ ^ ^ ^ 
+super.setPrototype();
+
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.matchesNumberContext()){
+return false;}
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.matchesStringContext()){
+return false;}
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.matchesObjectContext()){
+return false;}
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.canBeCalled()){
+return false;}
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.hasReferenceName()){
+return false;}
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member implicitPrototypeChainIsUnknown_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.implicitPrototypeChainIsUnknown()){
+return false;}
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.hasCachedValues()){
+return false;}
+IfStatement condition MethodInvocation qualifier prototype_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(prototype.isNativeObjectType()){
+return false;}
+StatementExpression expression This selectors MethodInvocation member clearCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+this.clearCachedValues();
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference member replacedPrototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = (replacedPrototype != null);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((prototype == null)){
+return false;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((prototype != null)){
+return false;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((prototype != null)){
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference member par1 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = ( != null);
+
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr MethodInvocation member getInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((prototype == getInstanceType())){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr MethodInvocation member getInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((prototype == getInstanceType())){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.matchesNumberContext()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.matchesStringContext()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.matchesObjectContext()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.canBeCalled()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member hasReferenceName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.hasReferenceName()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member implicitPrototypeChainIsUnknown_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.implicitPrototypeChainIsUnknown()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.hasCachedValues()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier prototype_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!prototype.isNativeObjectType()){
+return false;}
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference member superClass_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = (superClass != null);
+
+LocalVariableDeclaration type ReferenceType name FunctionType_ter ^ ^ ^ ^ declarators VariableDeclarator name superClass_ter ^ ^ initializer MethodInvocation member getSuperClassConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+FunctionType superClass = getSuperClassConstructor();
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator ==_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr MethodInvocation member getInstanceType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = (prototype == getInstanceType());
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name ObjectType_ter ^ ^ ^ ^ declarators VariableDeclarator name interfaceType_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation member getExtendedInterfaces_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(ObjectType interfaceType = ;
+:getExtendedInterfaces())
+
+StatementExpression expression MethodInvocation qualifier superClass_ter ^ ^ arguments This_ter ^ ^ member addSubType_ter ^ ^ ^ ^ ^ 
+superClass.addSubType(this);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name replacedPrototype_ter ^ ^ initializer BinaryOperation operator >_ter ^ ^ operandl MemberReference member prototype_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean replacedPrototype = (prototype > null);
+
+IfStatement condition This selectors MethodInvocation member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.isInstanceType()){
+return false;}
+IfStatement condition This selectors MethodInvocation member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.isConstructor()){
+return false;}
+IfStatement condition This selectors MethodInvocation member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.isInterface()){
+return false;}
+IfStatement condition This selectors MethodInvocation member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.isOrdinaryFunction()){
+return false;}
+IfStatement condition This selectors MethodInvocation member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.canBeCalled()){
+return false;}
+IfStatement condition This selectors MethodInvocation member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.hasImplementedInterfaces()){
+return false;}
+IfStatement condition This selectors MethodInvocation member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.isReturnTypeInferred()){
+return false;}
+IfStatement condition This selectors MethodInvocation member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.hasInstanceType()){
+return false;}
+IfStatement condition This selectors MethodInvocation member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(this.hasCachedValues()){
+return false;}
+StatementExpression expression MethodInvocation qualifier interfaceType_ter ^ ^ selectors MethodInvocation arguments This_ter ^ ^ member addSubType_ter ^ ^ ^ ^ member getConstructor_ter ^ ^ ^ ^ ^ 
+interfaceType.getConstructor().addSubType(this);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member prototype_ter ^ ^ ^ ^ ^ ^ value MemberReference member prototype_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.prototype = prototype;
+
+stderr: 

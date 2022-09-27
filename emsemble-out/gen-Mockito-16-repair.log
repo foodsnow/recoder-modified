@@ -1,0 +1,85 @@
+stdout: StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+mockingProgress.resetOngoingStubbing();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member stubbingStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.stubbingStarted();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member validateState_ter ^ ^ ^ ^ ^ 
+mockingProgress.validateState();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member reset_ter ^ ^ ^ ^ ^ 
+mockingProgress.reset();
+
+StatementExpression expression MethodInvocation member validateMockitoUsage_ter ^ ^ ^ ^ ^ 
+validateMockitoUsage();
+
+StatementExpression expression MethodInvocation member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+resetOngoingStubbing();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member stubbingStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.stubbingStarted();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member validateState_ter ^ ^ ^ ^ ^ 
+mockingProgress.validateState();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member reset_ter ^ ^ ^ ^ ^ 
+mockingProgress.reset();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+mockingProgress.resetOngoingStubbing();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member createMock_ter ^ ^ ^ ^ ^ 
+mockingProgress.createMock();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mockSettings_ter ^ ^ ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+mockingProgress.resetOngoingStubbing(mockSettings);
+
+StatementExpression expression MethodInvocation arguments MemberReference member classToMock_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MemberReference member mockSettings_ter ^ ^ ^ ^ ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+resetOngoingStubbing(classToMock, (MockSettingsImpl)mockSettings);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member classToMock_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MemberReference member mockSettings_ter ^ ^ ^ ^ ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+mockingProgress.resetOngoingStubbing(classToMock, (MockSettingsImpl)mockSettings);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ 
+mockingProgress.mock();
+
+StatementExpression expression MethodInvocation qualifier classToMock_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+classToMock.resetOngoingStubbing();
+
+StatementExpression expression MethodInvocation qualifier mockUtil_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+mockUtil.resetOngoingStubbing();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments This_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+mockingProgress.resetOngoingStubbing(this);
+
+IfStatement condition MethodInvocation qualifier mockingProgress_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+if(mockingProgress.resetOngoingStubbing()){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member mockSettings_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mockSettings != null)){
+
+StatementExpression expression SuperMethodInvocation member mock_ter ^ ^ ^ ^ ^ 
+super.mock();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member classToMock_ter ^ ^ ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+mockingProgress.resetOngoingStubbing(classToMock);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member classToMock_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classToMock != null)){
+
+ReturnStatement expression MethodInvocation qualifier mockingProgress_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+return mockingProgress.resetOngoingStubbing();
+StatementExpression expression MethodInvocation qualifier mockUtil_ter ^ ^ arguments MemberReference member classToMock_ter ^ ^ ^ Cast type ReferenceType name MockSettingsImpl_ter ^ ^ ^ ^ expression MemberReference member mockSettings_ter ^ ^ ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+mockUtil.debug(classToMock, (MockSettingsImpl)mockSettings);
+
+StatementExpression expression MethodInvocation arguments MemberReference member mockSettings_ter ^ ^ ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+resetOngoingStubbing(mockSettings);
+
+stderr: 

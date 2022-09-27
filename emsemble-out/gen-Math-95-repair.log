@@ -1,0 +1,99 @@
+stdout: LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name ret_ter ^ ^ ^ ^ ^ 
+long ret = ;
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name ret_ter ^ ^ ^ ^ ^ 
+double ret = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name ret_ter ^ ^ ^ ^ ^ 
+int ret = ;
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name ret_ter ^ ^ ^ ^ ^ 
+final double ret = ;
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p == null)){
+return 0;}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name ret_ter ^ ^ initializer MemberReference member p_ter ^ ^ ^ ^ ^ ^ ^ 
+double ret = p;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p != null)){
+return 0;}
+StatementExpression expression SuperMethodInvocation member getInitialDomain_ter ^ ^ ^ ^ ^ 
+super.getInitialDomain();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name ret_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double ret = 0;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member ret_ter ^ ^ ^ ^ ^ 
+if((p == null)){
+return ret;}
+StatementExpression expression SuperMethodInvocation arguments MemberReference member p_ter ^ ^ ^ ^ member getInitialDomain_ter ^ ^ ^ ^ ^ 
+super.getInitialDomain(p);
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression MethodInvocation member getDenominatorDegreesOfFreedom_ter ^ ^ ^ ^ ^ 
+getDenominatorDegreesOfFreedom();
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p > 0)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p == null)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member p_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(!p){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if((p == null)){
+return 1;}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p > 2.0)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p == 2.0)){
+return 0;}
+IfStatement condition MemberReference member p_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(p){
+return 0;}
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member p_ter ^ ^ ^ ^ ^ 
+p++;
+
+StatementExpression expression Assignment expressionl MemberReference member p_ter ^ ^ ^ ^ value MemberReference member p_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+p = p;
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p >= 0)){
+return 0;}
+StatementExpression expression Assignment expressionl This selectors MemberReference member p_ter ^ ^ ^ ^ ^ ^ value MemberReference member p_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.p = p;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name ret_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double ret = 1;
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p < 0)){
+return 0;}
+stderr: 

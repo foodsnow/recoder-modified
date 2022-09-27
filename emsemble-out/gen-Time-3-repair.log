@@ -1,0 +1,1463 @@
+stdout: StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(getMillis(), amount));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member add_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(add(), amount));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member add_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(add()).add(getMillis(), amount));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), amount);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+StatementExpression expression MethodInvocation arguments MemberReference member amount_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(amount);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getName_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(getName(), amount));
+
+StatementExpression expression MethodInvocation arguments MemberReference member amount_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(amount, getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), amount);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(getMillis(), amount), amount);
+
+StatementExpression expression MethodInvocation arguments MemberReference member amount_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(amount, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(getChronology(), amount));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.add(getChronology()).add(getMillis(), amount));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.add(getChronology()));
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member amount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((amount != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(getMillis(), type));
+
+StatementExpression expression MethodInvocation arguments MemberReference member amount_ter ^ ^ ^ MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(amount, type.getField(getChronology()).add(getMillis(), amount));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type == null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getName_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getName()).add(getMillis(), amount));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(getMillis(), amount), false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type, getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()).add(getMillis(), amount), true);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getMillis()).add(getMillis(), amount));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField(getChronology()));
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MemberReference member amount_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(amount, amount);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier type_ter ^ ^ selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member amount_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type.getField().add(getMillis(), amount));
+
+StatementExpression expression MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(type, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(years, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(years);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member years_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addYears_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().years().add(addYears(), years));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member years_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().years().add(getMillis(), years));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(years);
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(years);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), years);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), years));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member years_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().years());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member years_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((years != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), years);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier years_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(years.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member years_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().years().add(getMillis(), years), years);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member years_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(getChronology().years().add(getMillis(), years));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier years_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(years.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(years, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member years_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(years, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member years_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().years().add(getMillis(), years), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), years));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier years_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(years.getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weekyears, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weekyears);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weekyears_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addWeekyears_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weekyears().add(addWeekyears(), weekyears));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weekyears_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weekyears().add(getMillis(), weekyears));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(weekyears);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(weekyears);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), weekyears);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), weekyears));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weekyears_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weekyears());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member weekyears_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((weekyears != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), weekyears);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier weekyears_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weekyears.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weekyears_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weekyears().add(getMillis(), weekyears), weekyears);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weekyears_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(getChronology().weekyears().add(getMillis(), weekyears));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier weekyears_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weekyears.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weekyears, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weekyears_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weekyears, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weekyears_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weekyears().add(getMillis(), weekyears), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weekyears_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), weekyears));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier weekyears_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weekyears.getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(months, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(months);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member months_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addMonths_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().months().add(addMonths(), months));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member months_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().months().add(getMillis(), months));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(months);
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(months);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), months);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), months));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member months_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().months());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((months != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), months);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier months_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(months.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member months_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().months().add(getMillis(), months), months);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member months_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(getChronology().months().add(getMillis(), months));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier months_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(months.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(months, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member months_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(months, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member months_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().months().add(getMillis(), months), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), months));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier months_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(months.getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weeks, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weeks);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weeks_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addWeeks_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weeks().add(addWeeks(), weeks));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weeks_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weeks().add(getMillis(), weeks));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(weeks);
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(weeks);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), weeks);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), weeks));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weeks_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weeks());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member weeks_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((weeks != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), weeks);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier weeks_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weeks.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weeks_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weeks().add(getMillis(), weeks), weeks);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weeks_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(getChronology().weeks().add(getMillis(), weeks));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier weeks_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weeks.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weeks, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member weeks_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(weeks, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member weeks_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().weeks().add(getMillis(), weeks), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member weeks_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), weeks));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier weeks_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(weeks.getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(days, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(days);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member days_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addDays_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().days().add(addDays(), days));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member days_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().days().add(getMillis(), days));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(days);
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(days);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), days);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), days));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member days_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().days());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member days_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((days != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), days);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier days_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(days.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member days_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().days().add(getMillis(), days), days);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member days_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(getChronology().days().add(getMillis(), days));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier days_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(days.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(days, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member days_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(days, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member days_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().days().add(getMillis(), days), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member days_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), days));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier days_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(days.getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(hours, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(hours);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member hours_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addHours_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().hours().add(addHours(), hours));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member hours_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().hours().add(getMillis(), hours));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(hours);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(hours);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), hours);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), hours));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member hours_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().hours());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member hours_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((hours != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), hours);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier hours_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(hours.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member hours_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().hours().add(getMillis(), hours), hours);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member hours_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(getChronology().hours().add(getMillis(), hours));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier hours_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(hours.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(hours, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member hours_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(hours, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member hours_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().hours().add(getMillis(), hours), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member hours_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), hours));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier hours_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(hours.getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(minutes, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(minutes);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member minutes_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addMinutes_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().minutes().add(addMinutes(), minutes));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member minutes_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().minutes().add(getMillis(), minutes));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(minutes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(minutes);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), minutes);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), minutes));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member minutes_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().minutes());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minutes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minutes != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), minutes);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier minutes_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(minutes.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member minutes_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().minutes().add(getMillis(), minutes), minutes);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member minutes_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(getChronology().minutes().add(getMillis(), minutes));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier minutes_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(minutes.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(minutes, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member minutes_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(minutes, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member minutes_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().minutes().add(getMillis(), minutes), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member minutes_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), minutes));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier minutes_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(minutes.getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(millis, getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(millis);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member millis_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member addMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().millis().add(addMillis(), millis));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member millis_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().millis().add(getMillis(), millis));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setYear_ter ^ ^ ^ ^ ^ 
+setYear(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addYears_ter ^ ^ ^ ^ ^ 
+addYears(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekyear(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addWeekyears_ter ^ ^ ^ ^ ^ 
+addWeekyears(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setMonthOfYear_ter ^ ^ ^ ^ ^ 
+setMonthOfYear(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addMonths_ter ^ ^ ^ ^ ^ 
+addMonths(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setWeekOfWeekyear_ter ^ ^ ^ ^ ^ 
+setWeekOfWeekyear(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addWeeks_ter ^ ^ ^ ^ ^ 
+addWeeks(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setDayOfYear_ter ^ ^ ^ ^ ^ 
+setDayOfYear(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setDayOfMonth_ter ^ ^ ^ ^ ^ 
+setDayOfMonth(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setDayOfWeek_ter ^ ^ ^ ^ ^ 
+setDayOfWeek(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addDays_ter ^ ^ ^ ^ ^ 
+addDays(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setHourOfDay_ter ^ ^ ^ ^ ^ 
+setHourOfDay(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addHours_ter ^ ^ ^ ^ ^ 
+addHours(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setMinuteOfDay_ter ^ ^ ^ ^ ^ 
+setMinuteOfDay(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setMinuteOfHour_ter ^ ^ ^ ^ ^ 
+setMinuteOfHour(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addMinutes_ter ^ ^ ^ ^ ^ 
+addMinutes(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setSecondOfDay_ter ^ ^ ^ ^ ^ 
+setSecondOfDay(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setSecondOfMinute_ter ^ ^ ^ ^ ^ 
+setSecondOfMinute(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addSeconds_ter ^ ^ ^ ^ ^ 
+addSeconds(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setMillisOfDay_ter ^ ^ ^ ^ ^ 
+setMillisOfDay(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member setMillisOfSecond_ter ^ ^ ^ ^ ^ 
+setMillisOfSecond(millis);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(millis);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), millis);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().add(getMillis(), millis));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), false);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member millis_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().millis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), true);
+
+StatementExpression expression MethodInvocation member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member millis_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((millis != null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getChronology_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology(), millis);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier millis_ter ^ ^ member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(millis.getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member millis_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().millis().add(getMillis(), millis), millis);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member millis_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ ^ member addMillis_ter ^ ^ ^ ^ ^ 
+addMillis(getChronology().millis().add(getMillis(), millis));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier millis_ter ^ ^ member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(millis.getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getMillis(), getMillis(), getMillis());
+
+StatementExpression expression MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MethodInvocation member getChronology_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(millis, getChronology());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MemberReference member ROUND_NONE_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, ROUND_NONE));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MemberReference member ROUND_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, ROUND_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MemberReference member ROUND_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, ROUND_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MemberReference member ROUND_HALF_FLOOR_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, ROUND_HALF_FLOOR));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MemberReference member ROUND_HALF_CEILING_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, ROUND_HALF_CEILING));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MemberReference member ROUND_HALF_EVEN_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, ROUND_HALF_EVEN));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MemberReference member iRoundingMode_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, iRoundingMode));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member millis_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(millis, getMillis()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation selectors MethodInvocation member millis_ter ^ ^ ^ MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(getChronology().millis().add(getMillis(), millis), getMillis());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation member getMillis_ter ^ ^ ^ MemberReference member millis_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(add(getMillis(), millis));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier millis_ter ^ ^ member getChronology_ter ^ ^ ^ MethodInvocation member getMillis_ter ^ ^ ^ ^ member setMillis_ter ^ ^ ^ ^ ^ 
+setMillis(millis.getChronology(), getMillis());
+
+stderr: 

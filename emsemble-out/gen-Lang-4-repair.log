@@ -1,0 +1,542 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+lookupMap = new HashMap();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member lookupMap_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lookupMap != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+arg CharSequence, CharSequence
+lookupMap = new HashMap<CharSequence, CharSequence>();
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ ^ ^ arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+lookupMap = new HashMap(seq[0], seq[1]);
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+lookupMap = new HashMap(CharSequence, CharSequence);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lookupMap_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((lookupMap == null)){
+return;
+}
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member lookup_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+arg CharSequence, CharSequence
+lookup = new HashMap<CharSequence, CharSequence>();
+
+StatementExpression expression SuperMethodInvocation member LookupTranslator_ter ^ ^ ^ ^ ^ 
+super.LookupTranslator();
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ ^ ^ arguments MemberReference member lookupMap_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+lookupMap = new HashMap(lookupMap);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lookupMap_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lookupMap == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member lookupMap_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+arg CharSequence, CharSequence
+lookupMap = new HashMap<CharSequence, CharSequence>(lookupMap);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lookup_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((lookup == null)){
+return;
+}
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+lookupMap = new ArrayList();
+
+StatementExpression expression ExplicitConstructorInvocation_ter ^ ^ ^ 
+1 ExplicitConstructorInvocation_ter
+StatementExpression expression Assignment expressionl This selectors MemberReference member lookup_ter ^ ^ ^ ^ ^ ^ value MemberReference member lookup_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.lookup = lookup;
+
+IfStatement condition MemberReference member lookupMap_ter ^ ^ ^ ^ ^ 
+if(lookupMap){
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value MemberReference member lookupMap_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lookupMap = lookupMap;
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg CharSequence
+arg 
+arg CharSequence
+lookupMap = new HashMap<CharSequence>();
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member lookup_ter ^ ^ ^ ^ member LookupTranslator_ter ^ ^ ^ ^ ^ 
+super.LookupTranslator(lookup);
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member lookup_ter ^ ^ ^ ^ ^ ^ ^ 
+super(lookup);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lookupMap_ter ^ ^ ^ ^ operandr MemberReference member lookup_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((lookupMap == lookup)){
+return;
+}
+IfStatement condition MemberReference member lookupMap_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(lookupMap){
+return;
+}
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member lookup_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+arg CharSequence, CharSequence
+lookupMap = new HashMap<CharSequence, CharSequence>(lookup);
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ ^ ^ arguments MemberReference member lookup_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+lookupMap = new HashMap(lookup);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lookup_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lookup == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name ArrayList_ter ^ ^ ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+lookupMap = new ArrayList(CharSequence, CharSequence);
+
+IfStatement condition MemberReference member lookup_ter ^ ^ ^ ^ ^ 
+if(lookup){
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+arg CharSequence, CharSequence
+lookupMap = new HashMap<CharSequence, CharSequence>(seq[0], seq[1]);
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value MemberReference member lookup_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lookupMap = lookup;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member lookupMap_ter ^ ^ ^ ^ operandr ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+arg CharSequence, CharSequence
+if((lookupMap instanceof HashMap<CharSequence, CharSequence>)){
+
+StatementExpression expression Assignment expressionl MemberReference member lookupMap_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name HashMap_ter ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ TypeArgument type ReferenceType name CharSequence_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+arg 
+arg 
+arg CharSequence, CharSequence
+arg 
+arg 
+lookupMap = new HashMap<CharSequence, CharSequence>(CharSequence, CharSequence);
+
+IfStatement condition MemberReference member lookup_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(lookup){
+return;
+}
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq);
+
+StatementExpression expression This selectors MemberReference member shortest_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.shortest.put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member longest_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.longest.put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member LookupTranslator_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.LookupTranslator(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference qualifier lookupMap_ter ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.lookupMap.put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMaplookupMap.put(seq[0], seq[1]).put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq, seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookup_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookup.put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], seq);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member lookupMap_ter ^ ^ ^ MemberReference member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(lookupMap, seq);
+
+StatementExpression expression This selectors MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap[0].put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap[0].length().put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap[1].put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member shortest_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(shortest, seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference member shortest_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], shortest);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member seq_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq, 0);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member seq_ter ^ ^ ^ MemberReference member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq, seq);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member longest_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(longest, seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference member longest_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], longest);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member _longest_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(_longest, seq[1]);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member seq_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((seq != null)){
+continue;
+}
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member lookupMap_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(lookupMap);
+
+StatementExpression expression This selectors MemberReference member seq_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.seq.put(seq[0], seq[1]);
+
+StatementExpression expression MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference member _longest_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], _longest);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression This selectors MemberReference member _longest_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this._longest.put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member lookupMap_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(lookupMap, seq[1]);
+
+StatementExpression expression This selectors MemberReference member par1 ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this..put(seq[0], seq[1]);
+
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member par1 ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(, seq[1]);
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member seq_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((seq == null)){
+continue;
+}
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], );
+
+
+StatementExpression expression This selectors MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap[0].put(seq[0], seq[1]).put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member lookup_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(lookup, seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference member lookupMap_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], lookupMap);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.debug(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.seq[0].put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference member lookup_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], lookup);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(seq[0], seq[0]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member _shortest_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(_shortest, seq[1]);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member lookupMap_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.lookupMap != null)){
+continue;
+}
+
+StatementExpression expression This selectors MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap[1].put(seq[0], seq[1]).put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference selectors ArraySelector index MemberReference member lookupMap_ter ^ ^ ^ ^ ^ ^ member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member seq_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap[lookupMap].put(seq[0], seq[1]);
+
+StatementExpression expression This selectors MemberReference member lookupMap_ter ^ ^ ^ MethodInvocation arguments MemberReference member lookupMap_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+this.lookupMap.put(lookupMap, 0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier input_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = input.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(i);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member subSequence_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.subSequence(subSeq);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member subSeq_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((subSeq != null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(max);
+
+LocalVariableDeclaration annotations Annotation name Override_ter ^ ^ ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+CharSequence result = lookupMap.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member shortest_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(shortest);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member index_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(index);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(result);
+
+LocalVariableDeclaration type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+CharSequence result = lookupMap.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member longest_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(longest);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier max_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = max.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = get(subSeq);
+
+StatementExpression expression MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+lookupMap.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member translate_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.translate(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(input);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = LOG.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier index_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = index.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ MemberReference member index_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, index);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, true);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, subSeq);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member subSeq_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member i_ter ^ ^ ^ ^ ^ 
+if((subSeq == null)){
+return i;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.length(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer Cast type ReferenceType name CharSequence_ter ^ ^ ^ ^ expression MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final CharSequence result = (CharSequence)lookupMap.get(subSeq);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member subSeq_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((subSeq == null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, 0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, null);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = Math.get(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.write(subSeq);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member subSeq_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((subSeq == null)){
+return 0;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, i);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = (input.length() - index);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, 1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.debug(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ MemberReference member shortest_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, shortest);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(subSeq, input);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.toString(subSeq);
+
+ReturnStatement expression MemberReference member i_ter ^ ^ ^ ^ ^ 
+if (true) { return i; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.add(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MemberReference member subSeq_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.e(subSeq);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ arguments MethodInvocation qualifier result_ter ^ ^ member toString_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get(result.toString());
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name CharSequence_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier lookupMap_ter ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final CharSequence result = lookupMap.get();
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member subSeq_ter ^ ^ ^ ^ ^ 
+subSeq--;
+
+stderr: 

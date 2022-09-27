@@ -1,0 +1,577 @@
+stdout: LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.getName(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member lastIndexOf_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.lastIndexOf(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(moduleName);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.addChildToBack(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member emitOptionalModuleExportsOverride_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.emitOptionalModuleExportsOverride(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member lastIndexOf_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), IR.lastIndexOf("null"));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member moduleName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((moduleName == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member script_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(script), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), IR.name(moduleName));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node moduleExportsProp = IR.getprop(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), IR.getName("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node moduleExportsProp = (Node)IR.getprop(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.valueOf(moduleName), IR.string("null"));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member moduleName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((moduleName != null)){
+
+StatementExpression expression MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ 
+IR.getprop(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MemberReference member moduleName_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), moduleName);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = getprop(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(moduleName, IR.name(moduleName));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.toString(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop("null");
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member emitOptionalModuleExportsOverride_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), IR.emitOptionalModuleExportsOverride("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.debug(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.getprop(IR.name(moduleName), IR.string("null")));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member moduleName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((moduleName == null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member get_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.get(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.name(moduleName);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier moduleName_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), moduleName.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.string("null"), IR.name(moduleName));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(moduleName, IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member cloneTree_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.cloneTree(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier script_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), script.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.string("null"), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.add(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ MemberReference member moduleName_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.string("null"), moduleName);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleName), IR.valueOf("null"));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member script_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((script == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member ifNode_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.ifNode(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.string("null");
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member emitOptionalModuleExportsOverride_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.emitOptionalModuleExportsOverride(IR.name(moduleName), IR.string("null"));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member script_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(script);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member script_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((script != null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleExportsProp_ter ^ ^ initializer MethodInvocation qualifier IR_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleExportsProp_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member string_ter ^ ^ ^ ^ member getprop_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node moduleExportsProp = IR.getprop(IR.name(moduleExportsProp), IR.string("null"));
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setSourceFileForTesting_ter ^ ^ ^ ^ ^ 
+exports.setSourceFileForTesting("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member addSuppression_ter ^ ^ ^ ^ ^ 
+exports.addSuppression("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SOURCENAME_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SOURCENAME_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member JSDOC_INFO_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.JSDOC_INFO_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member VAR_ARGS_NAME_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.VAR_ARGS_NAME);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member INCRDECR_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.INCRDECR_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member PARENTHESIZED_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.PARENTHESIZED_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member QUOTED_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.QUOTED_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member OPT_ARG_NAME_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.OPT_ARG_NAME);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SYNTHETIC_BLOCK_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SYNTHETIC_BLOCK_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member EMPTY_BLOCK_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.EMPTY_BLOCK);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member ORIGINALNAME_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.ORIGINALNAME_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member BRACELESS_TYPE_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.BRACELESS_TYPE);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SIDE_EFFECT_FLAGS_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SIDE_EFFECT_FLAGS);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_CONSTANT_NAME_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_CONSTANT_NAME);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_OPTIONAL_PARAM_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_OPTIONAL_PARAM);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_VAR_ARGS_PARAM_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_VAR_ARGS_PARAM);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_NAMESPACE_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_NAMESPACE);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_DISPATCHER_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_DISPATCHER);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DIRECTIVES_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.DIRECTIVES);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DIRECT_EVAL_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.DIRECT_EVAL);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FREE_CALL_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FREE_CALL);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member STATIC_SOURCE_FILE_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.STATIC_SOURCE_FILE);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member LENGTH_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.LENGTH);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member INPUT_ID_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.INPUT_ID);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SLASH_V_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SLASH_V);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member LAST_PROP_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.LAST_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DECR_FLAG_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.DECR_FLAG);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member POST_FLAG_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.POST_FLAG);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member type_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.type);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member COLUMN_BITS_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.COLUMN_BITS);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member MAX_COLUMN_NUMBER_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.MAX_COLUMN_NUMBER);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member COLUMN_MASK_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.COLUMN_MASK);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member sourcePosition_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.sourcePosition);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_GLOBAL_STATE_UNMODIFIED_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_GLOBAL_STATE_UNMODIFIED);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_THIS_UNMODIFIED_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_THIS_UNMODIFIED);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_ARGUMENTS_UNMODIFIED_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_ARGUMENTS_UNMODIFIED);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_NO_THROWS_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_NO_THROWS);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_LOCAL_RESULTS_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_LOCAL_RESULTS);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SIDE_EFFECTS_FLAGS_MASK_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SIDE_EFFECTS_FLAGS_MASK);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SIDE_EFFECTS_ALL_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SIDE_EFFECTS_ALL);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member NO_SIDE_EFFECTS_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.NO_SIDE_EFFECTS);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+exports.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+exports.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp("null");
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier par1 ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+.setString("null");
+
+
+StatementExpression expression MethodInvocation qualifier loc3 ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+.setString("null");
+
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member ORIGINALNAME_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.ORIGINALNAME_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString();
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString(null);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString("null", "null");
+
+StatementExpression expression MethodInvocation qualifier module_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member ORIGINALNAME_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+module.putProp(Node.ORIGINALNAME_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SOURCENAME_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SOURCENAME_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member JSDOC_INFO_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.JSDOC_INFO_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member VAR_ARGS_NAME_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.VAR_ARGS_NAME, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member INCRDECR_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.INCRDECR_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member PARENTHESIZED_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.PARENTHESIZED_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member QUOTED_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.QUOTED_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member OPT_ARG_NAME_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.OPT_ARG_NAME, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SYNTHETIC_BLOCK_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SYNTHETIC_BLOCK_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member EMPTY_BLOCK_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.EMPTY_BLOCK, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member BRACELESS_TYPE_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.BRACELESS_TYPE, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SIDE_EFFECT_FLAGS_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SIDE_EFFECT_FLAGS, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_CONSTANT_NAME_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_CONSTANT_NAME, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_OPTIONAL_PARAM_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_OPTIONAL_PARAM, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_VAR_ARGS_PARAM_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_VAR_ARGS_PARAM, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_NAMESPACE_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_NAMESPACE, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_DISPATCHER_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.IS_DISPATCHER, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DIRECTIVES_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.DIRECTIVES, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DIRECT_EVAL_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.DIRECT_EVAL, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FREE_CALL_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FREE_CALL, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member STATIC_SOURCE_FILE_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.STATIC_SOURCE_FILE, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member LENGTH_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.LENGTH, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member INPUT_ID_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.INPUT_ID, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SLASH_V_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SLASH_V, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member LAST_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.LAST_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DECR_FLAG_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.DECR_FLAG, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member POST_FLAG_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.POST_FLAG, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member type_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.type, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member COLUMN_BITS_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.COLUMN_BITS, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member MAX_COLUMN_NUMBER_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.MAX_COLUMN_NUMBER, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member COLUMN_MASK_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.COLUMN_MASK, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member sourcePosition_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.sourcePosition, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_GLOBAL_STATE_UNMODIFIED_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_GLOBAL_STATE_UNMODIFIED, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_THIS_UNMODIFIED_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_THIS_UNMODIFIED, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_ARGUMENTS_UNMODIFIED_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_ARGUMENTS_UNMODIFIED, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_NO_THROWS_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_NO_THROWS, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FLAG_LOCAL_RESULTS_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.FLAG_LOCAL_RESULTS, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SIDE_EFFECTS_FLAGS_MASK_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SIDE_EFFECTS_FLAGS_MASK, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member SIDE_EFFECTS_ALL_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.SIDE_EFFECTS_ALL, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member NO_SIDE_EFFECTS_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(Node.NO_SIDE_EFFECTS, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp("null", "null");
+
+StatementExpression expression MethodInvocation qualifier module_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+module.setString(moduleName);
+
+StatementExpression expression MethodInvocation qualifier module_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+module.setString("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ 
+exports.guessCJSModuleName("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString(0);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+exports.add("null");
+
+StatementExpression expression MethodInvocation qualifier prop_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+prop.setString("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+exports.debug("null");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member exports_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((exports != null)){
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(0);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString(1);
+
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member visitModuleExports_ter ^ ^ ^ ^ ^ 
+exports.visitModuleExports("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member ORIGINALNAME_PROP_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString(Node.ORIGINALNAME_PROP);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString("null", "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(moduleName);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member ORIGINALNAME_PROP_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+exports.setString(Node.ORIGINALNAME_PROP, "null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MethodInvocation qualifier prop_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp("null", prop.detachChildren());
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MethodInvocation qualifier prop_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp("null", prop.setQuotedString());
+
+StatementExpression expression MethodInvocation qualifier loc5 ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+.setString("null");
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member exports_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ ^ 
+setString(exports);
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+exports.e("null");
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MethodInvocation qualifier prop_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(prop.detachChildren());
+
+StatementExpression expression MethodInvocation qualifier exports_ter ^ ^ arguments MethodInvocation qualifier prop_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ member putProp_ter ^ ^ ^ ^ ^ 
+exports.putProp(prop.setQuotedString());
+
+stderr: 

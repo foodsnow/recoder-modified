@@ -1,0 +1,245 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getImpureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getImpureBooleanValue(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member or_ter ^ ^ ^ ^ ^ 
+return or(n);
+ReturnStatement expression MethodInvocation member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue();
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member and_ter ^ ^ ^ ^ ^ 
+return and(n);
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member TRUE_ter ^ ^ ^ ^ ^ 
+if (true) { return TernaryValue.TRUE; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member falseValue_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(falseValue);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MemberReference member lhs_ter ^ ^ ^ ^ ^ 
+if (true) { return lhs; }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member lhs_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, lhs);
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member TRUE_ter ^ ^ ^ ^ ^ 
+return TernaryValue.TRUE;
+ReturnStatement expression MemberReference member loc2 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member maybeAddFinally_ter ^ ^ ^ ^ ^ 
+return maybeAddFinally(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member redeclareVarsInsideBranch_ter ^ ^ ^ ^ ^ 
+return redeclareVarsInsideBranch(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, true);
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return n.getPureBooleanValue();
+ReturnStatement expression MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(rhs);
+ReturnStatement expression MemberReference member rhs_ter ^ ^ ^ ^ ^ 
+if (true) { return rhs; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member loc2 ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, );
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member UNKNOWN_ter ^ ^ ^ ^ ^ 
+if (true) { return TernaryValue.UNKNOWN; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return equals(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, value);
+ReturnStatement expression MethodInvocation arguments MemberReference member trueValue_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(trueValue);
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+return n;
+ReturnStatement expression MemberReference member trueValue_ter ^ ^ ^ ^ ^ 
+if (true) { return trueValue; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, );
+
+ReturnStatement expression MemberReference member value_ter ^ ^ ^ ^ ^ 
+if (true) { return value; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(lhs);
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member UNKNOWN_ter ^ ^ ^ ^ ^ 
+return TernaryValue.UNKNOWN;
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ This_ter ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, this);
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return e(n);
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n.getLastChild());
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member rhs_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, rhs);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, );
+
+ReturnStatement expression MemberReference member trueValue_ter ^ ^ ^ ^ ^ 
+return trueValue;
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n, n);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+return getPureBooleanValue(n.getFirstChild());
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+if (true) { return n.detachChildren(); }
+
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+if (true) { return n.setQuotedString(); }
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member UNKNOWN_ter ^ ^ ^ ^ ^ 
+if (true) { return TernaryValue.UNKNOWN; }
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+ReturnStatement expression MemberReference member name_ter ^ ^ ^ ^ ^ 
+if (true) { return name; }
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member TRUE_ter ^ ^ ^ ^ ^ 
+if (true) { return TernaryValue.TRUE; }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member FALSE_ter ^ ^ ^ ^ ^ 
+if (true) { return TernaryValue.FALSE; }
+
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+if (true) { return "null"; }
+
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ 
+if (true) { return n.getLastChild(); }
+
+ReturnStatement expression MethodInvocation selectors MethodInvocation member not_ter ^ ^ ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member getPureBooleanValue_ter ^ ^ ^ ^ ^ 
+if (true) { return getPureBooleanValue(n.getLastChild()).not(); }
+
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+if (true) { return n.detachChildren(); }
+
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+if (true) { return n.setQuotedString(); }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return null;break;
+ }
+
+ReturnStatement expression MemberReference member e_ter ^ ^ ^ ^ ^ 
+if (true) { return e; }
+
+ReturnStatement expression MethodInvocation qualifier TernaryValue_ter ^ ^ arguments BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getDouble_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ member forBoolean_ter ^ ^ ^ ^ ^ 
+if (true) { return TernaryValue.forBoolean((n.getDouble() != 0)); }
+
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return n;break;
+ }
+
+ReturnStatement expression This_ter ^ ^ ^ 
+if (true) { return this; }
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member UNKNOWN_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return TernaryValue.UNKNOWN;break;
+ }
+
+ReturnStatement expression MemberReference member name_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return name;break;
+ }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null;return null; }
+
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member length_ter ^ ^ ^ ^ member getString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (n.getString().length() > 0); }
+
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getDouble_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (n.getDouble() != 0); }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member TRUE_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return TernaryValue.TRUE;break;
+ }
+
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member FALSE_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return TernaryValue.FALSE;break;
+ }
+
+ReturnStatement expression MemberReference qualifier TernaryValue_ter ^ ^ member UNKNOWN_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if (true) { return TernaryValue.UNKNOWN;continue;
+ }
+
+Statement_ter ^ 
+1 Statement_ter
+BreakStatement_ter ^ 
+ContinueStatement_ter ^ 
+break;
+continue;
+
+ReturnStatement_ter ^ 
+BreakStatement_ter ^ 
+if (true) { return;
+break;
+ }
+
+stderr: 

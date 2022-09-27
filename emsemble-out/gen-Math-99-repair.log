@@ -1,0 +1,211 @@
+stdout: ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(v) + Math.abs(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs(v));
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member u_ter ^ ^ ^ ^ operandr BinaryOperation operator <<_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return (-u * (1 << k));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member createArithmeticException_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.createArithmeticException(u) + Math.abs(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member k_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(k) + Math.abs(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier MathRuntimeException_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + MathRuntimeException.abs(v));
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member u_ter ^ ^ ^ ^ operandr BinaryOperation operator <<_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (-u * (1 << k)); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member gcd_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.gcd(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs(u));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier u_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + u.abs(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member k_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs(k));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier par0 ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + .abs(v));
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return (((u & 1) == 0) && ((v & 1) == 0));
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((v & 1) == 0);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(t) + Math.abs(v));
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((u & 1) == 0);
+ReturnStatement expression BinaryOperation operator <<_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ 
+return (1 << k);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member par0 ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs() + Math.abs(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier v_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + v.abs(v));
+ReturnStatement expression BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 31_ter ^ ^ ^ ^ ^ ^ ^ 
+return (k < 31);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.add(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member p_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(p) + Math.abs(v));
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (v == 0);
+StatementExpression expression Assignment expressionl MemberReference member u_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+u = -u;
+
+ReturnStatement expression BinaryOperation operator &_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (u & 1);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member q_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(q) + Math.abs(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member loc4 ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs() + Math.abs(v));
+StatementExpression expression Assignment expressionl MemberReference member t_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member u_ter ^ ^ ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+t = ((v - u) / 2);
+
+StatementExpression expression Assignment expressionl MemberReference member u_ter ^ ^ ^ ^ value Literal value 2_ter ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+u /= 2;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.debug(v));
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value Literal value 2_ter ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+v /= 2;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member v_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = -v;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member t_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = t;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (u + Math.abs(v));
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (u == 0);
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ 
+k++;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs() + Math.abs(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs(t));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member p_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.p(v));
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier par1 ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + .abs(v));
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.e(v));
+StatementExpression expression Assignment expressionl MemberReference member t_ter ^ ^ ^ ^ value Literal value 2_ter ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+t /= 2;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member par0 ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs());
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (v + Math.abs(v));
+StatementExpression expression Assignment expressionl MemberReference member u_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member t_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+u = -t;
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) - Math.abs(v));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ 
+return Math.abs(u);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.max(v));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member p_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs(p));
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member loc4 ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs());
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member q_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+return (Math.abs(u) + Math.abs(q));
+ReturnStatement expression MemberReference member lcm_ter ^ ^ ^ ^ ^ 
+return lcm;
+ReturnStatement expression MemberReference member b_ter ^ ^ ^ ^ ^ 
+return b;
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MemberReference member a_ter ^ ^ ^ ^ ^ 
+return a;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((lcm == null)){
+return 0;}
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr MemberReference member b_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((lcm == b)){
+return 0;}
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+return ;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((lcm == 0)){
+return 0;}
+StatementExpression expression Assignment expressionl MemberReference member lcm_ter ^ ^ ^ ^ value MemberReference member lcm_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lcm = lcm;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr MemberReference member b_ter ^ ^ ^ ^ ^ ^ ^ 
+return (lcm + b);
+ReturnStatement expression BinaryOperation operator /_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member a_ter ^ ^ ^ MemberReference member b_ter ^ ^ ^ ^ member gcd_ter ^ ^ ^ ^ ^ ^ ^ 
+return (a / gcd(a, b));
+ReturnStatement expression MemberReference member lcm_ter ^ ^ ^ ^ ^ 
+if (true) { return lcm; }
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member lcm_ter ^ ^ ^ ^ ^ 
+lcm++;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((lcm != null)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr MemberReference member lcm_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((lcm == lcm)){
+return 0;}
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+return ;
+IfStatement condition MemberReference member lcm_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(lcm){
+return 0;}
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member lcm_ter ^ ^ ^ ^ ^ 
+lcm--;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (lcm + 0);
+ReturnStatement expression MethodInvocation qualifier lcm_ter ^ ^ member meth0 ^ ^ ^ ^ ^ 
+return lcm.m();
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+IfStatement condition BinaryOperation operator /_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member a_ter ^ ^ ^ MemberReference member b_ter ^ ^ ^ ^ member gcd_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a / gcd(a, b))){
+
+ReturnStatement expression This selectors MemberReference member lcm_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.lcm;
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member b_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (b == 0);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lcm != null)){
+
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (a == 0);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a == 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member lcm_ter ^ ^ ^ ^ value MemberReference member b_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lcm = b;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member a_ter ^ ^ ^ MemberReference member b_ter ^ ^ ^ ^ member gcd_ter ^ ^ ^ ^ ^ 
+return gcd(a, b);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member lcm_ter ^ ^ ^ ^ operandr MemberReference member par2 ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((lcm == )){
+return 0;}
+
+StatementExpression expression Assignment expressionl MemberReference member lcm_ter ^ ^ ^ ^ value MemberReference member a_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lcm = a;
+
+stderr: 

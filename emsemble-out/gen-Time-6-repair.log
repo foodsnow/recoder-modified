@@ -1,0 +1,354 @@
+stdout: condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover == null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover != null)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cutoverInstant_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((cutoverInstant == null)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover >= null)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover > null)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (gregorianCutover != null))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minDaysInFirstWeek_ter ^ ^ ^ ^ operandr MethodInvocation qualifier chrono_ter ^ ^ member getMinimumDaysInFirstWeek_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek())){
+
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover <= null)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minDaysInFirstWeek_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((minDaysInFirstWeek == null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) && (gregorianCutover != null))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member zone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((zone == null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) && (gregorianCutover == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minDaysInFirstWeek_ter ^ ^ ^ ^ operandr MethodInvocation qualifier chrono_ter ^ ^ member getMinimumDaysInFirstWeek_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek()))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member chrono_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((chrono == null)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier gregorianCutover_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || gregorianCutover.isEmpty())){
+
+IfStatement condition MemberReference member gregorianCutover_ter ^ ^ ^ ^ ^ 
+if(gregorianCutover){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover != null)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member zone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (zone == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member DEFAULT_CUTOVER_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (DEFAULT_CUTOVER == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member zone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (zone != null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member DEFAULT_CUTOVER_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (DEFAULT_CUTOVER != null))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover < null)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minDaysInFirstWeek_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (minDaysInFirstWeek == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover || (gregorianCutover == null))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member gregorianCutover_ter ^ ^ ^ ^ ^ 
+if(!gregorianCutover){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minDaysInFirstWeek_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (minDaysInFirstWeek != null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member chronos_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (chronos == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (gregorianCutover == 0))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member par3 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if(( == null)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover != null) || (gregorianCutover == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member gregorianCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || gregorianCutover)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minDaysInFirstWeek_ter ^ ^ ^ ^ operandr MethodInvocation qualifier chrono_ter ^ ^ member getMinimumDaysInFirstWeek_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) && (minDaysInFirstWeek == chrono.getMinimumDaysInFirstWeek()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier gregorianCutover_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) && gregorianCutover.isEmpty())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member DEFAULT_CUTOVER_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) && (DEFAULT_CUTOVER != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member zone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) && (zone != null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member zone_ter ^ ^ ^ ^ operandr MemberReference qualifier DateTimeZone_ter ^ ^ member UTC_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || (zone == DateTimeZone.UTC))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover == null)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover == "null")){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier zone_ter ^ ^ member isFixed_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((gregorianCutover == null) || zone.isFixed())){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member DEFAULT_CUTOVER_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((DEFAULT_CUTOVER == null)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gregorianCutover_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((gregorianCutover == 1)){
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = add(instant);
+
+StatementExpression expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ ^ 
+gregorianToJulian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member julianToGregorian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = julianToGregorian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian();
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iGregorianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iGregorianField.add(instant, value);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((instant + iGapDuration) < iCutover)){
+
+ReturnStatement expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+return instant = gregorianToJulian(instant);
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, value);
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((instant - iGapDuration) >= iCutover)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, 0);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member julianToGregorian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = julianToGregorian(instant);
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant >= iCutover)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MemberReference member instant_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = instant;
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iJulianField.gregorianToJulian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iGregorianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iGregorianField.add(instant, value);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iGregorianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iGregorianField.gregorianToJulian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(value);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(iJulianField.add(instant, value));
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ This_ter ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, this);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, 1);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = debug(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(gregorianToJulian(instant));
+
+IfStatement condition MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ ^ 
+if(gregorianToJulian(instant)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, false);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant < iCutover)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, );
+
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iJulianField.add(instant, value);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier instant_ter ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = instant.gregorianToJulian();
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant + iGapDuration)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iJulianField.add(instant, value);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, true);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member par2 ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian();
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant - iGapDuration)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = e(instant);
+
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference member iCutover_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, iCutover);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, 2);
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MemberReference member value_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = value;
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier instant_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = instant.gregorianToJulian(instant);
+
+ReturnStatement expression MemberReference member instant_ter ^ ^ ^ ^ ^ 
+return instant;
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member iCutover_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(iCutover);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = add(instant);
+
+StatementExpression expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ ^ 
+gregorianToJulian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member julianToGregorian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = julianToGregorian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian();
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iGregorianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iGregorianField.add(instant, value);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((instant + iGapDuration) < iCutover)){
+
+ReturnStatement expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+return instant = gregorianToJulian(instant);
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, value);
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((instant - iGapDuration) >= iCutover)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, 0);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member julianToGregorian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = julianToGregorian(instant);
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant >= iCutover)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MemberReference member instant_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = instant;
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iJulianField.gregorianToJulian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iGregorianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iGregorianField.add(instant, value);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iGregorianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iGregorianField.gregorianToJulian(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(iJulianField.add(instant, value));
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(value);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ This_ter ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, this);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, 1);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = debug(instant);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, false);
+
+IfStatement condition MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ ^ 
+if(gregorianToJulian(instant)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iCutover_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant < iCutover)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(gregorianToJulian(instant));
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, );
+
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iJulianField.add(instant, value);
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant + iGapDuration)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iJulianField_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iJulianField.add(instant, value);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier instant_ter ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = instant.gregorianToJulian();
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, true);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member par2 ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian();
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member iGapDuration_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant - iGapDuration)){
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = e(instant);
+
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ MemberReference member iCutover_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, iCutover);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = gregorianToJulian(instant, 2);
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MemberReference member value_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = value;
+
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier instant_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member gregorianToJulian_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = instant.gregorianToJulian(instant);
+
+ReturnStatement expression MemberReference member instant_ter ^ ^ ^ ^ ^ 
+return instant;
+stderr: 

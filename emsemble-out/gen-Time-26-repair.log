@@ -1,0 +1,516 @@
+stdout: ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, false);
+StatementExpression expression Assignment expressionl MemberReference member localInstant_ter ^ ^ ^ ^ value MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+localInstant = iField.add(localInstant, value);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return iZone.add(localInstant, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(value, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (localInstant - offset); }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc3 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, value);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC();
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member offset_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(offset, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+return (localInstant - offset);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+return localInstant;
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return iZone.debug(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, "null");
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return iZone.e(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member iTimeField_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(iTimeField, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, null);
+ReturnStatement expression MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iField.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier instant_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return instant.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return iZone.max(localInstant, false);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC();
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((localInstant != null)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getOffsetToAdd_ter ^ ^ ^ ^ ^ 
+return iZone.getOffsetToAdd(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, -1);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, );
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, localInstant);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, value);
+ReturnStatement expression MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return LOG.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return iZone.put(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, false);
+StatementExpression expression Assignment expressionl MemberReference member localInstant_ter ^ ^ ^ ^ value MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+localInstant = iField.add(localInstant, value);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return iZone.add(localInstant, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(value, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (localInstant - offset); }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc3 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, value);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC();
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member offset_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(offset, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+return (localInstant - offset);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+return localInstant;
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return iZone.debug(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, "null");
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return iZone.e(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member iTimeField_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(iTimeField, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, null);
+ReturnStatement expression MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iField.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier instant_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return instant.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return iZone.max(localInstant, false);
+ReturnStatement expression MethodInvocation member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC();
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((localInstant != null)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, -1);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getOffsetToAdd_ter ^ ^ ^ ^ ^ 
+return iZone.getOffsetToAdd(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, );
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, localInstant);
+ReturnStatement expression MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return LOG.convertLocalToUTC(localInstant, false);
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, value);
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instant + offset)){
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, false);
+StatementExpression expression Assignment expressionl MemberReference member localInstant_ter ^ ^ ^ ^ value MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member addWrapField_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+localInstant = iField.addWrapField(localInstant, value);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member addWrapField_ter ^ ^ ^ ^ ^ 
+return iZone.addWrapField(localInstant, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(value, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (localInstant - offset); }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc3 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, value);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC();
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member offset_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(offset, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+return (localInstant - offset);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+return localInstant;
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return iZone.debug(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, "null");
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return iZone.add(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return iZone.e(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member iTimeField_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(iTimeField, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, null);
+ReturnStatement expression MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iField.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier instant_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return instant.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return iZone.max(localInstant, false);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC();
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((localInstant != null)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getOffsetToAdd_ter ^ ^ ^ ^ ^ 
+return iZone.getOffsetToAdd(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, -1);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, );
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, localInstant);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, value);
+ReturnStatement expression MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return LOG.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return iZone.put(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member locale_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, locale);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, "null");
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member text_ter ^ ^ ^ MemberReference member locale_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, text, locale);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member text_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, text);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC();
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, null);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, true, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+return localInstant;
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member text_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(text, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value true_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(true, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member locale_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(locale, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ selectors MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC().convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member locale_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, locale);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal prefix_operators -_ter ^ ^ value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, -true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member text_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, text);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(true, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, 1);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(true, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member text_ter ^ ^ ^ MemberReference member locale_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, text, locale);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, false, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member par3 ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, );
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal prefix_operators -_ter ^ ^ value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, -false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member roundFloor_ter ^ ^ ^ ^ ^ 
+return iZone.roundFloor(localInstant, false);
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iField_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ member roundFloor_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iField.roundFloor((instant + offset));
+
+StatementExpression expression Assignment expressionl MemberReference member localInstant_ter ^ ^ ^ ^ value MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member roundFloor_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+localInstant = iField.roundFloor(localInstant);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (instant - offset); }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member offset_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(offset, false);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+return localInstant;
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return iZone.debug(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return iZone.add(localInstant, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+return (instant - offset);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return iZone.e(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC();
+ReturnStatement expression MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iField.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member iTimeField_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(iTimeField, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, false);
+StatementExpression expression Assignment expressionl MemberReference member localInstant_ter ^ ^ ^ ^ value MemberReference member localInstant_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+localInstant = localInstant;
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, "null");
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getOffsetToAdd_ter ^ ^ ^ ^ ^ 
+return iZone.getOffsetToAdd(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return iZone.max(localInstant, false);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((localInstant != null)){
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc2 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, localInstant);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation qualifier instant_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return instant.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member offset_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, offset);
+IfStatement condition MemberReference member iTimeField_ter ^ ^ ^ ^ ^ 
+if(iTimeField){
+
+ReturnStatement expression MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return LOG.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return iZone.put(localInstant, false);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+if (true) { return localInstant; }
+
+ReturnStatement expression MethodInvocation member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC();
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, true);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member roundCeiling_ter ^ ^ ^ ^ ^ 
+return iZone.roundCeiling(localInstant, false);
+StatementExpression expression Assignment expressionl MemberReference member instant_ter ^ ^ ^ ^ value MethodInvocation qualifier iField_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ member roundCeiling_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+instant = iField.roundCeiling((instant + offset));
+
+StatementExpression expression Assignment expressionl MemberReference member localInstant_ter ^ ^ ^ ^ value MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member roundCeiling_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+localInstant = iField.roundCeiling(localInstant);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (instant - offset); }
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member offset_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(offset, false);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+return localInstant;
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return iZone.debug(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return iZone.add(localInstant, false);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member instant_ter ^ ^ ^ ^ operandr MemberReference member offset_ter ^ ^ ^ ^ ^ ^ ^ 
+return (instant - offset);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return iZone.e(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC();
+ReturnStatement expression MethodInvocation qualifier iField_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iField.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member iTimeField_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(iTimeField, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member instant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(instant, false);
+StatementExpression expression Assignment expressionl MemberReference member localInstant_ter ^ ^ ^ ^ value MemberReference member localInstant_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+localInstant = localInstant;
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, "null");
+ReturnStatement expression MethodInvocation arguments MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(localInstant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC(instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getOffsetToAdd_ter ^ ^ ^ ^ ^ 
+return iZone.getOffsetToAdd(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return iZone.max(localInstant, false);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member localInstant_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((localInstant != null)){
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member loc2 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(, false);
+
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member instant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, instant);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments Literal value false_ter ^ ^ ^ MemberReference member localInstant_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(false, localInstant);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation qualifier instant_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return instant.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ MemberReference member offset_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return iZone.convertLocalToUTC(localInstant, offset);
+IfStatement condition MemberReference member iTimeField_ter ^ ^ ^ ^ ^ 
+if(iTimeField){
+
+ReturnStatement expression MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return LOG.convertLocalToUTC(localInstant, false);
+ReturnStatement expression MethodInvocation qualifier iZone_ter ^ ^ arguments MemberReference member localInstant_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return iZone.put(localInstant, false);
+ReturnStatement expression MemberReference member localInstant_ter ^ ^ ^ ^ ^ 
+if (true) { return localInstant; }
+
+ReturnStatement expression MethodInvocation member convertLocalToUTC_ter ^ ^ ^ ^ ^ 
+return convertLocalToUTC();
+stderr: 

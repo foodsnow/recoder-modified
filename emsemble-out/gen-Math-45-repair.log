@@ -1,0 +1,78 @@
+stdout: StatementExpression expression Assignment expressionl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rows = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member columns_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.columns = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rowDimension_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rowDimension = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member columnDimension_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.columnDimension = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member columnDimension_ter ^ ^ ^ ^ ^ ^ value MemberReference member columnDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.columnDimension = columnDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rowDimension_ter ^ ^ ^ ^ ^ ^ value MemberReference member columnDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rowDimension = columnDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rowDimension_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rowDimension = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member columnDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rows = columnDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference qualifier rows_ter ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rows.rows = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference qualifier columns_ter ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.columns.rows = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference qualifier MethodInvocation member getColumnDimension_ter ^ ^ ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.getColumnDimension().rows = rowDimension;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference qualifier MethodInvocation member getRowDimension_ter ^ ^ ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.getRowDimension().rows = rowDimension;
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression Assignment expressionl This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this. = rowDimension;
+
+
+StatementExpression expression SuperMethodInvocation member OpenMapRealMatrix_ter ^ ^ ^ ^ ^ 
+super.OpenMapRealMatrix();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rows_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rows = rows;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ value MemberReference member columnDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this. = columnDimension;
+
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rows = false;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rows = true;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rows = null;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member entries_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.entries = rowDimension;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rowDimension_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rowDimension != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member rowDimension_ter ^ ^ ^ ^ ^ ^ value MemberReference member columnDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.rowDimension = columnDimension;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rowDimension_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rowDimension == null)){
+
+stderr: 

@@ -1,0 +1,79 @@
+stdout: StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));
+
+StatementExpression expression MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(typeVariable);
+
+StatementExpression expression MethodInvocation member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member type_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor(type));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getActualTypeArgumentFor_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable), false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ ^ 
+getActualTypeArgumentFor(typeVariable);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable), true);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member par0 ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member readTypeVariables_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(readTypeVariables(typeVariable));
+
+StatementExpression expression MethodInvocation qualifier typeVariable_ter ^ ^ arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+typeVariable.registerTypeVariablesOn(typeVariable);
+
+StatementExpression expression MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(typeVariable);
+
+StatementExpression expression MethodInvocation qualifier typeVariable_ter ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+typeVariable.registerTypeVariablesOn();
+
+StatementExpression expression MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(false);
+
+StatementExpression expression MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(true);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ MemberReference member typeVariable_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable), typeVariable);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable), null);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member typeVariable_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((typeVariable != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((getActualTypeArgumentFor(typeVariable) != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member typeVariable_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+typeVariable = getActualTypeArgumentFor(typeVariable);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Type_ter ^ ^ ^ ^ expression MethodInvocation arguments MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+registerTypeVariablesOn((Type)registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable)));
+
+StatementExpression expression MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ MethodInvocation arguments MemberReference member typeVariable_ter ^ ^ ^ ^ member getActualTypeArgumentFor_ter ^ ^ ^ ^ member registerTypeVariablesOn_ter ^ ^ ^ ^ ^ 
+registerTypeVariablesOn(typeVariable, getActualTypeArgumentFor(typeVariable));
+
+stderr: 

@@ -1,0 +1,85 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, initial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, min);
+ReturnStatement expression MemberReference member min_ter ^ ^ ^ ^ ^ 
+return min;
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, max, initial);
+ReturnStatement expression MemberReference member f_ter ^ ^ ^ ^ ^ 
+return f;
+ReturnStatement expression MethodInvocation member solve_ter ^ ^ ^ ^ ^ 
+return solve();
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, max, initial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, initial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, max, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member max_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(max, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, max, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, f);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, min, initial);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, min, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, false);
+ReturnStatement expression MethodInvocation qualifier min_ter ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return min.solve();
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, true);
+ReturnStatement expression MemberReference member min_ter ^ ^ ^ ^ ^ 
+if (true) { return min; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member initial_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(initial, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, initial, initial);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member min_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((min == null)){
+return 0;}
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, min);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member max_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((max == null)){
+return 0;}
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression Cast type BasicType name double_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ ^ ^ 
+return (double)solve(min, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, max, false);
+StatementExpression expression SuperMethodInvocation member solve_ter ^ ^ ^ ^ ^ 
+super.solve();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member max_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(max, initial);
+ReturnStatement expression MemberReference member max_ter ^ ^ ^ ^ ^ 
+if (true) { return max; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, max, true);
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+stderr: 

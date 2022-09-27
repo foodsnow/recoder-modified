@@ -1,0 +1,99 @@
+stdout: condition MemberReference member inferred_ter ^ ^ ^ ^ 
+if(inferred){
+condition MemberReference prefix_operators !_ter ^ ^ member inferred_ter ^ ^ ^ ^ 
+if(!inferred){
+
+
+IfStatement condition MethodInvocation member inferred_ter ^ ^ ^ ^ ^ 
+if(inferred()){
+
+IfStatement condition MemberReference member inferred_ter ^ ^ ^ ^ ^ 
+if(inferred){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier ownerType_ter ^ ^ arguments MemberReference member propName_ter ^ ^ ^ ^ member hasOwnProperty_ter ^ ^ ^ ^ operandr MethodInvocation qualifier ownerType_ter ^ ^ arguments MemberReference member propName_ter ^ ^ ^ ^ member isPropertyTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!ownerType.hasOwnProperty(propName) || ownerType.isPropertyTypeInferred(propName))){
+
+condition MemberReference member propName_ter ^ ^ ^ ^ 
+if(propName){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier t_ter ^ ^ member getInput_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((t.getInput() != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member delegateType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((delegateType != null)){
+
+condition MemberReference member rhsValue_ter ^ ^ ^ ^ 
+if(rhsValue){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isExtern_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier ownerType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isExtern && !ownerType.isNativeObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rhsValue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier rhsValue_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((rhsValue != null) && rhsValue.isFunction())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rhsValue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rhsValue != null)){
+
+condition MemberReference member info_ter ^ ^ ^ ^ 
+if(info){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member info_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((info != null)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MemberReference member isExtern_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier ownerType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier ownerType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((isExtern && !ownerType.isNativeObjectType()) || !ownerType.isInstanceType())){
+
+condition MemberReference member ownerName_ter ^ ^ ^ ^ 
+if(ownerName){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member info_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier scope_ter ^ ^ arguments MemberReference member qName_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isDeclared_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((info != null) || !scope.isDeclared(qName, false))){
+
+condition MemberReference prefix_operators !_ter ^ ^ member propName_ter ^ ^ ^ ^ 
+if(!propName){
+condition MemberReference postfix_operators ++_ter ^ ^ member inferred_ter ^ ^ ^ ^ 
+if(inferred++){
+condition MemberReference prefix_operators !_ter ^ ^ member ownerName_ter ^ ^ ^ ^ 
+if(!ownerName){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ownerType_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ 
+if(!ownerType.isNativeObjectType()){
+
+condition MemberReference prefix_operators !_ter ^ ^ member rhsValue_ter ^ ^ ^ ^ 
+if(!rhsValue){
+IfStatement condition MethodInvocation qualifier rhsValue_ter ^ ^ member inferred_ter ^ ^ ^ ^ ^ 
+if(rhsValue.inferred()){
+
+condition MemberReference prefix_operators !_ter ^ ^ member qName_ter ^ ^ ^ ^ 
+if(!qName){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ownerType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(!ownerType.isInstanceType()){
+
+IfStatement condition MethodInvocation qualifier rhsValue_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(rhsValue.isTrue()){
+
+IfStatement condition MethodInvocation qualifier ownerType_ter ^ ^ arguments MemberReference member propName_ter ^ ^ ^ ^ member isPropertyTypeInferred_ter ^ ^ ^ ^ ^ 
+if(ownerType.isPropertyTypeInferred(propName)){
+
+IfStatement condition MethodInvocation qualifier t_ter ^ ^ member inferred_ter ^ ^ ^ ^ ^ 
+if(t.inferred()){
+
+IfStatement condition MethodInvocation member isPropertyTypeInferred_ter ^ ^ ^ ^ ^ 
+if(isPropertyTypeInferred()){
+
+condition MemberReference postfix_operators --_ter ^ ^ member inferred_ter ^ ^ ^ ^ 
+if(inferred--){
+IfStatement condition MethodInvocation qualifier typeRegistry_ter ^ ^ member shouldTolerateUndefinedValues_ter ^ ^ ^ ^ ^ 
+if(typeRegistry.shouldTolerateUndefinedValues()){
+
+IfStatement condition MethodInvocation qualifier typeRegistry_ter ^ ^ member isLastGeneration_ter ^ ^ ^ ^ ^ 
+if(typeRegistry.isLastGeneration()){
+
+IfStatement condition MethodInvocation member getObjectSlot_ter ^ ^ ^ ^ ^ 
+if(getObjectSlot()){
+
+IfStatement condition MethodInvocation qualifier scope_ter ^ ^ member inferred_ter ^ ^ ^ ^ ^ 
+if(scope.inferred()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member inferred_ter ^ ^ ^ ^ ^ 
+if(!inferred()){
+
+IfStatement condition MethodInvocation member isDeclared_ter ^ ^ ^ ^ ^ 
+if(isDeclared()){
+
+stderr: 

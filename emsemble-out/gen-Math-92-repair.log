@@ -1,0 +1,470 @@
+stdout: LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientLog(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficient_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficient(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(n, k);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member result_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(result, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member k_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(k, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member result_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n, result));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+final long result = Math.round(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member binomialCoefficient_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.binomialCoefficient(binomialCoefficientDouble(n, k));
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ 
+Math.round(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n, n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(n);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member par2 ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(, k));
+
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = round(n, k);
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member k_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(k);
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n, ));
+
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.debug(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member loc1 ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(, k));
+
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(add(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(k));
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = binomialCoefficientDouble(n, k);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(debug(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member n_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(n(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.e(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n, ));
+
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.add(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(Math.binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n, k), k);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+int result = Math.round(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(e(n, k));
+
+ReturnStatement expression MemberReference member k_ter ^ ^ ^ ^ ^ 
+if (true) { return k; }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(n, k), false);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = round(binomialCoefficientDouble(n, k));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member k_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(binomialCoefficientDouble(k, ));
+
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MemberReference member result_ter ^ ^ ^ ^ ^ 
+if (true) { return result; }
+
+ReturnStatement expression MemberReference member k_ter ^ ^ ^ ^ ^ 
+if (true) { return k; }
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression MemberReference member result_ter ^ ^ ^ ^ ^ 
+return result;
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+if (true) { return 2; }
+
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ReturnStatement expression MemberReference member k_ter ^ ^ ^ ^ ^ 
+return k;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MemberReference qualifier Long_ter ^ ^ member MAX_VALUE_ter ^ ^ ^ ^ ^ ^ ^ 
+if((result == Long.MAX_VALUE)){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+result++;
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member result_ter ^ ^ ^ ^ ^ 
+result--;
+
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+if (true) { return "null"; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n == k)){
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k == 0)){
+
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (k == 0);
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+return n;
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MemberReference member k_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = k;
+
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ 
+return (n == k);
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ 
+return (result + k);
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MemberReference member result_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = result;
+
+
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MemberReference member par2 ^ ^ ^ ^ ^ ^ ^ 
+return (result + );
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MemberReference member n_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = n;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr MemberReference member result_ter ^ ^ ^ ^ ^ ^ ^ 
+return (result + result);
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = false;
+
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientDouble(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), k);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 1));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n, (Math.exp(binomialCoefficientLog(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n, k);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ ^ 
+return Math.exp(binomialCoefficientLog(n, k));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(((Math.exp(binomialCoefficientLog(n, k)) + 0.5) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), 0);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(binomialCoefficientLog(n, k));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), (Math.exp(binomialCoefficientLog(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ ^ 
+return binomialCoefficientLog(n, k);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return floor(n, k);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 2));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(Math.exp(binomialCoefficientLog(n, k)));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) - 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), false);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), n);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), 1);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), true);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(((Math.exp(binomialCoefficientLog(n, k)) + 0.5) + k));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((n + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + n));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n, ((Math.exp(binomialCoefficientLog(n, k)) + 0.5) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(add(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member k_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(k, k)) + 0.5));
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Math.exp(binomialCoefficientLog(n, k)) + 0.5)){
+
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(Math.exp(binomialCoefficientLog(n, k)), k);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(debug(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), "null");
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + k));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(get(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return Math.debug((Math.exp(binomialCoefficientLog(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(Math.exp(n, k));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n, (k + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n, Math.exp(binomialCoefficientLog(n, k)));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((binomialCoefficientLog(n, k) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + Math.exp(binomialCoefficientLog(n, k))));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), 2);
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), null);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member k_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(k, (Math.exp(binomialCoefficientLog(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, n)) + 0.5));
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return floor(n, (Math.exp(binomialCoefficientLog(n, k)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(binomialCoefficientLog(n, k)) + 0.5), binomialCoefficientLog(n, k));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member binomialCoefficientLog_ter ^ ^ ^ ^ member binomialCoefficientDouble_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.binomialCoefficientDouble(binomialCoefficientLog(n, k)) + 0.5));
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ ^ ^ ^ 
+double logSum = ;
+
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member n_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ ^ 
+if (true) { return Math.log((double)n); }
+
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if (true) { return logSum; }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long logSum = 0;
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int logSum = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = 0;
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MemberReference member k_ter ^ ^ ^ ^ ^ 
+if (true) { return k; }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+if (true) { return 2; }
+
+StatementExpression expression Assignment expressionl MemberReference member logSum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member i_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+logSum += Math.log((double)i);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = 1;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = (k + 1);(i <= n);i++) {
+
+StatementExpression expression Assignment expressionl MemberReference member logSum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member i_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+logSum -= Math.log((double)i);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((k == null)){
+return 0;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 2;(i <= (n - k));i++) {
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+final double logSum = 0;
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return 0;}
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member n_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ ^ 
+if((k == null)){
+return Math.log((double)n);}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((k != null)){
+return 0;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member n_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return Math.log((double)n);}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if((k == null)){
+return logSum;}
+ReturnStatement expression This_ter ^ ^ ^ 
+if (true) { return this; }
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ ^ ^ ^ 
+double i = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n != null)){
+return 0;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member n_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ ^ 
+if((k != null)){
+return Math.log((double)n);}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return logSum;}
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return -1; }
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = 2;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if((k != null)){
+return logSum;}
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member n_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ ^ 
+if((n != null)){
+return Math.log((double)n);}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = -1;
+
+stderr: 

@@ -1,0 +1,107 @@
+stdout: condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((provided == null)){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((provided != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member moduleGraph_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member module_ter ^ ^ ^ ^ operandr MemberReference member providedModule_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((moduleGraph != null) && (module != providedModule))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((ns != null)){
+
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((arg != null)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((provided == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member moduleGraph_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((moduleGraph != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member module_ter ^ ^ ^ ^ operandr MemberReference member providedModule_ter ^ ^ ^ ^ ^ ^ ^ 
+if((module != providedModule)){
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ 
+compiler.reportCodeChange();
+
+StatementExpression expression MethodInvocation qualifier unrecognizedRequires_ter ^ ^ arguments ClassCreator type ReferenceType name UnrecognizedRequire_ter ^ ^ ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member ns_ter ^ ^ ^ MethodInvocation qualifier t_ter ^ ^ member getSourceName_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+unrecognizedRequires.add(new UnrecognizedRequire(n, ns, t.getSourceName()));
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ arguments MethodInvocation qualifier t_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member XMODULE_REQUIRE_ERROR_ter ^ ^ ^ MemberReference member ns_ter ^ ^ ^ MethodInvocation qualifier providedModule_ter ^ ^ member getName_ter ^ ^ ^ MethodInvocation qualifier module_ter ^ ^ member getName_ter ^ ^ ^ ^ member makeError_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+compiler.report(t.makeError(n, XMODULE_REQUIRE_ERROR, ns, providedModule.getName(), module.getName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member providedModule_ter ^ ^ ^ ^ member checkNotNull_ter ^ ^ ^ ^ ^ 
+Preconditions.checkNotNull(providedModule);
+
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ ^ 
+parent.detachFromParent();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((provided != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member left_ter ^ ^ ^ ^ member maybeAddToSymbolTable_ter ^ ^ ^ ^ ^ 
+maybeAddToSymbolTable(left);
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member providedModule_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((providedModule != null)){
+StatementExpression expression MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ ^ member maybeAddStringNodeToSymbolTable_ter ^ ^ ^ ^ ^ 
+maybeAddStringNodeToSymbolTable(arg);
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((provided != "null")){
+IfStatement condition MemberReference member provided_ter ^ ^ ^ ^ ^ 
+if(provided){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member provided_ter ^ ^ ^ ^ ^ 
+if(!provided){
+
+StatementExpression expression MethodInvocation qualifier arg_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+arg.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier arg_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+arg.setQuotedString();
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((provided && (provided != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((provided != null) && (provided != null))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member XMODULE_REQUIRE_ERROR_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((XMODULE_REQUIRE_ERROR != null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member left_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((left != null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member moduleGraph_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((moduleGraph != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier moduleGraph_ter ^ ^ arguments MemberReference member module_ter ^ ^ ^ MemberReference member providedModule_ter ^ ^ ^ ^ member dependsOn_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((provided != null) && !moduleGraph.dependsOn(module, providedModule))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member moduleGraph_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member module_ter ^ ^ ^ ^ operandr MemberReference member providedModule_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((moduleGraph != null) && (module != providedModule)) && (provided != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((provided == null) && (provided != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier provided_ter ^ ^ member isExplicitlyProvided_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((provided != null) && !provided.isExplicitlyProvided())){
+
+IfStatement condition MethodInvocation qualifier provided_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(provided.isEmpty()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((provided != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member provided_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((provided != null) && (ns != null))){
+
+stderr: 

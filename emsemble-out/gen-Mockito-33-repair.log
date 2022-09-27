@@ -1,0 +1,81 @@
+stdout: ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m2);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m2, m2);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m2 != null)){
+
+ReturnStatement expression MethodInvocation qualifier m2_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m2.equals(m2);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m2 == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((m2 == null)){
+return false;}
+ReturnStatement expression MethodInvocation qualifier candidate_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return candidate.equals(m2);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member hasSameMethod_ter ^ ^ ^ ^ ^ 
+return m1.hasSameMethod(m2);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m1_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m1);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m2, false);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m2, true);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return m1.add(m2);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((m2 == null)){
+continue;
+}
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return m1.debug(m2);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(false);
+ReturnStatement expression MethodInvocation arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return equals(m2);
+ReturnStatement expression MemberReference member m1_ter ^ ^ ^ ^ ^ 
+return m1;
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m2, null);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((m2 == null)){
+return true;}
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(true);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((m2 == null) && m1.equals(m2));
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member loc2 ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals();
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((m2 != null) && m1.equals(m2));
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments This_ter ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(this);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ MemberReference member m1_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m2, m1);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return m1.e(m2);
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ MemberReference member candidate_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(m2, candidate);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression MethodInvocation qualifier par1 ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return .equals(m2);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m1 != null)){
+
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier m1_ter ^ ^ arguments MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((m2 == null) || m1.equals(m2));
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MethodInvocation qualifier candidate_ter ^ ^ member getMethod_ter ^ ^ ^ ^ ^ 
+return candidate.getMethod();
+ReturnStatement expression MethodInvocation qualifier m1_ter ^ ^ arguments This_ter ^ MemberReference member m2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return m1.equals(this, m2);
+stderr: 

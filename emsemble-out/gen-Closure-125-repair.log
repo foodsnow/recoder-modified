@@ -1,0 +1,505 @@
+stdout: condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((fnType != null)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((fnType == null)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier type_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type.isConstructor() || type.isEmptyType())){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((type != null)){
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(fnType.isInstanceType()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(fnType.isConstructor()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(fnType.isInterface()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(fnType.isOrdinaryFunction()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member makesStructs_ter ^ ^ ^ ^ ^ 
+if(fnType.makesStructs()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member makesDicts_ter ^ ^ ^ ^ ^ 
+if(fnType.makesDicts()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(fnType.canBeCalled()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ 
+if(fnType.hasImplementedInterfaces()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ 
+if(fnType.isReturnTypeInferred()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ 
+if(fnType.hasInstanceType()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ 
+if(fnType.hasCachedValues()){
+
+IfStatement condition MethodInvocation qualifier fnType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ ^ 
+if(fnType.hasAnyTemplateTypesInternal()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fnType != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.isInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.isConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.isInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member makesStructs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.makesStructs())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member makesDicts_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.makesDicts())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.canBeCalled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.hasImplementedInterfaces())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.isReturnTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.hasInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.hasAnyTemplateTypesInternal())){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+if(!fnType.isInstanceType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(!fnType.isConstructor()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(!fnType.isInterface()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+if(!fnType.isOrdinaryFunction()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member makesStructs_ter ^ ^ ^ ^ ^ 
+if(!fnType.makesStructs()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member makesDicts_ter ^ ^ ^ ^ ^ 
+if(!fnType.makesDicts()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+if(!fnType.canBeCalled()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ 
+if(!fnType.hasImplementedInterfaces()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ 
+if(!fnType.isReturnTypeInferred()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ 
+if(!fnType.hasInstanceType()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ 
+if(!fnType.hasCachedValues()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ ^ 
+if(!fnType.hasAnyTemplateTypesInternal()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier type_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type.isConstructor() || type.isEmptyType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier type_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (type.isConstructor() || type.isEmptyType()))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((t != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.isInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.isConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.isInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member makesStructs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.makesStructs())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member makesDicts_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.makesDicts())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.canBeCalled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.hasImplementedInterfaces())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.isReturnTypeInferred())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.hasInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.hasCachedValues())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier fnType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && !fnType.hasAnyTemplateTypesInternal())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (type != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (n != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (t != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.getInstanceType() != null))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((fnType == null)){
+return;
+}
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fnType == null)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isInstanceType() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isConstructor() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isInterface() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isOrdinaryFunction() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member makesStructs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.makesStructs() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member makesDicts_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.makesDicts() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.canBeCalled() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasImplementedInterfaces() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isReturnTypeInferred() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasInstanceType() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasCachedValues() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasAnyTemplateTypesInternal() != null))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member fnType_ter ^ ^ ^ ^ ^ 
+if(!fnType){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member getInstanceType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.getInstanceType() == null))){
+
+IfStatement condition MemberReference member fnType_ter ^ ^ ^ ^ ^ 
+if(fnType){
+
+StatementExpression expression MethodInvocation qualifier fnType_ter ^ ^ member setStruct_ter ^ ^ ^ ^ ^ 
+fnType.setStruct();
+
+StatementExpression expression MethodInvocation qualifier fnType_ter ^ ^ member setDict_ter ^ ^ ^ ^ ^ 
+fnType.setDict();
+
+StatementExpression expression MethodInvocation qualifier fnType_ter ^ ^ member clearCachedValues_ter ^ ^ ^ ^ ^ 
+fnType.clearCachedValues();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (type == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (n == null))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type != null)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member constructor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((constructor != null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((fnType != "null")){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isInstanceType() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isConstructor() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isInterface() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isOrdinaryFunction() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member makesStructs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.makesStructs() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member makesDicts_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.makesDicts() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.canBeCalled() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasImplementedInterfaces() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.isReturnTypeInferred() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasInstanceType() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasCachedValues() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (fnType.hasAnyTemplateTypesInternal() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.isInstanceType() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.isConstructor() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.isInterface() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.isOrdinaryFunction() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member makesStructs_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.makesStructs() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member makesDicts_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.makesDicts() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.canBeCalled() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasImplementedInterfaces_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.hasImplementedInterfaces() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.isReturnTypeInferred() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasInstanceType_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.hasInstanceType() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasCachedValues_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.hasCachedValues() && (fnType != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier fnType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fnType.hasAnyTemplateTypesInternal() && (fnType != null))){
+
+StatementExpression expression MethodInvocation qualifier type_ter ^ ^ member clearResolved_ter ^ ^ ^ ^ ^ 
+type.clearResolved();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member hasDisplayName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.hasDisplayName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNoType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNoType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNoResolvedType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNoResolvedType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNoObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isEmptyType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNumberObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNumberValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isFunctionPrototypeType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isStringObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isTheObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isStringValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isString())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNumber())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isArrayType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isBooleanObjectType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isBooleanValueType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isRegexpType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isDateType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isDateType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNullType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNullType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isVoidType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isAllType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isAllType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isCheckedUnknownType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isUnionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isStruct_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isStruct())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isDict_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isDict())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isGlobalThisType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isGlobalThisType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isFunctionType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isEnumElementType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isEnumType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNamedType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isRecordType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isTemplatizedType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isTemplatizedType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isTemplateType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member hasAnyTemplateTypes_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.hasAnyTemplateTypes())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.hasAnyTemplateTypesInternal())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isObject())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNominalType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNominalConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNominalConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isInstanceType())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isOrdinaryFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.matchesInt32Context())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.matchesUint32Context())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.matchesNumberContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.matchesStringContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.matchesObjectContext())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.canBeCalled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isNullable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isNullable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier type_ter ^ ^ member isResolved_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && type.isResolved())){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((fnType > null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && (t == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier fnType_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fnType != null) && fnType.isEmpty())){
+
+stderr: 

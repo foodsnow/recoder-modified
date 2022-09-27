@@ -1,0 +1,334 @@
+stdout: condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getFirstChild())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getLastChild())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getNext())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getLastSibling_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getLastSibling())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getParent())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.detachFromParent())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member removeFirstChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.removeFirstChild())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member removeChildren_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.removeChildren())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member cloneNode_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.cloneNode())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member cloneTree_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.cloneTree())){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, variable)){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member variable_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(variable, n.getParent())){
+IfStatement condition MemberReference member n_ter ^ ^ ^ ^ ^ 
+if(n){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n)){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isVariableReadBeforeKill_ter ^ ^ ^ ^ 
+if(NodeUtil.isVariableReadBeforeKill(n, n.getParent())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(child, n.getParent())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier variable_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, variable.getParent())){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(child)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isLhs(n, n.getParent())){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getString())){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(child, variable)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.hasChildren())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.hasOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.hasMoreThanOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.hasSideEffects())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isUnscopedQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isVarArgs())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isOptionalArg())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isSyntheticBlock())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.wasEmptyNode())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isOnlyModifiesThisCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isNoSideEffectsCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isLocalResultCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.isQuotedString())){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier child_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, child.getParent())){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), variable)){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member state_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(state, n.getParent())){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getName_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, n.getName())){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasChildren(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasOneChild(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasMoreThanOneChild(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasSideEffects(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isQualifiedName(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isUnscopedQualifiedName(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isVarArgs(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isOptionalArg(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isSyntheticBlock(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.wasEmptyNode(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isOnlyModifiesThisCall(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isNoSideEffectsCall(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isLocalResultCall(), n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isQuotedString(), n.getParent())){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member n_ter ^ ^ ^ ^ ^ 
+if(!n){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ 
+if(NodeUtil.isLhs(, n.getParent())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((n != null) && NodeUtil.isLhs(n, n.getParent()))){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, )){
+
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getString())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.hasChildren())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.hasOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.hasMoreThanOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.hasSideEffects())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isUnscopedQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isVarArgs())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isOptionalArg())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isSyntheticBlock())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.wasEmptyNode())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isOnlyModifiesThisCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isNoSideEffectsCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isLocalResultCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.isQuotedString())){
+
+IfStatement condition MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(isLhs(n, n.getParent())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, child)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasChildren(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasOneChild(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasMoreThanOneChild(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasSideEffects(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isQualifiedName(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isUnscopedQualifiedName(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isVarArgs(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isOptionalArg(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isSyntheticBlock(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.wasEmptyNode(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isOnlyModifiesThisCall(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isNoSideEffectsCall(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isLocalResultCall(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isQuotedString(), n)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasChildren())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasMoreThanOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.hasSideEffects())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isUnscopedQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isVarArgs())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isOptionalArg())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isSyntheticBlock())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.wasEmptyNode())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isOnlyModifiesThisCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isNoSideEffectsCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isLocalResultCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.isQuotedString())){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ 
+if(NodeUtil.isEnteringNewCfgNode(n, n.getParent())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((n == null) && NodeUtil.isLhs(n, n.getParent()))){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member state_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n, state)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n, variable)){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+if(n.getParent()){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n, )){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MemberReference member variable_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.getParent(), variable)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isLhs(n.getParent(), n.getParent())){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(NodeUtil.equals(n, n.getParent())){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member getParent_ter ^ ^ ^ ^ member isLhs_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isLhs(n, n.getParent()) && NodeUtil.isLhs(n, n.getParent()))){
+
+stderr: 

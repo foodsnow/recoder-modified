@@ -1,0 +1,67 @@
+stdout: ReturnStatement expression SuperMethodInvocation arguments MemberReference member obj_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return super.equals(obj);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression MemberReference member obj_ter ^ ^ ^ ^ ^ 
+return obj;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((obj == null)){
+return false;}
+ReturnStatement expression SuperMethodInvocation arguments MemberReference member obj_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return super.add(obj);
+ReturnStatement expression MethodInvocation arguments MemberReference member obj_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return equals(obj);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((obj == null)){
+return true;}
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((obj != null)){
+return false;}
+ReturnStatement expression MemberReference member obj_ter ^ ^ ^ ^ ^ 
+if (true) { return obj; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((obj != null)){
+return true;}
+ReturnStatement expression SuperMethodInvocation arguments MemberReference postfix_operators ++_ter ^ ^ member obj_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return super.equals(obj++);
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression SuperMethodInvocation arguments MemberReference member loc0 ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return super.equals();
+IfStatement condition MemberReference member obj_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(obj){
+return false;}
+StatementExpression expression Assignment expressionl MemberReference member obj_ter ^ ^ ^ ^ value MemberReference member obj_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+obj = obj;
+
+ReturnStatement expression SuperMethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return super.equals();
+ReturnStatement expression SuperMethodInvocation arguments MemberReference member obj_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return super.max(obj);
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member obj_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!obj){
+return false;}
+ReturnStatement expression MethodInvocation qualifier obj_ter ^ ^ arguments MemberReference member obj_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return obj.equals(obj);
+stderr: 

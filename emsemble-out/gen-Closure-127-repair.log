@@ -1,0 +1,2065 @@
+stdout: condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode == fallThrough)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member nextCfgNode_ter ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode == nextCfgNode)){
+
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode != fallThrough)){
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member isFunction_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((n.getNext() == null) || n.getNext().isFunction())){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier outEdges_ter ^ ^ member size_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((outEdges.size() == 1)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getNext() == null)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fallThrough_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if((fallThrough == fallThrough)){
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member removeNode_ter ^ ^ ^ ^ ^ 
+removeNode(n);
+
+IfStatement condition MemberReference member fallThrough_ter ^ ^ ^ ^ ^ 
+if(fallThrough){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member outEdges_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if((outEdges == fallThrough)){
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFromExterns()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLocalResultCall()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQuotedString()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAdd()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAnd()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isArrayLit()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssign()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssignAdd()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBlock()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBreak()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCall()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCase()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCast()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCatch()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isComma()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isContinue()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDebugger()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDec()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDefaultCase()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDelProp()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDo()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isEmpty()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isExprResult()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFalse()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFor()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFunction()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetterDef()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetElem()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetProp()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isHook()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIf()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIn()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInc()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInstanceOf()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabel()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabelName()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isName()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNE()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNew()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNot()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNull()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNumber()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isObjectLit()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOr()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isParamList()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isRegExp()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isReturn()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isScript()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSetterDef()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isString()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isStringKey()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSwitch()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThis()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThrow()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTrue()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTry()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTypeOf()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVar()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVoid()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWhile()){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWith()){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member outEdges_ter ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode == outEdges)){
+IfStatement condition MemberReference member nextCfgNode_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode != null)){
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier outEdges_ter ^ ^ selectors MethodInvocation member getValue_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((outEdges.get(0).getValue() == Branch.UNCOND));
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member nextCfgNode_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFromExterns()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(fallThrough.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLocalResultCall()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQuotedString()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAdd()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAnd()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isArrayLit()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssign()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssignAdd()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBlock()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBreak()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCall()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCase()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCast()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCatch()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isComma()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isContinue()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDebugger()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDec()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDefaultCase()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDelProp()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDo()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isEmpty()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isExprResult()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFalse()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFor()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFunction()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetterDef()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetElem()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetProp()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isHook()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIf()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIn()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInc()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInstanceOf()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabel()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabelName()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isName()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNE()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNew()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNot()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNull()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNumber()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isObjectLit()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOr()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isParamList()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isRegExp()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isReturn()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isScript()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSetterDef()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isString()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isStringKey()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSwitch()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThis()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThrow()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTrue()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTry()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTypeOf()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVar()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVoid()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWhile()){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWith()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode || (nextCfgNode == fallThrough))){
+
+BreakStatement_ter ^ 
+break;
+
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if((gNode == fallThrough)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member gNode_ter ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode == gNode)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((nextCfgNode == fallThrough) || fallThrough)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member fallThrough_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((fallThrough || (nextCfgNode == fallThrough))){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode >= fallThrough)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member nextCfgNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((nextCfgNode == fallThrough) || nextCfgNode)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getNext() == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier outEdges_ter ^ ^ member size_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((outEdges.size() == 1)){
+
+StatementExpression expression MethodInvocation qualifier nextCfgNode_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+nextCfgNode.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier nextCfgNode_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+nextCfgNode.setQuotedString();
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.hasChildren()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isFromExterns()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.hasOneChild()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isQualifiedName()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isVarArgs()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isOptionalArg()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.wasEmptyNode()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isLocalResultCall()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isQuotedString()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isAdd()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isAnd()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isArrayLit()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isAssign()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isAssignAdd()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isBlock()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isBreak()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isCall()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isCase()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isCast()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isCatch()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isComma()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isContinue()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isDebugger()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isDec()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isDefaultCase()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isDelProp()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isDo()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isEmpty()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isExprResult()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isFalse()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isFor()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isFunction()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isGetterDef()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isGetElem()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isGetProp()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isHook()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isIf()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isIn()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isInc()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isInstanceOf()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isLabel()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isLabelName()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isName()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isNE()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isNew()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isNot()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isNull()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isNumber()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isObjectLit()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isOr()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isParamList()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isRegExp()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isReturn()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isScript()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isSetterDef()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isString()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isStringKey()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isSwitch()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isThis()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isThrow()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isTrue()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isTry()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isTypeOf()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isVar()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isVoid()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isWhile()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier nextCfgNode_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(!nextCfgNode.isWith()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member fallThrough_ter ^ ^ ^ ^ ^ 
+if(!fallThrough){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasChildren(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFromExterns(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasOneChild(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasMoreThanOneChild(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQualifiedName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isUnscopedQualifiedName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVarArgs(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOptionalArg(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSyntheticBlock(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.wasEmptyNode(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOnlyModifiesThisCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNoSideEffectsCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLocalResultCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQuotedString(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAdd(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAnd(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isArrayLit(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssign(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssignAdd(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBlock(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBreak(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCase(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCast(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCatch(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isComma(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isContinue(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDebugger(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDec(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDefaultCase(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDelProp(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDo(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isEmpty(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isExprResult(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFalse(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFor(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFunction(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetterDef(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetElem(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetProp(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isHook(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIf(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIn(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInc(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInstanceOf(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabel(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabelName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNE(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNew(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNot(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNull(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNumber(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isObjectLit(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOr(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isParamList(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isRegExp(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isReturn(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isScript(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSetterDef(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isString(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isStringKey(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSwitch(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThis(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThrow(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTrue(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTry(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTypeOf(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVar(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVoid(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWhile(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWith(fallThrough)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode > fallThrough)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode == null)){
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasChildren(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFromExterns(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasOneChild(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasMoreThanOneChild(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQualifiedName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isUnscopedQualifiedName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVarArgs(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOptionalArg(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSyntheticBlock(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(fallThrough.wasEmptyNode(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOnlyModifiesThisCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNoSideEffectsCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLocalResultCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQuotedString(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAdd(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAnd(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isArrayLit(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssign(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssignAdd(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBlock(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBreak(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCall(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCase(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCast(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCatch(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isComma(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isContinue(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDebugger(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDec(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDefaultCase(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDelProp(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDo(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isEmpty(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isExprResult(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFalse(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFor(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFunction(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetterDef(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetElem(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetProp(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isHook(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIf(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIn(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInc(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInstanceOf(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabel(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabelName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isName(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNE(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNew(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNot(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNull(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNumber(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isObjectLit(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOr(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isParamList(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isRegExp(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isReturn(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isScript(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSetterDef(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isString(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isStringKey(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSwitch(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThis(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThrow(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTrue(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTry(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTypeOf(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVar(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVoid(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWhile(fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member fallThrough_ter ^ ^ ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWith(fallThrough)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member isFunction_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((n.getNext() == null) || n.getNext().isFunction())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode && (nextCfgNode == fallThrough))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((nextCfgNode == fallThrough) && fallThrough)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasChildren(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFromExterns(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasOneChild(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasMoreThanOneChild(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQualifiedName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isUnscopedQualifiedName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVarArgs(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOptionalArg(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSyntheticBlock(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.wasEmptyNode(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOnlyModifiesThisCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNoSideEffectsCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLocalResultCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQuotedString(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAdd(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAnd(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isArrayLit(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssign(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssignAdd(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBlock(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBreak(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCase(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCast(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCatch(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isComma(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isContinue(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDebugger(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDec(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDefaultCase(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDelProp(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDo(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isEmpty(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isExprResult(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFalse(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFor(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFunction(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetterDef(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetElem(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetProp(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isHook(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIf(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIn(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInc(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInstanceOf(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabel(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabelName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNE(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNew(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNot(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNull(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNumber(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isObjectLit(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOr(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isParamList(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isRegExp(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isReturn(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isScript(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSetterDef(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isString(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isStringKey(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSwitch(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThis(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThrow(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTrue(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTry(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTypeOf(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVar(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVoid(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWhile(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWith(nextCfgNode)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier outEdges_ter ^ ^ selectors MethodInvocation member getValue_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ ^ ^ ^ ^ 
+if((outEdges.get(0).getValue() == Branch.UNCOND)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member isFunction_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((nextCfgNode == fallThrough) || ((n.getNext() == null) || n.getNext().isFunction()))){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasChildren(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFromExterns(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasOneChild(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.hasMoreThanOneChild(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQualifiedName(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isUnscopedQualifiedName(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVarArgs(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOptionalArg(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSyntheticBlock(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.wasEmptyNode(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOnlyModifiesThisCall(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNoSideEffectsCall(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLocalResultCall(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isQuotedString(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAdd(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAnd(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isArrayLit(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssign(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isAssignAdd(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBlock(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isBreak(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCall(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCase(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCast(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isCatch(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isComma(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isContinue(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDebugger(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDec(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDefaultCase(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDelProp(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isDo(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isEmpty(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isExprResult(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFalse(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFor(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isFunction(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetterDef(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetElem(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isGetProp(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isHook(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIf(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isIn(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInc(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isInstanceOf(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabel(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isLabelName(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isName(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNE(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNew(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNot(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNull(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isNumber(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isObjectLit(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isOr(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isParamList(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isRegExp(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isReturn(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isScript(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSetterDef(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isString(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isStringKey(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isSwitch(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThis(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isThrow(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTrue(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTry(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isTypeOf(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVar(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isVoid(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWhile(0)){
+
+IfStatement condition MethodInvocation qualifier nextCfgNode_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(nextCfgNode.isWith(0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode == fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasChildren(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFromExterns(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasOneChild(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasMoreThanOneChild(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQualifiedName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isUnscopedQualifiedName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVarArgs(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOptionalArg(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSyntheticBlock(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(fallThrough.wasEmptyNode(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOnlyModifiesThisCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNoSideEffectsCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLocalResultCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQuotedString(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAdd(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAnd(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isArrayLit(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssign(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssignAdd(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBlock(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBreak(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCall(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCase(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCast(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCatch(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isComma(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isContinue(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDebugger(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDec(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDefaultCase(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDelProp(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDo(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isEmpty(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isExprResult(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFalse(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFor(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFunction(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetterDef(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetElem(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetProp(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isHook(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIf(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIn(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInc(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInstanceOf(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabel(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabelName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isName(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNE(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNew(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNot(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNull(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNumber(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isObjectLit(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOr(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isParamList(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isRegExp(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isReturn(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isScript(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSetterDef(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isString(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isStringKey(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSwitch(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThis(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThrow(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTrue(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTry(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTypeOf(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVar(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVoid(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWhile(nextCfgNode)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments MemberReference member nextCfgNode_ter ^ ^ ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWith(nextCfgNode)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode != 1)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member par1 ^ ^ ^ ^ operandr MemberReference member fallThrough_ter ^ ^ ^ ^ ^ ^ 
+if(( == fallThrough)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasChildren(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFromExterns(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasOneChild(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(fallThrough.hasMoreThanOneChild(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQualifiedName(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isUnscopedQualifiedName(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVarArgs(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOptionalArg(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSyntheticBlock(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(fallThrough.wasEmptyNode(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOnlyModifiesThisCall(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNoSideEffectsCall(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLocalResultCall(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isQuotedString(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAdd(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAnd(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isArrayLit(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssign(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isAssignAdd(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBlock(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isBreak(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCall(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCase(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCast(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isCatch(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isComma(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isContinue(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDebugger(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDec(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDefaultCase(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDelProp(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isDo(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isEmpty(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isExprResult(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFalse(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFor(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isFunction(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetterDef(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetElem(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isGetProp(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isHook(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIf(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isIn(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInc(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isInstanceOf(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabel(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isLabelName(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isName(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNE(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNew(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNot(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNull(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isNumber(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isObjectLit(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isOr(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isParamList(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isRegExp(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isReturn(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isScript(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSetterDef(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isString(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isStringKey(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isSwitch(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThis(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isThrow(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTrue(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTry(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isTypeOf(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVar(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isVoid(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWhile(0)){
+
+IfStatement condition MethodInvocation qualifier fallThrough_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(fallThrough.isWith(0)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextCfgNode_ter ^ ^ ^ ^ operandr MemberReference member par1 ^ ^ ^ ^ ^ ^ 
+if((nextCfgNode == )){
+
+stderr: 

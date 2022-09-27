@@ -1,0 +1,244 @@
+stdout: LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() - 2));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getMaximumItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getMaximumItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member hashCode_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (hashCode() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 2_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(2, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), 0);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments MemberReference member maximumItemCount_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(maximumItemCount);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() + 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation member getItemCount_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = getItemCount();
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() - 0));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object clone = createCopy(0, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MemberReference member maximumItemCount_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), maximumItemCount);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), 0, 0);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() / 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator %_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() % 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments MemberReference member maximumItemCount_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(maximumItemCount, (getItemCount() - 1));
+
+StatementExpression expression MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ 
+createCopy(0, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), 1);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getItemCount_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(getItemCount());
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator *_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() * 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() - -1));
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), 2);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), (getItemCount() - 1), 0);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() <= 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() >= 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member meth0 ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (m() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 1_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(1, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() - null));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() == 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), null);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator >>_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() >> 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments MemberReference member maximumItemCount_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(maximumItemCount, 0);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getItemCount_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(getItemCount(), 0);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, (getItemCount() != 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(1);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), false);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, 0);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ MemberReference member maximumItemCount_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(0, maximumItemCount);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MethodInvocation arguments Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Object clone = (Object)createCopy(0, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), 0, 1);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy((getItemCount() - 1), 0, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(((getItemCount() - 1) - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(-1, (getItemCount() - 1));
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name clone_ter ^ ^ initializer MethodInvocation arguments Literal value 1_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member createCopy_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object clone = createCopy(1, 0);
+
+stderr: 

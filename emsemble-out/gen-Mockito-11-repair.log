@@ -1,0 +1,119 @@
+stdout: ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(o);
+ReturnStatement expression MethodInvocation qualifier MethodInvocation member getJavaMethod_ter ^ ^ ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return getJavaMethod().equals(o);
+ReturnStatement expression MethodInvocation arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return equals(o);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MemberReference member o_ter ^ ^ ^ ^ ^ 
+return o;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((o == null) && method.equals(o));
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(o, false);
+ReturnStatement expression MethodInvocation member equals_ter ^ ^ ^ ^ ^ 
+return equals();
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (o != null);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((o != null) && method.equals(o));
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(o, true);
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (o == null);
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return method.add(o);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((o == null)){
+return false;}
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals();
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((o == null) || method.equals(o));
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (method.equals(o) == 0);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ operandr MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return (method.equals(o) && method.equals(o));
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return method.debug(o);
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments This_ter ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(this);
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(o, null);
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ selectors MethodInvocation arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals().equals(o);
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(o, 0);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((o == null)){
+return true;}
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ selectors MethodInvocation arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(o).equals(o);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return method.e(o);
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (method.equals(o) != null);
+ReturnStatement expression Cast type BasicType name boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return (boolean)method.equals(o);
+ReturnStatement expression MethodInvocation qualifier o_ter ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return o.equals();
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ This_ter ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(o, this);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((o != null) || method.equals(o));
+ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments This_ter ^ MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return method.equals(this, o);
+ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return !method.equals(o);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return Math.equals(o);
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member o_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (o > 0);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ operandr MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+return (method.equals(o) || method.equals(o));
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression MemberReference member hashCode_ter ^ ^ ^ ^ ^ 
+return hashCode;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ 
+return -1;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression MethodInvocation member hashCode_ter ^ ^ ^ ^ ^ 
+return hashCode();
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 2_ter ^ ^ ^ ^ ^ 
+return -2;
+ReturnStatement expression MemberReference member add_ter ^ ^ ^ ^ ^ 
+return add;
+ReturnStatement expression MemberReference member debug_ter ^ ^ ^ ^ ^ 
+return debug;
+ReturnStatement expression MemberReference member e_ter ^ ^ ^ ^ ^ 
+return e;
+StatementExpression expression SuperMethodInvocation member hashCode_ter ^ ^ ^ ^ ^ 
+super.hashCode();
+
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 0_ter ^ ^ ^ ^ ^ 
+return -0;
+ReturnStatement expression ArrayCreator type BasicType name int_ter ^ ^ ^ ^ dimensions None_ter ^ ^ ^ ^ ^ 
+return new int[[]];
+
+stderr: 

@@ -1,0 +1,910 @@
+stdout: condition MemberReference prefix_operators !_ter ^ ^ member isClassOrEnum_ter ^ ^ ^ ^ 
+if(!isClassOrEnum){
+IfStatement condition MemberReference member isClassOrEnum_ter ^ ^ ^ ^ ^ 
+if(isClassOrEnum){
+
+IfStatement condition MethodInvocation member isClassOrEnum_ter ^ ^ ^ ^ ^ 
+if(isClassOrEnum()){
+
+StatementExpression expression MethodInvocation member process_ter ^ ^ ^ ^ ^ 
+process();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ member canCollapseUnannotatedChildNames_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((parent == null) || parent.canCollapseUnannotatedChildNames())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr MemberReference qualifier Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member globalSets_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((type == Type.OTHER) || (globalSets != 1))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr MemberReference qualifier Type_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member aliasingGets_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((type == Type.FUNCTION) || (aliasingGets == 0))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member localSets_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((localSets != 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member aliasingGets_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((aliasingGets == 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parent == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr MemberReference qualifier Type_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type == Type.FUNCTION)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member globalSets_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((globalSets != 1)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr MemberReference qualifier Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ ^ ^ ^ 
+if((type == Type.OTHER)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member isClassOrEnum_ter ^ ^ ^ ^ ^ 
+if(!isClassOrEnum){
+
+IfStatement condition MemberReference member isClassOrEnum_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isClassOrEnum){
+return false;}
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member isClassOrEnum_ter ^ ^ ^ ^ ^ 
+if(parent.isClassOrEnum()){
+
+condition MemberReference qualifier Type_ter ^ ^ member isClassOrEnum_ter ^ ^ ^ ^ 
+if(Type.isClassOrEnum){
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr MemberReference qualifier Type_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member aliasingGets_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ member canCollapseUnannotatedChildNames_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (((type == Type.FUNCTION) || (aliasingGets == 0)) && ((parent == null) || parent.canCollapseUnannotatedChildNames())); }
+
+condition MemberReference member type_ter ^ ^ ^ ^ 
+if(type){
+IfStatement condition MemberReference member isClassOrEnum_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(isClassOrEnum){
+return true;}
+condition MemberReference member localSets_ter ^ ^ ^ ^ 
+if(localSets){
+condition MemberReference postfix_operators ++_ter ^ ^ member isClassOrEnum_ter ^ ^ ^ ^ 
+if(isClassOrEnum++){
+condition MemberReference member isClassOrEnum_ter ^ ^ ^ ^ 
+if(isClassOrEnum){
+condition MemberReference member populated_ter ^ ^ ^ ^ 
+if(populated){
+condition MemberReference member parseDocumentation_ter ^ ^ ^ ^ 
+if(parseDocumentation){
+condition MemberReference member description_ter ^ ^ ^ ^ 
+if(description){
+IfStatement condition MethodInvocation member isPopulated_ter ^ ^ ^ ^ ^ 
+if(isPopulated()){
+
+IfStatement condition MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+if(isPopulatedWithFileOverview()){
+
+IfStatement condition MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+if(isDescriptionRecorded()){
+
+IfStatement condition MethodInvocation member recordConstancy_ter ^ ^ ^ ^ ^ 
+if(recordConstancy()){
+
+IfStatement condition MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ ^ 
+if(recordHiddenness()){
+
+IfStatement condition MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+if(recordNoTypeCheck()){
+
+IfStatement condition MethodInvocation member recordConstructor_ter ^ ^ ^ ^ ^ 
+if(recordConstructor()){
+
+IfStatement condition MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+if(isConstructorRecorded()){
+
+IfStatement condition MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+if(recordPreserveTry()){
+
+IfStatement condition MethodInvocation member recordOverride_ter ^ ^ ^ ^ ^ 
+if(recordOverride()){
+
+IfStatement condition MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ ^ 
+if(recordNoAlias()){
+
+IfStatement condition MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ ^ 
+if(recordDeprecated()){
+
+IfStatement condition MethodInvocation member recordInterface_ter ^ ^ ^ ^ ^ 
+if(recordInterface()){
+
+IfStatement condition MethodInvocation member recordExport_ter ^ ^ ^ ^ ^ 
+if(recordExport()){
+
+IfStatement condition MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ ^ 
+if(recordNoShadow()){
+
+IfStatement condition MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+if(recordImplicitCast()){
+
+IfStatement condition MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+if(recordNoSideEffects()){
+
+IfStatement condition MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+if(isInterfaceRecorded()){
+
+IfStatement condition MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+if(hasAnyTypeRelatedTags()){
+
+IfStatement condition MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+if(hasAnySingletonTypeTags()){
+
+IfStatement condition MemberReference member parseDocumentation_ter ^ ^ ^ ^ ^ 
+if(parseDocumentation){
+
+condition MemberReference qualifier populated_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(populated.parseDocumentation){
+condition MemberReference qualifier parseDocumentation_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(parseDocumentation.parseDocumentation){
+condition MemberReference qualifier MethodInvocation member isPopulated_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(isPopulated().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(isPopulatedWithFileOverview().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(isDescriptionRecorded().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordConstancy_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordConstancy().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordHiddenness().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordNoTypeCheck().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordConstructor_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordConstructor().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(isConstructorRecorded().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordPreserveTry().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordOverride_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordOverride().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordNoAlias().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordDeprecated().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordInterface_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordInterface().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordExport_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordExport().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordNoShadow().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordImplicitCast().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(recordNoSideEffects().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(isInterfaceRecorded().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(hasAnyTypeRelatedTags().parseDocumentation){
+condition MemberReference qualifier MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(hasAnySingletonTypeTags().parseDocumentation){
+IfStatement condition MethodInvocation member parseDocumentation_ter ^ ^ ^ ^ ^ 
+if(parseDocumentation()){
+
+condition MemberReference prefix_operators !_ter ^ ^ member populated_ter ^ ^ ^ ^ 
+if(!populated){
+condition MemberReference prefix_operators !_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(!parseDocumentation){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ ^ 
+if(!parseDocumentation){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isConstant_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isConstant()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isConstructor()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isDefine_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isDefine()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isHidden_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isHidden()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isNoTypeCheck_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isNoTypeCheck()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member shouldPreserveTry_ter ^ ^ ^ ^ ^ 
+if(currentInfo.shouldPreserveTry()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isOverride_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isOverride()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isNoAlias_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isNoAlias()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isDeprecated_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isDeprecated()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isInterface()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isExport_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isExport()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isNoShadow_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isNoShadow()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isImplicitCast_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isImplicitCast()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member isNoSideEffects_ter ^ ^ ^ ^ ^ 
+if(currentInfo.isNoSideEffects()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member lazyInitDocumentation_ter ^ ^ ^ ^ ^ 
+if(currentInfo.lazyInitDocumentation()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member hasType_ter ^ ^ ^ ^ ^ 
+if(currentInfo.hasType()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member hasEnumParameterType_ter ^ ^ ^ ^ ^ 
+if(currentInfo.hasEnumParameterType()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member hasTypedefType_ter ^ ^ ^ ^ ^ 
+if(currentInfo.hasTypedefType()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member hasReturnType_ter ^ ^ ^ ^ ^ 
+if(currentInfo.hasReturnType()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member hasThisType_ter ^ ^ ^ ^ ^ 
+if(currentInfo.hasThisType()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member hasBaseType_ter ^ ^ ^ ^ ^ 
+if(currentInfo.hasBaseType()){
+
+IfStatement condition MethodInvocation qualifier currentInfo_ter ^ ^ member hasFileOverview_ter ^ ^ ^ ^ ^ 
+if(currentInfo.hasFileOverview()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation != null)){
+
+condition MemberReference postfix_operators ++_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(parseDocumentation++){
+condition MemberReference postfix_operators ++_ter ^ ^ member populated_ter ^ ^ ^ ^ 
+if(populated++){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isPopulated_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && isPopulated())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && isPopulatedWithFileOverview())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && isDescriptionRecorded())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordConstancy_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordConstancy())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordHiddenness())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordNoTypeCheck())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordConstructor())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && isConstructorRecorded())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordPreserveTry())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordOverride_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordOverride())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordNoAlias())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordDeprecated())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordInterface())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordExport_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordExport())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordNoShadow())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordImplicitCast())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && recordNoSideEffects())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && isInterfaceRecorded())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && hasAnyTypeRelatedTags())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation && hasAnySingletonTypeTags())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isPopulated_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || isPopulated())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || isPopulatedWithFileOverview())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || isDescriptionRecorded())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordConstancy_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordConstancy())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordHiddenness())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordNoTypeCheck())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordConstructor())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || isConstructorRecorded())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordPreserveTry())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordOverride_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordOverride())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordNoAlias())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordDeprecated())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordInterface())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordExport_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordExport())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordNoShadow())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordImplicitCast())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || recordNoSideEffects())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || isInterfaceRecorded())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || hasAnyTypeRelatedTags())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation || hasAnySingletonTypeTags())){
+
+StatementExpression expression SuperMethodInvocation member recordBlockDescription_ter ^ ^ ^ ^ ^ 
+super.recordBlockDescription();
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member isPopulated_ter ^ ^ ^ ^ ^ 
+if(isPopulated(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+if(isPopulatedWithFileOverview(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+if(isDescriptionRecorded(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordConstancy_ter ^ ^ ^ ^ ^ 
+if(recordConstancy(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordHiddenness_ter ^ ^ ^ ^ ^ 
+if(recordHiddenness(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+if(recordNoTypeCheck(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordConstructor_ter ^ ^ ^ ^ ^ 
+if(recordConstructor(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+if(isConstructorRecorded(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+if(recordPreserveTry(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordOverride_ter ^ ^ ^ ^ ^ 
+if(recordOverride(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordNoAlias_ter ^ ^ ^ ^ ^ 
+if(recordNoAlias(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordDeprecated_ter ^ ^ ^ ^ ^ 
+if(recordDeprecated(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordInterface_ter ^ ^ ^ ^ ^ 
+if(recordInterface(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordExport_ter ^ ^ ^ ^ ^ 
+if(recordExport(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordNoShadow_ter ^ ^ ^ ^ ^ 
+if(recordNoShadow(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+if(recordImplicitCast(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+if(recordNoSideEffects(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+if(isInterfaceRecorded(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+if(hasAnyTypeRelatedTags(parseDocumentation)){
+
+IfStatement condition MethodInvocation arguments MemberReference member parseDocumentation_ter ^ ^ ^ ^ member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+if(hasAnySingletonTypeTags(parseDocumentation)){
+
+IfStatement condition MethodInvocation member isPopulated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isPopulated()){
+return false;}
+IfStatement condition MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isPopulatedWithFileOverview()){
+return false;}
+IfStatement condition MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isDescriptionRecorded()){
+return false;}
+IfStatement condition MethodInvocation member recordConstancy_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordConstancy()){
+return false;}
+IfStatement condition MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordHiddenness()){
+return false;}
+IfStatement condition MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordNoTypeCheck()){
+return false;}
+IfStatement condition MethodInvocation member recordConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordConstructor()){
+return false;}
+IfStatement condition MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isConstructorRecorded()){
+return false;}
+IfStatement condition MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordPreserveTry()){
+return false;}
+IfStatement condition MethodInvocation member recordOverride_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordOverride()){
+return false;}
+IfStatement condition MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordNoAlias()){
+return false;}
+IfStatement condition MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordDeprecated()){
+return false;}
+IfStatement condition MethodInvocation member recordInterface_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordInterface()){
+return false;}
+IfStatement condition MethodInvocation member recordExport_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordExport()){
+return false;}
+IfStatement condition MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordNoShadow()){
+return false;}
+IfStatement condition MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordImplicitCast()){
+return false;}
+IfStatement condition MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(recordNoSideEffects()){
+return false;}
+IfStatement condition MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(isInterfaceRecorded()){
+return false;}
+IfStatement condition MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(hasAnyTypeRelatedTags()){
+return false;}
+IfStatement condition MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(hasAnySingletonTypeTags()){
+return false;}
+condition MemberReference qualifier currentInfo_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
+if(currentInfo.parseDocumentation){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if((parseDocumentation == null)){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member isPopulated_ter ^ ^ ^ ^ ^ 
+if(isPopulated(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+if(isPopulatedWithFileOverview(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+if(isDescriptionRecorded(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordConstancy_ter ^ ^ ^ ^ ^ 
+if(recordConstancy(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordHiddenness_ter ^ ^ ^ ^ ^ 
+if(recordHiddenness(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+if(recordNoTypeCheck(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordConstructor_ter ^ ^ ^ ^ ^ 
+if(recordConstructor(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+if(isConstructorRecorded(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+if(recordPreserveTry(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordOverride_ter ^ ^ ^ ^ ^ 
+if(recordOverride(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordNoAlias_ter ^ ^ ^ ^ ^ 
+if(recordNoAlias(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordDeprecated_ter ^ ^ ^ ^ ^ 
+if(recordDeprecated(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordInterface_ter ^ ^ ^ ^ ^ 
+if(recordInterface(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordExport_ter ^ ^ ^ ^ ^ 
+if(recordExport(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordNoShadow_ter ^ ^ ^ ^ ^ 
+if(recordNoShadow(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+if(recordImplicitCast(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+if(recordNoSideEffects(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+if(isInterfaceRecorded(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+if(hasAnyTypeRelatedTags(description)){
+
+IfStatement condition MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+if(hasAnySingletonTypeTags(description)){
+
+IfStatement condition MethodInvocation member isPopulated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(isPopulated()){
+return true;}
+IfStatement condition MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(isPopulatedWithFileOverview()){
+return true;}
+IfStatement condition MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(isDescriptionRecorded()){
+return true;}
+IfStatement condition MethodInvocation member recordConstancy_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordConstancy()){
+return true;}
+IfStatement condition MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordHiddenness()){
+return true;}
+IfStatement condition MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordNoTypeCheck()){
+return true;}
+IfStatement condition MethodInvocation member recordConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordConstructor()){
+return true;}
+IfStatement condition MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(isConstructorRecorded()){
+return true;}
+IfStatement condition MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordPreserveTry()){
+return true;}
+IfStatement condition MethodInvocation member recordOverride_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordOverride()){
+return true;}
+IfStatement condition MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordNoAlias()){
+return true;}
+IfStatement condition MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordDeprecated()){
+return true;}
+IfStatement condition MethodInvocation member recordInterface_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordInterface()){
+return true;}
+IfStatement condition MethodInvocation member recordExport_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordExport()){
+return true;}
+IfStatement condition MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordNoShadow()){
+return true;}
+IfStatement condition MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordImplicitCast()){
+return true;}
+IfStatement condition MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(recordNoSideEffects()){
+return true;}
+IfStatement condition MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(isInterfaceRecorded()){
+return true;}
+IfStatement condition MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(hasAnyTypeRelatedTags()){
+return true;}
+IfStatement condition MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(hasAnySingletonTypeTags()){
+return true;}
+IfStatement condition MethodInvocation member isPopulated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(isPopulated()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(isPopulatedWithFileOverview()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(isDescriptionRecorded()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordConstancy_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordConstancy()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordHiddenness()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordNoTypeCheck()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordConstructor()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(isConstructorRecorded()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordPreserveTry()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordOverride_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordOverride()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordNoAlias()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordDeprecated()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordInterface_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordInterface()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordExport_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordExport()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordNoShadow()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordImplicitCast()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(recordNoSideEffects()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(isInterfaceRecorded()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(hasAnyTypeRelatedTags()){
+return currentInfo.documentBlock(description);}
+IfStatement condition MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier currentInfo_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member documentBlock_ter ^ ^ ^ ^ ^ 
+if(hasAnySingletonTypeTags()){
+return currentInfo.documentBlock(description);}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((parseDocumentation == null)){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isPopulated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isPopulated()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isPopulatedWithFileOverview()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isDescriptionRecorded()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordConstancy_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordConstancy()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordHiddenness_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordHiddenness()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordNoTypeCheck()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordConstructor()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isConstructorRecorded()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordPreserveTry()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordOverride_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordOverride()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoAlias_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordNoAlias()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordDeprecated_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordDeprecated()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordInterface_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordInterface()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordExport_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordExport()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoShadow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordNoShadow()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordImplicitCast()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!recordNoSideEffects()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!isInterfaceRecorded()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!hasAnyTypeRelatedTags()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(!hasAnySingletonTypeTags()){
+return false;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isPopulated_ter ^ ^ ^ ^ ^ 
+if(!isPopulated()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isPopulatedWithFileOverview_ter ^ ^ ^ ^ ^ 
+if(!isPopulatedWithFileOverview()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isDescriptionRecorded_ter ^ ^ ^ ^ ^ 
+if(!isDescriptionRecorded()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordConstancy_ter ^ ^ ^ ^ ^ 
+if(!recordConstancy()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordHiddenness_ter ^ ^ ^ ^ ^ 
+if(!recordHiddenness()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoTypeCheck_ter ^ ^ ^ ^ ^ 
+if(!recordNoTypeCheck()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordConstructor_ter ^ ^ ^ ^ ^ 
+if(!recordConstructor()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isConstructorRecorded_ter ^ ^ ^ ^ ^ 
+if(!isConstructorRecorded()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordPreserveTry_ter ^ ^ ^ ^ ^ 
+if(!recordPreserveTry()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordOverride_ter ^ ^ ^ ^ ^ 
+if(!recordOverride()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoAlias_ter ^ ^ ^ ^ ^ 
+if(!recordNoAlias()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordDeprecated_ter ^ ^ ^ ^ ^ 
+if(!recordDeprecated()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordInterface_ter ^ ^ ^ ^ ^ 
+if(!recordInterface()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordExport_ter ^ ^ ^ ^ ^ 
+if(!recordExport()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoShadow_ter ^ ^ ^ ^ ^ 
+if(!recordNoShadow()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordImplicitCast_ter ^ ^ ^ ^ ^ 
+if(!recordImplicitCast()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member recordNoSideEffects_ter ^ ^ ^ ^ ^ 
+if(!recordNoSideEffects()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInterfaceRecorded_ter ^ ^ ^ ^ ^ 
+if(!isInterfaceRecorded()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ ^ 
+if(!hasAnyTypeRelatedTags()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member hasAnySingletonTypeTags_ter ^ ^ ^ ^ ^ 
+if(!hasAnySingletonTypeTags()){
+
+IfStatement condition MemberReference member populated_ter ^ ^ ^ ^ ^ 
+if(populated){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parseDocumentation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parseDocumentation == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member populated_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((populated != null)){
+
+stderr: 

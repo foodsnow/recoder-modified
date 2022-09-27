@@ -1,0 +1,138 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member overwritten_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(overwritten);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+long index = indexOf(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member y_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(y);
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member addOrUpdate_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = addOrUpdate(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+final int index = indexOf(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member fireSeriesChanged_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = fireSeriesChanged(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, false);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, true);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, null);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member setY_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = setY(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member allowDuplicateXValues_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(allowDuplicateXValues);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ 
+indexOf(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member par2 ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member index_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(index);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = add(x);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x != 0)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member data_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(data);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = get(x);
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index >= 0)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x == null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = clone(x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = remove(x);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = x;
+
+IfStatement condition This selectors MemberReference member autoSort_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.autoSort){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member x_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = x(x);
+
+ReturnStatement expression MemberReference member overwritten_ter ^ ^ ^ ^ ^ 
+if (true) { return overwritten; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation qualifier x_ter ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = x.indexOf();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This prefix_operators !_ter ^ ^ selectors MemberReference member allowDuplicateXValues_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.allowDuplicateXValues != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This prefix_operators !_ter ^ ^ selectors MemberReference member allowDuplicateXValues_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.allowDuplicateXValues != 0)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, );
+
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation member getItemCount_ter ^ ^ ^ ^ operandr This selectors MemberReference member maximumItemCount_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((getItemCount() > this.maximumItemCount)){
+
+StatementExpression expression Assignment expressionl MemberReference member overwritten_ter ^ ^ ^ ^ value Cast type ReferenceType name XYDataItem_ter ^ ^ ^ ^ expression MethodInvocation qualifier existing_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+overwritten = (XYDataItem)existing.clone();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ This_ter ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, this);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int index = indexOf(x, x);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((x == null)){
+return null;}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int index = (int)indexOf(x);
+
+stderr: 

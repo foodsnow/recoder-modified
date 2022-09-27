@@ -1,0 +1,87 @@
+stdout: ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && hasExp);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member allowSigns_ter ^ ^ ^ ^ operandr MemberReference member foundDigit_ter ^ ^ ^ ^ ^ ^ ^ 
+return (!allowSigns && foundDigit);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference member allowSigns_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && allowSigns);
+ReturnStatement expression MemberReference member foundDigit_ter ^ ^ ^ ^ ^ 
+return foundDigit;
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && !hasExp);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return ((((chars[i] == "null") || (chars[i] == "null")) || (chars[i] == "null")) || (chars[i] == "null"));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference member foundDigit_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && foundDigit);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return (((chars[i] == "null") || (chars[i] == "null")) || (chars[i] == "null"));
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return ((chars[i] == "null") || (chars[i] == "null"));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference member chars_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && chars);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member hasExp_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (hasExp && !hasExp);
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (chars[i] == "null");
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && -hasExp);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member allowSigns_ter ^ ^ ^ ^ operandr MemberReference member foundDigit_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (!allowSigns && foundDigit); }
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member allowSigns_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (allowSigns && !hasExp);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && i);
+ReturnStatement expression MemberReference member hasExp_ter ^ ^ ^ ^ ^ 
+return hasExp;
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return ((foundDigit && !hasExp) && (chars[i] == "null"));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member chars_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (chars && !hasExp);
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit || !hasExp);
+ReturnStatement expression MemberReference member foundDigit_ter ^ ^ ^ ^ ^ 
+if (true) { return foundDigit; }
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((foundDigit && !hasExp) && !hasExp);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && hasExp[i]);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (i && !hasExp);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member allowSigns_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && -allowSigns);
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((chars[i] == "null") || (chars[i] == "null"))){
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member hasExp_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (-hasExp && !hasExp);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && (foundDigit && !hasExp));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member hasExp_ter ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return (hasExp && (foundDigit && !hasExp));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member foundDigit_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((foundDigit && !hasExp) && foundDigit);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((foundDigit && !hasExp) && hasExp);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member chars_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && (chars[i] == "null"));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member foundDigit_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && -foundDigit);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member hasExp_ter ^ ^ ^ ^ operandr MemberReference member hasExp_ter ^ ^ ^ ^ ^ ^ ^ 
+return (hasExp && hasExp);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MemberReference member foundDigit_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member chars_ter ^ ^ ^ ^ ^ ^ ^ 
+return (foundDigit && -chars);
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member hasExp_ter ^ ^ ^ ^ ^ 
+return -hasExp;
+stderr: 

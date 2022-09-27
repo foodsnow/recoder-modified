@@ -1,0 +1,86 @@
+stdout: condition BinaryOperation operator >_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] > 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] >= 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] < 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] <= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] >= -1)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] >= 1)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index BinaryOperation operator +_ter ^ ^ operandl MemberReference member resultOffset_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ ^ member tmp2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp2[(resultOffset + i)] >= 0)){
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member tmp2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((2 * tmp2[0])){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] == 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index BinaryOperation operator +_ter ^ ^ operandl MemberReference member resultOffset_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ ^ member tmp1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp1[(resultOffset + i)] >= 0)){
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] && 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tmp1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp1 >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member tmp2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp2 >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member tmp2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp2[i] >= 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] != 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member tmp1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp1[i] >= 0)){
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] || 0)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member resultOffset_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ 
+if((resultOffset + i)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index BinaryOperation operator +_ter ^ ^ operandl MemberReference member resultOffset_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ ^ member xOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((xOffset[(resultOffset + i)] >= 0)){
+condition BinaryOperation operator &_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] & 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index BinaryOperation operator +_ter ^ ^ operandl MemberReference member resultOffset_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[(resultOffset + i)] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member xOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((xOffset[xOffset] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index BinaryOperation operator +_ter ^ ^ operandl MemberReference member resultOffset_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ ^ member result_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((result[(resultOffset + i)] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((result >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member resultOffset_ter ^ ^ ^ ^ ^ ^ member result_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((result[resultOffset] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member xOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((xOffset[i] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member resultOffset_ter ^ ^ ^ ^ ^ ^ member xOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((xOffset[resultOffset] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member xOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((xOffset >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member resultOffset_ter ^ ^ ^ ^ ^ ^ member tmp1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp1[resultOffset] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member resultOffset_ter ^ ^ ^ ^ ^ ^ member tmp2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp2[resultOffset] >= 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member tmp2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((x[xOffset] >= 0) && (2 * tmp2[0]))){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member tmp2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tmp2[0] <= 0)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member resultOffset_ter ^ ^ ^ ^ ^ ^ member yOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((yOffset[resultOffset] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member resultOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[resultOffset] >= 0)){
+condition BinaryOperation operator |_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] | 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((x[i] >= 0)){
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member xOffset_ter ^ ^ ^ ^ ^ ^ member x_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x[xOffset] >= 0)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member tmp1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((tmp1[0] >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member result_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((result[0] >= 0)){
+
+
+stderr: 

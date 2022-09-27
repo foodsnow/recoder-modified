@@ -1,0 +1,204 @@
+stdout: 
+
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member isBlank_ter ^ ^ ^ ^ 
+if(str.isBlank("null")){
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ 
+if(str.getName("null")){
+IfStatement condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(str.startsWith("null")){
+
+IfStatement condition MethodInvocation qualifier str_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(str.startsWith(str)){
+
+BreakStatement_ter ^ 
+break;
+
+
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ 
+if(str.get("null")){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(!str.startsWith("null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str.startsWith("null") && str.startsWith("null"))){
+
+IfStatement condition MethodInvocation qualifier StringUtils_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(StringUtils.startsWith("null")){
+
+IfStatement condition MethodInvocation qualifier StringUtils_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(StringUtils.startsWith(str)){
+
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ 
+if(str.toString("null")){
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ 
+if(str.startsWith("null")){
+condition MethodInvocation qualifier StringUtils_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ 
+if(StringUtils.startsWith("null")){
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member createNumber_ter ^ ^ ^ ^ 
+if(str.createNumber("null")){
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member hexDigits_ter ^ ^ ^ ^ ^ 
+hexDigits--;
+
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((str.startsWith("null") || str.startsWith("null")) || str.startsWith("null"))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str.startsWith("null") || str.startsWith("null"))){
+
+IfStatement condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(str.startsWith("null", "null")){
+
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ 
+if(str.startsWith(null)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier StringUtils_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ 
+if(!StringUtils.startsWith("null")){
+
+IfStatement condition MethodInvocation qualifier StringUtils_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member isBlank_ter ^ ^ ^ ^ ^ 
+if(StringUtils.isBlank(str)){
+
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member size_ter ^ ^ ^ ^ 
+if(str.size("null")){
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ 
+if(str.add("null")){
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member hexDigits_ter ^ ^ ^ ^ ^ 
+hexDigits--;
+
+condition MethodInvocation qualifier hexDigits_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ 
+if(hexDigits.startsWith("null")){
+IfStatement condition MethodInvocation qualifier StringUtils_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member isBlank_ter ^ ^ ^ ^ ^ 
+if(StringUtils.isBlank(str)){
+
+condition MethodInvocation qualifier str_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ 
+if(str.startsWith(true)){
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+ReturnStatement expression MemberReference member str_ter ^ ^ ^ ^ ^ 
+return str;
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, null);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal();
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, str);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, false);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal();
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, );
+
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member loc0 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal();
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, true);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ This_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, this);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, "null");
+ReturnStatement expression ClassCreator type ReferenceType name NumberFormatException_ter ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new NumberFormatException("null");
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(null, str);
+ReturnStatement expression MemberReference member str_ter ^ ^ ^ ^ ^ 
+if (true) { return str; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (str + null);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal("null");
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MethodInvocation qualifier StringUtils_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member isBlank_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(StringUtils.isBlank(str));
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((str == null)){
+return null;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str != null)){
+
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, );
+
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, 0);
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression Cast type ReferenceType name BigDecimal_ter ^ ^ ^ ^ expression MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (BigDecimal)str;
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MethodInvocation qualifier str_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str.size());
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str, );
+
+ReturnStatement expression ClassCreator type ReferenceType name NumberFormatException_ter ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new NumberFormatException(str);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal("null", str);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+arg str
+arg str
+return new BigDecimal<str>(str);
+ReturnStatement expression ClassCreator type ReferenceType name BigDecimal_ter ^ ^ ^ ^ arguments MethodInvocation qualifier str_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new BigDecimal(str.getName());
+stderr: 

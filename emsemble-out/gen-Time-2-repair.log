@@ -1,0 +1,330 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(loopUnitField);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+long compare = lastUnitField.compareTo(loopUnitField);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member Partial_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.Partial(loopUnitField);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member compareTo_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(compareTo);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(loopUnitField, loopUnitField);
+
+StatementExpression expression MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ 
+lastUnitField.compareTo(loopUnitField);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member compare_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(compare);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member loopUnitField_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((loopUnitField == 0)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = compareTo(loopUnitField);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+final int compare = lastUnitField.compareTo(loopUnitField);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(loopUnitField, 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.debug(loopUnitField);
+
+StatementExpression expression SuperMethodInvocation member Partial_ter ^ ^ ^ ^ ^ 
+super.Partial();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loopUnitField_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((loopUnitField != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.max(loopUnitField);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.add(loopUnitField);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(loopUnitField, 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MemberReference member loopUnitField_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = loopUnitField;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member loopUnitField_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((loopUnitField == null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(loopUnitField, 2);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int compare = (int)lastUnitField.compareTo(loopUnitField);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.e(loopUnitField);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loopUnitField_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((loopUnitField < 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member loopUnitField_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((loopUnitField == 0)){
+return;
+}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(lastUnitField.compareTo(loopUnitField));
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member loopUnitField_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((loopUnitField > 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member compare_ter ^ ^ ^ ^ value MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member loopUnitField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+compare = lastUnitField.compareTo(loopUnitField);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name compare_ter ^ ^ initializer MethodInvocation qualifier lastUnitField_ter ^ ^ arguments MemberReference member e_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+int compare = lastUnitField.compareTo(e);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member compare_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(compare);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member rangeField_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(rangeField);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member iTypes_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member newTypes_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(iTypes, 0, newTypes, 0, i);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member loopType_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(loopType);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member isSupported_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().isSupported(iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iTypes_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(iTypes);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member loc0 ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField();
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member loc4 ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField();
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getRangeDurationType(iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier iChronology_ter ^ ^ member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(iChronology.iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier MethodInvocation member getChronology_ter ^ ^ ^ ^ member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(getChronology().iChronology);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getDurationType_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getDurationType(iChronology);
+
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member with_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().with(iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier rangeField_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = rangeField.getRangeDurationType().getField(iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().compareTo(iChronology);
+
+StatementExpression expression MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ 
+fieldType.getRangeDurationType().getField(iChronology);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member compare_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((compare != null)){
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType();
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier fieldType_ter ^ ^ member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(fieldType.iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier loopType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = loopType.getRangeDurationType().getField(iChronology);
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier compare_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = compare.getRangeDurationType().getField(iChronology);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final DurationField rangeField = fieldType.getRangeDurationType().getField(iChronology);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((compare == 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member rangeField_ter ^ ^ ^ ^ value MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rangeField = fieldType.getRangeDurationType().getField(iChronology);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iChronology_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iChronology != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member compare_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((compare == null)){
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier iChronology_ter ^ ^ member length_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(iChronology.length);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier MethodInvocation member getChronology_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(getChronology().length);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier iTypes_ter ^ ^ member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(iTypes.iChronology);
+
+IfStatement condition MethodInvocation qualifier loopUnitField_ter ^ ^ member isSupported_ter ^ ^ ^ ^ ^ 
+if(loopUnitField.isSupported()){
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier loc0 ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = .getRangeDurationType().getField(iChronology);
+
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member isSupported_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.isSupported().getField(iChronology);
+
+LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference member iValues_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DurationField rangeField = fieldType.getRangeDurationType().getField(iValues);
+
+ReturnStatement expression MemberReference member durationField_ter ^ ^ ^ ^ ^ 
+return durationField;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression MethodInvocation member compareTo_ter ^ ^ ^ ^ ^ 
+return compareTo();
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+ReturnStatement expression MethodInvocation qualifier durationField_ter ^ ^ member compareTo_ter ^ ^ ^ ^ ^ 
+return durationField.compareTo();
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression This selectors MemberReference member durationField_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.durationField;
+ReturnStatement expression MethodInvocation arguments MemberReference member durationField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ 
+return compareTo(durationField);
+ReturnStatement expression Cast type BasicType name int_ter ^ ^ ^ ^ expression MemberReference member durationField_ter ^ ^ ^ ^ ^ ^ ^ 
+return (int)durationField;
+ReturnStatement expression Cast type BasicType name int_ter ^ ^ ^ ^ expression Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (int)0;
+ReturnStatement expression SuperMethodInvocation member compareTo_ter ^ ^ ^ ^ ^ 
+return super.compareTo();
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ 
+return -1;
+ReturnStatement expression This selectors MemberReference member durationField_ter ^ ^ ^ MethodInvocation member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.durationField.compareTo();
+ReturnStatement expression This selectors MethodInvocation member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.compareTo();
+ReturnStatement expression Assignment expressionl MemberReference member durationField_ter ^ ^ ^ ^ value MemberReference member durationField_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+return durationField = durationField;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MemberReference member compareTo_ter ^ ^ ^ ^ ^ 
+return compareTo;
+ReturnStatement expression MemberReference member durationField_ter ^ ^ ^ ^ ^ 
+if (true) { return durationField; }
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr MemberReference member durationField_ter ^ ^ ^ ^ ^ ^ ^ 
+return (durationField - durationField);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((durationField == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((durationField == null)){
+return 0;}
+StatementExpression expression SuperMethodInvocation member compareTo_ter ^ ^ ^ ^ ^ 
+super.compareTo();
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (durationField - 1);
+ReturnStatement expression MemberReference qualifier durationField_ter ^ ^ member length_ter ^ ^ ^ ^ ^ 
+return durationField.length;
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (durationField - 0);
+StatementExpression expression Assignment expressionl MemberReference member durationField_ter ^ ^ ^ ^ value MemberReference member durationField_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+durationField = durationField;
+
+ReturnStatement expression Assignment expressionl MemberReference member durationField_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+return durationField = 0;
+ReturnStatement expression MethodInvocation qualifier par1 ^ ^ member compareTo_ter ^ ^ ^ ^ ^ 
+return .compareTo();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((durationField != null)){
+
+ReturnStatement expression This selectors MemberReference member durationField_ter ^ ^ ^ MethodInvocation arguments MemberReference member durationField_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.durationField.compareTo(durationField);
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member durationField_ter ^ ^ ^ ^ ^ 
+return -durationField;
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr MemberReference member durationField_ter ^ ^ ^ ^ ^ ^ ^ 
+return (durationField * durationField);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member durationField_ter ^ ^ ^ ^ operandr MemberReference member durationField_ter ^ ^ ^ ^ ^ ^ ^ 
+return (durationField + durationField);
+stderr: 

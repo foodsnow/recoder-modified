@@ -1,0 +1,130 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.upperBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+double g = (int)(((value - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = this.lowerBound;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = this.upperBound;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.v) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) / (this.lowerBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member v_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) / (this.v - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.value) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((v - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) - (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int g = (int)(((value - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member value_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) / (this.value - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+long g = (int)(((value - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)((value - this.lowerBound) / (this.upperBound - this.lowerBound));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ 
+int g = value;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member lowerBound_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((lowerBound - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member upperBound_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((upperBound - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int g = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(this.upperBound - this.lowerBound);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ 
+int g = upperBound;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ member min_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = Math.min(v, this.upperBound);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int g = 1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(value - this.lowerBound);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = ((value - this.lowerBound) / (this.upperBound - this.lowerBound));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ 
+int g = lowerBound;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member g_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.g) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (((value - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value + this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member par1 ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.) / (this.upperBound - this.lowerBound)) * 255.0);
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int g = 2;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ member min_ter ^ ^ ^ ^ ^ ^ ^ 
+int g = Math.min(v, this.upperBound);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) + (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) * (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member g_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) / (this.g - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member par1 ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) / (this. - this.lowerBound)) * 255.0);
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value / this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member v_ter ^ ^ ^ ^ ^ 
+v++;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ ^ ^ ^ 
+int g = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)((((value - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0) * (this.upperBound - this.lowerBound));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((value - this.lowerBound) % (this.upperBound - this.lowerBound)) * 255.0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name g_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member g_ter ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl This selectors MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr This selectors MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr Literal value 255.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int g = (int)(((g - this.lowerBound) / (this.upperBound - this.lowerBound)) * 255.0);
+
+stderr: 

@@ -1,0 +1,91 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, best) >= 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, best) <= 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier reflectedSimplex_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((reflectedSimplex.compare(contracted, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier reflected_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((reflected.compare(contracted, best) < 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, best) > 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier best_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((best.compare(contracted, best) < 0)){
+IfStatement condition MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ ^ 
+if(comparator.compare(contracted, best)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier original_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((original.compare(contracted, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member contracted_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, contracted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier expanded_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((expanded.compare(contracted, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member expanded_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, expanded) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier par1 ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((.compare(contracted, best) < 0)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member expanded_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(expanded, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier contracted_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((contracted.compare(contracted, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member reflected_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, reflected) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member reflected_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(reflected, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member reflectedSimplex_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, reflectedSimplex) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member evaluateNewSimplex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.evaluateNewSimplex(contracted, best) < 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, best) == 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member reflectedSimplex_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(reflectedSimplex, best) < 0)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member contracted_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((contracted != null)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member iterateSimplex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.iterateSimplex(contracted, best) < 0)){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member best_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(best, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member simplex_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, simplex) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier loc6 ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((.compare(contracted, best) < 0)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member gamma_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, gamma) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, best) < 1)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member simplex_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(simplex, best) < 0)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member contracted_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((contracted == null)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, best) < 2)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member gamma_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(gamma, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member original_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(contracted, original) < 0)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ ^ 
+if(!comparator.compare(contracted, best)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.debug(contracted, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.add(contracted, best) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member original_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.compare(original, best) < 0)){
+StatementExpression expression MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member compare_ter ^ ^ ^ ^ ^ 
+comparator.compare(contracted, best);
+
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier comparator_ter ^ ^ arguments MemberReference member contracted_ter ^ ^ ^ MemberReference member best_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((comparator.e(contracted, best) < 0)){
+stderr: 

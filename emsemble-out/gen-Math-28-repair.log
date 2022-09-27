@@ -1,0 +1,316 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member minIndex_ter ^ ^ ^ ^ value MemberReference member i_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minIndex = i;
+
+ReturnStatement expression MemberReference member minRow_ter ^ ^ ^ ^ ^ 
+if (true) { return minRow; }
+
+StatementExpression expression Assignment expressionl MemberReference member minRow_ter ^ ^ ^ ^ value MemberReference member row_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minRow = row;
+
+ReturnStatement expression MethodInvocation qualifier minRatioPositions_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+if (true) { return minRatioPositions.get(0); }
+
+                for (Integer row : minRatioPositions) {if(0!=1)break;
+ReturnStatement expression MemberReference member row_ter ^ ^ ^ ^ ^ 
+if (true) { return row; }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member row_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:row)
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minRatioPositions_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minRatioPositions != 0)){
+continue;
+}
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member i_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:i)
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minRow_ter ^ ^ ^ ^ operandr MemberReference member row_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minRow != row)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maxUlps_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maxUlps != 0)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier tableau_ter ^ ^ member getWidth_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((i < (tableau.getWidth() - 1))){
+continue;
+}
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minRatioPositions_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minRatioPositions != 1)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier tableau_ter ^ ^ member getWidth_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tableau.getWidth() - 1)){
+continue;
+}
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member maxUlps_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:maxUlps)
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maxUlps_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maxUlps != 1)){
+continue;
+}
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member entry_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:entry)
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member minRatioPositions_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:minRatioPositions)
+
+ReturnStatement expression MemberReference member i_ter ^ ^ ^ ^ ^ 
+if (true) { return i; }
+
+BreakStatement_ter ^ 
+break;
+
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member minIndex_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:minIndex)
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ 
+i++;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((row != 0)){
+continue;
+}
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tableau_ter ^ ^ member getNumArtificialVariables_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < tableau.getNumArtificialVariables());i++) {continue;
+}
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minRatioPositions_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minRatioPositions != null)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member minRatioPositions_ter ^ ^ ^ ^ operandr ReferenceType name Integer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((minRatioPositions instanceof Integer)){
+continue;
+}
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member minRatioPositions_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:minRatioPositions)
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer minRow = ;
+
+
+ReturnStatement expression MemberReference member minRow_ter ^ ^ ^ ^ ^ 
+if (true) { return minRow; }
+
+ReturnStatement expression MemberReference member row_ter ^ ^ ^ ^ ^ 
+if (true) { return row; }
+
+StatementExpression expression Assignment expressionl MemberReference member minIndex_ter ^ ^ ^ ^ value MemberReference member i_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minIndex = i;
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member minRow_ter ^ ^ ^ ^ value MemberReference member row_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minRow = row;
+
+ReturnStatement expression MethodInvocation qualifier minRatioPositions_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+if (true) { return minRatioPositions.get(0); }
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer minRow = "null";
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer minRow = 1;
+
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer MethodInvocation qualifier tableau_ter ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ ^ ^ ^ 
+int i = tableau.getNumObjectiveFunctions();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Integer minRow = null;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((row != 1)){
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer minRow = 2;
+
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name row_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member minRatioPositions_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Integer row = ;
+:minRatioPositions)
+
+control ForControl condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier tableau_ter ^ ^ member getWidth_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minRow_ter ^ ^ ^ ^ operandr MemberReference member row_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(((i < (tableau.getWidth() - 1)) && (minRow != row));i++) {
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name entry_ter ^ ^ initializer MethodInvocation qualifier tableau_ter ^ ^ arguments MemberReference member row_ter ^ ^ ^ MemberReference member column_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ ^ ^ ^ 
+final double entry = tableau.getEntry(row, column);
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer minRow = -1;
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression Assignment expressionl MemberReference member minIndex_ter ^ ^ ^ ^ value MemberReference member i_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minIndex = i;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name column_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tableau_ter ^ ^ member getArtificialVariableOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int column = (i + tableau.getArtificialVariableOffset());
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier tableau_ter ^ ^ member getWidth_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((i < (tableau.getWidth() - 1))){
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Integer minRow = null;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((row != 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member minRow_ter ^ ^ ^ ^ value MemberReference member row_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minRow = row;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minRow_ter ^ ^ ^ ^ operandr MemberReference member row_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minRow != row)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((row == 1)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name minIndex_ter ^ ^ initializer MethodInvocation qualifier tableau_ter ^ ^ member getWidth_ter ^ ^ ^ ^ ^ ^ ^ 
+int minIndex = tableau.getWidth();
+
+StatementExpression expression Assignment expressionl MemberReference member minIndex_ter ^ ^ ^ ^ value MemberReference member i_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member minRow_ter ^ ^ ^ ^ ^ 
+minIndex = i;
+return minRow;
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier tableau_ter ^ ^ member getWidth_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tableau.getWidth() - 1)){
+
+StatementExpression expression Assignment expressionl MemberReference member minRow_ter ^ ^ ^ ^ value MemberReference member row_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member minRow_ter ^ ^ ^ ^ ^ 
+minRow = row;
+return minRow;
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tableau_ter ^ ^ member getNumArtificialVariables_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < tableau.getNumArtificialVariables());i++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minIndex != 1)){
+
+LocalVariableDeclaration type ReferenceType name Integer_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name minRow_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Integer<?> minRow = null;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((row == 1)){
+break;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr MethodInvocation qualifier tableau_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((row == tableau.getBasicRow(i))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((row == 1)){
+continue;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member minRow_ter ^ ^ ^ ^ ^ 
+if((row == 1)){
+return minRow;}
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member minIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i < minIndex)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 1d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ operandr MethodInvocation qualifier row_ter ^ ^ arguments MethodInvocation qualifier tableau_ter ^ ^ arguments MemberReference member column_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Precision.equals(entry, 1d, maxUlps) && row.equals(tableau.getBasicRow(column)))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((row != 1)){
+continue;
+}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier minRatioPositions_ter ^ ^ member size_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minRatioPositions.size() > 1)){
+
+stderr: 

@@ -1,0 +1,327 @@
+stdout: LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(factorialDouble(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(factorialLog(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(n);
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ 
+Math.round(factorialDouble(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorial_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(factorial(n));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+final long result = Math.round(factorialDouble(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = round(n);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return 0;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = factorialDouble(n);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n == 0)){
+return 0;}
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(add(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(debug(n));
+
+IfStatement condition MemberReference member n_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(n){
+return 0;}
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference selectors ArraySelector index MemberReference member n_ter ^ ^ ^ ^ ^ ^ member factorials_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return factorials[n];}
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(Math.factorialDouble(n));
+
+StatementExpression expression Assignment expressionl MemberReference member result_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+result = Math.round(factorialDouble(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = n;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n < 0)){
+return 0;}
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ ^ 
+factorialDouble(n);
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n == null)){
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(factorialDouble());
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(factorialDouble(n, false));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = round(factorialDouble(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(e(n));
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorials_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(factorials(n));
+
+IfStatement condition MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ 
+if(Math.round(factorialDouble(n))){
+
+
+IfStatement condition MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ ^ 
+if(factorialDouble(n)){
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(get(n));
+
+IfStatement condition MemberReference member n_ter ^ ^ ^ ^ ^ 
+if(n){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n > 0)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member factorials_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((factorials == null)){
+return 0;}
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name result_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member round_ter ^ ^ ^ ^ ^ ^ ^ 
+long result = Math.round(factorialDouble(n, true));
+
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialDouble(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 1));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 2));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ ^ 
+return Math.exp(factorialLog(n));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(Math.exp(factorialLog(n)));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 0.5), n);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(factorialLog(n));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(add(n)) + 0.5));
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ ^ 
+return factorialLog(n);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member factorialDouble_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.factorialDouble(factorialLog(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(((Math.exp(factorialLog(n)) + 0.5) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(debug(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(Math.exp(n));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) - 0.5));
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return floor(n);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(n, (Math.exp(factorialLog(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 0.5), 0);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + n));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(e(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 0.5), 1);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 0.5), false);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(get(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 0.5), (Math.exp(factorialLog(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(((Math.exp(factorialLog(n)) + 0.5) + n));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(max(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + 0.5), true);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog()) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.add(factorialLog(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) <= 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((n + 0.5));
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n < 0)){
+
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(put(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog(n)) + Math.exp(factorialLog(n))));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(Math.floor((Math.exp(factorialLog(n)) + 0.5)));
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member loc0 ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(factorialLog()) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor(Math.exp(factorialLog(n)), n);
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member factorialLog_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.debug(factorialLog(n)) + 0.5));
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ member exp_ter ^ ^ ^ ^ operandr Literal value 0.5_ter ^ ^ ^ ^ ^ ^ member floor_ter ^ ^ ^ ^ ^ 
+return Math.floor((Math.exp(exp(n)) + 0.5));
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ ^ ^ ^ 
+double logSum = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int logSum = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = 0;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long logSum = 0;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+final double logSum = 0;
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
+
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if (true) { return logSum; }
+
+StatementExpression expression Assignment expressionl MemberReference member logSum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member i_ter ^ ^ ^ ^ ^ ^ member log_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+logSum += Math.log((double)i);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return logSum;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return 0;}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = 1;
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = n;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n == null)){
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+if (true) { return 2; }
+
+BreakStatement_ter ^ 
+break;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 2;(i <= n);i++) {
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n != null)){
+return 0;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if((n != null)){
+return logSum;}
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+if (true) { return ; }
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value MemberReference member n_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = n;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = 2;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ ^ ^ ^ 
+double logSum = ;
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n == 0)){
+return 0;}
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n < 0)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if((n == 0)){
+return logSum;}
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member n_ter ^ ^ ^ ^ ^ 
+n++;
+
+ReturnStatement expression This_ter ^ ^ ^ 
+if (true) { return this; }
+
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name logSum_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double logSum = -1;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member logSum_ter ^ ^ ^ ^ ^ 
+if((n > 0)){
+return logSum;}
+StatementExpression expression Assignment expressionl MemberReference member logSum_ter ^ ^ ^ ^ value MemberReference member n_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+logSum = n;
+
+stderr: 

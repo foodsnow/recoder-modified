@@ -1,0 +1,197 @@
+stdout: StatementExpression expression MethodInvocation member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t);
+
+StatementExpression expression MethodInvocation qualifier aliases_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+aliases.renameNamespaceShadows(t);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member exitScope_ter ^ ^ ^ ^ ^ 
+exitScope(t);
+
+StatementExpression expression MethodInvocation arguments MemberReference member hasNamespaceShadows_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(hasNamespaceShadows);
+
+StatementExpression expression MethodInvocation arguments MemberReference member transformation_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(transformation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows();
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, true);
+
+StatementExpression expression MethodInvocation qualifier t_ter ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+t.renameNamespaceShadows();
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, 0);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((t != 2)){
+
+StatementExpression expression MethodInvocation qualifier t_ter ^ ^ member popScope_ter ^ ^ ^ ^ ^ 
+t.popScope();
+
+StatementExpression expression MethodInvocation arguments MemberReference member loc0 ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows();
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member findNamespaceShadows_ter ^ ^ ^ ^ ^ 
+findNamespaceShadows(t);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member findNamespaceShadows_ter ^ ^ ^ ^ ^ 
+findNamespaceShadows(t);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, null);
+
+IfStatement condition MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+if(renameNamespaceShadows(t)){
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, 1);
+
+StatementExpression expression Assignment expressionl MemberReference member t_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+t = renameNamespaceShadows(t);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+super.renameNamespaceShadows(t);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier t_ter ^ ^ member getScopeDepth_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t.getScopeDepth());
+
+StatementExpression expression MethodInvocation qualifier aliases_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+aliases.clear();
+
+StatementExpression expression MethodInvocation qualifier forbiddenLocals_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+forbiddenLocals.renameNamespaceShadows(t);
+
+StatementExpression expression SuperMethodInvocation member exitScope_ter ^ ^ ^ ^ ^ 
+super.exitScope();
+
+StatementExpression expression Assignment expressionl MemberReference member hasNamespaceShadows_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+hasNamespaceShadows = false;
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, 2);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ This_ter ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, this);
+
+StatementExpression expression MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member t_ter ^ ^ ^ ^ member renameNamespaceShadows_ter ^ ^ ^ ^ ^ 
+renameNamespaceShadows(t, t);
+
+StatementExpression expression MethodInvocation qualifier forbiddenLocals_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+forbiddenLocals.clear();
+
+StatementExpression expression Assignment expressionl MemberReference member transformation_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+transformation = null;
+
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier newDecl_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+newDecl.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier newDecl_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+newDecl.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ ^ 
+grandparent.addChildToFront(newDecl);
+
+StatementExpression expression Assignment expressionl MemberReference member varNode_ter ^ ^ ^ ^ value MemberReference member parent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+varNode = parent;
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member newDecl_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ ^ 
+grandparent.addChildBefore(newDecl, varNode);
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier newDecl_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member setDebugInformation_ter ^ ^ ^ ^ ^ 
+NodeUtil.setDebugInformation(newDecl.getFirstChild().getFirstChild(), n, name);
+
+StatementExpression expression MethodInvocation qualifier grandparent_ter ^ ^ arguments MemberReference member parent_ter ^ ^ ^ MemberReference member varNode_ter ^ ^ ^ ^ member replaceChild_ter ^ ^ ^ ^ ^ 
+grandparent.replaceChild(parent, varNode);
+
+StatementExpression expression Assignment expressionl MemberReference member varNode_ter ^ ^ ^ ^ value MethodInvocation qualifier IR_ter ^ ^ selectors MethodInvocation arguments MemberReference member existingName_ter ^ ^ ^ ^ member useSourceInfoFrom_ter ^ ^ ^ ^ arguments MemberReference member existingName_ter ^ ^ ^ ^ member var_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+varNode = IR.var(existingName).useSourceInfoFrom(existingName);
+
+StatementExpression expression MethodInvocation qualifier value_ter ^ ^ arguments MemberReference member existingName_ter ^ ^ ^ MemberReference member newName_ter ^ ^ ^ ^ member replaceChild_ter ^ ^ ^ ^ ^ 
+value.replaceChild(existingName, newName);
+
+StatementExpression expression MethodInvocation qualifier value_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ ^ 
+value.detachFromParent();
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier compiler_ter ^ ^ member getCodingConvention_ter ^ ^ ^ MemberReference member globalName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member newQualifiedNameNode_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ member getNameNode_ter ^ ^ ^ ^ ^ 
+v.getNameNode().addChildToFront(NodeUtil.newQualifiedNameNode(compiler.getCodingConvention(), globalName, n, name));
+
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+newName.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+newName.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ 
+compiler.reportCodeChange();
+
+condition MemberReference prefix_operators !_ter ^ ^ member isHoisted_ter ^ ^ ^ ^ 
+if(!isHoisted){
+IfStatement condition MemberReference member isHoisted_ter ^ ^ ^ ^ ^ 
+if(isHoisted){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v.getJSDocInfo() != null)){
+
+condition MemberReference member isHoisted_ter ^ ^ ^ ^ 
+if(isHoisted){
+condition MemberReference member loc0 ^ ^ ^ ^ 
+if(){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+condition MemberReference member existingName_ter ^ ^ ^ ^ 
+if(existingName){
+IfStatement condition MemberReference member isFunctionDecl_ter ^ ^ ^ ^ ^ 
+if(isFunctionDecl){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((value != null) || (v.getJSDocInfo() != null))){
+
+condition MemberReference member varNode_ter ^ ^ ^ ^ 
+if(varNode){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isHoisted_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isHoisted != null)){
+
+condition MemberReference member name_ter ^ ^ ^ ^ 
+if(name){
+condition MemberReference member newName_ter ^ ^ ^ ^ 
+if(newName){
+condition MemberReference member v_ter ^ ^ ^ ^ 
+if(v){
+condition MemberReference member isFunctionDecl_ter ^ ^ ^ ^ 
+if(isFunctionDecl){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member newDecl_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((newDecl != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member newName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((newName != null)){
+
+ContinueStatement_ter ^ 
+continue;
+
+stderr: 

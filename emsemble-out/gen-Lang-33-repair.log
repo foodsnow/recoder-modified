@@ -1,0 +1,195 @@
+stdout: control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i <= array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i >= array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i > array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(long i = 0;(i < array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < i);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(classes < array.length);i++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classes != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classes != 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((array != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < array.length);i) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member array_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((array != 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i - array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference member classes_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < array.length);classes) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member classes_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < classes);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier ArrayUtils_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < ArrayUtils.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 1;(i < array.length);i++) {
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member classes_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ MethodInvocation member getClass_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+classes[i] = array[i].getClass();
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i == array.length);i++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((classes == null)){
+return null;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i++ < array.length);i++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classes == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((classes == 0)){
+return null;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classes == 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < (i < array.length));i++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier ArrayUtils_ter ^ ^ member EMPTY_CLASS_ARRAY_ter ^ ^ ^ ^ ^ 
+if((classes == null)){
+return ArrayUtils.EMPTY_CLASS_ARRAY;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier ArrayUtils_ter ^ ^ member EMPTY_CLASS_ARRAY_ter ^ ^ ^ ^ ^ 
+if((classes == 0)){
+return ArrayUtils.EMPTY_CLASS_ARRAY;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(array.length < array.length);i++) {
+StatementExpression expression Assignment expressionl MemberReference member classes_ter ^ ^ ^ ^ value MemberReference member classes_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+classes = classes;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member array_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(array < array.length);i++) {
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member classes_ter ^ ^ ^ ^ ^ 
+classes++;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < i++);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < array.i);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(-i < array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 2;(i < array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;;i++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i[i] < array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ MethodInvocation member getClass_ter ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i[i].getClass() < array.length);i++) {
+control ForControl init VariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(final int i = 0;(i < array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < -i);i++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i != 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >>_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i >> array.length);i++) {
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member classes_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+classes[i] = null;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc2 ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;( < array.length);i++) {
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((classes != null)){
+return null;}
+control ForControl init VariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(boolean i = 0;(i < array.length);i++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member classes_ter ^ ^ ^ ^ ^ 
+if((classes == 0)){
+return classes;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier ArrayUtils_ter ^ ^ member EMPTY_CLASS_ARRAY_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < ArrayUtils.EMPTY_CLASS_ARRAY);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference prefix_operators ~_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < ~i);i++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member classes_ter ^ ^ ^ ^ ^ 
+if((classes == null)){
+return classes;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < i[i]);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < 0);i++) {
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i >>> array.length);i++) {
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member classes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((classes > 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < length);i++) {
+ReturnStatement expression MemberReference qualifier ArrayUtils_ter ^ ^ member EMPTY_CLASS_ARRAY_ter ^ ^ ^ ^ ^ 
+if (true) { return ArrayUtils.EMPTY_CLASS_ARRAY; }
+
+BreakStatement goto outer_ter ^ ^ ^ 
+1 BreakStatement
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((array.length == 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((array == null)){
+
+ReturnStatement expression MemberReference member classes_ter ^ ^ ^ ^ ^ 
+if (true) { return classes; }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference member array_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < array.length);array) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;( < array.length);i++) {
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc4 ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;( < array.length);i++) {
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i <= i);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i > i);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member array_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < array);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i * array.length);i++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i || array.length);i++) {
+        for (int i = 0; i < array.length; i++) {if(0!=1)break;
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ dimensions None_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name classes_ter ^ ^ initializer ArrayCreator type ReferenceType name Class_ter ^ ^ ^ ^ dimensions MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg 
+arg ?
+arg 
+Class []<?> classes = new Class[array.length];
+
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;((i < array.length) || (i == 0));i++) {
+control array_ter ^ ^ 
+1 array_ter
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;((i < array.length) || (i == null));i++) {
+stderr: 

@@ -1,0 +1,45 @@
+stdout: ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((invocation.getMethod().getName() + "null") + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member formatMethodCall_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.formatMethodCall().getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (((invocation.getMethod().getName() + "null") + "null") + "null");
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.getName().getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member formatMethodCall_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.getMethod().formatMethodCall() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member lastIndexOf_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.getMethod().lastIndexOf() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.getMethod() + "null");
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ 
+return invocation.getMethod().getName();
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((invocation.getMethod() + "null") + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member lastIndexOf_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.lastIndexOf().getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((((invocation.getMethod().getName() + "null") + "null") + "null") + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((invocation.getMethod().getName() + invocation.getMethod()) + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation member getName_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return ("null" + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.getMethod().getName() + "null");
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member formatMethodCall_ter ^ ^ ^ ^ ^ 
+return invocation.formatMethodCall();
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (getMethod().getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.toString().getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.get().getName() + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getName_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.getMethod().getName() + invocation.getMethod());
+stderr: 

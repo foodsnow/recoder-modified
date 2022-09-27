@@ -1,0 +1,100 @@
+stdout: condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count == 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count >= 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count > 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count != 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count < 0)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((end == 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member start_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((start == 0)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + count)){
+
+IfStatement condition MemberReference member count_ter ^ ^ ^ ^ ^ 
+if(count){
+
+IfStatement condition MemberReference member end_ter ^ ^ ^ ^ ^ 
+if(end){
+
+IfStatement condition MemberReference member letters_ter ^ ^ ^ ^ ^ 
+if(letters){
+
+IfStatement condition MemberReference member start_ter ^ ^ ^ ^ ^ 
+if(start){
+
+IfStatement condition MemberReference member numbers_ter ^ ^ ^ ^ ^ 
+if(numbers){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || (end == 0))){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member count_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((("null" + count) + "null")){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member count_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || (("null" + count) + "null"))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member letters_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((letters == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((end == 0)){
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count || 0)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + 1)){
+
+
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member start_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((start == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member numbers_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((numbers == 0)){
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count && 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || 0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) && (end == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member start_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || (start == 0))){
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr MemberReference member start_ter ^ ^ ^ ^ ^ ^ ^ 
+if((end - start)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || ("null" + 1))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr MemberReference member start_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || (end - start))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || (count < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member count_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) || ("null" + count))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member count_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((count == 0) && (("null" + count) + "null"))){
+
+condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((count - 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ 
+if((count == -1)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((count == 0)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+if(!count){
+
+stderr: 

@@ -1,0 +1,471 @@
+stdout: ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < matchers.size());position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier MethodInvocation member getMatchers_ter ^ ^ ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < getMatchers().size());position++) {
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)m;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position <= matchers.size());position++) {
+BreakStatement_ter ^ 
+break;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position >= matchers.size());position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc4 ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;( < matchers.size());position++) {
+
+ContinueStatement_ter ^ 
+continue;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position > matchers.size());position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(m < matchers.size());position++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((position != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < matchers.size());position) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;( < matchers.size());position++) {
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc4 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = 0;(position < indexOfVararg);position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = 0;(position < indexOfVararg);position++) {
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member position_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = position;(position < matchers.size());position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference member loc4 ^ ^ ^ ^ ^ ^ 
+((position < matchers.size()))
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = 0;(position < matchers.size());position++) {
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < invocation.size());position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member loc4 ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = ;(position < matchers.size());position++) {
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = 0;(position < matchers.size());position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier indexOfVararg_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < indexOfVararg.size());position++) {
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m instanceof CapturesArguments)){
+
+StatementExpression expression MethodInvocation qualifier invocation_ter ^ ^ member markVerified_ter ^ ^ ^ ^ ^ 
+invocation.markVerified();
+
+
+StatementExpression expression MethodInvocation qualifier invocation_ter ^ ^ member ignoreForVerification_ter ^ ^ ^ ^ ^ 
+invocation.ignoreForVerification();
+
+
+IfStatement condition MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member isVarArgs_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ 
+if(invocation.getMethod().isVarArgs()){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member m_ter ^ ^ ^ ^ ^ 
+m++;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier par1 ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < .size());position++) {
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member getRawArguments_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < matchers.getRawArguments());position++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((length != null)){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ 
+position++;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position - matchers.size());position++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((position == null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc7 ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;( < matchers.size());position++) {
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member indexOfVararg_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(indexOfVararg < matchers.size());position++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( == null)){
+
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier MethodInvocation member getMatchers_ter ^ ^ ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = getMatchers().get(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member loc4 ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((position != null)){
+continue;
+}
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.captureArgumentsFrom(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member loc3 ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get();
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(m);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = invocation.get(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member loc2 ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get();
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.e(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = get(position);
+
+StatementExpression expression MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+matchers.get(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member loc7 ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.debug(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = LOG.get(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier indexOfVararg_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = indexOfVararg.get(position);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((position == null)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((position != 1)){
+continue;
+}
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)m;
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.add(position);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Matcher m = matchers.get(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get();
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(position, false);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.max(position);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((position == null)){
+continue;
+}
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(position, position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier par1 ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = .get(position);
+
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(position, true);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ MemberReference member loc4 ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(position, );
+
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(position, 0);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member length_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(length);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member indexOfVararg_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(indexOfVararg);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.get(position, 1);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer Cast type ReferenceType name Matcher_ter ^ ^ ^ ^ expression MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Matcher m = (Matcher)matchers.get(position);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc4 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+continue;
+}
+
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = matchers.put(position);
+
+LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Matcher m = Math.get(position);
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((position == null)){
+break;
+}
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)m;
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)m;
+
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member m_ter ^ ^ ^ ^ ^ 
+return m;
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member loc3 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments);
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member loc4 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments);
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member position_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)position;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != null)){
+
+IfStatement condition Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((CapturesArguments)m){
+
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member m_ter ^ ^ ^ ^ ^ 
+m++;
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(( instanceof CapturesArguments)){
+
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member loc7 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments);
+
+StatementExpression expression SuperMethodInvocation member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+super.captureArgumentsFrom();
+
+ReturnStatement expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (CapturesArguments)m;
+IfStatement condition MemberReference member m_ter ^ ^ ^ ^ ^ 
+if(m){
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)indexOfVararg;
+
+IfStatement condition Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((CapturesArguments)m){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m instanceof matchers.size())){
+
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+super.captureArgumentsFrom(m);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m instanceof CapturesArguments)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != 1)){
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member length_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)length;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((CapturesArguments)m instanceof CapturesArguments)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((length instanceof CapturesArguments)){
+
+StatementExpression expression Assignment expressionl MemberReference member m_ter ^ ^ ^ ^ value Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+m = (CapturesArguments)m;
+
+StatementExpression expression MemberReference member m_ter ^ ^ ^ ^ ^ 
+m;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((matchers.size() instanceof CapturesArguments)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+captureArgumentsFrom(m);
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((position instanceof CapturesArguments)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = 0;(position < matchers.size());position++) {
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member loc2 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments);
+
+stderr: 

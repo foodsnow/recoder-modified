@@ -1,0 +1,94 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+if (true) { return solve(f, initial, yInitial, max, yMax, initial, yInitial); }
+
+ReturnStatement expression MemberReference member result_ter ^ ^ ^ ^ ^ 
+if (true) { return result; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+return setResult(f, min, yMin, max, yMax, initial, yInitial);
+StatementExpression expression MethodInvocation arguments MemberReference member initial_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(initial, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member yMax_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(yMax, 0);
+
+ReturnStatement expression MemberReference member result_ter ^ ^ ^ ^ ^ 
+return result;
+StatementExpression expression MethodInvocation arguments MemberReference member yMin_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(yMin, 0);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member verifySequence_ter ^ ^ ^ ^ ^ 
+return verifySequence(f, min, yMin, max, yMax, initial, yInitial);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, yMin, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+if (true) { return solve(f, min, yMin, initial, yInitial, min, yMin); }
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MemberReference member yMin_ter ^ ^ ^ ^ ^ 
+if (true) { return yMin; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, yInitial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, initial, yInitial, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member yMin_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(yMin, min, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, yMin, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, yMin, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, initial, yMin);
+ReturnStatement expression MemberReference member min_ter ^ ^ ^ ^ ^ 
+if (true) { return min; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, max, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, min, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member yInitial_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(yInitial, min, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, yInitial, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, yInitial, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member value_ter ^ ^ ^ ^ ^ 
+return value(f, min, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, initial, yInitial, min, yMin);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMin, initial, yInitial);
+StatementExpression expression MethodInvocation member clearResult_ter ^ ^ ^ ^ ^ 
+clearResult();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member max_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(max, min, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, max, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yInitial, max, yMax, initial, yInitial);
+StatementExpression expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member verifySequence_ter ^ ^ ^ ^ ^ 
+verifySequence(min, initial, max);
+
+
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, initial, max);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, min, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member yMax_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(yMax);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yInitial, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member yInitial_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(min, min, yMin, max, yMax, initial, yInitial);
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member initial_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ ^ 
+return solve(f, min, yMin, max, yMax, initial, min);
+stderr: 

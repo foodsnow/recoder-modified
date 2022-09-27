@@ -1,0 +1,414 @@
+stdout: ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member skipAllCompilerPasses_ter ^ ^ ^ ^ ^ 
+options.skipAllCompilerPasses();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member resetWarningsGuard_ter ^ ^ ^ ^ ^ 
+options.resetWarningsGuard();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member useEmergencyFailSafe_ter ^ ^ ^ ^ ^ 
+options.useEmergencyFailSafe();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member disableRuntimeTypeCheck_ter ^ ^ ^ ^ ^ 
+options.disableRuntimeTypeCheck();
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.isOn()){
+
+StatementExpression expression MethodInvocation member initBasedOnOptions_ter ^ ^ ^ ^ ^ 
+initBasedOnOptions();
+
+StatementExpression expression MethodInvocation member rebuildInputsFromModules_ter ^ ^ ^ ^ ^ 
+rebuildInputsFromModules();
+
+StatementExpression expression MethodInvocation member initInputsByNameMap_ter ^ ^ ^ ^ ^ 
+initInputsByNameMap();
+
+StatementExpression expression MethodInvocation member disableThreads_ter ^ ^ ^ ^ ^ 
+disableThreads();
+
+StatementExpression expression MethodInvocation member compileInternal_ter ^ ^ ^ ^ ^ 
+compileInternal();
+
+StatementExpression expression MethodInvocation member parse_ter ^ ^ ^ ^ ^ 
+parse();
+
+StatementExpression expression MethodInvocation member check_ter ^ ^ ^ ^ ^ 
+check();
+
+StatementExpression expression MethodInvocation member externExports_ter ^ ^ ^ ^ ^ 
+externExports();
+
+StatementExpression expression MethodInvocation member maybeSanityCheck_ter ^ ^ ^ ^ ^ 
+maybeSanityCheck();
+
+StatementExpression expression MethodInvocation member runSanityCheck_ter ^ ^ ^ ^ ^ 
+runSanityCheck();
+
+StatementExpression expression MethodInvocation member removeTryCatchFinally_ter ^ ^ ^ ^ ^ 
+removeTryCatchFinally();
+
+StatementExpression expression MethodInvocation member endPass_ter ^ ^ ^ ^ ^ 
+endPass();
+
+StatementExpression expression MethodInvocation member resetUniqueNameId_ter ^ ^ ^ ^ ^ 
+resetUniqueNameId();
+
+StatementExpression expression MethodInvocation member initCompilerOptionsIfTesting_ter ^ ^ ^ ^ ^ 
+initCompilerOptionsIfTesting();
+
+StatementExpression expression MethodInvocation member optimize_ter ^ ^ ^ ^ ^ 
+optimize();
+
+StatementExpression expression MethodInvocation member processDefines_ter ^ ^ ^ ^ ^ 
+processDefines();
+
+StatementExpression expression MethodInvocation member normalize_ter ^ ^ ^ ^ ^ 
+normalize();
+
+StatementExpression expression MethodInvocation member recordFunctionInformation_ter ^ ^ ^ ^ ^ 
+recordFunctionInformation();
+
+StatementExpression expression MethodInvocation member reportCodeChange_ter ^ ^ ^ ^ ^ 
+reportCodeChange();
+
+condition MethodInvocation qualifier DiagnosticGroup_ter ^ ^ member isOn_ter ^ ^ ^ ^ 
+if(DiagnosticGroup.isOn()){
+IfStatement condition MethodInvocation member isOn_ter ^ ^ ^ ^ ^ 
+if(isOn()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ ^ 
+if(!options.checkGlobalThisLevel.isOn()){
+
+StatementExpression expression MethodInvocation arguments ClassCreator type ReferenceType name LoggerErrorManager_ter ^ ^ ^ ^ arguments MethodInvocation member createMessageFormatter_ter ^ ^ ^ MemberReference member logger_ter ^ ^ ^ ^ ^ ^ member setErrorManager_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+setErrorManager(new LoggerErrorManager(createMessageFormatter(), logger));
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkTypes_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkTypes = true;
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments MemberReference qualifier DiagnosticGroups_ter ^ ^ member GLOBAL_THIS_ter ^ ^ ^ MemberReference qualifier options_ter ^ ^ member checkGlobalThisLevel_ter ^ ^ ^ ^ member setWarningLevel_ter ^ ^ ^ ^ ^ 
+options.setWarningLevel(DiagnosticGroups.GLOBAL_THIS, options.checkGlobalThisLevel);
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments MethodInvocation qualifier DiagnosticGroup_ter ^ ^ arguments MemberReference qualifier RhinoErrorReporter_ter ^ ^ member TYPE_PARSE_ERROR_ter ^ ^ ^ ^ member forType_ter ^ ^ ^ MemberReference qualifier CheckLevel_ter ^ ^ member OFF_ter ^ ^ ^ ^ member setWarningLevel_ter ^ ^ ^ ^ ^ 
+options.setWarningLevel(DiagnosticGroup.forType(RhinoErrorReporter.TYPE_PARSE_ERROR), CheckLevel.OFF);
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member precheck_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.precheck()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isInliningForbidden_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.isInliningForbidden()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isIdeMode_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.isIdeMode()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member acceptEcmaScript5_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.acceptEcmaScript5()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member acceptConstKeyword_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.acceptConstKeyword()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isTypeCheckingEnabled_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.isTypeCheckingEnabled()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member hasHaltingErrors_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.hasHaltingErrors()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member hasErrors_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.hasErrors()){
+
+IfStatement condition MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member hasRegExpGlobalReferences_ter ^ ^ ^ ^ ^ 
+if(options.checkGlobalThisLevel.hasRegExpGlobalReferences()){
+
+condition MethodInvocation qualifier Lists_ter ^ ^ member isOn_ter ^ ^ ^ ^ 
+if(Lists.isOn()){
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments MemberReference qualifier DiagnosticGroups_ter ^ ^ member ES5_STRICT_ter ^ ^ ^ MemberReference qualifier CheckLevel_ter ^ ^ member ERROR_ter ^ ^ ^ ^ member setWarningLevel_ter ^ ^ ^ ^ ^ 
+options.setWarningLevel(DiagnosticGroups.ES5_STRICT, CheckLevel.ERROR);
+
+StatementExpression expression MethodInvocation arguments MemberReference member printer_ter ^ ^ ^ ^ member setErrorManager_ter ^ ^ ^ ^ ^ 
+setErrorManager(printer);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkTypes_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkTypes = false;
+
+StatementExpression expression MethodInvocation qualifier printer_ter ^ ^ arguments MemberReference qualifier options_ter ^ ^ member summaryDetailLevel_ter ^ ^ ^ ^ member setSummaryDetailLevel_ter ^ ^ ^ ^ ^ 
+printer.setSummaryDetailLevel(options.summaryDetailLevel);
+
+StatementExpression expression MethodInvocation qualifier composedGuards_ter ^ ^ arguments ClassCreator type ReferenceType name DiagnosticGroupWarningsGuard_ter ^ ^ ^ ^ arguments MemberReference qualifier DiagnosticGroups_ter ^ ^ member CHECK_VARIABLES_ter ^ ^ ^ MemberReference qualifier CheckLevel_ter ^ ^ member OFF_ter ^ ^ ^ ^ ^ ^ member addGuard_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+composedGuards.addGuard(new DiagnosticGroupWarningsGuard(DiagnosticGroups.CHECK_VARIABLES, CheckLevel.OFF));
+
+IfStatement condition MethodInvocation member precheck_ter ^ ^ ^ ^ ^ 
+if(precheck()){
+
+IfStatement condition MethodInvocation member isInliningForbidden_ter ^ ^ ^ ^ ^ 
+if(isInliningForbidden()){
+
+IfStatement condition MethodInvocation member isIdeMode_ter ^ ^ ^ ^ ^ 
+if(isIdeMode()){
+
+IfStatement condition MethodInvocation member acceptEcmaScript5_ter ^ ^ ^ ^ ^ 
+if(acceptEcmaScript5()){
+
+IfStatement condition MethodInvocation member acceptConstKeyword_ter ^ ^ ^ ^ ^ 
+if(acceptConstKeyword()){
+
+IfStatement condition MethodInvocation member isTypeCheckingEnabled_ter ^ ^ ^ ^ ^ 
+if(isTypeCheckingEnabled()){
+
+IfStatement condition MethodInvocation member hasHaltingErrors_ter ^ ^ ^ ^ ^ 
+if(hasHaltingErrors()){
+
+IfStatement condition MethodInvocation member hasErrors_ter ^ ^ ^ ^ ^ 
+if(hasErrors()){
+
+IfStatement condition MethodInvocation member hasRegExpGlobalReferences_ter ^ ^ ^ ^ ^ 
+if(hasRegExpGlobalReferences()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member precheck_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.precheck())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isInliningForbidden_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.isInliningForbidden())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isIdeMode_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.isIdeMode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member acceptEcmaScript5_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.acceptEcmaScript5())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member acceptConstKeyword_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.acceptConstKeyword())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isTypeCheckingEnabled_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.isTypeCheckingEnabled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member hasHaltingErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.hasHaltingErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member hasErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.hasErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member hasRegExpGlobalReferences_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && options.checkGlobalThisLevel.hasRegExpGlobalReferences())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isOn_ter ^ ^ ^ ^ ^ 
+if(!isOn()){
+
+StatementExpression expression This selectors MethodInvocation member initBasedOnOptions_ter ^ ^ ^ ^ ^ ^ ^ 
+this.initBasedOnOptions();
+
+StatementExpression expression This selectors MethodInvocation member rebuildInputsFromModules_ter ^ ^ ^ ^ ^ ^ ^ 
+this.rebuildInputsFromModules();
+
+StatementExpression expression This selectors MethodInvocation member initInputsByNameMap_ter ^ ^ ^ ^ ^ ^ ^ 
+this.initInputsByNameMap();
+
+StatementExpression expression This selectors MethodInvocation member disableThreads_ter ^ ^ ^ ^ ^ ^ ^ 
+this.disableThreads();
+
+StatementExpression expression This selectors MethodInvocation member compileInternal_ter ^ ^ ^ ^ ^ ^ ^ 
+this.compileInternal();
+
+StatementExpression expression This selectors MethodInvocation member parse_ter ^ ^ ^ ^ ^ ^ ^ 
+this.parse();
+
+StatementExpression expression This selectors MethodInvocation member check_ter ^ ^ ^ ^ ^ ^ ^ 
+this.check();
+
+StatementExpression expression This selectors MethodInvocation member externExports_ter ^ ^ ^ ^ ^ ^ ^ 
+this.externExports();
+
+StatementExpression expression This selectors MethodInvocation member maybeSanityCheck_ter ^ ^ ^ ^ ^ ^ ^ 
+this.maybeSanityCheck();
+
+StatementExpression expression This selectors MethodInvocation member runSanityCheck_ter ^ ^ ^ ^ ^ ^ ^ 
+this.runSanityCheck();
+
+StatementExpression expression This selectors MethodInvocation member removeTryCatchFinally_ter ^ ^ ^ ^ ^ ^ ^ 
+this.removeTryCatchFinally();
+
+StatementExpression expression This selectors MethodInvocation member endPass_ter ^ ^ ^ ^ ^ ^ ^ 
+this.endPass();
+
+StatementExpression expression This selectors MethodInvocation member resetUniqueNameId_ter ^ ^ ^ ^ ^ ^ ^ 
+this.resetUniqueNameId();
+
+StatementExpression expression This selectors MethodInvocation member initCompilerOptionsIfTesting_ter ^ ^ ^ ^ ^ ^ ^ 
+this.initCompilerOptionsIfTesting();
+
+StatementExpression expression This selectors MethodInvocation member optimize_ter ^ ^ ^ ^ ^ ^ ^ 
+this.optimize();
+
+StatementExpression expression This selectors MethodInvocation member processDefines_ter ^ ^ ^ ^ ^ ^ ^ 
+this.processDefines();
+
+StatementExpression expression This selectors MethodInvocation member normalize_ter ^ ^ ^ ^ ^ ^ ^ 
+this.normalize();
+
+StatementExpression expression This selectors MethodInvocation member recordFunctionInformation_ter ^ ^ ^ ^ ^ ^ ^ 
+this.recordFunctionInformation();
+
+StatementExpression expression This selectors MethodInvocation member reportCodeChange_ter ^ ^ ^ ^ ^ ^ ^ 
+this.reportCodeChange();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member initBasedOnOptions_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.initBasedOnOptions();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member rebuildInputsFromModules_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.rebuildInputsFromModules();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member initInputsByNameMap_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.initInputsByNameMap();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member disableThreads_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.disableThreads();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member compileInternal_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.compileInternal();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member parse_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.parse();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member check_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.check();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member externExports_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.externExports();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member maybeSanityCheck_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.maybeSanityCheck();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member runSanityCheck_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.runSanityCheck();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member removeTryCatchFinally_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.removeTryCatchFinally();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member endPass_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.endPass();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member resetUniqueNameId_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.resetUniqueNameId();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member initCompilerOptionsIfTesting_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.initCompilerOptionsIfTesting();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member optimize_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.optimize();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member processDefines_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.processDefines();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member normalize_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.normalize();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member recordFunctionInformation_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.recordFunctionInformation();
+
+StatementExpression expression MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ 
+options.checkGlobalThisLevel.reportCodeChange();
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression SuperMethodInvocation member initOptions_ter ^ ^ ^ ^ ^ 
+super.initOptions();
+
+IfStatement condition MethodInvocation qualifier options_ter ^ ^ member isOn_ter ^ ^ ^ ^ ^ 
+if(options.isOn()){
+
+condition MethodInvocation qualifier options_ter ^ ^ member isOn_ter ^ ^ ^ ^ 
+if(options.isOn()){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member precheck_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.precheck())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member isInliningForbidden_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.isInliningForbidden())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member isIdeMode_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.isIdeMode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member acceptEcmaScript5_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.acceptEcmaScript5())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member acceptConstKeyword_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.acceptConstKeyword())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member isTypeCheckingEnabled_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.isTypeCheckingEnabled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member hasHaltingErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.hasHaltingErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member hasErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.hasErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier options.checkGlobalThisLevel_ter ^ ^ member hasRegExpGlobalReferences_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !options.checkGlobalThisLevel.hasRegExpGlobalReferences())){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ qualifier options_ter ^ ^ member checkTypes_ter ^ ^ ^ ^ ^ 
+if(!options.checkTypes){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member precheck_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && precheck())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member isInliningForbidden_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && isInliningForbidden())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member isIdeMode_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && isIdeMode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member acceptEcmaScript5_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && acceptEcmaScript5())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member acceptConstKeyword_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && acceptConstKeyword())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member isTypeCheckingEnabled_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && isTypeCheckingEnabled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member hasHaltingErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && hasHaltingErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member hasErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && hasErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation member hasRegExpGlobalReferences_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && hasRegExpGlobalReferences())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member options_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member precheck_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !precheck())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isInliningForbidden_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !isInliningForbidden())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isIdeMode_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !isIdeMode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member acceptEcmaScript5_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !acceptEcmaScript5())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member acceptConstKeyword_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !acceptConstKeyword())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member isTypeCheckingEnabled_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !isTypeCheckingEnabled())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasHaltingErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !hasHaltingErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !hasErrors())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier options.checkGlobalThisLevel_ter ^ ^ member isOn_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ member hasRegExpGlobalReferences_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options.checkGlobalThisLevel.isOn() && !hasRegExpGlobalReferences())){
+
+stderr: 

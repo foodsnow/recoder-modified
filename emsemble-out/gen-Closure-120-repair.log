@@ -1,0 +1,64 @@
+stdout: condition MemberReference qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ 
+if(block.isFunction){
+condition MemberReference member block_ter ^ ^ ^ ^ 
+if(block){
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(block.isFunction()){
+
+IfStatement condition MemberReference qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(block.isFunction){
+
+condition MemberReference member ref_ter ^ ^ ^ ^ 
+if(ref){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(!block.isFunction()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(!block.isFunction){
+
+IfStatement condition MemberReference member isFunction_ter ^ ^ ^ ^ ^ 
+if(isFunction){
+
+condition MemberReference member isFunction_ter ^ ^ ^ ^ 
+if(isFunction){
+IfStatement condition MethodInvocation member isFunction_ter ^ ^ ^ ^ ^ 
+if(isFunction()){
+
+condition MemberReference qualifier block_ter ^ ^ member isLoop_ter ^ ^ ^ ^ 
+if(block.isLoop){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ operandr MemberReference qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+if((block.isFunction && block.isFunction)){
+
+condition MemberReference prefix_operators !_ter ^ ^ qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ 
+if(!block.isFunction){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(!isFunction){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member block_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((block != null)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ operandr MemberReference qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+if((block.isFunction || block.isFunction)){
+
+condition MemberReference qualifier ref_ter ^ ^ member isFunction_ter ^ ^ ^ ^ 
+if(ref.isFunction){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member block_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((block == null)){
+return false;}
+condition MemberReference prefix_operators !_ter ^ ^ member isFunction_ter ^ ^ ^ ^ 
+if(!isFunction){
+
+
+condition MemberReference prefix_operators !_ter ^ ^ member block_ter ^ ^ ^ ^ 
+if(!block){
+condition MemberReference member par0 ^ ^ ^ ^ 
+if(){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member block_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((block == null)){
+
+condition MemberReference qualifier par0 ^ ^ member isFunction_ter ^ ^ ^ ^ 
+if(.isFunction){
+
+stderr: 

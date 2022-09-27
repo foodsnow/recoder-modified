@@ -1,0 +1,149 @@
+stdout: BreakStatement_ter ^ 
+break;
+
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions Literal value 2_ter ^ ^ ^ None_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = new double[[]];
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member lB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0] = lB;
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = null;
+
+StatementExpression expression Assignment expressionl MemberReference member hasInfiniteBounds_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+hasInfiniteBounds = true;
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier init_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < init.length);i++) {
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions Literal value 2_ter ^ ^ ^ None_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = new double[[]];
+
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ ^ ^ ^ 
+if((boundaries[1].[i] - boundaries[0].[i])){
+
+
+IfStatement condition MemberReference member hasInfiniteBounds_ter ^ ^ ^ ^ ^ 
+if(hasInfiniteBounds){
+
+StatementExpression expression Assignment expressionl MemberReference member hasInfiniteBounds_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+hasInfiniteBounds = true;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member inputSigma_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((inputSigma[i] > (boundaries[1].[i] - boundaries[0].[i]))){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member boundaries_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((boundaries != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = null;
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member inputSigma_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((inputSigma[i] < 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier inputSigma_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference qualifier init_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+if((inputSigma.length != init.length)){
+
+IfStatement condition MemberReference member hasFiniteBounds_ter ^ ^ ^ ^ ^ 
+if(hasFiniteBounds){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member lB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0] = lB;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier lB_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < lB.length);i++) {
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member inputSigma_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((inputSigma != null)){
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1] = uB;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1] = false;
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = false;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1] = null;
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = true;
+
+StatementExpression expression MethodInvocation qualifier Double_ter ^ ^ member checkParameters_ter ^ ^ ^ ^ ^ 
+Double.checkParameters();
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1] = true;
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = false;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0] = false;
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = 0;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0] = 0;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0] = uB;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0].[i] = uB;
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member boundaries_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1] = boundaries;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1].[i] = uB;
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1] = uB;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member inputSigma_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+inputSigma[0].[i] = uB;
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0] = true;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[i] = uB;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[0] = null;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member uB_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+uB[0] = uB;
+
+StatementExpression expression Assignment expressionl MemberReference member boundaries_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries = true;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ member boundaries_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+boundaries[1] = 0;
+
+StatementExpression expression Assignment expressionl MemberReference member i_ter ^ ^ ^ ^ value MemberReference member uB_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+i = uB;
+
+stderr: 

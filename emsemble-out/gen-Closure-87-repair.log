@@ -1,0 +1,90 @@
+stdout: ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member isFoldableExpressBlock_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFoldableExpressBlock(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return NodeUtil.add(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return NodeUtil.debug(maybeExpr);
+ReturnStatement expression MethodInvocation arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return isExpressionNode(maybeExpr);
+ReturnStatement expression MethodInvocation arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member tryRemoveRepeatedStatements_ter ^ ^ ^ ^ ^ 
+return tryRemoveRepeatedStatements(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return NodeUtil.e(maybeExpr);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return NodeUtil.max(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, false);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, true);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return NodeUtil.put(maybeExpr);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maybeExpr_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((maybeExpr == null)){
+return false;}
+StatementExpression expression MethodInvocation qualifier maybeExpr_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+maybeExpr.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier maybeExpr_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+maybeExpr.setQuotedString();
+
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(n);
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return n.isExpressionNode(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, n);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maybeExpr_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maybeExpr != null)){
+
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ MemberReference member maybeExpr_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode();
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member tryRemoveRepeatedStatements_ter ^ ^ ^ ^ ^ 
+return NodeUtil.tryRemoveRepeatedStatements(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, );
+
+ReturnStatement expression MemberReference member maybeExpr_ter ^ ^ ^ ^ ^ 
+return maybeExpr;
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, null);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(n.getFirstChild());
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ This_ter ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, this);
+ReturnStatement expression MethodInvocation qualifier maybeExpr_ter ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return maybeExpr.isExpressionNode();
+ReturnStatement expression MethodInvocation qualifier maybeExpr_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return maybeExpr.isExpressionNode(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return NodeUtil.get(maybeExpr);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member getType_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(n.getType());
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+return NodeUtil.hasOneChild(maybeExpr);
+ReturnStatement expression MethodInvocation member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return isExpressionNode();
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode();
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ 
+return n.getType();
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode(maybeExpr, );
+
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isExpressionNode();
+ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member maybeExpr_ter ^ ^ ^ ^ member isExpressionNode_ter ^ ^ ^ ^ ^ 
+return !NodeUtil.isExpressionNode(maybeExpr);
+stderr: 

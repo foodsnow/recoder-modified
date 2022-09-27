@@ -1,0 +1,104 @@
+stdout: StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, field, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member injectMockCandidate_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, field, fieldInstance).injectMockCandidate();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member field_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(field, field, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, field, field).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, field, fieldInstance);
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, mocks, fieldInstance).thenInject();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member field_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((field != null)){
+continue;
+}
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member mocks_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, field, mocks).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member awaitingInjectionClazz_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, awaitingInjectionClazz, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member awaitingInjectionClazz_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(awaitingInjectionClazz, field, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member awaitingInjectionClazz_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, field, awaitingInjectionClazz).thenInject();
+
+StatementExpression expression MethodInvocation arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+filterCandidate(mocks, field, fieldInstance);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member mocks_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mocks != null)){
+continue;
+}
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ arguments MemberReference member awaitingInjectionClazz_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(awaitingInjectionClazz);
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member awaitingInjectionClazz_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(awaitingInjectionClazz).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate().thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, fieldInstance, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(fieldInstance, field, fieldInstance).thenInject();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fieldInstance_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fieldInstance != null)){
+continue;
+}
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member awaitingInjectionClazz_ter ^ ^ ^ MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(awaitingInjectionClazz, mocks, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member field_ter ^ ^ ^ MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(field, mocks, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate().filterCandidate(mocks, field, fieldInstance);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member field_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((field == null)){
+continue;
+}
+
+IfStatement condition MemberReference member field_ter ^ ^ ^ ^ ^ 
+if(field){
+continue;
+}
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MemberReference member fieldInstance_ter ^ ^ ^ ^ ^ 
+if(fieldInstance){
+continue;
+}
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ selectors MethodInvocation member orderedInstanceFieldsFrom_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(mocks, field, fieldInstance).orderedInstanceFieldsFrom();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ arguments MemberReference member field_ter ^ ^ ^ MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate(field, mocks, fieldInstance);
+
+StatementExpression expression MethodInvocation selectors MethodInvocation member thenInject_ter ^ ^ ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+filterCandidate(mocks, field, fieldInstance).thenInject();
+
+StatementExpression expression MethodInvocation qualifier mockCandidateFilter_ter ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+mockCandidateFilter.filterCandidate();
+
+stderr: 

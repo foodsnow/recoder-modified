@@ -1,0 +1,173 @@
+stdout: ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getLastChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getLastChild(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getNext_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getNext(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getLastSibling_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getLastSibling(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getParent_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getParent(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member detachFromParent_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.detachFromParent(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member removeFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.removeFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member removeChildren_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.removeChildren(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member cloneNode_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.cloneNode(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member cloneTree_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.cloneTree(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getQualifiedName_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getQualifiedName(), defines);
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member isQualifiedName_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.isQualifiedName(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(val.getFirstChild(), defines);
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression MethodInvocation arguments MemberReference member val_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val, defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member isValidDefineValue_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.isValidDefineValue(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild());
+ReturnStatement expression MethodInvocation arguments MemberReference member defines_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(defines, defines);
+ReturnStatement expression MethodInvocation arguments MemberReference member val_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val, val.getFirstChild());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getType_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getType(), defines);
+ReturnStatement expression MethodInvocation arguments MemberReference member defines_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(defines, val.getFirstChild());
+ReturnStatement expression MethodInvocation arguments MemberReference member val_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val, val.getFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getName_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getName(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier defines_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(defines.getFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier loc0 ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(.getFirstChild(), defines);
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member FALSE_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.FALSE(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member NUMBER_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.NUMBER(), defines);
+ReturnStatement expression MethodInvocation arguments MemberReference member defines_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(defines, );
+
+ReturnStatement expression MethodInvocation member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue();
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), defines, val.getFirstChild());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member val_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), val);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member BITAND_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.BITAND(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), defines, defines);
+ReturnStatement expression MethodInvocation qualifier defines_ter ^ ^ arguments MethodInvocation qualifier val_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return defines.contains(val.getQualifiedName());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), defines, );
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(val.getFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member defines_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(defines, val.getFirstChild(), defines);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member val_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val, defines, val.getFirstChild());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(val.getFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MemberReference member val_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val, val.getFirstChild(), val.getFirstChild());
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member defines_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((defines == null)){
+return true;}
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.hasChildren()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.hasOneChild()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.hasMoreThanOneChild()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.hasSideEffects()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isQualifiedName()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isUnscopedQualifiedName()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isVarArgs()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isOptionalArg()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isSyntheticBlock()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.wasEmptyNode()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isOnlyModifiesThisCall()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isNoSideEffectsCall()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isLocalResultCall()){
+return true;}
+IfStatement condition MethodInvocation qualifier val_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if(val.isQuotedString()){
+return true;}
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier Token_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(Token.getFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member defines_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), val.getFirstChild(), defines);
+ReturnStatement expression MethodInvocation arguments MemberReference member val_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val);
+ReturnStatement expression MethodInvocation arguments MemberReference member defines_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(defines, val.getFirstChild(), val.getFirstChild());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), val.getFirstChild());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier val_ter ^ ^ member getFirstChild_ter ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ member isValidDefineValue_ter ^ ^ ^ ^ ^ 
+return isValidDefineValue(val.getFirstChild(), );
+
+stderr: 

@@ -1,0 +1,136 @@
+stdout: condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, epsilon)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, i)){
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(i, col)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(!MathUtils.equals(i, col)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, epsilon)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member row_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, row)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, col)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, i), 0.0, epsilon)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(!equals(i, col)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getBasicRow(i, col), 0.0, epsilon)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference qualifier epsilon_ter ^ ^ member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, epsilon.epsilon)){
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getData_ter ^ ^ ^ ^ member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, getData().epsilon)){
+IfStatement condition MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(equals(i, col)){
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(getEntry(i, col))){
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(getEntry(i, col), 0.0, epsilon)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i != null)){
+continue;
+}
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member epsilon_ter ^ ^ ^ MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(epsilon, getEntry(i, col))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member epsilon_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((epsilon != null) && !MathUtils.equals(getEntry(i, col), 0.0, epsilon))){
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(epsilon)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getNumObjectiveFunctions(i, col), 0.0, epsilon)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col))){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ 
+if(!MathUtils.getBasicRow(getEntry(i, col), 0.0, epsilon)){
+StatementExpression expression MethodInvocation member initialize_ter ^ ^ ^ ^ ^ 
+initialize();
+
+StatementExpression expression MethodInvocation member discardArtificialVariables_ter ^ ^ ^ ^ ^ 
+discardArtificialVariables();
+continue;
+}
+
+
+IfStatement condition MemberReference member epsilon_ter ^ ^ ^ ^ ^ 
+if(epsilon){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((i != null) && !MathUtils.equals(getEntry(i, col), 0.0, epsilon))){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, )){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member epsilon_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((epsilon != null)){
+continue;
+}
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ selectors MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(i, col).equals(i, col)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!MathUtils.equals(getEntry(i, col), 0.0, epsilon) && !MathUtils.equals(getEntry(i, col), 0.0, epsilon))){
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member epsilon_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(epsilon, i)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member loc2 ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, col), 0.0, )){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MemberReference member epsilon_ter ^ ^ ^ MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(!MathUtils.equals(epsilon, getEntry(i, col))){
+
+StatementExpression expression Assignment expressionl MemberReference member row_ter ^ ^ ^ ^ value MemberReference member i_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+row = i;
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member epsilon_ter ^ ^ ^ MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(epsilon, getEntry(i, col), i)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getHeight_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getHeight(i, col), 0.0, epsilon)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(!equals(getEntry(i, col), 0.0, epsilon)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member epsilon_ter ^ ^ ^ ^ ^ 
+if(!epsilon){
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+!MathUtils.equals(getEntry(i, col), 0.0, epsilon);
+
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, epsilon), 0.0, epsilon)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((getEntry(i, col) != null) && !MathUtils.equals(getEntry(i, col), 0.0, epsilon))){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member row_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
+if(!MathUtils.equals(getEntry(i, row), 0.0, epsilon)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member epsilon_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((epsilon == null) && !MathUtils.equals(getEntry(i, col), 0.0, epsilon))){
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(getEntry(i, col), epsilon, i)){
+
+IfStatement condition MethodInvocation member getHeight_ter ^ ^ ^ ^ ^ 
+if(getHeight()){
+continue;
+}
+
+IfStatement condition MethodInvocation qualifier MathUtils_ter ^ ^ arguments MemberReference member epsilon_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(MathUtils.equals(epsilon, i, getEntry(i, col))){
+
+stderr: 

@@ -1,0 +1,116 @@
+stdout: control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < len);index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index <= len);index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(len < len);index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index >= len);index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < index);index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < len);index) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len == null)){
+return false;}
+control ForControl init VariableDeclaration type BasicType name char_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(char index = 0;(index < len);index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference member len_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < len);len) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index > len);index++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((len != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((len == null)){
+return ((len > 0) && (s.charAt(0) != "null"));}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(s < len);index++) {
+StatementExpression expression MethodInvocation member tagAsStrict_ter ^ ^ ^ ^ ^ 
+tagAsStrict();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len != null)){
+return false;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((len == null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index++ < len);index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(c < len);index++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len == 0)){
+return false;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((s == null)){
+return false;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;( < len);index++) {
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference member s_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < len);s) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index - len);index++) {
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member len_ter ^ ^ ^ ^ ^ 
+len++;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member s_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < s);index++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len == len)){
+return false;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < index++);index++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((len != null)){
+return ((len > 0) && (s.charAt(0) != "null"));}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < (index < len));index++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index == len);index++) {
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len < 0)){
+return false;}
+control ForControl init VariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(long index = 0;(index < len);index++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr MemberReference member s_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len == s)){
+return false;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference postfix_operators ++_ter ^ ^ member len_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(len++ < len);index++) {
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member c_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < c);index++) {
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len > 0)){
+return false;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(-index < len);index++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((index == null)){
+return false;}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;;index++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((s != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((len == 0)){
+return ((len > 0) && (s.charAt(0) != "null"));}
+stderr: 

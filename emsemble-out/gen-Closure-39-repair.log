@@ -1,0 +1,235 @@
+stdout: StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(toString(property).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member newTreeSet_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(newTreeSet(property).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member getOwnPropertyNames_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).getOwnPropertyNames());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member isNativeObjectType_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).isNativeObjectType());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getReferenceName_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getReferenceName(property).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member getImplicitPrototype_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).getImplicitPrototype());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append("null");
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property));
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member hasReferenceName_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(hasReferenceName(property).toString());
+
+StatementExpression expression MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ 
+++i;
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(isNativeObjectType(property).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(append(property).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member newTreeSet_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).newTreeSet());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getImplicitPrototype_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getImplicitPrototype(property).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member getName_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).getName());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getOwnPropertyNames(property).toString());
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier propertyNames_ter ^ ^ arguments MethodInvocation qualifier current_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ member addAll_ter ^ ^ ^ ^ ^ 
+propertyNames.addAll(current.getOwnPropertyNames());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toStringHelper_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).toStringHelper());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(property);
+
+StatementExpression expression Assignment expressionl MemberReference member prettyPrint_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+prettyPrint = true;
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member getReferenceName_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).getReferenceName());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member hasReferenceName_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).hasReferenceName());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member addAll_ter ^ ^ ^ ^ ^ 
+sb.addAll(property);
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+if (true) { return "null"; }
+
+StatementExpression expression MethodInvocation qualifier propertyNames_ter ^ ^ arguments MethodInvocation qualifier current_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ member addAll_ter ^ ^ ^ ^ ^ 
+propertyNames.addAll(current.getOwnPropertyNames());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member sb_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(sb).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append("null");
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(property);
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation member toString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(toString());
+
+StatementExpression expression MethodInvocation qualifier i_ter ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+i.append(property);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member MAX_PRETTY_PRINTED_PROPERTIES_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i == MAX_PRETTY_PRINTED_PROPERTIES)){
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation arguments MemberReference member property_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(toString(property));
+
+StatementExpression expression MethodInvocation qualifier Sets_ter ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+Sets.append(property);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(i).toString());
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType().toString());
+
+StatementExpression expression MethodInvocation arguments MemberReference member property_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append(property);
+
+StatementExpression expression MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ 
+++i;
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation arguments MemberReference member className_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(className));
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(current).toString());
+
+ReturnStatement expression MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return sb.toString();
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation member getReferenceName_ter ^ ^ ^ ^ ^ 
+return getReferenceName();
+ReturnStatement expression MemberReference member prettyPrint_ter ^ ^ ^ ^ ^ 
+return prettyPrint;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append("null");
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MethodInvocation selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(getPropertyType(property).toString());
+
+StatementExpression expression Assignment expressionl MemberReference member prettyPrint_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+prettyPrint = true;
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member property_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(property);
+
+StatementExpression expression MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ 
+++i;
+
+ReturnStatement expression MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+if (true) { return sb.toString(); }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier propertyNames_ter ^ ^ member size_ter ^ ^ ^ ^ operandr MemberReference member MAX_PRETTY_PRINTED_PROPERTIES_ter ^ ^ ^ ^ ^ ^ ^ 
+return (propertyNames.size() <= MAX_PRETTY_PRINTED_PROPERTIES);
+ReturnStatement expression MemberReference member sb_ter ^ ^ ^ ^ ^ 
+return sb;
+ReturnStatement expression MemberReference member MAX_PRETTY_PRINTED_PROPERTIES_ter ^ ^ ^ ^ ^ 
+return MAX_PRETTY_PRINTED_PROPERTIES;
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+return current;
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier current_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((current != null) && !current.isNativeObjectType());
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (current != null);
+StatementExpression expression MethodInvocation qualifier current_ter ^ ^ member clearCachedValues_ter ^ ^ ^ ^ ^ 
+current.clearCachedValues();
+
+ReturnStatement expression MemberReference member i_ter ^ ^ ^ ^ ^ 
+return i;
+ReturnStatement expression MemberReference member propertyNames_ter ^ ^ ^ ^ ^ 
+return propertyNames;
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+sb.toString();
+
+ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ qualifier current_ter ^ ^ member isNativeObjectType_ter ^ ^ ^ ^ ^ 
+return !current.isNativeObjectType();
+ReturnStatement expression MethodInvocation qualifier current_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ ^ 
+return current.getOwnPropertyNames();
+ReturnStatement expression MethodInvocation qualifier propertyNames_ter ^ ^ member size_ter ^ ^ ^ ^ ^ 
+return propertyNames.size();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member MAX_PRETTY_PRINTED_PROPERTIES_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i == MAX_PRETTY_PRINTED_PROPERTIES)){
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier propertyNames_ter ^ ^ member size_ter ^ ^ ^ ^ operandr MemberReference member MAX_PRETTY_PRINTED_PROPERTIES_ter ^ ^ ^ ^ ^ ^ ^ 
+if((propertyNames.size() <= MAX_PRETTY_PRINTED_PROPERTIES)){
+
+ReturnStatement expression MethodInvocation qualifier current_ter ^ ^ member getImplicitPrototype_ter ^ ^ ^ ^ ^ 
+return current.getImplicitPrototype();
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ 
+return -1;
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (i > 0);
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member prettyPrint_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+prettyPrint = null;
+
+BreakStatement_ter ^ 
+break;
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i > 0)){
+
+ReturnStatement expression MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ 
+return ++i;
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member MAX_PRETTY_PRINTED_PROPERTIES_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier propertyNames_ter ^ ^ member size_ter ^ ^ ^ ^ operandr MemberReference member MAX_PRETTY_PRINTED_PROPERTIES_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return ((i == MAX_PRETTY_PRINTED_PROPERTIES) && (propertyNames.size() <= MAX_PRETTY_PRINTED_PROPERTIES));
+control EnhancedForControl var VariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name property_ter ^ ^ ^ ^ ^ ^ iterable MemberReference member propertyNames_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(String property = ;
+:propertyNames)
+
+stderr: 

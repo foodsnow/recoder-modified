@@ -1,0 +1,132 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign >= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign > 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign <= 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign < 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign == 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign != 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member yMax_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((yMax >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member yMin_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((yMin >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member ret_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((ret >= 0)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sign != null)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign || 0)){
+IfStatement condition MemberReference member sign_ter ^ ^ ^ ^ ^ 
+if(sign){
+
+StatementExpression expression Assignment expressionl MemberReference member ret_ter ^ ^ ^ ^ value MemberReference member sign_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ret = sign;
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign && 0)){
+StatementExpression expression Assignment expressionl MemberReference member ret_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MemberReference member yMax_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member yMin_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ret = solve(min, yMin, max, yMax, min, yMin);
+
+StatementExpression expression Assignment expressionl MemberReference member sign_ter ^ ^ ^ ^ value MemberReference member sign_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sign = sign;
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member max_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((max >= 0)){
+StatementExpression expression MethodInvocation arguments MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ ^ member verifyInterval_ter ^ ^ ^ ^ ^ 
+verifyInterval(min, max);
+
+
+StatementExpression expression MethodInvocation member clearResult_ter ^ ^ ^ ^ ^ 
+clearResult();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((sign == null)){
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member max_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((((("null" + "null") + min) + "null") + max) + "null") + "null") + yMin)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ ^ 
+if((("null" + "null") + min)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member max_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((((((("null" + "null") + min) + "null") + max) + "null") + "null") + yMin) + "null") + yMax)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member max_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((("null" + "null") + min) + "null") + max)){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member sign_ter ^ ^ ^ ^ ^ 
+sign++;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sign >= 0) && (sign == yMax))){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((("null" + "null") + min) + "null")){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member max_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((((("null" + "null") + min) + "null") + max) + "null") + "null")){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member max_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((((((("null" + "null") + min) + "null") + max) + "null") + "null") + yMin) + "null")){
+
+condition BinaryOperation operator &_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign & 0)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member max_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((((("null" + "null") + min) + "null") + max) + "null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sign >= 0) && (sign > yMax))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sign >= 0) && (sign != yMax))){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((sign >= 1)){
+StatementExpression expression Assignment expressionl MemberReference member sign_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sign = 0;
+
+IfStatement condition MemberReference member sign_ter ^ ^ ^ ^ ^ 
+if(sign){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + "null")){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sign >= 0) || (sign > yMax))){
+
+StatementExpression expression Assignment expressionl MemberReference member ret_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ret = 0;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sign != null) && (sign >= 0))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member sign_ter ^ ^ ^ ^ ^ 
+if(!sign){
+
+ReturnStatement expression MemberReference member ret_ter ^ ^ ^ ^ ^ 
+if (true) { return ret; }
+
+ReturnStatement expression MemberReference member sign_ter ^ ^ ^ ^ ^ 
+if (true) { return sign; }
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((sign instanceof 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member ret_ter ^ ^ ^ ^ value MemberReference member sign_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+ret += sign;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member yMin_ter ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sign >= 0) && (yMin * yMax))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member sign_ter ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((sign >= 0) && (sign == yMin))){
+
+stderr: 

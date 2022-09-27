@@ -1,0 +1,121 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier MethodInvocation member initializeClassInstantiator_ter ^ ^ ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = initializeClassInstantiator().instantiate(mockedProxyType);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockInstance_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockInstance);
+
+StatementExpression expression MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ ^ 
+classInstantiator.instantiate(mockedProxyType);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member mockInstance_ter ^ ^ ^ ^ operandr MemberReference qualifier SerializableMode_ter ^ ^ member ACROSS_CLASSLOADERS_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mockInstance != SerializableMode.ACROSS_CLASSLOADERS)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MemberReference member mockInstance_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = mockInstance;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member mockInstance_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mockInstance != null)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member mockInstance_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mockInstance != "null")){
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member mockInstance_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mockInstance == null)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member cce_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(cce);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType, false);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member handler_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(handler);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType, true);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockAccess_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockAccess);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType, null);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member mockInstance_ter ^ ^ ^ ^ operandr MemberReference qualifier SerializableMode_ter ^ ^ member ACROSS_CLASSLOADERS_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mockInstance == SerializableMode.ACROSS_CLASSLOADERS)){
+
+
+StatementExpression expression MethodInvocation qualifier mockAccess_ter ^ ^ arguments ClassCreator type ReferenceType name MockMethodInterceptor_ter ^ ^ ^ ^ arguments MethodInvocation arguments MemberReference member handler_ter ^ ^ ^ ^ member asInternalMockHandler_ter ^ ^ ^ MemberReference member settings_ter ^ ^ ^ ^ ^ ^ member setMockitoInterceptor_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+mockAccess.setMockitoInterceptor(new MockMethodInterceptor(asInternalMockHandler(handler), settings));
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier settings_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = settings.instantiate(mockedProxyType);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member createMock_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.createMock(mockedProxyType);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member settings_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(settings);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = instantiate(mockedProxyType);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ MemberReference member handler_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType, handler);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ MemberReference member mockInstance_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType, mockInstance);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = null;
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier mockInstance_ter ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = mockInstance.instantiate();
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.get(mockedProxyType);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier mockedProxyType_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = mockedProxyType.instantiate(mockedProxyType);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member setMockitoInterceptor_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.setMockitoInterceptor(mockedProxyType);
+
+StatementExpression expression MethodInvocation qualifier mockAccess_ter ^ ^ arguments ClassCreator type ReferenceType name MockMethodInterceptor_ter ^ ^ ^ ^ arguments MethodInvocation arguments MemberReference member handler_ter ^ ^ ^ ^ member asInternalMockHandler_ter ^ ^ ^ MemberReference member settings_ter ^ ^ ^ ^ ^ ^ member setMockitoInterceptor_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+mockAccess.setMockitoInterceptor(new MockMethodInterceptor(asInternalMockHandler(handler), settings));
+
+ReturnStatement expression MethodInvocation arguments MemberReference member settings_ter ^ ^ ^ MemberReference member mockInstance_ter ^ ^ ^ ^ member ensureMockIsAssignableToMockedType_ter ^ ^ ^ ^ ^ 
+if (true) { return ensureMockIsAssignableToMockedType(settings, mockInstance); }
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member ensureMockIsAssignableToMockedType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.ensureMockIsAssignableToMockedType(mockedProxyType);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ MemberReference member settings_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType, settings);
+
+StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mockInstance = classInstantiator.instantiate(mockedProxyType, mockedProxyType);
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier settings_ter ^ ^ member getSerializableMode_ter ^ ^ ^ ^ operandr MemberReference qualifier SerializableMode_ter ^ ^ member ACROSS_CLASSLOADERS_ter ^ ^ ^ ^ ^ ^ ^ 
+if((settings.getSerializableMode() == SerializableMode.ACROSS_CLASSLOADERS)){
+
+
+stderr: 

@@ -1,0 +1,129 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments This_ter ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(this);
+
+StatementExpression expression MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+lhs.equals(rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.append(rhs);
+
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member lhsClass_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(lhsClass);
+
+StatementExpression expression This selectors MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member setEquals_ter ^ ^ ^ ^ ^ ^ ^ 
+this.setEquals(false);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(rhs);
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name long_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name long_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((long[])lhs, (long[])rhs);
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((int[])lhs, (int[])rhs);
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name short_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name short_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((short[])lhs, (short[])rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member isEquals_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(isEquals);
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name byte_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name byte_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((byte[])lhs, (byte[])rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ member getClass_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.getClass();
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((char[])lhs, (char[])rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier rhs_ter ^ ^ member getClass_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = rhs.getClass();
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((double[])lhs, (double[])rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(0);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals();
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(false);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member isArray_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.isArray(rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MemberReference member isEquals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = isEquals;
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member setEquals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.setEquals(rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member rhs_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = equals(rhs);
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name float_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name float_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((float[])lhs, (float[])rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member lhsClass_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lhsClass = lhs.equals(rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.debug(rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(1);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhsClass_ter ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhsClass.equals();
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(lhs.equals(rhs)){
+
+
+StatementExpression expression MethodInvocation arguments Cast type BasicType name boolean_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member lhs_ter ^ ^ ^ ^ ^ Cast type BasicType name boolean_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MemberReference member rhs_ter ^ ^ ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+append((boolean[])lhs, (boolean[])rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = equals();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isEquals_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isEquals != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MemberReference member rhs_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = rhs;
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MemberReference member lhsClass_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhsClass;
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments This selectors MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member setEquals_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(this.setEquals(false));
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier rhs_ter ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = rhs.equals();
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments Literal value 2_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(2);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = false;
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ This_ter ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals(rhs, this);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier lhs_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = lhs.equals("null");
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value MethodInvocation qualifier rhs_ter ^ ^ arguments MemberReference member rhs_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = rhs.equals(rhs);
+
+StatementExpression expression Assignment expressionl MemberReference member isEquals_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isEquals = true;
+
+stderr: 

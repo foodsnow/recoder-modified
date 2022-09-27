@@ -1,0 +1,359 @@
+stdout: 
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.hasFinally(n)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.hasFinally(n)){
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier allCatchNodes_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(allCatchNodes.hasOneChild());
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member catchCodeBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(catchCodeBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member ifBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(ifBlock, exitType, labelName);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member tryBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(tryBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member elseBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(elseBlock, exitType, labelName);
+
+IfStatement condition MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ 
+if(hasFinally(n)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member labelBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(labelBlock, exitType, labelName);
+
+condition MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ 
+if(Preconditions.hasFinally(n)){
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ 
+if(NodeUtil.hasFinally(n)){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.hasFinally()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member elseBlock_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((elseBlock != null) && NodeUtil.hasFinally(n))){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member allCatchNodes_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ 
+if(NodeUtil.hasFinally(allCatchNodes)){
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.hasFinally()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member allCatchNodes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((allCatchNodes != null)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ 
+if(!hasFinally(n)){
+
+BreakStatement_ter ^ 
+break;
+
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasCatchHandler_ter ^ ^ ^ ^ 
+if(NodeUtil.hasCatchHandler(n)){
+condition MethodInvocation qualifier allCatchNodes_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ 
+if(allCatchNodes.hasFinally(n)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.hasFinally(n) != null)){
+
+condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ 
+if(NodeUtil.tryMinimizeExits(n)){
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = n.getLastChild();
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = n.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = n.hasOneChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = n.getName();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = n.tryMinimizeExits();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier allCatchNodes_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = allCatchNodes.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier NodeUtil_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = NodeUtil.getLastChild();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ 
+n.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = n.isTry();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = n.get();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member allCatchNodes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((allCatchNodes != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = ;
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier tryBlock_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = tryBlock.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Node<?> finallyBlock = n.getLastChild();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node finallyBlock = n.getLastChild();
+
+StatementExpression expression MethodInvocation arguments MemberReference member catchCodeBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(catchCodeBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier allCatchNodes_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(allCatchNodes.hasOneChild());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier loc0 ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = .getLastChild();
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member tryBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(tryBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member labelBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(labelBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member ifBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(ifBlock, exitType, labelName);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member elseBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(elseBlock, exitType, labelName);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyBlock_ter ^ ^ initializer MethodInvocation qualifier Preconditions_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node finallyBlock = Preconditions.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1 ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = ;
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = n.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name elseBlock_ter ^ ^ initializer MethodInvocation qualifier ifBlock_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node elseBlock = ifBlock.getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name catchCodeBlock_ter ^ ^ initializer MethodInvocation qualifier catchNode_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node catchCodeBlock = catchNode.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name tryBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node tryBlock = n.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name catchNode_ter ^ ^ initializer MethodInvocation qualifier allCatchNodes_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node catchNode = allCatchNodes.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name ifBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node ifBlock = n.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node  = getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name allCatchNodes_ter ^ ^ initializer MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getCatchBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node allCatchNodes = NodeUtil.getCatchBlock(n);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node  = (Node)n.getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name labelBlock_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node labelBlock = n.getLastChild();
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, labelName);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, labelName, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, exitType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member loc0 ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, , labelName);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member allCatchNodes_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, allCatchNodes, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, );
+
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier allCatchNodes_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(allCatchNodes.hasOneChild());
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member allCatchNodes_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, allCatchNodes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member catchCodeBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(catchCodeBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member exitType_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(exitType);
+
+StatementExpression expression MethodInvocation arguments MemberReference member elseBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(elseBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member ifBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(ifBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, e, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member tryBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(tryBlock, exitType, labelName);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member labelBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(labelBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits();
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, e);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+return tryMinimizeExits(finallyBlock, exitType, labelName);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member exitType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((exitType != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member exitType_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(exitType, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member elseBlock_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, elseBlock, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member catchCodeBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(catchCodeBlock, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, n, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member loc0 ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(, exitType, labelName);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member elseBlock_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, elseBlock);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier allCatchNodes_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(allCatchNodes.hasOneChild());
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member hasFinally_ter ^ ^ ^ ^ ^ 
+hasFinally(finallyBlock, exitType, labelName);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member labelName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((labelName != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member labelName_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(labelName, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member allCatchNodes_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(allCatchNodes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member allCatchNodes_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(allCatchNodes, exitType, labelName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(finallyBlock, exitType, n);
+
+StatementExpression expression MethodInvocation arguments MemberReference member tryBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+tryMinimizeExits(tryBlock, exitType, labelName);
+
+IfStatement condition MethodInvocation arguments MemberReference member finallyBlock_ter ^ ^ ^ MemberReference member exitType_ter ^ ^ ^ MemberReference member labelName_ter ^ ^ ^ ^ member tryMinimizeExits_ter ^ ^ ^ ^ ^ 
+if(tryMinimizeExits(finallyBlock, exitType, labelName)){
+
+
+stderr: 

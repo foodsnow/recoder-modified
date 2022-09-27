@@ -1,0 +1,137 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((endIndex >= 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((endIndex <= 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((endIndex < 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((endIndex > 0)){
+IfStatement condition MemberReference member endIndex_ter ^ ^ ^ ^ ^ 
+if(endIndex){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((startIndex < 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex < endIndex))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((endIndex == 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member copy_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((copy < 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex > endIndex))){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+if((endIndex < endIndex)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex <= endIndex))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || endIndex)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex < startIndex))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && (endIndex < endIndex))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member end_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((end < 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex >= endIndex))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && (endIndex > endIndex))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member endIndex_ter ^ ^ ^ ^ ^ 
+if(!endIndex){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((endIndex != 0)){
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex + 1))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex - 1))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex > startIndex))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex < 1))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ 
+if((endIndex < 2)){
+IfStatement condition MethodInvocation qualifier endIndex_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(endIndex.isEmpty()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((endIndex || (endIndex < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex > 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (startIndex + 1))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex <= startIndex))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && (endIndex < startIndex))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && (endIndex >= endIndex))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member start_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((start < 0)){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((endIndex < (endIndex < 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && (endIndex > 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && (endIndex <= endIndex))){
+
+StatementExpression expression Assignment expressionl MemberReference member startIndex_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+startIndex = (startIndex + 1);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && endIndex)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex <= 0))){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+if((endIndex > endIndex)){
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((endIndex - 1)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex > 1))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (startIndex < 0))){
+
+StatementExpression expression Assignment expressionl MemberReference member emptyRange_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+emptyRange = true;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (endIndex < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr This selectors MemberReference member data_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) || (startIndex == this.data.size()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((endIndex < 0) && (endIndex > startIndex))){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((startIndex + 1)){
+
+stderr: 

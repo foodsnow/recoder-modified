@@ -1,0 +1,375 @@
+stdout: condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member MODULE_SLASH_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(MODULE_SLASH) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member DEFAULT_FILENAME_PREFIX_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(DEFAULT_FILENAME_PREFIX) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member MODULE_NAME_SEPARATOR_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(MODULE_NAME_SEPARATOR) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member MODULE_NAME_PREFIX_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(MODULE_NAME_PREFIX) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filenamePrefix) == 0)){
+IfStatement condition MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ 
+if(filename.indexOf(filenamePrefix)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filenamePrefix) != 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filename_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filename) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference qualifier MODULE_SLASH_ter ^ ^ member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(MODULE_SLASH.filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference qualifier DEFAULT_FILENAME_PREFIX_ter ^ ^ member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(DEFAULT_FILENAME_PREFIX.filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference qualifier MODULE_NAME_SEPARATOR_ter ^ ^ member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(MODULE_NAME_SEPARATOR.filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference qualifier MODULE_NAME_PREFIX_ter ^ ^ member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(MODULE_NAME_PREFIX.filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference qualifier filenamePrefix_ter ^ ^ member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filenamePrefix.filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.normalizeSourceName(filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.getName(filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.length(filenamePrefix) == 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filenamePrefix) >= 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member lastIndexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.lastIndexOf(filenamePrefix) == 0)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((filename == 0)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filenamePrefix) > 0)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((filename != 0)){
+
+IfStatement condition MemberReference member filenamePrefix_ter ^ ^ ^ ^ ^ 
+if(filenamePrefix){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename == 0) || (filename.indexOf(filenamePrefix) == 0))){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ 
+if(!filename.indexOf(filenamePrefix)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename != 0) || (filename.indexOf(filenamePrefix) == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename != 0) && (filename.indexOf(filenamePrefix) == 0))){
+
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filenamePrefix) <= 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((filename.indexOf(filenamePrefix) == 0) || filename.indexOf(filenamePrefix))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename == 0) && (filename.indexOf(filenamePrefix) == 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename.indexOf(filenamePrefix) == 0) || (filename != 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename.indexOf(filenamePrefix) == 0) || (filename == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename.indexOf(filenamePrefix) == 0) && (filename != 0))){
+
+StatementExpression expression Assignment expressionl MemberReference member filename_ter ^ ^ ^ ^ value MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+filename = filename.indexOf(filenamePrefix);
+
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf() == 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename == null) || (filename.indexOf(filenamePrefix) == 0))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((filename == 0)){
+return null;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(!filename.equals(filenamePrefix)){
+
+StatementExpression expression MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ 
+filename.indexOf(filenamePrefix);
+
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.toString(filenamePrefix) == 0)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((filename != 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filenamePrefix_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((filenamePrefix == 0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename != null) && (filename.indexOf(filenamePrefix) == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((filename.indexOf(filenamePrefix) == 0) && filename.indexOf(filenamePrefix))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename != null) || (filename.indexOf(filenamePrefix) == 0))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((filename.indexOf(filenamePrefix) != 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member filenamePrefix_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((filenamePrefix != 0)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.valueOf(filenamePrefix) == 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((filename.get(filenamePrefix) == 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filename_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((filename.indexOf(filenamePrefix) == 0) && (filename == 0))){
+
+IfStatement condition MethodInvocation qualifier filename_ter ^ ^ arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+if(filename.equals(filenamePrefix)){
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getString_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getString()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member toString_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.toString()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member toStringTree_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.toStringTree()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member toStringTreeImpl_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.toStringTreeImpl()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getSourceFileName()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getQualifiedName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MemberReference member scriptNodeCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument((scriptNodeCount == 1), ("null" + "null"));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier IR_ter ^ ^ member objectlit_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(IR.objectlit());
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(IR.name(moduleName));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member MODULE_SLASH_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(MODULE_SLASH);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member DEFAULT_FILENAME_PREFIX_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(DEFAULT_FILENAME_PREFIX);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member MODULE_NAME_SEPARATOR_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(MODULE_NAME_SEPARATOR);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member MODULE_NAME_PREFIX_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(MODULE_NAME_PREFIX);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(filenamePrefix);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(script.getSourceFileName());
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member objectlit_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.objectlit()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getName()));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ 
+guessCJSModuleName(normalizeSourceName(script.getSourceFileName()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member t_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(t);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getInput_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getInput()));
+
+StatementExpression expression MethodInvocation qualifier script_ter ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ selectors MethodInvocation arguments MemberReference member script_ter ^ ^ ^ ^ member copyInformationFromForTree_ter ^ ^ ^ ^ arguments MethodInvocation qualifier IR_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ member objectlit_ter ^ ^ ^ ^ member var_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ ^ 
+script.addChildToFront(IR.var(IR.name(moduleName), IR.objectlit()).copyInformationFromForTree(script));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = normalizeSourceName(script.getSourceFileName());
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member script_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(script);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member par2 ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer Cast type ReferenceType name String_ter ^ ^ ^ ^ expression MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+String moduleName = (String)guessCJSModuleName(normalizeSourceName(script.getSourceFileName()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member script_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation member getSourceFileName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(getSourceFileName());
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member objectlit_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(objectlit(script.getSourceFileName()));
+
+IfStatement condition MemberReference member reportDependencies_ter ^ ^ ^ ^ ^ 
+if(reportDependencies){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final String moduleName = guessCJSModuleName(normalizeSourceName(script.getSourceFileName()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member name_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.name()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getSourceFileName()), false);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member copyInformationFromForTree_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(copyInformationFromForTree(script.getSourceFileName()));
+
+StatementExpression expression MethodInvocation qualifier ci_ter ^ ^ arguments MemberReference member moduleName_ter ^ ^ ^ ^ member addProvide_ter ^ ^ ^ ^ ^ 
+ci.addProvide(moduleName);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.getSourceFileName()), true);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member name_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(name(script.getSourceFileName()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member visitScript_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(visitScript(script.getSourceFileName()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member MODULE_SLASH_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(MODULE_SLASH));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member DEFAULT_FILENAME_PREFIX_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(DEFAULT_FILENAME_PREFIX));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member MODULE_NAME_SEPARATOR_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(MODULE_NAME_SEPARATOR));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member MODULE_NAME_PREFIX_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(MODULE_NAME_PREFIX));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member filenamePrefix_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(filenamePrefix));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member var_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(var(script.getSourceFileName()));
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MemberReference member scriptNodeCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MemberReference member scriptNodeCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument((scriptNodeCount == 1), ("null" + "null"));
+Preconditions.checkArgument((scriptNodeCount == 1), ("null" + "null"));
+
+StatementExpression expression Assignment expressionl MemberReference member module_ter ^ ^ ^ ^ value MemberReference member m_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+module = m;
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member var_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(normalizeSourceName(script.var()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MemberReference member scriptNodeCount_ter ^ ^ ^ ^ member guessCJSModuleName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = guessCJSModuleName(scriptNodeCount);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member addProvide_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = addProvide(normalizeSourceName(script.getSourceFileName()));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name moduleName_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MethodInvocation qualifier script_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member normalizeSourceName_ter ^ ^ ^ ^ member addAndOverrideModule_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String moduleName = addAndOverrideModule(normalizeSourceName(script.getSourceFileName()));
+
+stderr: 

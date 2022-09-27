@@ -1,0 +1,111 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos >= decPos)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos <= decPos)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos > decPos)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos < decPos)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos == decPos)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member expPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos < expPos)){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos != decPos)){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expPos > -1)){
+
+StatementExpression expression Assignment expressionl MemberReference member mant_ter ^ ^ ^ ^ value MethodInvocation qualifier str_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ MemberReference member expPos_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mant = str.substring(0, expPos);
+
+StatementExpression expression Assignment expressionl MemberReference member mant_ter ^ ^ ^ ^ value MemberReference member str_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mant = str;
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str.indexOf("null") + str.indexOf("null"))){
+
+StatementExpression expression Assignment expressionl MemberReference member mant_ter ^ ^ ^ ^ value MethodInvocation qualifier str_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ MemberReference member decPos_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mant = str.substring(0, decPos);
+
+StatementExpression expression Assignment expressionl MemberReference member dec_ter ^ ^ ^ ^ value MethodInvocation qualifier str_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member decPos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dec = str.substring((decPos + 1));
+
+IfStatement condition MemberReference member expPos_ter ^ ^ ^ ^ ^ 
+if(expPos){
+
+StatementExpression expression Assignment expressionl MemberReference member dec_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dec = null;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member decPos_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((decPos > -1)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member dec_ter ^ ^ ^ ^ ^ ^ 
+if((expPos < dec)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member decPos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((decPos + 1)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member loc1 ^ ^ ^ ^ ^ ^ 
+if((expPos < )){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr MethodInvocation qualifier str_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str.indexOf("null") + str.indexOf("null"))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member expPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos < -expPos)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member expPos_ter ^ ^ ^ ^ ^ 
+if(!expPos){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member decPos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((decPos + 1)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expPos < decPos)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((expPos < (expPos < decPos))){
+
+condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos - decPos)){
+IfStatement condition MemberReference member expPos_ter ^ ^ ^ ^ ^ 
+if(expPos){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expPos > decPos)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos || decPos)){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expPos < 0)){
+
+
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member decPos_ter ^ ^ ^ ^ operandr MemberReference member expPos_ter ^ ^ ^ ^ ^ ^ ^ 
+if((decPos < expPos)){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expPos <= decPos)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos && decPos)){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member expPos_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expPos < expPos)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((expPos < decPos) && (expPos < 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((expPos < decPos) && (expPos > 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((expPos < decPos) || (expPos < 0))){
+
+condition BinaryOperation operator >>_ter ^ ^ operandl MemberReference member expPos_ter ^ ^ ^ ^ operandr MemberReference member decPos_ter ^ ^ ^ ^ ^ ^ 
+if((expPos >> decPos)){
+stderr: 

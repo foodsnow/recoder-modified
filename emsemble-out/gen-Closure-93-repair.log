@@ -1,0 +1,116 @@
+stdout: ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member lastIndexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.lastIndexOf(".");
+
+StatementExpression expression MethodInvocation qualifier firstNode_ter ^ ^ selectors MethodInvocation arguments MemberReference member replacementNode_ter ^ ^ ^ MemberReference member firstNode_ter ^ ^ ^ ^ member addChildBefore_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+firstNode.getParent().addChildBefore(replacementNode, firstNode);
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ selectors MethodInvocation arguments MemberReference member replacementNode_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ arguments MemberReference member minimumModule_ter ^ ^ ^ ^ member getNodeForCodeInsertion_ter ^ ^ ^ ^ ^ 
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member replace_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.replace(".");
+
+StatementExpression expression MethodInvocation qualifier explicitNode_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ ^ 
+explicitNode.detachFromParent();
+
+
+StatementExpression expression Assignment expressionl MemberReference member replacementNode_ter ^ ^ ^ ^ value MethodInvocation member createDeclarationNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+replacementNode = createDeclarationNode();
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ 
+compiler.reportCodeChange();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member parentName_ter ^ ^ ^ ^ member checkNotNull_ter ^ ^ ^ ^ ^ 
+Preconditions.checkNotNull(parentName);
+
+StatementExpression expression MethodInvocation qualifier parentName.replacementNode_ter ^ ^ selectors MethodInvocation arguments MemberReference member replacementNode_ter ^ ^ ^ MemberReference qualifier parentName_ter ^ ^ member replacementNode_ter ^ ^ ^ ^ member addChildAfter_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ 
+parentName.replacementNode.getParent().addChildAfter(replacementNode, parentName.replacementNode);
+
+StatementExpression expression MethodInvocation qualifier nameNode_ter ^ ^ arguments MemberReference member valueNode_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ ^ 
+nameNode.addChildToFront(valueNode);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member replaceChild_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.replaceChild(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.valueOf(".");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member candidateDefinition_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((candidateDefinition != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.add(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member createDeclarationNode_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.createDeclarationNode(".");
+
+ContinueStatement_ter ^ 
+continue;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier varNode_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = varNode.indexOf(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.addChildToBack(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.getName(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.substring(".");
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+long indexOfDot = namespace.indexOf(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.indexOf(".");
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member indexOfDot_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((indexOfDot == -1)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier valueNode_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = valueNode.indexOf(".");
+
+
+StatementExpression expression MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ 
+namespace.indexOf(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier indexOfDot_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = indexOfDot.indexOf(".");
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member firstModule_ter ^ ^ ^ ^ operandr MemberReference member minimumModule_ter ^ ^ ^ ^ ^ ^ ^ 
+if((firstModule == minimumModule)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier nameNode_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = nameNode.indexOf(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier assignNode_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = assignNode.indexOf(".");
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier namespace_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = namespace.indexOf(0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ ^ ^ ^ 
+int indexOfDot = ;
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member candidateDefinition_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member explicitNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((candidateDefinition != null) && (explicitNode != null))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member explicitNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((explicitNode != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier nameNode_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NAME_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nameNode.getType() == Token.NAME)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name indexOfDot_ter ^ ^ initializer MethodInvocation qualifier parentName_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ ^ ^ 
+int indexOfDot = parentName.indexOf(".");
+
+stderr: 

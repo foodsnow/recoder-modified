@@ -1,0 +1,79 @@
+stdout: ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ 
+return invocation.getMock();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member getArguments_ter ^ ^ ^ ^ ^ 
+return invocation.getArguments();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+return invocation.answer();
+ReturnStatement expression MemberReference member invocation_ter ^ ^ ^ ^ ^ 
+return invocation;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod("null");
+ReturnStatement expression This selectors MemberReference member invocation_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.invocation;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((invocation == null)){
+return null;}
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments MemberReference member invocation_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod(invocation);
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments This_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod(this);
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return invocation.add();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod(false);
+ReturnStatement expression Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Object)invocation.callRealMethod();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod(true);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return callRealMethod(invocation);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation != null)){
+
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod(null);
+ReturnStatement expression TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value null_ter ^ ^ ^ ^ if_false MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((invocation == null))?null:invocation.callRealMethod();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return invocation.debug();
+ReturnStatement expression Cast type ReferenceType name InvocationOnMock_ter ^ ^ ^ ^ expression MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (InvocationOnMock)invocation.callRealMethod();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return invocation.max();
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+return answer(invocation);
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod(0);
+ReturnStatement expression Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MemberReference member invocation_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Object)invocation;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (invocation.callRealMethod() + 0);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation == null)){
+
+ReturnStatement expression TernaryExpression condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value null_ter ^ ^ ^ ^ if_false MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((invocation != null))?null:invocation.callRealMethod();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return invocation.get();
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ arguments MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ 
+return invocation.callRealMethod(invocation.callRealMethod());
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((invocation != null)){
+return null;}
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return invocation.put();
+ReturnStatement expression This selectors MethodInvocation member callRealMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.callRealMethod();
+stderr: 

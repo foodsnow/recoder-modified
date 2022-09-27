@@ -1,0 +1,98 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int idx = 2;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ ^ ^ ^ 
+int idx = ;
+
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference member indices_ter ^ ^ ^ ^ ^ 
+if (true) { return indices; }
+
+StatementExpression expression Assignment expressionl MemberReference member count_ter ^ ^ ^ ^ value MemberReference member offset_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+count += offset;
+
+StatementExpression expression Assignment expressionl MemberReference member count_ter ^ ^ ^ ^ value MemberReference member idx_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+count += idx;
+
+StatementExpression expression MemberReference prefix_operators ++_ter ^ ^ member idx_ter ^ ^ ^ ^ ^ 
+++idx;
+
+
+StatementExpression expression Assignment expressionl MemberReference member count_ter ^ ^ ^ ^ value MemberReference member offset_ter ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+count -= offset;
+
+StatementExpression expression MemberReference prefix_operators --_ter ^ ^ member idx_ter ^ ^ ^ ^ ^ 
+--idx;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member indices_ter ^ ^ ^ ^ value MemberReference member idx_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+indices[i] = idx;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member last_ter ^ ^ ^ ^ ^ ^ member indices_ter ^ ^ ^ ^ value MemberReference member idx_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+indices[last] = idx;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int idx = -1;
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int idx = 1;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member last_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < last);i++) {
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+final int idx = 1;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index < 0)){
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+long idx = 1;
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member totalSize_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index >= totalSize)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ 
+if((count < index)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member totalSize_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((index < 0) || (index >= totalSize))){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr MemberReference member index_ter ^ ^ ^ ^ ^ ^ ^ 
+if((count <= index)){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member offset_ter ^ ^ ^ ^ ^ 
+offset++;
+
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member idx_ter ^ ^ ^ ^ ^ 
+idx++;
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member last_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i < last)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((count != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int[] idx = 1;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name idx_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int idx = -2;
+
+stderr: 

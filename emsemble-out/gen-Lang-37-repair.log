@@ -1,0 +1,121 @@
+stdout: StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 1, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, "null", joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, false, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1.length, array1.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array1_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array1, 0, joinedArray, 0, array1.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, joinedArray, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1.length, joinedArray);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value null_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, null, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference member type1_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, type1, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference member type1_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1.length, type1);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member joinedArray_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(joinedArray, 0, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, true, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member type1_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, type1, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array2.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member type1_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(type1, 0, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference member array1_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array1_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array1, 0, joinedArray, 0, array1.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference member array1_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1.length, array1);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference member array2_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array2, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference member array2_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1.length, array2);
+
+StatementExpression expression MethodInvocation qualifier array1_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+array1.arraycopy(array2, 0, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member array2_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, array2, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier Array_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+Array.arraycopy(array2, 0, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 2, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member array1_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, array1, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+System.newInstance(array2, 0, joinedArray, array1.length, array2.length);
+
+ReturnStatement expression MemberReference member joinedArray_ter ^ ^ ^ ^ ^ 
+if (true) { return joinedArray; }
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array1_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array1, 0, joinedArray, array1.length, array2.length);
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member array2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((array2 == null)){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array1.length, 0, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, array1.length, array1.length, array2.length);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member array1_ter ^ ^ ^ ^ member clone_ter ^ ^ ^ ^ ^ 
+if (true) { return clone(array1); }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member array2_ter ^ ^ ^ ^ member clone_ter ^ ^ ^ ^ ^ 
+if (true) { return clone(array2); }
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference member loc2 ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, , array2.length);
+
+
+StatementExpression expression MethodInvocation qualifier LOG_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference qualifier array2_ter ^ ^ member length_ter ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+LOG.arraycopy(array2, 0, joinedArray, array1.length, array2.length);
+
+StatementExpression expression MethodInvocation qualifier System_ter ^ ^ arguments MemberReference member array2_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member joinedArray_ter ^ ^ ^ MemberReference qualifier array1_ter ^ ^ member length_ter ^ ^ ^ MemberReference member loc2 ^ ^ ^ ^ member arraycopy_ter ^ ^ ^ ^ ^ 
+System.arraycopy(array2, 0, joinedArray, array1.length, );
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member array1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((array1 == null)){
+
+stderr: 

@@ -1,0 +1,105 @@
+stdout: IfStatement condition MethodInvocation qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ ^ 
+if(c.canInline()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ ^ 
+if(!c.canInline()){
+
+condition MethodInvocation qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ 
+if(c.canInline()){
+condition MethodInvocation qualifier c_ter ^ ^ member inlineVariable_ter ^ ^ ^ ^ 
+if(c.inlineVariable()){
+condition MethodInvocation qualifier c_ter ^ ^ member analyze_ter ^ ^ ^ ^ 
+if(c.analyze()){
+condition MethodInvocation qualifier c_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ 
+if(c.isEmpty()){
+condition MethodInvocation qualifier c_ter ^ ^ member enterScope_ter ^ ^ ^ ^ 
+if(c.enterScope()){
+condition MethodInvocation qualifier c_ter ^ ^ member isFunction_ter ^ ^ ^ ^ 
+if(c.isFunction()){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c != null)){
+continue;
+}
+
+condition MethodInvocation qualifier c_ter ^ ^ member inGlobalScope_ter ^ ^ ^ ^ 
+if(c.inGlobalScope()){
+condition MethodInvocation qualifier c_ter ^ ^ member getVar_ter ^ ^ ^ ^ 
+if(c.getVar()){
+
+
+condition MethodInvocation qualifier cfa_ter ^ ^ member canInline_ter ^ ^ ^ ^ 
+if(cfa.canInline()){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition MethodInvocation qualifier c_ter ^ ^ member newLinkedList_ter ^ ^ ^ ^ 
+if(c.newLinkedList()){
+IfStatement condition MemberReference member c_ter ^ ^ ^ ^ ^ 
+if(c){
+
+StatementExpression expression MethodInvocation qualifier inlinedNewDependencies_ter ^ ^ arguments MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier c_ter ^ ^ member varName_ter ^ ^ ^ ^ member getVar_ter ^ ^ ^ ^ member getScope_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+inlinedNewDependencies.add(t.getScope().getVar(c.varName));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation member getVarCount_ter ^ ^ ^ ^ member getScope_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c != t.getScope().getVarCount())){
+continue;
+}
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member c_ter ^ ^ ^ ^ ^ 
+if(!c){
+
+condition MethodInvocation qualifier t_ter ^ ^ member canInline_ter ^ ^ ^ ^ 
+if(t.canInline()){
+IfStatement condition MethodInvocation member canInline_ter ^ ^ ^ ^ ^ 
+if(canInline()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier c_ter ^ ^ arguments MemberReference qualifier c_ter ^ ^ member varName_ter ^ ^ ^ ^ member canInline_ter ^ ^ ^ ^ ^ 
+if(!c.canInline(c.varName)){
+
+IfStatement condition MethodInvocation qualifier c_ter ^ ^ arguments MemberReference qualifier c_ter ^ ^ member varName_ter ^ ^ ^ ^ member canInline_ter ^ ^ ^ ^ ^ 
+if(c.canInline(c.varName)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((c != null) && c.canInline())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier c.defMetadata.depends_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(!c.defMetadata.depends.isEmpty()){
+continue;
+}
+
+StatementExpression expression MethodInvocation qualifier c_ter ^ ^ member inlineVariable_ter ^ ^ ^ ^ ^ 
+c.inlineVariable();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference qualifier LiveVariablesAnalysis_ter ^ ^ member MAX_VARIABLES_TO_ANALYZE_ter ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation member getVarCount_ter ^ ^ ^ ^ member getScope_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((LiveVariablesAnalysis.MAX_VARIABLES_TO_ANALYZE < t.getScope().getVarCount()) && c.canInline())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation member getVarCount_ter ^ ^ ^ ^ member getScope_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c.canInline() && t.getScope().getVarCount())){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference qualifier LiveVariablesAnalysis_ter ^ ^ member MAX_VARIABLES_TO_ANALYZE_ter ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ selectors MethodInvocation member getVarCount_ter ^ ^ ^ ^ member getScope_ter ^ ^ ^ ^ ^ ^ ^ 
+if((LiveVariablesAnalysis.MAX_VARIABLES_TO_ANALYZE < t.getScope().getVarCount())){
+continue;
+}
+
+IfStatement condition MethodInvocation qualifier t_ter ^ ^ member inGlobalScope_ter ^ ^ ^ ^ ^ 
+if(t.inGlobalScope()){
+continue;
+}
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr MethodInvocation qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c && c.canInline())){
+
+IfStatement condition MethodInvocation qualifier Lists_ter ^ ^ member newLinkedList_ter ^ ^ ^ ^ ^ 
+if(Lists.newLinkedList()){
+
+condition MethodInvocation qualifier par1 ^ ^ member canInline_ter ^ ^ ^ ^ 
+if(.canInline()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member canInline_ter ^ ^ ^ ^ ^ 
+if(!canInline()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference qualifier LiveVariablesAnalysis_ter ^ ^ member MAX_VARIABLES_TO_ANALYZE_ter ^ ^ ^ ^ operandr MethodInvocation qualifier c_ter ^ ^ member canInline_ter ^ ^ ^ ^ ^ ^ ^ 
+if((LiveVariablesAnalysis.MAX_VARIABLES_TO_ANALYZE && c.canInline())){
+
+stderr: 

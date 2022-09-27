@@ -1,0 +1,309 @@
+stdout: IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((hoursOffset == 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minutesOffset == 0)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset >= 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) || (minutesOffset == 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset <= 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset == 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset > 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset != 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (hoursOffset == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (minutesOffset == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (hoursOffset == minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && ((hoursOffset == 0) && (minutesOffset == 0)))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset < 0))){
+IfStatement condition MethodInvocation member isFixed_ter ^ ^ ^ ^ ^ 
+if(isFixed()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (hoursOffset == 0)) && (minutesOffset == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (minutesOffset == minutesOffset))){
+
+IfStatement condition MemberReference member hoursOffset_ter ^ ^ ^ ^ ^ 
+if(hoursOffset){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (hoursOffset != 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && minutesOffset)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && ("null" + minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset == minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (hoursOffset != minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (hoursOffset == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (hoursOffset == minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr MemberReference member hoursOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (hoursOffset == hoursOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member hoursOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && hoursOffset)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member hoursInMinutes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((hoursInMinutes < 0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member hoursInMinutes_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (hoursInMinutes < 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((hoursOffset && (minutesOffset == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && ("null" + minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 59_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (minutesOffset > 59))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (hoursOffset == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset != 0))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((minutesOffset == 0) && (minutesOffset == 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation member isFixed_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && isFixed())){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 59_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minutesOffset > 59)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 59_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && ((minutesOffset < 0) || (minutesOffset > 59)))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (minutesOffset == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (minutesOffset != 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (minutesOffset < 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == 0)) && (minutesOffset != minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (hoursOffset < minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr MemberReference member minutesOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset < minutesOffset))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset == null)) && (minutesOffset == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((hoursOffset == 0) && (minutesOffset != null)) && (minutesOffset == 0))){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((minutesOffset < 0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member hoursOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member minutesOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((hoursOffset == 0) && (minutesOffset < 0))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member hoursOffset_ter ^ ^ ^ ^ ^ 
+if(!hoursOffset){
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final String id = printOffset(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, false);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member millisOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((millisOffset == null)){
+return null;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, true);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ 
+printOffset(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member forOffsetMillis_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = forOffsetMillis(millisOffset);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member millisOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((millisOffset != null)){
+continue;
+}
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member id_ter ^ ^ ^ MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(id, millisOffset);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member millisOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((millisOffset == 0)){
+return null;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member millisOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((millisOffset != null)){
+return null;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, 0);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member millisOffset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((millisOffset == null)){
+continue;
+}
+
+IfStatement condition MethodInvocation member isFixed_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(isFixed()){
+return null;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, "null");
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, millisOffset);
+
+IfStatement condition MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member isFixed_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(isFixed(millisOffset)){
+return null;}
+StatementExpression expression SuperMethodInvocation member forOffsetMillis_ter ^ ^ ^ ^ ^ 
+super.forOffsetMillis();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, 1);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(false);
+
+StatementExpression expression Assignment expressionl MemberReference member id_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+id = printOffset(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = debug(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+String<?> id = printOffset(millisOffset);
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isFixed_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(!isFixed()){
+return null;}
+LocalVariableDeclaration type ReferenceType name DateTimeZone_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+DateTimeZone id = printOffset(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(true);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ arguments MemberReference member millisOffset_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg millisOffset
+arg millisOffset
+String<millisOffset> id = printOffset(millisOffset);
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member millisOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((millisOffset > 0)){
+return null;}
+IfStatement condition MemberReference member millisOffset_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(millisOffset){
+return null;}
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member millisOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((millisOffset < 0)){
+return null;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer Cast type ReferenceType name DateTimeZone_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+String id = (DateTimeZone)printOffset(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer Cast type ReferenceType name String_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+String id = (String)printOffset(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ ^ member fixedOffsetZone_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = fixedOffsetZone(millisOffset);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name id_ter ^ ^ initializer MethodInvocation arguments MemberReference member millisOffset_ter ^ ^ ^ This_ter ^ ^ member printOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String id = printOffset(millisOffset, this);
+
+stderr: 

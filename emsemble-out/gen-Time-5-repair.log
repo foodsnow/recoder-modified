@@ -1,0 +1,137 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months / 1));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months / 2));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months / 12));
+
+StatementExpression expression MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ ^ 
+FieldUtils.safeAdd(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months - 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member years_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (years / 12));
+
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member months_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(months, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, years);
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member withYears_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.withYears(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member withMonths_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.withMonths(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd((months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months + 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (result / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MemberReference member years_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = years;
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member millis_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (millis / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier DateTimeUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = DateTimeUtils.safeAdd(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = safeAdd(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member par1 ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, ( / 12));
+
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator *_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months * 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member normalizedStandard_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.normalizedStandard(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months / 0));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier ISOChronology_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = ISOChronology.safeAdd(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years);
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member getWeeks_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.getWeeks(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member getHours_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.getHours(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member result_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(result, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member getMinutes_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.getMinutes(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ MemberReference member months_ter ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, months);
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member months_ter ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(months);
+
+ReturnStatement expression MemberReference member result_ter ^ ^ ^ ^ ^ 
+if (true) { return result; }
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.debug(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator <=_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months <= 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ MemberReference member years_ter ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd((months / 12), years);
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator %_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months % 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, );
+
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator >>_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months >> 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member getDays_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.getDays(years, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member type_ter ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(type);
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier years_ter ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = years.safeAdd();
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(, (months / 12));
+
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd((months / 12), (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member years_ter ^ ^ ^ BinaryOperation operator !=_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(years, (months != 0));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value MethodInvocation qualifier FieldUtils_ter ^ ^ arguments MemberReference member millis_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ member safeAdd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = FieldUtils.safeAdd(millis, (months / 12));
+
+StatementExpression expression Assignment expressionl MemberReference member years_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member months_ter ^ ^ ^ ^ operandr Literal value 12_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+years = (months / 12);
+
+stderr: 

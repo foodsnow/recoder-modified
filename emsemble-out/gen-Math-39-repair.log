@@ -1,0 +1,85 @@
+stdout: control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k <= stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k >= stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < k);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = -1;(k < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 2;(k < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < stages);k) {
+control ForControl init VariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(double k = 1;(k < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(long k = 1;(k < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k - stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k > stages);++k) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name l_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member l_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member l_ter ^ ^ ^ ^ ^ ^ 
+for(int l = 1;(l < k);++l) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 2_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = -2;(k < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >>_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k >> stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k == stages);++k) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k == null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member stages_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(stages < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member j_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < j);++k) {
+control ForControl_ter ^ ^ 
+(;;)
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference qualifier y0_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member j_ter ^ ^ ^ ^ ^ ^ 
+for(int j = 0;(j < y0.length);++j) {
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k > 0)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member yDotK_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < yDotK);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference member stages_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < stages);stages) {
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k < 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < (k < stages));++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator /_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k / stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stepStart_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < stepStart);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member a_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < a);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(j < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k + stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k >>> stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stepSize_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < stepSize);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(k < -k);++k) {
+IfStatement condition MemberReference member k_ter ^ ^ ^ ^ ^ 
+if(k){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name k_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member yDotK_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int k = 1;(yDotK < stages);++k) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name l_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr MemberReference member stages_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ ^ 
+for(int l = 1;(k < stages);++k) {
+stderr: 

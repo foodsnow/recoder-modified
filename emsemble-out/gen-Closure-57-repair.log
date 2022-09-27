@@ -1,0 +1,475 @@
+stdout: condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((target != null)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((target == null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member qualifiedName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((qualifiedName != null)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier callee_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GETPROP_ter ^ ^ ^ ^ ^ ^ ^ 
+if((callee.getType() == Token.GETPROP)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((target != null)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member callee_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((callee != null)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member callee_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((callee != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target != null))){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(target.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(target.isFromExterns()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(target.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(target.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+if(target.hasSideEffects()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(target.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(target.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(target.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(target.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(target.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(target.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(target.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(target.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(target.isLocalResultCall()){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(target.isQuotedString()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.hasChildren())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isFromExterns())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.hasOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.hasMoreThanOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.hasSideEffects())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isUnscopedQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isVarArgs())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isOptionalArg())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isSyntheticBlock())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.wasEmptyNode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isOnlyModifiesThisCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isNoSideEffectsCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isLocalResultCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isQuotedString())){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((parent != null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member className_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((className != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.hasChildren())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isFromExterns())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.hasOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.hasMoreThanOneChild())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.hasSideEffects())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isUnscopedQualifiedName())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isVarArgs())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isOptionalArg())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isSyntheticBlock())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.wasEmptyNode())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isOnlyModifiesThisCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isNoSideEffectsCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isLocalResultCall())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isQuotedString())){
+
+StatementExpression expression MethodInvocation qualifier target_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+target.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier target_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+target.setQuotedString();
+
+IfStatement condition MemberReference member target_ter ^ ^ ^ ^ ^ 
+if(target){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ 
+if((target != "null")){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((target > null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier target_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && target.isEmpty())){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((target >= null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target && (target != null))){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(target.isEmpty()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(!target.hasChildren()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(!target.isFromExterns()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(!target.hasOneChild()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(!target.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+if(!target.hasSideEffects()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(!target.isQualifiedName()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(!target.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(!target.isVarArgs()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(!target.isOptionalArg()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(!target.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(!target.wasEmptyNode()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(!target.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(!target.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(!target.isLocalResultCall()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(!target.isQuotedString()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member callee_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (callee != null))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member node_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((node != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member callee_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((callee != null) && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member qualifiedName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (qualifiedName != null))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((target == null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasChildren() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isFromExterns() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasOneChild() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasMoreThanOneChild() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasSideEffects() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isQualifiedName() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isUnscopedQualifiedName() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isVarArgs() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isOptionalArg() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isSyntheticBlock() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.wasEmptyNode() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isOnlyModifiesThisCall() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isNoSideEffectsCall() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isLocalResultCall() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isQuotedString() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isEmpty())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(!target.isEmpty()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member target_ter ^ ^ ^ ^ ^ 
+if(!target){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member getString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.getString() != null))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member callee_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((callee != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier callee_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GETPROP_ter ^ ^ ^ ^ ^ ^ ^ 
+if((callee.getType() == Token.GETPROP)){
+
+StatementExpression expression Assignment expressionl MemberReference member className_ter ^ ^ ^ ^ value MethodInvocation qualifier target_ter ^ ^ member getString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+className = target.getString();
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((target && null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc4 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.hasChildren() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isFromExterns() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.hasOneChild() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.hasMoreThanOneChild() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.hasSideEffects() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isQualifiedName() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isUnscopedQualifiedName() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isVarArgs() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isOptionalArg() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isSyntheticBlock() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.wasEmptyNode() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isOnlyModifiesThisCall() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isNoSideEffectsCall() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isLocalResultCall() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((target.isQuotedString() && (target != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member getString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.getString() == null))){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(target.hasChildren(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(target.isFromExterns(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(target.hasOneChild(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(target.hasMoreThanOneChild(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+if(target.hasSideEffects(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(target.isQualifiedName(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(target.isUnscopedQualifiedName(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(target.isVarArgs(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(target.isOptionalArg(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(target.isSyntheticBlock(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(target.wasEmptyNode(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(target.isOnlyModifiesThisCall(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(target.isNoSideEffectsCall(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(target.isLocalResultCall(target)){
+
+IfStatement condition MethodInvocation qualifier target_ter ^ ^ arguments MemberReference member target_ter ^ ^ ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(target.isQuotedString(target)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (parent != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier callee_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GETPROP_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (callee.getType() == Token.GETPROP))){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((target <= null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member functionName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((functionName != null)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member className_ter ^ ^ ^ ^ ^ 
+if((target == null)){
+return className;}
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasChildren() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isFromExterns() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasOneChild() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasMoreThanOneChild() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.hasSideEffects() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isQualifiedName() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isUnscopedQualifiedName() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isVarArgs() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isOptionalArg() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isSyntheticBlock() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.wasEmptyNode() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isOnlyModifiesThisCall() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isNoSideEffectsCall() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isLocalResultCall() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target.isQuotedString() == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr MemberReference member parent_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && (target != parent))){
+
+stderr: 

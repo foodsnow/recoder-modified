@@ -1,0 +1,82 @@
+stdout: ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member getName_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.getName(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member containsIgnoreCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.containsIgnoreCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str, str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str, searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toString_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toString(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member get_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.get(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), searchStr);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), searchStr);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member lastIndexOf_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.lastIndexOf(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member valueOf_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.valueOf(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), searchStr.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), searchStr.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), str.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), str.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), searchStr.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), searchStr.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), str.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member searchStr_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr, searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member searchStr_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr, str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), str.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), searchStr.toUpperCase(), searchStr);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str.toUpperCase(), str.toUpperCase(), searchStr);
+ReturnStatement expression MethodInvocation arguments MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), searchStr.toUpperCase(), searchStr);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(searchStr.toUpperCase(), str.toUpperCase(), searchStr);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier loc0 ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(.toUpperCase(), searchStr.toUpperCase());
+
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str, str.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str, searchStr.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str, str.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str, searchStr.toUpperCase(), str.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier str_ter ^ ^ member toUpperCase_ter ^ ^ ^ MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ member containsIgnoreCase_ter ^ ^ ^ ^ ^ 
+return containsIgnoreCase(str.toUpperCase(), searchStr.toUpperCase());
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member searchStr_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(str, searchStr);
+ReturnStatement expression MethodInvocation qualifier searchStr_ter ^ ^ member toUpperCase_ter ^ ^ ^ ^ ^ 
+return searchStr.toUpperCase();
+stderr: 

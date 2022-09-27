@@ -1,0 +1,244 @@
+stdout: control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item <= itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item >= itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(itemCount < itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item > itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member item_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < item);item++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount != null)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr ReferenceType name IntervalXYDataset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((dataset instanceof IntervalXYDataset)){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item - itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item == itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < itemCount);itemCount) {
+                for (int item = 0; item < itemCount; item++) {if(0!=1)break;
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;( < itemCount);item++) {
+
+StatementExpression expression Assignment expressionl MemberReference member minimum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member minimum_ter ^ ^ ^ MemberReference member lvalue_ter ^ ^ ^ ^ member min_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minimum = Math.min(minimum, lvalue);
+
+StatementExpression expression Assignment expressionl MemberReference member uvalue_ter ^ ^ ^ ^ value MethodInvocation qualifier intervalXYData_ter ^ ^ arguments MemberReference member series_ter ^ ^ ^ MemberReference member item_ter ^ ^ ^ ^ member getEndXValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+uvalue = intervalXYData.getEndXValue(series, item);
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member loc3 ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < );item++) {
+
+StatementExpression expression Assignment expressionl MemberReference member maximum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member maximum_ter ^ ^ ^ MemberReference member uvalue_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+maximum = Math.max(maximum, uvalue);
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name series_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member series_ter ^ ^ ^ ^ operandr MemberReference member seriesCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member series_ter ^ ^ ^ ^ ^ ^ 
+for(int series = 0;(series < seriesCount);series++) {
+StatementExpression expression Assignment expressionl MemberReference member lvalue_ter ^ ^ ^ ^ value MethodInvocation qualifier intervalXYData_ter ^ ^ arguments MemberReference member series_ter ^ ^ ^ MemberReference member item_ter ^ ^ ^ ^ member getStartXValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lvalue = intervalXYData.getStartXValue(series, item);
+
+ReturnStatement expression ClassCreator type ReferenceType name Range_ter ^ ^ ^ ^ arguments MemberReference member minimum_ter ^ ^ ^ MemberReference member maximum_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new Range(minimum, maximum); }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member series_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(series < itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < itemCount);item) {
+StatementExpression expression Assignment expressionl MemberReference member lvalue_ter ^ ^ ^ ^ value MethodInvocation qualifier dataset_ter ^ ^ arguments MemberReference member series_ter ^ ^ ^ MemberReference member item_ter ^ ^ ^ ^ member getXValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lvalue = dataset.getXValue(series, item);
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member series_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < series);item++) {
+StatementExpression expression Assignment expressionl MemberReference member uvalue_ter ^ ^ ^ ^ value MemberReference member lvalue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+uvalue = lvalue;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount == null)){
+
+BreakStatement goto outer_ter ^ ^ ^ 
+1 BreakStatement
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr ReferenceType name IntervalXYDataset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((itemCount != (dataset instanceof IntervalXYDataset))){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member uvalue_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(uvalue < itemCount);item++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr MemberReference member seriesCount_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount != seriesCount)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member uvalue_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < uvalue);item++) {
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount != 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr ReferenceType name IntervalXYDataset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((item != (dataset instanceof IntervalXYDataset))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item != 0)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member seriesCount_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item != seriesCount)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((itemCount == null)){
+continue;
+}
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 1;(item < itemCount);item++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount != itemCount)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+
+control ForControl init VariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(double item = 0;(item < itemCount);item++) {
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member itemCount_ter ^ ^ ^ ^ ^ 
+itemCount++;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member uvalue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((uvalue != null)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item > 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr MemberReference member maximum_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount != maximum)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item <= itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item >= itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item > itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(itemCount < itemCount);item++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name series_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member series_ter ^ ^ ^ ^ operandr MemberReference member seriesCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member series_ter ^ ^ ^ ^ ^ ^ 
+for(int series = 0;(series < seriesCount);series++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item == itemCount);item++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member series_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(series < itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member ixyd_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(ixyd < itemCount);item++) {
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr ReferenceType name IntervalXYDataset_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((dataset instanceof IntervalXYDataset)){
+
+                for (int item = 0; item < itemCount; item++) {if(0!=1)break;
+StatementExpression expression Assignment expressionl MemberReference member minimum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member minimum_ter ^ ^ ^ MemberReference member lvalue_ter ^ ^ ^ ^ member min_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+minimum = Math.min(minimum, lvalue);
+
+StatementExpression expression Assignment expressionl MemberReference member maximum_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member maximum_ter ^ ^ ^ MemberReference member uvalue_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+maximum = Math.max(maximum, uvalue);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item != itemCount);item++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount == null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member maximum_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(maximum < itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member minimum_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(minimum < itemCount);item++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ixyd_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ixyd != null)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item - itemCount);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc5 ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;( < itemCount);item++) {
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item == null)){
+
+BreakStatement goto outer_ter ^ ^ ^ 
+1 BreakStatement
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member item_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < item);item++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item != 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member series_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((series != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount != 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((itemCount == null)){
+continue;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member itemCount_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((itemCount == 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member series_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < series);item++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member ixyd_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < ixyd);item++) {
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item == 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >>_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item >> itemCount);item++) {
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member itemCount_ter ^ ^ ^ ^ ^ 
+itemCount++;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((item > 0)){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < 0);item++) {
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc5 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name item_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member item_ter ^ ^ ^ ^ ^ ^ 
+for(int item = 0;(item < (item < itemCount));item++) {
+stderr: 

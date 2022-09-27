@@ -1,0 +1,128 @@
+stdout: ReturnStatement expression BinaryOperation operator >=_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len >= 0);
+ReturnStatement expression BinaryOperation operator <=_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len <= 0);
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len > 0);
+ReturnStatement expression BinaryOperation operator <_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len < 0);
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (index > 0);
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (c > 0);
+ReturnStatement expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len == 0);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len != 0);
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return ( > 0);
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len - 0);
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member loc4 ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return ( > 0);
+
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member par1 ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return ( > 0);
+
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (s > 0);
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (c > "null");
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression BinaryOperation operator <_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (c < "null");
+ReturnStatement expression BinaryOperation operator >>_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len >> 0);
+StatementExpression expression MethodInvocation member tagAsStrict_ter ^ ^ ^ ^ ^ 
+tagAsStrict();
+
+ReturnStatement expression BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len >>> 0);
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+for(int index = 0;(index < len);index++) {
+
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c > "null"); }
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression BinaryOperation operator <_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return (c < "null"); }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name index_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+for(int index = 0;(index < len);index++) {return false;
+
+ReturnStatement expression MemberReference member index_ter ^ ^ ^ ^ ^ 
+if (true) { return index; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((index == null)){
+return false;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len == null)){
+return false;}
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ 
+index++;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len + 0);
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member c_ter ^ ^ ^ ^ ^ 
+c++;
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((c < "null")){
+return false;}
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member len_ter ^ ^ ^ ^ ^ 
+len++;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((c > "null")){
+return false;}
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return ((len > 0) || (c > "null"));
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+return ((c < "null") || (len > 0));
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (length > 0);
+ContinueStatement_ter ^ 
+continue;
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MemberReference member c_ter ^ ^ ^ ^ ^ 
+if (true) { return c; }
+
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member par2 ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return ( > 0);
+
+ReturnStatement expression BinaryOperation operator >_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (len > 1);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((index != null)){
+return false;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((len != null)){
+return false;}
+
+stderr: 

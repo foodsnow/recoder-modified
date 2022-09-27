@@ -1,0 +1,332 @@
+stdout: IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((MockAwareVerificationMode)verificationMode == invocation.getMock())){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((verificationMode instanceof MockAwareVerificationMode)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getArguments_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getArguments()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getRawArguments_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getRawArguments()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member callRealMethod_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.callRealMethod()))){
+IfStatement condition MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ 
+if(invocation.getMock()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getArgumentMatcherStorage_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getArgumentMatcherStorage()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getName()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode >= invocation.getMock()))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) || ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier mockSettings_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == mockSettings.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getDefaultAnswer_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getDefaultAnswer()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode != invocation.getMock()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && (verificationMode instanceof MockAwareVerificationMode))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocationContainerImpl_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocationContainerImpl.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode == MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode > invocation.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode <= invocation.getMock()))){
+IfStatement condition MethodInvocation qualifier mockingProgress_ter ^ ^ member pullVerificationMode_ter ^ ^ ^ ^ ^ 
+if(mockingProgress.pullVerificationMode()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier mockingProgress_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == mockingProgress.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member pullVerificationMode_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.pullVerificationMode()))){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((verificationMode != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && (verificationMode instanceof MockAwareVerificationMode))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if(((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode >= MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && (verificationMode instanceof MockAwareVerificationMode)) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier data_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == data.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode != MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode < invocation.getMock()))){
+IfStatement condition MemberReference member verificationMode_ter ^ ^ ^ ^ ^ 
+if(verificationMode){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && (((MockAwareVerificationMode)verificationMode == invocation.getMock()) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode > MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+IfStatement condition MethodInvocation qualifier invocationContainerImpl_ter ^ ^ member hasAnswersForStubbing_ter ^ ^ ^ ^ ^ 
+if(invocationContainerImpl.hasAnswersForStubbing()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && (MockAwareVerificationMode)verificationMode)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier verificationMode_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == verificationMode.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocationMatcher_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocationMatcher.getMock()))){
+IfStatement condition MethodInvocation qualifier mockingProgress_ter ^ ^ member getArgumentMatcherStorage_ter ^ ^ ^ ^ ^ 
+if(mockingProgress.getArgumentMatcherStorage()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member stubbedInvocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((stubbedInvocation != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if(((((MockAwareVerificationMode)verificationMode == invocation.getMock()) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && (((MockAwareVerificationMode)verificationMode == invocation.getMock()) || ((MockAwareVerificationMode)verificationMode == invocation.getMock())))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member loc0 ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode) == invocation.getMock()))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member invocationMatcher_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)invocationMatcher == invocation.getMock()))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && (verificationMode != null))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode <= MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+StatementExpression expression MethodInvocation qualifier invocationContainerImpl_ter ^ ^ arguments MemberReference member invocationMatcher_ter ^ ^ ^ ^ member setMethodForStubbing_ter ^ ^ ^ ^ ^ 
+invocationContainerImpl.setMethodForStubbing(invocationMatcher);
+
+StatementExpression expression MethodInvocation qualifier verificationMode_ter ^ ^ arguments MemberReference member data_ter ^ ^ ^ ^ member verify_ter ^ ^ ^ ^ ^ 
+verificationMode.verify(data);
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member isVerified_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && invocation.isVerified())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && invocation.isVoid())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member returnsPrimitive_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && invocation.returnsPrimitive())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member isDeclaredOnInterface_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((((verificationMode instanceof MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock())) && invocation.isDeclaredOnInterface())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member verificationMode_ter ^ ^ ^ ^ operandr ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl Cast type ReferenceType name MockAwareVerificationMode_ter ^ ^ ^ ^ expression MemberReference member verificationMode_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((verificationMode < MockAwareVerificationMode) && ((MockAwareVerificationMode)verificationMode == invocation.getMock()))){
+stderr: 

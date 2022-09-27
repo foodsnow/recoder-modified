@@ -1,0 +1,462 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row >= 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row == 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row > 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row <= 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row < 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row != 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member column_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((column >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member rowData_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((rowData >= 0)){
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((row >= 1)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member rowKey_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + rowKey)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + columnKey)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member columnKey_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((columnKey >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member rowKey_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((rowKey >= 0)){
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member loc3 ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(( >= 0)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((rows >= 0)){
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row && 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member column_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (column < 0))){
+
+ReturnStatement expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member getObject_ter ^ ^ ^ ^ ^ 
+if (true) { return rowData.getObject(columnKey); }
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ 
+if((row >= 2)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (("null" + columnKey) + "null"))){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member rowKeys_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((rowKeys >= 0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member columnKeys_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((columnKeys >= 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && ("null" + columnKey))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((row || 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member rowKey_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (("null" + rowKey) + "null"))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member rowKey_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && ("null" + rowKey))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member column_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || (column < 0))){
+
+IfStatement condition MemberReference member row_ter ^ ^ ^ ^ ^ 
+if(row){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (row < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || (("null" + columnKey) + "null"))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || ("null" + columnKey))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (row >= 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member rowKey_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || (("null" + rowKey) + "null"))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member rowKey_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || ("null" + rowKey))){
+
+IfStatement condition MethodInvocation qualifier row_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(row.isEmpty()){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member rowKey_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((("null" + rowKey) + "null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member columnKey_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (columnKey == null))){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((("null" + columnKey) + "null")){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || (row < 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (row == 0))){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MemberReference member column_ter ^ ^ ^ ^ ^ 
+if (true) { return column; }
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || (row >= 0))){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member column_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((column < 0)){
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+rowData.clear();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member columnKey_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) || (columnKey == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rowKey_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (rowKey == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member row_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((row >= 0) && (row != 0))){
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+if (true) { return "null"; }
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member rowKey_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + rowKey)){
+
+BreakStatement_ter ^ 
+break;
+
+condition MemberReference member rowIndex_ter ^ ^ ^ ^ 
+if(rowIndex){
+condition MemberReference member allNull_ter ^ ^ ^ ^ 
+if(allNull){
+StatementExpression expression This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation arguments MemberReference member rowIndex_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ ^ ^ 
+this.rows.remove(rowIndex);
+
+StatementExpression expression Assignment expressionl MemberReference member allNull_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+allNull = false;
+
+condition MemberReference prefix_operators !_ter ^ ^ member allNull_ter ^ ^ ^ ^ 
+if(!allNull){
+StatementExpression expression This selectors MemberReference member rowKeys_ter ^ ^ ^ MethodInvocation arguments MemberReference member rowIndex_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ ^ ^ 
+this.rowKeys.remove(rowIndex);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition MethodInvocation member allNull_ter ^ ^ ^ ^ ^ 
+if(allNull()){
+
+condition MemberReference member row_ter ^ ^ ^ ^ 
+if(row){
+
+
+IfStatement condition MemberReference member allNull_ter ^ ^ ^ ^ ^ 
+if(allNull){
+
+condition MemberReference member rowKey_ter ^ ^ ^ ^ 
+if(rowKey){
+StatementExpression expression MethodInvocation arguments Literal value null_ter ^ ^ ^ MemberReference member rowKey_ter ^ ^ ^ MemberReference member columnKey_ter ^ ^ ^ ^ member setObject_ter ^ ^ ^ ^ ^ 
+setObject(null, rowKey, columnKey);
+
+condition MemberReference member columnKey_ter ^ ^ ^ ^ 
+if(columnKey){
+condition MemberReference member rowKeys_ter ^ ^ ^ ^ 
+if(rowKeys){
+condition MemberReference member rows_ter ^ ^ ^ ^ 
+if(rows){
+condition MemberReference member item_ter ^ ^ ^ ^ 
+if(item){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member allNull_ter ^ ^ ^ ^ ^ 
+if(!allNull){
+
+StatementExpression expression Assignment expressionl MemberReference member allNull_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+allNull = null;
+
+StatementExpression expression Assignment expressionl MemberReference member allNull_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+allNull = false;
+break;
+
+StatementExpression expression MethodInvocation qualifier row_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+row.clear();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member allNull_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((allNull != null)){
+
+StatementExpression expression This selectors MemberReference member rows_ter ^ ^ ^ MethodInvocation arguments MemberReference member rowIndex_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+this.rows.remove(rowIndex);
+break;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member allNull_ter ^ ^ ^ ^ operandr MemberReference member allNull_ter ^ ^ ^ ^ ^ ^ ^ 
+if((allNull && allNull)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member allNull_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr MemberReference member itemCount_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((allNull && (item < itemCount))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member allNull_ter ^ ^ ^ ^ operandr MemberReference member allNull_ter ^ ^ ^ ^ ^ ^ ^ 
+if((allNull || allNull)){
+
+IfStatement condition MethodInvocation qualifier allNull_ter ^ ^ member allNull_ter ^ ^ ^ ^ ^ 
+if(allNull.allNull()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member allNull_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier row_ter ^ ^ arguments MemberReference member item_ter ^ ^ ^ ^ member getObject_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((allNull && (row.getObject(item) != null))){
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+IfStatement condition MethodInvocation qualifier allNull_ter ^ ^ member getItemCount_ter ^ ^ ^ ^ ^ 
+if(allNull.getItemCount()){
+
+StatementExpression expression Assignment expressionl MemberReference member allNull_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+allNull = true;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rowKeys_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rowKeys != null)){
+
+IfStatement condition MethodInvocation qualifier allNull_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(allNull.isEmpty()){
+
+StatementExpression expression This selectors MemberReference member rowKeys_ter ^ ^ ^ MethodInvocation arguments MemberReference member rowIndex_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+this.rowKeys.remove(rowIndex);
+break;
+
+IfStatement condition This selectors MemberReference member allNull_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.allNull){
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index);
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ ^ member removeColumn_ter ^ ^ ^ ^ ^ 
+removeColumn(index);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index != null)){
+
+StatementExpression expression MethodInvocation member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index == null)){
+
+ReturnStatement expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+return removeRow(index);
+StatementExpression expression Assignment expressionl MemberReference member index_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member index_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+index = removeRow(index);
+
+StatementExpression expression MethodInvocation arguments MemberReference member rowKey_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(rowKey);
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index, false);
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index > 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index == 0)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index, true);
+
+IfStatement condition MemberReference member rowKey_ter ^ ^ ^ ^ ^ 
+if(rowKey){
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index, 0);
+
+IfStatement condition MemberReference member index_ter ^ ^ ^ ^ ^ 
+if(index){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member rowKey_ter ^ ^ ^ ^ ^ 
+if(!rowKey){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index != 0)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index, null);
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member index_ter ^ ^ ^ ^ ^ 
+index++;
+
+StatementExpression expression MethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow();
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index < 0)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member index_ter ^ ^ ^ ^ ^ 
+if(!index){
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index >= 0)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ MemberReference member rowKey_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index, rowKey);
+
+StatementExpression expression MethodInvocation qualifier index_ter ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+index.removeRow();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index, 1);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((index == null)){
+return;
+}
+StatementExpression expression MethodInvocation arguments MemberReference member index_ter ^ ^ ^ MemberReference member index_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+removeRow(index, index);
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((index <= 0)){
+
+IfStatement condition MethodInvocation arguments MemberReference member index_ter ^ ^ ^ ^ member removeRow_ter ^ ^ ^ ^ ^ 
+if(removeRow(index)){
+
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member rowData_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(rowData);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rowData_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rowData != null)){
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member iterator_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(iterator);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+rowData.clear();
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member removeColumn_ter ^ ^ ^ ^ ^ 
+rowData.removeColumn(columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member loc3 ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue();
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member columnKey_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + columnKey)){
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue();
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ MemberReference member rowData_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, rowData);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member index_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(index);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rowData_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rowData == null)){
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, false);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, true);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+rowData.debug(columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+rowData.add(columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, );
+
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue();
+
+StatementExpression expression MethodInvocation qualifier iterator_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+iterator.removeValue(columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ MemberReference member iterator_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, iterator);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member rows_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(rows);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, null);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue("null", columnKey);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iterator_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iterator != null)){
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKey, "null");
+
+StatementExpression expression Assignment expressionl MemberReference member rowData_ter ^ ^ ^ ^ value MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rowData = rowData.removeValue(columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+rowData.e(columnKey);
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKeys_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(columnKeys);
+
+IfStatement condition MethodInvocation qualifier rowData_ter ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+if(rowData.removeValue(columnKey)){
+
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments This_ter ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(this);
+
+StatementExpression expression MethodInvocation qualifier par1 ^ ^ arguments MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+.removeValue(columnKey);
+
+
+StatementExpression expression MethodInvocation qualifier rowData_ter ^ ^ arguments This_ter ^ MemberReference member columnKey_ter ^ ^ ^ ^ member removeValue_ter ^ ^ ^ ^ ^ 
+rowData.removeValue(this, columnKey);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rowData_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rowData != 0)){
+
+stderr: 

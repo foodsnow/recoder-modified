@@ -1,0 +1,133 @@
+stdout: StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(c);
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member exitNode_ter ^ ^ ^ ^ ^ 
+exitNode(c);
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member visit_ter ^ ^ ^ ^ ^ 
+visit(c);
+
+StatementExpression expression MethodInvocation member beginTraversal_ter ^ ^ ^ ^ ^ 
+beginTraversal();
+
+StatementExpression expression MethodInvocation member endTraversal_ter ^ ^ ^ ^ ^ 
+endTraversal();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member shouldVisit_ter ^ ^ ^ ^ ^ 
+shouldVisit(c);
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member shouldRetraverse_ter ^ ^ ^ ^ ^ 
+shouldRetraverse(c);
+
+StatementExpression expression MethodInvocation member traverse_ter ^ ^ ^ ^ ^ 
+traverse();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+Preconditions.traverse(c);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+checkState(c);
+
+StatementExpression expression MethodInvocation arguments MemberReference member next_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(next);
+
+StatementExpression expression MethodInvocation arguments MemberReference member node_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(node);
+
+StatementExpression expression MethodInvocation arguments MemberReference member visits_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(visits);
+
+IfStatement condition MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+if(traverse(c)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member c_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member c_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c = traverse(c);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator <_ter ^ ^ operandl MemberReference member visits_ter ^ ^ ^ ^ operandr Literal value 10000_ter ^ ^ ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((visits < 10000), "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member node_ter ^ ^ ^ ^ member visit_ter ^ ^ ^ ^ ^ 
+visit(node);
+
+StatementExpression expression MethodInvocation qualifier c_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+c.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier c_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+c.setQuotedString();
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member visits_ter ^ ^ ^ ^ ^ 
+visits++;
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member beginTraversal_ter ^ ^ ^ ^ ^ 
+Preconditions.beginTraversal();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member endTraversal_ter ^ ^ ^ ^ ^ 
+Preconditions.endTraversal();
+
+StatementExpression expression Assignment expressionl MemberReference member c_ter ^ ^ ^ ^ value MemberReference member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c = next;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member node_ter ^ ^ ^ ^ member exitNode_ter ^ ^ ^ ^ ^ 
+exitNode(node);
+
+StatementExpression expression MethodInvocation qualifier c_ter ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+c.traverse();
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(c, false);
+
+StatementExpression expression Assignment expressionl MemberReference member c_ter ^ ^ ^ ^ value MemberReference member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c = next;
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(c, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member par1 ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse();
+
+StatementExpression expression MethodInvocation arguments MemberReference member c_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(c, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member node_ter ^ ^ ^ ^ member visit_ter ^ ^ ^ ^ ^ 
+visit(node);
+
+StatementExpression expression MethodInvocation arguments MemberReference member node_ter ^ ^ ^ ^ member exitNode_ter ^ ^ ^ ^ ^ 
+exitNode(node);
+
+IfStatement condition MethodInvocation arguments MemberReference member node_ter ^ ^ ^ ^ member shouldRetraverse_ter ^ ^ ^ ^ ^ 
+if(shouldRetraverse(node)){
+
+ContinueStatement_ter ^ 
+continue;
+
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member visits_ter ^ ^ ^ ^ ^ 
+visits++;
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier c_ter ^ ^ member getNext_ter ^ ^ ^ ^ member traverse_ter ^ ^ ^ ^ ^ 
+traverse(c.getNext());
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments BinaryOperation operator <_ter ^ ^ operandl MemberReference member visits_ter ^ ^ ^ ^ operandr Literal value 10000_ter ^ ^ ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState((visits < 10000), "null");
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member node_ter ^ ^ ^ ^ member shouldVisit_ter ^ ^ ^ ^ ^ 
+if(!shouldVisit(node)){
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member exitNode_ter ^ ^ ^ ^ ^ 
+Preconditions.exitNode(c);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member visit_ter ^ ^ ^ ^ ^ 
+Preconditions.visit(c);
+
+stderr: 

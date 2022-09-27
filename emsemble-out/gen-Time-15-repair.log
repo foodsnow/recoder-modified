@@ -1,0 +1,101 @@
+stdout: ReturnStatement expression MemberReference member val2_ter ^ ^ ^ ^ ^ 
+return val2;
+ReturnStatement expression MemberReference member val1_ter ^ ^ ^ ^ ^ 
+return val1;
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return -val1;
+ReturnStatement expression MemberReference member total_ter ^ ^ ^ ^ ^ 
+return total;
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member val2_ter ^ ^ ^ ^ ^ 
+return -val2;
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression MemberReference member par2 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MemberReference member val2_ter ^ ^ ^ ^ ^ 
+if (true) { return val2; }
+
+ReturnStatement expression MemberReference prefix_operators ~_ter ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return ~val1;
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member val1_ter ^ ^ ^ ^ operandr MemberReference member val2_ter ^ ^ ^ ^ ^ ^ ^ 
+return (val1 - val2);
+ReturnStatement expression MemberReference postfix_operators ++_ter ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return val1++;
+ReturnStatement expression MemberReference prefix_operators ~_ter ^ ^ member val2_ter ^ ^ ^ ^ ^ 
+return ~val2;
+ReturnStatement expression MemberReference postfix_operators ++_ter ^ ^ member val2_ter ^ ^ ^ ^ ^ 
+return val2++;
+ReturnStatement expression MemberReference prefix_operators --_ter ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return --val1;
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ 
+return -1;
+ReturnStatement expression MemberReference prefix_operators ++_ter ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return ++val1;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member val1_ter ^ ^ ^ ^ operandr MemberReference member val2_ter ^ ^ ^ ^ ^ ^ ^ 
+return (val1 + val2);
+ReturnStatement expression MemberReference prefix_operators !_ter ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return !val1;
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+ReturnStatement expression BinaryOperation operator /_ter ^ ^ operandl MemberReference member total_ter ^ ^ ^ ^ operandr MemberReference member val2_ter ^ ^ ^ ^ ^ ^ ^ 
+return (total / val2);
+ReturnStatement expression MemberReference prefix_operators --_ter ^ ^ member val2_ter ^ ^ ^ ^ ^ 
+return --val2;
+ReturnStatement expression MemberReference prefix_operators !_ter ^ ^ member val2_ter ^ ^ ^ ^ ^ 
+return !val2;
+ReturnStatement expression MemberReference prefix_operators ++_ter ^ ^ member val2_ter ^ ^ ^ ^ ^ 
+return ++val2;
+ReturnStatement expression MemberReference member loc2 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+if (true) { return 2; }
+
+ReturnStatement expression MemberReference postfix_operators --_ter ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return val1--;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member val1_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member val2_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((("null" + val1) + "null") + val2);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member val1_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (("null" + val1) + "null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member val1_ter ^ ^ ^ ^ ^ ^ ^ 
+return ("null" + val1);
+ReturnStatement expression MemberReference postfix_operators --_ter ^ ^ member val2_ter ^ ^ ^ ^ ^ 
+return val2--;
+ReturnStatement expression MemberReference selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ member val1_ter ^ ^ ^ ^ ^ 
+return val1[0];
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member total_ter ^ ^ ^ ^ ^ 
+return -total;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member val1_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (val1 - "null");
+ReturnStatement expression MethodInvocation qualifier val1_ter ^ ^ member safeMultiply_ter ^ ^ ^ ^ ^ 
+return val1.safeMultiply();
+ReturnStatement expression BinaryOperation operator *_ter ^ ^ operandl MemberReference member val1_ter ^ ^ ^ ^ operandr MemberReference member val2_ter ^ ^ ^ ^ ^ ^ ^ 
+return (val1 * val2);
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member val1_ter ^ ^ ^ ^ operandr MemberReference member val1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (val1 - val1);
+ReturnStatement expression BinaryOperation operator -_ter ^ ^ operandl MemberReference member val1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (val1 - 0);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member val1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((val1 == null)){
+return 0;}
+stderr: 

@@ -1,0 +1,85 @@
+stdout: ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isReduceableFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isReduceableFunctionExpression(n);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return NodeUtil.add(n);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return NodeUtil.debug(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return isFunctionExpression(n);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n, false);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return NodeUtil.max(n);
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+return n;
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n, true);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member n_ter ^ ^ ^ ^ ^ 
+return NodeUtil.n(n);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+return NodeUtil.get(n);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return NodeUtil.e(n);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return false;}
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return NodeUtil.put(n);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n, null);
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+return (NodeUtil.isFunctionExpression(n) && NodeUtil.isFunctionExpression(n));
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n);
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((n == null) && NodeUtil.isFunctionExpression(n));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((n != null) && NodeUtil.isFunctionExpression(n));
+ReturnStatement expression MethodInvocation member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return isFunctionExpression();
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((n == null)){
+return true;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return n.isFunctionExpression();
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+return (NodeUtil.isFunctionExpression(n) || NodeUtil.isFunctionExpression(n));
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n, n);
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n == null)){
+
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ selectors MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n).isFunctionExpression(n);
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (n != null);
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = n.detachChildren();
+
+StatementExpression expression Assignment expressionl MemberReference member n_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+n = n.setQuotedString();
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member isReduceableFunctionExpression_ter ^ ^ ^ ^ ^ 
+return isReduceableFunctionExpression(n);
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n, "null");
+ReturnStatement expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ This_ter ^ ^ member isFunctionExpression_ter ^ ^ ^ ^ ^ 
+return NodeUtil.isFunctionExpression(n, this);
+stderr: 

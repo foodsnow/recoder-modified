@@ -1,0 +1,143 @@
+stdout: 
+BreakStatement_ter ^ 
+break;
+
+ContinueStatement_ter ^ 
+continue;
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+f0 *= (f1 / (f1 + fx));
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value Literal value 0.5_ter ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+f0 *= 0.5;
+
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value MemberReference member x1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x0 = x1;
+
+StatementExpression expression Assignment expressionl MemberReference member inverted_ter ^ ^ ^ ^ value MemberReference prefix_operators !_ter ^ ^ member inverted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+inverted = !inverted;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MemberReference member f1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+f0 = f1;
+
+ReturnStatement expression MemberReference member x_ter ^ ^ ^ ^ ^ 
+if (true) { return x; }
+
+ReturnStatement_ter ^ 
+return;
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+f0 *= (f1 / (f1 + fx));
+break;
+
+ReturnStatement expression MemberReference member x_ter ^ ^ ^ ^ ^ 
+return x;
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value MemberReference member x1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+x0 = x1;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member inverted_ter ^ ^ ^ ^ value MemberReference prefix_operators !_ter ^ ^ member inverted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+inverted = !inverted;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MemberReference member f1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+f0 = f1;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+f0 *= (f1 / (f1 + fx));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fx_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+if((fx == 0.0)){
+f0 *= (f1 / (f1 + fx));
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fx_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fx == 0.0)){
+continue;
+}
+
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value Literal value 0.5_ter ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+f0 *= 0.5;
+
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value MemberReference member x1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x0 = x1;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fx_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value Literal value 0.5_ter ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+if((fx == 0.0)){
+f0 *= 0.5;
+}
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+if((f1 + fx)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+if((f1 * fx)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MemberReference member f1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+f0 = f1;
+
+StatementExpression expression Assignment expressionl MemberReference member inverted_ter ^ ^ ^ ^ value MemberReference prefix_operators !_ter ^ ^ member inverted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+inverted = !inverted;
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fx_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value MemberReference member x1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if((fx == 0.0)){
+x0 = x1;
+}
+ReturnStatement expression MemberReference member f0_ter ^ ^ ^ ^ ^ 
+return f0;
+ReturnStatement expression MemberReference member f1_ter ^ ^ ^ ^ ^ 
+return f1;
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value Literal value 0.5_ter ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+f0 *= 0.5;
+break;
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fx_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member inverted_ter ^ ^ ^ ^ value MemberReference prefix_operators !_ter ^ ^ member inverted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if((fx == 0.0)){
+inverted = !inverted;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fx_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MemberReference member f1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if((fx == 0.0)){
+f0 = f1;
+}
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((f1 * fx) < 0)){
+continue;
+}
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+stderr: 

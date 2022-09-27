@@ -1,0 +1,447 @@
+stdout: IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.functionCallHasSideEffects(n)){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(n.isCall()){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() || NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.hasChildren() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isFromExterns() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.hasOneChild() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.hasMoreThanOneChild() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isQualifiedName() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isUnscopedQualifiedName() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isVarArgs() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isOptionalArg() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isSyntheticBlock() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.wasEmptyNode() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isOnlyModifiesThisCall() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isNoSideEffectsCall() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isLocalResultCall() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isQuotedString() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isAdd_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isAdd() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isAnd_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isAnd() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isArrayLit() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isAssign_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isAssign() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isAssignAdd() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isBlock_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isBlock() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isBreak_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isBreak() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCase_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCase() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCatch_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCatch() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isComma_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isComma() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isContinue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isContinue() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isDebugger() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isDec_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isDec() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isDefaultCase() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isDelProp() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isDo_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isDo() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isEmpty() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isExprResult() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isFalse_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isFalse() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isFor_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isFor() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isFunction_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isFunction() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isGetterDef() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isGetElem() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isGetProp() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isHook_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isHook() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isIf_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isIf() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isIn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isIn() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isInc_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isInc() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isInstanceOf() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isLabel_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isLabel() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isLabelName() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isName() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isNE_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isNE() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isNew_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isNew() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isNot_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isNot() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isNull_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isNull() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isNumber_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isNumber() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isObjectLit() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isOr_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isOr() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isParamList_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isParamList() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isRegExp() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isReturn_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isReturn() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isScript_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isScript() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isSetterDef() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isString_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isString() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isStringKey() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isSwitch() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isThis_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isThis() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isThrow_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isThrow() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isTrue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isTrue() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isTry_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isTry() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isTypeOf() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isVar_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isVar() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isVoid_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isVoid() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isWhile_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isWhile() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isWith_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isWith() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.functionCallHasSideEffects(c))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member apply_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.apply(n))){
+IfStatement condition MemberReference member n_ter ^ ^ ^ ^ ^ 
+if(n){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isNew_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.isNew(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member constructorCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.constructorCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isEnteringNewCfgNode_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.isEnteringNewCfgNode(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.getNext(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.getFirstChild(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.functionCallHasSideEffects())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier ControlFlowGraph_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && ControlFlowGraph.functionCallHasSideEffects(n))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && !NodeUtil.functionCallHasSideEffects(n))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.functionCallHasSideEffects(n))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && n.functionCallHasSideEffects(n))){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member n_ter ^ ^ ^ ^ ^ 
+if(!n){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.getName(n))){
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ 
+NodeUtil.functionCallHasSideEffects(n);
+
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.functionCallHasSideEffects())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.isCall(n))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.functionCallHasSideEffects(n) && NodeUtil.functionCallHasSideEffects(n))){
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+n.isCall();
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.functionCallHasSideEffects(n.isCall()))){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(n.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(n.isFromExterns()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(n.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(n.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(n.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(n.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(n.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(n.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(n.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(n.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(n.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(n.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(n.isLocalResultCall()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(n.isQuotedString()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(n.isAdd()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(n.isAnd()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(n.isArrayLit()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(n.isAssign()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(n.isAssignAdd()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(n.isBlock()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(n.isBreak()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(n.isCase()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(n.isCatch()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(n.isComma()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(n.isContinue()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(n.isDebugger()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(n.isDec()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(n.isDefaultCase()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(n.isDelProp()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(n.isDo()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(n.isEmpty()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(n.isExprResult()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(n.isFalse()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(n.isFor()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(n.isFunction()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(n.isGetterDef()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(n.isGetElem()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(n.isGetProp()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(n.isHook()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(n.isIf()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(n.isIn()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(n.isInc()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(n.isInstanceOf()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(n.isLabel()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(n.isLabelName()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(n.isName()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(n.isNE()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(n.isNew()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(n.isNot()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(n.isNull()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(n.isNumber()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(n.isObjectLit()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(n.isOr()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(n.isParamList()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(n.isRegExp()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(n.isReturn()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(n.isScript()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(n.isSetterDef()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(n.isString()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(n.isStringKey()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(n.isSwitch()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(n.isThis()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(n.isThrow()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(n.isTrue()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(n.isTry()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(n.isTypeOf()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(n.isVar()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(n.isVoid()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(n.isWhile()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(n.isWith()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n && NodeUtil.functionCallHasSideEffects(n))){
+
+IfStatement condition MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ 
+if(functionCallHasSideEffects(n)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.getNext() && NodeUtil.functionCallHasSideEffects(n))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!NodeUtil.functionCallHasSideEffects(n) && NodeUtil.functionCallHasSideEffects(n))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && NodeUtil.get(n))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((n.isCall() && NodeUtil.functionCallHasSideEffects(n)) && NodeUtil.functionCallHasSideEffects(n))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((n.getFirstChild() && NodeUtil.functionCallHasSideEffects(n))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier c_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member functionCallHasSideEffects_ter ^ ^ ^ ^ ^ ^ 
+if((c.isCall() && NodeUtil.functionCallHasSideEffects(n))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.isCall() && n.isCall())){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c != null)){
+
+IfStatement condition MemberReference member n_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n){
+return false;}
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(n.isCall()){
+return false;}
+stderr: 

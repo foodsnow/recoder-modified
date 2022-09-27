@@ -1,0 +1,137 @@
+stdout: condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchLength_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchLength[j] == ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((i[j] == ch)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] >= ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member ch_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((ch[j] == ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((j == ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == ch)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] <= ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member csLength_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((csLength[j] == ch)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] > ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member j_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((j[j] == ch)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) || (searchChars[j] == ch))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchLength_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == searchLength[j])){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member cs_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((cs[j] == ch)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] < ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == i[j])){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((ch == ch)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] != ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == ch[j])){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((i == ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member j_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == j)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member searchLength_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((searchLength == ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member j_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == j[j])){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) && (searchChars[j] == ch))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier ArrayUtils_ter ^ ^ arguments MemberReference member searchChars_ter ^ ^ ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) || ArrayUtils.isEmpty(searchChars))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((ch == null) || (searchChars[j] == ch))){
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((ch != null) || (searchChars[j] == ch))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchLength_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) || searchLength[j])){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) || i[j])){
+
+IfStatement condition MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ 
+if(i[j]){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((length[j] == ch)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member csLength_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == csLength[j])){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((i[j] || (searchChars[j] == ch))){
+
+IfStatement condition MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchLength_ter ^ ^ ^ ^ ^ 
+if(searchLength[j]){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == i)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == searchChars[j])){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member searchLength_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) || (j < searchLength))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((i != null) || (searchChars[j] == ch))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member searchLength_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == searchLength)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((i == null) || (searchChars[j] == ch))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member csLength_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if((csLength == ch)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchLength_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((searchLength[j] || (searchChars[j] == ch))){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member searchLength_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member j_ter ^ ^ ^ ^ ^ ^ 
+for(int j = 0;(j < searchLength);j++) {
+
+IfStatement condition MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ ^ 
+if(searchChars[j]){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((ch == null) && (searchChars[j] == ch))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((ch != null) && (searchChars[j] == ch))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member loc5 ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ 
+if(( == ch)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member ch_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) || ch[j])){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member searchLength_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((searchLength != null) || (searchChars[j] == ch))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member cs_ter ^ ^ ^ ^ ^ ^ 
+if((searchChars[j] == cs[j])){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member searchLength_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((searchLength == null) || (searchChars[j] == ch))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member searchChars_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((searchChars[j] == ch) || (ch == null))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ch == null)){
+continue;
+}
+
+BreakStatement_ter ^ 
+break;
+
+stderr: 

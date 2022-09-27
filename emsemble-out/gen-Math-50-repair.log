@@ -1,0 +1,185 @@
+stdout: BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+f0 *= (f1 / (f1 + fx));
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member x0_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+f0 = computeObjectiveValue(x0);
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member x0_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+f0 = computeObjectiveValue(x0);
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value Literal value 0.5_ter ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+f0 *= 0.5;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+f0 *= (f1 / (f1 + fx));
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 0.5_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ MemberReference member atol_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x0 = (0.5 * ((x0 + x1) - FastMath.max((rtol * FastMath.abs(x1)), atol)));
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value Literal value 0.5_ter ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+f0 *= 0.5;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member inverted_ter ^ ^ ^ ^ value MemberReference prefix_operators !_ter ^ ^ member inverted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+inverted = !inverted;
+break;
+
+
+
+StatementExpression expression Assignment expressionl MemberReference member inverted_ter ^ ^ ^ ^ value MemberReference prefix_operators !_ter ^ ^ member inverted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+inverted = !inverted;
+
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 0.5_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ MemberReference member atol_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+x0 = (0.5 * ((x0 + x1) - FastMath.max((rtol * FastMath.abs(x1)), atol)));
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MemberReference member f1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+f0 = f1;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value MemberReference member x1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+x0 = x1;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MemberReference member f1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+f0 = f1;
+
+StatementExpression expression Assignment expressionl MemberReference member x1_ter ^ ^ ^ ^ value MemberReference member x_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+x1 = x;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member x0_ter ^ ^ ^ ^ value MemberReference member x1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x0 = x1;
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ 
+if((x >= x1)){
+StatementExpression expression Assignment expressionl MemberReference member x1_ter ^ ^ ^ ^ value MemberReference member x_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x1 = x;
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ 
+if((x == x1)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ 
+if((x != x1)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ 
+if((x <= x1)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x0 + x1)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+if((f1 + fx)){
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ MemberReference member atol_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((x0 + x1) - FastMath.max((rtol * FastMath.abs(x1)), atol))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ 
+if((x > x1)){
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rtol * FastMath.abs(x1))){
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+if((f1 * fx)){
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((x0 + x1)){
+break;
+}
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((f1 + fx)){
+break;
+}
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ MemberReference member atol_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if(((x0 + x1) - FastMath.max((rtol * FastMath.abs(x1)), atol))){
+break;
+}
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((f1 * fx)){
+break;
+}
+ContinueStatement_ter ^ 
+continue;
+
+BreakStatement_ter ^ 
+break;
+
+
+ReturnStatement expression MemberReference member x_ter ^ ^ ^ ^ ^ 
+if (true) { return x; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fx_ter ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((fx == 0.0)){
+break;
+}
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((rtol * FastMath.abs(x1))){
+break;
+}
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl Literal value 0.5_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ MemberReference member atol_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((0.5 * ((x0 + x1) - FastMath.max((rtol * FastMath.abs(x1)), atol)))){
+break;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x == x1)){
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member x0_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+f0 = computeObjectiveValue(x0);
+break;
+break;
+
+IfStatement condition BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((f1 / (f1 + fx))){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x0 + x1)){
+
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl Literal value 0.5_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member x0_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member rtol_ter ^ ^ ^ ^ operandr MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member x1_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ MemberReference member atol_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((0.5 * ((x0 + x1) - FastMath.max((rtol * FastMath.abs(x1)), atol)))){
+
+StatementExpression expression Assignment expressionl MemberReference member f0_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+f0 *= (f1 / (f1 + fx));
+break;
+break;
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member f1_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ ^ 
+if((f1 + fx)){
+
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member atol_ter ^ ^ ^ ^ ^ ^ 
+if((x == atol)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr MemberReference member x1_ter ^ ^ ^ ^ ^ ^ 
+if((x < x1)){
+stderr: 

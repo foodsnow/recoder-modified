@@ -1,0 +1,1350 @@
+stdout: LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.toString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member toStringTree_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.toStringTree();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member toStringTreeImpl_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.toStringTreeImpl();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getSourceFileName();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getQualifiedName();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = n.getString();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((child == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getNext();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier t_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = t.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getScope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getScope();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getSourceName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getSourceName();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member handleObjectLit_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.handleObjectLit();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((child == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((child == null)){
+continue;
+}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getFirstChild();
+
+StatementExpression expression MethodInvocation qualifier child_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+child.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier child_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+child.setQuotedString();
+
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.hasChildren()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isFromExterns()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.hasOneChild()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.hasMoreThanOneChild()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isQualifiedName()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isUnscopedQualifiedName()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isVarArgs()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isOptionalArg()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isSyntheticBlock()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.wasEmptyNode()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isOnlyModifiesThisCall()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOnlyModifiesArgumentsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isOnlyModifiesArgumentsCall()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isNoSideEffectsCall()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isLocalResultCall()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member mayMutateArguments_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.mayMutateArguments()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member mayMutateGlobalStateOrThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.mayMutateGlobalStateOrThrow()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isQuotedString()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isAdd()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isAnd()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isArrayLit()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isAssign()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isAssignAdd()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isBlock()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isBreak()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isCall()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isCase()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isCast()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isCatch()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isComma()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isContinue()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isDebugger()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isDec()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isDefaultCase()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isDelProp()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isDo()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isEmpty()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isExprResult()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isFalse()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isFor()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isFunction()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isGetterDef()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isGetElem()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isGetProp()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isHook()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isIf()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isIn()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isInc()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isInstanceOf()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isLabel()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isLabelName()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isName()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isNE()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isNew()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isNot()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isNull()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isNumber()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isObjectLit()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isOr()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isParamList()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isRegExp()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isReturn()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isScript()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isSetterDef()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isString()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isStringKey()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isSwitch()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isThis()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isThrow()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isTrue()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isTry()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isTypeOf()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isVar()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isVoid()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isWhile()){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(child.isWith()){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((t != null)){
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getName();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+String<?> name = child.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier par2 ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = .getString();
+
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getString(n);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((t == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier name_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = name.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member processProperty_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.processProperty();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final String name = child.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer Cast type ReferenceType name String_ter ^ ^ ^ ^ expression MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+String name = (String)child.getString();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((child != null)){
+return;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.hasChildren()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isFromExterns()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.hasOneChild()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.hasMoreThanOneChild()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isQualifiedName()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isUnscopedQualifiedName()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isVarArgs()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isOptionalArg()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isSyntheticBlock()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.wasEmptyNode()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isOnlyModifiesThisCall()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOnlyModifiesArgumentsCall_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isOnlyModifiesArgumentsCall()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isNoSideEffectsCall()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isLocalResultCall()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member mayMutateArguments_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.mayMutateArguments()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member mayMutateGlobalStateOrThrow_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.mayMutateGlobalStateOrThrow()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isQuotedString()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isAdd()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isAnd()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isArrayLit()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isAssign()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isAssignAdd()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isBlock()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isBreak()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isCall()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isCase()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isCast()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isCatch()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isComma()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isContinue()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isDebugger()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isDec()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isDefaultCase()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isDelProp()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isDo()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isEmpty()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isExprResult()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isFalse()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isFor()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isFunction()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isGetterDef()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isGetElem()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isGetProp()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isHook()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isIf()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isIn()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isInc()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isInstanceOf()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isLabel()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isLabelName()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isName()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isNE()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isNew()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isNot()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isNull()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isNumber()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isObjectLit()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isOr()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isParamList()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isRegExp()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isReturn()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isScript()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isSetterDef()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isString()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isStringKey()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isSwitch()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isThis()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isThrow()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isTrue()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isTry()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isTypeOf()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isVar()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isVoid()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isWhile()){
+continue;
+}
+IfStatement condition MethodInvocation qualifier child_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if(child.isWith()){
+continue;
+}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier typeSystem_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = typeSystem.getString();
+
+StatementExpression expression MethodInvocation member renameProperties_ter ^ ^ ^ ^ ^ 
+renameProperties();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((child.getString() != null)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.hasChildren()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isFromExterns()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.hasOneChild()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.hasMoreThanOneChild()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isQualifiedName()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isUnscopedQualifiedName()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isVarArgs()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isOptionalArg()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isSyntheticBlock()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.wasEmptyNode()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isOnlyModifiesThisCall()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isOnlyModifiesArgumentsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isOnlyModifiesArgumentsCall()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isNoSideEffectsCall()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isLocalResultCall()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member mayMutateArguments_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.mayMutateArguments()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member mayMutateGlobalStateOrThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.mayMutateGlobalStateOrThrow()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isQuotedString()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isAdd()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isAnd()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isArrayLit()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isAssign()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isAssignAdd()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isBlock()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isBreak()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isCall()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isCase()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isCast()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isCatch()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isComma()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isContinue()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isDebugger()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isDec()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isDefaultCase()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isDelProp()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isDo()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isEmpty()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isExprResult()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isFalse()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isFor()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isFunction()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isGetterDef()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isGetElem()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isGetProp()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isHook()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isIf()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isIn()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isInc()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isInstanceOf()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isLabel()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isLabelName()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isName()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isNE()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isNew()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isNot()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isNull()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isNumber()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isObjectLit()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isOr()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isParamList()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isRegExp()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isReturn()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isScript()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isSetterDef()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isString()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isStringKey()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isSwitch()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isThis()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isThrow()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isTrue()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isTry()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isTypeOf()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isVar()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isVoid()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isWhile()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier child_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!child.isWith()){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((t == null)){
+
+StatementExpression expression MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ 
+child.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getString(null);
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ arguments MethodInvocation qualifier JSError_ter ^ ^ arguments MethodInvocation qualifier t_ter ^ ^ member getSourceName_ter ^ ^ ^ MemberReference member child_ter ^ ^ ^ MethodInvocation qualifier propertiesToErrorFor_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member get_ter ^ ^ ^ MemberReference qualifier Warnings_ter ^ ^ member INVALIDATION_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MethodInvocation qualifier type_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ MethodInvocation qualifier n_ter ^ ^ member toString_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member make_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+compiler.report(JSError.make(t.getSourceName(), child, propertiesToErrorFor.get(name), Warnings.INVALIDATION, name, ((type == null))?"null":type.toString(), n.toString(), "null"));
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = ;
+
+
+StatementExpression expression Assignment expressionl MemberReference member child_ter ^ ^ ^ ^ value MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+child = child.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier propertiesToErrorFor_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = propertiesToErrorFor.getString();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((child.getString() == null)){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((child == null)){
+break;
+}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getString(t);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ arguments MemberReference member child_ter ^ ^ ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getString(child);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((n == null)){
+return;
+}
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value MethodInvocation qualifier child_ter ^ ^ member getString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+name = child.getString();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation qualifier child_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String name = child.getString(false);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member child_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((child != null)){
+continue;
+}
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member child_ter ^ ^ ^ ^ ^ 
+if(!child){
+
+stderr: 

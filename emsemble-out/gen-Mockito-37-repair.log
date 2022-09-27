@@ -1,0 +1,973 @@
+stdout: IfStatement condition MemberReference member answer_ter ^ ^ ^ ^ ^ 
+if(answer){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer && ThrowsException)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof ThrowsException)){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof ThrowsException)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((answer != null)){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((invocation instanceof ThrowsException)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation != null)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+if(!answer){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ReturnStatement_ter ^ 
+if((answer instanceof ThrowsException)){
+return;
+}
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof ThrowsException) && (answer instanceof ThrowsException))){
+
+StatementExpression expression SuperMethodInvocation member validate_ter ^ ^ ^ ^ ^ 
+super.validate();
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Answer_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+if((answer instanceof Answer<?>)){
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((answer != null)){
+return;
+}
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer != ThrowsException)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((answer != null)){
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((answer == null)){
+return;
+}
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer == ThrowsException)){
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof ThrowsException)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer && (answer instanceof ThrowsException))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof ThrowsException) && (answer instanceof DoesNothing))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((invocation != null)){
+return;
+}
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof ThrowsException) && (invocation instanceof ThrowsException))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof DoesNothing)){
+
+IfStatement condition Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((ThrowsException)answer){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer || ThrowsException)){
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((answer instanceof ThrowsException) && (answer != null))){
+
+IfStatement condition Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((ThrowsException)answer){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((invocation == null)){
+return;
+}
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member answer_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((ThrowsException)answer, invocation);
+
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return validateException((ThrowsException)answer, invocation);
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation member validateException_ter ^ ^ ^ ^ ^ 
+validateException();
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException(answer, (ThrowsException)answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validate_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validate((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member invocation_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)invocation, invocation);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException(validateException((ThrowsException)answer, invocation));
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, );
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+debug((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ This_ter ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer, this);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(invocation, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer, );
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ This_ter ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer, this, invocation);
+
+StatementExpression expression MethodInvocation arguments This_ter ^ MemberReference member answer_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(this, answer, invocation);
+
+StatementExpression expression Assignment expressionl MemberReference member invocation_ter ^ ^ ^ ^ value MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+invocation = validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member answer_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer, answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer, false);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, false);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+IfStatement condition MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(validateException((ThrowsException)answer, invocation)){
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, true);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((invocation instanceof ThrowsException)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(answer, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+validateException(invocation, );
+
+
+StatementExpression expression Assignment expressionl MemberReference member answer_ter ^ ^ ^ ^ value MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+answer = validateException((ThrowsException)answer, invocation);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation != null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof Returns)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer == Returns)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer != Returns)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation != null)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof Returns)){
+
+IfStatement condition MemberReference member answer_ter ^ ^ ^ ^ ^ 
+if(answer){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((invocation instanceof Returns)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof Returns) && (answer instanceof DoesNothing))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof Returns)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof DoesNothing)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((answer != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof Returns) && (invocation instanceof Returns))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof ThrowsException)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof DoesNothing)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer && Returns)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((answer instanceof Returns) && (invocation != null))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+if(!answer){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((invocation instanceof Returns)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer > Returns)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer && (answer instanceof Returns))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof ThrowsException)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof Returns) && (answer instanceof ThrowsException))){
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member answer_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue(validateReturnValue((Returns)answer, invocation));
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue(answer, (Returns)answer);
+
+StatementExpression expression MethodInvocation member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue();
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validate_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validate((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member invocation_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)invocation, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return validateReturnValue((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, );
+
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(invocation, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(answer, );
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue(answer, validateReturnValue((Returns)answer, invocation));
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+debug((Returns)answer, invocation);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof Returns)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member answer_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(answer, answer);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ This_ter ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(answer, this, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(invocation, );
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation != null)){
+
+StatementExpression expression MethodInvocation arguments This_ter ^ MemberReference member answer_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(this, answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ This_ter ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(answer, this);
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+validateReturnValue(invocation);
+
+StatementExpression expression Assignment expressionl MemberReference member invocation_ter ^ ^ ^ ^ value MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+invocation = validateReturnValue((Returns)answer, invocation);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((invocation instanceof Returns)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validate_ter ^ ^ ^ ^ ^ 
+validate(answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue(invocation, (Returns)answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member par2 ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns), invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, false);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, true);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof DoesNothing) && (answer instanceof DoesNothing))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof DoesNothing)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer == DoesNothing)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((invocation instanceof DoesNothing)){
+IfStatement condition MemberReference member answer_ter ^ ^ ^ ^ ^ 
+if(answer){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof DoesNothing)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer != DoesNothing)){
+
+
+IfStatement condition Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((DoesNothing)answer){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation != null)){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof DoesNothing)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof DoesNothing) && (answer instanceof Returns))){
+
+IfStatement condition Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((DoesNothing)answer){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer > DoesNothing)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+if(!answer){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof ThrowsException)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof DoesNothing) && (invocation instanceof DoesNothing))){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Returns)answer){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((invocation instanceof DoesNothing)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((answer instanceof DoesNothing) && (answer instanceof ThrowsException))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof Returns)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name ThrowsException_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof ThrowsException)){
+
+IfStatement condition Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Returns)answer){
+
+IfStatement condition Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((ThrowsException)answer){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name Returns_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof Returns)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((answer instanceof DoesNothing) && (invocation != null))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((answer != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member answer_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing();
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing(answer, (DoesNothing)answer);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing(validateDoNothing((DoesNothing)answer, invocation));
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, );
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validate_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validate((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, );
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member invocation_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)invocation, invocation);
+
+
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return validateDoNothing((DoesNothing)answer, invocation);
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer, );
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+debug((DoesNothing)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(invocation, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing(answer, validateDoNothing((DoesNothing)answer, invocation));
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ MemberReference member answer_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer, answer);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name ThrowsException_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateException_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateException((ThrowsException)answer, invocation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ This_ter ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer, this, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Returns_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateReturnValue_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateReturnValue((Returns)answer, invocation);
+
+ReturnStatement_ter ^ 
+return;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member answer_ter ^ ^ ^ ^ operandr ReferenceType name DoesNothing_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((answer instanceof DoesNothing)){
+
+StatementExpression expression MethodInvocation arguments This_ter ^ MemberReference member answer_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(this, answer, invocation);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, invocation, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(invocation, );
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ This_ter ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer, this);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, );
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member answer_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+validateDoNothing(answer, false);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name DoesNothing_ter ^ ^ ^ ^ expression MemberReference member answer_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member validateDoNothing_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+validateDoNothing((DoesNothing)answer, true);
+
+stderr: 

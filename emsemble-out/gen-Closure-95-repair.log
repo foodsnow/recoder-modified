@@ -1,0 +1,163 @@
+stdout: LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member variableName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = variableName;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member type_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = type;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member sourceName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = sourceName;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member shouldDeclareOnGlobalThis_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = shouldDeclareOnGlobalThis;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member inferred_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = inferred;
+
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = ;
+
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = null;
+
+LocalVariableDeclaration type ReferenceType name CompilerInput_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+CompilerInput scopeToDeclareIn = scope;
+
+LocalVariableDeclaration type ReferenceType name ObjectType_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ObjectType scopeToDeclareIn = scope;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = scope;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference prefix_operators !_ter ^ ^ member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = !scope;
+
+LocalVariableDeclaration type ReferenceType name CompilerInput_ter ^ ^ ^ ^ declarators VariableDeclarator name input_ter ^ ^ initializer MethodInvocation qualifier compiler_ter ^ ^ arguments MemberReference member sourceName_ter ^ ^ ^ ^ member getInput_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+CompilerInput input = compiler.getInput(sourceName);
+
+LocalVariableDeclaration type ReferenceType name FunctionType_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+FunctionType scopeToDeclareIn = scope;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer This selectors MemberReference member scope_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = this.scope;
+
+LocalVariableDeclaration type ReferenceType name FunctionType_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+FunctionType scopeToDeclareIn = ;
+
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference qualifier JSTypeNative_ter ^ ^ member GLOBAL_THIS_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = JSTypeNative.GLOBAL_THIS;
+
+LocalVariableDeclaration type ReferenceType name Var_ter ^ ^ ^ ^ declarators VariableDeclarator name oldVar_ter ^ ^ initializer MethodInvocation qualifier scopeToDeclareIn_ter ^ ^ arguments MemberReference member variableName_ter ^ ^ ^ ^ member getVar_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Var oldVar = scopeToDeclareIn.getVar(variableName);
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference qualifier Preconditions_ter ^ ^ member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = Preconditions.scope;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference member scope_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Scope scopeToDeclareIn = scope;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators VariableDeclarator name scopeToDeclareIn_ter ^ ^ initializer MemberReference qualifier JSTypeNative_ter ^ ^ member NO_TYPE_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Scope scopeToDeclareIn = JSTypeNative.NO_TYPE;
+
+LocalVariableDeclaration type ReferenceType name FunctionType_ter ^ ^ ^ ^ declarators VariableDeclarator name fnType_ter ^ ^ initializer Cast type ReferenceType name FunctionType_ter ^ ^ ^ ^ expression MemberReference member type_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+FunctionType fnType = (FunctionType)type;
+
+LocalVariableDeclaration type ReferenceType name Scope_ter ^ ^ ^ ^ declarators ^ ^ 
+arg 
+arg 
+Scope ;
+
+StatementExpression expression MethodInvocation qualifier fnType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+fnType.isInterface();
+
+StatementExpression expression MethodInvocation qualifier scopeToDeclareIn_ter ^ ^ member isGlobal_ter ^ ^ ^ ^ ^ 
+scopeToDeclareIn.isGlobal();
+
+LocalVariableDeclaration type ReferenceType name ObjectType_ter ^ ^ ^ ^ declarators VariableDeclarator name globalThis_ter ^ ^ initializer MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference qualifier JSTypeNative_ter ^ ^ member GLOBAL_THIS_ter ^ ^ ^ ^ member getNativeObjectType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ObjectType globalThis = typeRegistry.getNativeObjectType(JSTypeNative.GLOBAL_THIS);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name isExtern_ter ^ ^ initializer MethodInvocation qualifier input_ter ^ ^ member isExtern_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean isExtern = input.isExtern();
+
+LocalVariableDeclaration type ReferenceType name FunctionType_ter ^ ^ ^ ^ declarators VariableDeclarator name superClassCtor_ter ^ ^ initializer MethodInvocation qualifier fnType_ter ^ ^ member getSuperClassConstructor_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+FunctionType superClassCtor = fnType.getSuperClassConstructor();
+
+StatementExpression expression MethodInvocation qualifier scopeToDeclareIn_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member variableName_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ MemberReference member n_ter ^ ^ ^ MethodInvocation qualifier fnType_ter ^ ^ member getPrototype_ter ^ ^ ^ MethodInvocation qualifier compiler_ter ^ ^ arguments MemberReference member sourceName_ter ^ ^ ^ ^ member getInput_ter ^ ^ ^ BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member superClassCtor_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier superClassCtor_ter ^ ^ selectors MethodInvocation arguments MethodInvocation arguments MemberReference member OBJECT_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ member getInstanceType_ter ^ ^ ^ ^ ^ ^ member declare_ter ^ ^ ^ ^ ^ 
+scopeToDeclareIn.declare((variableName + "null"), n, fnType.getPrototype(), compiler.getInput(sourceName), ((superClassCtor == null) || superClassCtor.getInstanceType().equals(getNativeType(OBJECT_TYPE))));
+
+StatementExpression expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member setDeferredType_ter ^ ^ ^ ^ ^ 
+setDeferredType(n, type);
+
+StatementExpression expression MethodInvocation qualifier globalThis_ter ^ ^ arguments MemberReference member variableName_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member type_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MethodInvocation arguments MemberReference qualifier JSTypeNative_ter ^ ^ member NO_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ ^ if_false MemberReference member type_ter ^ ^ ^ ^ ^ MemberReference member isExtern_ter ^ ^ ^ ^ member defineInferredProperty_ter ^ ^ ^ ^ ^ 
+globalThis.defineInferredProperty(variableName, ((type == null))?getNativeType(JSTypeNative.NO_TYPE):type, isExtern);
+
+StatementExpression expression MethodInvocation qualifier globalThis_ter ^ ^ arguments MemberReference member variableName_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ MemberReference member isExtern_ter ^ ^ ^ ^ member defineDeclaredProperty_ter ^ ^ ^ ^ ^ 
+globalThis.defineDeclaredProperty(variableName, type, isExtern);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier scopeToDeclareIn_ter ^ ^ arguments MemberReference member variableName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ MemberReference member inferred_ter ^ ^ ^ ^ member declare_ter ^ ^ ^ ^ ^ 
+scopeToDeclareIn.declare(variableName, n, type, input, inferred);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation prefix_operators !_ter ^ ^ qualifier variableName_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument(!variableName.isEmpty());
+
+StatementExpression expression MethodInvocation qualifier validator_ter ^ ^ arguments MemberReference member sourceName_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member parent_ter ^ ^ ^ MemberReference member oldVar_ter ^ ^ ^ MemberReference member variableName_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member expectUndeclaredVariable_ter ^ ^ ^ ^ ^ 
+validator.expectUndeclaredVariable(sourceName, n, parent, oldVar, variableName, type);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation prefix_operators !_ter ^ ^ qualifier variableName_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument(!variableName.isEmpty());
+
+stderr: 

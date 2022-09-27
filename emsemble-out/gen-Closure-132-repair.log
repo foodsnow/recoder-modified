@@ -1,0 +1,335 @@
+stdout: IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ 
+if(!mayEffectMutableState(lhs)){
+
+IfStatement condition MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ ^ 
+if(areNodesEqualForInlining(lhs, elseOp.getFirstChild())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getLastChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getNext_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getNext()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getLastSibling_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getLastSibling()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getParent_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getParent()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.detachFromParent()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member removeFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.removeFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member removeChildren_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.removeChildren()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member cloneNode_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.cloneNode()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member cloneTree_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.cloneTree()) && !mayEffectMutableState(lhs))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) || !mayEffectMutableState(lhs))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs)) && !mayEffectMutableState(lhs))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getName_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getName()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier assignName_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, assignName.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier thenOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, thenOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!mayEffectMutableState(lhs) && !mayEffectMutableState(lhs))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getType_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getType()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier hookNode_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, hookNode.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier par0 ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, .getFirstChild()) && !mayEffectMutableState(lhs))){
+
+IfStatement condition MemberReference member lhs_ter ^ ^ ^ ^ ^ 
+if(lhs){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member lhs_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lhs != null)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member elseOp_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(elseOp, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member lhs_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lhs && !mayEffectMutableState(lhs))){
+
+StatementExpression expression MethodInvocation qualifier lhs_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+lhs.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier lhs_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+lhs.setQuotedString();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs)) && !mayEffectMutableState(lhs)) && !mayEffectMutableState(lhs))){
+
+IfStatement condition MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ ^ 
+if(areNodesEqualForInlining(lhs)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member getBlockExpression_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !getBlockExpression(lhs))){
+IfStatement condition MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ 
+if(elseOp.getFirstChild()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseExpr_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseExpr.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((isAssignmentOp(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier par1 ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, .getFirstChild()) && !mayEffectMutableState(lhs))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && (areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs)))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !isAssignmentOp(lhs))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!areNodesEqualForInlining(lhs) && !mayEffectMutableState(lhs))){
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ 
+!mayEffectMutableState(lhs);
+
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member getBlockExpression_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((getBlockExpression(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier NodeUtil_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, NodeUtil.getFirstChild()) && !mayEffectMutableState(lhs))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !areNodesEqualForInlining(lhs))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member tryMinimizeIf_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((tryMinimizeIf(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier IR_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, IR.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member removeFirstChild_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !removeFirstChild(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member srcref_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((srcref(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member tryMinimizeIf_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !tryMinimizeIf(lhs))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member areNodesEqualForInlining_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member srcref_ter ^ ^ ^ ^ ^ ^ 
+if((areNodesEqualForInlining(lhs, elseOp.getFirstChild()) && !srcref(lhs))){
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+if(lhs.hasChildren()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+if(lhs.isFromExterns()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+if(lhs.hasOneChild()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+if(lhs.hasMoreThanOneChild()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+if(lhs.isQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+if(lhs.isUnscopedQualifiedName()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(lhs.isVarArgs()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+if(lhs.isOptionalArg()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+if(lhs.isSyntheticBlock()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+if(lhs.wasEmptyNode()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+if(lhs.isOnlyModifiesThisCall()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+if(lhs.isNoSideEffectsCall()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+if(lhs.isLocalResultCall()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+if(lhs.isQuotedString()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+if(lhs.isAdd()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+if(lhs.isAnd()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+if(lhs.isArrayLit()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+if(lhs.isAssign()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+if(lhs.isAssignAdd()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+if(lhs.isBlock()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+if(lhs.isBreak()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+if(lhs.isCall()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+if(lhs.isCase()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+if(lhs.isCast()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+if(lhs.isCatch()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+if(lhs.isComma()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+if(lhs.isContinue()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+if(lhs.isDebugger()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+if(lhs.isDec()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+if(lhs.isDefaultCase()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+if(lhs.isDelProp()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+if(lhs.isDo()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(lhs.isEmpty()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(lhs.isExprResult()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+if(lhs.isFalse()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+if(lhs.isFor()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+if(lhs.isFunction()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+if(lhs.isGetterDef()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+if(lhs.isGetElem()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+if(lhs.isGetProp()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+if(lhs.isHook()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+if(lhs.isIf()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+if(lhs.isIn()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+if(lhs.isInc()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+if(lhs.isInstanceOf()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+if(lhs.isLabel()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+if(lhs.isLabelName()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(lhs.isName()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+if(lhs.isNE()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+if(lhs.isNew()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+if(lhs.isNot()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+if(lhs.isNull()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+if(lhs.isNumber()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+if(lhs.isObjectLit()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+if(lhs.isOr()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+if(lhs.isParamList()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+if(lhs.isRegExp()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+if(lhs.isReturn()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+if(lhs.isScript()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+if(lhs.isSetterDef()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+if(lhs.isString()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+if(lhs.isStringKey()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+if(lhs.isSwitch()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+if(lhs.isThis()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+if(lhs.isThrow()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+if(lhs.isTrue()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+if(lhs.isTry()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+if(lhs.isTypeOf()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+if(lhs.isVar()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+if(lhs.isVoid()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+if(lhs.isWhile()){
+
+IfStatement condition MethodInvocation qualifier lhs_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+if(lhs.isWith()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation arguments MemberReference member lhs_ter ^ ^ ^ MethodInvocation qualifier elseOp_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member reportCodeChange_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member lhs_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ ^ 
+if((reportCodeChange(lhs, elseOp.getFirstChild()) && !mayEffectMutableState(lhs))){
+stderr: 

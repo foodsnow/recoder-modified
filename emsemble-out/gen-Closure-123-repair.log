@@ -1,0 +1,138 @@
+stdout: 
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p != null)){
+
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference member p_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = p;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p + 1)){
+
+StatementExpression expression MethodInvocation member tagAsStrict_ter ^ ^ ^ ^ ^ 
+tagAsStrict();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member context_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((context != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((p == null)){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p == null)){
+
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference qualifier Token_ter ^ ^ member OTHER_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = Token.OTHER;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member first_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((first != null)){
+
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference member context_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = context;
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = ;
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member childCount_ter ^ ^ ^ ^ operandr Literal value 3_ter ^ ^ ^ ^ ^ ^ ^ 
+if((childCount == 3)){
+
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference member rhsContext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = rhsContext;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((p != null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference member first_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = first;
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((p + 1)){
+return;
+}
+IfStatement condition MemberReference member p_ter ^ ^ ^ ^ ^ 
+if(p){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member last_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((last != null)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member p_ter ^ ^ ^ ^ ^ 
+if(!p){
+
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference member type_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = type;
+
+IfStatement condition MemberReference member p_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(p){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((outputCharsetEncoder != null)){
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member childCount_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((childCount == 2)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier first_ter ^ ^ member isString_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier last_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!first.isString() || !last.isString())){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier first_ter ^ ^ member getNext_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(first.getNext(), 1, rhsContext);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((p == null)){
+continue;
+}
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference member OTHER_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = OTHER;
+
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference qualifier Context_ter ^ ^ member OTHER_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = Context.OTHER;
+
+StatementExpression expression MethodInvocation arguments MemberReference member last_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ MemberReference member rhsContext_ter ^ ^ ^ ^ member addExpr_ter ^ ^ ^ ^ ^ 
+addExpr(last, 1, rhsContext);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((p != null)){
+continue;
+}
+LocalVariableDeclaration type ReferenceType name Context_ter ^ ^ ^ ^ declarators VariableDeclarator name rhsContext_ter ^ ^ initializer MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Context rhsContext = outputCharsetEncoder;
+
+stderr: 

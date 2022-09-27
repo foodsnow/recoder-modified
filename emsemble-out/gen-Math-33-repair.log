@@ -1,0 +1,127 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) >= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 1, maxUlps) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) > 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 2, maxUlps) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, false, maxUlps) > 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) == 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) < 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, true, maxUlps) > 0)){
+IfStatement condition MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ ^ 
+if(Precision.compareTo(entry, 0d, maxUlps)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) != 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0, maxUlps) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value null_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, null, maxUlps) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member entry_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, entry) > 0)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member entry_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((entry != 0)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, "null", maxUlps) > 0)){
+StatementExpression expression MethodInvocation member initializeColumnLabels_ter ^ ^ ^ ^ ^ 
+initializeColumnLabels();
+
+StatementExpression expression MethodInvocation member dropPhase1Objective_ter ^ ^ ^ ^ ^ 
+dropPhase1Objective();
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member i_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, i) > 0)){
+condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) || 0)){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) > 0)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) && 0)){
+IfStatement condition MethodInvocation arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member isOptimal_ter ^ ^ ^ ^ ^ 
+if(isOptimal(entry, 0d, maxUlps)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member DEFAULT_ULPS_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, DEFAULT_ULPS) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member numDecisionVariables_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, numDecisionVariables) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member numSlackVariables_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, numSlackVariables) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member numArtificialVariables_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, numArtificialVariables) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, epsilon) > 0)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maxUlps_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maxUlps != 0)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member getNumObjectiveFunctions_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.getNumObjectiveFunctions(entry, 0d, maxUlps) > 0)){
+StatementExpression expression MethodInvocation qualifier columnsToDrop_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+columnsToDrop.add(i);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maxUlps_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((maxUlps != 0) && (Precision.compareTo(entry, 0d, maxUlps) > 0))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member getArtificialVariableOffset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.getArtificialVariableOffset(entry, 0d, maxUlps) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier i_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((i.compareTo(entry, 0d, maxUlps) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member dropPhase1Objective_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.dropPhase1Objective(entry, 0d, maxUlps) > 0)){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MethodInvocation member getArtificialVariableOffset_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i + getArtificialVariableOffset())){
+
+StatementExpression expression MethodInvocation qualifier columnsToDrop_ter ^ ^ arguments MemberReference member col_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+columnsToDrop.add(col);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member entry_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((entry != 0) && (Precision.compareTo(entry, 0d, maxUlps) > 0))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member entry_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((entry != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member entry_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((entry == 0)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.getEntry(entry, 0d, maxUlps) > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(i, 0d, maxUlps) > 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maxUlps_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Precision.compareTo(entry, 0d, maxUlps) > 0) && (maxUlps != 0))){
+
+condition BinaryOperation operator &_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) & 0)){
+condition BinaryOperation operator >>>_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) >>> 0)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation arguments MemberReference member col_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((getBasicRow(col) == null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxUlps_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((maxUlps == 0) && (Precision.compareTo(entry, 0d, maxUlps) > 0))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member entry_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((entry == null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxUlps_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Precision.compareTo(entry, 0d, maxUlps) > 0) && (maxUlps == 0))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((Precision.compareTo(entry, 0d, maxUlps) > 1)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member entry_ter ^ ^ ^ Literal value 0d_ter ^ ^ ^ MemberReference member maxUlps_ter ^ ^ ^ ^ member compareTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member entry_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Precision.compareTo(entry, 0d, maxUlps) > 0) && (entry != 0))){
+
+stderr: 

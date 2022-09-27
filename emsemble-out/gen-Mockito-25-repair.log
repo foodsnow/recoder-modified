@@ -1,0 +1,394 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, container);
+ReturnStatement expression MethodInvocation arguments MemberReference member stubbedInvocationMatcher_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(stubbedInvocationMatcher, container);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member stubbedInvocationMatcher_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, stubbedInvocationMatcher);
+ReturnStatement expression MethodInvocation arguments MemberReference member container_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(container, container);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member getMock_ter ^ ^ ^ ^ ^ 
+return getMock(invocation, container);
+ReturnStatement expression MethodInvocation qualifier stubbedInvocationMatcher_ter ^ ^ arguments MemberReference member invocation_ter ^ ^ ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+if (true) { return stubbedInvocationMatcher.answer(invocation); }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference member stubbedInvocationMatcher_ter ^ ^ ^ ^ ^ 
+if (true) { return stubbedInvocationMatcher; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, container, container);
+ReturnStatement expression MethodInvocation member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock();
+ReturnStatement expression MethodInvocation arguments MemberReference member par1 ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(, container);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member handler_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(handler, container);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation);
+ReturnStatement expression MethodInvocation arguments MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(container);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, );
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MethodInvocation qualifier stubbedInvocationMatcher_ter ^ ^ arguments MemberReference member invocation_ter ^ ^ ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+return stubbedInvocationMatcher.answer(invocation);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member handler_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, handler);
+ReturnStatement expression MemberReference member container_ter ^ ^ ^ ^ ^ 
+if (true) { return container; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member loc3 ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(, container);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member answer_ter ^ ^ ^ ^ ^ 
+return answer(invocation, container);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, container, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ MemberReference member stubbedInvocationMatcher_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, container, stubbedInvocationMatcher);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(invocation, container);
+ReturnStatement expression MemberReference member container_ter ^ ^ ^ ^ ^ 
+return container;
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, container, true);
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier invocation_ter ^ ^ member getMock_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation.getMock());
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier stubbedInvocationMatcher_ter ^ ^ member getInvocation_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(stubbedInvocationMatcher.getInvocation());
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, invocation);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ MemberReference member loc3 ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member invocation_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(invocation, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member container_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+return recordDeepStubMock(container, invocation);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member container_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((container != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member container_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((container == null)){
+return null;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+final Class<?> clz = invocation.getMethod().getReturnType();
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = invocation.getMethod().getReturnType();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member container_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((container != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member container_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((container == null)){
+return null;}
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = invocation.getMethod();
+
+StatementExpression expression MethodInvocation qualifier container_ter ^ ^ arguments ClassCreator type ReferenceType name Answer_ter ^ ^ arguments TypeArgument type ReferenceType name Object_ter ^ ^ ^ ^ ^ ^ ^ ^ body MethodDeclaration modifiers public_ter ^ ^ return_type ReferenceType name Object_ter ^ ^ ^ ^ name answer_ter ^ ^ parameters FormalParameter type ReferenceType name InvocationOnMock_ter ^ ^ ^ ^ name invocation_ter ^ ^ ^ ^ throws Throwable_ter ^ ^ body ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member addAnswer_ter ^ ^ ^ ^ ^ 
+arg 
+arg Object
+arg 
+arg Object
+container.addAnswer(new Answer<Object>(), false);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((invocation == null)){
+return null;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member container_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((container == null)){
+
+StatementExpression expression MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ 
+invocation.getMethod().getReturnType();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation != null)){
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Class clz = invocation.getMethod().getReturnType();
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ member getReturnType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = invocation.getReturnType();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member container_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ 
+if((container == null)){
+return mock;}
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getReturnType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = invocation.getReturnType().getReturnType();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((invocation == null)){
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier par3 ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = .getMethod();
+
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier container_ter ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = container.getMethod();
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier par3 ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = .getMethod().getReturnType();
+
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer Cast type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+arg ?
+arg ?
+Class<?> clz = (Class<?>)invocation.getMethod().getReturnType();
+
+StatementExpression expression Assignment expressionl MemberReference member clz_ter ^ ^ ^ ^ value MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+clz = invocation.getMethod().getReturnType();
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression SuperMethodInvocation member recordDeepStubMock_ter ^ ^ ^ ^ ^ 
+super.recordDeepStubMock();
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member recordDeepStubMock_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = invocation.getMethod().recordDeepStubMock();
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier container_ter ^ ^ selectors MethodInvocation member getReturnType_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = container.getMethod().getReturnType();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member invocation_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ 
+if((invocation == null)){
+return mock;}
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier par3 ^ ^ member getReturnType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = .getReturnType();
+
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier invocation_ter ^ ^ selectors MethodInvocation member getMethod_ter ^ ^ ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = invocation.getMethod().getMethod();
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = getMethod();
+
+LocalVariableDeclaration type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name clz_ter ^ ^ initializer MethodInvocation qualifier container_ter ^ ^ member getReturnType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Class<?> clz = container.getReturnType();
+
+StatementExpression expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ 
+org.mockito.Mockito.mock(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(clz, this);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member clz_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((clz != null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member addAnswer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.addAnswer(clz, this);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object mock = org.mockito.Mockito.mock(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member container_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(container, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(clz);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member clz_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((clz == null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member clz_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((clz == null)){
+return null;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final Object mock = (Object)org.mockito.Mockito.mock(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier par0 ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = .mock(clz, this);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member getMethod_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.getMethod(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member par0 ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(, this);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member clz_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = clz(clz, this);
+
+StatementExpression expression MethodInvocation qualifier container_ter ^ ^ arguments ClassCreator type ReferenceType name Answer_ter ^ ^ arguments TypeArgument type ReferenceType name Object_ter ^ ^ ^ ^ ^ ^ ^ ^ body MethodDeclaration modifiers public_ter ^ ^ return_type ReferenceType name Object_ter ^ ^ ^ ^ name answer_ter ^ ^ parameters FormalParameter type ReferenceType name InvocationOnMock_ter ^ ^ ^ ^ name invocation_ter ^ ^ ^ ^ throws Throwable_ter ^ ^ body ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member addAnswer_ter ^ ^ ^ ^ ^ 
+arg 
+arg Object
+arg 
+arg Object
+container.addAnswer(new Answer<Object>(), false);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member clz_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ 
+if((clz == null)){
+return mock;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = mock(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ MemberReference member invocation_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(clz, invocation);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments This_ter ^ MemberReference member clz_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(this, clz);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member clz_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.clz(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ MemberReference member container_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(clz, container);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member invocation_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(invocation, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ MemberReference member clz_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(clz, clz);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(clz, true);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member container_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((container != null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(clz, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member getReturnType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.getReturnType(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(mock, this);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member par0 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member mock_ter ^ ^ ^ ^ value MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+mock = org.mockito.Mockito.mock(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation arguments MemberReference member clz_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = mock(clz);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier container_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = container.mock(clz, this);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member clz_ter ^ ^ ^ This_ter ^ ^ member recordDeepStubMock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.recordDeepStubMock(clz, this);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name mock_ter ^ ^ initializer MethodInvocation qualifier org.mockito.Mockito_ter ^ ^ arguments MemberReference member par0 ^ ^ ^ MemberReference member clz_ter ^ ^ ^ ^ member mock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object mock = org.mockito.Mockito.mock(, clz);
+
+
+stderr: 

@@ -1,0 +1,142 @@
+stdout: 
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member isSet_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isSet = false;
+
+StatementExpression expression MethodInvocation member ensureGenerated_ter ^ ^ ^ ^ ^ 
+ensureGenerated();
+
+StatementExpression expression MethodInvocation member process_ter ^ ^ ^ ^ ^ 
+process();
+
+StatementExpression expression Assignment expressionl MemberReference member isSet_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isSet = true;
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+name = n.getString();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference qualifier Name.Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = Name.Type.OTHER;
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member isSet_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isSet = true;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference qualifier Name.Type_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = Name.Type.FUNCTION;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ member getValueType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = getValueType(n.getNext());
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rvalue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference qualifier Name.Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ if_false MethodInvocation arguments MemberReference member rvalue_ter ^ ^ ^ ^ member getValueType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ((rvalue == null))?Name.Type.OTHER:getValueType(rvalue);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gramps_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((gramps == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+name = n.getString();
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference qualifier Name.Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+type = Name.Type.OTHER;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member rvalue_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+rvalue = true;
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member isSet_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+isSet = true;
+break;
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference qualifier Name.Type_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+type = Name.Type.FUNCTION;
+break;
+
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ member ensureGenerated_ter ^ ^ ^ ^ ^ 
+NodeUtil.ensureGenerated();
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ member process_ter ^ ^ ^ ^ ^ 
+NodeUtil.process();
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member getString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+name = n.getString();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference qualifier Name.Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = Name.Type.OTHER;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ member getValueType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+type = getValueType(n.getNext());
+break;
+
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member ensureGenerated_ter ^ ^ ^ ^ ^ 
+parent.ensureGenerated();
+
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member process_ter ^ ^ ^ ^ ^ 
+parent.process();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member ensureGenerated_ter ^ ^ ^ ^ ^ 
+n.ensureGenerated();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member process_ter ^ ^ ^ ^ ^ 
+n.process();
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MemberReference qualifier Name.Type_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = Name.Type.FUNCTION;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isSet_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isSet != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = true;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rvalue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference qualifier Name.Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ if_false MethodInvocation arguments MemberReference member rvalue_ter ^ ^ ^ ^ member getValueType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+type = ((rvalue == null))?Name.Type.OTHER:getValueType(rvalue);
+break;
+
+StatementExpression expression MethodInvocation member ensureGenerated_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+ensureGenerated();
+break;
+
+StatementExpression expression MethodInvocation member process_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+process();
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value MethodInvocation arguments MethodInvocation qualifier n_ter ^ ^ member getNext_ter ^ ^ ^ ^ member getValueType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = getValueType(n.getNext());
+
+StatementExpression expression Assignment expressionl MemberReference member type_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rvalue_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference qualifier Name.Type_ter ^ ^ member OTHER_ter ^ ^ ^ ^ if_false MethodInvocation arguments MemberReference member rvalue_ter ^ ^ ^ ^ member getValueType_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+type = ((rvalue == null))?Name.Type.OTHER:getValueType(rvalue);
+
+StatementExpression expression Assignment expressionl MemberReference member parent_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parent = true;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member parent_ter ^ ^ ^ ^ member isAssignmentOp_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isAssignmentOp(parent) && (parent.getFirstChild() == n))){
+
+stderr: 

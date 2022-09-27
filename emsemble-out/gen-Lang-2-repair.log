@@ -1,0 +1,84 @@
+stdout: LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final long len = str.length();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int len = str.length();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final boolean len = str.length();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length();
+
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final Object len = str.length();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member toLocale_ter ^ ^ ^ ^ ^ ^ ^ 
+final int len = str.toLocale();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name len_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final len len = str.length();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(str.length());
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+final int len = str.getName();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(0);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(1);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+final int len = str.get();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments This_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(this);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ ^ 
+final int len = str.toString();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(false);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member str_ter ^ ^ ^ ^ ^ ^ ^ 
+final int len = str.str();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments Literal value 2_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(2);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(true);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments MemberReference member e_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(e);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length(str);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ selectors MethodInvocation member length_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int  = str.length().length();
+
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+stderr: 

@@ -1,0 +1,87 @@
+stdout: 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression MethodInvocation arguments MemberReference member returnType_ter ^ ^ ^ ^ member returnValueFor_ter ^ ^ ^ ^ ^ 
+return returnValueFor(returnType);
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation qualifier mockUtil_ter ^ ^ selectors MethodInvocation member getTypeToMock_ter ^ ^ ^ MethodInvocation member getSimpleName_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member getMockSettings_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier mock_ter ^ ^ member hashCode_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((("null" + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName()) + "null") + mock.hashCode());
+ReturnStatement expression MemberReference member returnType_ter ^ ^ ^ ^ ^ 
+return returnType;
+ReturnStatement expression MethodInvocation qualifier name_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return name.toString();
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MemberReference member name_ter ^ ^ ^ ^ ^ 
+return name;
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MemberReference member loc3 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MethodInvocation arguments MemberReference member returnType_ter ^ ^ ^ ^ member returnValueFor_ter ^ ^ ^ ^ ^ 
+if (true) { return returnValueFor(returnType); }
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation qualifier mockUtil_ter ^ ^ selectors MethodInvocation member getTypeToMock_ter ^ ^ ^ MethodInvocation member getSimpleName_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member getMockSettings_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier mock_ter ^ ^ member hashCode_ter ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return ((("null" + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName()) + "null") + mock.hashCode()); }
+
+ReturnStatement expression MethodInvocation qualifier name_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+if (true) { return name.toString(); }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ 
+return mock;
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ 
+return -1;
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation qualifier mockUtil_ter ^ ^ selectors MethodInvocation member getTypeToMock_ter ^ ^ ^ MethodInvocation member getSimpleName_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member getMockSettings_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((("null" + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName()) + "null")){
+continue;
+}
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation qualifier mockUtil_ter ^ ^ selectors MethodInvocation member getTypeToMock_ter ^ ^ ^ MethodInvocation member getSimpleName_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member getMockSettings_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (("null" + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName()) + "null");
+IfStatement condition MethodInvocation qualifier methodsGuru_ter ^ ^ arguments MethodInvocation qualifier invocation_ter ^ ^ member getMethod_ter ^ ^ ^ ^ member isCompareToMethod_ter ^ ^ ^ ^ ^ 
+if(methodsGuru.isCompareToMethod(invocation.getMethod())){
+continue;
+}
+
+ReturnStatement expression MemberReference member returnType_ter ^ ^ ^ ^ ^ 
+if (true) { return returnType; }
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation qualifier mockUtil_ter ^ ^ selectors MethodInvocation member getTypeToMock_ter ^ ^ ^ MethodInvocation member getSimpleName_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member getMockSettings_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName())){
+continue;
+}
+
+ReturnStatement expression MemberReference member loc5 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation qualifier mockUtil_ter ^ ^ selectors MethodInvocation member getTypeToMock_ter ^ ^ ^ MethodInvocation member getSimpleName_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member getMockSettings_ter ^ ^ ^ ^ ^ ^ ^ 
+return ("null" + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName());
+ReturnStatement expression MethodInvocation qualifier invocation_ter ^ ^ member getMethod_ter ^ ^ ^ ^ ^ 
+return invocation.getMethod();
+Statement_ter ^ 
+1 Statement_ter
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+stderr: 

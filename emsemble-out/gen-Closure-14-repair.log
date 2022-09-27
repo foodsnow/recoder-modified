@@ -1,0 +1,138 @@
+stdout: 
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member ON_TRUE_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.ON_TRUE, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member ON_FALSE_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.ON_FALSE, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member ON_EX_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.ON_EX, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.UNCOND, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments Literal value false_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(false, "null");
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, finallyNode, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member fromNode_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, fromNode, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments Literal value false_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(false, "null");
+
+ReturnStatement expression MethodInvocation arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member parent_ter ^ ^ ^ MemberReference member cfa_ter ^ ^ ^ ^ member computeFollowNode_ter ^ ^ ^ ^ ^ 
+if (true) { return computeFollowNode(fromNode, parent, cfa); }
+
+StatementExpression expression MethodInvocation qualifier cfa.finallyMap_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.finallyMap.createEdge(fromNode, Branch.UNCOND, finallyNode);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member cfa_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, cfa, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member finallyNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(finallyNode, Branch.UNCOND, finallyNode);
+
+ReturnStatement expression MemberReference member parent_ter ^ ^ ^ ^ ^ 
+if (true) { return parent; }
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member parent_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, parent, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member cfa_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(cfa, Branch.UNCOND, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member nextSibling_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, nextSibling, finallyNode);
+
+ReturnStatement expression MemberReference member finallyNode_ter ^ ^ ^ ^ ^ 
+if (true) { return finallyNode; }
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member cfa_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.cfa, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member fromNode_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.fromNode, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member WHILE_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.WHILE, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.UNCOND, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member computeFallThrough_ter ^ ^ ^ ^ ^ 
+cfa.computeFallThrough(fromNode, Branch.UNCOND, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+NodeUtil.createEdge(fromNode, Branch.UNCOND, finallyNode);
+
+ReturnStatement expression MemberReference member parent_ter ^ ^ ^ ^ ^ 
+return parent;
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member parent_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(parent);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member finallyNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((finallyNode != null)){
+continue;
+}
+
+ReturnStatement expression MethodInvocation arguments MethodInvocation qualifier node_ter ^ ^ member getNext_ter ^ ^ ^ ^ member computeFallThrough_ter ^ ^ ^ ^ ^ 
+if (true) { return computeFallThrough(node.getNext()); }
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+node.createEdge(fromNode, Branch.UNCOND, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member parent_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(parent, Branch.UNCOND, finallyNode);
+
+control EnhancedForControl var VariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name finallyNode_ter ^ ^ ^ ^ ^ ^ iterable MethodInvocation qualifier cfa.finallyMap_ter ^ ^ arguments MemberReference member parent_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(Node finallyNode = ;
+:cfa.finallyMap.get(parent))
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+if(cfa.createEdge(fromNode, Branch.UNCOND, finallyNode)){
+
+
+ReturnStatement expression MemberReference member nextSibling_ter ^ ^ ^ ^ ^ 
+if (true) { return nextSibling; }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member parent_ter ^ ^ ^ MemberReference member cfa_ter ^ ^ ^ ^ member computeFollowNode_ter ^ ^ ^ ^ ^ 
+return computeFollowNode(fromNode, parent, cfa);
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member TRY_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.TRY, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member nextSibling_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member UNCOND_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(nextSibling, Branch.UNCOND, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member DO_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.DO, finallyNode);
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge();
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference qualifier Branch_ter ^ ^ member parent_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, Branch.parent, finallyNode);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member cfa_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cfa != null)){
+continue;
+}
+
+StatementExpression expression MethodInvocation qualifier cfa_ter ^ ^ arguments MemberReference member fromNode_ter ^ ^ ^ MemberReference member finallyNode_ter ^ ^ ^ ^ member createEdge_ter ^ ^ ^ ^ ^ 
+cfa.createEdge(fromNode, finallyNode);
+
+
+stderr: 

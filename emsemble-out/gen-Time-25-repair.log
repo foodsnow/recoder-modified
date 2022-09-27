@@ -1,0 +1,118 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) >= 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) <= 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member instantAdjusted_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((instantAdjusted - offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetAdjusted - offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal >= offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal <= offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) < 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) > 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member nextLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((nextLocal - offsetAdjusted) < 0)){
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ ^ 
+if((offsetLocal - offsetAdjusted)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - instantAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member par1 ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((( - offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member instantLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((instantLocal - offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal > offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member nextAdjusted_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((nextAdjusted - offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal < offsetAdjusted) < 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) == 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member nextLocal_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - nextLocal) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetLocal_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetLocal) < 0)){
+condition BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) - 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal == offsetAdjusted) < 0)){
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+ReturnStatement expression MemberReference member offsetLocal_ter ^ ^ ^ ^ ^ 
+if (true) { return offsetLocal; }
+
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member par1 ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - ) < 0)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) != 0)){
+IfStatement condition MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ 
+if(offsetAdjusted){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) < 0)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member par2 ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((( - offsetAdjusted) < 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member nextAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - nextAdjusted) < 0)){
+IfStatement condition MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ 
+if(instantAdjusted){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (offsetAdjusted < instantAdjusted))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (offsetAdjusted <= instantAdjusted))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member instantLocal_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - instantLocal) < 0)){
+condition BinaryOperation operator >>_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) >> 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((offsetAdjusted < instantAdjusted) || ((offsetLocal - offsetAdjusted) < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member instantAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((instantAdjusted < instantAdjusted) || ((offsetLocal - offsetAdjusted) < 0))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference prefix_operators -_ter ^ ^ member instantAdjusted_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((-instantAdjusted - offsetAdjusted) < 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member instantAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (instantAdjusted < instantAdjusted))){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member offsetAdjusted_ter ^ ^ ^ ^ ^ 
+offsetAdjusted++;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member instantAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (instantAdjusted <= instantAdjusted))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member instantAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((instantAdjusted > instantAdjusted) || ((offsetLocal - offsetAdjusted) < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((offsetAdjusted < 0) || ((offsetLocal - offsetAdjusted) < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((offsetAdjusted < offsetAdjusted) || ((offsetLocal - offsetAdjusted) < 0))){
+
+condition BinaryOperation operator >>>_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if(((offsetLocal - offsetAdjusted) >>> 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (offsetAdjusted < 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (offsetAdjusted <= 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr MemberReference member instantAdjusted_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (offsetAdjusted > instantAdjusted))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member offsetLocal_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member offsetAdjusted_ter ^ ^ ^ ^ operandr MemberReference member offsetAdjusted_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((offsetLocal - offsetAdjusted) < 0) || (offsetAdjusted < offsetAdjusted))){
+
+stderr: 

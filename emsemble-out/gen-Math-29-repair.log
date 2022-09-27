@@ -1,0 +1,252 @@
+stdout: LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier MethodInvocation member getEntries_ter ^ ^ ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = getEntries().iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = v.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier res_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = res.iterator();
+
+StatementExpression expression MethodInvocation member unitize_ter ^ ^ ^ ^ ^ 
+unitize();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member res_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((res != null)){
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ member unitize_ter ^ ^ ^ ^ ^ 
+res.unitize();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier par1 ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = .iterator();
+
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = iterator();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Iterator iter = entries.iterator();
+
+StatementExpression expression MethodInvocation qualifier entries_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ 
+entries.iterator();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member res_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((res == null)){
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member ebeDivide_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.ebeDivide();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Cast type ReferenceType name Iterator_ter ^ ^ ^ ^ expression MethodInvocation qualifier entries_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Iterator iter = (Iterator)entries.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member getEntry_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.getEntry();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member res_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((res == null)){
+return null;}
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.hasNext();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member res_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member res_ter ^ ^ ^ ^ ^ 
+if((res == null)){
+return res;}
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member advance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.advance();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Iterator<?> iter = entries.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ arguments This_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.iterator(this);
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member value_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.value();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = ;
+
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation arguments This_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = iterator(this);
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier iter_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = iter.iterator();
+
+StatementExpression expression MethodInvocation qualifier iter_ter ^ ^ member advance_ter ^ ^ ^ ^ ^ 
+iter.advance();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v != null)){
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier iter_ter ^ ^ member value_ter ^ ^ ^ ^ operandr MethodInvocation qualifier v_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(iter.key(), (iter.value() / v.getEntry(iter.key())));
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.iterator(iter.key());
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ member unitize_ter ^ ^ ^ ^ ^ 
+v.unitize();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member key_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.key();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer MethodInvocation qualifier entries_ter ^ ^ member getDimension_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator iter = entries.getDimension();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ member unitize_ter ^ ^ ^ ^ ^ 
+res.unitize();
+
+StatementExpression expression MethodInvocation qualifier iter_ter ^ ^ member advance_ter ^ ^ ^ ^ ^ 
+iter.advance();
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ BinaryOperation operator *_ter ^ ^ operandl MethodInvocation qualifier iter_ter ^ ^ member value_ter ^ ^ ^ ^ operandr MethodInvocation qualifier v_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(iter.key(), (iter.value() * v.getEntry(iter.key())));
+
+StatementExpression expression MethodInvocation member unitize_ter ^ ^ ^ ^ ^ 
+unitize();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier v_ter ^ ^ member getDimension_ter ^ ^ ^ ^ member checkVectorDimensions_ter ^ ^ ^ ^ ^ 
+checkVectorDimensions(v.getDimension());
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MemberReference member DEFAULT_ZERO_TOLERANCE_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(DEFAULT_ZERO_TOLERANCE);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MemberReference member virtualSize_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(virtualSize);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MemberReference member epsilon_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(epsilon);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation qualifier v_ter ^ ^ member unitize_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(v.unitize());
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry("null");
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member res_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((res != null)){
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(false);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(0);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry();
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(true);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ member unitize_ter ^ ^ ^ ^ ^ 
+v.unitize();
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation member unitize_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(unitize());
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments This_ter ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(this);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(iter.key());
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation qualifier v_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(v.getEntry(iter.key()));
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ member advance_ter ^ ^ ^ ^ ^ 
+res.advance();
+
+IfStatement condition MethodInvocation qualifier iter_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ 
+if(iter.hasNext()){
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation qualifier res_ter ^ ^ member unitize_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(res.unitize());
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(v);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MethodInvocation qualifier v_ter ^ ^ member getDimension_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(v.getDimension());
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MethodInvocation qualifier iter_ter ^ ^ member value_ter ^ ^ ^ ^ operandr MethodInvocation qualifier v_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iter.value() * v.getEntry(iter.key()))){
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MemberReference member res_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(res);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(null);
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MethodInvocation qualifier iter_ter ^ ^ member value_ter ^ ^ ^ ^ operandr MethodInvocation qualifier v_ter ^ ^ arguments MethodInvocation qualifier iter_ter ^ ^ member key_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry((iter.value() * v.getEntry(iter.key())));
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments This selectors MethodInvocation member unitize_ter ^ ^ ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(this.unitize());
+
+StatementExpression expression MethodInvocation qualifier res_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ ^ member setEntry_ter ^ ^ ^ ^ ^ 
+res.setEntry(iter);
+
+stderr: 

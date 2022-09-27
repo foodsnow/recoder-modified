@@ -1,0 +1,279 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] += (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] = (e * e);
+
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member b_ter ^ ^ ^ ^ value MemberReference member e_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+b[i].[r] = e;
+
+
+StatementExpression expression Assignment expressionl MemberReference member loop_ter ^ ^ ^ ^ value BinaryOperation operator <_ter ^ ^ operandl MemberReference prefix_operators ++_ter ^ ^ member r_ter ^ ^ ^ ^ operandr MemberReference member order_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+loop = (++r < order);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value MemberReference member f_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c[ii].[ij] = f;
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value MemberReference member f_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c[ij].[ii] = f;
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member b_ter ^ ^ ^ ^ value MemberReference member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+b[r].[r] = sqrt;
+
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] &= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] *= (e * e);
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member loop_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+loop += (e * e);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member b_ter ^ ^ ^ ^ value MemberReference member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+b[r].[r] = sqrt;
+
+
+StatementExpression expression Assignment expressionl MemberReference member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e -= (e * e);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type |=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] |= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value MemberReference member f_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c[ij].[ii] = f;
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value MemberReference member f_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c[ii].[ij] = f;
+
+
+StatementExpression expression Assignment expressionl MemberReference member loop_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+loop = (e * e);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e[ii].[ii] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+c[ii].[ij] += (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e[i].[r] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference member loop_ter ^ ^ ^ ^ value BinaryOperation operator <_ter ^ ^ operandl MemberReference prefix_operators ++_ter ^ ^ member r_ter ^ ^ ^ ^ operandr MemberReference member order_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+loop = (++r < order);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member order_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i < order)){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member ii_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+ii[i].[r] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c[ii].[ij] = (e * e);
+
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member j_ter ^ ^ ^ ^ ^ ^ 
+for(int j = (r + 1);(j < i);++j) {
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e[ij].[ii] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e[j] -= (e * e);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e[ii].[ij] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+c[ij].[ii] += (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[i].[r] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member ii_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+ii[ii].[ii] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e[j].[r] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference member loop_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+loop -= (e * e);
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member order_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = (r + 1);(i < order);++i) {
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+c[ij].[ii] = (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member ii_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+ii[j] -= (e * e);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member b_ter ^ ^ ^ ^ value MemberReference member e_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+b[i].[r] = e;
+
+
+StatementExpression expression Assignment expressionl MemberReference member ii_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+ii -= (e * e);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[ii] -= (e * e);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member ii_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+ii[ij].[ii] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ^ member ii_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+ii[ii].[ij] -= (e * e);
+
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ 
+if((j < i)){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] /= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[i] -= (e * e);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] -= (e[ii].[ii] * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ij_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[ii].[ij] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member ii_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] -= (ii * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member ii_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+ii[j].[r] -= (e * e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member ii_ter ^ ^ ^ ^ ^ ^ member c_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+c[ii].[ii] -= (e - e);
+
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member e_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+e[i] -= (e * e);
+
+ReturnStatement_ter ^ 
+return;
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] == r)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] != r)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap != r)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] > r)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] >= r)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[swap[r]] != r)){
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] && r)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] < r)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((index != r)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((swap[r] != r) && (swap[r] != r))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] || r)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] <= r)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member index_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((index[r] != r)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ ^ 
+if((swap[r] != r)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ ^ ^ member index_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((index[swap[r]] != r)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] instanceof r)){
+BreakStatement_ter ^ 
+break;
+
+
+
+condition BinaryOperation operator |_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ 
+if((swap[r] | r)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member swap_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((swap[r] != r) && (swap != null))){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member index_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ ^ ^ member index_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+index[r] = index[swap[r]];
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ ^ ^ member index_ter ^ ^ ^ ^ value MemberReference member tmp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+index[swap[r]] = tmp;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member swap_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((swap[r] != r) && (swap == null))){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ value MemberReference member i_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+swap[r] = i;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member swap_ter ^ ^ ^ ^ operandr MemberReference member swap_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((swap[r] != r) && (swap == swap))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member swap_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((swap[r] != r) && (swap == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member swap_ter ^ ^ ^ ^ operandr MemberReference member swap_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((swap[r] != r) && (swap != swap))){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member order_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = (r + 1);(i < order);++i) {
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member r_ter ^ ^ ^ ^ ^ ^ member swap_ter ^ ^ ^ ^ operandr MemberReference member r_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member swap_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((swap[r] != r) && (swap != 0))){
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member r_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member order_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = (r + 1);(i < order);++i) {
+stderr: 

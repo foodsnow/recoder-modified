@@ -1,0 +1,176 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 0_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((0 * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((2 * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) - 1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int j = ((4 * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = (4 * n);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+long j = ((4 * n) - 1);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+double j = ((4 * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) - 0);
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 - n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * i) - 1);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index BinaryOperation operator -_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ ^ member work_ter ^ ^ ^ ^ value MemberReference member tmp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+work[(j - k)] = tmp;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) - 2);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value false_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((false * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) + 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value true_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((true * n) - 1);
+
+StatementExpression expression Assignment expressionl MemberReference member j_ter ^ ^ ^ ^ value Literal value 4_ter ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+j -= 4;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ ^ member work_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index BinaryOperation operator -_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ ^ member work_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+work[(i + k)] = work[(j - k)];
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((-1 * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ 
+int j = n;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member j_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * j) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member process1RowBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+int j = process1RowBlock(n);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member process2RowsBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+int j = process2RowsBlock(n);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member process3RowsBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+int j = process3RowsBlock(n);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member processGeneralBlock_ter ^ ^ ^ ^ ^ ^ ^ 
+int j = processGeneralBlock(n);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member initialSplits_ter ^ ^ ^ ^ ^ ^ ^ 
+int j = initialSplits(n);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member step_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * step) - 1);
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) / 1);
+
+StatementExpression expression MethodInvocation member decompose_ter ^ ^ ^ ^ ^ 
+decompose();
+
+StatementExpression expression MethodInvocation member computeGershgorinCircles_ter ^ ^ ^ ^ ^ 
+computeGershgorinCircles();
+
+StatementExpression expression MethodInvocation member findEigenvalues_ter ^ ^ ^ ^ ^ 
+findEigenvalues();
+
+StatementExpression expression MethodInvocation member findEigenVectors_ter ^ ^ ^ ^ ^ 
+findEigenVectors();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member pingPong_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * pingPong) - 1);
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) * 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member work_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * work) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator %_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) % 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = (((4 * n) - 1) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member k_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * k) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 + n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member step_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = (((4 * n) - 1) - step);
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+boolean j = ((4 * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator <=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) <= 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = (((4 * n) - 1) - n);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) >= 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator >>_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) >> 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) - 4);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) - n);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = (4 * (n - 1));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 * n) - -1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 1.5_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((1.5 * n) - 1);
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((4 * (n - 1))){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl Literal value 1.5_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member pingPong_ter ^ ^ ^ ^ ^ ^ member work_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = (1.5 * work[pingPong]);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 1_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((1 * n) - 1);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ ^ ^ ^ 
+int j = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name j_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator /_ter ^ ^ operandl Literal value 4_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int j = ((4 / n) - 1);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n != null)){
+
+stderr: 

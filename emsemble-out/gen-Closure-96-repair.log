@@ -1,0 +1,146 @@
+stdout: WhileStatement condition MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ 
+while(arguments.hasNext()){
+
+}
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() || parameters.hasNext())){
+WhileStatement condition MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ 
+while(parameters.hasNext()){
+
+}
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameter_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameter.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier parameter_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((parameter.hasNext() && parameters.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member getChildCount_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.getChildCount())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier call_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && call.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && arguments.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier call_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((call.hasNext() && parameters.hasNext())){
+WhileStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member minArgs_ter ^ ^ ^ ^ operandr MemberReference member numArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+while((minArgs > numArgs)){
+
+}
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member getMinArguments_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.getMinArguments())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((parameters.hasNext() && parameters.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier t_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && t.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.getFirstChild())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.getName())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier ordinal_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && ordinal.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member getMaxArguments_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.getMaxArguments())){
+WhileStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member maxArgs_ter ^ ^ ^ ^ operandr MemberReference member numArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+while((maxArgs < numArgs)){
+
+}
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier t_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((t.hasNext() && parameters.hasNext())){
+DoStatement condition MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ 
+do{
+}while(arguments.hasNext())
+
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier ordinal_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((ordinal.hasNext() && parameters.hasNext())){
+WhileStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member maxArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+while(("null" + maxArgs)){
+
+}
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier argument_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && argument.hasNext())){
+DoStatement condition MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ 
+do{
+}while(parameters.hasNext())
+
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier argument_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((argument.hasNext() && parameters.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier functionType_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && functionType.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member getParameters_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.getParameters())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier par3 ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && .hasNext())){
+
+WhileStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ ^ 
+while(((arguments.hasNext() && parameters.hasNext()) && parameters.hasNext())){
+
+}
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier functionType_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((functionType.hasNext() && parameters.hasNext())){
+WhileStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member maxArgs_ter ^ ^ ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+while((("null" + maxArgs) + "null")){
+
+}
+
+WhileStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ ^ 
+while((arguments.hasNext() && parameters.hasNext())){
+
+}
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier numArgs_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ 
+if((numArgs.hasNext() && parameters.hasNext())){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member next_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.next())){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+control functionType_ter ^ ^ 
+1 functionType_ter
+WhileStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+while((arguments.hasNext() && (arguments.hasNext() && parameters.hasNext()))){
+
+}
+
+WhileStatement condition MemberReference member parameters_ter ^ ^ ^ ^ ^ 
+while(parameters){
+
+}
+
+control call_ter ^ ^ 
+1 call_ter
+StatementExpression expression MethodInvocation qualifier parameter_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+parameter.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier parameter_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+parameter.setIsNoSideEffectsCall();
+
+StatementExpression expression MethodInvocation qualifier parameter_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+parameter.setQuotedString();
+
+WhileStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ ^ ^ 
+while((parameters.hasNext() && parameters.hasNext())){
+
+}
+
+DoStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member minArgs_ter ^ ^ ^ ^ operandr MemberReference member numArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+do{
+}while((minArgs > numArgs))
+
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier arguments_ter ^ ^ member hasNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parameters_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ ^ 
+if((arguments.hasNext() && parameters.iterator())){
+WhileStatement condition MemberReference member hasNext_ter ^ ^ ^ ^ ^ 
+while(hasNext){
+
+}
+
+stderr: 

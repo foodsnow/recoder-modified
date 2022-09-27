@@ -1,0 +1,74 @@
+stdout: condition MemberReference member assertOnChange_ter ^ ^ ^ ^ 
+if(assertOnChange){
+condition MemberReference member CONVERT_WHILE_TO_FOR_ter ^ ^ ^ ^ 
+if(CONVERT_WHILE_TO_FOR){
+condition MemberReference member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ 
+if(MAKE_LOCAL_NAMES_UNIQUE){
+IfStatement condition MemberReference member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ ^ 
+if(MAKE_LOCAL_NAMES_UNIQUE){
+
+condition MemberReference qualifier assertOnChange_ter ^ ^ member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ 
+if(assertOnChange.MAKE_LOCAL_NAMES_UNIQUE){
+condition MemberReference qualifier CONVERT_WHILE_TO_FOR_ter ^ ^ member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ 
+if(CONVERT_WHILE_TO_FOR.MAKE_LOCAL_NAMES_UNIQUE){
+condition MemberReference qualifier MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ 
+if(MAKE_LOCAL_NAMES_UNIQUE.MAKE_LOCAL_NAMES_UNIQUE){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MethodInvocation member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ ^ 
+if(MAKE_LOCAL_NAMES_UNIQUE()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ ^ 
+if(!MAKE_LOCAL_NAMES_UNIQUE){
+
+condition MemberReference member externs_ter ^ ^ ^ ^ 
+if(externs){
+condition MemberReference prefix_operators !_ter ^ ^ member assertOnChange_ter ^ ^ ^ ^ 
+if(!assertOnChange){
+condition MemberReference prefix_operators !_ter ^ ^ member CONVERT_WHILE_TO_FOR_ter ^ ^ ^ ^ 
+if(!CONVERT_WHILE_TO_FOR){
+condition MemberReference prefix_operators !_ter ^ ^ member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ 
+if(!MAKE_LOCAL_NAMES_UNIQUE){
+StatementExpression expression MethodInvocation qualifier externs_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+externs.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier externs_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+externs.setIsNoSideEffectsCall();
+
+StatementExpression expression MethodInvocation qualifier externs_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+externs.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier root_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+root.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier root_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+root.setIsNoSideEffectsCall();
+
+StatementExpression expression MethodInvocation qualifier root_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+root.setQuotedString();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((MAKE_LOCAL_NAMES_UNIQUE != null)){
+
+IfStatement condition MethodInvocation qualifier NodeTraversal_ter ^ ^ member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ ^ 
+if(NodeTraversal.MAKE_LOCAL_NAMES_UNIQUE()){
+
+StatementExpression expression SuperMethodInvocation member process_ter ^ ^ ^ ^ ^ 
+super.process();
+
+StatementExpression expression MethodInvocation qualifier NodeTraversal_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+NodeTraversal.debug(root);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((MAKE_LOCAL_NAMES_UNIQUE == null)){
+return;
+}
+condition MemberReference qualifier NodeTraversal_ter ^ ^ member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ 
+if(NodeTraversal.MAKE_LOCAL_NAMES_UNIQUE){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member MAKE_LOCAL_NAMES_UNIQUE_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((MAKE_LOCAL_NAMES_UNIQUE != null)){
+
+stderr: 

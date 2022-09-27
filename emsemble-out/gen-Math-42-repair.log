@@ -1,0 +1,130 @@
+stdout: condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(basicRow)){
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member colIndex_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(colIndex)){
+condition MethodInvocation qualifier colIndex_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(colIndex.contains(basicRow)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(!basicRows.contains(basicRow)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member colIndex_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(colIndex)){
+
+condition MethodInvocation qualifier basicRow_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRow.contains(basicRow)){
+condition MethodInvocation qualifier i_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(i.contains(basicRow)){
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(i)){
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member restrictToNonNegative_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(restrictToNonNegative)){
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRows_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(basicRows)){
+condition MethodInvocation qualifier columnLabels_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(columnLabels.contains(basicRow)){
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ ^ 
+if(basicRows.getBasicRow(basicRow)){
+condition MethodInvocation qualifier mostNegative_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(mostNegative.contains(basicRow)){
+IfStatement condition MemberReference member basicRows_ter ^ ^ ^ ^ ^ 
+if(basicRows){
+
+condition MethodInvocation qualifier f_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(f.contains(basicRow)){
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(basicRow, basicRow)){
+
+condition MethodInvocation qualifier negativeVarColumn_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(negativeVarColumn.contains(basicRow)){
+condition MethodInvocation qualifier par1 ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(.contains(basicRow)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ operandr MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+if((basicRows.contains(basicRow) && basicRows.contains(basicRow))){
+
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member mostNegative_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(mostNegative)){
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ MemberReference member colIndex_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(basicRow, colIndex)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member coefficients_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(coefficients)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member basicRows_ter ^ ^ ^ ^ ^ 
+if(!basicRows){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member basicRow_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((basicRow != null)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member colIndex_ter ^ ^ ^ MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(colIndex, basicRow)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MethodInvocation member getRhsOffset_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(getRhsOffset())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ operandr MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+if((basicRows.contains(basicRow) || basicRows.contains(basicRow))){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member negativeVarColumn_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(negativeVarColumn)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member basicRows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((basicRows != null) && basicRows.contains(basicRow))){
+
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member coefficients_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(coefficients)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member basicRows_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((basicRows != 0) && basicRows.contains(basicRow))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member basicRow_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((basicRow != 0)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(basicRow)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ MethodInvocation member getRhsOffset_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(basicRow, getRhsOffset())){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains("null")){
+
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member negativeVarColumn_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ 
+if(basicRows.contains(negativeVarColumn)){
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member colIndex_ter ^ ^ ^ MemberReference member colIndex_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(colIndex, colIndex)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member basicRows_ter ^ ^ ^ ^ operandr MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+if((basicRows && basicRows.contains(basicRow))){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(basicRow, false)){
+
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member getSolution_ter ^ ^ ^ ^ 
+if(basicRows.getSolution(basicRow)){
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ 
+if(basicRows.indexOf(basicRow)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member basicRow_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((basicRow == null)){
+continue;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member basicRow_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((basicRow == 0)){
+continue;
+}
+condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ ^ 
+if(basicRows.getEntry(basicRow)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member colIndex_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((colIndex != null)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member basicRow_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(basicRow, true)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(i)){
+
+IfStatement condition MethodInvocation qualifier basicRows_ter ^ ^ arguments MethodInvocation member isOptimal_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+if(basicRows.contains(isOptimal())){
+
+stderr: 

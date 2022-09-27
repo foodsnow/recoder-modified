@@ -1,0 +1,175 @@
+stdout: LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(1);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member parseArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.parseArguments(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final String param = params.getParameter(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation arguments MemberReference member params_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = getParameter(params);
+
+StatementExpression expression MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ 
+params.getParameter(0);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member params_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((params == null)){
+return 0;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member params_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((params != null)){
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(true);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer Cast type ReferenceType name String_ter ^ ^ ^ ^ expression MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+String param = (String)params.getParameter(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier FALSES_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = FALSES.getParameter(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier TRUES_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = TRUES.getParameter(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(0, 0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 2_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(2);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.addValue(0);
+
+StatementExpression expression MethodInvocation qualifier setter_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+setter.addValue(true);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter();
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.contains(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier param_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = param.getParameter(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments MemberReference member lowerParam_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(lowerParam);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments This_ter ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(this);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = ;
+
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier setter_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = setter.getParameter(0);
+
+StatementExpression expression MethodInvocation qualifier setter_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+setter.addValue(false);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member toLowerCase_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.toLowerCase(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = getParameter(0);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments MemberReference member params_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(params);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter("null");
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member params_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if((params == null)){
+return 1;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments This_ter ^ Literal value 0_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(this, 0);
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member params_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((params != null)){
+return 0;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.debug(0);
+
+IfStatement condition MethodInvocation member shouldRunCompiler_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(shouldRunCompiler()){
+return 0;}
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(null);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MemberReference member params_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params;
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name param_ter ^ ^ initializer MethodInvocation qualifier params_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member getParameter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String param = params.getParameter(0, 1);
+
+stderr: 

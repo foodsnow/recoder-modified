@@ -1,0 +1,269 @@
+stdout: condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m instanceof CapturesArguments)){
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m && CapturesArguments)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m == CapturesArguments)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != null)){
+continue;
+}
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m != CapturesArguments)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((matchers instanceof CapturesArguments)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m > CapturesArguments)){
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m || CapturesArguments)){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((m instanceof CapturesArguments) && (m != null))){
+
+IfStatement condition MemberReference member m_ter ^ ^ ^ ^ ^ 
+if(m){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m == null)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((m instanceof CapturesArguments) && (m == null))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((matchers != null)){
+continue;
+}
+
+IfStatement condition Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((CapturesArguments)m){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((m instanceof CapturesArguments) && (m instanceof CapturesArguments))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((m instanceof CapturesArguments) && (matchers != null))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member m_ter ^ ^ ^ ^ ^ 
+if(!m){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((k instanceof CapturesArguments)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((i instanceof CapturesArguments)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((m != null) && (m instanceof CapturesArguments))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr MemberReference member matchers_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != matchers)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((matchers instanceof CapturesArguments)){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ 
+k++;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((matchers == null)){
+continue;
+}
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m < CapturesArguments)){
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member m_ter ^ ^ ^ ^ ^ 
+m++;
+
+
+IfStatement condition MemberReference member matchers_ter ^ ^ ^ ^ ^ 
+if(matchers){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((m instanceof CapturesArguments) && (matchers instanceof CapturesArguments))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if(((m instanceof CapturesArguments) && (matchers == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ operandr Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((m instanceof CapturesArguments) && (CapturesArguments)m)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name Matcher_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m instanceof Matcher)){
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)m;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member m_ter ^ ^ ^ ^ ^ 
+m++;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member matchers_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)matchers;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != null)){
+
+ReturnStatement expression MemberReference member m_ter ^ ^ ^ ^ ^ 
+return m;
+StatementExpression expression SuperMethodInvocation member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+super.captureArgumentsFrom();
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member k_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)k;
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+super.captureArgumentsFrom(m);
+
+IfStatement condition Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((CapturesArguments)m){
+
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments)i;
+
+StatementExpression expression SuperMethodInvocation member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+super.captureArgumentsFrom();
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ 
+k++;
+
+StatementExpression expression MemberReference member m_ter ^ ^ ^ ^ ^ 
+m;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ 
+k++;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m == null)){
+
+StatementExpression expression MethodInvocation qualifier m_ter ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+m.captureArgumentsFrom();
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member m_ter ^ ^ ^ ^ ^ 
+m++;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member matchers_ter ^ ^ ^ ^ ^ 
+matchers++;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((m instanceof CapturesArguments)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member i_ter ^ ^ ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+captureArgumentsFrom(i);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((CapturesArguments)m instanceof CapturesArguments)){
+
+StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member loc2 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+(CapturesArguments);
+
+StatementExpression expression MethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+captureArgumentsFrom(m);
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member matchers_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((matchers instanceof CapturesArguments)){
+
+ReturnStatement expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (CapturesArguments)m;
+StatementExpression expression This_ter ^ ^ ^ 
+this;
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member i_ter ^ ^ ^ ^ member captureArgumentsFrom_ter ^ ^ ^ ^ ^ 
+super.captureArgumentsFrom(i);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr ReferenceType name CapturesArguments_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((i instanceof CapturesArguments)){
+
+stderr: 

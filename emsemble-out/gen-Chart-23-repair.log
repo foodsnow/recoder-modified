@@ -1,0 +1,89 @@
+stdout: IfStatement condition This selectors MemberReference member obj_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.obj){
+
+StatementExpression expression MethodInvocation member removeAnnotations_ter ^ ^ ^ ^ ^ 
+removeAnnotations();
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ 
+if((obj == this)){
+IfStatement condition MemberReference member obj_ter ^ ^ ^ ^ ^ 
+if(obj){
+
+IfStatement condition Cast type ReferenceType name AbstractCategoryItemRenderer_ter ^ ^ ^ ^ expression MemberReference member obj_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((AbstractCategoryItemRenderer)obj){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ 
+if((obj != this)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member obj_ter ^ ^ ^ ^ ^ 
+if(!obj){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((obj == this) || (obj == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ operandr MemberReference member obj_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((obj == this) || obj)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((obj == null) || (obj == this))){
+
+IfStatement condition This selectors MethodInvocation arguments MemberReference member obj_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.equals(obj)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression This selectors MethodInvocation member removeAnnotations_ter ^ ^ ^ ^ ^ ^ ^ 
+this.removeAnnotations();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((obj == null)){
+return true;}
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ ^ ^ ^ 
+if((obj || (obj == this))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ 
+if((obj > this)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((obj == null)){
+return false;}
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((obj == this) || (obj != null))){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member obj_ter ^ ^ ^ ^ ^ 
+if(!obj){
+
+StatementExpression expression SuperMethodInvocation member equals_ter ^ ^ ^ ^ ^ 
+super.equals();
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ 
+if((obj >= this)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((obj == this) && (obj == null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((obj != null) || (obj == this))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member obj_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((obj != null)){
+return true;}
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier ObjectUtilities_ter ^ ^ arguments This selectors MemberReference member baseToolTipGenerator_ter ^ ^ ^ ^ ^ MemberReference qualifier that_ter ^ ^ member baseToolTipGenerator_ter ^ ^ ^ ^ member equal_ter ^ ^ ^ ^ ^ 
+if(!ObjectUtilities.equal(this.baseToolTipGenerator, that.baseToolTipGenerator)){
+
+
+
+IfStatement condition This selectors MemberReference member obj_ter ^ ^ ^ MethodInvocation arguments MemberReference member obj_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(this.obj.equals(obj)){
+
+stderr: 

@@ -1,0 +1,101 @@
+stdout: IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((length == 0)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ 
+if(!Character.isJavaIdentifierStart(s.charAt(0))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(Character.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length >= 0) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier length_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(length.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length <= 0) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length != 0) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length > 0) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((length == 0) || !Character.isJavaIdentifierStart(s.charAt(0))) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJSIdentifier_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJSIdentifier(s.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length < 0) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier par1 ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(.charAt(0)))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.charAt(s.charAt(0)))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) && !Character.isJavaIdentifierStart(s.charAt(0)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || Character.isJavaIdentifierStart(s.charAt(0)))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isJSIdentifier_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(s.isJSIdentifier(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierPart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierPart(s.charAt(0)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || Character.charAt(s.charAt(0)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Character.isJavaIdentifierStart(s.charAt(0)) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+
+IfStatement condition MemberReference member length_ter ^ ^ ^ ^ ^ 
+if(length){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!Character.isJavaIdentifierStart(s.charAt(0)) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier i_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(i.charAt(0)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.charAt(s.charAt(0)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member length_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || Character.isJavaIdentifierStart(length))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(s.charAt(false)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isJavaIdentifierPart_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(s.isJavaIdentifierPart(0)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier s_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !s.isJavaIdentifierStart(s.charAt(0)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member s_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || Character.isJavaIdentifierStart(s))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((length == null)){
+return false;}
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(s.charAt(true)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || (length == 0))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 1) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member s_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Character.isJavaIdentifierStart(s) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member length_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Character.isJavaIdentifierStart(length) || !Character.isJavaIdentifierStart(s.charAt(0)))){
+
+IfStatement condition MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ ^ 
+if(s.charAt(0)){
+
+IfStatement condition MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ 
+if(Character.isJavaIdentifierStart(s.charAt(0))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.getName(s.charAt(0)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MemberReference member length_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(length))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier Character_ter ^ ^ arguments MethodInvocation qualifier s_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ member isJavaIdentifierStart_ter ^ ^ ^ ^ ^ ^ 
+if(((length == 0) || !Character.isJavaIdentifierStart(s.isJavaIdentifierStart(0)))){
+stderr: 

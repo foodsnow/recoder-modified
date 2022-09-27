@@ -1,0 +1,522 @@
+stdout: StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+StatementExpression expression MethodInvocation member checkEmpty_ter ^ ^ ^ ^ ^ 
+checkEmpty();
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumImpl instanceof Mean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumsqImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumsqImpl instanceof Mean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member minImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((minImpl instanceof Mean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maxImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maxImpl instanceof Mean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumLogImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumLogImpl instanceof Mean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof Mean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof Mean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof Mean)){
+IfStatement condition MemberReference member meanImpl_ter ^ ^ ^ ^ ^ 
+if(meanImpl){
+
+StatementExpression expression MethodInvocation qualifier secondMoment_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+secondMoment.clear();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier meanImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+meanImpl.clear();
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl == Mean)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl != Mean)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl > Mean)){
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof Mean)){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member meanImpl_ter ^ ^ ^ ^ ^ 
+if(!meanImpl){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof GeometricMean)){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((value instanceof Mean)){
+StatementExpression expression MethodInvocation qualifier maxImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+maxImpl.clear();
+
+StatementExpression expression SuperMethodInvocation member addValue_ter ^ ^ ^ ^ ^ 
+super.addValue();
+
+StatementExpression expression MethodInvocation qualifier varianceImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+varianceImpl.clear();
+
+StatementExpression expression MethodInvocation qualifier sumLogImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+sumLogImpl.clear();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((meanImpl instanceof Mean) && Mean)){
+
+StatementExpression expression MethodInvocation qualifier minImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+minImpl.clear();
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl >= Mean)){
+StatementExpression expression MethodInvocation qualifier geoMeanImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+geoMeanImpl.increment(value);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof Variance)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl && (meanImpl instanceof Mean))){
+
+StatementExpression expression MethodInvocation qualifier varianceImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+varianceImpl.increment(value);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ 
+if((meanImpl != value)){
+
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((meanImpl != null)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof GeometricMean)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumImpl instanceof Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumsqImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumsqImpl instanceof Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member minImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((minImpl instanceof Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maxImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maxImpl instanceof Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumLogImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumLogImpl instanceof Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof Variance)){
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+StatementExpression expression MethodInvocation member checkEmpty_ter ^ ^ ^ ^ ^ 
+checkEmpty();
+
+IfStatement condition MemberReference member varianceImpl_ter ^ ^ ^ ^ ^ 
+if(varianceImpl){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl == Variance)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl != Variance)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl > Variance)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((value instanceof Variance)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member varianceImpl_ter ^ ^ ^ ^ ^ 
+if(!varianceImpl){
+
+StatementExpression expression MethodInvocation qualifier varianceImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+varianceImpl.clear();
+
+StatementExpression expression MethodInvocation qualifier meanImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+meanImpl.clear();
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof GeometricMean)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof Variance)){
+
+StatementExpression expression MethodInvocation qualifier geoMeanImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+geoMeanImpl.increment(value);
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl >= Variance)){
+StatementExpression expression MethodInvocation qualifier meanImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+meanImpl.increment(value);
+
+StatementExpression expression MethodInvocation qualifier varianceImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+varianceImpl.increment(value);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof GeometricMean)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+StatementExpression expression MethodInvocation qualifier minImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+minImpl.increment(value);
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member n_ter ^ ^ ^ ^ ^ 
+n++;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof GeometricMean)){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl < Variance)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((varianceImpl instanceof Variance) && Variance)){
+
+StatementExpression expression MethodInvocation qualifier sumsqImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+sumsqImpl.increment(value);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof Mean)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl && (varianceImpl instanceof Variance))){
+
+StatementExpression expression SuperMethodInvocation member addValue_ter ^ ^ ^ ^ ^ 
+super.addValue();
+
+StatementExpression expression MethodInvocation qualifier secondMoment_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+secondMoment.increment(value);
+
+StatementExpression expression MethodInvocation qualifier maxImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+maxImpl.increment(value);
+
+StatementExpression expression MethodInvocation qualifier sumLogImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+sumLogImpl.increment(value);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((varianceImpl != null)){
+
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl <= Variance)){
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof Mean)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumsqImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumsqImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member minImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((minImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member maxImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maxImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member sumLogImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumLogImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof GeometricMean)){
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+StatementExpression expression MethodInvocation member checkEmpty_ter ^ ^ ^ ^ ^ 
+checkEmpty();
+
+IfStatement condition MemberReference member geoMeanImpl_ter ^ ^ ^ ^ ^ 
+if(geoMeanImpl){
+
+StatementExpression expression MethodInvocation qualifier varianceImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+varianceImpl.clear();
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl == GeometricMean)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl != GeometricMean)){
+StatementExpression expression MethodInvocation qualifier meanImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+meanImpl.increment(value);
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl > GeometricMean)){
+StatementExpression expression MethodInvocation qualifier geoMeanImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+geoMeanImpl.increment(value);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof GeometricMean)){
+
+StatementExpression expression MethodInvocation qualifier varianceImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+varianceImpl.increment(value);
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((value instanceof GeometricMean)){
+StatementExpression expression MethodInvocation qualifier geoMeanImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+geoMeanImpl.clear();
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ ^ 
+if(!geoMeanImpl){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl >= GeometricMean)){
+StatementExpression expression MethodInvocation qualifier minImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+minImpl.increment(value);
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member n_ter ^ ^ ^ ^ ^ 
+n++;
+
+StatementExpression expression MethodInvocation qualifier sumsqImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+sumsqImpl.increment(value);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof Variance)){
+
+StatementExpression expression MethodInvocation qualifier secondMoment_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+secondMoment.increment(value);
+
+StatementExpression expression MethodInvocation qualifier maxImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+maxImpl.increment(value);
+
+StatementExpression expression MethodInvocation qualifier sumLogImpl_ter ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member increment_ter ^ ^ ^ ^ ^ 
+sumLogImpl.increment(value);
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl < GeometricMean)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if(((geoMeanImpl instanceof GeometricMean) && GeometricMean)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member meanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl instanceof Mean)){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((n instanceof GeometricMean)){
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member varianceImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl instanceof Variance)){
+
+StatementExpression expression MethodInvocation qualifier meanImpl_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+meanImpl.clear();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl && (geoMeanImpl instanceof GeometricMean))){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Mean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof Mean)){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier sumImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier sumsqImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumsqImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier minImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((minImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier maxImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((maxImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier sumLogImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((sumLogImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier geoMeanImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier meanImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((meanImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier varianceImpl_ter ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((varianceImpl.geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getSumImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getSumImpl().geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getSumsqImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getSumsqImpl().geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getMinImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getMinImpl().geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getMaxImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getMaxImpl().geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getSumLogImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getSumLogImpl().geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getGeoMeanImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getGeoMeanImpl().geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getMeanImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getMeanImpl().geoMeanImpl instanceof GeometricMean)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference qualifier MethodInvocation member getVarianceImpl_ter ^ ^ ^ ^ member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((getVarianceImpl().geoMeanImpl instanceof GeometricMean)){
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name GeometricMean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof GeometricMean)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member geoMeanImpl_ter ^ ^ ^ ^ operandr ReferenceType name Variance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((geoMeanImpl instanceof Variance)){
+
+stderr: 

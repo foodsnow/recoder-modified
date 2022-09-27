@@ -1,0 +1,146 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian());
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess);
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian(), guess);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, guess);
+ReturnStatement expression MethodInvocation member fit_ter ^ ^ ^ ^ ^ 
+return fit();
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian());
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian(), guess);
+ReturnStatement expression MemberReference member guess_ter ^ ^ ^ ^ ^ 
+return guess;
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian(), false);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian(), true);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, false);
+ReturnStatement expression MethodInvocation arguments MethodInvocation member getObservations_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(getObservations());
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(fit(new Gaussian(), guess));
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ MemberReference member par0 ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, );
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member guess_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((guess == null)){
+return 0;}
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, guess, new Gaussian());
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian(), null);
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member par0 ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian(), );
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member guess_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((guess != null)){
+
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian(), 0);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return fit(guess, new Gaussian(), new Gaussian());
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return debug(new Gaussian(), guess);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, 0);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator selectors MethodInvocation member guess_ter ^ ^ ^ ^ type ReferenceType name ParameterGuesser_ter ^ ^ ^ ^ arguments MethodInvocation member getObservations_ter ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new ParameterGuesser(getObservations()));
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member guess_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((guess == null)){
+
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ arguments MemberReference member guess_ter ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian(guess));
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, );
+
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian(), false);
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian(), null);
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ MethodInvocation member getObservations_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, getObservations());
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member guess_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((guess == null)){
+return null;}
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian(), );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ MemberReference member guess_ter ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+return fit(guess, guess, guess);
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian(), true);
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member guess_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return e(new Gaussian(), guess);
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return fit(new Gaussian(), new Gaussian());
+ReturnStatement expression MethodInvocation arguments MemberReference member guess_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ MemberReference member par0 ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(guess, new Gaussian(), );
+
+ReturnStatement expression MethodInvocation arguments Literal value null_ter ^ ^ ^ ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(null, new Gaussian());
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Gaussian_ter ^ ^ sub_type ReferenceType name Parametric_ter ^ ^ ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member fit_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return fit(new Gaussian(), 0);
+stderr: 

@@ -1,0 +1,160 @@
+stdout: ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression MemberReference member ref_ter ^ ^ ^ ^ ^ 
+return ref;
+ReturnStatement expression MemberReference member ref_ter ^ ^ ^ ^ ^ 
+if (true) { return ref; }
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ref_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((ref == null)){
+return false;}
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MethodInvocation member isAssignedOnceInLifetime_ter ^ ^ ^ ^ ^ 
+return isAssignedOnceInLifetime();
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ref_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((ref != null)){
+return false;}
+ReturnStatement expression MemberReference member par0 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MemberReference member loc1 ^ ^ ^ ^ ^ 
+return ;
+StatementExpression expression SuperMethodInvocation member isAssignedOnceInLifetime_ter ^ ^ ^ ^ ^ 
+super.isAssignedOnceInLifetime();
+
+
+ReturnStatement expression MethodInvocation member getOneAndOnlyAssignment_ter ^ ^ ^ ^ ^ 
+return getOneAndOnlyAssignment();
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+IfStatement condition MemberReference member ref_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if(ref){
+return false;}
+ReturnStatement expression MethodInvocation qualifier ref_ter ^ ^ member isAssignedOnceInLifetime_ter ^ ^ ^ ^ ^ 
+return ref.isAssignedOnceInLifetime();
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ref_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((ref == null)){
+return true;}
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member ref_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ref = false;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ref_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if((ref != null)){
+return true;}
+StatementExpression expression Assignment expressionl MemberReference member ref_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ref = true;
+
+ReturnStatement expression BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ref_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return (ref != null);
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member BasicBlock_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.BasicBlock(root);
+
+StatementExpression expression MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ ^ 
+NodeUtil.isHoistedFunctionDeclaration(root);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration(root);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member root_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.root = NodeUtil.isHoistedFunctionDeclaration(root);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member parent_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.parent = NodeUtil.isHoistedFunctionDeclaration(root);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MemberReference member root_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = root;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = isHoistedFunctionDeclaration(root);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member root_ter ^ ^ ^ ^ ^ ^ value MemberReference member root_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.root = root;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier root_ter ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = root.isHoistedFunctionDeclaration();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this. = NodeUtil.isHoistedFunctionDeclaration(root);
+
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration(root, root);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.isHoisted != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member parent_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration(parent);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member isHoisted_ter ^ ^ ^ MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration(isHoisted, root);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.add(root);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member isHoisted_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((isHoisted != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member root_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((root != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier parent_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = parent.isHoistedFunctionDeclaration(root);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.isHoisted == null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration(root, false);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = isHoistedFunctionDeclaration();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member root_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration(root, true);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MemberReference member isHoisted_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = isHoisted;
+
+StatementExpression expression This selectors MemberReference member isHoisted_ter ^ ^ ^ MethodInvocation arguments MemberReference member root_ter ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ ^ ^ ^ 
+this.isHoisted.isHoistedFunctionDeclaration(root);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = false;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ value MemberReference member root_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this. = root;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member parent_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.parent != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member root_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((root == null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ ^ member isHoistedFunctionDeclaration_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = NodeUtil.isHoistedFunctionDeclaration();
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member isHoisted_ter ^ ^ ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.isHoisted = null;
+
+stderr: 

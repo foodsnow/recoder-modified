@@ -1,0 +1,443 @@
+stdout: StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression ExplicitConstructorInvocation_ter ^ ^ ^ 
+1 ExplicitConstructorInvocation_ter
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MemberReference member typeReference_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference;
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ ^ 
+super(typeReference);
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression SuperMethodInvocation arguments MemberReference member typeReference_ter ^ ^ ^ ^ member AliasedTypeNode_ter ^ ^ ^ ^ ^ 
+super.AliasedTypeNode(typeReference);
+
+StatementExpression expression SuperMethodInvocation member AliasedTypeNode_ter ^ ^ ^ ^ ^ 
+super.AliasedTypeNode();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member typeReference_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((typeReference == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member typeReference_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((typeReference != null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MemberReference member aliasName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = aliasName;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MemberReference member aliasName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = aliasName;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member aliasName_ter ^ ^ ^ ^ ^ ^ value MemberReference member typeReference_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.aliasName = typeReference;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member aliasName_ter ^ ^ ^ ^ member setString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setString(aliasName);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member aliasName_ter ^ ^ ^ ^ member setSourceFileForTesting_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setSourceFileForTesting(aliasName);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member aliasName_ter ^ ^ ^ ^ member addSuppression_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.addSuppression(aliasName);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MemberReference member typeReference_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference;
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member typeReference_ter ^ ^ ^ ^ member AliasedTypeNode_ter ^ ^ ^ ^ ^ 
+super.AliasedTypeNode(typeReference);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = this.typeReference;
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member aliasName_ter ^ ^ ^ ^ ^ ^ ^ 
+super(aliasName);
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ ^ 
+super(typeReference);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member aliasName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((aliasName != null)){
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ ^ 
+typeReference.addChildToFront(typeReference);
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+typeReference.addChildToBack(typeReference);
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildrenToFront_ter ^ ^ ^ ^ ^ 
+typeReference.addChildrenToFront(typeReference);
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildrenToBack_ter ^ ^ ^ ^ ^ 
+typeReference.addChildrenToBack(typeReference);
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member removeChild_ter ^ ^ ^ ^ ^ 
+typeReference.removeChild(typeReference);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member aliasName_ter ^ ^ ^ ^ member AliasedTypeNode_ter ^ ^ ^ ^ ^ 
+super.AliasedTypeNode(aliasName);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member aliasName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((aliasName == null)){
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setType("null");
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member removeProp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.removeProp("null");
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setLength_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setLength("null");
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setLineno("null");
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setCharno_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setCharno("null");
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setSourceEncodedPosition_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setSourceEncodedPosition("null");
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setSourceEncodedPositionForTree_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setSourceEncodedPositionForTree("null");
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setSideEffectFlags_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setSideEffectFlags("null");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.typeReference != null)){
+
+StatementExpression expression ExplicitConstructorInvocation_ter ^ ^ ^ 
+1 ExplicitConstructorInvocation_ter
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.typeReference == null)){
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setType_ter ^ ^ ^ ^ ^ 
+typeReference.setType("null");
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member removeProp_ter ^ ^ ^ ^ ^ 
+typeReference.removeProp("null");
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setLength_ter ^ ^ ^ ^ ^ 
+typeReference.setLength("null");
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+typeReference.setLineno("null");
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setCharno_ter ^ ^ ^ ^ ^ 
+typeReference.setCharno("null");
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setSourceEncodedPosition_ter ^ ^ ^ ^ ^ 
+typeReference.setSourceEncodedPosition("null");
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setSourceEncodedPositionForTree_ter ^ ^ ^ ^ ^ 
+typeReference.setSourceEncodedPositionForTree("null");
+
+StatementExpression expression MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setSideEffectFlags_ter ^ ^ ^ ^ ^ 
+typeReference.setSideEffectFlags("null");
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member typeReference_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((typeReference == null)){
+return;
+}
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = null;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member typeReference_ter ^ ^ ^ ^ ^ 
+typeReference++;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.addChildToFront(typeReference);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.addChildToBack(typeReference);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildrenToFront_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.addChildrenToFront(typeReference);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member addChildrenToBack_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.addChildrenToBack(typeReference);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments MemberReference member typeReference_ter ^ ^ ^ ^ member removeChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.removeChild(typeReference);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member aliasName_ter ^ ^ ^ ^ ^ ^ value MemberReference member typeReference_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.aliasName = typeReference;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member typeReference_ter ^ ^ ^ ^ operandr MemberReference member aliasName_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = (typeReference + aliasName);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member typeReference_ter ^ ^ ^ MemberReference member aliasName_ter ^ ^ ^ ^ ^ ^ ^ 
+super(typeReference, aliasName);
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ ^ 
+this(typeReference);;
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setType(1);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member removeProp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.removeProp(1);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setLength_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setLength(1);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setLineno(1);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setCharno_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setCharno(1);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setSourceEncodedPosition_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setSourceEncodedPosition(1);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setSourceEncodedPositionForTree_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setSourceEncodedPositionForTree(1);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value MethodInvocation qualifier typeReference_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member setSideEffectFlags_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.typeReference = typeReference.setSideEffectFlags(1);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member typeReference_ter ^ ^ ^ MemberReference member aliasName_ter ^ ^ ^ ^ member AliasedTypeNode_ter ^ ^ ^ ^ ^ 
+super.AliasedTypeNode(typeReference, aliasName);
+
+StatementExpression expression Assignment expressionl This selectors MemberReference member typeReference_ter ^ ^ ^ ^ ^ ^ value Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MemberReference member aliasName_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+this.typeReference = (Node)aliasName;
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getString_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getString() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.toString() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member toStringTree_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.toStringTree() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member toStringTreeImpl_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.toStringTreeImpl() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getSourceFileName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getInitialValue_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getInitialValue() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member aliasedNode_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(aliasedNode))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member aliasedNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(aliasedNode, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member fixTypeNode_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.fixTypeNode() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getNext() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier aliasVar_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + aliasVar.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(endIndex, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getFirstChild() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier aliasedNode_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + aliasedNode.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier endIndex_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + endIndex.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member baseName_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(baseName, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier baseName_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + baseName.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member get_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.get() + name.substring(endIndex))));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member aliasedNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((aliasedNode != null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member aliasedNode_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((aliasedNode != -1)){
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasVar_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasVar.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member baseName_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(baseName))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member fixTypeNode_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.fixTypeNode(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier name_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (name.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode((aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() - name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.debug(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier endIndex_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (endIndex.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.length() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member name_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(name, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member aliasVar_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(aliasVar))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member aliasVar_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(aliasVar, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(typeNode, new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(name))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(endIndex)))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier baseName_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (baseName.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ MemberReference member endIndex_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, endIndex));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member aliasedNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((aliasedNode == null)){
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier aliases_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + aliases.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(name.substring(endIndex), new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + name.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ MemberReference member typeNode_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode((aliasedNode.getQualifiedName() + name.substring(endIndex)), typeNode));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier typeNode_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + typeNode.substring(endIndex))));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member aliasedNode_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((aliasedNode == -1)){
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier aliasedNode_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ operandr MethodInvocation qualifier child_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, (aliasedNode.getQualifiedName() + child.substring(endIndex))));
+
+StatementExpression expression MethodInvocation qualifier aliasUsages_ter ^ ^ arguments ClassCreator type ReferenceType name AliasedTypeNode_ter ^ ^ ^ ^ arguments MemberReference member typeNode_ter ^ ^ ^ MethodInvocation qualifier name_ter ^ ^ arguments MemberReference member endIndex_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+aliasUsages.add(new AliasedTypeNode(typeNode, name.substring(endIndex)));
+
+stderr: 

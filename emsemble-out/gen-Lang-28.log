@@ -1,0 +1,19 @@
+stdout: else_statement -> BlockStatement
+using GPU
+p
+path org.apache.commons.lang3.text.translate
+stderr: Check out program version: Lang-28b........................................ OK
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1G; support was removed in 8.0
+Running ant (export.dir.src.classes)....................................... OK
+
+Traceback (most recent call last):
+  File "testDefect4j.py", line 557, in <module>
+    lines1 = open(filepath, "r").read().strip()
+FileNotFoundError: [Errno 2] No such file or directory: 'buggy/Lang-28/src/main/java/org/apache/commons/lang3/text/translate.java'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "testDefect4j.py", line 559, in <module>
+    with open(filepath, "r", encoding="iso-8859-1") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'buggy/Lang-28/src/main/java/org/apache/commons/lang3/text/translate.java'

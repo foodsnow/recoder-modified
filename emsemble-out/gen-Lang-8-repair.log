@@ -1,0 +1,80 @@
+stdout: IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((calendar.get(Calendar.DST_OFFSET) != 0)){
+
+IfStatement condition MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ ^ 
+if(zone.useDaylightTime()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) == 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) != 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) != 0)) && (calendar.get(Calendar.DST_OFFSET) != 0))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) >= 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() || (calendar.get(Calendar.DST_OFFSET) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(DST_OFFSET) != 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) != 0)))){
+
+IfStatement condition MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ 
+if(calendar.get(Calendar.DST_OFFSET)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) > 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) <= 0))){
+StatementExpression expression MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ ^ 
+zone.useDaylightTime();
+
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member mStyle_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(mStyle) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member mLocale_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(mLocale) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier zone_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(zone.DST_OFFSET) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier buffer_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (buffer.get(Calendar.DST_OFFSET) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member appendTo_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.appendTo(Calendar.DST_OFFSET) != 0))){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((calendar.get(Calendar.DST_OFFSET) != 0)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member zone_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.zone) != 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) != 0)) && (calendar.get(Calendar.DST_OFFSET) != 0)) && (calendar.get(Calendar.DST_OFFSET) != 0))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member zone_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(zone) != 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && !calendar.get(Calendar.DST_OFFSET))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && ((calendar.get(Calendar.DST_OFFSET) != 0) && (calendar.get(Calendar.DST_OFFSET) != 0)))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member getTimeZoneDisplay_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.getTimeZoneDisplay(Calendar.DST_OFFSET) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member mStyle_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.mStyle) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member mLocale_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.mLocale) != 0))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) < 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && calendar.get(Calendar.DST_OFFSET))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier zone_ter ^ ^ member useDaylightTime_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((zone.useDaylightTime() && (calendar.get(Calendar.DST_OFFSET) != 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference qualifier Calendar_ter ^ ^ member DST_OFFSET_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((calendar.get(Calendar.DST_OFFSET) && (calendar.get(Calendar.DST_OFFSET) != 0))){
+
+IfStatement condition MemberReference member calendar_ter ^ ^ ^ ^ ^ 
+if(calendar){
+
+stderr: 

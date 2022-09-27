@@ -1,0 +1,212 @@
+stdout: LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.name, true);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.name, null);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member createNameInformation_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = createNameInformation(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.name, "null");
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member ns_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ 
+getName(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member parent_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.parent, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name, true);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member visit_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = visit(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member nameNode_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(nameNode, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member parent_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(parent, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member recordPrototypeSet_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = recordPrototypeSet(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.n, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isCall_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = isCall(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member loc1 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns., false);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member prototypeClass_ter ^ ^ ^ MemberReference qualifier ns_ter ^ ^ member prototypeProperty_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member recordPrototypeSet_ter ^ ^ ^ ^ ^ 
+recordPrototypeSet(ns.prototypeClass, ns.prototypeProperty, n);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(n, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName();
+
+StatementExpression expression MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ MemberReference member nameNode_ter ^ ^ ^ ^ member recordSet_ter ^ ^ ^ ^ ^ 
+recordSet(ns.name, nameNode);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member prototypeProperty_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.prototypeProperty, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name, name);
+
+StatementExpression expression MethodInvocation qualifier refNodes_ter ^ ^ arguments ClassCreator type ReferenceType name ClassDefiningFunctionNode_ter ^ ^ ^ ^ arguments MemberReference member name_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member parent_ter ^ ^ ^ MethodInvocation qualifier parent_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+refNodes.add(new ClassDefiningFunctionNode(name, n, parent, parent.getParent()));
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member loc5 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(, false);
+
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member ns_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.ns, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member loc1 ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(, false);
+
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member prototypeClass_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.prototypeClass, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name, false, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name, true, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name, false, true);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member name_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(name, true, true);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member recordSet_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = recordSet(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member nameNode_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.nameNode, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member isPrototype_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(ns.isPrototype, false);
+
+StatementExpression expression MethodInvocation member removeUnreferenced_ter ^ ^ ^ ^ ^ 
+removeUnreferenced();
+
+StatementExpression expression MethodInvocation member referenceAliases_ter ^ ^ ^ ^ ^ 
+referenceAliases();
+
+StatementExpression expression MethodInvocation member referenceParentNames_ter ^ ^ ^ ^ ^ 
+referenceParentNames();
+
+StatementExpression expression MethodInvocation member calculateReferences_ter ^ ^ ^ ^ ^ 
+calculateReferences();
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isAssign_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = isAssign(ns.name, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference qualifier ns_ter ^ ^ member name_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final JsName name = getName(ns.name, false);
+
+LocalVariableDeclaration type ReferenceType name JsName_ter ^ ^ ^ ^ declarators VariableDeclarator name name_ter ^ ^ initializer MethodInvocation arguments MemberReference member t_ter ^ ^ ^ MemberReference member nameNode_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+JsName name = getName(t, nameNode, n);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ns_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier ns_ter ^ ^ member onlyAffectsClassDef_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((ns != null) && ns.onlyAffectsClassDef)){
+
+stderr: 

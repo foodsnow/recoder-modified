@@ -1,0 +1,680 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJava_ter ^ ^ ^ ^ ^ 
+return escapeJava(str, false);
+ReturnStatement expression MemberReference member str_ter ^ ^ ^ ^ ^ 
+return str;
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, true, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, true, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, "null");
+ReturnStatement expression Cast type ReferenceType name String_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (String)escapeJavaStyleString(str, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member escapeJava_ter ^ ^ ^ ^ ^ 
+return escapeJava(str);
+ReturnStatement expression MethodInvocation arguments Literal value true_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(true, str);
+ReturnStatement expression MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(true);
+ReturnStatement expression MethodInvocation arguments Literal value false_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(false, str);
+ReturnStatement expression MethodInvocation member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString();
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, str);
+ReturnStatement expression MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(false);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((str == null)){
+return null;}
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member CSV_QUOTE_STR_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(CSV_QUOTE_STR, str);
+ReturnStatement expression MethodInvocation arguments Literal value null_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(null, str);
+ReturnStatement expression This selectors MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.str;
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, true, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(str, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, false, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member CSV_QUOTE_STR_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(CSV_QUOTE_STR);
+ReturnStatement expression MethodInvocation arguments Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(null);
+ReturnStatement expression MethodInvocation arguments Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(true, true);
+StatementExpression expression SuperMethodInvocation member escapeJava_ter ^ ^ ^ ^ ^ 
+super.escapeJava();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str != null)){
+
+ReturnStatement expression MethodInvocation arguments Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(true, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(str, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, null, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(str, null, true);
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJava_ter ^ ^ ^ ^ ^ 
+escapeJava(out, str, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true);
+
+StatementExpression expression MethodInvocation member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString();
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, str, false);
+
+StatementExpression expression Assignment expressionl MemberReference member out_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out = escapeJavaStyleString(out, str, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJava_ter ^ ^ ^ ^ ^ 
+escapeJava(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaScript_ter ^ ^ ^ ^ ^ 
+escapeJavaScript(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeJava_ter ^ ^ ^ ^ ^ 
+unescapeJava(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeJavaScript_ter ^ ^ ^ ^ ^ 
+unescapeJavaScript(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeHtml_ter ^ ^ ^ ^ ^ 
+escapeHtml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeHtml_ter ^ ^ ^ ^ ^ 
+unescapeHtml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeXml_ter ^ ^ ^ ^ ^ 
+escapeXml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeXml_ter ^ ^ ^ ^ ^ 
+unescapeXml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeCsv_ter ^ ^ ^ ^ ^ 
+escapeCsv(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeCsv_ter ^ ^ ^ ^ ^ 
+unescapeCsv(out, str);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value null_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, null, str);
+
+StatementExpression expression SuperMethodInvocation member escapeJava_ter ^ ^ ^ ^ ^ 
+super.escapeJava();
+
+StatementExpression expression MethodInvocation arguments Literal value null_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(null, out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, );
+
+
+StatementExpression expression MethodInvocation arguments Literal value true_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(true, out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, null);
+
+StatementExpression expression MethodInvocation arguments Literal value false_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(false, out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, null, true);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(out, str, false);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member out_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((out != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member str_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+str = escapeJavaStyleString(out, str, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, null, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaScript_ter ^ ^ ^ ^ ^ 
+escapeJavaScript(out, str, true);
+
+StatementExpression expression MethodInvocation member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString();
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(out, str, true);
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJava_ter ^ ^ ^ ^ ^ 
+escapeJava(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaScript_ter ^ ^ ^ ^ ^ 
+escapeJavaScript(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeJava_ter ^ ^ ^ ^ ^ 
+unescapeJava(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeJavaScript_ter ^ ^ ^ ^ ^ 
+unescapeJavaScript(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeHtml_ter ^ ^ ^ ^ ^ 
+escapeHtml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeHtml_ter ^ ^ ^ ^ ^ 
+unescapeHtml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeXml_ter ^ ^ ^ ^ ^ 
+escapeXml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeXml_ter ^ ^ ^ ^ ^ 
+unescapeXml(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeCsv_ter ^ ^ ^ ^ ^ 
+escapeCsv(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member unescapeCsv_ter ^ ^ ^ ^ ^ 
+unescapeCsv(out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, str, true);
+
+StatementExpression expression MethodInvocation arguments Literal value false_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(false, out, str);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str != null)){
+
+StatementExpression expression MethodInvocation arguments Literal value null_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(null, out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, str);
+
+StatementExpression expression MethodInvocation arguments Literal value true_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(true, out, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, false, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value null_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, null, str);
+
+StatementExpression expression SuperMethodInvocation member escapeJavaScript_ter ^ ^ ^ ^ ^ 
+super.escapeJavaScript();
+
+StatementExpression expression Assignment expressionl MemberReference member out_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+out = escapeJavaStyleString(out, str, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, true, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false, false);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str == null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value false_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, false, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true, false);
+
+StatementExpression expression MethodInvocation arguments Literal value false_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(false, out);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, true, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, null, false);
+
+StatementExpression expression MethodInvocation arguments Literal value null_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(null, out);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value null_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, null, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, str, str, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member out_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(out, out, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, str, escapeSingleQuotes);
+
+ReturnStatement expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+return escapeJavaStyleString(writer, str, escapeSingleQuotes);
+StatementExpression expression MethodInvocation qualifier ioe_ter ^ ^ arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+ioe.escapeJavaStyleString(writer, str, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, str, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, escapeSingleQuotes, escapeSingleQuotes);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member writer_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((writer != null)){
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member writer_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, writer, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(escapeSingleQuotes, str, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, escapeSingleQuotes, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member writer_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, str, writer);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member writer_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, writer, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member printStackTrace_ter ^ ^ ^ ^ ^ 
+printStackTrace(writer, str, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString();
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, escapeSingleQuotes, );
+
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+StatementExpression expression MethodInvocation qualifier ioe_ter ^ ^ member printStackTrace_ter ^ ^ ^ ^ ^ 
+ioe.printStackTrace();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((str != null)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((escapeSingleQuotes != null)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member writer_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((writer != 2)){
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, str);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member writer_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, escapeSingleQuotes, writer);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, str, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, str, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, , escapeSingleQuotes);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, escapeSingleQuotes);
+
+StatementExpression expression Assignment expressionl MemberReference member writer_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+writer = escapeJavaStyleString(writer, str, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member writer_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, writer);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, str);
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member writer_ter ^ ^ ^ ^ ^ 
+writer++;
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member loc1 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, escapeSingleQuotes, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer, escapeSingleQuotes, );
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, escapeSingleQuotes, str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ MemberReference member escapeSingleQuotes_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+toString(writer, str, escapeSingleQuotes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member writer_ter ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(writer);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member writer_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member escapeJavaStyleString_ter ^ ^ ^ ^ ^ 
+escapeJavaStyleString(str, writer, );
+
+
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(("null" + hex(ch)));
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write("null");
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member ch_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(ch);
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member ch_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+out.write(ch);
+break;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+out.write("null");
+break;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+out.write(("null" + hex(ch)));
+break;
+
+IfStatement condition MemberReference member escapeSingleQuote_ter ^ ^ ^ ^ ^ 
+if(escapeSingleQuote){
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value 0xf_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ch > 0xf)){
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition MemberReference member escapeSingleQuote_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if(escapeSingleQuote){
+break;
+}
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member ch_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(ch);
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write("null");
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" + hex(ch))){
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(("null" + hex(ch)));
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member ch_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+out.write(ch);
+break;
+break;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+out.write(("null" + hex(ch)));
+break;
+break;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+out.write("null");
+break;
+break;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+out.write("null");
+continue;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member ch_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+out.write(ch);
+continue;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+out.write(("null" + hex(ch)));
+continue;
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ch != null)){
+
+IfStatement condition MemberReference member ch_ter ^ ^ ^ ^ ^ 
+if(ch){
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write("null");
+out.write("null");
+
+IfStatement condition MemberReference member escapeSingleQuote_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+if(escapeSingleQuote){
+out.write(("null" + hex(ch)));
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value 0xf_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ch != 0xf)){
+
+IfStatement condition MemberReference member escapeSingleQuote_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member ch_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+if(escapeSingleQuote){
+out.write(ch);
+}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member ch_ter ^ ^ ^ ^ operandr Literal value 0x7f_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ch > 0x7f)){
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member ch_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(ch);
+out.write("null");
+
+IfStatement condition MemberReference member escapeSingleQuote_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+if(escapeSingleQuote){
+out.write("null");
+}
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MethodInvocation arguments MemberReference member ch_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(("null" + hex(ch)));
+out.write("null");
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" != null)){
+
+BreakStatement_ter ^ 
+ContinueStatement_ter ^ 
+break;
+continue;
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member hex_ter ^ ^ ^ ^ ^ 
+out.hex("null");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" != ch)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr Literal value 0xf_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" != 0xf)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl Literal value <string>_ter ^ ^ ^ ^ operandr MemberReference member ch_ter ^ ^ ^ ^ ^ ^ ^ 
+if(("null" == ch)){
+
+stderr: 

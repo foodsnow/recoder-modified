@@ -1,0 +1,132 @@
+stdout: 
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / c2));
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.debug((c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member yMax_ter ^ ^ ^ ^ value MemberReference member y_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+yMax = y;
+
+StatementExpression expression Assignment expressionl MemberReference member yMin_ter ^ ^ ^ ^ value MemberReference member y_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+yMin = y;
+
+StatementExpression expression Assignment expressionl MemberReference member omega_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c2_ter ^ ^ ^ ^ operandr MemberReference member c3_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+omega = FastMath.sqrt((c2 / c3));
+
+StatementExpression expression Assignment expressionl MemberReference member yMax_ter ^ ^ ^ ^ value MemberReference member y_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+yMax = y;
+
+StatementExpression expression Assignment expressionl MemberReference member yMin_ter ^ ^ ^ ^ value MemberReference member y_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+yMin = y;
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member yMax_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((yMax / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member omega_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c2_ter ^ ^ ^ ^ operandr MemberReference member c3_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+omega = FastMath.sqrt((c2 / c3));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 0.5_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member yMax_ter ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = (0.5 * (yMax - yMin));
+
+StatementExpression expression Assignment expressionl MemberReference member omega_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr MemberReference qualifier Math_ter ^ ^ member PI_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member xRange_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+omega = ((2 * Math.PI) / xRange);
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / yMax));
+
+StatementExpression expression Assignment expressionl MemberReference member omega_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+omega = FastMath.sqrt((c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.e((c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.add((c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member omega_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl Literal value 2_ter ^ ^ ^ ^ operandr MemberReference qualifier Math_ter ^ ^ member PI_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member xRange_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+omega = ((2 * Math.PI) / xRange);
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member guessAOmega_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.guessAOmega((c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 - c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member yMin_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((yMin / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / yMin));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c2_ter ^ ^ ^ ^ operandr MemberReference member c3_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c2 / c3));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member sx2_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((sx2 / c2));
+
+ContinueStatement_ter ^ 
+continue;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier observations_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 1;(i < observations.length);++i) {
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member sxy_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((sxy / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member sy2_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((sy2 / c2));
+
+IfStatement condition BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c1 / c2)){
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl Literal value 0.5_ter ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member yMax_ter ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = (0.5 * (yMax - yMin));
+
+StatementExpression expression Assignment expressionl MemberReference member yMax_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+yMax = FastMath.sqrt((c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator *_ter ^ ^ operandl MemberReference member sxy_ter ^ ^ ^ ^ operandr MemberReference member sxy_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((sxy * sxy));
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member y_ter ^ ^ ^ ^ operandr MemberReference member yMin_ter ^ ^ ^ ^ ^ ^ ^ 
+if((y < yMin)){
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member sx2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / sx2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member put_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.put((c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / c2), 0);
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt(FastMath.sqrt((c1 / c2)));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator <=_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 <= c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / c2), (c1 / c2));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member sxy_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / sxy));
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member sy2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = FastMath.sqrt((c1 / sy2));
+
+StatementExpression expression MethodInvocation qualifier FastMath_ter ^ ^ arguments MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member c1_ter ^ ^ ^ ^ operandr MemberReference member c2_ter ^ ^ ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+FastMath.sqrt(FastMath.sqrt((c1 / c2)));
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member y_ter ^ ^ ^ ^ operandr MemberReference member yMax_ter ^ ^ ^ ^ ^ ^ ^ 
+if((y > yMax)){
+
+stderr: 

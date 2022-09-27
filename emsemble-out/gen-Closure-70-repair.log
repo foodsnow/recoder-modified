@@ -1,0 +1,131 @@
+stdout: StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.getJSType(), false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member jsDocParameter_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, jsDocParameter, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getName_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.getName(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member jsDocParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(jsDocParameter, functionNode, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getParametersNode_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.getParametersNode(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameters_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameters.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member declareArguments_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.declareArguments(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionType_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionType, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member body_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, body, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier astParameters_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, astParameters.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member jsDocParameters_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, jsDocParameters, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getFirstChild_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.getFirstChild(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier body_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, body.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getNext_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.getNext(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member functionType_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(functionType, functionNode, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member body_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(body, functionNode, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member functionNode_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(functionNode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member toString_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, jsDocParameter.toString(), true);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member jsDocParameters_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(jsDocParameters, functionNode, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member astParameters_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, astParameters, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier functionType_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, functionType.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(functionNode, jsDocParameter.getJSType());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(jsDocParameter.getJSType());
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameters_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameters, functionNode, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, , jsDocParameter.getJSType(), true);
+
+
+StatementExpression expression Assignment expressionl MemberReference member jsDocParameter_ter ^ ^ ^ ^ value MethodInvocation qualifier jsDocParameter_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+jsDocParameter = jsDocParameter.getNext();
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member astParameter_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, astParameter, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ Literal value null_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, null, true);
+
+StatementExpression expression MethodInvocation member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot();
+
+StatementExpression expression MethodInvocation arguments MemberReference member functionNode_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(functionNode, functionNode, jsDocParameter.getJSType(), true);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member astParameter_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((astParameter != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+debug(astParameter, functionNode, jsDocParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member declareArguments_ter ^ ^ ^ ^ ^ 
+declareArguments(astParameter, functionNode, jsDocParameter.getJSType(), true);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation arguments MemberReference member par1 ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier jsDocParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(, functionNode, jsDocParameter.getJSType(), true);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier astParameter_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, astParameter.getJSType(), true);
+
+StatementExpression expression MethodInvocation qualifier jsDocParameter_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+jsDocParameter.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier jsDocParameter_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+jsDocParameter.setQuotedString();
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member jsDocParameter_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((jsDocParameter != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member astParameter_ter ^ ^ ^ MemberReference member functionNode_ter ^ ^ ^ MethodInvocation qualifier functionNode_ter ^ ^ member getJSType_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member defineSlot_ter ^ ^ ^ ^ ^ 
+defineSlot(astParameter, functionNode, functionNode.getJSType(), true);
+
+stderr: 

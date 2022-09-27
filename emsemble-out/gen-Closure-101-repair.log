@@ -1,0 +1,377 @@
+stdout: IfStatement condition MemberReference member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(process_closure_primitives){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MethodInvocation qualifier flags_ter ^ ^ member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(flags.process_closure_primitives()){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(!process_closure_primitives){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member formattingOption_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((formattingOption != null)){
+
+condition MemberReference member process_closure_primitives_ter ^ ^ ^ ^ 
+if(process_closure_primitives){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier level_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member setDebugOptionsForCompilationLevel_ter ^ ^ ^ ^ ^ 
+level.setDebugOptionsForCompilationLevel(options);
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ qualifier flags_ter ^ ^ member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(!flags.process_closure_primitives){
+
+IfStatement condition MemberReference qualifier flags_ter ^ ^ member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(flags.process_closure_primitives){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+
+
+ReturnStatement expression MemberReference member options_ter ^ ^ ^ ^ ^ 
+if (true) { return options; }
+
+IfStatement condition MethodInvocation member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(process_closure_primitives()){
+
+condition MemberReference qualifier flags_ter ^ ^ member warning_level_ter ^ ^ ^ ^ 
+if(flags.warning_level){
+StatementExpression expression MethodInvocation qualifier formattingOption_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member applyToOptions_ter ^ ^ ^ ^ ^ 
+formattingOption.applyToOptions(options);
+
+IfStatement condition MemberReference qualifier flags_ter ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+if(flags.debug){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = true;
+
+StatementExpression expression MethodInvocation qualifier formattingOption_ter ^ ^ member applyToOptions_ter ^ ^ ^ ^ ^ 
+formattingOption.applyToOptions();
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier flags_ter ^ ^ member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(!flags.process_closure_primitives()){
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member skipAllCompilerPasses_ter ^ ^ ^ ^ ^ 
+options.skipAllCompilerPasses();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member disableRuntimeTypeCheck_ter ^ ^ ^ ^ ^ 
+options.disableRuntimeTypeCheck();
+
+condition MemberReference qualifier flags_ter ^ ^ member debug_ter ^ ^ ^ ^ 
+if(flags.debug){
+condition MemberReference qualifier flags_ter ^ ^ member formatting_ter ^ ^ ^ ^ 
+if(flags.formatting){
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = false;
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member skipAllCompilerPasses_ter ^ ^ ^ ^ ^ 
+options.skipAllCompilerPasses();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member disableRuntimeTypeCheck_ter ^ ^ ^ ^ ^ 
+options.disableRuntimeTypeCheck();
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member ideMode_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.ideMode = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member skipAllPasses_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.skipAllPasses = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member nameAnonymousFunctionsOnly_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.nameAnonymousFunctionsOnly = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkSymbols_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkSymbols = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkDuplicateMessages_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkDuplicateMessages = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member allowLegacyJsMessages_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.allowLegacyJsMessages = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member strictMessageReplacement_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.strictMessageReplacement = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkSuspiciousCode_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkSuspiciousCode = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkControlStructures_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkControlStructures = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkUnusedPropertiesEarly_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkUnusedPropertiesEarly = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkTypes_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkTypes = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member tightenTypes_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.tightenTypes = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inferTypesInGlobalScope_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inferTypesInGlobalScope = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkTypedPropertyCalls_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkTypedPropertyCalls = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkEs5Strict_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkEs5Strict = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member checkCaja_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.checkCaja = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member foldConstants_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.foldConstants = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeConstantExpressions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeConstantExpressions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member deadAssignmentElimination_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.deadAssignmentElimination = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inlineConstantVars_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inlineConstantVars = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inlineFunctions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inlineFunctions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member decomposeExpressions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.decomposeExpressions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inlineAnonymousFunctionExpressions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inlineAnonymousFunctionExpressions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inlineLocalFunctions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inlineLocalFunctions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member crossModuleCodeMotion_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.crossModuleCodeMotion = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member coalesceVariableNames_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.coalesceVariableNames = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member crossModuleMethodMotion_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.crossModuleMethodMotion = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inlineGetters_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inlineGetters = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inlineVariables_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inlineVariables = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member inlineLocalVariables_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.inlineLocalVariables = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member flowSensitiveInlineVariables_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.flowSensitiveInlineVariables = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member smartNameRemoval_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.smartNameRemoval = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeDeadCode_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeDeadCode = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member extractPrototypeMemberDeclarations_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.extractPrototypeMemberDeclarations = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeEmptyFunctions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeEmptyFunctions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeUnusedPrototypeProperties_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeUnusedPrototypeProperties = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeUnusedPrototypePropertiesInExterns_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeUnusedPrototypePropertiesInExterns = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeUnusedVars_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeUnusedVars = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeUnusedVarsInGlobalScope_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeUnusedVarsInGlobalScope = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member aliasExternals_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.aliasExternals = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member collapseVariableDeclarations_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.collapseVariableDeclarations = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member collapseAnonymousFunctions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.collapseAnonymousFunctions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member aliasAllStrings_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.aliasAllStrings = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member outputJsStringUsage_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.outputJsStringUsage = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member convertToDottedProperties_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.convertToDottedProperties = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member rewriteFunctionExpressions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.rewriteFunctionExpressions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member optimizeParameters_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.optimizeParameters = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member optimizeArgumentsArray_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.optimizeArgumentsArray = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member chainCalls_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.chainCalls = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member labelRenaming_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.labelRenaming = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member reserveRawExports_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.reserveRawExports = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member generatePseudoNames_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.generatePseudoNames = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member aliasKeywords_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.aliasKeywords = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member collapseProperties_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.collapseProperties = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member collapsePropertiesOnExternTypes_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.collapsePropertiesOnExternTypes = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member devirtualizePrototypeMethods_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.devirtualizePrototypeMethods = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member computeFunctionSideEffects_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.computeFunctionSideEffects = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member disambiguateProperties_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.disambiguateProperties = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member ambiguateProperties_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.ambiguateProperties = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member exportTestFunctions_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.exportTestFunctions = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member runtimeTypeCheck_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.runtimeTypeCheck = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member instrumentForCoverage_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.instrumentForCoverage = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member instrumentForCoverageOnly_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.instrumentForCoverageOnly = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member ignoreCajaProperties_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.ignoreCajaProperties = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member markAsCompiled_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.markAsCompiled = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeTryCatchFinally_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeTryCatchFinally = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member rewriteNewDateGoogNow_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.rewriteNewDateGoogNow = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member removeAbstractMethods_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.removeAbstractMethods = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member gatherCssNames_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.gatherCssNames = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member markNoSideEffectCalls_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.markNoSideEffectCalls = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member moveFunctionDeclarations_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.moveFunctionDeclarations = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member recordFunctionInformation_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.recordFunctionInformation = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member generateExports_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.generateExports = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member processObjectPropertyString_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.processObjectPropertyString = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member prettyPrint_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.prettyPrint = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member lineBreak_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.lineBreak = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member printInputDelimiter_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.printInputDelimiter = true;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member colorizeErrorOutput_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.colorizeErrorOutput = true;
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ ^ 
+options.closurePass();
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = options.closurePass;
+
+
+StatementExpression expression MethodInvocation qualifier level_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member setDebugOptionsForCompilationLevel_ter ^ ^ ^ ^ ^ 
+level.setDebugOptionsForCompilationLevel(options);
+
+StatementExpression expression MethodInvocation qualifier formattingOption_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member applyToOptions_ter ^ ^ ^ ^ ^ 
+formattingOption.applyToOptions(options);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value MemberReference member closurePass_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = closurePass;
+
+IfStatement condition MemberReference qualifier flags_ter ^ ^ member process_closure_primitives_ter ^ ^ ^ ^ ^ 
+if(flags.process_closure_primitives){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = null;
+
+StatementExpression expression Assignment expressionl MemberReference member level_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+level = true;
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member setSummaryDetailLevel_ter ^ ^ ^ ^ ^ 
+options.setSummaryDetailLevel(false);
+
+IfStatement condition MemberReference qualifier flags_ter ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+if(flags.debug){
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member setSummaryDetailLevel_ter ^ ^ ^ ^ ^ 
+options.setSummaryDetailLevel(true);
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member closurePass_ter ^ ^ ^ ^ ^ 
+closurePass++;
+
+StatementExpression expression MethodInvocation member closurePass_ter ^ ^ ^ ^ ^ 
+closurePass();
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value MemberReference member options_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = options;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member options_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options != null)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ value MethodInvocation qualifier options_ter ^ ^ member closurePass_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.closurePass = options.closurePass();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member closurePass_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((closurePass != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member options_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options = true;
+
+ReturnStatement_ter ^ 
+return;
+
+stderr: 

@@ -1,0 +1,304 @@
+stdout: LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ ^ ^ ^ 
+double sumSq = ;
+
+
+ReturnStatement expression MemberReference member sumSq_ter ^ ^ ^ ^ ^ 
+if (true) { return sumSq; }
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - expected[i]);
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 0.0d_ter ^ ^ ^ ^ ^ ^ ^ 
+long sumSq = 0.0d;
+
+StatementExpression expression Assignment expressionl MemberReference member sumSq_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member dev_ter ^ ^ ^ ^ operandr MemberReference member dev_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sumSq += ((dev * dev) / expected[i]);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 0.0d_ter ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = 0.0d;
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer MemberReference member observed_ter ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = observed;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = 0;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member observed_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((observed != null)){
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression Literal value 0.0d_ter ^ ^ ^ ^ ^ 
+if (true) { return 0.0d; }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 0.0d_ter ^ ^ ^ ^ ^ ^ ^ 
+long[] sumSq = 0.0d;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer MemberReference member expected_ter ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = expected;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 0.0d_ter ^ ^ ^ ^ ^ ^ ^ 
+int sumSq = 0.0d;
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier observed_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < observed.length);i++) {
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+if (true) { return 2; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MemberReference member observed_ter ^ ^ ^ ^ ^ 
+if (true) { return observed; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 0.0d_ter ^ ^ ^ ^ ^ ^ ^ 
+final double sumSq = 0.0d;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 0.0d_ter ^ ^ ^ ^ ^ ^ ^ 
+double[] sumSq = 0.0d;
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expected.length < 2)){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = 1;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member expected_ter ^ ^ ^ ^ member isPositive_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member observed_ter ^ ^ ^ ^ member isNonNegative_ter ^ ^ ^ ^ ^ ^ ^ 
+if((!isPositive(expected) || !isNonNegative(observed))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member expected_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expected != null)){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ ^ ^ ^ 
+double i = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference qualifier observed_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expected.length != observed.length)){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer MemberReference member sumSq_ter ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = sumSq;
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member observed_ter ^ ^ ^ ^ member isNonNegative_ter ^ ^ ^ ^ ^ 
+if(!isNonNegative(observed)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member observed_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((observed == null)){
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = 2;
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member dev_ter ^ ^ ^ ^ operandr MemberReference member dev_ter ^ ^ ^ ^ ^ ^ ^ 
+if((dev * dev)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member observed_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member sumSq_ter ^ ^ ^ ^ ^ 
+if((observed == null)){
+return sumSq;}
+ReturnStatement expression MemberReference member expected_ter ^ ^ ^ ^ ^ 
+if (true) { return expected; }
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference qualifier observed_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((expected.length < 2) || (expected.length != observed.length))){
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sumSq_ter ^ ^ initializer MemberReference member par2 ^ ^ ^ ^ ^ ^ ^ 
+double sumSq = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member observed_ter ^ ^ ^ ^ operandr Literal value 0.0d_ter ^ ^ ^ ^ ^ ^ ^ 
+if((observed != 0.0d)){
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+dev += ((double)observed[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dev_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)dev[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dev_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - dev[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member i_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)i - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)expected[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+dev -= ((double)observed[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - i);
+
+StatementExpression expression Assignment expressionl MemberReference member sumSq_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member dev_ter ^ ^ ^ ^ operandr MemberReference member dev_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sumSq += ((dev * dev) / expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sumSq_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member dev_ter ^ ^ ^ ^ operandr MemberReference member dev_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sumSq += ((dev * dev) / expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member dev_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)dev - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] + (double)observed[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] + expected[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member dev_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - dev);
+
+StatementExpression expression Assignment expressionl MemberReference member sumSq_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sumSq = ((double)observed[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value MemberReference member dev_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = dev;
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value MemberReference member expected_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = expected;
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = expected[i];
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] + this);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)i[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] + expected);
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier observed_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i < observed.length);i++) {
+
+StatementExpression expression Assignment expressionl MemberReference member sumSq_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sumSq += ((double)observed[i] - expected[i]);
+
+ReturnStatement expression MemberReference member sumSq_ter ^ ^ ^ ^ ^ 
+if (true) { return sumSq; }
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference qualifier observed_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (expected.length != observed.length);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr This_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + this);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member expected_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (expected + expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - i[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member sumSq_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)sumSq[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member expected_ter ^ ^ ^ ^ operandr Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (expected + (double)observed[i]);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i != null)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+dev += ((double)observed[i] + expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+dev &= ((double)observed[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member dev_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + dev);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member observed_ter ^ ^ ^ ^ member isNonNegative_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + !isNonNegative(observed));
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator <_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (expected.length < 2);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expected.length < 2)){
+continue;
+}
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + (double)observed[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+dev *= ((double)observed[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member sumSq_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - sumSq[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member observed_ter ^ ^ ^ ^ member isNonNegative_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = !isNonNegative(observed);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member expected_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)expected - expected[i]);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier expected_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference qualifier observed_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+if((expected.length != observed.length)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + expected);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + 1);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev[i] = ((double)observed[i] - expected[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed - expected[i]);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference qualifier observed_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i < observed.length)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member expected_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = (((double)observed[i] - expected[i]) + i);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member observed_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - observed);
+
+StatementExpression expression Assignment expressionl MemberReference member dev_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member observed_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+dev = ((double)observed[i] - observed[i]);
+
+stderr: 

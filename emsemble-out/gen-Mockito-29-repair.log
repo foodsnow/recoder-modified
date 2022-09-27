@@ -1,0 +1,74 @@
+stdout: StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation qualifier wanted_ter ^ ^ member toString_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(wanted.toString());
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation qualifier wanted_ter ^ ^ member getName_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(wanted.getName());
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation qualifier wanted_ter ^ ^ member describeTo_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(wanted.describeTo());
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation qualifier description_ter ^ ^ member toString_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(description.toString());
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText();
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(true);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(false);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(description);
+
+StatementExpression expression MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member appendQuoting_ter ^ ^ ^ ^ ^ 
+appendQuoting(description);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation member toString_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(toString());
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation qualifier wanted_ter ^ ^ member toString_ter ^ ^ ^ ^ member appendQuoting_ter ^ ^ ^ ^ ^ 
+description.appendQuoting(wanted.toString());
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText("null");
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(false);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(true);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments This_ter ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(this);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member description_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((description != null)){
+
+StatementExpression expression MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+appendText(description);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation qualifier wanted_ter ^ ^ member get_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(wanted.get());
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MemberReference member description_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(description);
+
+StatementExpression expression MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member describeTo_ter ^ ^ ^ ^ ^ 
+describeTo(description);
+
+StatementExpression expression MethodInvocation arguments MemberReference member description_ter ^ ^ ^ ^ member appendQuoting_ter ^ ^ ^ ^ ^ 
+appendQuoting(description);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(null);
+
+StatementExpression expression MethodInvocation qualifier description_ter ^ ^ arguments MethodInvocation qualifier wanted_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ member appendText_ter ^ ^ ^ ^ ^ 
+description.appendText(wanted.isEmpty());
+
+stderr: 

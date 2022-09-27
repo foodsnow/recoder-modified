@@ -1,0 +1,123 @@
+stdout: 
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((outputCharsetEncoder != null)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((outputCharsetEncoder == null)){
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x7f_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c <= 0x7f)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x1f_ter ^ ^ ^ ^ ^ ^ ^ 
+if((c > 0x1f)){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((c != null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sb_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((sb != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x7f_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((outputCharsetEncoder != null) && (c <= 0x7f))){
+
+BreakStatement_ter ^ 
+break;
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((outputCharsetEncoder >= null)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((outputCharsetEncoder > null)){
+IfStatement condition MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ ^ 
+if(outputCharsetEncoder){
+
+StatementExpression expression MethodInvocation arguments MemberReference member sb_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ ^ member appendHexJavaScriptRepresentation_ter ^ ^ ^ ^ ^ 
+appendHexJavaScriptRepresentation(sb, c);
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append(c);
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+sb.append("null");
+
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i + 1)){
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+sb.append("null");
+break;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x1f_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((c > 0x1f) && (outputCharsetEncoder != null))){
+
+StatementExpression expression MethodInvocation arguments MemberReference member sb_ter ^ ^ ^ MemberReference member c_ter ^ ^ ^ ^ member appendHexJavaScriptRepresentation_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+appendHexJavaScriptRepresentation(sb, c);
+break;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x1f_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((outputCharsetEncoder != null) && (c > 0x1f))){
+
+StatementExpression expression MethodInvocation qualifier sb_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+sb.append(c);
+break;
+
+StatementExpression expression MethodInvocation member tagAsStrict_ter ^ ^ ^ ^ ^ 
+tagAsStrict();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((outputCharsetEncoder != null) && (i + 1))){
+
+IfStatement condition MethodInvocation qualifier s_ter ^ ^ arguments Literal value false_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MemberReference member START_COMMENT_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier START_COMMENT_ter ^ ^ member length_ter ^ ^ ^ ^ member regionMatches_ter ^ ^ ^ ^ ^ 
+if(s.regionMatches(false, (i + 1), START_COMMENT, 0, START_COMMENT.length())){
+
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((outputCharsetEncoder <= null)){
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x7f_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((c <= 0x7f)){
+break;
+}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x1f_ter ^ ^ ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if((c > 0x1f)){
+break;
+}
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MethodInvocation qualifier s_ter ^ ^ arguments Literal value true_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MemberReference member END_SCRIPT_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier END_SCRIPT_ter ^ ^ member length_ter ^ ^ ^ ^ member regionMatches_ter ^ ^ ^ ^ ^ 
+if(s.regionMatches(true, (i + 1), END_SCRIPT, 0, END_SCRIPT.length())){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member outputCharsetEncoder_ter ^ ^ ^ ^ ^ 
+if(!outputCharsetEncoder){
+
+IfStatement condition MemberReference member c_ter ^ ^ ^ ^ ^ 
+if(c){
+
+StatementExpression expression MethodInvocation member tagAsStrict_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+tagAsStrict();
+break;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x1f_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value 0x7f_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((c > 0x1f) && (c <= 0x7f))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((outputCharsetEncoder != null) && (outputCharsetEncoder != null))){
+
+ContinueStatement_ter ^ 
+continue;
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member outputCharsetEncoder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member c_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((outputCharsetEncoder != null) && (c != null))){
+
+stderr: 

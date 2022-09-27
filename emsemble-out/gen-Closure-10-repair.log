@@ -1,0 +1,91 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member anyResultsMatch_ter ^ ^ ^ ^ ^ 
+return anyResultsMatch(n, MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member evaluatesToLocalValue_ter ^ ^ ^ ^ ^ 
+return evaluatesToLocalValue(n, MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member recurse_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, recurse);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference qualifier MAY_BE_STRING_PREDICATE_ter ^ ^ member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, MAY_BE_STRING_PREDICATE.MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, e);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MethodInvocation member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch();
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member mayBeString_ter ^ ^ ^ ^ ^ 
+return mayBeString(n, MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ ^ 
+return MAY_BE_STRING_PREDICATE;
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ MemberReference member recurse_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, recurse);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member loc0 ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member mayBeStringHelper_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, mayBeStringHelper);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ MemberReference member recurse_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, MAY_BE_STRING_PREDICATE, recurse);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member recurse_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, n, recurse);
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MATCH_NOT_FUNCTION_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, MATCH_NOT_FUNCTION);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member mayBeStringHelper_ter ^ ^ ^ ^ ^ 
+return mayBeStringHelper(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member mayBeString_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, mayBeString);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, n, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member debug_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, debug);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, n, );
+
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member maybeAddFinally_ter ^ ^ ^ ^ ^ 
+return maybeAddFinally(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member redeclareVarsInsideBranch_ter ^ ^ ^ ^ ^ 
+return redeclareVarsInsideBranch(n);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ MemberReference member n_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, n, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, false);
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+return n;
+ReturnStatement expression MethodInvocation arguments MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(MAY_BE_STRING_PREDICATE, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference qualifier MAY_BE_STRING_PREDICATE_ter ^ ^ member n_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, MAY_BE_STRING_PREDICATE.n);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member mayBeStringHelper_ter ^ ^ ^ ^ ^ 
+return mayBeStringHelper(n, MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, null);
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, MAY_BE_STRING_PREDICATE, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member recurse_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(recurse, MAY_BE_STRING_PREDICATE);
+ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return n.allResultsMatch();
+IfStatement condition MemberReference member recurse_ter ^ ^ ^ ^ ^ 
+if(recurse){
+
+ReturnStatement expression MemberReference member recurse_ter ^ ^ ^ ^ ^ 
+return recurse;
+ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ MemberReference member MAY_BE_STRING_PREDICATE_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member allResultsMatch_ter ^ ^ ^ ^ ^ 
+return allResultsMatch(n, MAY_BE_STRING_PREDICATE, true);
+stderr: 

@@ -1,0 +1,231 @@
+stdout: condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 >= overflow)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 > overflow)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 <= overflow)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 == overflow)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 < overflow)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 != overflow)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ 
+if((a0 > a0)){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a0 > overflow)){
+
+IfStatement condition MemberReference member a0_ter ^ ^ ^ ^ ^ 
+if(a0){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 && overflow)){
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 || overflow)){
+IfStatement condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a0 - value)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member r0_ter ^ ^ ^ ^ ^ ^ 
+if((a0 > r0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ 
+if((a0 > value)){
+condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((a0 instanceof overflow)){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a0 < a0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && a0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 > overflow))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) || a0)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) || (a0 > overflow))){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a0 > a0)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a0 > 0)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a0 < 0)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) || (a0 > 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 > 0))){
+
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ 
+if(FastMath.abs((a0 - value))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 == null))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member loc6 ^ ^ ^ ^ ^ ^ 
+if((a0 > )){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) || (a0 > a0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 != null) && (a0 > overflow))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 == a0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member a0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 > a0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 == null) && (a0 > overflow))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((value > overflow)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) || (a0 < 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member a0_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a0 > overflow) && (a0 < 0))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member r0_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ 
+if((r0 > overflow)){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 >= overflow) || (q2 > overflow))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 <= overflow) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 > overflow)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > overflow) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((q2 > overflow)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 < overflow) || (q2 > overflow))){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 == overflow) || (q2 > overflow))){
+StatementExpression expression Assignment expressionl MemberReference member q2_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member a1_ter ^ ^ ^ ^ operandr MemberReference member q1_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member q0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+q2 = ((a1 * q1) + q0);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = true;
+
+StatementExpression expression Assignment expressionl MemberReference member a0_ter ^ ^ ^ ^ value MemberReference member a1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a0 = a1;
+
+StatementExpression expression Assignment expressionl MemberReference member p1_ter ^ ^ ^ ^ value MemberReference member p2_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+p1 = p2;
+
+StatementExpression expression Assignment expressionl MemberReference member r0_ter ^ ^ ^ ^ value MemberReference member r1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+r0 = r1;
+
+StatementExpression expression Assignment expressionl MemberReference member p0_ter ^ ^ ^ ^ value MemberReference member p1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+p0 = p1;
+
+StatementExpression expression Assignment expressionl MemberReference member q0_ter ^ ^ ^ ^ value MemberReference member q1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+q0 = q1;
+
+StatementExpression expression Assignment expressionl MemberReference member p2_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member a1_ter ^ ^ ^ ^ operandr MemberReference member p1_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member p0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+p2 = ((a1 * p1) + p0);
+
+StatementExpression expression Assignment expressionl MemberReference member q1_ter ^ ^ ^ ^ value MemberReference member q2_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+q1 = q2;
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 != overflow) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > overflow) || (q2 > overflow))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member a1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > a1) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MemberReference member convergent_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member epsilon_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((n < maxIterations) && (FastMath.abs((convergent - value)) > epsilon))){
+
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > overflow) && (q2 > overflow))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member convergent_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > convergent) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((p2 > overflow) || (q2 > overflow)) || (q2 > overflow))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member q2_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > q2) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MemberReference member convergent_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member epsilon_ter ^ ^ ^ ^ ^ ^ ^ 
+if((FastMath.abs((convergent - value)) > epsilon)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member r0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > r0) || (q2 > overflow))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member p2_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > p2) || (q2 > overflow))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > value) || (q2 > overflow))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member q1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > q1) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member a1_ter ^ ^ ^ ^ operandr MemberReference member q1_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member q0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((a1 * q1) + q0)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member a1_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > overflow) || (a1 > overflow))){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 > overflow)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ 
+if((q2 > overflow)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member maxDenominator_ter ^ ^ ^ ^ ^ ^ ^ 
+if((q2 < maxDenominator)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > overflow) && (q2 > overflow))){
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member a1_ter ^ ^ ^ ^ operandr MemberReference member q1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a1 * q1)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a1_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a1 > overflow) || (q2 > overflow))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MemberReference member convergent_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member epsilon_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member maxDenominator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((n < maxIterations) && (FastMath.abs((convergent - value)) > epsilon)) && (q2 < maxDenominator))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >>_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > overflow) || (q2 >> overflow))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MemberReference member convergent_ter ^ ^ ^ ^ operandr MemberReference member value_ter ^ ^ ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member epsilon_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member maxDenominator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((n < maxIterations) && (FastMath.abs((convergent - value)) > epsilon)) && (q2 < maxDenominator))){
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = true;
+
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n >= maxIterations)){
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n >= maxIterations)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 > overflow) || (q2 >>> overflow))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member q2_ter ^ ^ ^ ^ operandr MemberReference member overflow_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((p2 || overflow) || (q2 > overflow))){
+stderr: 

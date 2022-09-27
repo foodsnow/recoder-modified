@@ -1,0 +1,133 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+return getCumPct(v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ MemberReference member v_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getPct((Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct(getCumPct((Comparable<?>)v));
+ReturnStatement expression MemberReference member v_ter ^ ^ ^ ^ ^ 
+return v;
+ReturnStatement expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+return addValue(v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, false);
+ReturnStatement expression MethodInvocation member getCumPct_ter ^ ^ ^ ^ ^ 
+return getCumPct();
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ This_ter ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, this);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, true);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return debug((Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+return getCumPct(addValue(v));
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return add((Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments This_ter ^ MemberReference member v_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+return getCumPct(this, v);
+ReturnStatement expression Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return (Comparable<?>)getCumPct(v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, (Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, null);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, 0);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, );
+
+ReturnStatement expression This selectors MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.v;
+ReturnStatement expression MethodInvocation qualifier v_ter ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+return v.getCumPct();
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return e((Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member getPct_ter ^ ^ ^ ^ ^ 
+return getPct(v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return max((Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)getCumPct(v));
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, "null");
+ReturnStatement expression MethodInvocation arguments Cast type BasicType name double_ter ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+return getCumPct((double)v);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ This_ter ^ MemberReference member v_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, this, v);
+ReturnStatement expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ This_ter ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+return getCumPct(v, this);
+ReturnStatement expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct(v, (Comparable<?>)v);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v != null)){
+
+ReturnStatement expression MethodInvocation arguments ClassReference type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+ClassReference type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+ClassReference type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+return getCumPct(Comparable<?>);
+
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct((Comparable<?>)v, 1);
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return put((Comparable<?>)v);
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ MemberReference member v_ter ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return getCumPct(getCumPct((Comparable<?>)v), v);
+ReturnStatement expression MethodInvocation arguments This selectors MemberReference member v_ter ^ ^ ^ ^ ^ ^ member getCumPct_ter ^ ^ ^ ^ ^ 
+return getCumPct(this.v);
+stderr: 

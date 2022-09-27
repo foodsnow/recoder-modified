@@ -1,0 +1,139 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier out_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, out.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier pos_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, pos.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member pos_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(pos, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 1, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, out);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member out_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(out, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member toChars_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.toChars(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.charCount(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member translate_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.translate(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member len_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(len, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier len_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, len.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (int)Character.codePointCount(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, input);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = codePointCount(input, 0, input.length());
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier Character_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, Character.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input.length());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member input_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((input != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input.length(), input);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, input.length(), 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.write(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointAt(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier par2 ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, .length());
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(, 0, input.length());
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(0, input);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member translate_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, input.translate());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, 0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+final int len = Character.codePointCount(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member len_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, len);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, input.length(), out);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input.length(), input, 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.debug(input, 0, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member input_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input.length(), 0, input);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, );
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = input.length();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.e(input, 0, input.length());
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member input_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((input == null)){
+return;
+}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MemberReference member out_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, out);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member length_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, -1, input.length());
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ MethodInvocation qualifier input_ter ^ ^ member codePointAt_ter ^ ^ ^ ^ member codePointCount_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = Character.codePointCount(input, 0, input.codePointAt());
+
+stderr: 

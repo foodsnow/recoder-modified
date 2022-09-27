@@ -1,0 +1,128 @@
+stdout: LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n2_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n2 * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member Umin_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (Umin * n2);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int n1n2prod = (n1 * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer MemberReference member n1_ter ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = n1;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1n2prod_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1n2prod * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 * n1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ((n1 * n2) * n1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 - n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member par3 ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ( * n2);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 / n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = n2;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl MemberReference member n2_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n2 / n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1n2prod_ter ^ ^ ^ ^ operandr BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1n2prod * ((n1 + n2) + 1));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member EU_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (EU * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ((n1 * n2) * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member Umin_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 * Umin);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final long n1n2prod = (n1 * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final double n1n2prod = (n1 * n2);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((n1 == null)){
+return 0;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ((n1 * n2) * 1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ((n1 + n2) + 1);
+
+StatementExpression expression SuperMethodInvocation member calculateAsymptoticPValue_ter ^ ^ ^ ^ ^ 
+super.calculateAsymptoticPValue();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n1n2prod_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 * n1n2prod);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = 1;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 + n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ((n1 * n2) / n2);
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n2_ter ^ ^ ^ ^ operandr MemberReference member par3 ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n2 * );
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 * (n1 * n2));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer MemberReference member Umin_ter ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = Umin;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 * 1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member VarU_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (VarU * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member n2_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ((n2 * n2) * n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member n1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = ((n1 * n2) / n1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator %_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 % n2);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n2_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n2_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n2 * (n1 * n2));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member Umin_ter ^ ^ ^ ^ operandr MemberReference member EU_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (Umin - EU);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n2_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n2 * 1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member n1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 / n1);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name n1n2prod_ter ^ ^ initializer BinaryOperation operator *_ter ^ ^ operandl MemberReference member n1_ter ^ ^ ^ ^ operandr MemberReference member par3 ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int n1n2prod = (n1 * );
+
+
+stderr: 

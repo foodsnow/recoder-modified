@@ -1,0 +1,225 @@
+stdout: 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fu;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = u;
+
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fw_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fw;
+
+StatementExpression expression Assignment expressionl MemberReference member fw_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fw = fu;
+
+StatementExpression expression Assignment expressionl MemberReference member w_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+w = u;
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name UnivariatePointValuePair_ter ^ ^ ^ ^ arguments MemberReference member u_ter ^ ^ ^ TernaryExpression condition MemberReference member isMinim_ter ^ ^ ^ ^ if_true MemberReference member fu_ter ^ ^ ^ ^ if_false MemberReference prefix_operators -_ter ^ ^ member fu_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new UnivariatePointValuePair(u, (isMinim)?fu:-fu);
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member w_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = w;
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = u;
+
+StatementExpression expression Assignment expressionl MemberReference member b_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+b = u;
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+return current;
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(iter, previous, current)){
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition MemberReference member isMinim_ter ^ ^ ^ ^ ^ 
+if(isMinim){
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member fu_ter ^ ^ ^ ^ operandr MemberReference member fw_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fu <= fw)){
+
+IfStatement condition MemberReference member isMinim_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if(isMinim){
+fv = fu;
+}
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member fu_ter ^ ^ ^ ^ operandr MemberReference member fv_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fu <= fv)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member fu_ter ^ ^ ^ ^ operandr MemberReference member fv_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier Precision_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fu <= fv) || Precision.equals(v, x))){
+
+IfStatement condition MemberReference member isMinim_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if(isMinim){
+v = u;
+}
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fu;
+v = u;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = u;
+v = u;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fu;
+fv = fu;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = u;
+fv = fu;
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+current = null;
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MemberReference member iter_ter ^ ^ ^ ^ ^ 
+return iter;
+StatementExpression expression Assignment expressionl MemberReference member fw_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fw = fu;
+v = u;
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+current = false;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if((checker != null)){
+fv = fu;
+}
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if(checker.converged(iter, previous, current)){
+fv = fu;
+}
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fw_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fw;
+v = u;
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if (true) { return current; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if((checker != null)){
+v = u;
+}
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+if(checker.converged(iter, previous, current)){
+v = u;
+}
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value MemberReference member iter_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+current = iter;
+
+StatementExpression expression Assignment expressionl MemberReference member fw_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fw = fu;
+fv = fu;
+
+StatementExpression expression Assignment expressionl MemberReference member w_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+w = u;
+v = u;
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name UnivariatePointValuePair_ter ^ ^ ^ ^ arguments MemberReference member u_ter ^ ^ ^ TernaryExpression condition MemberReference member isMinim_ter ^ ^ ^ ^ if_true MemberReference member fu_ter ^ ^ ^ ^ if_false MemberReference prefix_operators -_ter ^ ^ member fu_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+current = new UnivariatePointValuePair(u, (isMinim)?fu:-fu);
+v = u;
+
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fw_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member fv_ter ^ ^ ^ ^ value MemberReference member fu_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fv = fw;
+fv = fu;
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+return current;
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MemberReference member loc0 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression MemberReference member e_ter ^ ^ ^ ^ ^ 
+return e;
+IfStatement condition MemberReference member current_ter ^ ^ ^ ^ ^ 
+if(current){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((current != null)){
+
+ReturnStatement expression MemberReference prefix_operators !_ter ^ ^ member current_ter ^ ^ ^ ^ ^ 
+return !current;
+ReturnStatement expression MemberReference member debug_ter ^ ^ ^ ^ ^ 
+return debug;
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member current_ter ^ ^ ^ ^ ^ 
+if(!current){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((current == null)){
+
+ReturnStatement expression MemberReference member size_ter ^ ^ ^ ^ ^ 
+return size;
+ReturnStatement expression MemberReference prefix_operators -_ter ^ ^ member current_ter ^ ^ ^ ^ ^ 
+return -current;
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr MemberReference member current_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if((current == current)){
+return current;}
+IfStatement condition MemberReference member current_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if(current){
+return current;}
+add ^ 
+1 add
+IfStatement condition MemberReference member current_ter ^ ^ ^ ^ ^ 
+if(current){
+
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression MemberReference postfix_operators ++_ter ^ ^ member current_ter ^ ^ ^ ^ ^ 
+return current++;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr MemberReference member current_ter ^ ^ ^ ^ ^ ^ ^ 
+if((current == current)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr MemberReference member current_ter ^ ^ ^ ^ ^ ^ ^ 
+if((current != current)){
+
+stderr: 

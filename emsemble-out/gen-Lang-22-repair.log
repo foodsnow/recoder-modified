@@ -1,0 +1,127 @@
+stdout: condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) >= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) > 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) < 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member reduce_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.reduce(u) <= 1) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member invert_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.invert(u) <= 1) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member negate_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.negate(u) <= 1) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) == 1))){
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Math.abs(v) <= 1)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(v) <= 1) || (Math.abs(v) <= 1))){
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Math.abs(u) <= 1)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) || 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) != 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) && (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) && 1))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) <= 1))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member greatestCommonDivisor_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.greatestCommonDivisor(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier u_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (u.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= -1) || (Math.abs(v) <= 1))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((Math.abs(u) <= 1) || (Math.abs(v) <= 1)) || (Math.abs(v) <= 1))){
+
+StatementExpression expression Assignment expressionl MemberReference member u_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member u_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+u = -u;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member v_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = -v;
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) & 1))){
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Math.abs(u) <= 1)){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Math.abs(v) <= 1)){
+
+IfStatement condition MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ 
+if(Math.abs(u)){
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if (true) { return 1; }
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator |_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.abs(v) | 1))){
+IfStatement condition MemberReference member v_ter ^ ^ ^ ^ ^ 
+if(v){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.debug(u) <= 1) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) - 1) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs() <= 1) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 31_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 31) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.e(v) <= 1))){
+StatementExpression expression Assignment expressionl MemberReference member t_ter ^ ^ ^ ^ value Literal value 2_ter ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+t /= 2;
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member v_ter ^ ^ ^ ^ ^ 
+if(!v){
+
+StatementExpression expression Assignment expressionl MemberReference member u_ter ^ ^ ^ ^ value Literal value 2_ter ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+u /= 2;
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value Literal value 2_ter ^ ^ ^ ^ type /=_ter ^ ^ ^ ^ ^ 
+v /= 2;
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member k_ter ^ ^ ^ ^ ^ 
+k++;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member k_ter ^ ^ ^ ^ operandr Literal value 31_ter ^ ^ ^ ^ ^ ^ ^ 
+if((k == 31)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator &_ter ^ ^ operandl MemberReference member u_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((u & 1) == 1)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v > 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member u_ter ^ ^ ^ ^ value MemberReference prefix_operators -_ter ^ ^ member t_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+u = -t;
+
+StatementExpression expression Assignment expressionl MemberReference member t_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr MemberReference member u_ter ^ ^ ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+t = ((v - u) / 2);
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.add(v) <= 1))){
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MemberReference member t_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+v = t;
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier v_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (v.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 1) || (Math.max(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 2) || (Math.abs(v) <= 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member v_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(u) <= 0) || (Math.abs(v) <= 1))){
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+stderr: 

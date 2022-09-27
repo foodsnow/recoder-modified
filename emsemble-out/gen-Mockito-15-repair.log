@@ -1,0 +1,66 @@
+stdout: StatementExpression expression ClassCreator selectors MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type ReferenceType name FieldSetter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new FieldSetter();
+
+StatementExpression expression MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+set(matchingMock);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member matchingMock_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((matchingMock != null)){
+
+
+StatementExpression expression SuperMethodInvocation selectors MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+super.set().set(matchingMock);
+
+StatementExpression expression ClassCreator selectors MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type ReferenceType name FieldSetter_ter ^ ^ ^ ^ arguments MemberReference member matchingMock_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new FieldSetter(matchingMock);
+
+IfStatement condition MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+if(set(matchingMock)){
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fieldInstance_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fieldInstance != null)){
+
+
+ReturnStatement expression ClassCreator selectors MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type ReferenceType name FieldSetter_ter ^ ^ ^ ^ arguments MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new FieldSetter(fieldInstance, field);
+StatementExpression expression ClassCreator selectors MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type ReferenceType name FieldSetter_ter ^ ^ ^ ^ arguments MemberReference member fieldInstance_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new FieldSetter(fieldInstance);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member field_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((field != null)){
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+set(fieldInstance, field);
+
+
+StatementExpression expression SuperMethodInvocation member thenInject_ter ^ ^ ^ ^ ^ 
+super.thenInject();
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(matchingMock);
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+StatementExpression expression SuperMethodInvocation selectors MethodInvocation arguments MemberReference member matchingMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ member thenInject_ter ^ ^ ^ ^ ^ 
+super.thenInject().set(matchingMock);
+
+StatementExpression expression MethodInvocation member set_ter ^ ^ ^ ^ ^ 
+set();
+
+StatementExpression expression ClassCreator type ReferenceType name FieldSetter_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new FieldSetter();
+
+stderr: 

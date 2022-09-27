@@ -1,0 +1,137 @@
+stdout: 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference member lastOffset_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = lastOffset;
+
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lastLine = lineNumber;
+
+StatementExpression expression Assignment expressionl MemberReference member startLine_ter ^ ^ ^ ^ value MemberReference member lastLine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+startLine = lastLine;
+
+StatementExpression expression Assignment expressionl MemberReference member lastOffset_ter ^ ^ ^ ^ value MemberReference member pos_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lastOffset = pos;
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member nextpos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = (nextpos + 1);
+
+ReturnStatement expression MethodInvocation qualifier js_ter ^ ^ arguments MemberReference member pos_ter ^ ^ ^ MethodInvocation qualifier js_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ 
+return js.substring(pos, js.indexOf("null", pos));
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation member findLineOffsets_ter ^ ^ ^ ^ ^ 
+findLineOffsets();
+
+StatementExpression expression MethodInvocation member clearCachedSource_ter ^ ^ ^ ^ ^ 
+clearCachedSource();
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression MemberReference member pos_ter ^ ^ ^ ^ ^ 
+return pos;
+ReturnStatement expression MemberReference member lastLine_ter ^ ^ ^ ^ ^ 
+return lastLine;
+ReturnStatement expression MemberReference member js_ter ^ ^ ^ ^ ^ 
+return js;
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+ReturnStatement expression MemberReference member lastOffset_ter ^ ^ ^ ^ ^ 
+return lastOffset;
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+ReturnStatement expression MethodInvocation qualifier js_ter ^ ^ arguments MemberReference member pos_ter ^ ^ ^ MethodInvocation qualifier js_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ member substring_ter ^ ^ ^ ^ ^ 
+if (true) { return js.substring(pos, js.indexOf("null", pos)); }
+
+ReturnStatement expression MemberReference member startLine_ter ^ ^ ^ ^ ^ 
+return startLine;
+StatementExpression expression Assignment expressionl MemberReference member js_ter ^ ^ ^ ^ value MethodInvocation member getCode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+js = getCode();
+
+ReturnStatement expression MemberReference member lineNumber_ter ^ ^ ^ ^ ^ 
+return lineNumber;
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+return n;
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier js_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((js.indexOf("null", pos) == -1)){
+
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lastLine = lineNumber;
+lastLine = lineNumber;
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member lastOffset_ter ^ ^ ^ ^ value MemberReference member pos_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lastOffset = pos;
+lastLine = lineNumber;
+
+ReturnStatement expression Literal value 2_ter ^ ^ ^ ^ ^ 
+return 2;
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+ReturnStatement expression MethodInvocation member getCode_ter ^ ^ ^ ^ ^ 
+return getCode();
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastOffset_ter ^ ^ ^ ^ value MemberReference member pos_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lastLine = lineNumber;
+lastOffset = pos;
+
+StatementExpression expression Assignment expressionl MemberReference member lastOffset_ter ^ ^ ^ ^ value MemberReference member pos_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastOffset_ter ^ ^ ^ ^ value MemberReference member pos_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lastOffset = pos;
+lastOffset = pos;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member nextpos_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nextpos == -1)){
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference member lastOffset_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = lastOffset;
+
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member nextpos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+return (nextpos + 1);
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member nextpos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = (nextpos + 1);
+lastLine = lineNumber;
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member nextpos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = (nextpos + 1);
+
+StatementExpression expression Assignment expressionl MemberReference member startLine_ter ^ ^ ^ ^ value MemberReference member lastLine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+startLine = lastLine;
+
+StatementExpression expression MethodInvocation qualifier js_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member indexOf_ter ^ ^ ^ ^ ^ 
+js.indexOf("null", pos);
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference member lastOffset_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = lastOffset;
+lastLine = lineNumber;
+
+StatementExpression expression Assignment expressionl MemberReference member lastOffset_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+lastOffset = null;
+
+StatementExpression expression Assignment expressionl MemberReference member startLine_ter ^ ^ ^ ^ value MemberReference member lastLine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastLine_ter ^ ^ ^ ^ value MemberReference member lineNumber_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+startLine = lastLine;
+lastLine = lineNumber;
+
+StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl MemberReference member nextpos_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+StatementExpression expression Assignment expressionl MemberReference member lastOffset_ter ^ ^ ^ ^ value MemberReference member pos_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pos = (nextpos + 1);
+lastOffset = pos;
+
+stderr: 

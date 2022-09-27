@@ -1,0 +1,288 @@
+stdout: LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getUnboundParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getUnboundParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member rows_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters().rows;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier rows_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = rows.getAllParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member problem_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters().problem;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((problem != null)){
+
+StatementExpression expression MethodInvocation member updateJacobian_ter ^ ^ ^ ^ ^ 
+updateJacobian();
+
+StatementExpression expression MethodInvocation member incrementJacobianEvaluationsCounter_ter ^ ^ ^ ^ ^ 
+incrementJacobianEvaluationsCounter();
+
+StatementExpression expression MethodInvocation member updateResidualsAndCost_ter ^ ^ ^ ^ ^ 
+updateResidualsAndCost();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier par1 ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = .getAllParameters().length;
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final long cols = problem.getAllParameters().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((problem == null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getMeasurements_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getMeasurements().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression ClassCreator selectors MethodInvocation member inverse_ter ^ ^ ^ MethodInvocation member getData_ter ^ ^ ^ ^ type ReferenceType name RealMatrixImpl_ter ^ ^ ^ ^ arguments MemberReference member jTj_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((problem == null)){
+return new RealMatrixImpl(jTj);}
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member cols_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters().cols;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier cols_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = cols.getAllParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getData_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getData().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MemberReference member problem_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int cols = (int)problem.getAllParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ arguments MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters(length);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member par1 ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters().;
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = getAllParameters();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((length != null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier LOG_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = LOG.getAllParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getCovariances_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getCovariances().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((rows == null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member inverse_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.inverse().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member rows_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression ClassCreator selectors MethodInvocation member inverse_ter ^ ^ ^ MethodInvocation member getData_ter ^ ^ ^ ^ type ReferenceType name RealMatrixImpl_ter ^ ^ ^ ^ arguments MemberReference member jTj_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((rows == null)){
+return new RealMatrixImpl(jTj);}
+StatementExpression expression MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ 
+problem.getAllParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MethodInvocation member getAllParameters_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters().getAllParameters();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((problem == null)){
+return 0;}
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getName().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier par2 ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = .getAllParameters().length;
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters(0);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((problem == null)){
+continue;
+}
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation arguments MemberReference member problem_ter ^ ^ ^ ^ member initializeEstimate_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = initializeEstimate(problem);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation arguments MemberReference member problem_ter ^ ^ ^ ^ member estimate_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = estimate(problem);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MemberReference member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name cols_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ arguments MemberReference member jTj_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int cols = problem.getAllParameters(jTj);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getUnboundParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getUnboundParameters().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member m_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters().m;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member problem_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters().problem;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier m_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = m.getAllParameters().length;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((problem != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getMeasurements_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getMeasurements().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member p_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters().p;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((problem == null)){
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+long p = problem.getAllParameters().length;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+final int p = problem.getAllParameters().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member errors_ter ^ ^ ^ ^ ^ 
+if((problem == null)){
+return errors;}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member par1 ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters().;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((m == null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier par1 ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = .getAllParameters().length;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member guessParametersErrors_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.guessParametersErrors().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier p_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = p.getAllParameters().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference qualifier m_ter ^ ^ member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters().m.length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getChiSquare_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getChiSquare().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getName().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((problem == null)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member errors_ter ^ ^ ^ ^ ^ 
+if((m == null)){
+return errors;}
+StatementExpression expression MethodInvocation member updateJacobian_ter ^ ^ ^ ^ ^ 
+updateJacobian();
+
+StatementExpression expression MethodInvocation member incrementJacobianEvaluationsCounter_ter ^ ^ ^ ^ ^ 
+incrementJacobianEvaluationsCounter();
+
+StatementExpression expression MethodInvocation member updateResidualsAndCost_ter ^ ^ ^ ^ ^ 
+updateResidualsAndCost();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier Math_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = Math.getAllParameters().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MemberReference member problem_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int p = (int)problem.getAllParameters().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((problem == null)){
+continue;
+}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ arguments MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getAllParameters(length);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member length_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((length != null)){
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member updateJacobian_ter ^ ^ ^ ^ ^ 
+Math.updateJacobian();
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member incrementJacobianEvaluationsCounter_ter ^ ^ ^ ^ ^ 
+Math.incrementJacobianEvaluationsCounter();
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member updateResidualsAndCost_ter ^ ^ ^ ^ ^ 
+Math.updateResidualsAndCost();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = getAllParameters();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((m == null)){
+return 0;}
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+double[] p = problem.getAllParameters().length;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member problem_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((problem > 0)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.get().length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MemberReference member length_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getCovariances_ter ^ ^ ^ ^ ^ ^ ^ 
+int p = problem.getCovariances().length;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name p_ter ^ ^ initializer MethodInvocation qualifier problem_ter ^ ^ selectors MemberReference member length_ter ^ ^ ^ ^ member getAllParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+double p = problem.getAllParameters().length;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((m == null)){
+continue;
+}
+stderr: 

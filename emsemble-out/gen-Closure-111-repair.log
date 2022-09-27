@@ -1,0 +1,292 @@
+stdout: ReturnStatement expression MemberReference member topType_ter ^ ^ ^ ^ ^ 
+return topType;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((topType == null)){
+return null;}
+ReturnStatement expression MethodInvocation qualifier topType_ter ^ ^ member caseTopType_ter ^ ^ ^ ^ ^ 
+return topType.caseTopType();
+ReturnStatement expression This selectors MemberReference member topType_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.topType;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((topType != null)){
+
+ReturnStatement expression Cast type ReferenceType name JSType_ter ^ ^ ^ ^ expression MemberReference member topType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (JSType)topType;
+StatementExpression expression MethodInvocation qualifier topType_ter ^ ^ member clearResolved_ter ^ ^ ^ ^ ^ 
+topType.clearResolved();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((topType == null)){
+
+ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((topType != null)){
+return null;}
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+ReturnStatement expression MethodInvocation arguments MemberReference member topType_ter ^ ^ ^ ^ member caseTopType_ter ^ ^ ^ ^ ^ 
+return caseTopType(topType);
+ReturnStatement expression MemberReference member loc0 ^ ^ ^ ^ ^ 
+return ;
+StatementExpression expression Assignment expressionl MemberReference member topType_ter ^ ^ ^ ^ value MethodInvocation qualifier topType_ter ^ ^ member clearResolved_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+topType = topType.clearResolved();
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member topType_ter ^ ^ ^ ^ member caseTopType_ter ^ ^ ^ ^ ^ 
+super.caseTopType(topType);
+
+ReturnStatement expression MethodInvocation qualifier topType_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member caseTopType_ter ^ ^ ^ ^ ^ 
+return topType.caseTopType("null");
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+return (topType + 0);
+ReturnStatement expression MethodInvocation qualifier topType_ter ^ ^ arguments MemberReference member topType_ter ^ ^ ^ ^ member caseTopType_ter ^ ^ ^ ^ ^ 
+return topType.caseTopType(topType);
+StatementExpression expression SuperMethodInvocation member caseTopType_ter ^ ^ ^ ^ ^ 
+super.caseTopType();
+
+ReturnStatement expression MemberReference member caseTopType_ter ^ ^ ^ ^ ^ 
+return caseTopType;
+ReturnStatement expression MethodInvocation qualifier topType_ter ^ ^ arguments MemberReference member topType_ter ^ ^ ^ ^ member setResolvedTypeInternal_ter ^ ^ ^ ^ ^ 
+return topType.setResolvedTypeInternal(topType);
+ReturnStatement expression MethodInvocation qualifier topType_ter ^ ^ arguments MemberReference member topType_ter ^ ^ ^ ^ member matchConstraint_ter ^ ^ ^ ^ ^ 
+return topType.matchConstraint(topType);
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member hasDisplayName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.hasDisplayName()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNoType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNoType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNoResolvedType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNoResolvedType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNoObjectType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNoObjectType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isEmptyType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isEmptyType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNumberObjectType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNumberObjectType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNumberValueType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNumberValueType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isFunctionPrototypeType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isFunctionPrototypeType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isStringObjectType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isStringObjectType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isTheObjectType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isTheObjectType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isStringValueType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isStringValueType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isString()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNumber()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isArrayType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isArrayType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isBooleanObjectType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isBooleanObjectType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isBooleanValueType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isBooleanValueType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isRegexpType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isRegexpType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isDateType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isDateType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNullType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNullType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isVoidType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isVoidType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isAllType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isAllType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isUnknownType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isUnknownType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isCheckedUnknownType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isCheckedUnknownType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isUnionType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isUnionType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isStruct_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isStruct()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isDict_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isDict()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isGlobalThisType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isGlobalThisType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isFunctionType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isFunctionType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isEnumElementType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isEnumElementType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isEnumType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isEnumType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNamedType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNamedType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isRecordType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isRecordType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isTemplatizedType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isTemplatizedType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isTemplateType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isTemplateType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member hasAnyTemplateTypes_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.hasAnyTemplateTypes()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member hasAnyTemplateTypesInternal_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.hasAnyTemplateTypesInternal()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isObject_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isObject()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isConstructor()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNominalType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNominalType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNominalConstructor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNominalConstructor()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isInstanceType_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isInstanceType()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isInterface_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isInterface()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isOrdinaryFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isOrdinaryFunction()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member matchesInt32Context_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.matchesInt32Context()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member matchesUint32Context_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.matchesUint32Context()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member matchesNumberContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.matchesNumberContext()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member matchesStringContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.matchesStringContext()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member matchesObjectContext_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.matchesObjectContext()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member canBeCalled_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.canBeCalled()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isNullable_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isNullable()){
+return null;}
+IfStatement condition MethodInvocation qualifier topType_ter ^ ^ member isResolved_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(topType.isResolved()){
+return null;}
+ReturnStatement expression TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value null_ter ^ ^ ^ ^ if_false MemberReference member topType_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((topType == null))?null:topType;
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression ClassCreator type ReferenceType name JSType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new JSType();
+ReturnStatement expression ClassCreator type ReferenceType name JSType_ter ^ ^ ^ ^ arguments MemberReference member topType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return new JSType(topType);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member topType_ter ^ ^ ^ ^ if_false Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+return ((topType == null))?topType:null;
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member topType_ter ^ ^ ^ ^ ^ 
+if((topType == null)){
+return topType;}
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl MemberReference member topType_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (topType + "null");
+ReturnStatement expression MethodInvocation member caseTopType_ter ^ ^ ^ ^ ^ 
+return caseTopType();
+stderr: 

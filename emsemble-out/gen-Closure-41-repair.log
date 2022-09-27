@@ -1,0 +1,234 @@
+stdout: 
+StatementExpression expression MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ ^ 
+paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member errorRoot_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+errorRoot = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member currentParam_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentParam = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member oldParamsListHitOptArgs_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldParamsListHitOptArgs = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+UNKNOWN_TYPE = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member oldParams_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldParams = paramBuilder.build();
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier newParam_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member setVarArgs_ter ^ ^ ^ ^ ^ 
+newParam.setVarArgs(false);
+
+StatementExpression expression Assignment expressionl MemberReference member warnedAboutArgList_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+warnedAboutArgList = paramBuilder.build();
+
+StatementExpression expression MethodInvocation qualifier newParam_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member setOptionalArg_ter ^ ^ ^ ^ ^ 
+newParam.setOptionalArg(true);
+
+StatementExpression expression Assignment expressionl MemberReference member paramBuilder_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+paramBuilder = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier oldType_ter ^ ^ member getParametersNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = oldType.getParametersNode();
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value ClassCreator selectors MethodInvocation member build_ter ^ ^ ^ ^ type ReferenceType name FunctionParamBuilder_ter ^ ^ ^ ^ arguments MemberReference member typeRegistry_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+parametersNode = new FunctionParamBuilder(typeRegistry);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member paramsParent_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+paramsParent = paramBuilder.build();
+
+ReturnStatement expression This_ter ^ ^ ^ 
+if (true) { return this; }
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier oldParamsListHitOptArgs_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = oldParamsListHitOptArgs.build();
+
+StatementExpression expression Assignment expressionl MemberReference member warnedAboutArgList_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member paramBuilder_ter ^ ^ ^ MethodInvocation qualifier typeRegistry_ter ^ ^ arguments MemberReference member UNKNOWN_TYPE_ter ^ ^ ^ ^ member getNativeType_ter ^ ^ ^ MemberReference member warnedAboutArgList_ter ^ ^ ^ BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier codingConvention_ter ^ ^ arguments MemberReference member currentParam_ter ^ ^ ^ ^ member isOptionalParameter_ter ^ ^ ^ ^ operandr MemberReference member oldParamsListHitOptArgs_ter ^ ^ ^ ^ ^ MethodInvocation qualifier codingConvention_ter ^ ^ arguments MemberReference member currentParam_ter ^ ^ ^ ^ member isVarArgsParameter_ter ^ ^ ^ ^ member addParameter_ter ^ ^ ^ ^ type |=_ter ^ ^ ^ ^ ^ 
+warnedAboutArgList |= addParameter(paramBuilder, typeRegistry.getNativeType(UNKNOWN_TYPE), warnedAboutArgList, (codingConvention.isOptionalParameter(currentParam) || oldParamsListHitOptArgs), codingConvention.isVarArgsParameter(currentParam));
+
+StatementExpression expression Assignment expressionl MemberReference member oldType_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldType = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference member oldParamsListHitOptArgs_ter ^ ^ ^ ^ value BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl MemberReference member oldParamsListHitOptArgs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier oldParam_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier oldParam_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldParamsListHitOptArgs = ((oldParamsListHitOptArgs || oldParam.isVarArgs()) || oldParam.isOptionalArg());
+
+StatementExpression expression Assignment expressionl MemberReference member returnTypeInferred_ter ^ ^ ^ ^ value MethodInvocation qualifier oldType_ter ^ ^ member isReturnTypeInferred_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+returnTypeInferred = oldType.isReturnTypeInferred();
+
+StatementExpression expression MethodInvocation qualifier oldType_ter ^ ^ member clearCachedValues_ter ^ ^ ^ ^ ^ 
+oldType.clearCachedValues();
+
+StatementExpression expression Assignment expressionl MemberReference member returnType_ter ^ ^ ^ ^ value MethodInvocation qualifier oldType_ter ^ ^ member getReturnType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+returnType = oldType.getReturnType();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier currentParam_ter ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((currentParam.getNext() != null)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier errorRoot_ter ^ ^ member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+errorRoot.parametersNode = paramBuilder.build();
+
+StatementExpression expression Assignment expressionl MemberReference qualifier parametersNode_ter ^ ^ member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier paramBuilder_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode.parametersNode = paramBuilder.build();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member parametersNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parametersNode != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MemberReference member parametersNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = parametersNode;
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier currentParam_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = currentParam.build();
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier oldType_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = oldType.build();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier codingConvention_ter ^ ^ arguments MemberReference member currentParam_ter ^ ^ ^ ^ member isOptionalParameter_ter ^ ^ ^ ^ operandr MemberReference member oldParamsListHitOptArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+if((codingConvention.isOptionalParameter(currentParam) || oldParamsListHitOptArgs)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member oldParamsListHitOptArgs_ter ^ ^ ^ ^ operandr MethodInvocation qualifier oldParam_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+if((oldParamsListHitOptArgs || oldParam.isVarArgs())){
+
+StatementExpression expression MethodInvocation qualifier typeRegistry_ter ^ ^ member resetForTypeCheck_ter ^ ^ ^ ^ ^ 
+typeRegistry.resetForTypeCheck();
+
+StatementExpression expression MethodInvocation qualifier typeRegistry_ter ^ ^ member initializeBuiltInTypes_ter ^ ^ ^ ^ ^ 
+typeRegistry.initializeBuiltInTypes();
+
+StatementExpression expression MethodInvocation qualifier typeRegistry_ter ^ ^ member initializeRegistry_ter ^ ^ ^ ^ ^ 
+typeRegistry.initializeRegistry();
+
+StatementExpression expression MethodInvocation qualifier typeRegistry_ter ^ ^ member incrementGeneration_ter ^ ^ ^ ^ ^ 
+typeRegistry.incrementGeneration();
+
+StatementExpression expression MethodInvocation qualifier typeRegistry_ter ^ ^ member clearNamedTypes_ter ^ ^ ^ ^ ^ 
+typeRegistry.clearNamedTypes();
+
+StatementExpression expression MethodInvocation qualifier typeRegistry_ter ^ ^ member clearTemplateTypeName_ter ^ ^ ^ ^ ^ 
+typeRegistry.clearTemplateTypeName();
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier warnedAboutArgList_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = warnedAboutArgList.build();
+
+StatementExpression expression Assignment expressionl MemberReference member parametersNode_ter ^ ^ ^ ^ value MethodInvocation qualifier oldParams_ter ^ ^ member build_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+parametersNode = oldParams.build();
+
+IfStatement condition MemberReference member parametersNode_ter ^ ^ ^ ^ ^ 
+if(parametersNode){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((templateTypeName != null)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((fnName != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member sourceName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((sourceName != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member fnName_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && fnName)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member oldParameterType_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && oldParameterType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member foundTemplateType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((foundTemplateType != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member TEMPLATE_TYPE_EXPECTED_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && TEMPLATE_TYPE_EXPECTED)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member TEMPLATE_TYPE_EXPECTED_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((TEMPLATE_TYPE_EXPECTED != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member oldParameterType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((oldParameterType != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member templateTypeName_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && templateTypeName)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member builder_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && builder)){
+IfStatement condition MemberReference member fnName_ter ^ ^ ^ ^ ^ 
+if(fnName){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName == null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member warnedAboutArgList_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && warnedAboutArgList)){
+IfStatement condition MemberReference member templateTypeName_ter ^ ^ ^ ^ ^ 
+if(templateTypeName){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member fnName_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && !fnName)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member builder_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((builder != null) && !foundTemplateType)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member info_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((info != null)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((!foundTemplateType != null) && !foundTemplateType)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ 
+if(!foundTemplateType){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member templateTypeName_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && !templateTypeName)){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) || !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member argumentName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((argumentName != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member warnedAboutArgList_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((warnedAboutArgList != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member fnName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((!fnName != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member sourceName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((!sourceName != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((!templateTypeName != null) && !foundTemplateType)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member templateTypeName_ter ^ ^ ^ ^ ^ 
+if(!templateTypeName){
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member fnName_ter ^ ^ ^ ^ ^ 
+if(!fnName){
+
+IfStatement condition MemberReference member TEMPLATE_TYPE_EXPECTED_ter ^ ^ ^ ^ ^ 
+if(TEMPLATE_TYPE_EXPECTED){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member TEMPLATE_TYPE_EXPECTED_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && !TEMPLATE_TYPE_EXPECTED)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier info_ter ^ ^ arguments MemberReference member argumentName_ter ^ ^ ^ ^ member hasParameterType_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((templateTypeName != null) && !foundTemplateType) && info.hasParameterType(argumentName))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier oldParameterType_ter ^ ^ member getJSType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((oldParameterType.getJSType() != null)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier fnName_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((fnName.foundTemplateType != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier sourceName_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((sourceName.foundTemplateType != null) && !foundTemplateType)){
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier templateTypeName_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName.foundTemplateType != null) && !foundTemplateType)){
+IfStatement condition MemberReference member isVarArgs_ter ^ ^ ^ ^ ^ 
+if(isVarArgs){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier oldParameterType_ter ^ ^ member getJSType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((templateTypeName != null) && !foundTemplateType) && (oldParameterType.getJSType() != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member templateTypeName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((templateTypeName != null) && !foundTemplateType)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference prefix_operators !_ter ^ ^ member TEMPLATE_TYPE_EXPECTED_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member foundTemplateType_ter ^ ^ ^ ^ ^ ^ 
+if(((!TEMPLATE_TYPE_EXPECTED != null) && !foundTemplateType)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member TEMPLATE_TYPE_EXPECTED_ter ^ ^ ^ ^ ^ 
+if(!TEMPLATE_TYPE_EXPECTED){
+
+IfStatement condition MethodInvocation qualifier info_ter ^ ^ arguments MemberReference member argumentName_ter ^ ^ ^ ^ member hasParameterType_ter ^ ^ ^ ^ ^ 
+if(info.hasParameterType(argumentName)){
+
+stderr: 

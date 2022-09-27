@@ -1,0 +1,126 @@
+stdout: IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((name != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name();
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments MemberReference member functionNode_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name(functionNode);
+
+ReturnStatement expression MemberReference member node_ter ^ ^ ^ ^ ^ 
+if (true) { return node; }
+
+StatementExpression expression Assignment expressionl MemberReference member isUnnamedFunction_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isUnnamedFunction = true;
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments MemberReference qualifier Token_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name(Token.FUNCTION);
+
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name(name);
+
+StatementExpression expression MethodInvocation qualifier name_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setIdentifier_ter ^ ^ ^ ^ ^ 
+name.setIdentifier("null");
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value MemberReference member name_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+name = name;
+
+StatementExpression expression MethodInvocation qualifier name_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member setIdentifier_ter ^ ^ ^ ^ ^ 
+name.setIdentifier("null");
+
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments MemberReference member lpColumn_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name(lpColumn);
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name();
+
+StatementExpression expression Assignment expressionl MemberReference member isUnnamedFunction_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+isUnnamedFunction = true;
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name("null");
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ arguments MethodInvocation qualifier functionNode_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+newName.setLineno(functionNode.getLineno());
+
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ arguments MethodInvocation arguments MemberReference member lpColumn_ter ^ ^ ^ ^ member position2charno_ter ^ ^ ^ ^ member setCharno_ter ^ ^ ^ ^ ^ 
+newName.setCharno(position2charno(lpColumn));
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier lp_ter ^ ^ arguments MethodInvocation qualifier functionNode_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+lp.setLineno(functionNode.getLineno());
+
+StatementExpression expression MethodInvocation qualifier lp_ter ^ ^ arguments MethodInvocation qualifier fnName_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+lp.setLineno(fnName.getLineno());
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments MemberReference qualifier Token_ter ^ ^ member LP_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name(Token.LP);
+
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ arguments MethodInvocation arguments MemberReference member lpColumn_ter ^ ^ ^ ^ member position2charno_ter ^ ^ ^ ^ member setCharno_ter ^ ^ ^ ^ ^ 
+newName.setCharno(position2charno(lpColumn));
+
+StatementExpression expression MethodInvocation qualifier lp_ter ^ ^ arguments MethodInvocation arguments MemberReference member param_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+lp.addChildToBack(transform(param));
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier newName_ter ^ ^ arguments MethodInvocation qualifier functionNode_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+newName.setLineno(functionNode.getLineno());
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments This_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name(this);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member name_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((name == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member name_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Name_ter ^ ^ ^ ^ arguments MemberReference member lparenCharno_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+name = new Name(lparenCharno);
+
+StatementExpression expression MethodInvocation qualifier lp_ter ^ ^ arguments MethodInvocation qualifier functionNode_ter ^ ^ member getLineno_ter ^ ^ ^ ^ member setLineno_ter ^ ^ ^ ^ ^ 
+lp.setLineno(functionNode.getLineno());
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member newName_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+node.addChildToBack(newName);
+
+StatementExpression expression MethodInvocation qualifier lp_ter ^ ^ arguments MethodInvocation arguments MemberReference member param_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+lp.addChildToBack(transform(param));
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member name_ter ^ ^ ^ ^ ^ 
+name++;
+
+ReturnStatement expression MemberReference member name_ter ^ ^ ^ ^ ^ 
+if (true) { return name; }
+
+stderr: 

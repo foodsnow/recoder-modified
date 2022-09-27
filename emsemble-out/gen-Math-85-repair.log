@@ -1,0 +1,149 @@
+stdout: condition BinaryOperation operator >_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) > 0.0)){
+condition BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) < 0.0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) >= 0.0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) <= 0.0)){
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fa * fb)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) == 0.0)){
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member numIterations_ter ^ ^ ^ ^ ^ 
+numIterations++;
+
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) && 0.0)){
+StatementExpression expression Assignment expressionl MemberReference member fb_ter ^ ^ ^ ^ value MethodInvocation qualifier function_ter ^ ^ arguments MemberReference member b_ter ^ ^ ^ ^ member value_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fb = function.value(b);
+
+
+StatementExpression expression Assignment expressionl MemberReference member a_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value 1.0_ter ^ ^ ^ ^ ^ MemberReference member lowerBound_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+a = Math.max((a - 1.0), lowerBound);
+
+
+StatementExpression expression Assignment expressionl MemberReference member b_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member b_ter ^ ^ ^ ^ operandr Literal value 1.0_ter ^ ^ ^ ^ ^ MemberReference member upperBound_ter ^ ^ ^ ^ member min_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+b = Math.min((b + 1.0), upperBound);
+
+
+condition BinaryOperation operator !=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) != 0.0)){
+StatementExpression expression Assignment expressionl MemberReference member fa_ter ^ ^ ^ ^ value MethodInvocation qualifier function_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member value_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+fa = function.value(a);
+
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) || 0.0)){
+BreakStatement_ter ^ 
+break;
+
+
+ReturnStatement expression ArrayCreator type BasicType name double_ter ^ ^ ^ ^ dimensions None_ter ^ ^ initializer ArrayInitializer initializers MemberReference member a_ter ^ ^ ^ MemberReference member b_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if (true) { return new double[[]]{a,b}; }
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa >= fb) >= 0.0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member initial_ter ^ ^ ^ ^ operandr MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member initial_ter ^ ^ ^ ^ operandr MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((initial < lowerBound) || (initial > upperBound))){
+
+condition BinaryOperation operator instanceof_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) instanceof 0.0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member numIterations_ter ^ ^ ^ ^ operandr MemberReference member maximumIterations_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((fa * fb) > 0.0) && (numIterations < maximumIterations))){
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member lowerBound_ter ^ ^ ^ ^ operandr MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lowerBound >= upperBound)){
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) >= 0.0)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa > fb) >= 0.0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fa_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fa) >= 0.0)){
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member a_ter ^ ^ ^ ^ ^ 
+a++;
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fb_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fb * fb) >= 0.0)){
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maximumIterations_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maximumIterations <= 0)){
+
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member fa_ter ^ ^ ^ ^ ^ 
+fa++;
+
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member b_ter ^ ^ ^ ^ operandr MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((a > lowerBound) || (b < upperBound))){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa <= fb) >= 0.0)){
+condition BinaryOperation operator &_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) & 0.0)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member function_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((function == null)){
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa == fb) >= 0.0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member initial_ter ^ ^ ^ ^ operandr MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member initial_ter ^ ^ ^ ^ operandr MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member lowerBound_ter ^ ^ ^ ^ operandr MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((initial < lowerBound) || (initial > upperBound)) || (lowerBound >= upperBound))){
+
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member b_ter ^ ^ ^ ^ ^ 
+b++;
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member initial_ter ^ ^ ^ ^ operandr MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ 
+if((initial < lowerBound)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) > 0.0)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a > lowerBound)){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member fb_ter ^ ^ ^ ^ ^ 
+fb++;
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa != fb) >= 0.0)){
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fa * fb)){
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member b_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * b) >= 0.0)){
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member lowerBound_ter ^ ^ ^ ^ operandr MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ ^ 
+if((lowerBound >= upperBound)){
+
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member fb_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((fa * fb) > 0.0)){
+
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member initial_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * initial) >= 0.0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member numIterations_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * numIterations) >= 0.0)){
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member upperBound_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * upperBound) >= 0.0)){
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maximumIterations_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maximumIterations <= 0)){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member fa_ter ^ ^ ^ ^ operandr MemberReference member lowerBound_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0.0_ter ^ ^ ^ ^ ^ ^ 
+if(((fa * lowerBound) >= 0.0)){
+stderr: 

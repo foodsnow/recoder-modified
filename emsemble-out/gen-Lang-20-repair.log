@@ -1,0 +1,685 @@
+stdout: LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 0_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?0:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 2_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?2:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?"null":array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), (((array[startIndex] == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex].toString().length() == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member indexOfDifference_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().indexOfDifference() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 0));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex] + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((array[startIndex] == null));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 16_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), 16);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member separator_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((separator == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].length().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator -_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] - null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder();
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?-1:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), length());
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value true_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?true:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString() + 1));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name noOfItems_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int noOfItems = (endIndex - startIndex);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference member separator_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:separator + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex].length() == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference member EMPTY_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:EMPTY + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), toString());
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), startIndex);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member EMPTY_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((EMPTY == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value false_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?false:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() - 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex].toString() == null))?16:array[startIndex].toString().length() + 1));
+
+ReturnStatement expression MemberReference member EMPTY_ter ^ ^ ^ ^ ^ 
+if (true) { return EMPTY; }
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member join_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].join().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator +_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] + null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((startIndex == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[i] + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ MemberReference member separator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), separator);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), (array[startIndex] == null));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member separator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder(separator);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member separator_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:separator[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder(((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1) + null));
+
+StatementExpression expression ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[i] == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:startIndex + 1));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member noOfItems_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((noOfItems == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), null);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ Literal value 16_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), (((array[startIndex] == null))?16:array[startIndex].toString().length() + 1), 16);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((array[startIndex] == null), (((array[startIndex] == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member array_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder(array, (((array[startIndex] == null))?16:array[startIndex].toString().length() + 1));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 1_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?1:array[startIndex].toString().length() + 1));
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 1_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?1:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 0_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?0:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), (((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?"null":array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 2_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?2:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier array_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + array.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), separator.length());
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex].toString().length() == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex] + separator.length()));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name noOfItems_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member endIndex_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int noOfItems = (endIndex - startIndex);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ Literal value 16_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), 16);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder();
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder(((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()) + null));
+
+ReturnStatement expression MemberReference member EMPTY_ter ^ ^ ^ ^ ^ 
+if (true) { return EMPTY; }
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier startIndex_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + startIndex.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier noOfItems_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + noOfItems.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), null);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value true_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?true:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), startIndex);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].length().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ MemberReference member separator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), separator);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member join_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].join().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member separator_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((separator == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator -_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] - null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member separator_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder(separator);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value false_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?false:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator +_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] + null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), (((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), (((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()));
+
+StatementExpression expression Assignment expressionl MemberReference member separator_ter ^ ^ ^ ^ value MemberReference member EMPTY_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+separator = EMPTY;
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((startIndex == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?-1:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() - separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference member separator_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:separator + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((array[startIndex] == null));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier endIndex_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + endIndex.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), (array[startIndex] == null));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex].length() == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments MemberReference member array_ter ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder(array, (((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ Literal value 16_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), (((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), 16);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[i] + separator.length()));
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), false);
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex] == null))?16:array[startIndex].toString().length() + separator.length()), toString());
+
+LocalVariableDeclaration type ReferenceType name StringBuilder_ter ^ ^ ^ ^ declarators VariableDeclarator name buf_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuilder_ter ^ ^ ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value 16_ter ^ ^ ^ ^ if_false MemberReference selectors ArraySelector index MemberReference member startIndex_ter ^ ^ ^ ^ ^ MethodInvocation member toString_ter ^ ^ ^ MethodInvocation member length_ter ^ ^ ^ ^ member array_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier separator_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+StringBuilder buf = new StringBuilder((((array[startIndex].toString() == null))?16:array[startIndex].toString().length() + separator.length()));
+
+stderr: 

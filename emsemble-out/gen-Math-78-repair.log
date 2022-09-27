@@ -1,0 +1,138 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= ga);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb > ga);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator <=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb <= ga);
+
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member setInterpolatedTime_ter ^ ^ ^ ^ ^ 
+interpolator.setInterpolatedTime(t);
+
+ReturnStatement expression MethodInvocation qualifier handler_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ MethodInvocation qualifier interpolator_ter ^ ^ member getInterpolatedState_ter ^ ^ ^ ^ member g_ter ^ ^ ^ ^ ^ 
+if (true) { return handler.g(t, interpolator.getInterpolatedState()); }
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator ==_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb == ga);
+
+StatementExpression expression MethodInvocation qualifier interpolator_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member setInterpolatedTime_ter ^ ^ ^ ^ ^ 
+interpolator.setInterpolatedTime(t);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator <_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb < ga);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator !=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb != ga);
+
+StatementExpression expression MethodInvocation qualifier solver_ter ^ ^ arguments MemberReference member maxIterationCount_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+solver.setMaximalIterationCount(maxIterationCount);
+
+StatementExpression expression MethodInvocation qualifier solver_ter ^ ^ arguments MemberReference member convergence_ter ^ ^ ^ ^ member setAbsoluteAccuracy_ter ^ ^ ^ ^ ^ 
+solver.setAbsoluteAccuracy(convergence);
+
+StatementExpression expression Assignment expressionl MemberReference member g0Positive_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+g0Positive = (gb >= ga);
+
+StatementExpression expression Assignment expressionl MemberReference member pendingEvent_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pendingEvent = (gb >= ga);
+
+StatementExpression expression Assignment expressionl MemberReference member forward_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+forward = (gb >= ga);
+
+StatementExpression expression MethodInvocation qualifier solver_ter ^ ^ arguments MemberReference member convergence_ter ^ ^ ^ ^ member setAbsoluteAccuracy_ter ^ ^ ^ ^ ^ 
+solver.setAbsoluteAccuracy(convergence);
+
+StatementExpression expression MethodInvocation qualifier solver_ter ^ ^ arguments MemberReference member maxIterationCount_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+solver.setMaximalIterationCount(maxIterationCount);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value MemberReference member increasing_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = increasing;
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member t_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= t);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value MemberReference member ga_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = ga;
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member g0Positive_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= g0Positive);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >>_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >> ga);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value MemberReference member gb_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = gb;
+
+IfStatement condition BinaryOperation operator ^<>_ter ^ ^ operandl MemberReference member g0Positive_ter ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((g0Positive ^<> (gb >= 0))){
+
+
+StatementExpression expression Assignment expressionl MemberReference member ga_ter ^ ^ ^ ^ value MemberReference member gb_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ga = gb;
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+increasing += (gb >= ga);
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((gb >= 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member e_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= e);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator -_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb - ga);
+
+StatementExpression expression Assignment expressionl MemberReference member ta_ter ^ ^ ^ ^ value MemberReference member tb_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ta = tb;
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member maxIterationCount_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= maxIterationCount);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member increasing_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= increasing);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member convergence_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= convergence);
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member gb_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >= gb);
+
+StatementExpression expression Assignment expressionl MemberReference member ga_ter ^ ^ ^ ^ value MemberReference member gb_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ga = gb;
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member t_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (t >= ga);
+
+StatementExpression expression Assignment expressionl MemberReference member ta_ter ^ ^ ^ ^ value MemberReference member tb_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ta = tb;
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member pendingEventTime_ter ^ ^ ^ ^ value MemberReference member root_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pendingEventTime = root;
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ta_ter ^ ^ ^ ^ operandr MemberReference member tb_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ta <= tb)){
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value MemberReference member t_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = t;
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (gb >>> ga);
+
+StatementExpression expression Assignment expressionl MemberReference member pendingEvent_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+pendingEvent = true;
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member gb_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ ^ 
+if((gb >= ga)){
+
+StatementExpression expression Assignment expressionl MemberReference member increasing_ter ^ ^ ^ ^ value BinaryOperation operator >=_ter ^ ^ operandl MemberReference member g0Positive_ter ^ ^ ^ ^ operandr MemberReference member ga_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+increasing = (g0Positive >= ga);
+
+stderr: 

@@ -1,0 +1,141 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getFirstChild();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getLastChild();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getNext();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member getLastSibling_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getLastSibling();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member getParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getParent();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member detachFromParent_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.detachFromParent();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member removeFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.removeFirstChild();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member removeChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.removeChildren();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member cloneNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.cloneNode();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member cloneTree_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.cloneTree();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.isGetProp();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member isSafeReplacement_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.isSafeReplacement();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member isName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.isName();
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ 
+node.getFirstChild();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member node_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((node != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member replacement_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((replacement != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member getString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getString();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier replacement_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = replacement.getFirstChild();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.detachChildren();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier node_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument(node.detachChildren());
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier node_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument(node.setQuotedString());
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier node_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument(node.isGetProp());
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+node.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+node.setQuotedString();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier loc0 ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = .getFirstChild();
+
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MemberReference member node_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node;
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member getName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getName();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation qualifier node_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ member checkArgument_ter ^ ^ ^ ^ ^ 
+Preconditions.checkArgument(node.isGetProp());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier node_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((node.getFirstChild() != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MethodInvocation qualifier node_ter ^ ^ member getString_ter ^ ^ ^ MemberReference member replacement_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getFirstChild(node.getString(), replacement);
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getFirstChild(replacement);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ ^ 
+node.addChildToFront(replacement);
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+node.addChildToBack(replacement);
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildrenToFront_ter ^ ^ ^ ^ ^ 
+node.addChildrenToFront(replacement);
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildrenToBack_ter ^ ^ ^ ^ ^ 
+node.addChildrenToBack(replacement);
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member removeChild_ter ^ ^ ^ ^ ^ 
+node.removeChild(replacement);
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ member isNameAssignedTo_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.isNameAssignedTo();
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MethodInvocation qualifier node_ter ^ ^ member getString_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getFirstChild(node.getString());
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MethodInvocation qualifier node_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.getFirstChild(node.getFirstChild());
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildToFront_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.addChildToFront(replacement);
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.addChildToBack(replacement);
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildrenToFront_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.addChildrenToFront(replacement);
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member addChildrenToBack_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.addChildrenToBack(replacement);
+
+StatementExpression expression Assignment expressionl MemberReference member node_ter ^ ^ ^ ^ value MethodInvocation qualifier node_ter ^ ^ arguments MemberReference member replacement_ter ^ ^ ^ ^ member removeChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+node = node.removeChild(replacement);
+
+stderr: 

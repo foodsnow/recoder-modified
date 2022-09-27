@@ -1,0 +1,203 @@
+stdout: LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.getRootNode();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fnScope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((fnScope == null)){
+return;
+}
+IfStatement condition MethodInvocation qualifier fnScope_ter ^ ^ member isBottom_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(fnScope.isBottom()){
+return;
+}
+IfStatement condition MethodInvocation qualifier fnScope_ter ^ ^ member isGlobal_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(fnScope.isGlobal()){
+return;
+}
+IfStatement condition MethodInvocation qualifier fnScope_ter ^ ^ member isLocal_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(fnScope.isLocal()){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnScope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((fnScope != null)){
+return;
+}
+StatementExpression expression MethodInvocation member interpretAssigns_ter ^ ^ ^ ^ ^ 
+interpretAssigns();
+
+StatementExpression expression MethodInvocation member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+removeUnreferencedVars();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fnScope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fnScope != null)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnScope_ter ^ ^ member isBottom_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!fnScope.isBottom()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnScope_ter ^ ^ member isGlobal_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!fnScope.isGlobal()){
+return;
+}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier fnScope_ter ^ ^ member isLocal_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!fnScope.isLocal()){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member removeUnreferencedFunctionArgs_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.removeUnreferencedFunctionArgs();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node function = fnScope.getRootNode();
+
+StatementExpression expression MethodInvocation qualifier fnScope_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ ^ 
+fnScope.getRootNode();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member modifyCallSites_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((modifyCallSites == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.isFunction();
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member fnScope_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!fnScope){
+return;
+}
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member interpretAssigns_ter ^ ^ ^ ^ ^ 
+Preconditions.interpretAssigns();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ member removeUnreferencedVars_ter ^ ^ ^ ^ ^ 
+Preconditions.removeUnreferencedVars();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member fnScope_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fnScope == null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = ;
+
+
+StatementExpression expression SuperMethodInvocation member removeUnreferencedFunctionArgs_ter ^ ^ ^ ^ ^ 
+super.removeUnreferencedFunctionArgs();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier function_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = function.getRootNode();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation member getRootNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = getRootNode();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnScope_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((fnScope.getRootNode() == null)){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member modifyCallSites_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((modifyCallSites != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.getParent();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.getLastChild();
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member modifyCallSites_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!modifyCallSites){
+return;
+}
+IfStatement condition MemberReference member fnScope_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(fnScope){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member modifyCallSites_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((modifyCallSites != null)){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier function_ter ^ ^ member isFunction_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((function.isFunction() == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier fnScope_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node function = (Node)fnScope.getRootNode();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Node<?> function = fnScope.getRootNode();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnScope_ter ^ ^ member isBottom_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((fnScope.isBottom() == null)){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnScope_ter ^ ^ member isGlobal_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((fnScope.isGlobal() == null)){
+return;
+}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier fnScope_ter ^ ^ member isLocal_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((fnScope.isLocal() == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member canModifyCallers_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.canModifyCallers();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl Assignment expressionl MemberReference member lastArg_ter ^ ^ ^ ^ value MethodInvocation qualifier argList_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((lastArg = argList.getLastChild() == null)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.reportCodeChange();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name function_ter ^ ^ initializer MethodInvocation qualifier fnScope_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node function = fnScope.getString();
+
+StatementExpression expression Assignment expressionl MemberReference member function_ter ^ ^ ^ ^ value MethodInvocation qualifier fnScope_ter ^ ^ member getRootNode_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+function = fnScope.getRootNode();
+
+stderr: 

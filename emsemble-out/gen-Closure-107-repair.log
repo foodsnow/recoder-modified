@@ -1,0 +1,175 @@
+stdout: 
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle();
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(options.messageBundle);
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments ClassCreator type ReferenceType name JqueryCodingConvention_ter ^ ^ ^ ^ ^ ^ member setCodingConvention_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.setCodingConvention(new JqueryCodingConvention());
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments ClassCreator type ReferenceType name ClosureCodingConvention_ter ^ ^ ^ ^ ^ ^ member setCodingConvention_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.setCodingConvention(new ClosureCodingConvention());
+
+StatementExpression expression MethodInvocation qualifier level_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member setDebugOptionsForCompilationLevel_ter ^ ^ ^ ^ ^ 
+level.setDebugOptionsForCompilationLevel(options);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments MemberReference qualifier options_ter ^ ^ member ADVANCED_OPTIMIZATIONS_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(options.ADVANCED_OPTIMIZATIONS);
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments ClassCreator type ReferenceType name ClosureCodingConvention_ter ^ ^ ^ ^ ^ ^ member setCodingConvention_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.setCodingConvention(new ClosureCodingConvention());
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments MemberReference qualifier flags_ter ^ ^ member generateExports_ter ^ ^ ^ ^ member setGenerateExports_ter ^ ^ ^ ^ ^ 
+options.setGenerateExports(flags.generateExports);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments ClassCreator type ReferenceType name JqueryCodingConvention_ter ^ ^ ^ ^ ^ ^ member setCodingConvention_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.setCodingConvention(new JqueryCodingConvention());
+
+StatementExpression expression MethodInvocation qualifier level_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member setTypeBasedOptimizationOptions_ter ^ ^ ^ ^ ^ 
+level.setTypeBasedOptimizationOptions(options);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments This_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(this);
+
+StatementExpression expression MethodInvocation qualifier formattingOption_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member applyToOptions_ter ^ ^ ^ ^ ^ 
+formattingOption.applyToOptions(options);
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member skipAllCompilerPasses_ter ^ ^ ^ ^ ^ 
+options.skipAllCompilerPasses();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member resetWarningsGuard_ter ^ ^ ^ ^ ^ 
+options.resetWarningsGuard();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member useEmergencyFailSafe_ter ^ ^ ^ ^ ^ 
+options.useEmergencyFailSafe();
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ member disableRuntimeTypeCheck_ter ^ ^ ^ ^ ^ 
+options.disableRuntimeTypeCheck();
+
+StatementExpression expression MethodInvocation qualifier level_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member setDebugOptionsForCompilationLevel_ter ^ ^ ^ ^ ^ 
+level.setDebugOptionsForCompilationLevel(options);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.messageBundle = options.messageBundle;
+
+StatementExpression expression MethodInvocation qualifier options_ter ^ ^ arguments MemberReference qualifier flags_ter ^ ^ member generateExports_ter ^ ^ ^ ^ member setGenerateExports_ter ^ ^ ^ ^ ^ 
+options.setGenerateExports(flags.generateExports);
+
+StatementExpression expression MethodInvocation qualifier formattingOption_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member applyToOptions_ter ^ ^ ^ ^ ^ 
+formattingOption.applyToOptions(options);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments Literal value false_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(false);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member level_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((level != null)){
+continue;
+}
+
+StatementExpression expression MethodInvocation qualifier level_ter ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ member setTypeBasedOptimizationOptions_ter ^ ^ ^ ^ ^ 
+level.setTypeBasedOptimizationOptions(options);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name XtbMessageBundle_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name FileInputStream_ter ^ ^ ^ ^ arguments MemberReference qualifier flags_ter ^ ^ member translationsFile_ter ^ ^ ^ ^ ^ MemberReference qualifier flags_ter ^ ^ member translationsProject_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+options.messageBundle = new XtbMessageBundle(new FileInputStream(flags.translationsFile), flags.translationsProject);
+
+StatementExpression expression Assignment expressionl MemberReference member level_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+level = new EmptyMessageBundle();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member options_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((options != null)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name XtbMessageBundle_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name FileInputStream_ter ^ ^ ^ ^ arguments MemberReference qualifier flags_ter ^ ^ member translationsFile_ter ^ ^ ^ ^ ^ MemberReference qualifier flags_ter ^ ^ member translationsProject_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+options.messageBundle = new XtbMessageBundle(new FileInputStream(flags.translationsFile), flags.translationsProject);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference qualifier CompilationLevel_ter ^ ^ member ADVANCED_OPTIMIZATIONS_ter ^ ^ ^ ^ operandr MemberReference member level_ter ^ ^ ^ ^ ^ ^ ^ 
+if((CompilationLevel.ADVANCED_OPTIMIZATIONS == level)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle("null");
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments MemberReference member messageBundle_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(messageBundle);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(0);
+
+ReturnStatement expression MemberReference member options_ter ^ ^ ^ ^ ^ 
+if (true) { return options; }
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name JqueryCodingConvention_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new JqueryCodingConvention();
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier flags.translationsFile_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(!flags.translationsFile.isEmpty()){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(null);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments MemberReference member level_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(level);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+options.messageBundle = null;
+
+IfStatement condition MemberReference qualifier flags_ter ^ ^ member generateExports_ter ^ ^ ^ ^ ^ 
+if(flags.generateExports){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference qualifier options_ter ^ ^ member messageBundle_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name EmptyMessageBundle_ter ^ ^ ^ ^ arguments MemberReference member options_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+options.messageBundle = new EmptyMessageBundle(options);
+
+stderr: 

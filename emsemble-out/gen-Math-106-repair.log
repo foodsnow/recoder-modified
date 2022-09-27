@@ -1,0 +1,250 @@
+stdout: ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member getNumeratorFormat_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.getNumeratorFormat();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member parse_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.parse();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier num_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = num.getIndex();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member getWholeFormat_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.getWholeFormat();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member getDenominatorFormat_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.getDenominatorFormat();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.getIndex();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member initialIndex_ter ^ ^ ^ ^ member setIndex_ter ^ ^ ^ ^ ^ 
+pos.setIndex(initialIndex);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier ret_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = ret.getIndex();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier par2 ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = .getIndex();
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier source_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = source.getIndex();
+
+ContinueStatement_ter ^ 
+continue;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member pos_ter ^ ^ ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.getIndex(pos);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+long startIndex = pos.getIndex();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier den_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = den.getIndex();
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+ReturnStatement expression MemberReference member ret_ter ^ ^ ^ ^ ^ 
+if (true) { return ret; }
+
+ReturnStatement expression ClassCreator type ReferenceType name Fraction_ter ^ ^ ^ ^ arguments MethodInvocation qualifier num_ter ^ ^ member intValue_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new Fraction(num.intValue(), 1); }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier initialIndex_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = initialIndex.getIndex();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member pos_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((pos != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier par3 ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = .getIndex();
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier c_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = c.getIndex();
+
+StatementExpression expression MethodInvocation qualifier pos_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ 
+pos.getIndex();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation arguments MemberReference member pos_ter ^ ^ ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = getIndex(pos);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation qualifier pos_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = (int)pos.getIndex();
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return null;break;
+ }
+
+
+StatementExpression expression MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member initialIndex_ter ^ ^ ^ ^ member setIndex_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+pos.setIndex(initialIndex);
+break;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = getIndex();
+
+StatementExpression expression MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member startIndex_ter ^ ^ ^ ^ member setErrorIndex_ter ^ ^ ^ ^ ^ 
+pos.setErrorIndex(startIndex);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.getIndex(0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+final int startIndex = pos.getIndex();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MemberReference member pos_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member pos_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((pos == null)){
+return null;}
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name startIndex_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member source_ter ^ ^ ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int startIndex = pos.getIndex(source);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ member parse_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole.parse();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ member getNumeratorFormat_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole.getNumeratorFormat();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole.intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier num_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = num.intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ member getIndex_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole.getIndex();
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ member getDenominatorFormat_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole.getDenominatorFormat();
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+long w = whole.intValue();
+
+
+StatementExpression expression MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member initialIndex_ter ^ ^ ^ ^ member setIndex_ter ^ ^ ^ ^ ^ 
+pos.setIndex(initialIndex);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+if (true) { return null;break;
+ }
+
+ContinueStatement_ter ^ 
+continue;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ member getWholeFormat_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole.getWholeFormat();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier ret_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = ret.intValue();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member whole_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((whole != null)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier den_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = den.intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier pos_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = pos.intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier source_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = source.intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier par2 ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = .intValue();
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier c_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = c.intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier initialIndex_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = initialIndex.intValue();
+
+StatementExpression expression MethodInvocation qualifier whole_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ 
+whole.intValue();
+
+ReturnStatement expression ClassCreator type ReferenceType name Fraction_ter ^ ^ ^ ^ arguments MethodInvocation qualifier num_ter ^ ^ member intValue_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new Fraction(num.intValue(), 1); }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member num_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((num != null)){
+
+
+StatementExpression expression MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member startIndex_ter ^ ^ ^ ^ member setErrorIndex_ter ^ ^ ^ ^ ^ 
+pos.setErrorIndex(startIndex);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation qualifier whole_ter ^ ^ arguments MemberReference member pos_ter ^ ^ ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole.intValue(pos);
+
+BreakStatement_ter ^ 
+ContinueStatement_ter ^ 
+break;
+continue;
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null;return null; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MemberReference member whole_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = whole;
+
+BreakStatement_ter ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+break;
+return null;
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer MethodInvocation member intValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int w = intValue();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name w_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ ^ ^ expression MethodInvocation qualifier whole_ter ^ ^ member intValue_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int w = (int)whole.intValue();
+
+StatementExpression expression Assignment expressionl MemberReference member w_ter ^ ^ ^ ^ value MethodInvocation qualifier whole_ter ^ ^ member intValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+w = whole.intValue();
+
+StatementExpression expression MethodInvocation qualifier pos_ter ^ ^ arguments MemberReference member initialIndex_ter ^ ^ ^ ^ member setIndex_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+pos.setIndex(initialIndex);
+break;
+
+stderr: 

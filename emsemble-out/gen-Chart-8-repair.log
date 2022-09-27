@@ -1,0 +1,119 @@
+stdout: StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());;
+
+StatementExpression expression SuperMethodInvocation member Week_ter ^ ^ ^ ^ ^ 
+super.Week();
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member time_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, time, Locale.getDefault());;
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, zone, Locale.getDefault());;
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier time_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, time.getDefault());;
+
+StatementExpression expression ExplicitConstructorInvocation_ter ^ ^ ^ 
+1 ExplicitConstructorInvocation_ter
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member Week_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.Week());;
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member time_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.time, Locale.getDefault());;
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time, zone);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time);
+
+StatementExpression expression SuperMethodInvocation member Week_ter ^ ^ ^ ^ ^ 
+super.Week();
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ ^ ^ ^ ^ 
+super(time);
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, , Locale.getDefault());;
+
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, zone);;
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time);;
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ ^ ^ ^ ^ 
+super(time, zone);
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, Locale.getDefault());;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member zone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((zone != null)){
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier LOG_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, LOG.getDefault());;
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getName());;
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time, Locale.getDefault());
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+super(time, Locale.getDefault());
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+super(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference prefix_operators !_ter ^ ^ qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, !RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());;
+
+StatementExpression expression ExplicitConstructorInvocation arguments MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(Locale.getDefault());;
+
+StatementExpression expression SuperMethodInvocation arguments MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(Locale.getDefault());
+
+StatementExpression expression SuperConstructorInvocation arguments MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+super(Locale.getDefault());
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time);
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member zone_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(zone, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());;
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member zone_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(zone);
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ member getDefault_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Math.getDefault());;
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time, zone, );
+
+
+StatementExpression expression ExplicitConstructorInvocation_ter ^ ^ ^ 
+1 ExplicitConstructorInvocation_ter
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ MethodInvocation qualifier Locale_ter ^ ^ member getDefault_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time, Locale.getDefault(), zone);
+
+StatementExpression expression ExplicitConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ ^ ^ ^ ^ 
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, zone);;
+
+StatementExpression expression SuperConstructorInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference qualifier RegularTimePeriod_ter ^ ^ member DEFAULT_TIME_ZONE_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ ^ ^ ^ ^ 
+super(time, RegularTimePeriod.DEFAULT_TIME_ZONE, zone);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member time_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ MemberReference member zone_ter ^ ^ ^ ^ member Week_ter ^ ^ ^ ^ ^ 
+super.Week(time, zone, zone);
+
+stderr: 

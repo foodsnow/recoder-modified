@@ -1,0 +1,147 @@
+stdout: StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted(mode);
+
+StatementExpression expression MethodInvocation member validateMockitoUsage_ter ^ ^ ^ ^ ^ 
+validateMockitoUsage();
+
+StatementExpression expression MethodInvocation arguments MemberReference member mode_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+verificationStarted(mode);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ ^ member verify_ter ^ ^ ^ ^ ^ 
+mockingProgress.verify(mode);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted(mock);
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member nullPassedToVerify_ter ^ ^ ^ ^ ^ 
+reporter.nullPassedToVerify();
+
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member cannotStubWithNullThrowable_ter ^ ^ ^ ^ ^ 
+reporter.cannotStubWithNullThrowable();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member missingMethodInvocation_ter ^ ^ ^ ^ ^ 
+reporter.missingMethodInvocation();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member notAMockPassedToVerify_ter ^ ^ ^ ^ ^ 
+reporter.notAMockPassedToVerify();
+
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member notAMockPassedToWhenMethod_ter ^ ^ ^ ^ ^ 
+reporter.notAMockPassedToWhenMethod();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member nullPassedToWhenMethod_ter ^ ^ ^ ^ ^ 
+reporter.nullPassedToWhenMethod();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member mocksHaveToBePassedToVerifyNoMoreInteractions_ter ^ ^ ^ ^ ^ 
+reporter.mocksHaveToBePassedToVerifyNoMoreInteractions();
+
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member notAMockPassedToVerifyNoMoreInteractions_ter ^ ^ ^ ^ ^ 
+reporter.notAMockPassedToVerifyNoMoreInteractions();
+
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member nullPassedToVerifyNoMoreInteractions_ter ^ ^ ^ ^ ^ 
+reporter.nullPassedToVerifyNoMoreInteractions();
+
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member notAMockPassedWhenCreatingInOrder_ter ^ ^ ^ ^ ^ 
+reporter.notAMockPassedWhenCreatingInOrder();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member nullPassedWhenCreatingInOrder_ter ^ ^ ^ ^ ^ 
+reporter.nullPassedWhenCreatingInOrder();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member mocksHaveToBePassedWhenCreatingInOrder_ter ^ ^ ^ ^ ^ 
+reporter.mocksHaveToBePassedWhenCreatingInOrder();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member inOrderRequiresFamiliarMock_ter ^ ^ ^ ^ ^ 
+reporter.inOrderRequiresFamiliarMock();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member onlyVoidMethodsCanBeSetToDoNothing_ter ^ ^ ^ ^ ^ 
+reporter.onlyVoidMethodsCanBeSetToDoNothing();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member noArgumentValueWasCaptured_ter ^ ^ ^ ^ ^ 
+reporter.noArgumentValueWasCaptured();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member extraInterfacesDoesNotAcceptNullParameters_ter ^ ^ ^ ^ ^ 
+reporter.extraInterfacesDoesNotAcceptNullParameters();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member extraInterfacesRequiresAtLeastOneInterface_ter ^ ^ ^ ^ ^ 
+reporter.extraInterfacesRequiresAtLeastOneInterface();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member cannotCallRealMethodOnInterface_ter ^ ^ ^ ^ ^ 
+reporter.cannotCallRealMethodOnInterface();
+
+StatementExpression expression MethodInvocation qualifier reporter_ter ^ ^ member cannotVerifyToString_ter ^ ^ ^ ^ ^ 
+reporter.cannotVerifyToString();
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member mode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mode != null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation member verificationStarted_ter ^ ^ ^ ^ ^ 
+verificationStarted();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member loc0 ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted();
+
+StatementExpression expression MethodInvocation qualifier mock_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mock.verificationStarted(mode);
+
+StatementExpression expression MethodInvocation qualifier mockUtil_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockUtil.verificationStarted(mode);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ MemberReference member mode_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted(mode, mode);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member stubbingStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.stubbingStarted();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member validateState_ter ^ ^ ^ ^ ^ 
+mockingProgress.validateState();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member reset_ter ^ ^ ^ ^ ^ 
+mockingProgress.reset();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member resetOngoingStubbing_ter ^ ^ ^ ^ ^ 
+mockingProgress.resetOngoingStubbing();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted(mode, false);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted();
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted(mode, true);
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ MemberReference member par2 ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted(mode, );
+
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+mockingProgress.debug(mode);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member mode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mode == null)){
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier mockingProgress_ter ^ ^ arguments MemberReference member mode_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member verificationStarted_ter ^ ^ ^ ^ ^ 
+mockingProgress.verificationStarted(mode, null);
+
+ReturnStatement expression MemberReference member mock_ter ^ ^ ^ ^ ^ 
+if (true) { return mock; }
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+stderr: 

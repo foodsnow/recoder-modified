@@ -1,0 +1,107 @@
+stdout: ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return next.add(mocks, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member mockNameMatches_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, mockNameMatches);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mockNameMatches_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mockNameMatches, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return next.equals(mocks, field, fieldInstance);
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mockNameMatches_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+if (true) { return next.filterCandidate(mockNameMatches, field, fieldInstance); }
+
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member mockNameMatches_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, mockNameMatches, fieldInstance);
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mock);
+StatementExpression expression MethodInvocation qualifier mockNameMatches_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+mockNameMatches.add(mock);
+
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return next.debug(mocks, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, field);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member field_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(field, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(fieldInstance, field, fieldInstance);
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MethodInvocation arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return filterCandidate(mocks, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, fieldInstance, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member mock_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, mock);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member getMockName_ter ^ ^ ^ ^ ^ 
+return next.getMockName(mocks, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mock_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mock, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member mocks_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, mocks);
+ReturnStatement expression MethodInvocation arguments MemberReference member mock_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return filterCandidate(mock);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, fieldInstance, fieldInstance);
+ReturnStatement expression MemberReference member fieldInstance_ter ^ ^ ^ ^ ^ 
+if (true) { return fieldInstance; }
+
+ReturnStatement expression MemberReference member field_ter ^ ^ ^ ^ ^ 
+return field;
+ReturnStatement expression MemberReference member field_ter ^ ^ ^ ^ ^ 
+if (true) { return field; }
+
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ MemberReference member par3 ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, fieldInstance, );
+
+ReturnStatement expression MemberReference member mockNameMatches_ter ^ ^ ^ ^ ^ 
+if (true) { return mockNameMatches; }
+
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+return next.e(mocks, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member mock_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, mock, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, mocks, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MethodInvocation qualifier mockUtil_ter ^ ^ selectors MethodInvocation member toString_ter ^ ^ ^ ^ arguments MemberReference member mock_ter ^ ^ ^ ^ member getMockName_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mockUtil.getMockName(mock).toString());
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+return next.put(mocks, field, fieldInstance);
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member field_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((field != 1)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member field_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((field != null)){
+
+ReturnStatement expression MethodInvocation arguments MemberReference member mockNameMatches_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return filterCandidate(mockNameMatches, field, fieldInstance);
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member mocks_ter ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member par3 ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(mocks, field, );
+
+ReturnStatement expression MethodInvocation qualifier next_ter ^ ^ arguments MemberReference member par3 ^ ^ ^ MemberReference member field_ter ^ ^ ^ MemberReference member fieldInstance_ter ^ ^ ^ ^ member filterCandidate_ter ^ ^ ^ ^ ^ 
+return next.filterCandidate(, field, fieldInstance);
+
+ReturnStatement expression MemberReference member mocks_ter ^ ^ ^ ^ ^ 
+return mocks;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member fieldInstance_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((fieldInstance != null)){
+
+stderr: 

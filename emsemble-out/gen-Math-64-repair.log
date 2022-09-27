@@ -1,0 +1,1180 @@
+stdout: StatementExpression expression MethodInvocation member qrDecomposition_ter ^ ^ ^ ^ ^ 
+qrDecomposition();
+
+StatementExpression expression MethodInvocation member qrDecomposition_ter ^ ^ ^ ^ ^ 
+qrDecomposition();
+
+StatementExpression expression MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(false);
+
+StatementExpression expression MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(true);
+
+StatementExpression expression MethodInvocation member updateJacobian_ter ^ ^ ^ ^ ^ 
+updateJacobian();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(residuals);
+
+StatementExpression expression SuperMethodInvocation member doOptimize_ter ^ ^ ^ ^ ^ 
+super.doOptimize();
+
+IfStatement condition MethodInvocation member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+if(incrementIterationsCounter()){
+
+
+StatementExpression expression MethodInvocation member qTy_ter ^ ^ ^ ^ ^ 
+qTy();
+
+StatementExpression expression MethodInvocation arguments This_ter ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(this);
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member qrDecomposition_ter ^ ^ ^ ^ ^ 
+Math.qrDecomposition();
+
+StatementExpression expression MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(1);
+
+IfStatement condition MemberReference member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+if(incrementIterationsCounter){
+
+
+StatementExpression expression MethodInvocation member sqrt_ter ^ ^ ^ ^ ^ 
+sqrt();
+
+StatementExpression expression MethodInvocation arguments Literal value 1.0_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(1.0);
+
+StatementExpression expression MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(0);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member k_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pk_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member pk_ter ^ ^ ^ ^ ^ ^ member diagR_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+jacobian[k].[pk] = diagR[pk];
+
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = 0;
+
+StatementExpression expression MethodInvocation arguments MemberReference member xNorm_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter(xNorm);
+
+StatementExpression expression SuperMethodInvocation member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+super.incrementIterationsCounter();
+
+IfStatement condition MemberReference member firstIteration_ter ^ ^ ^ ^ ^ 
+if(firstIteration){
+
+StatementExpression expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter("null");
+
+StatementExpression expression MethodInvocation member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+incrementIterationsCounter();
+
+StatementExpression expression MethodInvocation member doOptimize_ter ^ ^ ^ ^ ^ 
+doOptimize();
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member xk_ter ^ ^ ^ ^ operandr MemberReference member xk_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+xNorm += (xk * xk);
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ member incrementIterationsCounter_ter ^ ^ ^ ^ ^ 
+Math.incrementIterationsCounter();
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member setInitialStepBoundFactor_ter ^ ^ ^ ^ ^ 
+setInitialStepBoundFactor(residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member setCostRelativeTolerance_ter ^ ^ ^ ^ ^ 
+setCostRelativeTolerance(residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member setParRelativeTolerance_ter ^ ^ ^ ^ ^ 
+setParRelativeTolerance(residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member setOrthoTolerance_ter ^ ^ ^ ^ ^ 
+setOrthoTolerance(residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member setQRRankingThreshold_ter ^ ^ ^ ^ ^ 
+setQRRankingThreshold(residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(residuals);
+
+StatementExpression expression MethodInvocation member qTy_ter ^ ^ ^ ^ ^ 
+qTy();
+
+StatementExpression expression MethodInvocation arguments MemberReference member diagR_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(diagR);
+
+StatementExpression expression MethodInvocation arguments MemberReference member jacNorm_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(jacNorm);
+
+StatementExpression expression MethodInvocation arguments MemberReference member beta_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(beta);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmPar_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmPar);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmDir_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmDir);
+
+StatementExpression expression MethodInvocation arguments MemberReference member initialStepBoundFactor_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(initialStepBoundFactor);
+
+StatementExpression expression MethodInvocation arguments MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(costRelativeTolerance);
+
+StatementExpression expression MethodInvocation arguments MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(parRelativeTolerance);
+
+StatementExpression expression MethodInvocation arguments MemberReference member orthoTolerance_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(orthoTolerance);
+
+StatementExpression expression MethodInvocation arguments MemberReference member qrRankingThreshold_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(qrRankingThreshold);
+
+StatementExpression expression MethodInvocation arguments MemberReference member par0 ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy();
+
+StatementExpression expression MethodInvocation member qrDecomposition_ter ^ ^ ^ ^ ^ 
+qrDecomposition();
+
+StatementExpression expression MethodInvocation arguments MemberReference member k_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(k);
+
+StatementExpression expression MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(false);
+
+StatementExpression expression MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(residuals, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(residuals, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member qrDecomposition_ter ^ ^ ^ ^ ^ 
+qrDecomposition(residuals);
+
+StatementExpression expression MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ ^ member doOptimize_ter ^ ^ ^ ^ ^ 
+doOptimize(residuals);
+
+StatementExpression expression MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(1);
+
+StatementExpression expression MethodInvocation arguments MemberReference member doOptimize_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(doOptimize);
+
+StatementExpression expression MethodInvocation arguments MemberReference member e_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(e);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(residuals, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member diagR_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(diagR, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member jacNorm_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(jacNorm, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member beta_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(beta, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmPar_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmPar, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmDir_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmDir, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member initialStepBoundFactor_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(initialStepBoundFactor, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member costRelativeTolerance_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(costRelativeTolerance, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member parRelativeTolerance_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(parRelativeTolerance, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member orthoTolerance_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(orthoTolerance, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member qrRankingThreshold_ter ^ ^ ^ MemberReference member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(qrRankingThreshold, residuals);
+
+StatementExpression expression MethodInvocation arguments MemberReference member pk_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(pk);
+
+StatementExpression expression MethodInvocation arguments MemberReference member diagR_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(diagR, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member jacNorm_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(jacNorm, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member beta_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(beta, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmPar_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmPar, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmDir_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmDir, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member initialStepBoundFactor_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(initialStepBoundFactor, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member costRelativeTolerance_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(costRelativeTolerance, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member parRelativeTolerance_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(parRelativeTolerance, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member orthoTolerance_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(orthoTolerance, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member qrRankingThreshold_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(qrRankingThreshold, false);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(residuals, 1);
+
+StatementExpression expression MethodInvocation arguments Literal value null_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(residuals, null);
+
+StatementExpression expression MethodInvocation arguments MemberReference member residuals_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(residuals, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member diagR_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(diagR, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member jacNorm_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(jacNorm, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member beta_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(beta, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmPar_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmPar, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmDir_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmDir, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member initialStepBoundFactor_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(initialStepBoundFactor, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member costRelativeTolerance_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(costRelativeTolerance, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member parRelativeTolerance_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(parRelativeTolerance, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member orthoTolerance_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(orthoTolerance, true);
+
+StatementExpression expression MethodInvocation arguments MemberReference member qrRankingThreshold_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(qrRankingThreshold, true);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member k_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pk_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member pk_ter ^ ^ ^ ^ ^ ^ member diagR_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+jacobian[k].[pk] = diagR[pk];
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member permutation_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(permutation);
+
+StatementExpression expression MethodInvocation arguments MemberReference member debug_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(debug);
+
+StatementExpression expression MethodInvocation arguments MemberReference member jacobian_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(jacobian);
+
+StatementExpression expression MethodInvocation arguments MemberReference member diagR_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(diagR, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member jacNorm_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(jacNorm, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member beta_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(beta, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmPar_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmPar, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmDir_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmDir, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member initialStepBoundFactor_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(initialStepBoundFactor, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member costRelativeTolerance_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(costRelativeTolerance, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member parRelativeTolerance_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(parRelativeTolerance, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member orthoTolerance_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(orthoTolerance, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member qrRankingThreshold_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(qrRankingThreshold, 0);
+
+StatementExpression expression MethodInvocation arguments MemberReference member diagR_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(diagR, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member jacNorm_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(jacNorm, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member beta_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(beta, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmPar_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmPar, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member lmDir_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(lmDir, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member initialStepBoundFactor_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(initialStepBoundFactor, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member costRelativeTolerance_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(costRelativeTolerance, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member parRelativeTolerance_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(parRelativeTolerance, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member orthoTolerance_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(orthoTolerance, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference member qrRankingThreshold_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(qrRankingThreshold, "null");
+
+StatementExpression expression MethodInvocation arguments MemberReference prefix_operators !_ter ^ ^ member residuals_ter ^ ^ ^ ^ member qTy_ter ^ ^ ^ ^ ^ 
+qTy(!residuals);
+
+StatementExpression expression MethodInvocation member qrDecomposition_ter ^ ^ ^ ^ ^ 
+qrDecomposition();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+maxCosine += (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+maxCosine = (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+sum = (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+maxCosine -= (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type -=_ter ^ ^ ^ ^ ^ 
+sum -= (jacobian[i].[pj] * residuals[i]);
+
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member maxCosine_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+maxCosine = Math.max(maxCosine, (Math.abs(sum) / (s * cost)));
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+maxCosine *= (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type *=_ter ^ ^ ^ ^ ^ 
+sum *= (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (i[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (residuals[i] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (i[pj] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (i[i] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[pj] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[j] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * i[i].[pj]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (i * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (i[j] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * i[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (residuals[pj] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * i[pj]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (residuals[j] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * jacobian[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member current_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (current[pj] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member cost_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (cost[pj] * residuals[i]);
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ ^ 
+if((s * cost)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member maxCosine_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+maxCosine = Math.max(maxCosine, (Math.abs(sum) / (s * cost)));
+
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name i_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member j_ter ^ ^ ^ ^ ^ ^ update MemberReference prefix_operators ++_ter ^ ^ member i_ter ^ ^ ^ ^ ^ ^ 
+for(int i = 0;(i <= j);++i) {
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacNorm_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacNorm[pj] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * jacobian[pj]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+maxCosine += (Math.abs(sum) / (s * cost));
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= orthoTolerance)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member maxCosine_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type &=_ter ^ ^ ^ ^ ^ 
+maxCosine &= (jacobian[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member permutation_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (permutation[pj] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * jacobian[j]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * i[j]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member cost_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (cost[j] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member sum_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (sum[pj] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member sum_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (sum[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member jacNorm_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacNorm[j] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * i);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member current_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (current[j] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member permutation_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (permutation[j] * residuals[i]);
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (residuals[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * residuals[pj]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member cost_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (cost[i].[pj] * residuals[i]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member j_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * residuals[j]);
+
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member maxCosine_ter ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+Math.max(maxCosine, (Math.abs(sum) / (s * cost)));
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member cost_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * cost[pj]);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member current_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (current[i].[pj] * residuals[i]);
+
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if (true) { return current; }
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += ((jacobian[i].[pj] * residuals[i]) + 0);
+
+
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member current_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (jacobian[i].[pj] * current[pj]);
+
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine < orthoTolerance)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine > orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= orthoTolerance)){
+condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine || orthoTolerance)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine >= orthoTolerance)){
+condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine && orthoTolerance)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine == orthoTolerance)){
+IfStatement condition BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((Math.abs(sum) / (s * cost))){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= orthoTolerance)){
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member cost_ter ^ ^ ^ ^ ^ ^ ^ 
+if((s * cost)){
+
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member diagR_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= diagR)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member jacNorm_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= jacNorm)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member beta_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= beta)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member lmPar_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= lmPar)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member lmDir_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= lmDir)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member initialStepBoundFactor_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= initialStepBoundFactor)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= costRelativeTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= parRelativeTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member qrRankingThreshold_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= qrRankingThreshold)){
+condition BinaryOperation operator |_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine | orthoTolerance)){
+condition BinaryOperation operator &_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine & orthoTolerance)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine != orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member sum_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= sum)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member sum_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((sum <= orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member j_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= j)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member current_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= current)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member s_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= s)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((s <= orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member current_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((current <= orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member maxCosine_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= maxCosine)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member orthoTolerance_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((orthoTolerance <= orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((j <= orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((i <= orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member cols_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= cols)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= i)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member cols_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((cols <= orthoTolerance)){
+IfStatement condition MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ 
+if(orthoTolerance){
+
+IfStatement condition BinaryOperation operator *_ter ^ ^ operandl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member jacobian_ter ^ ^ ^ ^ operandr MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member residuals_ter ^ ^ ^ ^ ^ ^ ^ 
+if((jacobian[i].[pj] * residuals[i])){
+
+
+IfStatement condition MemberReference member maxCosine_ter ^ ^ ^ ^ ^ 
+if(maxCosine){
+
+IfStatement condition MemberReference member current_ter ^ ^ ^ ^ ^ 
+if(current){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member j_ter ^ ^ ^ ^ operandr MemberReference member cols_ter ^ ^ ^ ^ ^ ^ ^ 
+if((j < cols)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member orthoTolerance_ter ^ ^ ^ ^ operandr MemberReference member orthoTolerance_ter ^ ^ ^ ^ ^ ^ ^ 
+if((orthoTolerance < orthoTolerance)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member cost_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cost != 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member s_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((s != 0)){
+
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier diagR_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= diagR.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier jacNorm_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= jacNorm.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier beta_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= beta.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier lmPar_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= lmPar.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier lmDir_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= lmDir.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier initialStepBoundFactor_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= initialStepBoundFactor.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier costRelativeTolerance_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= costRelativeTolerance.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier parRelativeTolerance_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= parRelativeTolerance.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier orthoTolerance_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= orthoTolerance.orthoTolerance)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr MemberReference qualifier qrRankingThreshold_ter ^ ^ member orthoTolerance_ter ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= qrRankingThreshold.orthoTolerance)){
+IfStatement condition MemberReference member diag_ter ^ ^ ^ ^ ^ 
+if(diag){
+
+
+
+IfStatement condition MemberReference member jacobian_ter ^ ^ ^ ^ ^ 
+if(jacobian){
+
+IfStatement condition MemberReference member cols_ter ^ ^ ^ ^ ^ 
+if(cols){
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member oldRes_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, diag, work1, oldRes, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member tmpVec_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, diag, work1, tmpVec, work3);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member oldRes_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, diag, work1, work2, oldRes);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member oldRes_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, diag, oldRes, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member tmpVec_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, diag, tmpVec, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member tmpVec_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, diag, work1, work2, tmpVec);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member oldRes_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, oldRes, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member oldRes_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, oldRes, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member tmpVec_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, tmpVec, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member tmpVec_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(oldRes, delta, tmpVec, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member work2_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(work2);
+
+StatementExpression expression MethodInvocation member qrDecomposition_ter ^ ^ ^ ^ ^ 
+qrDecomposition();
+
+StatementExpression expression MethodInvocation arguments MemberReference member work1_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(work1);
+
+StatementExpression expression MethodInvocation arguments MemberReference member delta_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(delta);
+
+StatementExpression expression MethodInvocation arguments MemberReference member tmpVec_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter(tmpVec, delta, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation member determineLMParameter_ter ^ ^ ^ ^ ^ 
+determineLMParameter();
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member doOptimize_ter ^ ^ ^ ^ ^ 
+doOptimize(oldRes, delta, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+debug(oldRes, delta, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ 
+e(oldRes, delta, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member oldRes_ter ^ ^ ^ ^ ^ 
+oldRes(oldRes, delta, diag, work1, work2, work3);
+
+StatementExpression expression MethodInvocation arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member diag_ter ^ ^ ^ MemberReference member work1_ter ^ ^ ^ MemberReference member work2_ter ^ ^ ^ MemberReference member work3_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(oldRes, delta, diag, work1, work2, work3);
+
+StatementExpression expression Assignment expressionl MemberReference member oldRes_ter ^ ^ ^ ^ value MemberReference member tmpVec_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldRes = tmpVec;
+
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective, objective);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ MemberReference member point_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective, point);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member point_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, point);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair();
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member actRed_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, actRed);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member updateResidualsAndCost_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, updateResidualsAndCost);
+
+StatementExpression expression MethodInvocation member updateResidualsAndCost_ter ^ ^ ^ ^ ^ 
+updateResidualsAndCost();
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, objective);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(actRed, objective);
+
+StatementExpression expression MethodInvocation member qrDecomposition_ter ^ ^ ^ ^ ^ 
+qrDecomposition();
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective, false);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective, true);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member updateResidualsAndCost_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(updateResidualsAndCost, objective);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, false);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member e_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, e);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, true);
+
+StatementExpression expression SuperMethodInvocation member doOptimize_ter ^ ^ ^ ^ ^ 
+super.doOptimize();
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective, null);
+
+StatementExpression expression Assignment expressionl MemberReference member actRed_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+actRed = new VectorialPointValuePair(point, objective);
+
+StatementExpression expression Assignment expressionl MemberReference member objective_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+objective = new VectorialPointValuePair(point, objective);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, null);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments Literal value false_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(false);
+
+StatementExpression expression Assignment expressionl MemberReference member point_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+point = new VectorialPointValuePair(point, objective);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective, current);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member point_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(point, current);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments Literal value true_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(true);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name VectorialPointValuePair_ter ^ ^ ^ ^ arguments MemberReference member objective_ter ^ ^ ^ MemberReference member objective_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+current = new VectorialPointValuePair(objective, objective, false);
+
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.converged(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.abs(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xK_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(xK);
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member j_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(j);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member pj_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(pj);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member checker_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(checker);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member k_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(k);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member residuals_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(residuals);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member tmpVec_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(tmpVec);
+
+StatementExpression expression Assignment expressionl MemberReference member residuals_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+residuals = Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member tmpVec_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+tmpVec = Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member point_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+point[pj] = Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member oldRes_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldRes = Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member cost_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+cost = Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member xK_ter ^ ^ ^ ^ operandr MemberReference member xK_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+xNorm += (xK * xK);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member point_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member oldX_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+point[pj] = oldX[pj];
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member xK_ter ^ ^ ^ ^ operandr MemberReference member xK_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+xNorm += (xK * xK);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member doOptimize_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.doOptimize(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member cost_ter ^ ^ ^ ^ value MemberReference member previousCost_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+cost = previousCost;
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = 0;
+
+StatementExpression expression Assignment expressionl MemberReference member oldRes_ter ^ ^ ^ ^ value MemberReference member tmpVec_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldRes = tmpVec;
+
+StatementExpression expression Assignment expressionl MemberReference member cost_ter ^ ^ ^ ^ value MemberReference member previousCost_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+cost = previousCost;
+
+StatementExpression expression Assignment expressionl MemberReference member firstIteration_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+firstIteration = false;
+
+StatementExpression expression Assignment expressionl MemberReference member residuals_ter ^ ^ ^ ^ value MemberReference member oldRes_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+residuals = oldRes;
+
+StatementExpression expression Assignment expressionl MemberReference member oldRes_ter ^ ^ ^ ^ value MemberReference member tmpVec_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+oldRes = tmpVec;
+
+StatementExpression expression Assignment expressionl MemberReference member tmpVec_ter ^ ^ ^ ^ value MemberReference member residuals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+tmpVec = residuals;
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member point_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member oldX_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+point[pj] = oldX[pj];
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member getIterations_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.getIterations(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member tmpVec_ter ^ ^ ^ ^ value MemberReference member residuals_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+tmpVec = residuals;
+
+StatementExpression expression Assignment expressionl MemberReference member residuals_ter ^ ^ ^ ^ value MemberReference member oldRes_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+residuals = oldRes;
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value Literal value 0_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = 0;
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.debug(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member firstIteration_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+firstIteration = false;
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+xNorm += Math.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.add(xNorm);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.e(xNorm);
+
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, current)){
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = checker.sqrt(xNorm);
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt();
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member delta_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ operandr MemberReference member xNorm_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((Math.abs(actRed) <= costRelativeTolerance) && (preRed <= costRelativeTolerance)) && (ratio <= 2.0)) || (delta <= (parRelativeTolerance * xNorm)))){
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = Math.sqrt(actRed);
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if (true) { return current; }
+
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 1.0e-4_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ratio >= 1.0e-4)){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ 
+if((Math.abs(actRed) <= costRelativeTolerance)){
+
+
+
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, current)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, current)){
+IfStatement condition MethodInvocation member getIterations_ter ^ ^ ^ ^ ^ 
+if(getIterations()){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member abs_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(abs(), previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), current, current)){
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(actRed)){
+
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference qualifier LocalizedFormats_ter ^ ^ member TOO_SMALL_COST_RELATIVE_TOLERANCE_ter ^ ^ ^ MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(LocalizedFormats.TOO_SMALL_COST_RELATIVE_TOLERANCE, costRelativeTolerance)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(!checker.converged(getIterations(), previous, current)){
+
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference qualifier LocalizedFormats_ter ^ ^ member TOO_SMALL_PARAMETERS_RELATIVE_TOLERANCE_ter ^ ^ ^ MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(LocalizedFormats.TOO_SMALL_PARAMETERS_RELATIVE_TOLERANCE, parRelativeTolerance)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member preRed_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), preRed, current)){
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member costRelativeTolerance_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), costRelativeTolerance, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), delta, current)){
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference qualifier LocalizedFormats_ter ^ ^ member TOO_SMALL_ORTHOGONALITY_TOLERANCE_ter ^ ^ ^ MemberReference member orthoTolerance_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(LocalizedFormats.TOO_SMALL_ORTHOGONALITY_TOLERANCE, orthoTolerance)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member parRelativeTolerance_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), parRelativeTolerance, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member actRed_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), actRed, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member preRed_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, preRed)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member xNorm_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), xNorm, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member TOO_SMALL_COST_RELATIVE_TOLERANCE_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(TOO_SMALL_COST_RELATIVE_TOLERANCE(), previous, current)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(getIterations(), previous, current) && (ratio <= 2.0))){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, costRelativeTolerance)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member delta_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, delta)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member actRed_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, actRed)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, parRelativeTolerance)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member xNorm_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(getIterations(), previous, xNorm)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl Literal value 2.2204e-16_ter ^ ^ ^ ^ operandr MemberReference member xNorm_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(getIterations(), previous, current) && (2.2204e-16 * xNorm))){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ 
+if(checker.abs(getIterations(), previous, current)){
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if (true) { return current; }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(getIterations(), previous, current) && checker.converged(getIterations(), previous, current))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 2.2204e-16_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr Literal value 2.2204e-16_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((Math.abs(actRed) <= 2.2204e-16) && (preRed <= 2.2204e-16)) && checker.converged(getIterations(), previous, current))){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member TOO_SMALL_PARAMETERS_RELATIVE_TOLERANCE_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(TOO_SMALL_PARAMETERS_RELATIVE_TOLERANCE(), previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member TOO_SMALL_ORTHOGONALITY_TOLERANCE_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(TOO_SMALL_ORTHOGONALITY_TOLERANCE(), previous, current)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member delta_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ operandr MemberReference member xNorm_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(getIterations(), previous, current) && (delta <= (parRelativeTolerance * xNorm)))){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member doOptimize_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(doOptimize(), previous, current)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 2.2204e-16_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((Math.abs(actRed) <= 2.2204e-16) && checker.converged(getIterations(), previous, current))){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxCosine_ter ^ ^ ^ ^ operandr Literal value 2.2204e-16_ter ^ ^ ^ ^ ^ ^ ^ 
+if((maxCosine <= 2.2204e-16)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(current(), previous, current)){
+IfStatement condition MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ 
+if(Math.abs(actRed)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member orthoTolerance_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(orthoTolerance(), previous, current)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr Literal value 2.2204e-16_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr Literal value 2.2204e-16_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((Math.abs(actRed) <= 2.2204e-16) && (preRed <= 2.2204e-16)) && (ratio <= 2.0))){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member delta_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl Literal value 2.2204e-16_ter ^ ^ ^ ^ operandr MemberReference member xNorm_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((delta <= (2.2204e-16 * xNorm))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member delta_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ operandr MemberReference member xNorm_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((Math.abs(actRed) <= costRelativeTolerance) && (preRed <= costRelativeTolerance)) && (ratio <= 2.0)) || (delta <= (parRelativeTolerance * xNorm)))){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member current_ter ^ ^ ^ ^ 
+if(checker.current(getIterations(), previous, current)){
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker == null)){
+
+condition MethodInvocation qualifier Math_ter ^ ^ arguments MethodInvocation member getIterations_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(Math.converged(getIterations(), previous, current)){
+BreakStatement_ter ^ 
+break;
+
+
+ContinueStatement_ter ^ 
+continue;
+
+stderr: 

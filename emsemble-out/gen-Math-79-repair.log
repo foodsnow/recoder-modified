@@ -1,0 +1,146 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ ^ ^ ^ 
+int sum = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = 0;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long sum = 0;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+final int sum = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int[] sum = 0;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p2 == 0)){
+return 0;}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double sum = 0;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p2 == 0)){
+return Math.sqrt(sum);}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = 1;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p1 != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p1 == null)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p1 == null)){
+return Math.sqrt(sum);}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p2 == null)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p2 == null)){
+return Math.sqrt(sum);}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 == 0)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer MemberReference member p1_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = p1;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p1 == 0)){
+return 0;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p1 == 0)){
+return Math.sqrt(sum);}
+StatementExpression expression Assignment expressionl MemberReference member sum_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member dp_ter ^ ^ ^ ^ operandr MemberReference member dp_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+sum += (dp * dp);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 != 0)){
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer MemberReference member p2_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = p2;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 == null)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 > 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p1 == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p2 != null)){
+return 0;}
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p2 < 0)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p1 != null)){
+return 0;}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = -1;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p2 != null)){
+return Math.sqrt(sum);}
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name sum_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int sum = 2;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p1 != null)){
+return Math.sqrt(sum);}
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member p2_ter ^ ^ ^ ^ ^ 
+if(!p2){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr MemberReference member p2_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p1 == p2)){
+return 0;}
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member p2_ter ^ ^ ^ ^ ^ 
+p2++;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+if((p2 == 0)){
+return 1;}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p2 > 0)){
+return Math.sqrt(sum);}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member p1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((p1 == 0)){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member sum_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ ^ 
+if((p2 < 0)){
+return Math.sqrt(sum);}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member p2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if((p2 > 0)){
+return 0;}
+stderr: 

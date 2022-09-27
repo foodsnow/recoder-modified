@@ -1,0 +1,334 @@
+stdout: LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(v1D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member intersection_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(line.intersection(v1D));
+
+StatementExpression expression MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ 
+remainingRegion.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member includeEndPoints_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(line.toSubSpace(includeEndPoints));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Location loc1 = remainingRegion.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation arguments MemberReference member v1D_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = checkPoint(v1D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member subLine_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(line.toSubSpace(subLine));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member intersection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.intersection(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier subLine_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(subLine.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = line.toSubSpace(v1D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier subLine_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = subLine.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MemberReference member subLine_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(subLine);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v1D_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((v1D == null)){
+return null;}
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member loc1_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(line.toSubSpace(loc1));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer Cast type ReferenceType name Location_ter ^ ^ ^ ^ expression MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Location loc1 = (Location)line.toSubSpace(v1D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier v1D_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(v1D.toSubSpace(v1D));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v1D_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v1D != null)){
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.debug(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier line_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = line.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer Cast type ReferenceType name Location_ter ^ ^ ^ ^ expression MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Location loc1 = (Location)remainingRegion.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(line.checkPoint(v1D));
+
+StatementExpression expression MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ ^ 
+line.toSubSpace(v1D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.e(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier includeEndPoints_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(includeEndPoints.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier subLine.remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = subLine.remainingRegion.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier LOG_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = LOG.checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = checkPoint(line.toSubSpace(v1D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(remainingRegion.checkPoint(line.toSubSpace(v1D)));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v1D_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member loc2_ter ^ ^ ^ ^ operandr MemberReference qualifier Location_ter ^ ^ member OUTSIDE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((v1D != (loc2 != Location.OUTSIDE))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v1D_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member loc2_ter ^ ^ ^ ^ operandr MemberReference qualifier Location_ter ^ ^ member INSIDE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((v1D != (loc2 == Location.INSIDE))){
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier remainingRegion_ter ^ ^ arguments MethodInvocation qualifier line_ter ^ ^ arguments MemberReference member v1D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = remainingRegion.checkPoint(line.toSubSpace(v1D), false);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member line2_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(line2));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier includeEndPoints_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(includeEndPoints.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line2_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line2.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier v2D_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(v2D.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier subLine_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(subLine.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member includeEndPoints_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(includeEndPoints));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member line1_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(line1));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member loc1_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(loc1));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member intersection_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.intersection(v2D));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier loc1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(loc1.toSubSpace(v2D));
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ 
+getRemainingRegion().checkPoint(line1.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion();
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member intersection_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().intersection(line1.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = line1.toSubSpace(v2D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getHyperplane_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getHyperplane().checkPoint(line1.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member getHyperplane_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.getHyperplane(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member subLine_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.toSubSpace(subLine));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = checkPoint(line1.toSubSpace(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member getHyperplane_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().getHyperplane(line1.toSubSpace(v2D));
+
+StatementExpression expression MethodInvocation qualifier line2_ter ^ ^ member revertSelf_ter ^ ^ ^ ^ ^ 
+line2.revertSelf();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v2D_ter ^ ^ ^ ^ operandr MemberReference qualifier Location_ter ^ ^ member OUTSIDE_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v2D != Location.OUTSIDE)){
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MemberReference member v2D_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(v2D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation arguments MemberReference member v2D_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = checkPoint(v2D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer Cast type ReferenceType name Location_ter ^ ^ ^ ^ expression MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Location loc1 = (Location)line1.toSubSpace(v2D);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.checkPoint(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation arguments MemberReference member line2_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = checkPoint(line2);
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(line1.getRemainingRegion(v2D));
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation member checkPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = checkPoint();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v2D_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v2D != null)){
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier par2 ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().checkPoint(.toSubSpace(v2D));
+
+
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Location loc1 = getRemainingRegion().toSubSpace(line1.toSubSpace(v2D));
+
+IfStatement condition MethodInvocation qualifier v2D_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(v2D.isNaN()){
+return null;}
+IfStatement condition MethodInvocation qualifier v2D_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(v2D.isInfinite()){
+return null;}
+LocalVariableDeclaration type ReferenceType name Location_ter ^ ^ ^ ^ declarators VariableDeclarator name loc1_ter ^ ^ initializer Cast type ReferenceType name Location_ter ^ ^ ^ ^ expression MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier line1_ter ^ ^ arguments MemberReference member v2D_ter ^ ^ ^ ^ member toSubSpace_ter ^ ^ ^ ^ member checkPoint_ter ^ ^ ^ ^ member getRemainingRegion_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Location loc1 = (Location)getRemainingRegion().checkPoint(line1.toSubSpace(v2D));
+
+stderr: 

@@ -1,0 +1,145 @@
+stdout: ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ 
+return newInstance(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member power10K_ter ^ ^ ^ ^ ^ 
+return power10K(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member power10_ter ^ ^ ^ ^ ^ 
+return power10(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member multiply_ter ^ ^ ^ ^ ^ 
+return multiply(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member divide_ter ^ ^ ^ ^ ^ 
+return divide(x);
+StatementExpression expression MethodInvocation member shiftLeft_ter ^ ^ ^ ^ ^ 
+shiftLeft();
+
+
+StatementExpression expression MethodInvocation member shiftRight_ter ^ ^ ^ ^ ^ 
+shiftRight();
+
+
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, false);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, true);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, 0);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, null);
+ReturnStatement expression MethodInvocation member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast();
+ReturnStatement expression MemberReference member x_ter ^ ^ ^ ^ ^ 
+return x;
+ReturnStatement expression Cast type ReferenceType name Dfp_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Dfp)multiplyFast(x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, 1);
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((x == null)){
+return null;}
+ReturnStatement expression MethodInvocation arguments MemberReference member RADIX_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(RADIX, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member MIN_EXP_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(MIN_EXP, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAX_EXP_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(MAX_EXP, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member ERR_SCALE_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(ERR_SCALE, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member mant_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(mant, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(exp, x);
+ReturnStatement expression MethodInvocation arguments MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(multiplyFast(x));
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ This_ter ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, this);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+return add(x);
+ReturnStatement expression MethodInvocation qualifier x_ter ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return x.multiplyFast();
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, "null");
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, 2);
+ReturnStatement expression MemberReference member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast;
+ReturnStatement expression This selectors MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ 
+return this.x;
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+return debug(x);
+StatementExpression expression Assignment expressionl MemberReference member x_ter ^ ^ ^ ^ value MethodInvocation member shiftLeft_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x = shiftLeft();
+
+
+StatementExpression expression Assignment expressionl MemberReference member x_ter ^ ^ ^ ^ value MethodInvocation member shiftRight_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+x = shiftRight();
+
+
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(x, );
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member x_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((x == null)){
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return max(x);
+ReturnStatement expression MethodInvocation arguments Literal value false_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(false, x);
+ReturnStatement expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member x_ter ^ ^ ^ ^ ^ 
+return x(x);
+StatementExpression expression Assignment expressionl This selectors MemberReference member x_ter ^ ^ ^ ^ ^ ^ value MemberReference member x_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+this.x = x;
+
+IfStatement condition MethodInvocation member negativeOrNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(negativeOrNull()){
+return null;}
+IfStatement condition MethodInvocation member strictlyNegative_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(strictlyNegative()){
+return null;}
+IfStatement condition MethodInvocation member positiveOrNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(positiveOrNull()){
+return null;}
+IfStatement condition MethodInvocation member strictlyPositive_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(strictlyPositive()){
+return null;}
+IfStatement condition MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(isInfinite()){
+return null;}
+IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(isNaN()){
+return null;}
+IfStatement condition MethodInvocation member isZero_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(isZero()){
+return null;}
+ReturnStatement expression MethodInvocation arguments MemberReference member RADIX_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(RADIX);
+ReturnStatement expression MethodInvocation arguments MemberReference member MIN_EXP_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(MIN_EXP);
+ReturnStatement expression MethodInvocation arguments MemberReference member MAX_EXP_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(MAX_EXP);
+ReturnStatement expression MethodInvocation arguments MemberReference member ERR_SCALE_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(ERR_SCALE);
+ReturnStatement expression MethodInvocation arguments MemberReference member mant_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(mant);
+ReturnStatement expression MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(exp);
+ReturnStatement expression MethodInvocation arguments This_ter ^ ^ member multiplyFast_ter ^ ^ ^ ^ ^ 
+return multiplyFast(this);
+stderr: 

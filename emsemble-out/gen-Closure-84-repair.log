@@ -1,0 +1,402 @@
+stdout: LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node assign = processInfixExpression(assignmentNode);
+
+StatementExpression expression MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ 
+processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode, false);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode, true);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member assignmentNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((assignmentNode == null)){
+return null;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode, null);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processAssignment_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processAssignment(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Node<?> assign = processInfixExpression(assignmentNode);
+
+StatementExpression expression Assignment expressionl MemberReference member assign_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+assign = processInfixExpression(assignmentNode);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member assignmentNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((assignmentNode != null)){
+return null;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member assignmentNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((assignmentNode != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation qualifier assignmentNode_ter ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = assignmentNode.processInfixExpression();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode, "null");
+
+StatementExpression expression SuperMethodInvocation member processAssignment_ter ^ ^ ^ ^ ^ 
+super.processAssignment();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member assignmentNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((assignmentNode == null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = ;
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode, assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg assignmentNode
+arg assignmentNode
+Node<assignmentNode> assign = processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation qualifier assignmentNode_ter ^ ^ arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = assignmentNode.processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+String assign = processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer This selectors MemberReference member assignmentNode_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = this.assignmentNode;
+
+LocalVariableDeclaration type ReferenceType name Assignment_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Assignment assign = processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode, 0);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ arguments TypeArgument type ReferenceType name Assignment_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg Assignment
+arg 
+arg Assignment
+Node<Assignment> assign = processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration annotations Annotation name Override_ter ^ ^ ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments MemberReference member assignmentNode_ter ^ ^ ^ This_ter ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(assignmentNode, this);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member assignmentNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member assign_ter ^ ^ ^ ^ ^ 
+if((assignmentNode == null)){
+return assign;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name assign_ter ^ ^ initializer MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member processInfixExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node assign = processInfixExpression(false);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, operand);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, operand);
+
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if (true) { return operand; }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member transformTokenType_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = transformTokenType(type, operand);
+
+StatementExpression expression MethodInvocation qualifier operand_ter ^ ^ arguments MethodInvocation prefix_operators -_ter ^ ^ qualifier operand_ter ^ ^ member getDouble_ter ^ ^ ^ ^ member setDouble_ter ^ ^ ^ ^ ^ 
+operand.setDouble(-operand.getDouble());
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member rootNodeJsDocHolder_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, rootNodeJsDocHolder);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member fileLevelJsDocBuilder_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, fileLevelJsDocBuilder);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member templateNode_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, templateNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, type);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member transform_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = transform(type, operand);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member operand_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((operand != null)){
+
+StatementExpression expression MethodInvocation qualifier node_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member INCRDECR_PROP_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member putBooleanProp_ter ^ ^ ^ ^ ^ 
+node.putBooleanProp(Node.INCRDECR_PROP, true);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member setDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = setDouble(type, operand);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member putBooleanProp_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = putBooleanProp(type, operand);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member processUnaryExpression_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = processUnaryExpression(type, operand);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member exprNode_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(exprNode, operand);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ MemberReference member rootNodeJsDocHolder_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, rootNodeJsDocHolder);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ MemberReference member fileLevelJsDocBuilder_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, fileLevelJsDocBuilder);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ MemberReference member templateNode_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, templateNode);
+
+ReturnStatement expression MemberReference member node_ter ^ ^ ^ ^ ^ 
+if (true) { return node; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node node = newNode(type, operand);
+
+StatementExpression expression MethodInvocation qualifier operand_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+operand.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier operand_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+operand.setQuotedString();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ 
+newNode(type, operand);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member node_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, node);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, false);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member node_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(node, operand);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member exprNode_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, exprNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, true);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, type);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member exprNode_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(exprNode);
+
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.hasChildren()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.hasOneChild()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.hasMoreThanOneChild()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member hasSideEffects_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.hasSideEffects()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isQualifiedName()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isUnscopedQualifiedName()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isVarArgs()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isOptionalArg()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isSyntheticBlock()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.wasEmptyNode()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isOnlyModifiesThisCall()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isNoSideEffectsCall()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isLocalResultCall()){
+return operand;}
+IfStatement condition MethodInvocation qualifier operand_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if(operand.isQuotedString()){
+return operand;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member operand_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member operand_ter ^ ^ ^ ^ ^ 
+if((operand == null)){
+return operand;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, false);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, true);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member par1 ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(, operand);
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(type, );
+
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member exprNode_ter ^ ^ ^ MemberReference member type_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(exprNode, type);
+
+BreakStatement_ter ^ 
+break;
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member operand_ter ^ ^ ^ MemberReference member exprNode_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node node = newNode(operand, exprNode);
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name node_ter ^ ^ initializer MethodInvocation arguments MemberReference member type_ter ^ ^ ^ MemberReference member operand_ter ^ ^ ^ ^ member newNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Node<?> node = newNode(type, operand);
+
+stderr: 

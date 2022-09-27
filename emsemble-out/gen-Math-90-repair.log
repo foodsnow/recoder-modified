@@ -1,0 +1,176 @@
+stdout: LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = v;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((v == null)){
+return;
+}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v != null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Object obj = v;
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = ;
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((v != null)){
+return;
+}
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr ReferenceType name Object_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ReturnStatement_ter ^ 
+if((v instanceof Object)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MethodInvocation member v_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = v();
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member v_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(!v){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = addValue(v);
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr ReferenceType name Object_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((v instanceof Object)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v == null)){
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer This selectors MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = this.v;
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MemberReference member par1 ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = ;
+
+
+StatementExpression expression SuperMethodInvocation member addValue_ter ^ ^ ^ ^ ^ 
+super.addValue();
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = null;
+
+IfStatement condition MemberReference member v_ter ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if(v){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MethodInvocation arguments MemberReference member obj_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = addValue(obj);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member v_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = v(v);
+
+StatementExpression expression Assignment expressionl MemberReference member obj_ter ^ ^ ^ ^ value MethodInvocation qualifier Long_ter ^ ^ arguments Cast type ReferenceType name Integer_ter ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+obj = Long.valueOf((Integer)v);
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MethodInvocation qualifier v_ter ^ ^ member longValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = v.longValue();
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+super.addValue(v);
+
+StatementExpression expression MethodInvocation qualifier freqTable_ter ^ ^ arguments MemberReference member obj_ter ^ ^ ^ MethodInvocation qualifier Long_ter ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+freqTable.put(obj, Long.valueOf(1));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((v == 1)){
+return;
+}
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr ReferenceType name Long_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ReturnStatement_ter ^ 
+if((v instanceof Long)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Object obj = (Object)v;
+
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer MemberReference member obj_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Object obj = obj;
+
+StatementExpression expression MethodInvocation qualifier freqTable_ter ^ ^ arguments MemberReference member obj_ter ^ ^ ^ MethodInvocation qualifier Long_ter ^ ^ arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier count_ter ^ ^ member longValue_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
+freqTable.put(obj, Long.valueOf((count.longValue() + 1)));
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((v > 0)){
+return;
+}
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member v_ter ^ ^ ^ ^ ^ 
+if(!v){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr ReferenceType name Integer_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ReturnStatement_ter ^ 
+if((v instanceof Integer)){
+return;
+}
+LocalVariableDeclaration type ReferenceType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name obj_ter ^ ^ initializer Cast type ReferenceType name Integer_ter ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Object obj = (Integer)v;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member par1 ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if(( != null)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member obj_ter ^ ^ ^ ^ value MethodInvocation qualifier Long_ter ^ ^ arguments Cast type ReferenceType name Integer_ter ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member valueOf_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+obj = Long.valueOf((Integer)v);
+
+stderr: 

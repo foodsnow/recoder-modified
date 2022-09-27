@@ -1,0 +1,140 @@
+stdout: StatementExpression expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+addValue(v);
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+StatementExpression expression MethodInvocation member addValue_ter ^ ^ ^ ^ ^ 
+addValue();
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue(addValue((Comparable<?>)v));
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v, v);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v != null)){
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v);
+
+StatementExpression expression SuperMethodInvocation member addValue_ter ^ ^ ^ ^ ^ 
+super.addValue();
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+if((v instanceof Comparable<?>)){
+
+ReturnStatement expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+return addValue((Comparable<?>)v);
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v, true);
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+v.addValue((Comparable<?>)v);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v, false);
+
+StatementExpression expression MethodInvocation qualifier v_ter ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+v.addValue();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member v_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((v == null)){
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+addValue(addValue(v));
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v, "null");
+
+StatementExpression expression Assignment expressionl MemberReference member v_ter ^ ^ ^ ^ value MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+v = addValue((Comparable<?>)v);
+
+StatementExpression expression MethodInvocation arguments This_ter ^ MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+addValue(this, v);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ This_ter ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v, this);
+
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v, null);
+
+StatementExpression expression SuperMethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+super.addValue((Comparable<?>)v);
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)v, );
+
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+addValue((Comparable<?>)addValue(v));
+
+StatementExpression expression MethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+addValue(v);
+
+StatementExpression expression SuperMethodInvocation arguments MemberReference member v_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+super.addValue(v);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member addValue_ter ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+addValue(addValue());
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+arg ?
+arg ?
+addValue((Comparable<?>)addValue((Comparable<?>)v));
+
+IfStatement condition MemberReference member v_ter ^ ^ ^ ^ ^ 
+if(v){
+
+StatementExpression expression MethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+debug((Comparable<?>)v);
+
+StatementExpression expression SuperMethodInvocation arguments Cast type ReferenceType name Comparable_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member v_ter ^ ^ ^ ^ ^ ^ member addValue_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+super.addValue((Comparable<?>)v);
+
+stderr: 

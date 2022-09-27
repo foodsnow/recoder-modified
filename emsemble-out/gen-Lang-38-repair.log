@@ -1,0 +1,130 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = calendar.clone();
+
+ReturnStatement expression MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ 
+return calendar.clone();
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value MemberReference member calendar_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = calendar;
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member calendar_ter ^ ^ ^ ^ operandr ReferenceType name Calendar_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((calendar instanceof Calendar)){
+
+StatementExpression expression MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ 
+calendar.clone();
+
+IfStatement condition MemberReference member mTimeZoneForced_ter ^ ^ ^ ^ ^ 
+if(mTimeZoneForced){
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier buf_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+calendar = (Calendar)buf.clone();
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MemberReference member calendar_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+calendar = (Calendar)calendar;
+
+StatementExpression expression MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ member setTimeZone_ter ^ ^ ^ ^ ^ 
+calendar.setTimeZone(mTimeZone);
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value SuperMethodInvocation member format_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = super.format();
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+calendar = (Calendar)calendar.clone();
+
+ReturnStatement expression MemberReference member calendar_ter ^ ^ ^ ^ ^ 
+return calendar;
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member calendar_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((calendar != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = null;
+
+StatementExpression expression MethodInvocation member init_ter ^ ^ ^ ^ ^ 
+init();
+
+StatementExpression expression MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member calendar_ter ^ ^ ^ ^ member clone_ter ^ ^ ^ ^ ^ 
+calendar.clone(calendar);
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value This selectors MemberReference member calendar_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = this.calendar;
+
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value ClassReference type ReferenceType name Calendar_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ClassReference type ReferenceType name Calendar_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Calendar_ter ^ ^ ^ ^ ^ 
+arg 
+calendar = Calendar;
+
+ReturnStatement expression Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return (Calendar)calendar.clone();
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member mTimeZoneForced_ter ^ ^ ^ ^ operandr ReferenceType name Calendar_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((mTimeZoneForced instanceof Calendar)){
+
+StatementExpression expression Assignment expressionl MemberReference member mTimeZoneForced_ter ^ ^ ^ ^ value Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+mTimeZoneForced = (Calendar)calendar.clone();
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier calendar_ter ^ ^ member format_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+calendar = (Calendar)calendar.format();
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member calendar_ter ^ ^ ^ ^ operandr ReferenceType name Calendar_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((calendar instanceof Calendar)){
+return null;}
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ member clone_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = calendar.clone(mTimeZone);
+
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = false;
+
+StatementExpression expression MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ member setTimeZone_ter ^ ^ ^ ^ ^ 
+calendar.setTimeZone(mTimeZone);
+
+IfStatement condition Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Calendar)calendar.clone()){
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = true;
+
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value MethodInvocation qualifier calendar_ter ^ ^ arguments This_ter ^ ^ member clone_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+calendar = calendar.clone(this);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member calendar_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((calendar == null)){
+return null;}
+StatementExpression expression Assignment expressionl MemberReference member calendar_ter ^ ^ ^ ^ value Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier calendar_ter ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+calendar = (Calendar)calendar.clone(mTimeZone);
+
+ReturnStatement_ter ^ 
+return;
+
+StatementExpression expression Assignment expressionl MemberReference member buf_ter ^ ^ ^ ^ value Cast type ReferenceType name Calendar_ter ^ ^ ^ ^ expression MethodInvocation qualifier calendar_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+buf = (Calendar)calendar.clone();
+
+stderr: 

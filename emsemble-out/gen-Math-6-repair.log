@@ -1,0 +1,1664 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor();
+
+StatementExpression expression Assignment expressionl MemberReference member evaluations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+evaluations = new Incrementor(0, new MaxIterCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(0, new MaxIterCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 1_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(1, new MaxIterCallback());
+
+StatementExpression expression MethodInvocation member incrementEvaluationCount_ter ^ ^ ^ ^ ^ 
+incrementEvaluationCount();
+
+StatementExpression expression MethodInvocation member incrementIterationCount_ter ^ ^ ^ ^ ^ 
+incrementIterationCount();
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments MemberReference member iterations_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(iterations, new MaxIterCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback(), new MaxIterCallback());
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new MaxIterCallback();
+
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(0);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(0, 0);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value MemberReference member iterations_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+iterations = iterations;
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ClassCreator type ReferenceType name MaxEvalCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(0, new MaxEvalCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback(), null);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ MemberReference member checker_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback(), checker);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 2_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(2, new MaxIterCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(null, new MaxIterCallback());
+
+StatementExpression expression SuperMethodInvocation member BaseOptimizer_ter ^ ^ ^ ^ ^ 
+super.BaseOptimizer();
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments MemberReference member iterations_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(iterations);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback(), new MaxIterCallback(), 0);
+
+StatementExpression expression Assignment expressionl MemberReference member checker_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+checker = new Incrementor(0, new MaxIterCallback());
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iterations != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments MemberReference member checker_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(checker, new MaxIterCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback(), 1);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments MemberReference member iterations_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(iterations, 0);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments MemberReference member checker_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(checker);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name MaxEvalCallback_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new MaxEvalCallback();
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback(), 0);
+
+StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
+1 SuperConstructorInvocation_ter
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments MemberReference member iterations_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(iterations, new MaxIterCallback(), 0);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(null);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(new MaxIterCallback(), 0, new MaxIterCallback());
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(0, 1);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value MemberReference member checker_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+iterations = checker;
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(null, 0);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+iterations = new Incrementor(1);
+
+StatementExpression expression Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Incrementor_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ClassCreator type ReferenceType name MaxIterCallback_ter ^ ^ ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+iterations = new Incrementor(0, new MaxIterCallback(), 0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 2;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = false;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = "null";
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc6 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = true;
+
+StatementExpression expression MethodInvocation member getMaxEvaluations_ter ^ ^ ^ ^ ^ 
+getMaxEvaluations();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+LocalVariableDeclaration type BasicType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+Object iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = null;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer MemberReference member getMaxEvaluations_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = getMaxEvaluations;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 1;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -0;
+
+LocalVariableDeclaration type BasicType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+String iter = 0;
+
+
+LocalVariableDeclaration type BasicType name List_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+List iter = 0;
+
+LocalVariableDeclaration type BasicType name PointValuePair_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+PointValuePair iter = 0;
+
+LocalVariableDeclaration type BasicType name par0 ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ iter = 0;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type ReferenceType name PointValuePair_ter ^ ^ ^ ^ declarators VariableDeclarator name current_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+PointValuePair current = null;
+
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta >= 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta <= 0))){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((iter % n) == 0)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta > 0))){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((beta < 0)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) && (beta < 0))){
+IfStatement condition BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iter % n)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter >= n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta == 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter <= n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >=_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) >= 0) || (beta < 0))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta < 0))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) <= 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta - 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter > n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta != 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter < n) == 0) || (beta < 0))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((iter % n) == 0) || (beta < 0)) || (beta < 0))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >>_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta >> 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) > 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >>>_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta >>> 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) < 0) || (beta < 0))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((iter % n) == 0) || (beta < 0)) && (beta < 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) && (beta < 0))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta < 1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta || 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter == n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter - n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta < 2))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (i < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % i) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) != 0) || (beta < 0))){
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ ^ 
+if((i < n)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (beta < -1))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) - 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member steepestDescent_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || (steepestDescent < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member steepestDescent_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % steepestDescent) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter != n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((i % n) == 0) || (beta < 0))){
+IfStatement condition MethodInvocation qualifier steepestDescent_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ 
+if(steepestDescent.clone()){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator >>_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter >> n) == 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member steepestDescent_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((steepestDescent % n) == 0) || (beta < 0))){
+IfStatement condition MemberReference member searchDirection_ter ^ ^ ^ ^ ^ 
+if(searchDirection){
+
+IfStatement condition MemberReference member iter_ter ^ ^ ^ ^ ^ 
+if(iter){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >>_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) >> 0) || (beta < 0))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc1 ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % n) == 0) || ( < 0))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl BinaryOperation operator %_ter ^ ^ operandl MemberReference member iter_ter ^ ^ ^ ^ operandr MemberReference member newSteepestDescent_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member beta_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((iter % newSteepestDescent) == 0) || (beta < 0))){
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations < maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations > maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator ||_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations || maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member lambda_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= lambda);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member checkFeasableCount_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= checkFeasableCount);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member inputSigma_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= inputSigma);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member dimension_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= dimension);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member diagonalOnly_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= diagonalOnly);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member stopFitness_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= stopFitness);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member stopTolUpX_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= stopTolUpX);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member stopTolX_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= stopTolX);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member stopTolFun_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= stopTolFun);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member stopTolHistFun_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= stopTolHistFun);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member mu_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= mu);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member logMu2_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= logMu2);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member mueff_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= mueff);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member sigma_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= sigma);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member cc_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= cc);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member cs_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= cs);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member damps_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= damps);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member ccov1_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= ccov1);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member ccovmu_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= ccovmu);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member chiN_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= chiN);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member ccov1Sep_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= ccov1Sep);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member ccovmuSep_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= ccovmuSep);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member normps_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= normps);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member fitnessHistory_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= fitnessHistory);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member historySize_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= historySize);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations && maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations >= maxIterations);iterations++) {
+
+        for (iterations = 1; iterations <= maxIterations; iterations++) {if(0!=1)break;
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations == maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member lambda_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(lambda <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member checkFeasableCount_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(checkFeasableCount <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member inputSigma_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(inputSigma <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member dimension_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(dimension <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member diagonalOnly_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(diagonalOnly <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(maxIterations <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member stopFitness_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(stopFitness <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member stopTolUpX_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(stopTolUpX <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member stopTolX_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(stopTolX <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member stopTolFun_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(stopTolFun <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member stopTolHistFun_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(stopTolHistFun <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member mu_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(mu <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member logMu2_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(logMu2 <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member mueff_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(mueff <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member sigma_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(sigma <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member cc_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(cc <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member cs_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(cs <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member damps_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(damps <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ccov1_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(ccov1 <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ccovmu_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(ccovmu <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member chiN_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(chiN <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ccov1Sep_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(ccov1Sep <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ccovmuSep_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(ccovmuSep <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member normps_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(normps <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member fitnessHistory_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(fitnessHistory <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member historySize_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(historySize <= maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member lambda_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);lambda) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member checkFeasableCount_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);checkFeasableCount) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member inputSigma_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);inputSigma) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member dimension_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);dimension) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member diagonalOnly_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);diagonalOnly) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);maxIterations) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member stopFitness_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);stopFitness) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member stopTolUpX_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);stopTolUpX) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member stopTolX_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);stopTolX) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member stopTolFun_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);stopTolFun) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member stopTolHistFun_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);stopTolHistFun) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member mu_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);mu) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member logMu2_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);logMu2) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member mueff_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);mueff) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member sigma_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);sigma) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member cc_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);cc) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member cs_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);cs) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member damps_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);damps) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member ccov1_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);ccov1) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member ccovmu_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);ccovmu) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member chiN_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);chiN) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member ccov1Sep_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);ccov1Sep) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member ccovmuSep_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);ccovmuSep) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member normps_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);normps) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);iterations) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member fitnessHistory_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);fitnessHistory) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference member historySize_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations);historySize) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations != maxIterations);iterations++) {
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iterations <= maxIterations)){
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations instanceof maxIterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier lambda_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= lambda.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier checkFeasableCount_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= checkFeasableCount.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier dimension_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= dimension.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier diagonalOnly_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= diagonalOnly.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier maxIterations_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= maxIterations.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier mu_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= mu.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier iterations_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= iterations.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference qualifier historySize_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations <= historySize.iterations);iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator |_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1(iterations | maxIterations);iterations++) {
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iterations <= maxIterations) && (maxIterations == maxIterations))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iterations <= maxIterations) && (maxIterations != maxIterations))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iterations <= maxIterations) || (maxIterations == maxIterations))){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iterations <= maxIterations) && (maxIterations == 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr MemberReference member iterations_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iterations <= maxIterations) && (maxIterations == iterations))){
+
+
+BreakStatement_ter ^ 
+break;
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1((iterations <= maxIterations) || (maxIterations == maxIterations));iterations++) {
+
+control ForControl init Assignment expressionl MemberReference member iterations_ter ^ ^ ^ ^ value Literal value 1_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member maxIterations_ter ^ ^ ^ ^ operandr MemberReference member maxIterations_ter ^ ^ ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member iterations_ter ^ ^ ^ ^ ^ ^ 
+for(iterations = 1((iterations <= maxIterations) && (maxIterations == maxIterations));iterations++) {
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 2;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double[] iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = false;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = "null";
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = null;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+double[]  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = true;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc6 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ ^ ^ ^ 
+double[]  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc9 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc4 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean iter = 0;
+
+LocalVariableDeclaration type BasicType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+Object iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+StatementExpression expression MethodInvocation qualifier x_ter ^ ^ member clone_ter ^ ^ ^ ^ ^ 
+x.clone();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 1;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+String iter = 0;
+
+
+LocalVariableDeclaration type BasicType name par0 ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ iter = 0;
+
+LocalVariableDeclaration type BasicType name List_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+List iter = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double iter = 0;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+
+StatementExpression expression MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+checker.converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, current, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(current, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, x, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member x_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(x, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member fVal_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, fVal, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member fVal_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(fVal, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member stop_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, stop, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member stop_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(stop, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, previous, x);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(previous);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member doOptimize_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.doOptimize(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier current_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = current.converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member fVal_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, previous, fVal);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member stop_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, previous, stop);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member x_ter ^ ^ ^ MemberReference member fVal_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(x, fVal);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.debug(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged();
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member stop_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(stop);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MemberReference member previous_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = previous;
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member x_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(x);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MemberReference member iter_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = iter;
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(previous, previous);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(current, previous);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, previous);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member iter_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(previous, iter);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ MemberReference member iter_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(current, iter);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(previous, previous, current);
+
+StatementExpression expression MethodInvocation qualifier checker_ter ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+checker.converged();
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member iter_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, iter);
+
+StatementExpression expression Assignment expressionl MemberReference member current_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+current = checker.converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(iter, previous, current);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.add(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member stop_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member iter_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+stop = checker.converged(previous, iter, current);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member stop_ter ^ ^ ^ ^ ^ 
+if(!stop){
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((iteration >= 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((iteration <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((iteration > 0)){
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((iteration < 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((iteration == 0)){
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member v1_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((v1 > 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((iteration != 0)){
+IfStatement condition MemberReference member iteration_ter ^ ^ ^ ^ ^ 
+if(iteration){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) && (iteration == 0))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((iteration > 1)){
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member previous_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((previous > 0)){
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MethodInvocation member getStartPoint_ter ^ ^ ^ ^ member build_ter ^ ^ ^ ^ ^ 
+simplex.build(getStartPoint());
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member evalFunc_ter ^ ^ ^ MemberReference member comparator_ter ^ ^ ^ ^ member evaluate_ter ^ ^ ^ ^ ^ 
+simplex.evaluate(evalFunc, comparator);
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member v2_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((v2 > 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) && (iteration != 0))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ 
+if((iteration > 2)){
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value BinaryOperation operator &&_ter ^ ^ operandl MemberReference member converged_ter ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iteration_ter ^ ^ ^ MemberReference member prev_ter ^ ^ ^ MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member getPoint_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = (converged && checker.converged(iteration, prev, simplex.getPoint(i)));
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) || (iteration == 0))){
+
+StatementExpression expression MemberReference prefix_operators ++_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+++iteration;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iteration_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) && iteration)){
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member evalFunc_ter ^ ^ ^ MemberReference member comparator_ter ^ ^ ^ ^ member iterate_ter ^ ^ ^ ^ ^ 
+simplex.iterate(evalFunc, comparator);
+
+IfStatement condition MemberReference member v1_ter ^ ^ ^ ^ ^ 
+if(v1){
+
+StatementExpression expression Assignment expressionl MemberReference member previous_ter ^ ^ ^ ^ value MethodInvocation qualifier simplex_ter ^ ^ member getPoints_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+previous = simplex.getPoints();
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+if(!iteration){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member evalFunc_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((evalFunc > 0)){
+BreakStatement_ter ^ 
+break;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member iteration_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) || iteration)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr MemberReference member iteration_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) && (iteration == iteration))){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr MemberReference member iteration_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iteration < iteration)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) && (iteration > 0))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iteration != 0)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((checker > 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration != 0) && (iteration > 0))){
+
+ReturnStatement expression MethodInvocation qualifier simplex_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getPoint_ter ^ ^ ^ ^ ^ 
+if (true) { return simplex.getPoint(0); }
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member v1_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) && v1)){
+
+IfStatement condition MemberReference member converged_ter ^ ^ ^ ^ ^ 
+if(converged){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) || (iteration != 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration == 0) && (iteration > 0))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) || (iteration > 0))){
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iteration < 0)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iteration_ter ^ ^ ^ MemberReference member prev_ter ^ ^ ^ MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member getPoint_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((iteration > 0) && checker.converged(iteration, prev, simplex.getPoint(i)))){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr MemberReference member iteration_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iteration > iteration)){
+
+IfStatement condition MethodInvocation qualifier iteration_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(iteration.isEmpty()){
+
+
+StatementExpression expression MemberReference member iteration_ter ^ ^ ^ ^ ^ 
+iteration;
+
+StatementExpression expression MemberReference member v1_ter ^ ^ ^ ^ ^ 
+v1;
+
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value BinaryOperation operator &&_ter ^ ^ operandl MemberReference member converged_ter ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iteration_ter ^ ^ ^ MemberReference member prev_ter ^ ^ ^ MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member getPoint_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = (converged && checker.converged(iteration, prev, simplex.getPoint(i)));
+
+StatementExpression expression Assignment expressionl MemberReference member previous_ter ^ ^ ^ ^ value MethodInvocation qualifier simplex_ter ^ ^ member getPoints_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+previous = simplex.getPoints();
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member evalFunc_ter ^ ^ ^ MemberReference member comparator_ter ^ ^ ^ ^ member iterate_ter ^ ^ ^ ^ ^ 
+simplex.iterate(evalFunc, comparator);
+
+StatementExpression expression MemberReference prefix_operators -_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+-iteration;
+
+StatementExpression expression MemberReference member previous_ter ^ ^ ^ ^ ^ 
+previous;
+
+StatementExpression expression MemberReference prefix_operators !_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+!iteration;
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MethodInvocation member getStartPoint_ter ^ ^ ^ ^ member build_ter ^ ^ ^ ^ ^ 
+simplex.build(getStartPoint());
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member evalFunc_ter ^ ^ ^ MemberReference member comparator_ter ^ ^ ^ ^ member evaluate_ter ^ ^ ^ ^ ^ 
+simplex.evaluate(evalFunc, comparator);
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MemberReference member v2_ter ^ ^ ^ ^ ^ 
+v2;
+
+StatementExpression expression MemberReference prefix_operators ~_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+~iteration;
+
+IfStatement condition MemberReference member converged_ter ^ ^ ^ ^ ^ 
+if(converged){
+
+ReturnStatement expression MethodInvocation qualifier simplex_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member getPoint_ter ^ ^ ^ ^ ^ 
+if (true) { return simplex.getPoint(0); }
+
+StatementExpression expression MemberReference member checker_ter ^ ^ ^ ^ ^ 
+checker;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member iteration_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((iteration != 0)){
+
+StatementExpression expression MemberReference member evalFunc_ter ^ ^ ^ ^ ^ 
+evalFunc;
+
+StatementExpression expression MemberReference prefix_operators ++_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+++iteration;
+
+StatementExpression expression Assignment expressionl MemberReference member previous_ter ^ ^ ^ ^ value MethodInvocation qualifier simplex_ter ^ ^ member getPoints_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+previous = simplex.getPoints();
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value BinaryOperation operator &&_ter ^ ^ operandl MemberReference member converged_ter ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iteration_ter ^ ^ ^ MemberReference member prev_ter ^ ^ ^ MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member i_ter ^ ^ ^ ^ member getPoint_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = (converged && checker.converged(iteration, prev, simplex.getPoint(i)));
+
+StatementExpression expression MethodInvocation qualifier iteration_ter ^ ^ member getPoint_ter ^ ^ ^ ^ ^ 
+iteration.getPoint();
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+iteration++;
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MethodInvocation member getStartPoint_ter ^ ^ ^ ^ member build_ter ^ ^ ^ ^ ^ 
+simplex.build(getStartPoint());
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member evalFunc_ter ^ ^ ^ MemberReference member comparator_ter ^ ^ ^ ^ member evaluate_ter ^ ^ ^ ^ ^ 
+simplex.evaluate(evalFunc, comparator);
+
+StatementExpression expression MemberReference prefix_operators --_ter ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+--iteration;
+
+StatementExpression expression MethodInvocation qualifier simplex_ter ^ ^ arguments MemberReference member evalFunc_ter ^ ^ ^ MemberReference member comparator_ter ^ ^ ^ ^ member iterate_ter ^ ^ ^ ^ ^ 
+simplex.iterate(evalFunc, comparator);
+
+StatementExpression expression MethodInvocation qualifier iteration_ter ^ ^ member iterate_ter ^ ^ ^ ^ ^ 
+iteration.iterate();
+
+StatementExpression expression MemberReference prefix_operators -_ter ^ ^ member v1_ter ^ ^ ^ ^ ^ 
+-v1;
+
+StatementExpression expression MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member iteration_ter ^ ^ ^ ^ ^ 
+iteration[i];
+
+StatementExpression expression MemberReference prefix_operators !_ter ^ ^ member v1_ter ^ ^ ^ ^ ^ 
+!v1;
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MemberReference member comparator_ter ^ ^ ^ ^ ^ 
+comparator;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 2;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = false;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = "null";
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc6 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = true;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = null;
+
+LocalVariableDeclaration type BasicType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+Object iter = 0;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean iter = 0;
+
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+LocalVariableDeclaration type BasicType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+String iter = 0;
+
+LocalVariableDeclaration type BasicType name PointVectorValuePair_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+PointVectorValuePair iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 1;
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+
+StatementExpression expression MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+checker.converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, current, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(current, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member converged_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, converged, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member currentResiduals_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, currentResiduals, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member converged_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(converged, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member currentResiduals_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(currentResiduals, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(previous, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member setCost_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.setCost(iter, previous, current);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member currentResiduals_ter ^ ^ ^ ^ member computeCost_ter ^ ^ ^ ^ member setCost_ter ^ ^ ^ ^ ^ 
+setCost(computeCost(currentResiduals));
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member computeCost_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.computeCost(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member converged_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, previous, converged);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member solver_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, solver, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member currentResiduals_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, previous, currentResiduals);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member currentPoint_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dX_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+currentPoint[i] += dX[i];
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, previous, previous);
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if (true) { return current; }
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member currentPoint_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPoint[i] = checker.converged(iter, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member solver_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(solver, previous, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member mA_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, mA, current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member iter_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, iter, current);
+
+StatementExpression expression MethodInvocation arguments MethodInvocation arguments MemberReference member currentResiduals_ter ^ ^ ^ ^ member computeCost_ter ^ ^ ^ ^ member setCost_ter ^ ^ ^ ^ ^ 
+setCost(computeCost(currentResiduals));
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member mA_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(mA, previous, current);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member previous_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((previous != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member solver_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, previous, solver);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member iter_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, previous, iter);
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member currentPoint_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member i_ter ^ ^ ^ ^ ^ ^ member dX_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+currentPoint[i] += dX[i];
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member mA_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter, previous, mA);
+
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member currentResiduals_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(currentResiduals);
+
+StatementExpression expression MethodInvocation qualifier checker_ter ^ ^ member checkParameters_ter ^ ^ ^ ^ ^ 
+checker.checkParameters();
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.solve(iter, previous, current);
+
+IfStatement condition MemberReference member converged_ter ^ ^ ^ ^ ^ 
+if(converged){
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(previous);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(iter);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(previous, previous, previous);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(current);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(previous, previous);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged();
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(previous, current, previous);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(current, previous, previous);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member previous_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member iter_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+converged = checker.converged(previous, previous, iter);
+
+StatementExpression expression Assignment expressionl MemberReference member converged_ter ^ ^ ^ ^ value MethodInvocation qualifier solver_ter ^ ^ selectors MethodInvocation member toArray_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name ArrayRealVector_ter ^ ^ ^ ^ arguments MemberReference member b_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ member solve_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+converged = solver.solve(new ArrayRealVector(b, false)).toArray();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 2;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = false;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = -1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = "null";
+
+StatementExpression expression MethodInvocation member getConvergenceChecker_ter ^ ^ ^ ^ ^ 
+getConvergenceChecker();
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc6 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+Object iter = 0;
+
+LocalVariableDeclaration type ReferenceType name ConvergenceChecker_ter ^ ^ arguments TypeArgument type ReferenceType name PointVectorValuePair_ter ^ ^ ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg PointVectorValuePair
+arg 
+arg PointVectorValuePair
+ConvergenceChecker<PointVectorValuePair> iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc4 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+String iter = 0;
+
+LocalVariableDeclaration type ReferenceType name PointVectorValuePair_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+PointVectorValuePair iter = 0;
+
+LocalVariableDeclaration type BasicType name par0 ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ iter = 0;
+
+StatementExpression expression MethodInvocation member checkParameters_ter ^ ^ ^ ^ ^ 
+checkParameters();
+
+LocalVariableDeclaration type BasicType name List_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+List iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = true;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = null;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 1_ter ^ ^ ^ ^ ^ ^ value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int iter = 0;
+
+LocalVariableDeclaration type BasicType name PointVectorValuePair_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+PointVectorValuePair iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+LocalVariableDeclaration type BasicType name ConvergenceChecker_ter ^ ^ ^ ^ declarators VariableDeclarator name iter_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ConvergenceChecker iter = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ initializer MemberReference member getConvergenceChecker_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = getConvergenceChecker;
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+
+
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(iter, previous, current)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member xK_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(xK, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ 
+if(checker.sqrt(iter, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member setCost_ter ^ ^ ^ ^ 
+if(checker.setCost(iter, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member xK_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, xK, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member xK_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, previous, xK)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member k_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(k, previous, current)){
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(xNorm)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, k, current)){
+condition MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(FastMath.converged(iter, previous, current)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(!checker.converged(iter, previous, current)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member k_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, previous, k)){
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member currentCost_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(currentCost)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(iter, previous, current) && checker.converged(iter, previous, current))){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ 
+if(checker.abs(iter, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member tmpVec_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(tmpVec, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member current_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(current, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member j_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(j, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member oldRes_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(oldRes, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member tmpVec_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, tmpVec, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, current, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member oldObj_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(oldObj, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member tmpVec_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, previous, tmpVec)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member delta_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ operandr MemberReference member xNorm_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(iter, previous, current) && (delta <= (parRelativeTolerance * xNorm)))){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, previous, current)){
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member oldRes_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, oldRes, current)){
+IfStatement condition MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(FastMath.converged(iter, previous, current)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member j_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, j, current)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(iter, previous, current) && (preRed <= costRelativeTolerance))){
+
+IfStatement condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ 
+if(checker.converged(actRed)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member j_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, previous, j)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member checker_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((checker != null)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member oldRes_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, previous, oldRes)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ ^ ^ ^ 
+if((((FastMath.abs(actRed) <= costRelativeTolerance) && (preRed <= costRelativeTolerance)) && checker.converged(iter, previous, current))){
+
+StatementExpression expression Assignment expressionl MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member currentPoint_ter ^ ^ ^ ^ value MemberReference selectors ArraySelector index MemberReference member pj_ter ^ ^ ^ ^ ^ ^ member oldX_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPoint[pj] = oldX[pj];
+
+StatementExpression expression MethodInvocation arguments MemberReference member currentCost_ter ^ ^ ^ ^ member setCost_ter ^ ^ ^ ^ ^ 
+setCost(currentCost);
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member currentCost_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ 
+if(checker.converged(iter, previous, currentCost)){
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value BinaryOperation operator *_ter ^ ^ operandl MemberReference member xK_ter ^ ^ ^ ^ operandr MemberReference member xK_ter ^ ^ ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+xNorm += (xK * xK);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member converged_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((checker.converged(iter, previous, current) && (ratio <= 2.0))){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ 
+if((preRed <= costRelativeTolerance)){
+
+ReturnStatement expression MemberReference member current_ter ^ ^ ^ ^ ^ 
+if (true) { return current; }
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member delta_ter ^ ^ ^ ^ operandr BinaryOperation operator *_ter ^ ^ operandl MemberReference member parRelativeTolerance_ter ^ ^ ^ ^ operandr MemberReference member xNorm_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((delta <= (parRelativeTolerance * xNorm))){
+
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ 
+if((FastMath.abs(actRed) <= costRelativeTolerance)){
+
+condition MethodInvocation qualifier checker_ter ^ ^ arguments MemberReference member iter_ter ^ ^ ^ MemberReference member previous_ter ^ ^ ^ MemberReference member current_ter ^ ^ ^ ^ member doOptimize_ter ^ ^ ^ ^ 
+if(checker.doOptimize(iter, previous, current)){
+IfStatement condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ratio <= 2.0)){
+
+StatementExpression expression Assignment expressionl MemberReference member xNorm_ter ^ ^ ^ ^ value MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member xNorm_ter ^ ^ ^ ^ member sqrt_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+xNorm = FastMath.sqrt(xNorm);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier FastMath_ter ^ ^ arguments MemberReference member actRed_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member preRed_ter ^ ^ ^ ^ operandr MemberReference member costRelativeTolerance_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member ratio_ter ^ ^ ^ ^ operandr Literal value 2.0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((FastMath.abs(actRed) <= costRelativeTolerance) && (preRed <= costRelativeTolerance)) && (ratio <= 2.0))){
+
+BreakStatement_ter ^ 
+break;
+
+
+stderr: 

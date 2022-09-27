@@ -1,0 +1,597 @@
+stdout: BreakStatement_ter ^ 
+break;
+
+
+ReturnStatement expression ClassCreator type ReferenceType name ExtractionInfo_ter ^ ^ ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new ExtractionInfo(multilineText, token); }
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append("null");
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = next();
+
+StatementExpression expression Assignment expressionl MemberReference member state_ter ^ ^ ^ ^ value MemberReference qualifier State_ter ^ ^ member SEARCHING_ANNOTATION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+state = State.SEARCHING_ANNOTATION;
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = false;
+
+StatementExpression expression Assignment expressionl MemberReference member line_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member line_ter ^ ^ ^ ^ member trimEnd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+line = trimEnd(line);
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments MemberReference member line_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append(line);
+
+StatementExpression expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+skipEOLs();
+
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if (true) { return false; }
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = false;
+
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+if (true) { return true; }
+
+ReturnStatement expression This_ter ^ ^ ^ 
+if (true) { return this; }
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = true;
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) || (token == JsDocToken.EOF))){
+
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+token = next();
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member line_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member line_ter ^ ^ ^ ^ member trimEnd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+line = trimEnd(line);
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOC)){
+
+
+ReturnStatement expression ClassCreator type ReferenceType name ExtractionInfo_ter ^ ^ ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+BreakStatement_ter ^ 
+if (true) { return new ExtractionInfo(multilineText, token);break;
+ }
+
+StatementExpression expression MethodInvocation qualifier stream_ter ^ ^ member update_ter ^ ^ ^ ^ ^ 
+stream.update();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))){
+
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ 
+if((option != WhitespaceOption.PRESERVE)){
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.ANNOTATION)){
+
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+builder.append("null");
+break;
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+ignoreStar = false;
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOF)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member state_ter ^ ^ ^ ^ value MemberReference qualifier State_ter ^ ^ member SEARCHING_ANNOTATION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+state = State.SEARCHING_ANNOTATION;
+break;
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ member skipEOLs_ter ^ ^ ^ ^ ^ 
+builder.skipEOLs();
+
+ReturnStatement expression MemberReference member token_ter ^ ^ ^ ^ ^ 
+if (true) { return token; }
+
+StatementExpression expression Assignment expressionl MemberReference member endLineno_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+endLineno = true;
+
+IfStatement condition MemberReference member ignoreStar_ter ^ ^ ^ ^ ^ 
+if(ignoreStar){
+
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments MemberReference member line_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+builder.append(line);
+break;
+
+BreakStatement_ter ^ 
+break;
+
+BreakStatement_ter ^ 
+ContinueStatement_ter ^ 
+break;
+continue;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) || (token == JsDocToken.EOF))){
+
+
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) && ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option == WhitespaceOption.PRESERVE)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))) && ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOF)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.ANNOTATION)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOC)){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token != JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option >= WhitespaceOption.PRESERVE)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) && ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) && ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token >= JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression ClassCreator type ReferenceType name ExtractionInfo_ter ^ ^ ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new ExtractionInfo(multilineText, token); }
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || (option != WhitespaceOption.PRESERVE))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option > WhitespaceOption.PRESERVE)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) || (option != WhitespaceOption.PRESERVE))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option <= WhitespaceOption.PRESERVE)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) || (option != WhitespaceOption.PRESERVE))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token > JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token <= JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (option != WhitespaceOption.PRESERVE)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))) || (option != WhitespaceOption.PRESERVE))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.ANNOTATION) || (option != WhitespaceOption.PRESERVE)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || (token == JsDocToken.EOF))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) && (option != WhitespaceOption.PRESERVE))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || (((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) || (token == JsDocToken.EOF))){
+
+StatementExpression expression Assignment expressionl MemberReference member state_ter ^ ^ ^ ^ value MemberReference qualifier State_ter ^ ^ member SEARCHING_ANNOTATION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+state = State.SEARCHING_ANNOTATION;
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append("null");
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member startLineno_ter ^ ^ ^ MemberReference member startCharno_ter ^ ^ ^ MemberReference member endLineno_ter ^ ^ ^ MemberReference member endCharno_ter ^ ^ ^ ^ member markText_ter ^ ^ ^ ^ ^ 
+jsdocBuilder.markText(multilineText, startLineno, startCharno, endLineno, endCharno);
+
+StatementExpression expression Assignment expressionl MemberReference member multilineText_ter ^ ^ ^ ^ value MethodInvocation qualifier multilineText_ter ^ ^ member trim_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+multilineText = multilineText.trim();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ 
+if((option != WhitespaceOption.PRESERVE)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier multilineText_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((multilineText.length() > 0)){
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = true;
+
+condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() >= 0)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() == 0)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() <= 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() > 0)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() != 0)){
+
+
+BreakStatement_ter ^ 
+break;
+
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() < 0)){
+ReturnStatement expression ClassCreator type ReferenceType name ExtractionInfo_ter ^ ^ ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new ExtractionInfo(multilineText, token); }
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) || (token == JsDocToken.EOF))){
+
+IfStatement condition MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ ^ 
+if(builder.length()){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOC)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.ANNOTATION)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOF)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((builder.length() > 0) && ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+StatementExpression expression Assignment expressionl MemberReference member line_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member line_ter ^ ^ ^ ^ member trimEnd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+line = trimEnd(line);
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = true;
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member startLineno_ter ^ ^ ^ MemberReference member startCharno_ter ^ ^ ^ MemberReference member endLineno_ter ^ ^ ^ MemberReference member endCharno_ter ^ ^ ^ ^ member markText_ter ^ ^ ^ ^ ^ 
+jsdocBuilder.markText(multilineText, startLineno, startCharno, endLineno, endCharno);
+
+BreakStatement_ter ^ 
+break;
+
+
+StatementExpression expression Assignment expressionl MemberReference member multilineText_ter ^ ^ ^ ^ value MethodInvocation qualifier multilineText_ter ^ ^ member trim_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+multilineText = multilineText.trim();
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = next();
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append("null");
+
+StatementExpression expression Assignment expressionl MemberReference member state_ter ^ ^ ^ ^ value MemberReference qualifier State_ter ^ ^ member SEARCHING_ANNOTATION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+state = State.SEARCHING_ANNOTATION;
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = false;
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((builder.length() > 0) && (option != WhitespaceOption.PRESERVE))){
+
+IfStatement condition MethodInvocation qualifier stream_ter ^ ^ member eof_ter ^ ^ ^ ^ ^ 
+if(stream.eof()){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member getCharno_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.getCharno() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member getRemainingJSDocLine_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.getRemainingJSDocLine() > 0)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((builder.length() > 0) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE)))){
+
+ContinueStatement_ter ^ 
+continue;
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member getLineno_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.getLineno() > 0)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((builder.length() > 0) && (token == JsDocToken.EOF))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) && (builder.length() > 0))){
+
+condition BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() - 0)){
+IfStatement condition MethodInvocation qualifier builder_ter ^ ^ member parse_ter ^ ^ ^ ^ ^ 
+if(builder.parse()){
+
+IfStatement condition MethodInvocation qualifier builder_ter ^ ^ member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+if(builder.hasParsedFileOverviewDocInfo()){
+
+IfStatement condition MethodInvocation qualifier builder_ter ^ ^ member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+if(builder.hasParsedJSDocInfo()){
+
+IfStatement condition MethodInvocation qualifier builder_ter ^ ^ member lookAheadForTypeAnnotation_ter ^ ^ ^ ^ ^ 
+if(builder.lookAheadForTypeAnnotation()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier stream_ter ^ ^ member eof_ter ^ ^ ^ ^ ^ 
+if(!stream.eof()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) && (builder.length() > 0))){
+
+StatementExpression expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+skipEOLs();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.ANNOTATION) && (builder.length() > 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((((token == JsDocToken.EOC) || (token == JsDocToken.EOF)) || ((token == JsDocToken.ANNOTATION) && (option != WhitespaceOption.PRESERVE))) && (builder.length() > 0))){
+
+IfStatement condition MethodInvocation member parse_ter ^ ^ ^ ^ ^ 
+if(parse()){
+
+IfStatement condition MethodInvocation member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+if(hasParsedFileOverviewDocInfo()){
+
+IfStatement condition MethodInvocation member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+if(hasParsedJSDocInfo()){
+
+IfStatement condition MethodInvocation member lookAheadForTypeAnnotation_ter ^ ^ ^ ^ ^ 
+if(lookAheadForTypeAnnotation()){
+
+IfStatement condition MemberReference member token_ter ^ ^ ^ ^ ^ 
+if(token){
+
+IfStatement condition MethodInvocation qualifier stream_ter ^ ^ member getLineno_ter ^ ^ ^ ^ ^ 
+if(stream.getLineno()){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((builder.length() > 0) || (option != WhitespaceOption.PRESERVE))){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ 
+if((option != WhitespaceOption.PRESERVE)){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 2_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() > 2)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ 
+if((builder.toString() > 0)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ 
+if((builder.length() > 1)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier builder_ter ^ ^ member parse_ter ^ ^ ^ ^ ^ 
+if(!builder.parse()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier builder_ter ^ ^ member hasParsedFileOverviewDocInfo_ter ^ ^ ^ ^ ^ 
+if(!builder.hasParsedFileOverviewDocInfo()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier builder_ter ^ ^ member hasParsedJSDocInfo_ter ^ ^ ^ ^ ^ 
+if(!builder.hasParsedJSDocInfo()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier builder_ter ^ ^ member lookAheadForTypeAnnotation_ter ^ ^ ^ ^ ^ 
+if(!builder.lookAheadForTypeAnnotation()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((option != WhitespaceOption.PRESERVE) && (builder.length() > 0))){
+
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression ClassCreator type ReferenceType name ExtractionInfo_ter ^ ^ ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member token_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if (true) { return new ExtractionInfo(multilineText, token); }
+
+StatementExpression expression Assignment expressionl MemberReference member line_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member line_ter ^ ^ ^ ^ member trimEnd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+line = trimEnd(line);
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member startLineno_ter ^ ^ ^ MemberReference member startCharno_ter ^ ^ ^ MemberReference member endLineno_ter ^ ^ ^ MemberReference member endCharno_ter ^ ^ ^ ^ member markText_ter ^ ^ ^ ^ ^ 
+jsdocBuilder.markText(multilineText, startLineno, startCharno, endLineno, endCharno);
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = next();
+
+StatementExpression expression Assignment expressionl MemberReference member state_ter ^ ^ ^ ^ value MemberReference qualifier State_ter ^ ^ member SEARCHING_ANNOTATION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+state = State.SEARCHING_ANNOTATION;
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments MemberReference member line_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append(line);
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = false;
+
+StatementExpression expression Assignment expressionl MemberReference member multilineText_ter ^ ^ ^ ^ value MethodInvocation qualifier multilineText_ter ^ ^ member trim_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+multilineText = multilineText.trim();
+
+StatementExpression expression Assignment expressionl MemberReference member line_ter ^ ^ ^ ^ value MethodInvocation qualifier stream_ter ^ ^ member getRemainingJSDocLine_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+line = stream.getRemainingJSDocLine();
+
+StatementExpression expression MethodInvocation qualifier stream_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+stream.append("null");
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append("null");
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments MethodInvocation arguments MemberReference member token_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append(toString(token));
+
+StatementExpression expression Assignment expressionl MemberReference member line_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member line_ter ^ ^ ^ ^ member trimEnd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+line = trimEnd(line);
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append(null);
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member startLineno_ter ^ ^ ^ MemberReference member startCharno_ter ^ ^ ^ MemberReference member endLineno_ter ^ ^ ^ MemberReference member endCharno_ter ^ ^ ^ ^ member markText_ter ^ ^ ^ ^ ^ 
+jsdocBuilder.markText(multilineText, startLineno, startCharno, endLineno, endCharno);
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member markText_ter ^ ^ ^ ^ ^ 
+builder.markText("null");
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+jsdocBuilder.append("null");
+
+StatementExpression expression Assignment expressionl MemberReference member multilineText_ter ^ ^ ^ ^ value MethodInvocation qualifier multilineText_ter ^ ^ member trim_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+multilineText = multilineText.trim();
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value true_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = true;
+
+StatementExpression expression Assignment expressionl MemberReference member ignoreStar_ter ^ ^ ^ ^ value Literal value false_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ignoreStar = false;
+
+StatementExpression expression Assignment expressionl MemberReference member state_ter ^ ^ ^ ^ value MemberReference qualifier State_ter ^ ^ member SEARCHING_ANNOTATION_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+state = State.SEARCHING_ANNOTATION;
+
+StatementExpression expression Assignment expressionl MemberReference member token_ter ^ ^ ^ ^ value MethodInvocation member next_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+token = next();
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement_ter ^ 
+return;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member option_ter ^ ^ ^ ^ operandr MemberReference qualifier WhitespaceOption_ter ^ ^ member PRESERVE_ter ^ ^ ^ ^ ^ ^ ^ 
+if((option != WhitespaceOption.PRESERVE)){
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member trimEnd_ter ^ ^ ^ ^ ^ 
+builder.trimEnd("null");
+
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier builder_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((builder.length() > 0)){
+
+
+StatementExpression expression Assignment expressionl MemberReference member line_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member line_ter ^ ^ ^ ^ member trimEnd_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+line = trimEnd(line);
+break;
+
+StatementExpression expression MethodInvocation qualifier multilineText_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+multilineText.append("null");
+
+StatementExpression expression MethodInvocation member skipEOLs_ter ^ ^ ^ ^ ^ 
+skipEOLs();
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member next_ter ^ ^ ^ ^ ^ 
+builder.next("null");
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append(false);
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append(true);
+
+StatementExpression expression MethodInvocation qualifier WhitespaceOption_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+WhitespaceOption.append("null");
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOC)){
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier multilineText_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((multilineText.length() > 0)){
+
+StatementExpression expression MethodInvocation qualifier jsdocBuilder_ter ^ ^ arguments MemberReference member multilineText_ter ^ ^ ^ MemberReference member startLineno_ter ^ ^ ^ MemberReference member startCharno_ter ^ ^ ^ MemberReference member endLineno_ter ^ ^ ^ MemberReference member endCharno_ter ^ ^ ^ ^ member markText_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+jsdocBuilder.markText(multilineText, startLineno, startCharno, endLineno, endCharno);
+break;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.ANNOTATION)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((token == JsDocToken.EOC) || (token == JsDocToken.EOF))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member token_ter ^ ^ ^ ^ operandr MemberReference qualifier JsDocToken_ter ^ ^ member EOF_ter ^ ^ ^ ^ ^ ^ ^ 
+if((token == JsDocToken.EOF)){
+
+StatementExpression expression Assignment expressionl MemberReference member multilineText_ter ^ ^ ^ ^ value MethodInvocation qualifier multilineText_ter ^ ^ member trim_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+BreakStatement_ter ^ 
+multilineText = multilineText.trim();
+break;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation qualifier builder_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member append_ter ^ ^ ^ ^ ^ 
+builder.append(0);
+
+ReturnStatement expression MemberReference member token_ter ^ ^ ^ ^ ^ 
+if (true) { return token; }
+
+BreakStatement_ter ^ 
+BreakStatement_ter ^ 
+break;
+break;
+
+IfStatement condition MemberReference member ignoreStar_ter ^ ^ ^ ^ ^ 
+if(ignoreStar){
+
+stderr: 

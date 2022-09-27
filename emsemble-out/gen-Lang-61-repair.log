@@ -1,0 +1,142 @@
+stdout: LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member thisBuf_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - thisBuf);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member thisBuf_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member strLen_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (strLen - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator <=_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length <= strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator >=_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length >= strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member len_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - len);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member len_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (len - strLen);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+long len = (thisBuf.length - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = strLen;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length + strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member thisBuf_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.thisBuf - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member buffer_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.buffer - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - thisBuf.length);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator ==_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length == strLen);
+
+LocalVariableDeclaration type BasicType name char_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+char[] len = (thisBuf.length - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - str);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member buffer_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - buffer);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int len = (thisBuf.length - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (str - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - startIndex);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member buffer_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (buffer - strLen);
+
+StatementExpression expression Assignment expressionl MemberReference member startIndex_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ if_true Literal value 0_ter ^ ^ ^ ^ if_false MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+startIndex = ((startIndex < 0))?0:startIndex;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (i - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member strLen_ter ^ ^ ^ ^ operandr MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (strLen - thisBuf.length);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator >=_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr MemberReference member size_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (startIndex >= size);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length / strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator ==_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (str == null);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member size_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - size);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member len_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.len - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member j_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (i + j);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = thisBuf.length;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member i_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length - i);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member startIndex_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (startIndex - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator %_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length % strLen);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member thisBuf_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((thisBuf != 1)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member size_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (size - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = ((thisBuf.length - strLen) - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member strLen_ter ^ ^ ^ ^ operandr MemberReference member startIndex_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (strLen - startIndex);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member thisBuf_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((thisBuf != 0)){
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member strLen_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.strLen - strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ operandr MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = ((thisBuf.length - strLen) - thisBuf.length);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator >_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length > strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator >>_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length >> strLen);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = str.charAt(0);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int len = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name len_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier thisBuf_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member strLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int len = (thisBuf.length != strLen);
+
+stderr: 

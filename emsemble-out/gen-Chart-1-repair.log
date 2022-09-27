@@ -1,0 +1,252 @@
+stdout: condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((dataset == null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((dataset != null)){
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((index != null)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((dataset >= null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset == null))){
+
+condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((dataset > null)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((dataset <= null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier dataset_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && dataset.isEmpty())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isDomainGridlinesVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isDomainGridlinesVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isRangeZeroBaselineVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isRangeZeroBaselineVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isRangeGridlinesVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isRangeGridlinesVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isRangeMinorGridlinesVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isRangeMinorGridlinesVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isDomainCrosshairVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isDomainCrosshairVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isRangeCrosshairVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isRangeCrosshairVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isRangeCrosshairLockedOnData_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isRangeCrosshairLockedOnData())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member getDrawSharedDomainAxis_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.getDrawSharedDomainAxis())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isDomainPannable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isDomainPannable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isRangePannable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isRangePannable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isDomainZoomable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isDomainZoomable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member isRangeZoomable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.isRangeZoomable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member canSelectByPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.canSelectByPoint())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier plot_ter ^ ^ member canSelectByRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && plot.canSelectByRegion())){
+
+StatementExpression expression MethodInvocation member removeAnnotations_ter ^ ^ ^ ^ ^ 
+removeAnnotations();
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member plot_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((plot != null)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((dataset != null)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr MemberReference member dataset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset == dataset))){
+
+condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((dataset < null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier dataset_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !dataset.isEmpty())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) || (dataset == null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator -_ter ^ ^ operandl MemberReference member seriesCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (seriesCount - 1))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((dataset && (dataset != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset != null))){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) || (dataset != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (i >= 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member item_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (item != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member plot_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (plot != null))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset == 1))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member result_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((result != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr MemberReference member dataset_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset != dataset))){
+
+IfStatement condition MemberReference member dataset_ter ^ ^ ^ ^ ^ 
+if(dataset){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MemberReference member i_ter ^ ^ ^ ^ operandr MemberReference member seriesCount_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (i < seriesCount))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset != 1))){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member seriesCount_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ 
+if((seriesCount != null)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl This selectors MemberReference member plot_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (this.plot == null))){
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member clearDomainAxes_ter ^ ^ ^ ^ ^ 
+plot.clearDomainAxes();
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member configureDomainAxes_ter ^ ^ ^ ^ ^ 
+plot.configureDomainAxes();
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member clearRangeAxes_ter ^ ^ ^ ^ ^ 
+plot.clearRangeAxes();
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member configureRangeAxes_ter ^ ^ ^ ^ ^ 
+plot.configureRangeAxes();
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member clearDomainMarkers_ter ^ ^ ^ ^ ^ 
+plot.clearDomainMarkers();
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member clearRangeMarkers_ter ^ ^ ^ ^ ^ 
+plot.clearRangeMarkers();
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member clearAnnotations_ter ^ ^ ^ ^ ^ 
+plot.clearAnnotations();
+
+StatementExpression expression MethodInvocation qualifier plot_ter ^ ^ member clearSelection_ter ^ ^ ^ ^ ^ 
+plot.clearSelection();
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isDomainGridlinesVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isDomainGridlinesVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isRangeZeroBaselineVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isRangeZeroBaselineVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isRangeGridlinesVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isRangeGridlinesVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isRangeMinorGridlinesVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isRangeMinorGridlinesVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isDomainCrosshairVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isDomainCrosshairVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isRangeCrosshairVisible_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isRangeCrosshairVisible())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isRangeCrosshairLockedOnData_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isRangeCrosshairLockedOnData())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member getDrawSharedDomainAxis_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.getDrawSharedDomainAxis())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isDomainPannable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isDomainPannable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isRangePannable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isRangePannable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isDomainZoomable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isDomainZoomable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member isRangeZoomable_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.isRangeZoomable())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member canSelectByPoint_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.canSelectByPoint())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier plot_ter ^ ^ member canSelectByRegion_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && !plot.canSelectByRegion())){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset == 0))){
+
+IfStatement condition MethodInvocation qualifier dataset_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+if(dataset.isEmpty()){
+
+StatementExpression expression MethodInvocation qualifier result_ter ^ ^ arguments MemberReference member item_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+result.add(item);
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (dataset != 0))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member plot_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (plot == null))){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isDomainGridlinesVisible_ter ^ ^ ^ ^ ^ 
+if(plot.isDomainGridlinesVisible()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isRangeZeroBaselineVisible_ter ^ ^ ^ ^ ^ 
+if(plot.isRangeZeroBaselineVisible()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isRangeGridlinesVisible_ter ^ ^ ^ ^ ^ 
+if(plot.isRangeGridlinesVisible()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isRangeMinorGridlinesVisible_ter ^ ^ ^ ^ ^ 
+if(plot.isRangeMinorGridlinesVisible()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isDomainCrosshairVisible_ter ^ ^ ^ ^ ^ 
+if(plot.isDomainCrosshairVisible()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isRangeCrosshairVisible_ter ^ ^ ^ ^ ^ 
+if(plot.isRangeCrosshairVisible()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isRangeCrosshairLockedOnData_ter ^ ^ ^ ^ ^ 
+if(plot.isRangeCrosshairLockedOnData()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member getDrawSharedDomainAxis_ter ^ ^ ^ ^ ^ 
+if(plot.getDrawSharedDomainAxis()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isDomainPannable_ter ^ ^ ^ ^ ^ 
+if(plot.isDomainPannable()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isRangePannable_ter ^ ^ ^ ^ ^ 
+if(plot.isRangePannable()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isDomainZoomable_ter ^ ^ ^ ^ ^ 
+if(plot.isDomainZoomable()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member isRangeZoomable_ter ^ ^ ^ ^ ^ 
+if(plot.isRangeZoomable()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member canSelectByPoint_ter ^ ^ ^ ^ ^ 
+if(plot.canSelectByPoint()){
+
+IfStatement condition MethodInvocation qualifier plot_ter ^ ^ member canSelectByRegion_ter ^ ^ ^ ^ ^ 
+if(plot.canSelectByRegion()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member dataset_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && dataset)){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member dataset_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member index_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((dataset != null) && (index != null))){
+
+stderr: 

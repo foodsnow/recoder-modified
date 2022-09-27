@@ -1,0 +1,551 @@
+stdout: IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first)){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first)){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!isGet(first)){
+
+IfStatement condition MethodInvocation arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(isGet(first)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member first_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((first != null)){
+
+StatementExpression expression MethodInvocation qualifier first_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+first.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier first_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+first.setQuotedString();
+
+IfStatement condition MemberReference member first_ter ^ ^ ^ ^ ^ 
+if(first){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ 
+if(!n.isGet(first)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member first_ter ^ ^ ^ ^ ^ 
+if(!first){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member first_ter ^ ^ ^ ^ operandr Literal selectors MethodInvocation arguments MethodInvocation qualifier first_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+if((first != "null")){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member first_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((first != null) && !NodeUtil.isGet(first))){
+
+IfStatement condition MethodInvocation qualifier first_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+if(first.isName()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet()){
+
+StatementExpression expression MethodInvocation member reportChange_ter ^ ^ ^ ^ ^ 
+reportChange();
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member annotateCalls_ter ^ ^ ^ ^ 
+if(!NodeUtil.annotateCalls(first)){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FREE_CALL_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(Node.FREE_CALL, true)){
+
+IfStatement condition MethodInvocation qualifier first_ter ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(first.isGet()){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ 
+if(!NodeUtil.isGet(n)){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.hasChildren())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isFromExterns())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.hasOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.hasMoreThanOneChild())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isUnscopedQualifiedName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isVarArgs())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isOptionalArg())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isSyntheticBlock())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.wasEmptyNode())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isOnlyModifiesThisCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isNoSideEffectsCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isLocalResultCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isQuotedString())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAdd_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isAdd())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAnd_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isAnd())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isArrayLit())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAssign_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isAssign())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isAssignAdd())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isBlock_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isBlock())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isBreak_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isBreak())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isCall())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCase_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isCase())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCast_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isCast())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCatch_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isCatch())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isComma_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isComma())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isContinue_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isContinue())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isDebugger())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDec_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isDec())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isDefaultCase())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isDelProp())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDo_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isDo())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isEmpty())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isExprResult())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFalse_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isFalse())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFor_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isFor())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFunction_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isFunction())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isGetterDef())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isGetElem())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isGetProp())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isHook_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isHook())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isIf_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isIf())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isIn_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isIn())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isInc_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isInc())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isInstanceOf())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isLabel_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isLabel())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isLabelName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isName())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNE_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isNE())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNew_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isNew())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNot_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isNot())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNull_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isNull())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNumber_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isNumber())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isObjectLit())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isOr_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isOr())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isParamList_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isParamList())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isRegExp())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isReturn_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isReturn())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isScript_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isScript())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isSetterDef())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isString_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isString())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isStringKey())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isSwitch())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isThis_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isThis())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isThrow_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isThrow())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isTrue_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isTrue())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isTry_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isTry())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isTypeOf())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isVar_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isVar())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isVoid_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isVoid())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isWhile_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isWhile())){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isWith_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.isWith())){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member FREE_CALL_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(Node.FREE_CALL, true)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member getString_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.getString())){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ 
+if(!NodeUtil.isGet()){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier first_ter ^ ^ member isName_ter ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ ^ ^ 
+if((first.isName() && !NodeUtil.isGet(first))){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member getString_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first.getString())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.hasChildren())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isFromExterns())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.hasOneChild())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.hasMoreThanOneChild())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isQualifiedName())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isUnscopedQualifiedName())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isVarArgs())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isOptionalArg())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isSyntheticBlock())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.wasEmptyNode())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isOnlyModifiesThisCall())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isNoSideEffectsCall())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isLocalResultCall())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isQuotedString())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAdd_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isAdd())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAnd_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isAnd())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isArrayLit())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAssign_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isAssign())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isAssignAdd())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isBlock_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isBlock())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isBreak_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isBreak())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCall_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isCall())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCase_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isCase())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCast_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isCast())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isCatch_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isCatch())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isComma_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isComma())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isContinue_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isContinue())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isDebugger())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDec_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isDec())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isDefaultCase())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isDelProp())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isDo_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isDo())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isEmpty())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isExprResult())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFalse_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isFalse())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFor_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isFor())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isFunction_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isFunction())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isGetterDef())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isGetElem())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isGetProp())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isHook_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isHook())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isIf_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isIf())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isIn_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isIn())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isInc_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isInc())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isInstanceOf())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isLabel_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isLabel())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isLabelName())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isName_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isName())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNE_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isNE())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNew_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isNew())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNot_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isNot())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNull_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isNull())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isNumber_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isNumber())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isObjectLit())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isOr_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isOr())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isParamList_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isParamList())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isRegExp())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isReturn_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isReturn())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isScript_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isScript())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isSetterDef())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isString_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isString())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isStringKey())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isSwitch())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isThis_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isThis())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isThrow_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isThrow())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isTrue_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isTrue())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isTry_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isTry())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isTypeOf())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isVar_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isVar())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isVoid_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isVoid())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isWhile_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isWhile())){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MethodInvocation qualifier first_ter ^ ^ member isWith_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first.isWith())){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member putBooleanProp_ter ^ ^ ^ ^ 
+if(!NodeUtil.putBooleanProp(first)){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DIRECT_EVAL_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(Node.DIRECT_EVAL, true)){
+
+StatementExpression expression MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+!NodeUtil.isGet(first);
+
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first, first)){
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+n.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+n.setQuotedString();
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier first_ter ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!first.isGet()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member DIRECT_EVAL_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(Node.DIRECT_EVAL, true)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first, false)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member first_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((first == null)){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(!NodeUtil.isGet(first, false)){
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier first_ter ^ ^ member getString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.isGet(first).equals(first.getString())){
+
+condition MethodInvocation prefix_operators !_ter ^ ^ qualifier first_ter ^ ^ arguments MemberReference member first_ter ^ ^ ^ ^ member isGet_ter ^ ^ ^ ^ 
+if(!first.isGet(first)){
+IfStatement condition MemberReference member first_ter ^ ^ ^ ^ ^ 
+if(first){
+
+stderr: 

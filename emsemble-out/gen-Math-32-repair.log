@@ -1,0 +1,132 @@
+stdout: condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier tree_ter ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean)tree.getAttribute()){
+IfStatement condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier tree_ter ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean)tree.getAttribute()){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier tree_ter ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ 
+if(!tree.getAttribute()){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr ReferenceType name Boolean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((tree instanceof Boolean)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tree != null)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr ReferenceType name Boolean_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((tree instanceof Boolean)){
+
+StatementExpression expression MethodInvocation qualifier tree_ter ^ ^ member condense_ter ^ ^ ^ ^ ^ 
+tree.condense();
+
+StatementExpression expression MethodInvocation member computeGeometricalProperties_ter ^ ^ ^ ^ ^ 
+computeGeometricalProperties();
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member tree_ter ^ ^ ^ ^ ^ 
+if(!tree){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MemberReference member tree_ter ^ ^ ^ ^ ^ 
+if(tree){
+
+condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier loc2 ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean).getAttribute()){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member tree_ter ^ ^ ^ ^ ^ 
+if(!tree){
+
+IfStatement condition MethodInvocation qualifier tree_ter ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ 
+if(tree.getAttribute()){
+
+
+
+IfStatement condition MemberReference member tree_ter ^ ^ ^ ^ ^ 
+if(tree){
+
+condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier tree_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean)tree.getName()){
+condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier par1 ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean).getAttribute()){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tree != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tree == null)){
+
+condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier loc1 ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean).getAttribute()){
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr ReferenceType name Vector2D_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((tree instanceof Vector2D)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tree instanceof 0)){
+
+
+condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier loc0 ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean).getAttribute()){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((tree == null)){
+return;
+}
+IfStatement condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier tree_ter ^ ^ member getAttribute_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+if((Boolean)(Boolean)tree.getAttribute()){
+
+StatementExpression expression MethodInvocation arguments MemberReference qualifier Vector2D_ter ^ ^ member NaN_ter ^ ^ ^ ^ member setBarycenter_ter ^ ^ ^ ^ ^ 
+setBarycenter(Vector2D.NaN);
+
+StatementExpression expression MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member setSize_ter ^ ^ ^ ^ ^ 
+setSize(0);
+
+StatementExpression expression MethodInvocation arguments ClassCreator type ReferenceType name Vector2D_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ member setBarycenter_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+setBarycenter(new Vector2D(0, 0));
+
+IfStatement condition SuperMethodInvocation arguments MemberReference member tree_ter ^ ^ ^ ^ member computeGeometricalProperties_ter ^ ^ ^ ^ ^ 
+if(super.computeGeometricalProperties(tree)){
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((tree instanceof 0)){
+
+
+IfStatement condition BinaryOperation operator instanceof_ter ^ ^ operandl MemberReference member tree_ter ^ ^ ^ ^ operandr ReferenceType name BSPTree_ter ^ ^ arguments TypeArgument type ReferenceType name Euclidean2D_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg Euclidean2D
+arg 
+arg Euclidean2D
+if((tree instanceof BSPTree<Euclidean2D>)){
+
+StatementExpression expression MethodInvocation arguments MemberReference qualifier Double_ter ^ ^ member POSITIVE_INFINITY_ter ^ ^ ^ ^ member setSize_ter ^ ^ ^ ^ ^ 
+setSize(Double.POSITIVE_INFINITY);
+
+condition Cast type ReferenceType name Boolean_ter ^ ^ ^ ^ expression MethodInvocation qualifier tree_ter ^ ^ member computeGeometricalProperties_ter ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+if((Boolean)tree.computeGeometricalProperties()){
+stderr: 

@@ -1,0 +1,100 @@
+stdout: StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(varName);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member nameNode_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(nameNode);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments MemberReference member varName_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+remove(varName);
+
+StatementExpression expression MethodInvocation arguments MemberReference member varName_ter ^ ^ ^ ^ member createSynthesizedExternVar_ter ^ ^ ^ ^ ^ 
+createSynthesizedExternVar(varName);
+
+StatementExpression expression MethodInvocation qualifier nameNode_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+nameNode.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier nameNode_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+nameNode.setQuotedString();
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member putBooleanProp_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.putBooleanProp(varName);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member loc1 ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove();
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove();
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove();
+
+StatementExpression expression MethodInvocation qualifier nameNode_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+nameNode.remove(varName);
+
+StatementExpression expression MethodInvocation member remove_ter ^ ^ ^ ^ ^ 
+remove();
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member addChildToBack_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.addChildToBack(varName);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member varName_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((varName != null)){
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ 
+compiler.reportCodeChange();
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(varName, false);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(varName, true);
+
+StatementExpression expression MethodInvocation qualifier varName_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varName.remove(varName);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member nameNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((nameNode != null)){
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member getSynthesizedExternsRoot_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(getSynthesizedExternsRoot);
+
+StatementExpression expression MethodInvocation qualifier nameNode_ter ^ ^ arguments MemberReference qualifier Node_ter ^ ^ member IS_CONSTANT_NAME_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member putBooleanProp_ter ^ ^ ^ ^ ^ 
+nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member createSynthesizedExternVar_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.createSynthesizedExternVar(varName);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ MemberReference member varName_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(varName, varName);
+
+IfStatement condition MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+if(varsToDeclareInExterns.remove(varName)){
+
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference qualifier Token_ter ^ ^ member VAR_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(Token.VAR);
+
+StatementExpression expression MethodInvocation qualifier Node_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+Node.remove(varName);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference qualifier Token_ter ^ ^ member VAR_ter ^ ^ ^ MemberReference member nameNode_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(Token.VAR, nameNode);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.debug(varName);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ MemberReference member par1 ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(varName, );
+
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member VAR_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(VAR);
+
+StatementExpression expression MethodInvocation qualifier varsToDeclareInExterns_ter ^ ^ arguments MemberReference member varName_ter ^ ^ ^ MemberReference member nameNode_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+varsToDeclareInExterns.remove(varName, nameNode);
+
+stderr: 

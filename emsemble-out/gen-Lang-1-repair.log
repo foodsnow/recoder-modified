@@ -1,0 +1,117 @@
+stdout: LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name char_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final char hexDigits = (str.length() - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final long hexDigits = (str.length() - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() >= pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() <= pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member str_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() - str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() == pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfx_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() - pfx);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member hex_prefixes_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() - hex_prefixes);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() + pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = str.length();
+
+StatementExpression expression Assignment expressionl MemberReference member pfxLen_ter ^ ^ ^ ^ value MethodInvocation qualifier pfx_ter ^ ^ member length_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+pfxLen += pfx.length();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier pfx_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (pfx.length() - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() != pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator /_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() / pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() < pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() > pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator %_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.length() % pfxLen);
+
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createInteger_ter ^ ^ ^ ^ ^ 
+if (true) { return createInteger(str); }
+
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member pfxLen_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((pfxLen > 0)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = str.startsWith((str.length() - pfxLen));
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = pfxLen;
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name char_ter ^ ^ ^ ^ declarators VariableDeclarator name lastChar_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member charAt_ter ^ ^ ^ ^ ^ ^ ^ 
+final char lastChar = str.charAt((str.length() - 1));
+
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createBigInteger_ter ^ ^ ^ ^ ^ 
+if (true) { return createBigInteger(str); }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final boolean hexDigits = (str.length() - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier loc3 ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (.length() - pfxLen);
+
+
+ReturnStatement expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createLong_ter ^ ^ ^ ^ ^ 
+if (true) { return createLong(str); }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member createNumber_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str.createNumber() - pfxLen);
+
+ContinueStatement_ter ^ 
+continue;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ ^ ^ ^ 
+int hexDigits = str.length();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier hexDigits_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (hexDigits.length() - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments MemberReference member pfxLen_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = str.startsWith(pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer MethodInvocation qualifier str_ter ^ ^ arguments MemberReference member str_ter ^ ^ ^ ^ member startsWith_ter ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = str.startsWith(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member pfxLen_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (pfxLen - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl MethodInvocation qualifier str_ter ^ ^ member length_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = ((str.length() - pfxLen) - pfxLen);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name hexDigits_ter ^ ^ initializer BinaryOperation operator -_ter ^ ^ operandl MemberReference member str_ter ^ ^ ^ ^ operandr MemberReference member pfxLen_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+final int hexDigits = (str - pfxLen);
+
+stderr: 

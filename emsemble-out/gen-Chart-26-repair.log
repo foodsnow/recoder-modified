@@ -1,0 +1,148 @@
+stdout: LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member getOwner_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getOwner();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member owner_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((owner != null)){
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member drawLabel_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.drawLabel();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier plotState_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = plotState.getEntityCollection();
+
+StatementExpression expression MethodInvocation qualifier owner_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+owner.clear();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ arguments This_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection(this);
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ arguments This selectors MemberReference member labelToolTip_ter ^ ^ ^ ^ ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection(this.labelToolTip);
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier par0 ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = .getEntityCollection();
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member owner_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((owner == null)){
+return null;}
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member owner_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((owner == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member entities_ter ^ ^ ^ ^ value MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+entities = owner.getEntityCollection();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ arguments This selectors MemberReference member labelURL_ter ^ ^ ^ ^ ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection(this.labelURL);
+
+StatementExpression expression MethodInvocation qualifier entities_ter ^ ^ arguments ClassCreator type ReferenceType name AxisLabelEntity_ter ^ ^ ^ ^ arguments This_ter ^ MemberReference member hotspot_ter ^ ^ ^ This selectors MemberReference member labelToolTip_ter ^ ^ ^ ^ ^ This selectors MemberReference member labelURL_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+entities.add(new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((owner.getEntityCollection() != null)){
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final EntityCollection entities = owner.getEntityCollection();
+
+StatementExpression expression MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ 
+owner.getEntityCollection();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+EntityCollection<?> entities = owner.getEntityCollection();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ arguments Literal value null_ter ^ ^ ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection(null);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member plotState_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((plotState != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member owner_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member state_ter ^ ^ ^ ^ ^ 
+if((owner == null)){
+return state;}
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ arguments Literal value false_ter ^ ^ ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection(false);
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member hotspot_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((hotspot != null)){
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.add();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ arguments MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection(owner.getEntityCollection());
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.get();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member labelToolTip_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.labelToolTip != null)){
+
+StatementExpression expression MethodInvocation qualifier plotState_ter ^ ^ member configure_ter ^ ^ ^ ^ ^ 
+plotState.configure();
+
+StatementExpression expression Assignment expressionl MemberReference member owner_ter ^ ^ ^ ^ value MethodInvocation qualifier owner_ter ^ ^ member clear_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+owner = owner.clear();
+
+StatementExpression expression MethodInvocation member configure_ter ^ ^ ^ ^ ^ 
+configure();
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member getName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getName();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member state_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((state != null)){
+
+LocalVariableDeclaration type ReferenceType name ChartRenderingInfo_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+ChartRenderingInfo entities = owner.getEntityCollection();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member labelURL_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.labelURL != null)){
+
+LocalVariableDeclaration type ReferenceType name EntityCollection_ter ^ ^ ^ ^ declarators VariableDeclarator name entities_ter ^ ^ initializer MethodInvocation qualifier owner_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member getEntityCollection_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+EntityCollection entities = owner.getEntityCollection(true);
+
+stderr: 

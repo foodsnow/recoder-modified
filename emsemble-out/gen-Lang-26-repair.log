@@ -1,0 +1,254 @@
+stdout: LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ MemberReference member mLocale_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, mLocale);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference qualifier mTimeZone_ter ^ ^ member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone.mTimeZone);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference qualifier MethodInvocation member getTimeZone_ter ^ ^ ^ ^ member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(getTimeZone().mTimeZone);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member date_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(date);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final Calendar c = new GregorianCalendar(mTimeZone);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ MemberReference member date_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, date);
+
+StatementExpression expression MethodInvocation member init_ter ^ ^ ^ ^ ^ 
+init();
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar();
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, false);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, true);
+
+StatementExpression expression ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+new GregorianCalendar(mTimeZone);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, null);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member mTimeZone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((mTimeZone == null)){
+return null;}
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member mTimeZone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mTimeZone != null)){
+continue;
+}
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments Literal value false_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(false);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments Literal value true_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(true);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mMaxLengthEstimate_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mMaxLengthEstimate);
+
+StatementExpression expression SuperMethodInvocation member format_ter ^ ^ ^ ^ ^ 
+super.format();
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(null);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, "null");
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member date_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((date == null)){
+return null;}
+StatementExpression expression Assignment expressionl MemberReference member mTimeZone_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+mTimeZone = new GregorianCalendar(mTimeZone);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member mTimeZone_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((mTimeZone == null)){
+continue;
+}
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments This_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(this);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ MemberReference member mMaxLengthEstimate_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, mMaxLengthEstimate);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member c_ter ^ ^ ^ ClassCreator type ReferenceType name StringBuffer_ter ^ ^ ^ ^ arguments MemberReference member mMaxLengthEstimate_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(c, new StringBuffer(mMaxLengthEstimate));
+
+StatementExpression expression Assignment expressionl MemberReference member c_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+c = new GregorianCalendar(mTimeZone);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member par1 ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar();
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ This_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, this);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ MemberReference member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, mTimeZone);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar("null");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member date_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((date != null)){
+continue;
+}
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, 0);
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MethodInvocation qualifier date_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(date.toString());
+
+IfStatement condition MethodInvocation member getTimeZoneOverridesCalendar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(getTimeZoneOverridesCalendar()){
+return null;}
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name StringBuffer_ter ^ ^ ^ ^ arguments MemberReference member mMaxLengthEstimate_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new StringBuffer(mMaxLengthEstimate);
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MethodInvocation member toString_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(toString());
+
+LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member mTimeZone_ter ^ ^ ^ MemberReference member mLocale_ter ^ ^ ^ MemberReference member date_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Calendar c = new GregorianCalendar(mTimeZone, mLocale, date);
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member getTimeZoneOverridesCalendar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(!getTimeZoneOverridesCalendar()){
+return null;}
+stderr: 

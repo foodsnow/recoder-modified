@@ -1,0 +1,329 @@
+stdout: ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry().contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+return getRegistry().contains(value);
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ ^ ^ 
+return register(value);
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ ^ 
+return unregister(value);
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return contains(value);
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return contains(value).contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry(value).contains(new IDKey(value));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ operandr MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return (getRegistry().contains(new IDKey(value)) && getRegistry().contains(new IDKey(value)));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((value != null) && getRegistry().contains(new IDKey(value)));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+return getRegistry().register(value);
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+return getRegistry().unregister(value);
+ReturnStatement expression MethodInvocation member getRegistry_ter ^ ^ ^ ^ ^ 
+return getRegistry();
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ operandr MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return (getRegistry().contains(new IDKey(value)) || getRegistry().contains(new IDKey(value)));
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return contains().contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member isRegistered_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry().isRegistered(new IDKey(value));
+ReturnStatement expression MethodInvocation member contains_ter ^ ^ ^ ^ ^ 
+return contains();
+ReturnStatement expression MemberReference member value_ter ^ ^ ^ ^ ^ 
+return value;
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return getRegistry().contains(new IDKey(new IDKey(value)));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member isRegistered_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return isRegistered().contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry().contains(value).contains(new IDKey(value));
+ReturnStatement expression BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((value == null) && getRegistry().contains(new IDKey(value)));
+ReturnStatement expression MethodInvocation qualifier value_ter ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+return value.contains();
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+return getRegistry().contains(register(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+return getRegistry().contains(unregister(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry().register(value).contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry().unregister(value).contains(new IDKey(value));
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((value == null)){
+return false;}
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return getRegistry(new IDKey(value)).contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+return contains(new IDKey(value)).contains(new IDKey(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry().contains(new IDKey());
+ReturnStatement expression BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+return ((value != null) || getRegistry().contains(new IDKey(value)));
+ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member contains_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return contains(value, new IDKey(value));
+ReturnStatement expression MethodInvocation qualifier value_ter ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+return value.getRegistry();
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry().add(new IDKey(value));
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ ^ ^ 
+register(value);
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ ^ 
+unregister(value);
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+add().add(new IDKey(value));
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(value);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+getRegistry().add(value);
+
+StatementExpression expression SuperMethodInvocation member register_ter ^ ^ ^ ^ ^ 
+super.register();
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member register_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry().register(new IDKey(value));
+
+StatementExpression expression MethodInvocation member add_ter ^ ^ ^ ^ ^ 
+add();
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+add(value).add(new IDKey(value));
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+getRegistry().register(value);
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+getRegistry().unregister(value);
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+add(value, new IDKey(value));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getRegistry_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(getRegistry());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier value_ter ^ ^ member getRegistry_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+add(value.getRegistry());
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+add(new IDKey(value));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value == null)){
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+add(new IDKey(value)).add(new IDKey(value));
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+getRegistry().add(new IDKey(new IDKey(value)));
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassReference type ReferenceType name IDKey_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+ClassReference type ReferenceType name IDKey_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name IDKey_ter ^ ^ ^ ^ ^ 
+arg 
+getRegistry().add(IDKey);
+
+StatementExpression expression SuperMethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+super.getRegistry().add(new IDKey(value));
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry().add(value, new IDKey(value));
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry().add(new IDKey());
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((value == null)){
+return;
+}
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry().remove(new IDKey(value));
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ ^ ^ 
+register(value);
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ ^ 
+unregister(value);
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+remove(value);
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+remove().remove(new IDKey(value));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value != null)){
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+getRegistry().remove(value);
+
+StatementExpression expression SuperMethodInvocation member unregister_ter ^ ^ ^ ^ ^ 
+super.unregister();
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member register_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+getRegistry().register(value);
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+getRegistry().unregister(value);
+
+StatementExpression expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+remove(value, new IDKey(value));
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+remove(value).remove(new IDKey(value));
+
+StatementExpression expression MethodInvocation arguments MethodInvocation qualifier value_ter ^ ^ member getRegistry_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+remove(value.getRegistry());
+
+StatementExpression expression MethodInvocation arguments MethodInvocation member getRegistry_ter ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+remove(getRegistry());
+
+StatementExpression expression MethodInvocation member remove_ter ^ ^ ^ ^ ^ 
+remove();
+
+StatementExpression expression MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+remove(new IDKey(value));
+
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return getRegistry().remove(new IDKey(value));
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member unregister_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry().unregister(new IDKey(value));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((value == null)){
+
+StatementExpression expression SuperMethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+super.getRegistry().remove(new IDKey(value));
+
+StatementExpression expression MethodInvocation member getRegistry_ter ^ ^ ^ ^ ^ 
+getRegistry();
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry(value).remove(new IDKey(value));
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((value == null)){
+return;
+}
+StatementExpression expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ClassCreator type ReferenceType name IDKey_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member remove_ter ^ ^ ^ ^ member getRegistry_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+getRegistry().remove(value, new IDKey(value));
+
+stderr: 

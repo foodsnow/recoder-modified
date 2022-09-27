@@ -1,0 +1,153 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(copy.data);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member copy_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((copy != null)){
+
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new ArrayList();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member data_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((data != null)){
+
+StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
+clear();
+
+StatementExpression expression MethodInvocation member findBoundsByIteration_ter ^ ^ ^ ^ ^ 
+findBoundsByIteration();
+
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member copy_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((copy != 0)){
+
+StatementExpression expression MethodInvocation qualifier copy_ter ^ ^ member clear_ter ^ ^ ^ ^ ^ 
+copy.clear();
+
+StatementExpression expression MethodInvocation qualifier copy_ter ^ ^ member findBoundsByIteration_ter ^ ^ ^ ^ ^ 
+copy.findBoundsByIteration();
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments This_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(this);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member copy_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(copy);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member copy_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((copy == null)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member end_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(end);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member start_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(start);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments MemberReference member data_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(data);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name IllegalArgumentException_ter ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new IllegalArgumentException("null");
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java("null");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member data_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((data != 0)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(0);
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new util();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member data_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.data.size() != null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((copy.data != null)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((copy.data == null)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java();
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name ArrayList_ter ^ ^ ^ ^ arguments MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new ArrayList(copy.data);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member copy_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((copy == null)){
+return null;}
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+copy.data = new java(new java());
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+copy.data = copy.data;
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments This selectors MemberReference member data_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(this.data.size());
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments Literal value 1_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(1);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member data_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((data == null)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl This selectors MemberReference member data_ter ^ ^ ^ MethodInvocation member size_ter ^ ^ ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((this.data.size() != 0)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member copy_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((copy == 0)){
+
+StatementExpression expression Assignment expressionl MemberReference qualifier copy_ter ^ ^ member data_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name java_ter ^ ^ sub_type ReferenceType name util_ter ^ ^ sub_type ReferenceType name ArrayList_ter ^ ^ ^ ^ ^ ^ ^ ^ arguments Literal value null_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+copy.data = new java(null);
+
+stderr: 

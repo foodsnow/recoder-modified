@@ -1,0 +1,236 @@
+stdout: LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createDouble(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member isAllZeros_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = isAllZeros(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member allZeros_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(allZeros);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(exp);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double f = createFloat(str);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ 
+createFloat(str);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member mant_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(mant);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = isInfinite(str);
+
+LocalVariableDeclaration type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Float f = createFloat(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat();
+
+LocalVariableDeclaration type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Double f = createFloat(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ MemberReference member exp_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(exp, exp);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ MemberReference member mant_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(exp, mant);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(exp, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member mant_ter ^ ^ ^ MemberReference member exp_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(mant, exp);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(exp, true);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member mant_ter ^ ^ ^ MemberReference member mant_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(mant, mant);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer Cast type ReferenceType name Float_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member exp_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final Float f = (Float)createFloat(exp);
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createFloat(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = isInfinite(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member doubleValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = doubleValue(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createBigDecimal_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createBigDecimal(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member floatValue_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = floatValue(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member allZeros_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(allZeros);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float d = createDouble(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(f);
+
+StatementExpression expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ 
+createDouble(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble();
+
+LocalVariableDeclaration type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Double d = createDouble(str);
+
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member allZeros_ter ^ ^ ^ MemberReference member allZeros_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(allZeros, allZeros);
+
+ReturnStatement expression MemberReference member f_ter ^ ^ ^ ^ ^ 
+if (true) { return f; }
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member allZeros_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(allZeros, str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member allZeros_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(allZeros, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member allZeros_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(allZeros, true);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(str, str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer Cast type ReferenceType name Double_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final Double d = (Double)createDouble(str);
+
+LocalVariableDeclaration type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Float d = createDouble(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ MemberReference member allZeros_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(str, allZeros);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Float_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ ^ member createFloat_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Float f = createFloat(str);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(str, false);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name d_ter ^ ^ initializer MethodInvocation arguments MemberReference member str_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member createDouble_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Double d = createDouble(str, true);
+
+ReturnStatement expression MemberReference member d_ter ^ ^ ^ ^ ^ 
+if (true) { return d; }
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+stderr: 

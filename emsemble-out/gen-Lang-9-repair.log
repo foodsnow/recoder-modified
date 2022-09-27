@@ -1,0 +1,119 @@
+stdout: ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(!currentStrategy.addRegex(this, regex)){
+
+BreakStatement_ter ^ 
+break;
+
+condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member nextFormatField_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, nextFormatField)){
+condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, regex)){
+StatementExpression expression MethodInvocation member init_ter ^ ^ ^ ^ ^ 
+init();
+
+IfStatement condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments MemberReference member regex_ter ^ ^ ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(currentStrategy.addRegex(regex, regex)){
+
+condition MethodInvocation qualifier collector_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(collector.addRegex(this, regex)){
+condition MethodInvocation qualifier patternMatcher_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(patternMatcher.addRegex(this, regex)){
+StatementExpression expression MethodInvocation qualifier collector_ter ^ ^ arguments MemberReference member currentStrategy_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ 
+collector.add(currentStrategy);
+
+IfStatement condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(currentStrategy.addRegex(regex)){
+
+StatementExpression expression Assignment expressionl MemberReference member nextStrategy_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nextStrategy = null;
+
+IfStatement condition MemberReference member currentStrategy_ter ^ ^ ^ ^ ^ 
+if(currentStrategy){
+
+condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member currentStrategy_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, currentStrategy)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member currentStrategy_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((currentStrategy != null)){
+
+IfStatement condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments MemberReference member nextFormatField_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(currentStrategy.addRegex(nextFormatField)){
+
+condition MethodInvocation qualifier regex_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(regex.addRegex(this, regex)){
+ContinueStatement_ter ^ 
+continue;
+
+IfStatement condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments MemberReference member currentStrategy_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(currentStrategy.addRegex(currentStrategy)){
+
+IfStatement condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, regex)){
+
+condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member patternMatcher_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, patternMatcher)){
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member currentStrategy_ter ^ ^ ^ ^ ^ 
+if(!currentStrategy){
+
+condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member collector_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, collector)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member currentStrategy_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((currentStrategy != null) && currentStrategy.addRegex(this, regex))){
+
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier patternMatcher_ter ^ ^ member lookingAt_ter ^ ^ ^ ^ ^ 
+if(!patternMatcher.lookingAt()){
+
+condition MethodInvocation qualifier par1 ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(.addRegex(this, regex)){
+
+IfStatement condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this)){
+
+condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member loc5 ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, )){
+
+IfStatement condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, regex)){
+
+StatementExpression expression Assignment expressionl MemberReference member currentFormatField_ter ^ ^ ^ ^ value MemberReference member nextFormatField_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentFormatField = nextFormatField;
+
+StatementExpression expression Assignment expressionl MemberReference member nextStrategy_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member nextFormatField_ter ^ ^ ^ ^ member getStrategy_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+nextStrategy = getStrategy(nextFormatField);
+
+BreakStatement_ter ^ 
+break;
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ operandr MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ ^ ^ ^ 
+if((currentStrategy.addRegex(this, regex) && currentStrategy.addRegex(this, regex))){
+
+StatementExpression expression MethodInvocation qualifier patternMatcher_ter ^ ^ arguments MethodInvocation qualifier patternMatcher_ter ^ ^ member end_ter ^ ^ ^ MethodInvocation qualifier patternMatcher_ter ^ ^ member regionEnd_ter ^ ^ ^ ^ member region_ter ^ ^ ^ ^ ^ 
+patternMatcher.region(patternMatcher.end(), patternMatcher.regionEnd());
+
+StatementExpression expression Assignment expressionl MemberReference member currentStrategy_ter ^ ^ ^ ^ value MemberReference member nextStrategy_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentStrategy = nextStrategy;
+
+condition MethodInvocation qualifier Pattern_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(Pattern.addRegex(this, regex)){
+condition MethodInvocation qualifier currentStrategy_ter ^ ^ arguments This_ter ^ MemberReference member nextStrategy_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(currentStrategy.addRegex(this, nextStrategy)){
+condition MethodInvocation qualifier nextFormatField_ter ^ ^ arguments This_ter ^ MemberReference member regex_ter ^ ^ ^ ^ member addRegex_ter ^ ^ ^ ^ 
+if(nextFormatField.addRegex(this, regex)){
+StatementExpression expression Assignment expressionl MemberReference member currentFormatField_ter ^ ^ ^ ^ value Literal value null_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentFormatField = null;
+
+StatementExpression expression Assignment expressionl MemberReference member strategies_ter ^ ^ ^ ^ value MethodInvocation qualifier collector_ter ^ ^ arguments ArrayCreator type ReferenceType name Strategy_ter ^ ^ ^ ^ dimensions MethodInvocation qualifier collector_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ member toArray_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+strategies = collector.toArray(new Strategy[collector.size()]);
+
+StatementExpression expression MethodInvocation qualifier Pattern_ter ^ ^ member init_ter ^ ^ ^ ^ ^ 
+Pattern.init();
+
+stderr: 

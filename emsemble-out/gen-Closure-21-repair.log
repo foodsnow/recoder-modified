@@ -1,0 +1,366 @@
+stdout: 
+
+condition MethodInvocation qualifier n_ter ^ ^ member getName_ter ^ ^ ^ ^ 
+if(n.getName()){
+condition MethodInvocation qualifier n_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ 
+if(n.getJSDocInfo()){
+condition MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ 
+if(n.isExprResult()){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.getJSDocInfo() != null)){
+
+condition MethodInvocation qualifier n_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ 
+if(n.isQualifiedName()){
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ ^ 
+if(n.getJSDocInfo()){
+
+condition MethodInvocation qualifier n_ter ^ ^ member visit_ter ^ ^ ^ ^ 
+if(n.visit()){
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(!n.isExprResult()){
+
+IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+if(n.isExprResult()){
+
+condition MethodInvocation qualifier n_ter ^ ^ member toString_ter ^ ^ ^ ^ 
+if(n.toString()){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.isExprResult() && n.isExprResult())){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ operandr MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n.isExprResult() || n.isExprResult())){
+
+BreakStatement_ter ^ 
+break;
+
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member getJSDocInfo_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((n.isExprResult() && (n.getJSDocInfo() != null))){
+
+condition MethodInvocation qualifier n_ter ^ ^ member get_ter ^ ^ ^ ^ 
+if(n.get()){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier n_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((n.isExprResult() && (n.isExprResult() == 0))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member parent_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parent == null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+condition MethodInvocation qualifier n_ter ^ ^ member protectSideEffects_ter ^ ^ ^ ^ 
+(n.protectSideEffects())
+
+condition MethodInvocation qualifier n_ter ^ ^ member addExtern_ter ^ ^ ^ ^ 
+(n.addExtern())
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.COMMA)){
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ 
+if(parent.getType()){
+
+condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() != Token.COMMA)){
+condition BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() >= Token.COMMA)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member isSimpleOp_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == isSimpleOp)){
+condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() > Token.COMMA)){
+condition BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() <= Token.COMMA)){
+condition BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() < Token.COMMA)){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member FOR_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getChildCount_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((parent.getType() == Token.FOR) && (parent.getChildCount() == 4))){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member isResultUsed_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == isResultUsed)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ancestorType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member EXPR_RESULT_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ancestorType != Token.EXPR_RESULT)){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member EXPR_RESULT_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parent.getType() != Token.EXPR_RESULT)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member loc4 ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == )){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ERROR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ERROR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member RETURN_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.RETURN)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BITOR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.BITOR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BITXOR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.BITXOR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BITAND_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.BITAND)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member EQ_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.EQ)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.NE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.GT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.GE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LSH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LSH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member RSH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.RSH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member URSH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.URSH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ADD_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ADD)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member SUB_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.SUB)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member MUL_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.MUL)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member DIV_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.DIV)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member MOD_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.MOD)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NOT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.NOT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BITNOT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.BITNOT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member POS_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.POS)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NEG_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.NEG)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NEW_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.NEW)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member DELPROP_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.DELPROP)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member TYPEOF_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.TYPEOF)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GETPROP_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.GETPROP)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GETELEM_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.GETELEM)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member CALL_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.CALL)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NAME_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.NAME)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NUMBER_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.NUMBER)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member STRING_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.STRING)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member NULL_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.NULL)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member THIS_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.THIS)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member FALSE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.FALSE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member TRUE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.TRUE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member SHEQ_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.SHEQ)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member SHNE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.SHNE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member REGEXP_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.REGEXP)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member THROW_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.THROW)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member IN_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.IN)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member INSTANCEOF_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.INSTANCEOF)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ARRAYLIT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ARRAYLIT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member OBJECTLIT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.OBJECTLIT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member TRY_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.TRY)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member PARAM_LIST_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.PARAM_LIST)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_BITOR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_BITOR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_BITXOR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_BITXOR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_BITAND_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_BITAND)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_LSH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_LSH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_RSH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_RSH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_URSH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_URSH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_ADD_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_ADD)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_SUB_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_SUB)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_MUL_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_MUL)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_DIV_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_DIV)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ASSIGN_MOD_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ASSIGN_MOD)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member HOOK_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.HOOK)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member OR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.OR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member AND_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.AND)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member INC_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.INC)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member DEC_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.DEC)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member FUNCTION_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.FUNCTION)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member IF_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.IF)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member SWITCH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.SWITCH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member CASE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.CASE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member DEFAULT_CASE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.DEFAULT_CASE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member WHILE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.WHILE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member DO_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.DO)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member FOR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.FOR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BREAK_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.BREAK)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member CONTINUE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.CONTINUE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member VAR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.VAR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member WITH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.WITH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member CATCH_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.CATCH)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member VOID_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.VOID)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member EMPTY_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.EMPTY)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BLOCK_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.BLOCK)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LABEL_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LABEL)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member EXPR_RESULT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.EXPR_RESULT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member SCRIPT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.SCRIPT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GETTER_DEF_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.GETTER_DEF)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member SETTER_DEF_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.SETTER_DEF)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member CONST_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.CONST)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member DEBUGGER_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.DEBUGGER)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LABEL_NAME_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LABEL_NAME)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member STRING_KEY_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.STRING_KEY)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ANNOTATION_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ANNOTATION)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member PIPE_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.PIPE)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member STAR_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.STAR)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member EOC_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.EOC)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member QMARK_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.QMARK)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member ELLIPSIS_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.ELLIPSIS)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BANG_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.BANG)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member EQUALS_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.EQUALS)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LB_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LB)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LC_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LC)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COLON_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.COLON)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member DEFAULT_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.DEFAULT)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member GET_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.GET)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member LP_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.LP)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member SET_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.SET)){
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ancestorType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BLOCK_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ancestorType != Token.BLOCK)){
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((n == parent.getFirstChild()) || (n == parent.getFirstChild().getNext().getNext()))){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member FOR_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == Token.FOR)){
+
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ 
+if(parent.getLastChild()){
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BLOCK_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parent.getType() != Token.BLOCK)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr MethodInvocation qualifier parent_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+if((n == parent.getFirstChild())){
+
+IfStatement condition MethodInvocation qualifier parent_ter ^ ^ member getAncestors_ter ^ ^ ^ ^ ^ 
+if(parent.getAncestors()){
+
+IfStatement condition MethodInvocation qualifier an_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ 
+if(an.getType()){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member n_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == n)){
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getChildCount_ter ^ ^ ^ ^ operandr Literal value 4_ter ^ ^ ^ ^ ^ ^ ^ 
+if((parent.getChildCount() == 4)){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member msg_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == msg)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference member level_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == level)){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() && Token.COMMA)){
+StatementExpression expression MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ ^ 
+parent.getType();
+
+
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ancestorType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BLOCK_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((parent.getType() == Token.COMMA) || (ancestorType != Token.BLOCK))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ancestorType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BLOCK_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((parent.getType() == Token.COMMA) && (ancestorType != Token.BLOCK))){
+
+condition BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() || Token.COMMA)){
+IfStatement condition BinaryOperation operator ||_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BLOCK_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((parent.getType() == Token.COMMA) || (parent.getType() != Token.BLOCK))){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member BLOCK_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((parent.getType() == Token.COMMA) && (parent.getType() != Token.BLOCK))){
+
+condition BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() + Token.COMMA)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier isSimpleOp_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((isSimpleOp.getType() == Token.COMMA)){
+IfStatement condition MemberReference member isResultUsed_ter ^ ^ ^ ^ ^ 
+if(isResultUsed){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member isResultUsed_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() == !isResultUsed)){
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getAncestors_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getAncestors() == Token.COMMA)){
+IfStatement condition MemberReference member COMMA_ter ^ ^ ^ ^ ^ 
+if(COMMA){
+
+condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getLastChild() == Token.COMMA)){
+condition BinaryOperation operator &_ter ^ ^ operandl MethodInvocation qualifier parent_ter ^ ^ member getType_ter ^ ^ ^ ^ operandr MemberReference qualifier Token_ter ^ ^ member COMMA_ter ^ ^ ^ ^ ^ ^ 
+if((parent.getType() & Token.COMMA)){
+stderr: 

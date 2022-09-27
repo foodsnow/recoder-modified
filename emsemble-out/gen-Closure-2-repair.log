@@ -1,0 +1,129 @@
+stdout: StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getPropertyNames();
+
+StatementExpression expression MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ ^ 
+implicitProto.getOwnPropertyNames();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((currentPropertyNames != null)){
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((currentPropertyNames == null)){
+return;
+}
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getPropertyType_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getPropertyType();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((currentPropertyNames == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getImplicitPrototype_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getImplicitPrototype();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member checkInterfaceConflictProperties_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.checkInterfaceConflictProperties();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MemberReference member currentPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = currentPropertyNames;
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getCtorExtendedInterfaces_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getCtorExtendedInterfaces();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames(n);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member implicitProto_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((implicitProto != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member implicitProto_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+implicitProto = implicitProto.getOwnPropertyNames();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((currentPropertyNames == null)){
+continue;
+}
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames(name);
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member isEquivalentTo_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.isEquivalentTo();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member get_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.get();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier currentPropertyNames_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = currentPropertyNames.getOwnPropertyNames();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((implicitProto.getOwnPropertyNames() != null)){
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = getOwnPropertyNames();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments MemberReference member currentPropertyNames_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames(currentPropertyNames);
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames(implicitProto.getOwnPropertyNames());
+
+StatementExpression expression Assignment expressionl MemberReference member functionName_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+functionName = implicitProto.getOwnPropertyNames();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier n_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = n.getOwnPropertyNames();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments MethodInvocation qualifier oType_ter ^ ^ arguments MemberReference member name_ter ^ ^ ^ ^ member getPropertyType_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames(oType.getPropertyType(name));
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments MemberReference member t_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames(t);
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member makeError_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.makeError();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier t_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = t.getOwnPropertyNames();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((implicitProto.getOwnPropertyNames() == null)){
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ arguments MethodInvocation qualifier t_ter ^ ^ arguments MemberReference member n_ter ^ ^ ^ MemberReference member INCOMPATIBLE_EXTENDED_PROPERTY_TYPE_ter ^ ^ ^ MemberReference member functionName_ter ^ ^ ^ MemberReference member name_ter ^ ^ ^ MethodInvocation qualifier oType_ter ^ ^ member toString_ter ^ ^ ^ MethodInvocation qualifier interfaceType_ter ^ ^ member toString_ter ^ ^ ^ ^ member makeError_ter ^ ^ ^ ^ member report_ter ^ ^ ^ ^ ^ 
+compiler.report(t.makeError(n, INCOMPATIBLE_EXTENDED_PROPERTY_TYPE, functionName, name, oType.toString(), interfaceType.toString()));
+
+IfStatement condition MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ ^ 
+if(implicitProto.getOwnPropertyNames()){
+
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ member getName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getName();
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments Literal value <string>_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames("null");
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member oType_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((oType != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MethodInvocation qualifier implicitProto_ter ^ ^ arguments MemberReference member functionName_ter ^ ^ ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto.getOwnPropertyNames(functionName);
+
+StatementExpression expression MethodInvocation qualifier compiler_ter ^ ^ member reportCodeChange_ter ^ ^ ^ ^ ^ 
+compiler.reportCodeChange();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier implicitProto_ter ^ ^ member getOwnPropertyNames_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement_ter ^ 
+if((implicitProto.getOwnPropertyNames() == null)){
+return;
+}
+StatementExpression expression Assignment expressionl MemberReference member currentPropertyNames_ter ^ ^ ^ ^ value MemberReference member implicitProto_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+currentPropertyNames = implicitProto;
+
+stderr: 

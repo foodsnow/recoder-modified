@@ -1,0 +1,623 @@
+stdout: StatementExpression expression MethodInvocation arguments Literal value 2_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(2);
+
+StatementExpression expression MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(0);
+
+StatementExpression expression MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(1);
+
+StatementExpression expression MethodInvocation arguments Literal value 1E-10_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(1E-10);
+
+StatementExpression expression MethodInvocation arguments Literal value 1.0e-14_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(1.0e-14);
+
+StatementExpression expression MethodInvocation arguments Literal value 100_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(100);
+
+StatementExpression expression MethodInvocation member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount();
+
+StatementExpression expression MethodInvocation arguments Literal value 100_ter ^ ^ ^ Literal value 100_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(100, 100);
+
+StatementExpression expression MethodInvocation arguments Literal value false_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(false);
+
+StatementExpression expression MethodInvocation arguments Literal value null_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(null);
+
+StatementExpression expression MethodInvocation arguments Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(-1);
+
+StatementExpression expression MethodInvocation arguments Literal value true_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(true);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+StatementExpression expression MethodInvocation arguments Literal value <string>_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount("null");
+
+StatementExpression expression MethodInvocation arguments Literal prefix_operators -_ter ^ ^ value 2_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(-2);
+
+StatementExpression expression MethodInvocation arguments MemberReference qualifier Integer_ter ^ ^ member MAX_VALUE_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(Integer.MAX_VALUE);
+
+StatementExpression expression MethodInvocation arguments Literal value 100_ter ^ ^ ^ ^ member setAbsoluteAccuracy_ter ^ ^ ^ ^ ^ 
+setAbsoluteAccuracy(100);
+
+StatementExpression expression MethodInvocation arguments This_ter ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(this);
+
+StatementExpression expression MethodInvocation arguments Literal value 100_ter ^ ^ ^ Literal value 1E-10_ter ^ ^ ^ ^ member setMaximalIterationCount_ter ^ ^ ^ ^ ^ 
+setMaximalIterationCount(100, 1E-10);
+
+StatementExpression expression MethodInvocation arguments Literal value 100_ter ^ ^ ^ Literal value 100_ter ^ ^ ^ ^ member setAbsoluteAccuracy_ter ^ ^ ^ ^ ^ 
+setAbsoluteAccuracy(100, 100);
+
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() != GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator >_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() > GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ ^ ^ 
+if((getGoalType() == GoalType.MINIMIZE)){
+
+
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member optimize_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, optimize(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() >= GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member optimize_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), optimize());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() && GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, f, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference member f_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == f), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, f, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() <= GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, f, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin(f);
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator <_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() < GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference member goalType_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == goalType), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ ^ ^ 
+return getRelativeAccuracy();
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member optimize_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((optimize() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ ^ 
+return getAbsoluteAccuracy();
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, goalType, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getName_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getName());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, goalType, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, goalType, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ||_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() || GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+StatementExpression expression MethodInvocation member clearResult_ter ^ ^ ^ ^ ^ 
+clearResult();
+
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member clearResult_ter ^ ^ ^ ^ ^ 
+return clearResult((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, min, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, min, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference member min_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == min), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getName_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getName(), getAbsoluteAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ 
+return localMin((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getRelativeAccuracy());
+ReturnStatement expression MethodInvocation arguments BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation member getGoalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MINIMIZE_ter ^ ^ ^ ^ ^ MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ MemberReference member min_ter ^ ^ ^ MemberReference member startValue_ter ^ ^ ^ MemberReference member max_ter ^ ^ ^ MethodInvocation member getRelativeAccuracy_ter ^ ^ ^ MethodInvocation member getAbsoluteAccuracy_ter ^ ^ ^ ^ member optimize_ter ^ ^ ^ ^ ^ 
+return optimize((getGoalType() == GoalType.MINIMIZE), f, goalType, min, startValue, max, getRelativeAccuracy(), getAbsoluteAccuracy());
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member MAXIMIZE_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = computeObjectiveValue(f, MAXIMIZE);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = computeObjectiveValue(f, f);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = computeObjectiveValue(f, goalType);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = computeObjectiveValue(f, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member MAXIMIZE_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = computeObjectiveValue(MAXIMIZE, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member goalType_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = computeObjectiveValue(goalType, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = computeObjectiveValue(x, x);
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+long fx = computeObjectiveValue(f, x);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int fx = computeObjectiveValue(f, x);
+
+StatementExpression expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ 
+computeObjectiveValue(f, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = localMin(f, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = debug(f, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = e(f, x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = get(f, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ ^ ^ ^ 
+double fx = add(f, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member par0 ^ ^ ^ ^ ^ ^ ^ 
+double fx = (f, x);
+
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name fx_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean fx = computeObjectiveValue(f, x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc7 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc7 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x, x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f, x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x, f);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc2 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f, f);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc7 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x, x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc7 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f, x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc7 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x, f);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc7 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f, f);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x, x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f, x);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(x, f);
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name loc5 ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double  = computeObjectiveValue(f, f);
+
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long count = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = 1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 2_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = 2;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double count = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = -1;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = false;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc6 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = "null";
+
+LocalVariableDeclaration type BasicType name Object_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+Object count = 0;
+
+LocalVariableDeclaration type BasicType name boolean_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+boolean count = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc0 ^ ^ ^ ^ ^ 
+int  = ;
+
+
+LocalVariableDeclaration type BasicType name String_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+String count = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = null;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value true_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = true;
+
+LocalVariableDeclaration type BasicType name par0 ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+ count = 0;
+
+LocalVariableDeclaration type BasicType name List_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+List count = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc3 ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 1;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = -0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name loc6 ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int  = 0;
+
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name count_ter ^ ^ initializer Literal selectors ArraySelector index Literal value 0_ter ^ ^ ^ ^ ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+int count = 1;
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+long fu = computeObjectiveValue(f, u);
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+int fu = computeObjectiveValue(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue();
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = abs(f, u);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+final double fu = computeObjectiveValue(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, f);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member localMin_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = localMin(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member goalType_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(goalType);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member d_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(d);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, goalType);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f, f);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, 0);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f, goalType);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer Cast type BasicType name double_ter ^ ^ ^ ^ expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+double fu = (double)computeObjectiveValue(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments Literal value 0_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(0);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = debug(f, u);
+
+StatementExpression expression MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ 
+computeObjectiveValue(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f, 0);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member goalType_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(goalType, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member goalType_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(goalType, goalType);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, false);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member u_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = u(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member x_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(x);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MemberReference member u_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = u;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = e(f, u);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MethodInvocation arguments MemberReference member f_ter ^ ^ ^ MemberReference member u_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(computeObjectiveValue(f, u));
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, 1);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member goalType_ter ^ ^ ^ MemberReference member f_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(goalType, f);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, true);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f, false);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments Literal value 1_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(1);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ Literal value 1_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f, 1);
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member f_ter ^ ^ ^ Literal value true_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(f, true);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators ^ ^ 
+double ;
+
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ Literal value 2_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, 2);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member d_ter ^ ^ ^ MemberReference member goalType_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(d, goalType);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member u_ter ^ ^ ^ MemberReference member d_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(u, d);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name fu_ter ^ ^ initializer MethodInvocation arguments MemberReference member goalType_ter ^ ^ ^ Literal value 0_ter ^ ^ ^ ^ member computeObjectiveValue_ter ^ ^ ^ ^ ^ ^ ^ 
+double fu = computeObjectiveValue(goalType, 0);
+
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType >= GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType > GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator <=_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType <= GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType != GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType < GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member x_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-fx:fx, x);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member x_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?x:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator -_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType - GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference member fx_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == fx))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member count_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?count:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member x_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == !x))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member fx_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-fx:fx, fx);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference member x_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == x))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member fx_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == !fx))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member x_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-fx:x, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference prefix_operators !_ter ^ ^ member count_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == !count))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator +_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType + GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference member count_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == count))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-fx:fx);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member x_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == -x))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member count_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(count, ((goalType == GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member goalType_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?goalType:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member x_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-x:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member count_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.MAXIMIZE))?-fx:count, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == -fx))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member x_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == GoalType.x))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member fx_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(fx, ((goalType == GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator &&_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType && GoalType.MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference member goalType_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == goalType))?-fx:fx, count);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference qualifier GoalType_ter ^ ^ member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, x, ((goalType == GoalType.MAXIMIZE))?-fx:fx);
+
+StatementExpression expression MethodInvocation arguments MemberReference member x_ter ^ ^ ^ TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member goalType_ter ^ ^ ^ ^ operandr MemberReference member MAXIMIZE_ter ^ ^ ^ ^ ^ ^ if_true MemberReference prefix_operators -_ter ^ ^ member fx_ter ^ ^ ^ ^ if_false MemberReference member fx_ter ^ ^ ^ ^ ^ MemberReference member count_ter ^ ^ ^ ^ member setResult_ter ^ ^ ^ ^ ^ 
+setResult(x, ((goalType == MAXIMIZE))?-fx:fx, count);
+
+StatementExpression expression MemberReference member count_ter ^ ^ ^ ^ ^ 
+count;
+
+StatementExpression expression MemberReference prefix_operators !_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+!count;
+
+StatementExpression expression MemberReference prefix_operators -_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+-count;
+
+
+StatementExpression expression SuperMethodInvocation member count_ter ^ ^ ^ ^ ^ 
+super.count();
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+count++;
+
+StatementExpression expression MemberReference prefix_operators ++_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+++count;
+
+StatementExpression expression MemberReference prefix_operators --_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+--count;
+
+StatementExpression expression MemberReference postfix_operators --_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+count--;
+
+StatementExpression expression MemberReference prefix_operators ~_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+~count;
+
+StatementExpression expression MethodInvocation member count_ter ^ ^ ^ ^ ^ 
+count();
+
+StatementExpression expression SuperMethodInvocation member localMin_ter ^ ^ ^ ^ ^ 
+super.localMin();
+
+StatementExpression expression SuperMethodInvocation member localMin_ter ^ ^ ^ ^ ^ 
+super.localMin();
+
+IfStatement condition MemberReference prefix_operators !_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+if(!count){
+
+
+StatementExpression expression SuperMethodInvocation member count_ter ^ ^ ^ ^ ^ 
+super.count();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member count_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((count != null)){
+
+StatementExpression expression MemberReference postfix_operators ++_ter ^ ^ member count_ter ^ ^ ^ ^ ^ 
+count++;
+
+StatementExpression expression MethodInvocation member count_ter ^ ^ ^ ^ ^ 
+count();
+
+stderr: 

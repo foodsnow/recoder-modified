@@ -1,0 +1,52 @@
+stdout: 
+ReturnStatement expression Literal value <string>_ter ^ ^ ^ ^ ^ 
+return "null";
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+return null;
+ReturnStatement expression MemberReference member e_ter ^ ^ ^ ^ ^ 
+return e;
+ContinueStatement_ter ^ 
+continue;
+
+ReturnStatement expression MemberReference member debug_ter ^ ^ ^ ^ ^ 
+return debug;
+ReturnStatement expression MemberReference member loc0 ^ ^ ^ ^ ^ 
+return ;
+ReturnStatement expression MemberReference member i_ter ^ ^ ^ ^ ^ 
+return i;
+ReturnStatement expression This_ter ^ ^ ^ 
+return this;
+BreakStatement_ter ^ 
+break;
+
+ReturnStatement expression Literal value 1_ter ^ ^ ^ ^ ^ 
+return 1;
+add ^ 
+1 add
+ReturnStatement expression MemberReference member returnValueFor_ter ^ ^ ^ ^ ^ 
+return returnValueFor;
+ReturnStatement expression MemberReference member max_ter ^ ^ ^ ^ ^ 
+return max;
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if (true) { return null; }
+
+ReturnStatement expression MemberReference member size_ter ^ ^ ^ ^ ^ 
+return size;
+ReturnStatement expression MemberReference member put_ter ^ ^ ^ ^ ^ 
+return put;
+ReturnStatement expression MemberReference member add_ter ^ ^ ^ ^ ^ 
+return add;
+ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
+return true;
+ReturnStatement_ter ^ 
+return;
+
+ReturnStatement expression Literal prefix_operators !_ter ^ ^ value <string>_ter ^ ^ ^ ^ ^ 
+return !"null";
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+return false;
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+return 0;
+ReturnStatement expression BinaryOperation operator +_ter ^ ^ operandl Literal value null_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ ^ 
+return (null + "null");
+stderr: 

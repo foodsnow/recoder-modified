@@ -1,0 +1,170 @@
+stdout: StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(instance, Mockito.spy(instance));
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+BreakStatement_ter ^ 
+break;
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member wasAccessible_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(wasAccessible, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member field_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(field, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(instance);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member wasAccessible_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.spy(wasAccessible));
+
+StatementExpression expression MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ 
+Mockito.reset(instance);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member fields_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(fields, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ MemberReference member testClass_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(instance, testClass);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member isAnnotationPresent_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.isAnnotationPresent(instance));
+
+ContinueStatement_ter ^ 
+continue;
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member field_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.spy(field));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member setAccessible_ter ^ ^ ^ ^ ^ 
+field.setAccessible(true);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ MemberReference member instance_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(instance, instance);
+
+StatementExpression expression MethodInvocation arguments ClassReference type ReferenceType name Spy_ter ^ ^ ^ ^ ^ MemberReference member field_ter ^ ^ ^ ClassReference type ReferenceType name Mock_ter ^ ^ ^ ^ ^ ClassReference qualifier org.mockito.MockitoAnnotations_ter ^ ^ type ReferenceType name Mock_ter ^ ^ ^ ^ ^ ClassReference type ReferenceType name Captor_ter ^ ^ ^ ^ ^ ^ member assertNoAnnotations_ter ^ ^ ^ ^ ^ 
+ClassReference type ReferenceType name Spy_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference qualifier org.mockito.MockitoAnnotations_ter ^ ^ type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Captor_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Spy_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference qualifier org.mockito.MockitoAnnotations_ter ^ ^ type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Captor_ter ^ ^ ^ ^ ^ 
+arg 
+assertNoAnnotations(Spy, field, Mock, Mock, Captor);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member wasAccessible_ter ^ ^ ^ ^ member setAccessible_ter ^ ^ ^ ^ ^ 
+field.setAccessible(wasAccessible);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.spy(testClass));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier context_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, context.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier fields_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+fields.set(testClass, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier fields_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, fields.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member context_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(context, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member process_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.process(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ MemberReference member wasAccessible_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(instance, wasAccessible);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(Mockito.spy(instance));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member instance_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((instance != null)){
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member loc4 ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(, Mockito.spy(instance));
+
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member isMock_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.isMock(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier testClass_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, testClass.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member setAccessible_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.setAccessible(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member wasAccessible_ter ^ ^ ^ MemberReference member testClass_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(wasAccessible, testClass);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.reset(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MemberReference member instance_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, instance);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member fields_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(testClass, Mockito.spy(fields));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member par2 ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(, Mockito.spy(instance));
+
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member e_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(e, Mockito.spy(instance));
+
+
+StatementExpression expression MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member reset_ter ^ ^ ^ ^ ^ 
+Mockito.reset(instance);
+
+
+StatementExpression expression MethodInvocation arguments ClassReference type ReferenceType name Spy_ter ^ ^ ^ ^ ^ MemberReference member field_ter ^ ^ ^ ClassReference type ReferenceType name Mock_ter ^ ^ ^ ^ ^ ClassReference qualifier org.mockito.MockitoAnnotations_ter ^ ^ type ReferenceType name Mock_ter ^ ^ ^ ^ ^ ClassReference type ReferenceType name Captor_ter ^ ^ ^ ^ ^ ^ member assertNoAnnotations_ter ^ ^ ^ ^ ^ 
+ClassReference type ReferenceType name Spy_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference qualifier org.mockito.MockitoAnnotations_ter ^ ^ type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Captor_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Spy_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference qualifier org.mockito.MockitoAnnotations_ter ^ ^ type ReferenceType name Mock_ter ^ ^ ^ ^ ^ 
+arg 
+ClassReference type ReferenceType name Captor_ter ^ ^ ^ ^ ^ 
+arg 
+assertNoAnnotations(Spy, field, Mock, Mock, Captor);
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member wasAccessible_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(wasAccessible);
+
+StatementExpression expression MethodInvocation qualifier wasAccessible_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+wasAccessible.set(testClass, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments MemberReference member wasAccessible_ter ^ ^ ^ MemberReference member instance_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+field.set(wasAccessible, instance);
+
+StatementExpression expression MethodInvocation qualifier context_ter ^ ^ arguments MemberReference member testClass_ter ^ ^ ^ MethodInvocation qualifier Mockito_ter ^ ^ arguments MemberReference member instance_ter ^ ^ ^ ^ member spy_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ ^ 
+context.set(testClass, Mockito.spy(instance));
+
+StatementExpression expression MethodInvocation qualifier field_ter ^ ^ arguments Literal value true_ter ^ ^ ^ ^ member setAccessible_ter ^ ^ ^ ^ ^ 
+field.setAccessible(true);
+
+stderr: 

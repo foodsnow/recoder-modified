@@ -1,0 +1,1208 @@
+stdout: LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getLastChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getLastChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getNext().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getLastSibling_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getLastSibling().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getParent_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getParent().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member detachFromParent_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.detachFromParent().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member removeFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.removeFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member removeChildren_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.removeChildren().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member cloneNode_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.cloneNode().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member cloneTree_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.cloneTree().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier block_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = block.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member canInlineReferenceDirectly_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild().canInlineReferenceDirectly();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getLastChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild().getLastChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ member getNext_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member isThis_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild().isThis();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier fnNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = fnNode.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member isName_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild().isName();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild().getFirstChild();
+
+StatementExpression expression MethodInvocation qualifier block_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+block.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier block_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+block.setQuotedString();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer Cast type ReferenceType name Node_ter ^ ^ ^ ^ expression MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+Node cArg = (Node)callNode.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getString_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.getFirstChild().getString();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member callNode_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((callNode != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier NodeUtil_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = NodeUtil.getFirstChild().getNext();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+final Node cArg = callNode.getFirstChild().getNext();
+
+StatementExpression expression MethodInvocation qualifier callNode_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
+callNode.detachChildren();
+
+StatementExpression expression MethodInvocation qualifier callNode_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
+callNode.setQuotedString();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member canInlineReferenceDirectly_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.canInlineReferenceDirectly().getNext();
+
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.hasChildren()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isFromExterns()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.hasOneChild()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.hasMoreThanOneChild()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isQualifiedName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isUnscopedQualifiedName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isVarArgs()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isOptionalArg()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isSyntheticBlock()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.wasEmptyNode()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isOnlyModifiesThisCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOnlyModifiesArgumentsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isOnlyModifiesArgumentsCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isNoSideEffectsCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isLocalResultCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member mayMutateArguments_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.mayMutateArguments()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member mayMutateGlobalStateOrThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.mayMutateGlobalStateOrThrow()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isQuotedString()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isAdd()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isAnd()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isArrayLit()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isAssign()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isAssignAdd()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isBlock()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isBreak()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isCase()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isCast()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isCatch()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isComma()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isContinue()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isDebugger()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isDec()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isDefaultCase()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isDelProp()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isDo()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isEmpty()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isExprResult()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isFalse()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isFor()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isFunction()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isGetterDef()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isGetElem()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isGetProp()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isHook()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isIf()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isIn()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isInc()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isInstanceOf()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isLabel()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isLabelName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isNE()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isNew()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isNot()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isNull()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isNumber()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isObjectLit()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isOr()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isParamList()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isRegExp()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isReturn()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isScript()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isSetterDef()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isString()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isStringKey()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isSwitch()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isThis()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isThrow()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isTrue()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isTry()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isTypeOf()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isVar()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isVoid()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isWhile()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(callNode.isWith()){
+return CanInlineResult.NO;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.isName().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+Node<?> cArg = callNode.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier Preconditions_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = Preconditions.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name fnParam_ter ^ ^ initializer MethodInvocation qualifier NodeUtil_ter ^ ^ selectors MethodInvocation member getFirstChild_ter ^ ^ ^ ^ arguments MemberReference member fnNode_ter ^ ^ ^ ^ member getFunctionParameters_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node fnParam = NodeUtil.getFunctionParameters(fnNode).getFirstChild();
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member cArg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((cArg == null)){
+
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.hasChildren()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isFromExterns()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.hasOneChild()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.hasMoreThanOneChild()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isQualifiedName()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isUnscopedQualifiedName()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isVarArgs()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isOptionalArg()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isSyntheticBlock()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.wasEmptyNode()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isOnlyModifiesThisCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOnlyModifiesArgumentsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isOnlyModifiesArgumentsCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isNoSideEffectsCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isLocalResultCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member mayMutateArguments_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.mayMutateArguments()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member mayMutateGlobalStateOrThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.mayMutateGlobalStateOrThrow()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isQuotedString()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isAdd()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isAnd()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isArrayLit()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isAssign()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isAssignAdd()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isBlock()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isBreak()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isCall()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isCase()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isCast()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isCatch()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isComma()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isContinue()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isDebugger()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isDec()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isDefaultCase()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isDelProp()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isDo()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isEmpty()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isExprResult()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isFalse()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isFor()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isFunction()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isGetterDef()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isGetElem()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isGetProp()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isHook()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isIf()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isIn()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isInc()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isInstanceOf()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isLabel()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isLabelName()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isName()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isNE()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isNew()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isNot()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isNull()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isNumber()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isObjectLit()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isOr()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isParamList()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isRegExp()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isReturn()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isScript()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isSetterDef()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isString()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isStringKey()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isSwitch()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isThis()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isThrow()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isTrue()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isTry()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isTypeOf()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isVar()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isVoid()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isWhile()){
+return null;}
+IfStatement condition MethodInvocation qualifier callNode_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if(callNode.isWith()){
+return null;}
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = callNode.isThis().getNext();
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member block_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((block != null)){
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = getFirstChild();
+
+StatementExpression expression MethodInvocation qualifier callNode_ter ^ ^ selectors MethodInvocation member getNext_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ 
+callNode.getFirstChild().getNext();
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation arguments MemberReference member callNode_ter ^ ^ ^ ^ member maybePrepareCall_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = maybePrepareCall(callNode);
+
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.hasChildren()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isFromExterns_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isFromExterns()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member hasOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.hasOneChild()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member hasMoreThanOneChild_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.hasMoreThanOneChild()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isQualifiedName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isUnscopedQualifiedName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isUnscopedQualifiedName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isVarArgs_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isVarArgs()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isOptionalArg_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isOptionalArg()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isSyntheticBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isSyntheticBlock()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member wasEmptyNode_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.wasEmptyNode()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isOnlyModifiesThisCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isOnlyModifiesThisCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isOnlyModifiesArgumentsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isOnlyModifiesArgumentsCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isNoSideEffectsCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isLocalResultCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isLocalResultCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member mayMutateArguments_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.mayMutateArguments()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member mayMutateGlobalStateOrThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.mayMutateGlobalStateOrThrow()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isQuotedString()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isAdd()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isAnd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isAnd()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isArrayLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isArrayLit()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isAssign_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isAssign()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isAssignAdd_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isAssignAdd()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isBlock_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isBlock()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isBreak_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isBreak()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isCall_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isCall()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isCase()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isCast_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isCast()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isCatch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isCatch()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isComma_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isComma()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isContinue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isContinue()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isDebugger_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isDebugger()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isDec_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isDec()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isDefaultCase_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isDefaultCase()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isDelProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isDelProp()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isDo_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isDo()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isEmpty()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isExprResult_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isExprResult()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isFalse_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isFalse()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isFor_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isFor()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isFunction_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isFunction()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isGetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isGetterDef()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isGetElem_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isGetElem()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isGetProp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isGetProp()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isHook_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isHook()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isIf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isIf()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isIn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isIn()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isInc_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isInc()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isInstanceOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isInstanceOf()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isLabel_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isLabel()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isLabelName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isLabelName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isName_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isName()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isNE_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isNE()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isNew_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isNew()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isNot_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isNot()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isNull_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isNull()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isNumber_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isNumber()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isObjectLit_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isObjectLit()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isOr_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isOr()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isParamList_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isParamList()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isRegExp_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isRegExp()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isReturn_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isReturn()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isScript_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isScript()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isSetterDef_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isSetterDef()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isString_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isString()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isStringKey_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isStringKey()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isSwitch_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isSwitch()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isThis_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isThis()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isThrow_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isThrow()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isTrue_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isTrue()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isTry_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isTry()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isTypeOf_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isTypeOf()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isVar_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isVar()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isVoid_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isVoid()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isWhile_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isWhile()){
+return CanInlineResult.NO;}
+IfStatement condition MethodInvocation qualifier block_ter ^ ^ member isWith_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference qualifier CanInlineResult_ter ^ ^ member NO_ter ^ ^ ^ ^ ^ 
+if(block.isWith()){
+return CanInlineResult.NO;}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1)){
+
+StatementExpression expression Assignment expressionl MemberReference member cArg_ter ^ ^ ^ ^ value MethodInvocation qualifier cArg_ter ^ ^ member getNext_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+cArg = cArg.getNext();
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MethodInvocation prefix_operators !_ter ^ ^ qualifier NodeUtil_ter ^ ^ arguments MemberReference member callNode_ter ^ ^ ^ ^ member isFunctionObjectApply_ter ^ ^ ^ ^ member checkState_ter ^ ^ ^ ^ ^ 
+Preconditions.checkState(!NodeUtil.isFunctionObjectApply(callNode));
+
+LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name cArg_ter ^ ^ initializer MethodInvocation prefix_operators !_ter ^ ^ qualifier callNode_ter ^ ^ selectors MethodInvocation member isName_ter ^ ^ ^ ^ member getFirstChild_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Node cArg = !callNode.getFirstChild().isName();
+
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.mayEffectMutableState(cArg, compiler)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >=_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) >= 1))){
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1)){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member toString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.toString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member toStringTree_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.toStringTree()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member toStringTreeImpl_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.toStringTreeImpl()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getSourceFileName_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getSourceFileName()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getQualifiedName_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getQualifiedName()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator <=_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) <= 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member cArg_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, cArg) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(cArg, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) == 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getNext_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getNext()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getName_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getName()) > 1))){
+IfStatement condition MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ ^ 
+if(NodeUtil.getNameReferenceCount(block, fnParam.getString())){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member isThis_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.isThis()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnNode_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnNode.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier callNode_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, callNode.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) != 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getFirstChild_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getFirstChild()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member isFunctionObjectApply_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.isFunctionObjectApply(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator <_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) < 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member block_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, block) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if(((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1)) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getLastChild_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getLastChild()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getFunctionParameters_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getFunctionParameters(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member isFunctionObjectApply_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isFunctionObjectApply(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier cArg_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, cArg.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member fnParam_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, fnParam) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member isFunctionObjectCall_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.isFunctionObjectCall(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member canInlineReferenceDirectly_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.canInlineReferenceDirectly(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.isThis(block, fnParam.getString()) > 1))){
+IfStatement condition MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ ^ 
+if(fnParam.getString()){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member getFunctionParameters_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.getFunctionParameters(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member isFunctionObjectCall_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isFunctionObjectCall(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member canInlineReferenceDirectly_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.canInlineReferenceDirectly(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member fnParam_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(fnParam, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier block_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, block.getString()) > 1))){
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member callNode_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, callNode) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member fnNode_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, fnNode) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member mayHaveSideEffects_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.mayHaveSideEffects(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNext(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier NodeUtil_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, NodeUtil.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.isName(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member isThis_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isThis(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member callNode_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(callNode, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member compiler_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(compiler, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayHaveSideEffects_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayHaveSideEffects(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member isName_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.isName(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member mayEffectMutableState_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member fnNode_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.mayEffectMutableState(cArg, compiler) && (NodeUtil.getNameReferenceCount(fnNode, fnParam.getString()) > 1))){
+condition BinaryOperation operator &&_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member cArg_ter ^ ^ ^ MemberReference member compiler_ter ^ ^ ^ ^ member getNext_ter ^ ^ ^ ^ operandr BinaryOperation operator >_ter ^ ^ operandl MethodInvocation qualifier NodeUtil_ter ^ ^ arguments MemberReference member block_ter ^ ^ ^ MethodInvocation qualifier fnParam_ter ^ ^ member getString_ter ^ ^ ^ ^ member getNameReferenceCount_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ ^ 
+if((NodeUtil.getNext(cArg, compiler) && (NodeUtil.getNameReferenceCount(block, fnParam.getString()) > 1))){
+stderr: 

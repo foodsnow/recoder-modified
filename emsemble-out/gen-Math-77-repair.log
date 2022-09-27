@@ -1,0 +1,236 @@
+stdout: StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+Math.max(max, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member getLInfNorm_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, Math.getLInfNorm(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(a, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = Math.max(max, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member getLInfNorm_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.getLInfNorm(max, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member data_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(data, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = Math.abs(a);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.abs(a);
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a != null)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MemberReference member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = max;
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member data_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, Math.abs(data));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MemberReference member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += max;
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a == null)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.debug(max, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.e(max, Math.abs(a));
+
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MemberReference member a_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, a);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, Math.debug(a));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member data_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((data != null)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.add(max, Math.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member a_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = set(a);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member e_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, Math.e(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier max_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, max.abs(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member add_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, Math.add(a));
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member a_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += set(a);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member par0 ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(, Math.abs(a));
+
+
+ReturnStatement expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ ^ 
+return Math.max(max, Math.abs(a));
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(max, Math.abs(max));
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member max_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((max != null)){
+continue;
+}
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member data_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((data == null)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = Math.max(max);
+
+StatementExpression expression MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ ^ 
+Math.abs(a);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = Math.set(a);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member loc2 ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.max(, Math.abs(a));
+
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ContinueStatement_ter ^ 
+if((a == null)){
+continue;
+}
+IfStatement condition BinaryOperation operator >_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a > 0)){
+continue;
+}
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.abs(max, a);
+
+IfStatement condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member a_ter ^ ^ ^ ^ operandr Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+if((a < 0)){
+continue;
+}
+
+ReturnStatement expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member abs_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+return max += Math.max(max, Math.abs(a));
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member a_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += Math.set(a);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier Math_ter ^ ^ arguments MemberReference member max_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+max = Math.set(max);
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation arguments MemberReference member a_ter ^ ^ ^ ^ member max_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += max(a);
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ ^ ^ ^ 
+double max = ;
+
+
+LocalVariableDeclaration type BasicType name long_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+long max = 0;
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+int max = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+double max = 0;
+
+StatementExpression expression MethodInvocation member unitize_ter ^ ^ ^ ^ ^ 
+unitize();
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+final double max = 0;
+
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ initializer Literal value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double max = 1;
+
+StatementExpression expression MethodInvocation qualifier entries_ter ^ ^ member growTable_ter ^ ^ ^ ^ ^ 
+entries.growTable();
+
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if (true) { return 0; }
+
+StatementExpression expression MethodInvocation qualifier iter_ter ^ ^ member advance_ter ^ ^ ^ ^ ^ 
+iter.advance();
+
+StatementExpression expression SuperMethodInvocation member getLInfNorm_ter ^ ^ ^ ^ ^ 
+super.getLInfNorm();
+
+StatementExpression expression Assignment expressionl MemberReference member max_ter ^ ^ ^ ^ value MethodInvocation qualifier iter_ter ^ ^ member value_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
+max += iter.value();
+
+IfStatement condition MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(isInfinite()){
+return 0;}
+IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(isNaN()){
+return 0;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(!isInfinite()){
+return 0;}
+IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ member isNaN_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(!isNaN()){
+return 0;}
+IfStatement condition MethodInvocation qualifier entries_ter ^ ^ member shouldGrowTable_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value 0_ter ^ ^ ^ ^ ^ 
+if(entries.shouldGrowTable()){
+return 0;}
+StatementExpression expression MethodInvocation qualifier entries_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ 
+entries.iterator();
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator max = ;
+
+
+ReturnStatement_ter ^ 
+if (true) { return;
+ }
+
+IfStatement condition MethodInvocation qualifier iter_ter ^ ^ member hasNext_ter ^ ^ ^ ^ ^ 
+if(iter.hasNext()){
+
+LocalVariableDeclaration type ReferenceType name Iterator_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ initializer Literal value 0_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+Iterator max = 0;
+
+IfStatement condition MethodInvocation member isInfinite_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member max_ter ^ ^ ^ ^ ^ 
+if(isInfinite()){
+return max;}
+IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
+ReturnStatement expression MemberReference member max_ter ^ ^ ^ ^ ^ 
+if(isNaN()){
+return max;}
+LocalVariableDeclaration type BasicType name double_ter ^ ^ ^ ^ declarators VariableDeclarator name max_ter ^ ^ initializer Literal prefix_operators -_ter ^ ^ value 1_ter ^ ^ ^ ^ ^ ^ ^ 
+double max = -1;
+
+stderr: 

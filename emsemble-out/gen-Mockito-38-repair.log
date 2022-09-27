@@ -1,0 +1,112 @@
+stdout: ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg == null))?"null":arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(m);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Matcher_ter ^ ^ ^ ^ expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Matcher)StringDescription.toString(m).equals(arg.toString()));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Object)StringDescription.toString(m).equals(arg.toString()));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Matcher_ter ^ ^ ^ ^ expression MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Matcher)arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toStringEquals_ter ^ ^ ^ ^ ^ 
+return StringDescription.toStringEquals(m).equals(arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Object)arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg != null))?"null":arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value false_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg == null))?false:arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value true_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg == null))?true:arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MemberReference member arg_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Object)arg);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MemberReference member m_ter ^ ^ ^ MemberReference member arg_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(m, arg);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return StringDescription.equals(m).equals(arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Matcher_ter ^ ^ ^ ^ expression MemberReference member arg_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Matcher)arg);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member arg_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(arg).equals(arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member toStringEquals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).toStringEquals(arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Object_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Object)m);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments Cast type ReferenceType name Matcher_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals((Matcher)m);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals((arg.toString() + 1));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return StringDescription.equals(m);
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return toString(m).equals(m);
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return toString(m).equals(arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value null_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg == null))?null:arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg.toString() == null))?"null":arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member getName_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(arg.getName());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(arg);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition MemberReference member m_ter ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals((m)?"null":arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ MemberReference member arg_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(arg.toString(), arg);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments BinaryOperation operator +_ter ^ ^ operandl MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals((arg.toString() + "null"));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals((arg + "null"));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value false_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg != null))?false:arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).toString(m);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ arguments MemberReference member m_ter ^ ^ ^ MemberReference member arg_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
+return StringDescription.equals(m, arg);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((m == null))?"null":arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MemberReference member arg_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member ^ ^ ^ ^ 
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ MemberReference member arg_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m, arg).equals(arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value true_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg != null))?true:arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MemberReference member m_ter ^ ^ ^ MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(m, arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member m_ter ^ ^ ^ ^ operandr Literal value <string>_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals((m + "null"));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ MethodInvocation arguments MemberReference member arg_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(arg.toString()).equals(arg);
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member arg_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(((arg == null))?arg:arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments TernaryExpression condition MemberReference member arg_ter ^ ^ ^ ^ if_true Literal value <string>_ter ^ ^ ^ ^ if_false MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals((arg)?"null":arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments MemberReference member m_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ MethodInvocation arguments MethodInvocation qualifier arg_ter ^ ^ member toString_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals(m).equals(arg.toString());
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments ClassCreator type ReferenceType name Matcher_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return StringDescription.toString(m).equals(new Matcher(m));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ selectors MethodInvocation arguments BinaryOperation operator +_ter ^ ^ operandl MemberReference member arg_ter ^ ^ ^ ^ operandr Literal value 1_ter ^ ^ ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toString_ter ^ ^ ^ ^ ^ 
+return StringDescription.toString(m).equals((arg + 1));
+ReturnStatement expression MethodInvocation qualifier StringDescription_ter ^ ^ arguments MemberReference member m_ter ^ ^ ^ ^ member toStringEquals_ter ^ ^ ^ ^ ^ 
+return StringDescription.toStringEquals(m);
+stderr: 
