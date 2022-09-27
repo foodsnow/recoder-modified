@@ -293,16 +293,16 @@ def get_line_numbers(node: Node) -> List[int]:
     return line_numbers
 
 
-def get_line_node(root, block, add=True):
+def get_line_node(node: Node, block: str, add=True):
     ans = []
-    block = block + root.name
-    #print(root.name, 'lll')
-    for x in root.child:
-        if x.name in LINENODE:
-            if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
+    block = block + node.name
+
+    for child in node.child:
+        if child.name in LINENODE:
+            if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or 'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
                 continue
-            x.block = block
-            ans.append(x)
+            child.block = block
+            ans.append(child)
         else:
             # print(x.name)
             s = ""
@@ -310,13 +310,15 @@ def get_line_node(root, block, add=True):
                 s = block
                 #tmp = getLineNode(x, block)
             else:
-                s = block + root.name
+                s = block + node.name
             #print(block + root.name + "--------")
-            tmp = get_line_node(x, block)
-            '''if x.name == 'then_statement' and tmp == []:
-        print(tmp)
-        print(x.father.printTree(x.father))
-        assert(0)'''
+            tmp = get_line_node(child, block)
+            '''
+            if x.name == 'then_statement' and tmp == []:
+                print(tmp)
+                print(x.father.printTree(x.father))
+                assert(0)
+            '''
             ans.extend(tmp)
     return ans
 
@@ -731,7 +733,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             tree_root = mnode  # method decl
             pre_sub_root = None
             after_sub_root = None
-            line_nodes = get_line_node(tree_root, "")
+            line_nodes = get_line_node(tree_root, '')
 
             if sub_root not in line_nodes:
                 continue
