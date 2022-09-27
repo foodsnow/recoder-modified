@@ -562,13 +562,12 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         print('p')
 
-        x = project_name
-        locationdir = 'location/groundtruth/%s/%d' % (x.lower(), idx)
+        locationdir = 'location/groundtruth/%s/%d' % (project_name.lower(), idx)
         if not os.path.exists(locationdir):
             continue
         os.makedirs(f"buggy", exist_ok=True)
         os.system('defects4j checkout -p %s -v %db -w buggy/%s' %
-                  (x, idx, bug_id))  # os.system('defects4j')
+                  (project_name, idx, bug_id))  # os.system('defects4j')
 
         patchnum = 0
 
