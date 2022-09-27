@@ -238,16 +238,20 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
         return ['None', '^']
 
     if isinstance(tree, str):
-        tmpStr = tree
-        tmpStr = tmpStr.replace(" ", "").replace(":", "")
-        if "\t" in tmpStr or "'" in tmpStr or "\"" in tmpStr:
-            tmpStr = "<string>"
-        if len(tmpStr) == 0:
-            tmpStr = "<empty>"
-        if tmpStr[-1] == "^":
-            tmpStr += "<>"
-        tree_as_list.append(tmpStr)
+        tree_as_str = tree
+        tree_as_str = tree_as_str.replace(" ", "").replace(":", "")
+        
+        if "\t" in tree_as_str or "'" in tree_as_str or "\"" in tree_as_str:
+            tree_as_str = "<string>"
+        
+        if len(tree_as_str) == 0:
+            tree_as_str = "<empty>"
+        if tree_as_str[-1] == "^":
+            tree_as_str += "<>"
+        
+        tree_as_list.append(tree_as_str)
         tree_as_list.append("^")
+        
         return tree_as_list
 
     if isinstance(tree, list):
