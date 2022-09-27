@@ -208,6 +208,38 @@ def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
     return lnode, mnode
 
 
+def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
+    func_list = list()
+    found_method = False
+    result = containID(mnode)
+    start_line = min(result)
+    end_line = max(result)
+    last_node = None
+    for func, node in tree.filter(javalang.tree.MethodDeclaration):
+        if start_line <= node.position.line <= end_line:
+            print(node.name)
+            print(node.position)
+            print("FOUND IT!")
+            found_method = True
+            last_node = node
+            break
+    if found_method:
+        return last_node.name, start_line, end_line
+    last_node = None
+    for func, node in tree.filter(javalang.tree.ConstructorDeclaration):
+        if start_line <= node.position.line <= end_line:
+            print(node.name)
+            print(node.position)
+            print("FOUND IT!")
+            found_method = True
+            last_node = node
+            break
+    if found_method:
+        return last_node.name, start_line, end_line
+    print("CANNOT FOUND FUNCTION LOCATION!!!!")
+    return "0no_function_found", 0, 0
+
+
 def getLocVar(node):
     varnames = []
     if node.name == 'VariableDeclarator':
@@ -536,38 +568,6 @@ def isAssign(line):
     #lst = line.split("=")
     #print(lst[0].split()[-1], lst[1])
     # return lst[0].split()[-1].strip() in lst[1].strip()
-
-
-def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
-    func_list = list()
-    found_method = False
-    result = containID(mnode)
-    start_line = min(result)
-    end_line = max(result)
-    last_node = None
-    for func, node in tree.filter(javalang.tree.MethodDeclaration):
-        if start_line <= node.position.line <= end_line:
-            print(node.name)
-            print(node.position)
-            print("FOUND IT!")
-            found_method = True
-            last_node = node
-            break
-    if found_method:
-        return last_node.name, start_line, end_line
-    last_node = None
-    for func, node in tree.filter(javalang.tree.ConstructorDeclaration):
-        if start_line <= node.position.line <= end_line:
-            print(node.name)
-            print(node.position)
-            print("FOUND IT!")
-            found_method = True
-            last_node = node
-            break
-    if found_method:
-        return last_node.name, start_line, end_line
-    print("CANNOT FOUND FUNCTION LOCATION!!!!")
-    return "0no_function_found", 0, 0
 
 
 PROJECTS_V1_2 = ['Chart', 'Closure', 'Lang', 'Math', 'Mockito', 'Time']
