@@ -610,6 +610,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
             buggy_class_name = buggy_location[0]
             fl_score = buggy_location[1]
+            buggy_line_number = buggy_location[2]
 
             # inner class
             if '$' in buggy_class_name:
@@ -620,30 +621,32 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             print('path', s)
 
             buggy_class_java_path = f"buggy/{bug_id}/{source_dir_for_bug_id}/{s.replace('.', '/')}.java"
+
             try:
-                lines1 = open(buggy_class_java_path, "r").read().strip()
+                buggy_class_src = open(buggy_class_java_path, "r").read().strip()
             except:
                 with open(buggy_class_java_path, "r", encoding="iso-8859-1") as f:
-                    lines1 = f.read().strip()
-            liness = lines1.splitlines()
-            tokens = javalang.tokenizer.tokenize(lines1)
+                    buggy_class_src = f.read().strip()
+
+            buggy_class_src_lines = buggy_class_src.splitlines()
+            tokens = javalang.tokenizer.tokenize(buggy_class_src)
             parser = javalang.parser.Parser(tokens)
+
             tree = parser.parse()
-            tmproot = getroottree(generateAST(tree))
-            buggy_line_number = buggy_location[2]
+            tmp_root = getroottree(generateAST(tree))
+
             # current node by line number
-            currroot = getNodeById(tmproot, buggy_line_number)
-            # Subroot from curroot
-            lnode, mnode = getSubroot(currroot)
+            current_root = getNodeById(tmp_root, buggy_line_number)
+            # Subroot from current_root
+            lnode, mnode = getSubroot(current_root)
             if mnode is None:
                 continue
-            funcname, startline, endline = get_method_range(
-                tree, mnode, buggy_line_number)
+            funcname, startline, endline = get_method_range(tree, mnode, buggy_line_number)
             if buggy_class_java_path not in func_map:
                 func_map[buggy_class_java_path] = list()
             func_map[buggy_class_java_path].append(
                 {"function": funcname, "begin": startline, "end": endline})
-            oldcode = liness[buggy_location[2] - 1]
+            oldcode = buggy_class_src_lines[buggy_location[2] - 1]
             isIf = True
             subroot = lnode     # line root
             treeroot = mnode    # method decl
@@ -686,9 +689,9 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     maxl = max(maxl, l - 1)
                     minl = min(minl, l - 1)
                 # print(maxl, liness[maxl + 1])
-                precode = "\n".join(liness[0:minl])
-                aftercode = "\n".join(liness[maxl + 1:])
-                oldcode = "\n".join(liness[minl:maxl + 1])
+                precode = "\n".join(buggy_class_src_lines[0:minl])
+                aftercode = "\n".join(buggy_class_src_lines[maxl + 1:])
+                oldcode = "\n".join(buggy_class_src_lines[minl:maxl + 1])
                 # troot: treeroot
                 # vardic: variable dict
                 # typedic: type of variables
