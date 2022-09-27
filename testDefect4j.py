@@ -823,11 +823,27 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 if troot is None:
                     continue
 
-                data.append({'bugid': user_given_bug_id, 'treeroot': tree_root, 'troot': troot, 'oldcode': old_code,
-                             'filepath': buggy_class_java_path, 'subroot': sub_root, 'vardic': var_dict,
-                             'typedic': type_dict, 'idss': bug_id, 'classname': buggy_class_name,
-                             'precode': pre_code, 'aftercode': after_code, 'tree': troot.printTreeWithVar(troot, var_dict),
-                             'prob': troot.getTreeProb(troot), 'mode': 0, 'line': buggy_line_number, 'isa': False, 'fl_score': fl_score})
+                data.append({
+                    'bugid': user_given_bug_id,
+                    'treeroot': tree_root,
+                    'troot': troot,
+                    'oldcode': old_code,
+                    'filepath': buggy_class_java_path,
+                    'subroot': sub_root,
+                    'vardic': var_dict,
+                    'typedic': type_dict,
+                    'idss': bug_id,
+                    'classname': buggy_class_name,
+                    'precode': pre_code,
+                    'aftercode': after_code,
+                    'tree': troot.printTreeWithVar(troot, var_dict),
+                    'prob': troot.getTreeProb(troot),
+                    'mode': 0,
+                    'line': buggy_line_number,
+                    'isa': False,
+                    'fl_score': fl_score
+                })
+
                 # patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
 
         os.makedirs(f"d4j/{user_given_bug_id}", exist_ok=True)
