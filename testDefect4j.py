@@ -182,7 +182,7 @@ def getLineNode(root, block, add=True):
 
 
 def get_root_tree(tree_as_list: List[Union[str, tuple]], isex=False):
-    root = Node(tree_as_list[0], 0)
+    root = Node(name=tree_as_list[0], id_=0)
     currnode = root
     idx = 1
     for i, x in enumerate(tree_as_list[1:]):
