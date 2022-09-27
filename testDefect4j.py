@@ -234,10 +234,13 @@ def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
 
 def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
     found_method = False
-    result = containID(mnode)
-    start_line = min(result)
-    end_line = max(result)
+
+    line_numbers = get_line_numbers(mnode)
+    start_line = min(line_numbers)
+    end_line = max(line_numbers)
+
     last_node = None
+
     for func, node in tree.filter(javalang.tree.MethodDeclaration):
         if start_line <= node.position.line <= end_line:
             print(node.name)
@@ -263,13 +266,18 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
     return "0no_function_found", 0, 0
 
 
-def containID(root):
-    ans = []
-    if root.position is not None:
-        ans.extend([root.position.line])
-    for x in root.child:
-        ans.extend(containID(x))
-    return ans
+def get_line_numbers(node: Node) -> List[int]:
+    '''
+    Recursively return a list of positions (line numbers) for a node
+    and its children.
+    '''
+
+    line_numbers = []
+    if node.position is not None:
+        line_numbers.extend([node.position.line])
+    for child in node.child:
+        line_numbers.extend(get_line_numbers(child))
+    return line_numbers
 
 
 def getLocVar(node):
@@ -749,7 +757,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 # print(containID(subroot))
                 # range of subroot statement's line number
 
-                cid = set(containID(subroot))
+                cid = set(get_line_numbers(subroot))
                 maxl = -1
                 minl = 1e10
                 for l in cid:
