@@ -20,7 +20,7 @@ import sys
 import time
 
 
-linenode = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration',
+LINENODE = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration',
             'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
 
 # os.environ["CUDA_VISIBLE_DEVICES"] = "1, 4"
@@ -157,7 +157,7 @@ def getLineNode(root, block, add=True):
     block = block + root.name
     #print(root.name, 'lll')
     for x in root.child:
-        if x.name in linenode:
+        if x.name in LINENODE:
             if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
                 continue
             x.block = block
@@ -342,7 +342,7 @@ def getSubroot(treeroot: Node):
     lnode = None
     mnode = None
     while currnode:
-        if currnode.name in linenode:
+        if currnode.name in LINENODE:
             lnode = currnode
             break
         currnode = currnode.father
@@ -579,13 +579,12 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         '''
 
         buggy_lines_info = open(file_with_buggy_line_info, 'r').readlines()
-        location = []
-        locationdict = {}
+        buggy_locations = []
         for buggy_line_info in buggy_lines_info:
             buggy_line_info = buggy_line_info.split("||")[0]
             buggy_class_name, buggy_line_number = buggy_line_info.split(':')
             buggy_class_name = ".".join(buggy_class_name.split(".")[:-1])
-            location.append((buggy_class_name, 1, eval(buggy_line_number)))
+            buggy_locations.append((buggy_class_name, 1, eval(buggy_line_number)))
         source_dir_for_bug_id = os.popen(f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
 
         # correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
@@ -601,11 +600,11 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         data = []
         func_map: Dict[str, List[dict]] = dict()
-        for j in range(len(location)):
-            if j >= len(location):
+        for j in range(len(buggy_locations)):
+            if j >= len(buggy_locations):
                 break
             patchdict = {}
-            ac = location[j]
+            ac = buggy_locations[j]
             buggy_class_name = ac[0]
             fl_score = ac[1]
             if '$' in buggy_class_name:
