@@ -578,8 +578,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         s = s[-1]
         '''
 
-        buggy_lines_info = open(
-            file_with_buggy_line_info, 'r').readlines()
+        buggy_lines_info = open(file_with_buggy_line_info, 'r').readlines()
         location = []
         locationdict = {}
         for buggy_line_info in buggy_lines_info:
@@ -587,8 +586,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             buggy_class_name, buggy_line_number = buggy_line_info.split(':')
             buggy_class_name = ".".join(buggy_class_name.split(".")[:-1])
             location.append((buggy_class_name, 1, eval(buggy_line_number)))
-        dirs = os.popen(
-            f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
+        source_dir_for_bug_id = os.popen(f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
 
         # correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
         # fpath = "fixed/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
@@ -614,8 +612,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 buggy_class_name = buggy_class_name[:buggy_class_name.index('$')]
             s = buggy_class_name
             print('path', s)
-            filepath = f"buggy/{bug_id}/{dirs}/{s.replace('.', '/')}.java"
-            filepathx = "fixed/%s/%s.java" % (dirs, s.replace('.', '/'))
+            filepath = f"buggy/{bug_id}/{source_dir_for_bug_id}/{s.replace('.', '/')}.java"
+            filepathx = "fixed/%s/%s.java" % (source_dir_for_bug_id, s.replace('.', '/'))
             try:
                 lines1 = open(filepath, "r").read().strip()
             except:
