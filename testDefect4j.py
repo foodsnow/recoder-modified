@@ -181,11 +181,11 @@ def getLineNode(root, block, add=True):
     return ans
 
 
-def get_root_tree(tokens: List[Union[str, tuple]], isex=False):
-    root = Node(tokens[0], 0)
+def get_root_tree(tree_as_list: List[Union[str, tuple]], isex=False):
+    root = Node(tree_as_list[0], 0)
     currnode = root
     idx = 1
-    for i, x in enumerate(tokens[1:]):
+    for i, x in enumerate(tree_as_list[1:]):
         if x != "^":
             if isinstance(x, tuple):
                 nnode = Node(x[0], idx)
