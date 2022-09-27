@@ -40,7 +40,7 @@ LINENODE = [
     'return_type'
 ]
 
-n = 0
+N = 0
 
 
 def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[Union[str, tuple]]:
@@ -345,6 +345,89 @@ def add_label_ter(node: Node) -> None:
         add_label_ter(child)
 
 
+def solve_long_tree(root: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
+    '''
+    '''
+
+    global N
+
+    m = 'None'
+    troot = 'None'
+
+    for child in root.child:
+        if child.name == 'name':
+            m = child.child[0].name
+
+    if len(root.getTreestr().strip().split()) >= 1000:
+        temp_node = sub_root
+        tree_str = temp_node.getTreestr().strip()
+
+        if len(tree_str.split()) >= 1000:
+            print("ERROR! TOO LONG STATEMENT!")
+            return None, None, None
+
+        last_temp_node = None
+        while True:
+            if len(temp_node.getTreestr().split()) >= 1000:
+                break
+            last_temp_node = temp_node
+            temp_node = temp_node.father
+
+        index = temp_node.child.index(last_temp_node)
+        ansroot = Node(temp_node.name, 0)
+        ansroot.child.append(last_temp_node)
+        ansroot.num = 2 + len(last_temp_node.getTreestr().strip().split())
+        while True:
+            b = True
+            afternode = temp_node.child.index(ansroot.child[-1]) + 1
+            if afternode < len(temp_node.child) and ansroot.num + temp_node.child[afternode].getNum() < 1000:
+                b = False
+                ansroot.child.append(temp_node.child[afternode])
+                ansroot.num += temp_node.child[afternode].getNum()
+            prenode = temp_node.child.index(ansroot.child[0]) - 1
+            if prenode >= 0 and ansroot.num + temp_node.child[prenode].getNum() < 1000:
+                b = False
+                ansroot.child.append(temp_node.child[prenode])
+                ansroot.num += temp_node.child[prenode].getNum()
+            if b:
+                break
+        troot = ansroot
+    else:
+        troot = root
+
+    N = 0
+    setid(troot)  # set id: root is 0, and increase the id by preorder traversal
+    varnames = getLocVar(troot)
+    fnum = -1
+    vnum = -1
+    vardic = {}
+    vardic[m] = 'meth0'
+    typedic = {}
+    for child in varnames:
+        if child[1].name == 'VariableDeclarator':
+            vnum += 1
+            vardic[child[0]] = 'loc' + str(vnum)
+            t = -1
+            for s in child[1].father.father.child:
+                # print(s.name)
+                if s.name == 'type':
+                    t = s.child[0].child[0].child[0].name[:-4]
+                    break
+            assert (t != -1)
+            typedic[child[0]] = t
+        else:
+            fnum += 1
+            vardic[child[0]] = 'par' + str(fnum)
+            t = -1
+            for s in child[1].child:
+                if s.name == 'type':
+                    t = s.child[0].child[0].child[0].name[:-4]
+                    break
+            assert (t != -1)
+            typedic[child[0]] = t
+    return troot, vardic, typedic
+
+
 def getLocVar(node):
     varnames = []
     if node.name == 'VariableDeclarator':
@@ -374,84 +457,11 @@ def getLocVar(node):
 
 
 def setid(root):
-    global n
-    root.id = n
-    n += 1
+    global N
+    root.id = N
+    N += 1
     for x in root.child:
         setid(x)
-
-
-def solveLongTree(root, subroot) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
-    global n
-    m = 'None'
-    troot = 'None'
-    for x in root.child:
-        if x.name == 'name':
-            m = x.child[0].name
-    if len(root.getTreestr().strip().split()) >= 1000:
-        tmp = subroot
-        tree_str = tmp.getTreestr().strip()
-        if len(tree_str.split()) >= 1000:
-            print("ERROR!!!!!!! TOO LONG STATEMENT!!!!")
-            return None, None, None
-        lasttmp = None
-        while True:
-            if len(tmp.getTreestr().split()) >= 1000:
-                break
-            lasttmp = tmp
-            tmp = tmp.father
-        index = tmp.child.index(lasttmp)
-        ansroot = Node(tmp.name, 0)
-        ansroot.child.append(lasttmp)
-        ansroot.num = 2 + len(lasttmp.getTreestr().strip().split())
-        while True:
-            b = True
-            afternode = tmp.child.index(ansroot.child[-1]) + 1
-            if afternode < len(tmp.child) and ansroot.num + tmp.child[afternode].getNum() < 1000:
-                b = False
-                ansroot.child.append(tmp.child[afternode])
-                ansroot.num += tmp.child[afternode].getNum()
-            prenode = tmp.child.index(ansroot.child[0]) - 1
-            if prenode >= 0 and ansroot.num + tmp.child[prenode].getNum() < 1000:
-                b = False
-                ansroot.child.append(tmp.child[prenode])
-                ansroot.num += tmp.child[prenode].getNum()
-            if b:
-                break
-        troot = ansroot
-    else:
-        troot = root
-    n = 0
-    setid(troot)  # set id: root is 0, and increase the id by preorder traversal
-    varnames = getLocVar(troot)
-    fnum = -1
-    vnum = -1
-    vardic = {}
-    vardic[m] = 'meth0'
-    typedic = {}
-    for x in varnames:
-        if x[1].name == 'VariableDeclarator':
-            vnum += 1
-            vardic[x[0]] = 'loc' + str(vnum)
-            t = -1
-            for s in x[1].father.father.child:
-                # print(s.name)
-                if s.name == 'type':
-                    t = s.child[0].child[0].child[0].name[:-4]
-                    break
-            assert (t != -1)
-            typedic[x[0]] = t
-        else:
-            fnum += 1
-            vardic[x[0]] = 'par' + str(fnum)
-            t = -1
-            for s in x[1].child:
-                if s.name == 'type':
-                    t = s.child[0].child[0].child[0].name[:-4]
-                    break
-            assert (t != -1)
-            typedic[x[0]] = t
-    return troot, vardic, typedic
 
 
 def ismatch(root, subroot):
@@ -790,7 +800,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 # vardic: variable dict
                 # typedic: type of variables
 
-                troot, vardic, typedic = solveLongTree(tree_root, sub_root)
+                troot, vardic, typedic = solve_long_tree(tree_root, sub_root)
                 if troot is None:
                     continue
 
