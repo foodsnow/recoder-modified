@@ -620,8 +620,6 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             print('path', s)
 
             buggy_class_java_path = f"buggy/{bug_id}/{source_dir_for_bug_id}/{s.replace('.', '/')}.java"
-            filepathx = "fixed/%s/%s.java" % (
-                source_dir_for_bug_id, s.replace('.', '/'))
             try:
                 lines1 = open(buggy_class_java_path, "r").read().strip()
             except:
