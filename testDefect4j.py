@@ -724,13 +724,13 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         os.makedirs(f"d4j/{user_given_bug_id}", exist_ok=True)
 
         with open(f"d4j/{user_given_bug_id}/func_loc.json", "w") as f:
-            json.dump(func_map, f, indent=4)
+            json.dump(func_map, f)
 
         print(data)
 
         ans = solveone(data, decoder_model)
 
         with open(f"d4j/{user_given_bug_id}/{user_given_bug_id}.json", "w") as f:
-            json.dump(ans, f, indent=4)
+            json.dump(ans, f)
 
         # save_code_as_file("./d4j", bugid, ans, func_map)
