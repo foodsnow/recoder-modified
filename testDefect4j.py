@@ -681,7 +681,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         '''
 
         data = []
-        func_map: Dict[str, List[dict]] = dict()
+        method_map: Dict[str, List[dict]] = dict()
 
         for buggy_location_idx, buggy_location in enumerate(buggy_locations):
             patch_dict = {}
@@ -719,12 +719,12 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             if mnode is None:
                 continue
 
-            funcname, startline, endline = get_method_name_and_range(tree, mnode, buggy_line_number)
-            if buggy_class_java_path not in func_map:
-                func_map[buggy_class_java_path] = list()
-            func_map[buggy_class_java_path].append({"function": funcname, "begin": startline, "end": endline})
+            method_name, start_line, end_line = get_method_name_and_range(tree, mnode, buggy_line_number)
+            if buggy_class_java_path not in method_map:
+                method_map[buggy_class_java_path] = list()
+            method_map[buggy_class_java_path].append({"function": method_name, "begin": start_line, "end": end_line})
 
-            oldcode = buggy_class_src_lines[buggy_line_number - 1]
+            old_code = buggy_class_src_lines[buggy_line_number - 1]
 
             is_if = True
             subroot = lnode     # line root
@@ -781,7 +781,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
                 precode = "\n".join(buggy_class_src_lines[0:minl])
                 aftercode = "\n".join(buggy_class_src_lines[maxl + 1:])
-                oldcode = "\n".join(buggy_class_src_lines[minl:maxl + 1])
+                old_code = "\n".join(buggy_class_src_lines[minl:maxl + 1])
 
                 # troot: treeroot
                 # vardic: variable dict
@@ -791,7 +791,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 if troot is None:
                     continue
 
-                data.append({'bugid': user_given_bug_id, 'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode,
+                data.append({'bugid': user_given_bug_id, 'treeroot': treeroot, 'troot': troot, 'oldcode': old_code,
                              'filepath': buggy_class_java_path, 'subroot': subroot, 'vardic': vardic,
                              'typedic': typedic, 'idss': bug_id, 'classname': buggy_class_name,
                              'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
@@ -801,7 +801,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         os.makedirs(f"d4j/{user_given_bug_id}", exist_ok=True)
 
         with open(f"d4j/{user_given_bug_id}/func_loc.json", "w") as f:
-            json.dump(func_map, f)
+            json.dump(method_map, f)
 
         print(data)
 
