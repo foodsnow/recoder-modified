@@ -562,12 +562,14 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         print('p')
 
-        file_with_buggy_line_info = 'location/groundtruth/%s/%d' % (project_name.lower(), idx)
+        file_with_buggy_line_info = 'location/groundtruth/%s/%d' % (
+            project_name.lower(), idx)
         if not os.path.exists(file_with_buggy_line_info):
             continue
 
         os.makedirs(f"buggy", exist_ok=True)
-        os.system('defects4j checkout -p %s -v %db -w buggy/%s' % (project_name, idx, bug_id))
+        os.system('defects4j checkout -p %s -v %db -w buggy/%s' %
+                  (project_name, idx, bug_id))
 
         patchnum = 0
 
@@ -584,8 +586,10 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             buggy_line_info = buggy_line_info.split("||")[0]
             buggy_class_name, buggy_line_number = buggy_line_info.split(':')
             buggy_class_name = ".".join(buggy_class_name.split(".")[:-1])
-            buggy_locations.append((buggy_class_name, 1, eval(buggy_line_number)))
-        source_dir_for_bug_id = os.popen(f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
+            buggy_locations.append(
+                (buggy_class_name, 1, eval(buggy_line_number)))
+        source_dir_for_bug_id = os.popen(
+            f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
 
         # correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
         # fpath = "fixed/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
@@ -600,21 +604,28 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         data = []
         func_map: Dict[str, List[dict]] = dict()
-        
+
         for buggy_location_idx, buggy_location in enumerate(buggy_locations):
             patch_dict = {}
+
             buggy_class_name = buggy_location[0]
             fl_score = buggy_location[1]
+
+            # inner class
             if '$' in buggy_class_name:
-                buggy_class_name = buggy_class_name[:buggy_class_name.index('$')]
+                buggy_class_name = buggy_class_name[:buggy_class_name.index(
+                    '$')]
             s = buggy_class_name
+
             print('path', s)
-            filepath = f"buggy/{bug_id}/{source_dir_for_bug_id}/{s.replace('.', '/')}.java"
-            filepathx = "fixed/%s/%s.java" % (source_dir_for_bug_id, s.replace('.', '/'))
+
+            buggy_class_java_path = f"buggy/{bug_id}/{source_dir_for_bug_id}/{s.replace('.', '/')}.java"
+            filepathx = "fixed/%s/%s.java" % (
+                source_dir_for_bug_id, s.replace('.', '/'))
             try:
-                lines1 = open(filepath, "r").read().strip()
+                lines1 = open(buggy_class_java_path, "r").read().strip()
             except:
-                with open(filepath, "r", encoding="iso-8859-1") as f:
+                with open(buggy_class_java_path, "r", encoding="iso-8859-1") as f:
                     lines1 = f.read().strip()
             liness = lines1.splitlines()
             tokens = javalang.tokenizer.tokenize(lines1)
@@ -630,9 +641,9 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 continue
             funcname, startline, endline = get_method_range(
                 tree, mnode, buggy_line_number)
-            if filepath not in func_map:
-                func_map[filepath] = list()
-            func_map[filepath].append(
+            if buggy_class_java_path not in func_map:
+                func_map[buggy_class_java_path] = list()
+            func_map[buggy_class_java_path].append(
                 {"function": funcname, "begin": startline, "end": endline})
             oldcode = liness[buggy_location[2] - 1]
             isIf = True
@@ -687,7 +698,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 if troot is None:
                     continue
                 data.append({'bugid': user_given_bug_id, 'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode,
-                             'filepath': filepath, 'subroot': subroot, 'vardic': vardic,
+                             'filepath': buggy_class_java_path, 'subroot': subroot, 'vardic': vardic,
                              'typedic': typedic, 'idss': bug_id, 'classname': buggy_class_name,
                              'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
                              'prob': troot.getTreeProb(troot), 'mode': 0, 'line': buggy_line_number, 'isa': False, 'fl_score': fl_score})
