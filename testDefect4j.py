@@ -238,7 +238,7 @@ def get_method_name_and_range(tree: javalang.tree.CompilationUnit, mnode: Node, 
 
     Which method is returned? not clear
     '''
-    
+
     found_method = False
 
     line_numbers = get_line_numbers(mnode)
@@ -256,12 +256,12 @@ def get_method_name_and_range(tree: javalang.tree.CompilationUnit, mnode: Node, 
             found_method = True
             last_node = node
             break
-    
+
     if found_method:
         return last_node.name, start_line, end_line
-    
+
     last_node = None
-    
+
     # iterate constructor decls in tree
     for path, node in tree.filter(javalang.tree.ConstructorDeclaration):
         if start_line <= node.position.line <= end_line:
@@ -271,10 +271,10 @@ def get_method_name_and_range(tree: javalang.tree.CompilationUnit, mnode: Node, 
             found_method = True
             last_node = node
             break
-   
+
     if found_method:
         return last_node.name, start_line, end_line
-    
+
     print("CANNOT FIND FUNCTION LOCATION!")
     return "0no_function_found", 0, 0
 
@@ -291,6 +291,34 @@ def get_line_numbers(node: Node) -> List[int]:
     for child in node.child:
         line_numbers.extend(get_line_numbers(child))
     return line_numbers
+
+
+def getLineNode(root, block, add=True):
+    ans = []
+    block = block + root.name
+    #print(root.name, 'lll')
+    for x in root.child:
+        if x.name in LINENODE:
+            if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
+                continue
+            x.block = block
+            ans.append(x)
+        else:
+            # print(x.name)
+            s = ""
+            if not add:
+                s = block
+                #tmp = getLineNode(x, block)
+            else:
+                s = block + root.name
+            #print(block + root.name + "--------")
+            tmp = getLineNode(x, block)
+            '''if x.name == 'then_statement' and tmp == []:
+        print(tmp)
+        print(x.father.printTree(x.father))
+        assert(0)'''
+            ans.extend(tmp)
+    return ans
 
 
 def getLocVar(node):
@@ -414,34 +442,6 @@ def setProb(r: Node, p):
     r.possibility = p  # max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
     for x in r.child:
         setProb(x, p)
-
-
-def getLineNode(root, block, add=True):
-    ans = []
-    block = block + root.name
-    #print(root.name, 'lll')
-    for x in root.child:
-        if x.name in LINENODE:
-            if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
-                continue
-            x.block = block
-            ans.append(x)
-        else:
-            # print(x.name)
-            s = ""
-            if not add:
-                s = block
-                #tmp = getLineNode(x, block)
-            else:
-                s = block + root.name
-            #print(block + root.name + "--------")
-            tmp = getLineNode(x, block)
-            '''if x.name == 'then_statement' and tmp == []:
-        print(tmp)
-        print(x.father.printTree(x.father))
-        assert(0)'''
-            ans.extend(tmp)
-    return ans
 
 
 def ismatch(root, subroot):
@@ -727,8 +727,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             old_code = buggy_class_src_lines[buggy_line_number - 1]
 
             is_if = True
-            subroot = lnode     # line root
-            treeroot = mnode    # method decl
+            subroot = lnode  # line root
+            treeroot = mnode  # method decl
             pre_subroot = None
             after_subroot = None
             line_nodes = getLineNode(treeroot, "")
