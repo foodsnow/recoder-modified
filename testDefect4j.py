@@ -232,7 +232,7 @@ def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
     return lnode, mnode
 
 
-def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
+def get_method_name_and_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
     '''
     Return a method|constructor name, and its starting and ending lines.
 
@@ -719,7 +719,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             if mnode is None:
                 continue
 
-            funcname, startline, endline = get_method_range(tree, mnode, buggy_line_number)
+            funcname, startline, endline = get_method_name_and_range(tree, mnode, buggy_line_number)
             if buggy_class_java_path not in func_map:
                 func_map[buggy_class_java_path] = list()
             func_map[buggy_class_java_path].append({"function": funcname, "begin": startline, "end": endline})
