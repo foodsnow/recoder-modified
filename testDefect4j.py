@@ -361,10 +361,10 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
     actionlist = solveone(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
         troot), model, subroot, vardic, typedic, idxs, idss, classname, mode)
     for x in actionlist:
-        if x.strip() in patchdict:
+        if x.strip() in patch_dict:
             continue
         #print('-', x)
-        patchdict[x.strip()] = 1
+        patch_dict[x.strip()] = 1
         # print(x.split())
         root = getroottree(x.split())
         code = stringfyRoot(root, isIf, mode)
@@ -601,11 +601,10 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         data = []
         func_map: Dict[str, List[dict]] = dict()
         
-        for j in range(len(buggy_locations)):
-            patchdict = {}
-            ac = buggy_locations[j]
-            buggy_class_name = ac[0]
-            fl_score = ac[1]
+        for j, buggy_location in enumerate(buggy_locations):
+            patch_dict = {}
+            buggy_class_name = buggy_location[0]
+            fl_score = buggy_location[1]
             if '$' in buggy_class_name:
                 buggy_class_name = buggy_class_name[:buggy_class_name.index('$')]
             s = buggy_class_name
@@ -622,7 +621,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             parser = javalang.parser.Parser(tokens)
             tree = parser.parse()
             tmproot = getroottree(generateAST(tree))
-            buggy_line_number = ac[2]
+            buggy_line_number = buggy_location[2]
             # current node by line number
             currroot = getNodeById(tmproot, buggy_line_number)
             # Subroot from curroot
@@ -635,7 +634,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 func_map[filepath] = list()
             func_map[filepath].append(
                 {"function": funcname, "begin": startline, "end": endline})
-            oldcode = liness[ac[2] - 1]
+            oldcode = liness[buggy_location[2] - 1]
             isIf = True
             subroot = lnode     # line root
             treeroot = mnode    # method decl
