@@ -228,7 +228,11 @@ def findSubtree(root, subroot):
 
 
 def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[str]:
-    sub = []
+    '''
+    Convert the argument into a Recoder compatible AST.
+    '''
+
+    tree_as_list = []
 
     if not tree:
         return ['None', '^']
@@ -242,32 +246,32 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
             tmpStr = "<empty>"
         if tmpStr[-1] == "^":
             tmpStr += "<>"
-        sub.append(tmpStr)
-        sub.append("^")
-        return sub
+        tree_as_list.append(tmpStr)
+        tree_as_list.append("^")
+        return tree_as_list
 
     if isinstance(tree, list):
         if len(tree) == 0:
-            sub.append("empty")
-            sub.append("^")
+            tree_as_list.append("empty")
+            tree_as_list.append("^")
         else:
             for ch in tree:
                 subtree = generateAST(ch)
-                sub.extend(subtree)
-        return sub
+                tree_as_list.extend(subtree)
+        return tree_as_list
 
     position = None
     if hasattr(tree, 'position'):
         position = tree.position
     current_node = type(tree).__name__
-    sub.append((current_node, position))
+    tree_as_list.append((current_node, position))
 
     try:
-        for x in tree.attrs:
-            if x == "documentation":
+        for tree_attr in tree.attrs:
+            if tree_attr == "documentation":
                 continue
 
-            if not getattr(tree, x):
+            if not getattr(tree, tree_attr):
                 continue
 
             '''
@@ -282,21 +286,25 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
                 continue
             '''
 
-            sub.append(x)
-            node = getattr(tree, x)
+            tree_as_list.append(tree_attr)
+            node = getattr(tree, tree_attr)
+
             if isinstance(node, list):
                 if len(node) == 0:
-                    sub.append("empty")
-                    sub.append("^")
+                    tree_as_list.append("empty")
+                    tree_as_list.append("^")
                 else:
                     for ch in node:
                         subtree = generateAST(ch)
-                        sub.extend(subtree)
+                        tree_as_list.extend(subtree)
+
             elif isinstance(node, javalang.tree.Node):
                 subtree = generateAST(node)
-                sub.extend(subtree)
+                tree_as_list.extend(subtree)
+
             elif not node:
                 continue
+
             elif isinstance(node, str):
                 tmpStr = node
                 tmpStr = tmpStr.replace(" ", "").replace(":", "")
@@ -306,26 +314,30 @@ def generateAST(tree: Union[javalang.tree.CompilationUnit, str, list]) -> List[s
                     tmpStr = "<empty>"
                 if tmpStr[-1] == "^":
                     tmpStr += "<>"
-                sub.append(tmpStr)
-                sub.append("^")
+                tree_as_list.append(tmpStr)
+                tree_as_list.append("^")
+
             elif isinstance(node, set):
                 for ch in node:
                     subtree = generateAST(ch)
-                    sub.extend(subtree)
+                    tree_as_list.extend(subtree)
+
             elif isinstance(node, bool):
-                sub.append(str(node))
-                sub.append("^")
+                tree_as_list.append(str(node))
+                tree_as_list.append("^")
+
             else:
                 print(type(node))
                 assert (0)
-            sub.append("^")
+
+            tree_as_list.append("^")
 
     except AttributeError:
         assert False
 
-    sub.append('^')
+    tree_as_list.append('^')
 
-    return sub
+    return tree_as_list
 
 
 '''def setProb(root, subroot, prob):
