@@ -546,7 +546,7 @@ ids_v1_2 = [
     list(range(1, 28)),
 ]
 
-decoderModel = test()
+decoder_model = test()
 
 bugid = sys.argv[1]
 
@@ -708,7 +708,7 @@ for i, xss in enumerate(prlist):
 
         print(data)
 
-        ans = solveone(data, decoderModel)
+        ans = solveone(data, decoder_model)
 
         with open(f"d4j/{bugid}/{bugid}.json", "w") as f:
             json.dump(ans, f, indent=4)
