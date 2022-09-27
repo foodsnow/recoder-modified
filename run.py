@@ -1,3 +1,4 @@
+import re
 import torch
 from torch import optim
 from Dataset import SumDataset
@@ -18,40 +19,53 @@ import traceback
 from typing import List, Dict, Set, Tuple
 #from pythonBottom.run import finetune
 #from pythonBottom.run import pre
-#wandb.init("sql")
+# wandb.init("sql")
+
+
 class dotdict(dict):
     def __getattr__(self, name):
         return self[name]
+
+
 args = dotdict({
-    'NlLen':500,
-    'CodeLen':30,
-    'batch_size':120,
-    'embedding_size':256,
-    'WoLen':15,
-    'Vocsize':100,
-    'Nl_Vocsize':100,
-    'max_step':3,
-    'margin':0.5,
-    'poolsize':50,
-    'Code_Vocsize':100,
-    'num_steps':50,
-    'rulenum':10,
-    'cnum':695
+    'NlLen': 500,
+    'CodeLen': 30,
+    'batch_size': 120,
+    'embedding_size': 256,
+    'WoLen': 15,
+    'Vocsize': 100,
+    'Nl_Vocsize': 100,
+    'max_step': 3,
+    'margin': 0.5,
+    'poolsize': 50,
+    'Code_Vocsize': 100,
+    'num_steps': 50,
+    'rulenum': 10,
+    'cnum': 695
 })
 #os.environ["CUDA_VISIBLE_DEVICES"]="5, 7"
-#os.environ['CUDA_LAUNCH_BLOCKING']="2"
+# os.environ['CUDA_LAUNCH_BLOCKING']="2"
+
+
 def save_model(model, dirs='checkpointSearch/'):
     if not os.path.exists(dirs):
         os.makedirs(dirs)
     torch.save(model.state_dict(), dirs + 'best_model.ckpt')
 
 
-def load_model(model, dirs = 'checkpointSearch/'):
-    assert os.path.exists(dirs + 'best_model.ckpt'), 'Weights for saved model not found'
-    #cprint(dirs)
-    model.load_state_dict(torch.load(dirs + 'best_model.ckpt', map_location=torch.device("cuda" if torch.cuda.is_available() else "cpu")))
-use_cuda = torch.cuda.is_available()#True#True#torch.cuda.is_available()
-onelist = ['root', 'body', 'statements', 'block', 'arguments', 'initializers', 'parameters', 'case', 'cases', 'selectors']
+def load_model(model, dirs='checkpointSearch/'):
+    assert os.path.exists(
+        dirs + 'best_model.ckpt'), 'Weights for saved model not found'
+    # cprint(dirs)
+    model.load_state_dict(torch.load(dirs + 'best_model.ckpt',
+                          map_location=torch.device("cuda" if torch.cuda.is_available() else "cpu")))
+
+
+use_cuda = torch.cuda.is_available()  # True#True#torch.cuda.is_available()
+onelist = ['root', 'body', 'statements', 'block', 'arguments',
+           'initializers', 'parameters', 'case', 'cases', 'selectors']
+
+
 def gVar(data):
     tensor = data
     if isinstance(data, np.ndarray):
@@ -61,25 +75,34 @@ def gVar(data):
     if use_cuda:
         tensor = tensor.cuda()
     return tensor
+
+
 def getAntiMask(size):
     ans = np.zeros([size, size])
     for i in range(size):
         for j in range(0, i + 1):
             ans[i, j] = 1.0
     return ans
+
+
 def getAdMask(size):
     ans = np.zeros([size, size])
     for i in range(size - 1):
         ans[i, i + 1] = 1.0
     return ans
+
+
 def getRulePkl(vds):
     inputruleparent = []
     inputrulechild = []
     for i in range(args.cnum):
         rule = vds.rrdict[i].strip().lower().split()
-        inputrulechild.append(vds.pad_seq(vds.Get_Em(rule[2:], vds.Code_Voc), vds.Char_Len))
+        inputrulechild.append(vds.pad_seq(
+            vds.Get_Em(rule[2:], vds.Code_Voc), vds.Char_Len))
         inputruleparent.append(vds.Code_Voc[rule[0].lower()])
     return np.array(inputruleparent), np.array(inputrulechild)
+
+
 def getAstPkl(vds):
     rrdict = {}
     for x in vds.Code_Voc:
@@ -89,6 +112,8 @@ def getAstPkl(vds):
         rule = rrdict[i].strip().lower()
         inputchar.append(vds.pad_seq(vds.Get_Char_Em([rule])[0], vds.Char_Len))
     return np.array(inputchar)
+
+
 def evalacc(model, dev_set):
     antimask = gVar(getAntiMask(args.CodeLen))
     a, b = getRulePkl(dev_set)
@@ -96,25 +121,30 @@ def evalacc(model, dev_set):
     tmpf = gVar(a).unsqueeze(0).repeat(4, 1).long()
     tmpc = gVar(b).unsqueeze(0).repeat(4, 1, 1).long()
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=len(dev_set),
-                                              shuffle=False, drop_last=True, num_workers=1)
+                                            shuffle=False, drop_last=True, num_workers=1)
     model = model.eval()
     accs = []
     tcard = []
     loss = []
     antimask2 = antimask.unsqueeze(0).repeat(len(dev_set), 1, 1).unsqueeze(1)
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(4, 1, 1)
-    tmpindex = gVar(np.arange(len(dev_set.ruledict))).unsqueeze(0).repeat(4, 1).long()
+    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
+                  ).float().unsqueeze(0).repeat(4, 1, 1)
+    tmpindex = gVar(np.arange(len(dev_set.ruledict))
+                    ).unsqueeze(0).repeat(4, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))).unsqueeze(0).repeat(4, 1).long()
+    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))
+                     ).unsqueeze(0).repeat(4, 1).long()
     for devBatch in tqdm(devloader):
         for i in range(len(devBatch)):
             devBatch[i] = gVar(devBatch[i])
         with torch.no_grad():
-            l, pre = model(devBatch[0], devBatch[1], devBatch[2], devBatch[3], devBatch[4], devBatch[6], devBatch[7], devBatch[8], devBatch[9], tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, devBatch[5])
+            l, pre = model(devBatch[0], devBatch[1], devBatch[2], devBatch[3], devBatch[4], devBatch[6], devBatch[7],
+                           devBatch[8], devBatch[9], tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, devBatch[5])
             loss.append(l.mean().item())
             pred = pre.argmax(dim=-1)
             resmask = torch.gt(devBatch[5], 0)
-            acc = (torch.eq(pred, devBatch[5]) * resmask).float()#.mean(dim=-1)
+            acc = (torch.eq(pred, devBatch[5])
+                   * resmask).float()  # .mean(dim=-1)
             #predres = (1 - acc) * pred.float() * resmask.float()
             accsum = torch.sum(acc, dim=-1)
             resTruelen = torch.sum(resmask, dim=-1).float()
@@ -123,26 +153,31 @@ def evalacc(model, dev_set):
             acc = acc.sum(dim=-1) / resTruelen
             accs.append(acc.mean().item())
             tcard.append(cnum.item())
-                        #print(devBatch[5])
-                        #print(predres)
+            # print(devBatch[5])
+            # print(predres)
     tnum = np.sum(tcard)
     acc = np.mean(accs)
     l = np.mean(loss)
-                #wandb.log({"accuracy":acc})
-    #exit(0)
+    # wandb.log({"accuracy":acc})
+    # exit(0)
     return acc, tnum, l
+
+
 def train():
     train_set = SumDataset(args, "train")
     print(len(train_set.rrdict))
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(4, 1, 1)
+    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
+                  ).float().unsqueeze(0).repeat(4, 1, 1)
     args.cnum = rulead.size(1)
     tmpast = getAstPkl(train_set)
     a, b = getRulePkl(train_set)
     tmpf = gVar(a).unsqueeze(0).repeat(4, 1).long()
     tmpc = gVar(b).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex = gVar(np.arange(len(train_set.ruledict))).unsqueeze(0).repeat(4, 1).long()
+    tmpindex = gVar(np.arange(len(train_set.ruledict))
+                    ).unsqueeze(0).repeat(4, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(train_set.Code_Voc))).unsqueeze(0).repeat(4, 1).long()
+    tmpindex2 = gVar(np.arange(len(train_set.Code_Voc))
+                     ).unsqueeze(0).repeat(4, 1).long()
     args.Code_Vocsize = len(train_set.Code_Voc)
     args.Nl_Vocsize = len(train_set.Nl_Voc)
     args.Vocsize = len(train_set.Char_Voc)
@@ -153,9 +188,10 @@ def train():
     data_loader = torch.utils.data.DataLoader(dataset=train_set, batch_size=args.batch_size,
                                               shuffle=False, drop_last=True, num_workers=1)
     model = Decoder(args)
-    #load_model(model)
+    # load_model(model)
     optimizer = optim.Adam(model.parameters(), lr=1e-4)
-    optimizer = ScheduledOptim(optimizer, d_model=args.embedding_size, n_warmup_steps=4000)
+    optimizer = ScheduledOptim(
+        optimizer, d_model=args.embedding_size, n_warmup_steps=4000)
     maxAcc = 0
     maxC = 0
     maxAcc2 = 0
@@ -167,7 +203,7 @@ def train():
         model = model.cuda()
         model = nn.DataParallel(model, device_ids=[0, 1])
     antimask = gVar(getAntiMask(args.CodeLen))
-    #model.to()
+    # model.to()
     for epoch in range(100000):
         j = 0
         for dBatch in tqdm(data_loader):
@@ -175,25 +211,30 @@ def train():
                 #acc, tnum = evalacc(model, dev_set)
                 acc2, tnum2, l = evalacc(model, test_set)
                 #print("for dev " + str(acc) + " " + str(tnum) + " max is " + str(maxC))
-                print("for test " + str(acc2) + " " + str(tnum2) + " max is " + str(maxC2) + "loss is " + str(l))
-                #exit(0)
-                if maxL > l:#if maxC2 < tnum2 or maxC2 == tnum2 and maxAcc2 < acc2:
+                print("for test " + str(acc2) + " " + str(tnum2) +
+                      " max is " + str(maxC2) + "loss is " + str(l))
+                # exit(0)
+                if maxL > l:  # if maxC2 < tnum2 or maxC2 == tnum2 and maxAcc2 < acc2:
                     maxC2 = tnum2
                     maxAcc2 = acc2
                     maxL = l
                     print("find better acc " + str(maxAcc2))
                     save_model(model.module)
-            antimask2 = antimask.unsqueeze(0).repeat(args.batch_size, 1, 1).unsqueeze(1)
+            antimask2 = antimask.unsqueeze(0).repeat(
+                args.batch_size, 1, 1).unsqueeze(1)
             model = model.train()
             for i in range(len(dBatch)):
                 dBatch[i] = gVar(dBatch[i])
-            loss, _ = model(dBatch[0], dBatch[1], dBatch[2], dBatch[3], dBatch[4], dBatch[6], dBatch[7], dBatch[8], dBatch[9], tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, dBatch[5])
-            #print(loss.mean())
-            loss = torch.mean(loss)# + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 2, 1).squeeze(0).squeeze(0).mean() + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 3, 1).squeeze(0).squeeze(0).mean() + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 4, 1).squeeze(0).squeeze(0).mean()
+            loss, _ = model(dBatch[0], dBatch[1], dBatch[2], dBatch[3], dBatch[4], dBatch[6], dBatch[7],
+                            dBatch[8], dBatch[9], tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, dBatch[5])
+            # print(loss.mean())
+            loss = torch.mean(loss)  # + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 2, 1).squeeze(0).squeeze(0).mean() + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 3, 1).squeeze(0).squeeze(0).mean() + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 4, 1).squeeze(0).squeeze(0).mean()
             optimizer.zero_grad()
             loss.backward()
             optimizer.step_and_update_lr()
             j += 1
+
+
 '''class Node:
     def __init__(self, name, d):
         self.name = name
@@ -214,6 +255,8 @@ def train():
             s += self.printTree(c)
         s += "^ "#print(r.name + "^")
         return s'''
+
+
 class SearchNode:
     def __init__(self, ds, nl):
         self.state = [ds.ruledict["start -> root"]]
@@ -224,8 +267,9 @@ class SearchNode:
         self.inputparent = ["root"]
         self.finish = False
         self.unum = 0
-        self.parent = np.zeros([args.NlLen + args.CodeLen, args.NlLen + args.CodeLen])
-        #self.parent[args.NlLen]
+        self.parent = np.zeros(
+            [args.NlLen + args.CodeLen, args.NlLen + args.CodeLen])
+        # self.parent[args.NlLen]
         self.expanded = None
         #self.ruledict = ds.rrdict
         self.expandedname = []
@@ -250,8 +294,10 @@ class SearchNode:
                 currnode = currnode.father
         self.everTreepath = []
         self.solveroot: Node = None
+
     def selcetNode(self, root: Node) -> Node:
-        if not root.expanded and root.name in self.expandedname and root.name not in onelist: #and self.state[root.fatherlistID] < len(self.ruledict):
+        # and self.state[root.fatherlistID] < len(self.ruledict):
+        if not root.expanded and root.name in self.expandedname and root.name not in onelist:
             return root
         else:
             for x in root.child:
@@ -261,29 +307,35 @@ class SearchNode:
             if root.name in onelist and root.expanded == False:
                 return root
         return None
+
     def selectExpandedNode(self):
         self.expanded = self.selcetNode(self.root)
+
     def getRuleEmbedding(self, ds: SumDataset, nl):
         inputruleparent = []
         inputrulechild = []
         for x in self.state:
             if x >= len(ds.rrdict):
                 inputruleparent.append(ds.Get_Em(["value"], ds.Code_Voc)[0])
-                inputrulechild.append(ds.pad_seq(ds.Get_Em(["copyword"], ds.Code_Voc), ds.Char_Len))
+                inputrulechild.append(ds.pad_seq(
+                    ds.Get_Em(["copyword"], ds.Code_Voc), ds.Char_Len))
             else:
                 rule = ds.rrdict[x].strip().lower().split()
-                #print(rule[0])
+                # print(rule[0])
                 inputruleparent.append(ds.Get_Em([rule[0]], ds.Code_Voc)[0])
                 #print(ds.Get_Em([rule[0]], ds.Code_Voc))
-                inputrulechild.append(ds.pad_seq(ds.Get_Em(rule[2:], ds.Code_Voc), ds.Char_Len))
-        tmp = [ds.pad_seq(ds.Get_Em(['start'], ds.Code_Voc), 10)] + self.everTreepath
+                inputrulechild.append(ds.pad_seq(
+                    ds.Get_Em(rule[2:], ds.Code_Voc), ds.Char_Len))
+        tmp = [ds.pad_seq(ds.Get_Em(['start'], ds.Code_Voc), 10)
+               ] + self.everTreepath
         inputrulechild = ds.pad_list(tmp, ds.Code_Len, 10)
         inputrule = ds.pad_seq(self.state, ds.Code_Len)
         #inputrulechild = ds.pad_list(inputrulechild, ds.Code_Len, ds.Char_Len)
         inputruleparent = ds.pad_seq(inputruleparent, ds.Code_Len)
         inputdepth = ds.pad_list(self.depth, ds.Code_Len, 40)
-        #print(inputruleparent)
+        # print(inputruleparent)
         return inputrule, inputrulechild, inputruleparent, inputdepth
+
     def getTreePath(self, ds):
         tmppath = [self.expanded.name.lower()]
         node = self.expanded.father
@@ -293,6 +345,7 @@ class SearchNode:
         tmp = ds.pad_seq(ds.Get_Em(tmppath, ds.Code_Voc), 10)
         self.everTreepath.append(tmp)
         return ds.pad_list(self.everTreepath, ds.Code_Len, 10)
+
     def checkapply(self, rule: int, ds: SumDataset) -> bool:
         if rule >= len(ds.ruledict):
             if self.expanded.name == 'root' and rule - len(ds.ruledict) >= args.NlLen:
@@ -303,7 +356,7 @@ class SearchNode:
                 if '.0' in self.idmap[rule - len(ds.ruledict) - args.NlLen].getTreestr():
                     return False
                 #print(self.idmap[rule - len(ds.ruledict)].name)
-                #assert(0)
+                # assert(0)
                 return True
             if rule - len(ds.ruledict) >= args.NlLen:
                 return False
@@ -321,13 +374,14 @@ class SearchNode:
                 if self.unum >= 1:
                     return False
                 return True
-            #if len(self.depth) == 1:
-                #print(rules)
+            # if len(self.depth) == 1:
+                # print(rules)
             #    if rules != 'root -> modified' or rules != 'root -> add':
             #        return False
             if rules.strip().split()[0].lower() != self.expanded.name.lower():
                 return False
         return True
+
     def copynode(self, newnode, original):
         for x in original.child:
             nnode = Node(x.name, -1)
@@ -336,6 +390,7 @@ class SearchNode:
             newnode.child.append(nnode)
             self.copynode(nnode, x)
         return
+
     def applyrule(self, rule: int, ds: SumDataset) -> bool:
         '''if rule < len(ds.ruledict):
             print(rule, ds.rrdict[rule])
@@ -388,7 +443,7 @@ class SearchNode:
             rules = ds.rrdict[rule]
             if rules == 'start -> unknown':
                 self.unum += 1
-            #if rules.strip().split()[0] != self.expanded.name:
+            # if rules.strip().split()[0] != self.expanded.name:
             #    #print(self.expanded.name)
             #    assert(0)
             #    return False
@@ -397,64 +452,75 @@ class SearchNode:
                 self.expanded.expanded = True
             else:
                 for x in rules.strip().split()[2:]:
-                    nnode = Node(x, -1)                   
+                    nnode = Node(x, -1)
                     #nnode = Node(x, self.expanded.depth + 1)
                     self.expanded.child.append(nnode)
                     nnode.father = self.expanded
                     nnode.fatherlistID = len(self.state)
-        #self.parent.append(self.expanded.fatherlistID)
-        self.parent[args.NlLen + len(self.depth), args.NlLen + self.expanded.fatherlistID] = 1
+        # self.parent.append(self.expanded.fatherlistID)
+        self.parent[args.NlLen + len(self.depth),
+                    args.NlLen + self.expanded.fatherlistID] = 1
         if rule >= len(ds.ruledict) + args.NlLen:
-            self.parent[args.NlLen + len(self.depth), rule - len(ds.ruledict) - args.NlLen] = 1
+            self.parent[args.NlLen + len(self.depth),
+                        rule - len(ds.ruledict) - args.NlLen] = 1
         elif rule >= len(ds.ruledict):
-            self.parent[args.NlLen + len(self.depth), rule - len(ds.ruledict)] = 1
+            self.parent[args.NlLen +
+                        len(self.depth), rule - len(ds.ruledict)] = 1
         if rule >= len(ds.ruledict) + args.NlLen:
             self.state.append(ds.ruledict['start -> copyword2'])
         elif rule >= len(ds.ruledict):
             self.state.append(ds.ruledict['start -> copyword'])
         else:
             self.state.append(rule)
-        #self.state.append(rule)
+        # self.state.append(rule)
         self.inputparent.append(self.expanded.name.lower())
         self.depth.append(1)
         if self.expanded.name not in onelist:
             self.expanded.expanded = True
         return True
+
     def printTree(self, r):
-        s = r.name + r.fname + " "#print(r.name)
+        s = r.name + r.fname + " "  # print(r.name)
         if len(r.child) == 0:
             s += "^ "
             return s
         #r.child = sorted(r.child, key=lambda x:x.name)
         for c in r.child:
             s += self.printTree(c)
-        s += "^ "#print(r.name + "^")
+        s += "^ "  # print(r.name + "^")
         return s
+
     def getTreestr(self):
         return self.printTree(self.root)
 
-        
+
 beamss = []
+
+
 def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
-    batch_size = len(inputnl[0].view(-1, args.NlLen)) # beamsize=150, batch_size=20, k=1
+    # beamsize=150, batch_size=20, k=1
+    batch_size = len(inputnl[0].view(-1, args.NlLen))
     rrdic = {}
     for x in vds.Code_Voc:
         rrdic[vds.Code_Voc[x]] = x
-    #print(rrdic[684])
-    #print(rrdic[2])
-    #print(rrdic[183])
+    # print(rrdic[684])
+    # print(rrdic[2])
+    # print(rrdic[183])
     tmpast = getAstPkl(vds)
     a, b = getRulePkl(vds)
     tmpf = gVar(a).unsqueeze(0).repeat(2, 1).long()
     tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
-    tmpindex = gVar(np.arange(len(vds.ruledict))).unsqueeze(0).repeat(2, 1).long()
+    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
+                  ).float().unsqueeze(0).repeat(2, 1, 1)
+    tmpindex = gVar(np.arange(len(vds.ruledict))
+                    ).unsqueeze(0).repeat(2, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(vds.Code_Voc))).unsqueeze(0).repeat(2, 1).long()
+    tmpindex2 = gVar(np.arange(len(vds.Code_Voc))
+                     ).unsqueeze(0).repeat(2, 1).long()
     with torch.no_grad():
         beams: Dict[int, List[SearchNode]] = {}
         hisTree: Dict[int, Dict[str, int]] = {}
-        #print(len(vds.nl))
+        # print(len(vds.nl))
         for i in range(batch_size):
             beams[i] = [SearchNode(vds, vds.nl[args.batch_size * k + i])]
             hisTree[i] = {}
@@ -464,14 +530,14 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
         continueSet = {}
         tansV: Dict[int, List[SearchNode]] = {}
         while True:
-            #print(index)
+            # print(index)
             tmpbeam: Dict[int, List[list]] = {}
             ansV: Dict[int, List[SearchNode]] = {}
-            #for x in beams[0]:
+            # for x in beams[0]:
             #    print(x.getTreestr())
             #    print(x.actlist)
             #    print(x.prob)
-            #print("kkkkkkkkkkkkk")
+            # print("kkkkkkkkkkkkk")
             if len(endnum) == batch_size:
                 break
             if index >= args.CodeLen:
@@ -492,40 +558,42 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                     if p >= len(beams[ba]):
                         continue
                     x = beams[ba][p]
-                    #print(x.getTreestr())
+                    # print(x.getTreestr())
                     x.selectExpandedNode()
-                    #print(x.expanded.name)
+                    # print(x.expanded.name)
                     if x.expanded == None or len(x.state) >= args.CodeLen:
                         x.finish = True
                         ansV.setdefault(ba, []).append(x)
                     else:
-                        #print(x.expanded.name)
+                        # print(x.expanded.name)
                         validnum.append(p)
                         tmpnl.append(inputnl[0][ba].data.cpu().numpy())
                         tmpnlad.append(inputnl[1][ba].data.cpu().numpy())
                         tmpnl8.append(inputnl[8][ba].data.cpu().numpy())
                         tmpnl9.append(inputnl[9][ba].data.cpu().numpy())
-                        a, b, c, d = x.getRuleEmbedding(vds, vds.nl[args.batch_size * k + ba])
+                        a, b, c, d = x.getRuleEmbedding(
+                            vds, vds.nl[args.batch_size * k + ba])
                         tmprule.append(a)
                         tmprulechild.append(b)
                         tmpruleparent.append(c)
                         tmptreepath.append(x.getTreePath(vds))
                         #tmp = np.eye(vds.Code_Len)[x.parent]
-                        #tmp = np.concatenate([tmp, np.zeros([vds.Code_Len, vds.Code_Len])], axis=0)[:vds.Code_Len,:]#self.pad_list(tmp, self.Code_Len, self.Code_Len)
+                        # tmp = np.concatenate([tmp, np.zeros([vds.Code_Len, vds.Code_Len])], axis=0)[:vds.Code_Len,:]#self.pad_list(tmp, self.Code_Len, self.Code_Len)
                         tmpAd.append(x.parent)
                         tmpdepth.append(d)
-                #print("--------------------------")
+                # print("--------------------------")
                 if len(tmprule) == 0:
                     continue
                 #batch_size = len(tmprule)
-                antimasks = antimask.unsqueeze(0).repeat(len(tmprule), 1, 1).unsqueeze(1)
+                antimasks = antimask.unsqueeze(0).repeat(
+                    len(tmprule), 1, 1).unsqueeze(1)
                 tmprule = np.array(tmprule)
                 tmprulechild = np.array(tmprulechild)
                 tmpruleparent = np.array(tmpruleparent)
                 tmptreepath = np.array(tmptreepath)
                 tmpAd = np.array(tmpAd)
                 tmpdepth = np.array(tmpdepth)
-                #print(tmpnl)
+                # print(tmpnl)
                 tmpnl = np.array(tmpnl)
                 tmpnlad = np.array(tmpnlad)
                 tmpnl8 = np.array(tmpnl8)
@@ -537,9 +605,12 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                 assert(np.array_equal(inputnl[6][0][:index + 1], tmpAd[0][:index + 1]))
                 assert(np.array_equal(inputnl[7][0][:index + 1], tmptreepath[0][:index + 1]))
                 #assert(np.array_equal(inputnl[8][0][:index + 1], tmpdepth[0][:index + 1]))'''
-                print(f"before@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
-                result = model(gVar(tmpnl), gVar(tmpnlad), gVar(tmprule), gVar(tmpruleparent), gVar(tmprulechild), gVar(tmpAd), gVar(tmptreepath), gVar(tmpnl8), gVar(tmpnl9), tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimasks, None, "test")
-                print(f"after@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
+                print(
+                    f"before@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
+                result = model(gVar(tmpnl), gVar(tmpnlad), gVar(tmprule), gVar(tmpruleparent), gVar(tmprulechild), gVar(tmpAd), gVar(
+                    tmptreepath), gVar(tmpnl8), gVar(tmpnl9), tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimasks, None, "test")
+                print(
+                    f"after@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
                 results = result.data.cpu().numpy()
                 #print(result, inputCode)
                 currIndex = 0
@@ -548,8 +619,9 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                     if j not in validnum:
                         continue
                     x = beams[ba][j]
-                    tmpbeamsize = 0#beamsize
-                    result: np.ndarray[float] = np.negative(results[currIndex, index])
+                    tmpbeamsize = 0  # beamsize
+                    result: np.ndarray[float] = np.negative(
+                        results[currIndex, index])
                     currIndex += 1
                     cresult: np.ndarray[float] = np.negative(result)
                     indexs: np.ndarray[int] = np.argsort(result)
@@ -561,7 +633,7 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                         c = x.checkapply(indexs[i], vds)
                         if c:
                             tmpbeamsize += 1
-                            #continue
+                            # continue
                         else:
                             continue
                         '''copynode = deepcopy(x)
@@ -574,10 +646,11 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                         #copynode.prob = copynode.prob + np.log(cresult[indexs[i]])
                         # negative log-likelihood
                         # maximize!
-                        prob = x.prob + np.log(cresult[indexs[i]])#copynode.prob = copynode.prob + np.log(cresult[indexs[i]])
+                        # copynode.prob = copynode.prob + np.log(cresult[indexs[i]])
+                        prob = x.prob + np.log(cresult[indexs[i]])
                         tmpbeam.setdefault(ba, []).append([prob, indexs[i], x])
                         #tmpbeam.setdefault(j, []).append(copynode)
-                    #print(tmpbeam[0].prob)
+                    # print(tmpbeam[0].prob)
             for i in range(batch_size):
                 if i in ansV:
                     if len(ansV[i]) == beamsize:
@@ -590,23 +663,25 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                             tmpbeam[j].append([x.prob, -1, x])
                     tmp = sorted(tmpbeam[j], key=lambda x: x[0], reverse=True)
                     beams[j] = []
-                    for x in tmp: # x: (prob, index, SearchNode)
+                    for x in tmp:  # x: (prob, index, SearchNode)
                         if len(beams[j]) >= beamsize:
                             break
                         if x[1] != -1:
                             x_prob: float = x[0]
                             x_rule: int = x[1]
-                            copynode: SearchNode = pickle.loads(pickle.dumps(x[2]))
+                            copynode: SearchNode = pickle.loads(
+                                pickle.dumps(x[2]))
                             '''if x[1] >= len(vds.rrdict) + args.CodeLen:
                                 print(len(vds.tablename[s[args.batch_size * k + j]['database_id']]['column_names']))
                                 if (x[1] - len(vds.rrdict) - args.CodeLen >= 4 and args.batch_size * k + j == 20) or x[1] - len(vds.rrdict) - args.CodeLen >= len(vds.tablename[s[args.batch_size * k + j]['database_id']]['table_names']) + len(vds.tablename[s[args.batch_size * k + j]['database_id']]['column_names']):
                                     print(vds.tabless[args.batch_size * k + j])
                                     print(x[1] - len(vds.rrdict) - args.CodeLen)
                                     assert(0)'''
-                            #print(x[1])
+                            # print(x[1])
                             copynode.applyrule(x[1], vds)
-                            print(f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.actlist}")
-                            #print(x[0])
+                            print(
+                                f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.actlist}")
+                            # print(x[0])
                             tree_str = copynode.getTreestr()
                             if tree_str in hisTree:
                                 continue
@@ -615,7 +690,7 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                             hisTree[j][tree_str] = 1
                         else:
                             beams[j].append(x[2])
-            #if index >= 2:
+            # if index >= 2:
             #    assert(0)
             index += 1
         for j in range(batch_size):
@@ -628,37 +703,43 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                     tmp.append(x)
                 else:
                     continue
-            beams[j] = sorted(tmp, key=lambda x: x.prob, reverse=True)[:beamsize]  
-        #for x in beams:
-        #    beams[x] = sorted(beams[x], key=lambda x: x.prob, reverse=True)   
+            beams[j] = sorted(tmp, key=lambda x: x.prob,
+                              reverse=True)[:beamsize]
+        # for x in beams:
+        #    beams[x] = sorted(beams[x], key=lambda x: x.prob, reverse=True)
         return beams
         for i in range(len(beams)):
             mans = -1000000
             lst = beams[i]
             tmpans = 0
             for y in lst:
-                #print(y.getTreestr())
+                # print(y.getTreestr())
                 if y.prob > mans:
                     mans = y.prob
                     tmpans = y
             beams[i] = tmpans
         #open("beams.pkl", "wb").write(pickle.dumps(beamss))
         return beams
-        #return beams
+        # return beams
+
+
 def test():
-    #pre()
+    # pre()
     #os.environ["CUDA_VISIBLE_DEVICES"]="5, 7"
     dev_set = SumDataset(args, "test")
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
+    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
+                  ).float().unsqueeze(0).repeat(2, 1, 1)
     args.cnum = rulead.size(1)
     tmpast = getAstPkl(dev_set)
     a, b = getRulePkl(dev_set)
     tmpf = gVar(a).unsqueeze(0).repeat(2, 1).long()
     tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex = gVar(np.arange(len(dev_set.ruledict))).unsqueeze(0).repeat(2, 1).long()
+    tmpindex = gVar(np.arange(len(dev_set.ruledict))
+                    ).unsqueeze(0).repeat(2, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))).unsqueeze(0).repeat(2, 1).long()
-    #print(len(dev_set))
+    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))
+                     ).unsqueeze(0).repeat(2, 1).long()
+    # print(len(dev_set))
     args.Nl_Vocsize = len(dev_set.Nl_Voc)
     args.Code_Vocsize = len(dev_set.Code_Voc)
     args.Vocsize = len(dev_set.Char_Voc)
@@ -668,20 +749,20 @@ def test():
     rdic = {}
     for x in dev_set.Nl_Voc:
         rdic[dev_set.Nl_Voc[x]] = x
-    #print(dev_set.Nl_Voc)
+    # print(dev_set.Nl_Voc)
     model = Decoder(args)
     if torch.cuda.is_available():
         print('using GPU')
         #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
-                                  shuffle=False, drop_last=False, num_workers=0)
+                                            shuffle=False, drop_last=False, num_workers=0)
     model = model.eval()
     load_model(model)
     return model
-    #return model
+    # return model
     f = open("outval.txt", "w")
-    index = 0 
+    index = 0
     indexs = 0
     antimask = gVar(getAntiMask(args.CodeLen))
     antimask2 = antimask.unsqueeze(0).repeat(1, 1, 1).unsqueeze(1)
@@ -689,7 +770,7 @@ def test():
         '''if indexs < 5:
             indexs += 1
             continue'''
-        #if indexs > 5:
+        # if indexs > 5:
         #    break
         '''pre = model(gVar(x[0]), gVar(x[1]), gVar(x[2]), gVar(x[3]), gVar(x[4]), gVar(x[6]), gVar(x[7]), gVar(x[8]), tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, None, 'test')
         #print(pre[0,3,4020], pre[0,3,317])
@@ -705,19 +786,22 @@ def test():
         if cnum.item() != 1:
             indexs += 1
             continue'''
-        ans = BeamSearch((x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7], x[8], x[9]), dev_set, model, 80, args.batch_size, indexs)
+        ans = BeamSearch((x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7],
+                         x[8], x[9]), dev_set, model, 80, args.batch_size, indexs)
         for i in range(args.batch_size):
             beam = ans[i]
             f.write(str(indexs * args.batch_size + i))
             for x in beam:
                 f.write(x.getTreestr() + "\n")
             f.write("-------\n")
-                #print(x.getTreestr())
+            # print(x.getTreestr())
         indexs += 1
-        #exit(0)
+        # exit(0)
         #f.write(" ".join(ans.ans[1:-1]))
-        #f.write("\n")
-        #f.flush()#print(ans)
+        # f.write("\n")
+        # f.flush()#print(ans)
+
+
 def findnodebyid(root, idx):
     if root.id == idx:
         return root
@@ -725,6 +809,8 @@ def findnodebyid(root, idx):
         t = findnodebyid(x, idx)
         if t:
             return t
+
+
 def getroot(strlst):
     tokens = strlst.split()
     root = Node(tokens[0], 0)
@@ -740,12 +826,16 @@ def getroot(strlst):
         else:
             currnode = currnode.father
     return root
+
+
 def getMember(node):
     for x in node.child:
         if x.name == 'member':
             return x.child[0].name
+
+
 def applyoperater(ans, subroot):
-    #print(ans.root.printTree(ans.root))
+    # print(ans.root.printTree(ans.root))
     copynode = pickle.loads(pickle.dumps(subroot))
     change = False
     type = ''
@@ -757,9 +847,9 @@ def applyoperater(ans, subroot):
                 continue
             if node.name == 'member':
                 type = node.child[0].name
-                #assert(0)
+                # assert(0)
             elif node.name == 'MemberReference':
-                type = getMember(node)#node.child[0].child[0].name
+                type = getMember(node)  # node.child[0].child[0].name
                 print(6, type)
             elif node.name == 'qualifier':
                 type = node.child[0].name
@@ -767,8 +857,8 @@ def applyoperater(ans, subroot):
                 type = 'valid'
             else:
                 print(node.name)
-                assert(0)
-            #print(node.name)
+                assert (0)
+            # print(node.name)
             idx = node.father.child.index(node)
             node.father.child[idx] = x
             x.father = node.father
@@ -776,16 +866,17 @@ def applyoperater(ans, subroot):
         node = Node('root', -1)
         node.child.append(copynode)
         copynode.father = node
-        ans.solveroot = node#copynode
+        ans.solveroot = node  # copynode
         ans.type = type
-        #print(node.printTree(ans.solveroot))
+        # print(node.printTree(ans.solveroot))
     else:
         ans.solveroot = ans.root
         ans.type = type
-    #print(copynode.printTree(copynode))
-    #assert(0)
+    # print(copynode.printTree(copynode))
+    # assert(0)
     return
-import re 
+
+
 def replaceVar(root, rrdict, place=False):
     if root.name in rrdict:
         root.name = rrdict[root.name]
@@ -798,6 +889,8 @@ def replaceVar(root, rrdict, place=False):
     for x in root.child:
         ans = ans and replaceVar(x, rrdict)
     return ans
+
+
 def getUnknown(root: Node) -> List[Node]:
     if root.name == 'unknown':
         return [root]
@@ -805,17 +898,20 @@ def getUnknown(root: Node) -> List[Node]:
     for x in root.child:
         ans.extend(getUnknown(x))
     return ans
+
+
 def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
     nodes = getUnknown(ans.solveroot)
-    fans: List[str] =  list()
+    fans: List[str] = list()
     #fans_prob: List[float] = list()
     if len(nodes) >= 2:
-        return [] #([], [])
+        return []  # ([], [])
     elif len(nodes) == 0:
-        #print(ans.root.printTree(ans.solveroot))
-        return [ans.root.printTree(ans.solveroot)] #([ans.root.printTree(ans.solveroot)], [ans.prob])
+        # print(ans.root.printTree(ans.solveroot))
+        # ([ans.root.printTree(ans.solveroot)], [ans.prob])
+        return [ans.root.printTree(ans.solveroot)]
     else:
-        #print(2)
+        # print(2)
         unknown = nodes[0]
         if unknown.father.father and unknown.father.father.name == 'MethodInvocation':
             classname = ''
@@ -825,7 +921,7 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                 for x in unknown.father.father.child:
                     if x.name == 'qualifier':
                         print(x.child[0].name, typedic)
-                        if x.child[0].name in typedic: 
+                        if x.child[0].name in typedic:
                             classname = typedic[x.child[0].name]
                             break
                         else:
@@ -834,21 +930,22 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                             for f in classcontent[sclassname + '.java']['classes'][0]['fields']:
                                 print(x.child[0].name, f['name'])
                                 if f['name'] == x.child[0].name[:-4]:
-                                     classname = f['type']
-                                     break
+                                    classname = f['type']
+                                    break
                 for x in unknown.father.father.child:
                     if x.name == 'arguments':
                         for y in x.child:
                             if y.name == 'MemberReference':
                                 try:
                                     if y.child[0].child[0].name in typedic:
-                                        args.append(typedic[y.child[0].child[0].name])
+                                        args.append(
+                                            typedic[y.child[0].child[0].name])
                                     else:
                                         #print(6, y.child[0].child[0].name)
-                                        args.append('int')#return []
+                                        args.append('int')  # return []
                                 except:
-                                    #print('gg2')
-                                    return [] #([], [])
+                                    # print('gg2')
+                                    return []  # ([], [])
                             elif y.name == 'Literal':
                                 if y.child[0].child[0].name == "<string>_er":
                                     args.append("String")
@@ -856,57 +953,57 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                                     args.append("int")
                             else:
                                 print('except')
-                                return [] # ([], [])
+                                return []  # ([], [])
             print(7, classname)
             if classname == '':
                 classbody = classcontent[sclassname + '.java']['classes']
             elif classname != '':
                 if classname + ".java" not in classcontent:
                     #print(5, classname )
-                    return [] #([], [])
+                    return []  # ([], [])
                 classbody = classcontent[classname + '.java']['classes']
             #print(5, sclassname, classbody, classname)
-            #print(8)
+            # print(8)
             if unknown.father.name == 'qualifier':
                 vtype = ""
                 for x in classbody[0]['fields']:
-                    #print(x)
+                    # print(x)
                     if x['name'] == ans.type[:-4]:
                         vtype = x['type']
                         break
             if 'IfStatement' in ans.getTreestr():
                 if mode == 1 and len(ans.solveroot.child) == 1:
-                    #print(ans.solveroot.printTree(ans.solveroot))
-                    return [] #([], [])
-                #print(ans.solveroot.printTree(ans.solveroot))
+                    # print(ans.solveroot.printTree(ans.solveroot))
+                    return []  # ([], [])
+                # print(ans.solveroot.printTree(ans.solveroot))
                 if unknown.father.name == 'member':
                     for x in classbody[0]['methods']:
                         if len(x['params']) == 0 and x['type'] == 'boolean':
                             unknown.name = x['name'] + "_ter"
-                                #print('gggg', unknown.printTree(ans.solveroot))
+                            #print('gggg', unknown.printTree(ans.solveroot))
                             fans.append(unknown.printTree(ans.solveroot))
-                            #fans_prob.append(ans.solveroot.prob)
+                            # fans_prob.append(ans.solveroot.prob)
                 elif unknown.father.name == 'qualifier':
                     for x in classbody[0]['fields']:
                         if x['type'] == vtype:
                             unknown.name = x['name'] + "_ter"
                             fans.append(unknown.printTree(ans.solveroot))
-                            #fans_prob.append(ans.solveroot.prob)
+                            # fans_prob.append(ans.solveroot.prob)
             else:
                 #print("a", args)
                 if mode == 0 and ans.root == ans.solveroot and len(args) == 0 and classname != 'EndTag':
-                    return [] #([], [])
+                    return []  # ([], [])
                 otype = ""
                 if classname == 'EndTag':
                     otype = "String"
-                
+
                 if mode == 0 and ans.type != '':
                     args = []
 
                     if ans.type == "valid":
-                        return [] #([], [])
+                        return []  # ([], [])
                     for m in classbody[0]['methods']:
-                            #print(m['name'])
+                        # print(m['name'])
                         if m['name'] == ans.type[:-4]:
                             otype = m['type']
                             for y in m['params']:
@@ -916,19 +1013,19 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                 if unknown.father.name == 'member':
                     #print(mode, ans.type, args)
                     for x in classbody[0]['methods']:
-                        #print(x)
+                        # print(x)
                         print(x['type'], otype, x['name'], ans.type)
                         if len(args) == 0 and len(x['params']) == 0:
                             if mode == 0 and x['type'] != otype:
                                 continue
                             if mode == 1 and x['type'] is not None:
                                 continue
-                            #if mode == 1 and x['type'] != "null":
+                            # if mode == 1 and x['type'] != "null":
                             #    continue
                             unknown.name = x['name'] + "_ter"
                             #print('gggg', unknown.printTree(ans.solveroot))
                             fans.append(unknown.printTree(ans.solveroot))
-                            #fans_prob.append(ans.solveroot.prob)
+                            # fans_prob.append(ans.solveroot.prob)
                         #print(x['name'], x['type'], args)
                         if ans.type != '':
                             if mode == 0 and len(args) > 0 and x['type'] == otype:
@@ -937,23 +1034,25 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                                     targ.append(y['type'])
                                 if args == targ:
                                     unknown.name = x['name'] + "_ter"
-                                    fans.append(unknown.printTree(ans.solveroot))
-                                    #fans_prob.append(ans.solveroot.prob)
+                                    fans.append(
+                                        unknown.printTree(ans.solveroot))
+                                    # fans_prob.append(ans.solveroot.prob)
                         else:
-                            #print(10)
+                            # print(10)
                             if mode == 0 and len(args) > 0:
-                                #print(11)
+                                # print(11)
                                 targ = []
                                 for y in x['params']:
                                     targ.append(y['type'])
                                 #print('p', targ, x['name'], x)
                                 if args == targ and 'type' in x and x['type'] is None:
                                     unknown.name = x['name'] + "_ter"
-                                    fans.append(unknown.printTree(ans.solveroot))
-                                    #fans_prob.append(ans.solveroot.prob)
+                                    fans.append(
+                                        unknown.printTree(ans.solveroot))
+                                    # fans_prob.append(ans.solveroot.prob)
                 elif unknown.father.name == 'qualifier':
                     if ans.type == 'valid':
-                        return [] #([], [])
+                        return []  # ([], [])
                     for x in classbody[0]['fields']:
                         if x['type'] == vtype:
                             unknown.name = x['name'] + "_ter"
@@ -967,9 +1066,10 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                             tmpnode1.father = tmpnode
                             tmpnode1.child.append(tmpnode2)
                             tmpnode2.father = tmpnode1
-                            unknown.name = " ".join(tmpnode.printTree(tmpnode).split()[:-1])#tmpnode.printTree(tmpnode)
+                            unknown.name = " ".join(tmpnode.printTree(tmpnode).split()[
+                                                    :-1])  # tmpnode.printTree(tmpnode)
                             fans.append(unknown.printTree(ans.solveroot))
-                            #fans_prob.append(ans.solveroot.prob)
+                            # fans_prob.append(ans.solveroot.prob)
         elif unknown.father.name == 'qualifier':
             classbody = classcontent[sclassname + '.java']['classes']
             vtype = ""
@@ -982,7 +1082,7 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                 if x['type'] == vtype:
                     unknown.name = x['name'] + "_ter"
                     fans.append(unknown.printTree(ans.solveroot))
-                    #fans_prob.append(ans.solveroot.prob)
+                    # fans_prob.append(ans.solveroot.prob)
             for x in classbody[0]['methods']:
                 if x['type'] == vtype and len(x['params']) == 0:
                     tmpnode = Node('MethodInvocation', -1)
@@ -992,22 +1092,23 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                     tmpnode1.father = tmpnode
                     tmpnode1.child.append(tmpnode2)
                     tmpnode2.father = tmpnode1
-                    unknown.name = " ".join(tmpnode.printTree(tmpnode).split()[:-1])
+                    unknown.name = " ".join(
+                        tmpnode.printTree(tmpnode).split()[:-1])
                     fans.append(unknown.printTree(ans.solveroot))
-                    #fans_prob.append(ans.solveroot.prob)
+                    # fans_prob.append(ans.solveroot.prob)
         elif unknown.father.name == 'member':
             classname = ''
             if unknown.father.name == 'member':
                 for x in unknown.father.father.child:
                     if x.name == 'qualifier':
-                        if x.child[0].name in typedic: 
+                        if x.child[0].name in typedic:
                             classname = typedic[x.child[0].name]
                             break
                         else:
                             for f in classcontent[sclassname + '.java']['classes'][0]['fields']:
                                 if f['name'] == x.child[0].name[:-4]:
-                                     classname = f['type']
-                                     break
+                                    classname = f['type']
+                                    break
                         if x.child[0].name[:-4] + ".java" in classcontent:
                             classname = x.child[0].name[:-4]
             #print(0, classname, ans.type)
@@ -1016,7 +1117,7 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
             elif classname != '':
                 if classname + ".java" not in classcontent:
                     #print(5, classname )
-                    return [] #([], [])
+                    return []  # ([], [])
                 classbody = classcontent[classname + '.java']['classes']
             vtype = ""
             #print('type', ans.type)
@@ -1036,8 +1137,9 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                         mname = s.child[0].name
                     if s.name == 'type' and tname == 'type':
                         mname = s.child[0].child[0].child[0].name
-                idx = unknown.father.father.father.child.index(unknown.father.father)
-                #print(idx)
+                idx = unknown.father.father.father.child.index(
+                    unknown.father.father)
+                # print(idx)
                 if tname == 'member':
                     for f in classbody[0]['methods']:
                         if f['name'] == mname[:-4] and idx < len(f['params']):
@@ -1046,7 +1148,7 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                             break
                 else:
                     if mname[:-4] + ".java" not in classcontent:
-                        return [] #([], [])
+                        return []  # ([], [])
                     for f in classcontent[mname[:-4] + ".java"]['classes'][0]['methods']:
                         #print(f['name'], f['params'], mname[:-4])
                         if f['name'] == mname[:-4] and idx < len(f['params']):
@@ -1055,11 +1157,14 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
             if True:
                 for x in classbody[0]['fields']:
                     #print(classname, x['type'], x['name'], vtype, ans.type)
-                    if x['type'] == vtype or (x['type'] == 'double' and vtype == 'int'):# or vtype == "":
+                    # or vtype == "":
+                    if x['type'] == vtype or (x['type'] == 'double' and vtype == 'int'):
                         unknown.name = x['name'] + "_ter"
                         fans.append(unknown.printTree(ans.solveroot))
-                        #fans_prob.append(ans.solveroot.prob)
-    return fans #(fans, fans_prob)
+                        # fans_prob.append(ans.solveroot.prob)
+    return fans  # (fans, fans_prob)
+
+
 def extarctmode(root):
     mode = 0
     if len(root.child) == 0:
@@ -1071,19 +1176,22 @@ def extarctmode(root):
     else:
         return 0, None
         print(root.printTree(root))
-        #assert(0)
+        # assert(0)
     root.child.pop(0)
     return mode, root
-def solveone(data, model: Decoder) -> list:# data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
+
+
+# data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
+def solveone(data, model: Decoder) -> list:
     #os.environ["CUDA_VISIBLE_DEVICES"]="2, 3"
     #assert(len(data) <= 40)
     args.batch_size = 20
     dev_set = SumDataset(args, "test")
-    dev_set.preProcessOne(data)#x = dev_set.preProcessOne(treestr, prob)
+    dev_set.preProcessOne(data)  # x = dev_set.preProcessOne(treestr, prob)
     #dev_set.nl = [treestr.split()]
     indexs = 0
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
-                                  shuffle=False, drop_last=False, num_workers=0)
+                                            shuffle=False, drop_last=False, num_workers=0)
     savedata = []
     patch = {}
     for x in tqdm(devloader):
@@ -1097,17 +1205,19 @@ def solveone(data, model: Decoder) -> list:# data: (treestr, prob, model, subroo
         #assert(np.array_equal(x[2][0], dev_set.datam[8][4]))
         #assert(np.array_equal(x[3][0], dev_set.datam[9][4]))
         #print(data[indexs]['mode'], data[indexs]['oldcode'])
-        ans = BeamSearch((x[0], x[1], None, None, None, None, None, None, x[2], x[3]), dev_set, model, 100, args.batch_size, indexs)
+        ans = BeamSearch((x[0], x[1], None, None, None, None, None, None,
+                         x[2], x[3]), dev_set, model, 100, args.batch_size, indexs)
         for i in range(len(ans)):
             currid = indexs * args.batch_size + i
             tmp_data_list = list()
-            tmp_data_file = os.path.join("d4j", data[currid]["bugid"], f"temp-{currid}.json")
+            tmp_data_file = os.path.join(
+                "d4j", data[currid]["bugid"], f"temp-{currid}.json")
             idss = data[currid]['idss']
             if "fl_score" not in data[currid]:
                 data[currid]["fl_score"] = -1.0
             subroot = data[currid]['subroot']
             if os.path.exists("result/%s.json" % idss):
-                classcontent = json.load(open("result/%s.json" % idss, 'r') )
+                classcontent = json.load(open("result/%s.json" % idss, 'r'))
             else:
                 classcontent = []
             classcontent.extend(json.load(open("temp.json", 'r')))
@@ -1118,9 +1228,10 @@ def solveone(data, model: Decoder) -> list:# data: (treestr, prob, model, subroo
                     rrdicts[x['package_name'] + "." + x['filename']] = x
             vardic = data[currid]['vardic']
             typedic = data[currid]['typedic']
-            classname = data[currid]['classname']#data[currid]['classname'].split(".")[-1]
-            #print(classname)
-            #assert(0)
+            # data[currid]['classname'].split(".")[-1]
+            classname = data[currid]['classname']
+            # print(classname)
+            # assert(0)
             mode = data[currid]['mode']
             rrdict = {}
             for x in vardic:
@@ -1140,31 +1251,33 @@ def solveone(data, model: Decoder) -> list:# data: (treestr, prob, model, subroo
                     continue
                 #print(7, ans[i][j].type)
                 try:
-                    tcodes = solveUnknown(ans[i][j], vardic, typedic, rrdicts, classname, mode)
+                    tcodes = solveUnknown(
+                        ans[i][j], vardic, typedic, rrdicts, classname, mode)
                 except Exception as e:
                     traceback.print_exc()
                     tcodes = []
-                #print(tcodes)
+                # print(tcodes)
                 for code in tcodes:
                     prob = ans[i][j].prob
                     if code.split(" ")[0] != 'root':
-                        assert(0)
+                        assert (0)
                     if str(mode) + code + str(data[currid]['line']) not in patch:
                         patch[str(mode) + code + str(data[currid]['line'])] = 1
                     else:
                         continue
-                    obj = {'id':currid, 'idss':idss, 'precode':data[currid]['precode'], 'aftercode':data[currid]['aftercode'], 'oldcode':data[currid]['oldcode'], 'filename':data[currid]['filepath'], 'mode':mode, 'code':code, 'prob': prob, 'line':data[currid]['line'], 'isa':data[currid]['isa'], 'fl_score': data[currid]['fl_score'], 'actlist': ans[i][j].actlist}
+                    obj = {'id': currid, 'idss': idss, 'precode': data[currid]['precode'], 'aftercode': data[currid]['aftercode'], 'oldcode': data[currid]['oldcode'], 'filename': data[currid]
+                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data[currid]['line'], 'isa': data[currid]['isa'], 'fl_score': data[currid]['fl_score'], 'actlist': ans[i][j].actlist}
                     savedata.append(obj)
                     tmp_data_list.append(obj)
             with open(tmp_data_file, "w") as tmp_df:
                 json.dump(tmp_data_list, tmp_df, indent=2)
         indexs += 1
-        #for x in savedata:
+        # for x in savedata:
         #    print(x['oldcode'], x['code'])
-        #exit(0)
+        # exit(0)
         #f.write(" ".join(ans.ans[1:-1]))
-        #f.write("\n")
-        #f.flush()#print(ans)
+        # f.write("\n")
+        # f.flush()#print(ans)
     #print(x[0][0], dev_set.data[0][idx])
     #assert(np.array_equal(x[0][0], dev_set.data[0][idx]))
     #assert(np.array_equal(x[1][0], dev_set.data[1][idx].toarray()))
@@ -1172,16 +1285,19 @@ def solveone(data, model: Decoder) -> list:# data: (treestr, prob, model, subroo
     #assert(np.array_equal(x[3][0], dev_set.data[9][idx]))
     #open('patch/%s.json' % data[0]['idss'], 'w').write(json.dumps(savedata, indent=4))
     return savedata
-def solveone2(data, model):#(treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
+
+
+# (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
+def solveone2(data, model):
     #os.environ["CUDA_VISIBLE_DEVICES"]="2, 3"
     #assert(len(data) <= 40)
     args.batch_size = 20
     dev_set = SumDataset(args, "test")
-    dev_set.preProcessOne(data)#x = dev_set.preProcessOne(treestr, prob)
+    dev_set.preProcessOne(data)  # x = dev_set.preProcessOne(treestr, prob)
     #dev_set.nl = [treestr.split()]
     indexs = 0
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
-                                  shuffle=False, drop_last=False, num_workers=0)
+                                            shuffle=False, drop_last=False, num_workers=0)
     savedata = []
     patch = {}
     for x in tqdm(devloader):
@@ -1195,15 +1311,16 @@ def solveone2(data, model):#(treestr, prob, model, subroot, vardic, typedic, idx
         #assert(np.array_equal(x[2][0], dev_set.datam[8][4]))
         #assert(np.array_equal(x[3][0], dev_set.datam[9][4]))
         #print(data[indexs]['mode'], data[indexs]['oldcode'])
-        ans = BeamSearch((x[0], x[1], None, None, None, None, None, None, x[2], x[3]), dev_set, model, 60, args.batch_size, indexs)
+        ans = BeamSearch((x[0], x[1], None, None, None, None, None, None,
+                         x[2], x[3]), dev_set, model, 60, args.batch_size, indexs)
         print('debug', len(ans[0]))
         for i in range(len(ans)):
             currid = indexs * args.batch_size + i
             subroot = data[currid]['subroot']
             vardic = data[currid]['vardic']
             typedic = data[currid]['typedic']
-            #print(classname)
-            #assert(0)
+            # print(classname)
+            # assert(0)
             mode = data[currid]['mode']
             rrdict = {}
             for x in vardic:
@@ -1219,29 +1336,29 @@ def solveone2(data, model):#(treestr, prob, model, subroot, vardic, typedic, idx
                 if not an:
                     print('debug2')
                     continue
-                savedata.append({'precode':data[currid]['precode'], 'aftercode':data[currid]['aftercode'], 'oldcode':data[currid]['oldcode'], 'mode':mode, 'code':ans[i][j].root.printTree(ans[i][j].solveroot), 'prob': ans[i][j].prob, 'line':data[currid]['line']})
-    #print(savedata)
+                savedata.append({'precode': data[currid]['precode'], 'aftercode': data[currid]['aftercode'], 'oldcode': data[currid]['oldcode'],
+                                'mode': mode, 'code': ans[i][j].root.printTree(ans[i][j].solveroot), 'prob': ans[i][j].prob, 'line': data[currid]['line']})
+    # print(savedata)
     return savedata
-        #for x in savedata:
-        #    print(x['oldcode'], x['code'])
-        #exit(0)
-        #f.write(" ".join(ans.ans[1:-1]))
-        #f.write("\n")
-        #f.flush()#print(ans)
+    # for x in savedata:
+    #    print(x['oldcode'], x['code'])
+    # exit(0)
+    #f.write(" ".join(ans.ans[1:-1]))
+    # f.write("\n")
+    # f.flush()#print(ans)
     #print(x[0][0], dev_set.data[0][idx])
     #assert(np.array_equal(x[0][0], dev_set.data[0][idx]))
     #assert(np.array_equal(x[1][0], dev_set.data[1][idx].toarray()))
     #assert(np.array_equal(x[2][0], dev_set.data[8][idx]))
     #assert(np.array_equal(x[3][0], dev_set.data[9][idx]))
-    open('patchmu/%s.json' % data[0]['idss'], 'w').write(json.dumps(savedata, indent=4))
+    open('patchmu/%s.json' % data[0]['idss'],
+         'w').write(json.dumps(savedata, indent=4))
+
+
 if __name__ == "__main__":
     np.set_printoptions(threshold=sys.maxsize)
     if sys.argv[1] == "train":
         train()
     else:
         test()
-     #test()
-
-
-
-
+     # test()

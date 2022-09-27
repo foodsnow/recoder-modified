@@ -2,19 +2,23 @@ import os
 from tqdm import tqdm
 import pickle
 lst = ["train", "dev"]
-rules = {"pad":0}
+rules = {"pad": 0}
 onelist = ["list"]
 rulelist = []
 fatherlist = []
 fathername = []
 depthlist = []
 copynode = []
+
+
 class Node:
     def __init__(self, name, s):
         self.name = name
         self.id = s
         self.father = None
         self.child = []
+
+
 def parseTree(treestr):
     tokens = treestr.split()
     root = Node("root", 0)
@@ -28,6 +32,8 @@ def parseTree(treestr):
         else:
             currnode = currnode.father
     return root
+
+
 def getRule(node, nls, currId, d):
     global rules
     global onelist
@@ -40,7 +46,7 @@ def getRule(node, nls, currId, d):
         if " -> End " not in rules:
             rules[" -> End "] = len(rules)
         return [rules[" -> End "]]
-    child = sorted(node.child, key=lambda x:x.name)
+    child = sorted(node.child, key=lambda x: x.name)
     if len(node.child) == 1 and node.child[0].name in nls:
         copynode.append(node.name)
         rulelist.append(10000 + nls.index(node.child[0].name))
@@ -50,8 +56,8 @@ def getRule(node, nls, currId, d):
         currid = len(rulelist) - 1
         for x in child:
             getRule(x, nls, currId, d + 1)
-            #rulelist.extend(a)
-            #fatherlist.extend(b)
+            # rulelist.extend(a)
+            # fatherlist.extend(b)
     else:
         if node.name not in onelist:
             rule = node.name + " -> "
@@ -99,7 +105,8 @@ def getRule(node, nls, currId, d):
     else:
         rules[rule] = len(rules)
         rulelist.append(rules[rule])'''
-    #return rulelist, fatherlist
+
+    # return rulelist, fatherlist
 for x in lst:
     inputdir = x + "_input/"
     outputdir = x + "_output/"
@@ -115,7 +122,7 @@ for x in lst:
         f.close()
         wf.write(nls + "\n")
         #wf.write(asts + "\n")
-        assert(len(asts.split()) == 2 * asts.split().count('^'))
+        assert (len(asts.split()) == 2 * asts.split().count('^'))
         root = parseTree(asts)
         rulelist = []
         fatherlist = []
@@ -135,8 +142,8 @@ for x in lst:
             s += str(x) + " "
         wf.write(s + "\n")
         wf.write(" ".join(fathername) + "\n")
-        #print(rules)
-        #print(asts)
+        # print(rules)
+        # print(asts)
 wf.close()
 wf = open("rule.pkl", "wb")
 wf.write(pickle.dumps(rules))

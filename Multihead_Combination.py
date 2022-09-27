@@ -15,7 +15,8 @@ class MultiHeadedCombination(nn.Module):
         self.d_k = d_model // h
         self.h = h
 
-        self.linear_layers = nn.ModuleList([nn.Linear(d_model, d_model) for _ in range(3)])
+        self.linear_layers = nn.ModuleList(
+            [nn.Linear(d_model, d_model) for _ in range(3)])
         self.output_linear = nn.Linear(d_model, d_model)
         self.combination = CombinationLayer()
 
@@ -33,5 +34,6 @@ class MultiHeadedCombination(nn.Module):
         x = self.combination(query, key, value, dropout=self.dropout)
 
         # 3) "Concat" using a view and apply a final linear.
-        x = x.transpose(1, 2).contiguous().view(batch_size, -1, self.h * self.d_k)
+        x = x.transpose(1, 2).contiguous().view(
+            batch_size, -1, self.h * self.d_k)
         return self.output_linear(x)

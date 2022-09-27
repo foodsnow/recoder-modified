@@ -15,6 +15,8 @@ from scipy import sparse
 from parse_dataflow import GetFlow
 from typing import List, Dict, Set, Tuple, Union
 sys.setrecursionlimit(500000000)
+
+
 class SumDataset(data.Dataset):
     def __init__(self, config, dataName="train"):
         self.train_path = "train_process.txt"
@@ -35,7 +37,7 @@ class SumDataset(data.Dataset):
         self.num_step = 50
         self.ruledict = pickle.load(open("rule.pkl", "rb"))
         self.ruledict['start -> copyword2'] = len(self.ruledict)
-        #print(self.ruledict)
+        # print(self.ruledict)
         #self.ruledict["start -> Module"] = len(self.ruledict)
         #self.ruledict["start -> copyword"] = len(self.ruledict)
         self.rrdict = {}
@@ -44,7 +46,7 @@ class SumDataset(data.Dataset):
         if not os.path.exists("nl_voc.pkl"):
             self.init_dic()
         self.Load_Voc()
-        #print(self.Nl_Voc)
+        # print(self.Nl_Voc)
         if dataName == "train":
             if os.path.exists("data.pkl"):
                 self.data = pickle.load(open("data.pkl", "rb"))
@@ -58,7 +60,8 @@ class SumDataset(data.Dataset):
                 self.data = pickle.load(open("valdata.pkl", "rb"))
                 self.nl = pickle.load(open("valnl.pkl", "rb"))
                 return
-            self.data = self.preProcessData(open(self.val_path, "r", encoding='utf-8'))
+            self.data = self.preProcessData(
+                open(self.val_path, "r", encoding='utf-8'))
         else:
             return
             if os.path.exists("testdata.pkl"):
@@ -128,10 +131,10 @@ class SumDataset(data.Dataset):
                 if y not in self.Code_Voc:
                     self.Code_Voc[y] = len(self.Code_Voc)
             #rules.append([lst[0]] + lst[2:])
-        #print(self.Code_Voc)
+        # print(self.Code_Voc)
         self.Nl_Voc = self.Code_Voc
-        #print(self.Code_Voc)
-        assert("root" in self.Code_Voc)
+        # print(self.Code_Voc)
+        assert ("root" in self.Code_Voc)
         for x in self.Nl_Voc:
             maxCharLen = max(maxCharLen, len(x))
             for c in x:
@@ -146,6 +149,7 @@ class SumDataset(data.Dataset):
         open("code_voc.pkl", "wb").write(pickle.dumps(self.Code_Voc))
         open("char_voc.pkl", "wb").write(pickle.dumps(self.Char_Voc))
         print(maxNlLen, maxCodeLen, maxCharLen)
+
     def Get_Em(self, WordList, voc):
         ans = []
         for x in WordList:
@@ -155,6 +159,7 @@ class SumDataset(data.Dataset):
             else:
                 ans.append(voc[x])
         return ans
+
     def Get_Char_Em(self, WordList):
         ans = []
         for x in WordList:
@@ -165,6 +170,7 @@ class SumDataset(data.Dataset):
                 tmp.append(c_id)
             ans.append(tmp)
         return ans
+
     def pad_seq(self, seq, maxlen):
         act_len = len(seq)
         if len(seq) < maxlen:
@@ -174,6 +180,7 @@ class SumDataset(data.Dataset):
             seq = seq[:maxlen]
             act_len = maxlen
         return seq
+
     def pad_str_seq(self, seq, maxlen):
         act_len = len(seq)
         if len(seq) < maxlen:
@@ -183,13 +190,15 @@ class SumDataset(data.Dataset):
             seq = seq[:maxlen]
             act_len = maxlen
         return seq
-    def pad_list(self,seq, maxlen1, maxlen2):
+
+    def pad_list(self, seq, maxlen1, maxlen2):
         if len(seq) < maxlen1:
             seq = seq + [[self.PAD_token] * maxlen2] * maxlen1
             seq = seq[:maxlen1]
         else:
             seq = seq[:maxlen1]
         return seq
+
     def pad_multilist(self, seq, maxlen1, maxlen2, maxlen3):
         if len(seq) < maxlen1:
             seq = seq + [[[self.PAD_token] * maxlen3] * maxlen2] * maxlen1
@@ -197,21 +206,23 @@ class SumDataset(data.Dataset):
         else:
             seq = seq[:maxlen1]
         return seq
+
     def preProcessOne(self, data):
         """
         preprocess data:
         Remove terminal node and their position
         Get embedding, character embedding, 
         """
-        #print(tree)
-        #print(self.nl[0])
+        # print(tree)
+        # print(self.nl[0])
         inputNl = []
         inputNlchar = []
         inputPos = []
         inputNlad = []
         Nl: List[List[str]] = []
         for x in data:
-            inputpos: List[int] = x['prob'] # 2: treeroot, 1: subroot, 3: prev, 4: after
+            # 2: treeroot, 1: subroot, 3: prev, 4: after
+            inputpos: List[int] = x['prob']
             tree: str = x['tree']
             inputpos = self.pad_seq(inputpos, self.Nl_Len)
             nl = tree.split()
@@ -253,7 +264,7 @@ class SumDataset(data.Dataset):
                         nladdata.append(1)
             nl = nltmp
             #tmp = GetFlow()
-            #for p in range(len(tmp)):
+            # for p in range(len(tmp)):
             #    for l in range(len(tmp[0])):
             #        nladrow.append(p)
             #        nladcol.append(l)
@@ -276,11 +287,13 @@ class SumDataset(data.Dataset):
                         nladdata.append(1)'''
             nl = nltmp
             inputnls = self.pad_seq(self.Get_Em(nl, self.Nl_Voc), self.Nl_Len)
-            nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
+            nlad = sparse.coo_matrix(
+                (nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(nl)
             for j in range(len(inputnlchar)):
                 inputnlchar[j] = self.pad_seq(inputnlchar[j], self.Char_Len)
-            inputnlchar = self.pad_list(inputnlchar, self.Nl_Len, self.Char_Len)
+            inputnlchar = self.pad_list(
+                inputnlchar, self.Nl_Len, self.Char_Len)
             inputNl.append(inputnls)
             inputNlad.append(nlad)
             inputPos.append(inputpos)
@@ -288,7 +301,8 @@ class SumDataset(data.Dataset):
         self.data = [inputNl, inputNlad, inputPos, inputNlchar]
         self.nl = Nl
         return
-        #return np.array([inputnls]), np.array([nlad.toarray()]), np.array([inputpos]), np.array([inputnlchar])
+        # return np.array([inputnls]), np.array([nlad.toarray()]), np.array([inputpos]), np.array([inputnlchar])
+
     def preProcessData(self, dataFile):
         #lines = dataFile.readlines()
         inputNl = []
@@ -307,7 +321,7 @@ class SumDataset(data.Dataset):
             if len(dataFile[i]['rule']) > self.Code_Len:
                 continue
             child = {}
-            nl = dataFile[i]['input']#lines[5 * i].lower().strip().split()
+            nl = dataFile[i]['input']  # lines[5 * i].lower().strip().split()
             node = Node('root', 0)
             currnode = node
             idx = 1
@@ -346,13 +360,15 @@ class SumDataset(data.Dataset):
             nl = nltmp
             nls.append(dataFile[i]['input'])
             inputpos = dataFile[i]['problist']
-            #for j in range(len(inputpos)):
+            # for j in range(len(inputpos)):
             #    inputpos[j] = inputpos[j]
             inputPos.append(self.pad_seq(inputpos, self.Nl_Len))
-            inputparent = dataFile[i]['fatherlist']#lines[5 * i + 2].strip().split()
-            inputres = dataFile[i]['rule']#lines[5 * i + 1].strip().split()
+            # lines[5 * i + 2].strip().split()
+            inputparent = dataFile[i]['fatherlist']
+            inputres = dataFile[i]['rule']  # lines[5 * i + 1].strip().split()
             #depth = lines[5 * i + 3].strip().split()
-            parentname = dataFile[i]['fathername']#lines[5 * i + 4].strip().lower().split()
+            # lines[5 * i + 4].strip().lower().split()
+            parentname = dataFile[i]['fathername']
             for j in range(len(parentname)):
                 parentname[j] = parentname[j].lower()
             inputadrow = []
@@ -365,7 +381,7 @@ class SumDataset(data.Dataset):
                 inputparent[j] = int(inputparent[j]) + 1
                 child.setdefault(inputparent[j], []).append(j + 1)
                 if inputres[j] >= 2000000:
-                    #assert(0)
+                    # assert(0)
                     inputres[j] = len(self.ruledict) + inputres[j] - 2000000
                     if j + 1 < self.Code_Len:
                         inputadrow.append(self.Nl_Len + j + 1)
@@ -374,10 +390,12 @@ class SumDataset(data.Dataset):
                         #inputad[self.Nl_Len + j + 1, inputres[j] - len(self.ruledict)] = 1
                     inputrule.append(self.ruledict['start -> copyword'])
                 elif inputres[j] >= 1000000:
-                    inputres[j] = len(self.ruledict) + inputres[j] - 1000000 + self.Nl_Len
+                    inputres[j] = len(self.ruledict) + \
+                        inputres[j] - 1000000 + self.Nl_Len
                     if j + 1 < self.Code_Len:
                         inputadrow.append(self.Nl_Len + j + 1)
-                        inputadcol.append(inputres[j] - len(self.ruledict) - self.Nl_Len)
+                        inputadcol.append(
+                            inputres[j] - len(self.ruledict) - self.Nl_Len)
                         inputaddata.append(1)
                         #inputad[self.Nl_Len + j + 1, inputres[j] - len(self.ruledict)] = 1
                     inputrule.append(self.ruledict['start -> copyword2'])
@@ -397,27 +415,33 @@ class SumDataset(data.Dataset):
             inputnlchar = self.Get_Char_Em(nl)
             for j in range(len(inputnlchar)):
                 inputnlchar[j] = self.pad_seq(inputnlchar[j], self.Char_Len)
-            inputnlchar = self.pad_list(inputnlchar, self.Nl_Len, self.Char_Len)
+            inputnlchar = self.pad_list(
+                inputnlchar, self.Nl_Len, self.Char_Len)
             inputNlChar.append(inputnlchar)
-            inputruleparent = self.pad_seq(self.Get_Em(["start"] + parentname, self.Code_Voc), self.Code_Len)
+            inputruleparent = self.pad_seq(self.Get_Em(
+                ["start"] + parentname, self.Code_Voc), self.Code_Len)
             inputrulechild = []
             for x in inputrule:
                 if x >= len(self.rrdict):
-                    inputrulechild.append(self.pad_seq(self.Get_Em(["copyword"], self.Code_Voc), self.Char_Len))
+                    inputrulechild.append(self.pad_seq(self.Get_Em(
+                        ["copyword"], self.Code_Voc), self.Char_Len))
                 else:
                     rule = self.rrdict[x].strip().lower().split()
-                    inputrulechild.append(self.pad_seq(self.Get_Em(rule[2:], self.Code_Voc), self.Char_Len))
+                    inputrulechild.append(self.pad_seq(
+                        self.Get_Em(rule[2:], self.Code_Voc), self.Char_Len))
 
             inputparentpath = []
             for j in range(len(inputres)):
                 if inputres[j] in self.rrdict:
-                    tmppath = [self.rrdict[inputres[j]].strip().lower().split()[0]]
+                    tmppath = [self.rrdict[inputres[j]].strip().lower().split()[
+                        0]]
                     if tmppath[0] != parentname[j].lower() and tmppath[0] == 'statements' and parentname[j].lower() == 'root':
-                        tmppath[0] = 'root'#print(tmppath, parentname[j].lower())
+                        # print(tmppath, parentname[j].lower())
+                        tmppath[0] = 'root'
                     if tmppath[0] != parentname[j].lower() and tmppath[0] == 'start':
                         tmppath[0] = parentname[j].lower()
                     #print(tmppath, parentname[j].lower(), inputres)
-                    assert(tmppath[0] == parentname[j].lower())
+                    assert (tmppath[0] == parentname[j].lower())
                 else:
                     tmppath = [parentname[j].lower()]
                 '''siblings = child[inputparent[j]]
@@ -425,36 +449,43 @@ class SumDataset(data.Dataset):
                     if x == j + 1:
                         break
                     tmppath.append(parentname[x - 1])'''
-                #print(inputparent[j])
+                # print(inputparent[j])
                 curr = inputparent[j]
                 while curr != 0:
                     if inputres[curr - 1] >= len(self.rrdict):
                         #print(parentname[curr - 1].lower())
                         rule = 'root'
-                        #assert(0)
+                        # assert(0)
                     else:
-                        rule = self.rrdict[inputres[curr - 1]].strip().lower().split()[0]
-                    #print(rule)
+                        rule = self.rrdict[inputres[curr - 1]
+                                           ].strip().lower().split()[0]
+                    # print(rule)
                     tmppath.append(rule)
                     curr = inputparent[curr - 1]
-                #print(tmppath)
-                inputparentpath.append(self.pad_seq(self.Get_Em(tmppath, self.Code_Voc), 10))
-            #assert(0)
+                # print(tmppath)
+                inputparentpath.append(self.pad_seq(
+                    self.Get_Em(tmppath, self.Code_Voc), 10))
+            # assert(0)
             inputrule = self.pad_seq(inputrule, self.Code_Len)
             inputres = self.pad_seq(inputres, self.Code_Len)
-            tmp = [self.pad_seq(self.Get_Em(['start'], self.Code_Voc), 10)] + inputparentpath
+            tmp = [self.pad_seq(self.Get_Em(
+                ['start'], self.Code_Voc), 10)] + inputparentpath
             inputrulechild = self.pad_list(tmp, self.Code_Len, 10)
             inputRuleParent.append(inputruleparent)
             inputRuleChild.append(inputrulechild)
             inputRes.append(inputres)
             inputRule.append(inputrule)
             inputparent = [0] + inputparent
-            inputad = sparse.coo_matrix((inputaddata, (inputadrow, inputadcol)), shape=(self.Nl_Len + self.Code_Len, self.Nl_Len + self.Code_Len))
+            inputad = sparse.coo_matrix((inputaddata, (inputadrow, inputadcol)), shape=(
+                self.Nl_Len + self.Code_Len, self.Nl_Len + self.Code_Len))
             inputParent.append(inputad)
-            inputParentPath.append(self.pad_list(inputparentpath, self.Code_Len, 10))
-            nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
+            inputParentPath.append(self.pad_list(
+                inputparentpath, self.Code_Len, 10))
+            nlad = sparse.coo_matrix(
+                (nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
             inputNlad.append(nlad)
-        batchs = [inputNl, inputNlad, inputRule, inputRuleParent, inputRuleChild, inputRes, inputParent, inputParentPath, inputPos, inputNlChar]
+        batchs = [inputNl, inputNlad, inputRule, inputRuleParent, inputRuleChild,
+                  inputRes, inputParent, inputParentPath, inputPos, inputNlChar]
         self.data = batchs
         self.nl = nls
         #self.code = codes
@@ -480,7 +511,7 @@ class SumDataset(data.Dataset):
             h5f = h5py.File("testdata.h5", 'r')'''
         for i in range(len(self.data)):
             d = self.data[i][offset]
-            if i == 1 or  i == 6:
+            if i == 1 or i == 6:
                 tmp = d.toarray().astype(np.int32)
                 ans.append(tmp)
             else:
@@ -493,8 +524,11 @@ class SumDataset(data.Dataset):
                 ans.append(np.array(tmp))
             else:'''
         return ans
+
     def __len__(self):
         return len(self.data[0])
+
+
 class Node:
     def __init__(self, name: str, s: int):
         self.name = name
@@ -502,5 +536,5 @@ class Node:
         self.father: Node = None
         self.child: List[Node] = []
         self.sibiling = None
-    
+
 #dset = SumDataset(args)

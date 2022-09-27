@@ -1,12 +1,15 @@
 from torch import nn
 import torch
 from gelu import GELU
+
+
 class TreeConvGen(nn.Module):
     def __init__(self, kernel, dmodel):
-        super(TreeConvGen ,self).__init__()
+        super(TreeConvGen, self).__init__()
         self.kernel = kernel
         self.conv = nn.Conv2d(dmodel, dmodel, (1, kernel))
         self.activate = GELU()
+
     def forward(self, state, inputad, inputgen):
         tmp = []
         tmpState = state

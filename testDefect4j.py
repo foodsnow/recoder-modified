@@ -1,3 +1,4 @@
+import sys
 import os
 import javalang
 import javalang.tree
@@ -15,41 +16,50 @@ import io
 import subprocess
 from Searchnode import Node
 from repair import save_code_as_file
-linenode = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration', 'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
+linenode = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration',
+            'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
 #os.environ["CUDA_VISIBLE_DEVICES"]="1, 4"
+
+
 def getLocVar(node):
-  varnames = []
-  if node.name == 'VariableDeclarator':
-    currnode = -1
+    varnames = []
+    if node.name == 'VariableDeclarator':
+        currnode = -1
+        for x in node.child:
+            if x.name == 'name':
+                currnode = x
+                break
+        varnames.append((currnode.child[0].name, node))
+    if node.name == 'FormalParameter':
+        currnode = -1
+        for x in node.child:
+            if x.name == 'name':
+                currnode = x
+                break
+        varnames.append((currnode.child[0].name, node))
+    if node.name == 'InferredFormalParameter':
+        currnode = -1
+        for x in node.child:
+            if x.name == 'name':
+                currnode = x
+                break
+        varnames.append((currnode.child[0].name, node))
     for x in node.child:
-      if x.name == 'name':
-        currnode = x
-        break
-    varnames.append((currnode.child[0].name, node))
-  if node.name == 'FormalParameter':
-    currnode = -1
-    for x in node.child:
-      if x.name == 'name':
-        currnode = x
-        break
-    varnames.append((currnode.child[0].name, node))
-  if node.name == 'InferredFormalParameter':
-    currnode = -1
-    for x in node.child:
-      if x.name == 'name':
-        currnode = x
-        break
-    varnames.append((currnode.child[0].name, node))
-  for x in node.child:
-    varnames.extend(getLocVar(x))
-  return varnames
+        varnames.extend(getLocVar(x))
+    return varnames
+
+
 n = 0
+
+
 def setid(root):
-  global n
-  root.id = n
-  n += 1
-  for x in root.child:
-    setid(x)
+    global n
+    root.id = n
+    n += 1
+    for x in root.child:
+        setid(x)
+
+
 def solveLongTree(root, subroot) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
     global n
     m = 'None'
@@ -91,7 +101,7 @@ def solveLongTree(root, subroot) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
     else:
         troot = root
     n = 0
-    setid(troot) # set id: root is 0, and increase the id by preorder traversal
+    setid(troot)  # set id: root is 0, and increase the id by preorder traversal
     varnames = getLocVar(troot)
     fnum = -1
     vnum = -1
@@ -104,11 +114,11 @@ def solveLongTree(root, subroot) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
             vardic[x[0]] = 'loc' + str(vnum)
             t = -1
             for s in x[1].father.father.child:
-                #print(s.name)
+                # print(s.name)
                 if s.name == 'type':
                     t = s.child[0].child[0].child[0].name[:-4]
                     break
-            assert(t != -1)
+            assert (t != -1)
             typedic[x[0]] = t
         else:
             fnum += 1
@@ -118,45 +128,53 @@ def solveLongTree(root, subroot) -> Tuple[Node, Dict[str, str], Dict[str, str]]:
                 if s.name == 'type':
                     t = s.child[0].child[0].child[0].name[:-4]
                     break
-            assert(t != -1)
+            assert (t != -1)
             typedic[x[0]] = t
     return troot, vardic, typedic
+
+
 def addter(root):
     if len(root.child) == 0:
         root.name += "_ter"
     for x in root.child:
         addter(x)
     return
+
+
 def setProb(r: Node, p):
-    r.possibility =  p#max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
+    r.possibility = p  # max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
     for x in r.child:
         setProb(x, p)
+
+
 def getLineNode(root, block, add=True):
-  ans = []
-  block = block + root.name
-  #print(root.name, 'lll')
-  for x in root.child:
-    if x.name in linenode:
-      if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
-        continue
-      x.block = block
-      ans.append(x)
-    else:
-      #print(x.name)
-      s = ""
-      if not add:
-        s = block
-        #tmp = getLineNode(x, block)
-      else:
-        s = block + root.name
-      #print(block + root.name + "--------")
-      tmp = getLineNode(x, block)
-      '''if x.name == 'then_statement' and tmp == []:
+    ans = []
+    block = block + root.name
+    #print(root.name, 'lll')
+    for x in root.child:
+        if x.name in linenode:
+            if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
+                continue
+            x.block = block
+            ans.append(x)
+        else:
+            # print(x.name)
+            s = ""
+            if not add:
+                s = block
+                #tmp = getLineNode(x, block)
+            else:
+                s = block + root.name
+            #print(block + root.name + "--------")
+            tmp = getLineNode(x, block)
+            '''if x.name == 'then_statement' and tmp == []:
         print(tmp)
         print(x.father.printTree(x.father))
         assert(0)'''
-      ans.extend(tmp)
-  return ans
+            ans.extend(tmp)
+    return ans
+
+
 def getroottree(tokens, isex=False):
     root = Node(tokens[0], 0)
     currnode = root
@@ -175,6 +193,8 @@ def getroottree(tokens, isex=False):
         else:
             currnode = currnode.father
     return root
+
+
 def ismatch(root, subroot):
     index = 0
     #assert(len(subroot.child) <= len(root.child))
@@ -188,6 +208,8 @@ def ismatch(root, subroot):
             return False
         index += 1
     return True
+
+
 def findSubtree(root, subroot):
     if root.name == subroot.name:
         if ismatch(root, subroot):
@@ -197,6 +219,8 @@ def findSubtree(root, subroot):
         if tmp:
             return tmp
     return None
+
+
 def generateAST(tree):
     sub = []
     if not tree:
@@ -224,13 +248,13 @@ def generateAST(tree):
         return sub
     position = None
     if hasattr(tree, 'position'):
-        #assert(0)
+        # assert(0)
         position = tree.position
     curr = type(tree).__name__
-    #print(curr)
+    # print(curr)
     if True:
         if False:
-            assert(0)#sub.append((str(getLiteral(tree.children)))
+            assert (0)  # sub.append((str(getLiteral(tree.children)))
         else:
             sub.append((curr, position))
             try:
@@ -283,16 +307,18 @@ def generateAST(tree):
                         sub.append("^")
                     else:
                         print(type(node))
-                        assert(0)
+                        assert (0)
                     sub.append("^")
             except AttributeError:
-                assert(0)
+                assert (0)
                 pass
         sub.append('^')
         return sub
     else:
         print(curr)
     return sub
+
+
 '''def setProb(root, subroot, prob):
     root.possibility = max(min(max(root.possibility, prob), 0.98), 0.01)
     index = 0
@@ -304,6 +330,8 @@ def generateAST(tree):
             index += 1
         setProb(root.child[index], x, prob)
         index += 1'''
+
+
 def getSubroot(treeroot: Node):
     currnode = treeroot
     lnode = None
@@ -320,19 +348,22 @@ def getSubroot(treeroot: Node):
             break
         currnode = currnode.father
     return lnode, mnode
+
+
 def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, mode, subroot, vardic, typedic, idxs, testmethods, idss, classname):
     global aftercode
     global precode
-    actionlist = solveone(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(troot), model, subroot, vardic, typedic, idxs, idss, classname, mode)
+    actionlist = solveone(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
+        troot), model, subroot, vardic, typedic, idxs, idss, classname, mode)
     for x in actionlist:
         if x.strip() in patchdict:
             continue
         #print('-', x)
         patchdict[x.strip()] = 1
-        #print(x.split())
+        # print(x.split())
         root = getroottree(x.split())
         code = stringfyRoot(root, isIf, mode)
-        #print(oldcode)
+        # print(oldcode)
         print(precode[-1000:])
         print(code)
         print(aftercode[:1000])
@@ -356,9 +387,10 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
                     lnum += 1
                 if '}' in x:
                     if lnum == 0:
-                        aftercode = "\n".join(afterlines[:p] + ['}'] + afterlines[p:])
-                        #print(aftercode)
-                        #assert(0)
+                        aftercode = "\n".join(
+                            afterlines[:p] + ['}'] + afterlines[p:])
+                        # print(aftercode)
+                        # assert(0)
                         break
                     lnum -= 1
             tmpcode = precode + "\n" + code + aftercode
@@ -371,7 +403,7 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
         try:
             tree = parser.parse()
         except:
-            #assert(0)
+            # assert(0)
             print(code)
             continue
         open(filepath2, "w").write(tmpcode)
@@ -379,13 +411,14 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
         for t in testmethods:
             cmd = 'defects4j test -w buggy2/ -t %s' % t.strip()
             Returncode = ""
-            child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=-1)
+            child = subprocess.Popen(
+                cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=-1)
             while_begin = time.time()
             while True:
                 Flag = child.poll()
                 print(Flag)
-                if  Flag == 0:
-                    Returncode = child.stdout.readlines()#child.stdout.read()
+                if Flag == 0:
+                    Returncode = child.stdout.readlines()  # child.stdout.read()
                     break
                 elif Flag != 0 and time.time() - while_begin > 10:
                     child.kill()
@@ -404,10 +437,12 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
             wf = open(patchpath + 'patch' + str(patchnum) + ".txt", 'w')
             wf.write(filepath + "\n")
             wf.write("-" + oldcode + "\n")
-            wf.write("+" +  code + "\n")
+            wf.write("+" + code + "\n")
             if patchnum >= 5:
                 return patchnum
     return patchnum
+
+
 def getNodeById(root, line):
     if root.position:
         if root.position.line == line and root.name != 'IfStatement' and root.name != 'ForStatement':
@@ -417,6 +452,8 @@ def getNodeById(root, line):
         if t:
             return t
     return None
+
+
 def containID(root):
     ans = []
     if root.position is not None:
@@ -424,6 +461,8 @@ def containID(root):
     for x in root.child:
         ans.extend(containID(x))
     return ans
+
+
 def getAssignMent(root):
     if root.name == 'Assignment':
         return root
@@ -432,6 +471,8 @@ def getAssignMent(root):
         if t:
             return t
     return None
+
+
 def isAssign(line):
     #sprint(4, line.getTreestr())
     if 'Assignment' not in line.getTreestr():
@@ -455,7 +496,9 @@ def isAssign(line):
     return False
     #lst = line.split("=")
     #print(lst[0].split()[-1], lst[1])
-    #return lst[0].split()[-1].strip() in lst[1].strip()
+    # return lst[0].split()[-1].strip() in lst[1].strip()
+
+
 def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: int) -> Tuple[str, int, int]:
     func_list = list()
     found_method = False
@@ -486,22 +529,25 @@ def get_method_range(tree: javalang.tree.CompilationUnit, mnode: Node, line_no: 
         return last_node.name, start_line, end_line
     print("CANNOT FOUND FUNCTION LOCATION!!!!")
     return "0no_function_found", 0, 0
+
+
 prlist = ['Chart', 'Closure', 'Lang', 'Math', 'Mockito', 'Time']
-ids = [range(1, 27), list(range(1, 134)), list(range(1, 66)), range(1, 107), range(1, 39), list(range(1, 28)), list(range(1, 25)), list(range(1, 23)), list(range(1, 13)), list(range(1, 15)), list(range(1, 14)), list(range(1, 40)), list(range(1, 6)), list(range(1, 64))]
+ids = [range(1, 27), list(range(1, 134)), list(range(1, 66)), range(1, 107), range(1, 39), list(range(1, 28)), list(range(1, 25)), list(
+    range(1, 23)), list(range(1, 13)), list(range(1, 15)), list(range(1, 14)), list(range(1, 40)), list(range(1, 6)), list(range(1, 64))]
 #ids = [[1, 4, 7, 8, 9, 11, 12, 13, 15, 19, 20, 24, 26]]
 #lst = ['Chart-1', 'Chart-3', 'Chart-4', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-13', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-1', 'Closure-10', 'Closure-14', 'Closure-15', 'Closure-18', 'Closure-31', 'Closure-33', 'Closure-38', 'Closure-51', 'Closure-62', 'Closure-63', 'Closure-70', 'Closure-73', 'Closure-86', 'Closure-92', 'Closure-93', 'Closure-107', 'Closure-118', 'Closure-113', 'Closure-124', 'Closure-125', 'Closure-129', 'Lang-6', 'Lang-16', 'Lang-26', 'Lang-29', 'Lang-33', 'Lang-38', 'Lang-39', 'Lang-43', 'Lang-45', 'Lang-51', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-5', 'Math-25', 'Math-30', 'Math-33', 'Math-34', 'Math-41', 'Math-57', 'Math-58', 'Math-59', 'Math-69', 'Math-70', 'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-105', 'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Lang-43', 'Math-50', 'Math-98', 'Time-7', 'Mockito-38', 'Mockito-22', 'Mockito-29', 'Mockito-34', 'Closure-104', 'Math-27']
-#lst = ['Lang-27', 'Lang-39', 'Lang-50', 'Lang-60', 'Lang-63', 'Math-88', 'Math-82', 'Math-20', 'Math-28', 'Math-6', 'Math-72', 'Math-79', 'Math-8']#['Closure-38', 'Closure-123', 'Closure-124', 'Lang-61', 'Math-3', 'Math-11', 'Math-48', 'Math-53', 'Math-63', 'Math-73', 'Math-101', 'Math-98', 'Lang-16']
+# lst = ['Lang-27', 'Lang-39', 'Lang-50', 'Lang-60', 'Lang-63', 'Math-88', 'Math-82', 'Math-20', 'Math-28', 'Math-6', 'Math-72', 'Math-79', 'Math-8']#['Closure-38', 'Closure-123', 'Closure-124', 'Lang-61', 'Math-3', 'Math-11', 'Math-48', 'Math-53', 'Math-63', 'Math-73', 'Math-101', 'Math-98', 'Lang-16']
 #ids = [[20, 24, 26]]
-lst = ['Chart-1', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-14', 'Closure-15', 'Closure-62', 'Closure-63', 'Closure-73', 'Closure-86', 'Closure-92', 'Closure-93', 'Closure-104', 'Closure-118', 'Closure-124', 'Lang-6', 'Lang-26', 'Lang-33', 'Lang-38', 'Lang-43', 'Lang-45', 'Lang-51', 'Lang-55', 'Lang-57', 'Lang-59', 'Math-5', 'Math-27', 'Math-30', 'Math-33', 'Math-34', 'Math-41', 'Math-50', 'Math-57', 'Math-59', 'Math-70', 'Math-75', 'Math-80', 'Math-94', 'Math-105', 'Time-4', 'Time-7']
+lst = ['Chart-1', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-14', 'Closure-15', 'Closure-62', 'Closure-63', 'Closure-73', 'Closure-86', 'Closure-92', 'Closure-93', 'Closure-104', 'Closure-118', 'Closure-124', 'Lang-6',
+       'Lang-26', 'Lang-33', 'Lang-38', 'Lang-43', 'Lang-45', 'Lang-51', 'Lang-55', 'Lang-57', 'Lang-59', 'Math-5', 'Math-27', 'Math-30', 'Math-33', 'Math-34', 'Math-41', 'Math-50', 'Math-57', 'Math-59', 'Math-70', 'Math-75', 'Math-80', 'Math-94', 'Math-105', 'Time-4', 'Time-7']
 model = test()
-import sys
 bugid = sys.argv[1]
 prlist = [bugid.split("-")[0]]
 ids = [[int(bugid.split("-")[1])]]
 for i, xss in enumerate(prlist):
     for idx in ids[i]:
         idss = xss + "-" + str(idx)
-        #if idss not in lst:
+        # if idss not in lst:
         #    continue
         if idss != bugid:
             continue
@@ -513,7 +559,8 @@ for i, xss in enumerate(prlist):
         if not os.path.exists(locationdir):
             continue
         os.makedirs(f"buggy", exist_ok=True)
-        os.system('defects4j checkout -p %s -v %db -w buggy/%s'%(x, idx, idss))#os.system('defects4j')
+        os.system('defects4j checkout -p %s -v %db -w buggy/%s' %
+                  (x, idx, idss))  # os.system('defects4j')
         #os.system('defects4j checkout -p %s -v %df -w fixed'%(x, idx))
         patchnum = 0
         '''s = os.popen('defects4j export -p classes.modified -w buggy').readlines()
@@ -525,10 +572,11 @@ for i, xss in enumerate(prlist):
         locationdict = {}
         for loc in lines:
             loc = loc.split("||")[0]
-            classname, lineid= loc.split(':')
+            classname, lineid = loc.split(':')
             classname = ".".join(classname.split(".")[:-1])
             location.append((classname, 1, eval(lineid)))
-        dirs = os.popen(f'defects4j export -p dir.src.classes -w buggy/{idss}').readlines()[-1]
+        dirs = os.popen(
+            f'defects4j export -p dir.src.classes -w buggy/{idss}').readlines()[-1]
         #correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
         #fpath = "fixed/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
         #fpathx = "buggy/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
@@ -552,7 +600,7 @@ for i, xss in enumerate(prlist):
             print('path', s)
             #print(dirs, s)
             filepath = f"buggy/{idss}/{dirs}/{s.replace('.', '/')}.java"
-            filepathx = "fixed/%s/%s.java"%(dirs, s.replace('.', '/'))
+            filepathx = "fixed/%s/%s.java" % (dirs, s.replace('.', '/'))
             try:
                 lines1 = open(filepath, "r").read().strip()
             except:
@@ -570,37 +618,39 @@ for i, xss in enumerate(prlist):
             lnode, mnode = getSubroot(currroot)
             if mnode is None:
                 continue
-            funcname, startline, endline = get_method_range(tree, mnode, lineid)
+            funcname, startline, endline = get_method_range(
+                tree, mnode, lineid)
             if filepath not in func_map:
                 func_map[filepath] = list()
-            func_map[filepath].append({"function": funcname, "begin": startline, "end": endline})
+            func_map[filepath].append(
+                {"function": funcname, "begin": startline, "end": endline})
             oldcode = liness[ac[2] - 1]
             isIf = True
             subroot = lnode     # line root
             treeroot = mnode    # method decl
             presubroot = None
             aftersubroot = None
-            #print(treeroot.printTreeWithLine(treeroot))
+            # print(treeroot.printTreeWithLine(treeroot))
             linenodes = getLineNode(treeroot, "")
             #print(lineid, 2)
             if subroot not in linenodes:
                 #print(treeroot.getTreestr(), subroot.getTreestr())
-                #if j == 19:
+                # if j == 19:
                 #    assert(0)
                 #print(j, subroot, '3')
                 continue
             currid = linenodes.index(subroot)   # index of linenode in treeroot
             if currid > 0:
-                presubroot = linenodes[currid - 1] # previous root
+                presubroot = linenodes[currid - 1]  # previous root
             if currid < len(linenodes) - 1:
-                aftersubroot = linenodes[currid + 1] # after root
+                aftersubroot = linenodes[currid + 1]  # after root
             setProb(treeroot, 2)
             addter(treeroot)
             if subroot is None:
                 continue
             #print(lineid, 3, liness[lineid - 1], subroot.getTreestr(), len(data))
-            #print(treeroot.printTreeWithLine(subroot))
-            if True: # 2: treeroot, 1: subroot, 3: prev, 4: after
+            # print(treeroot.printTreeWithLine(subroot))
+            if True:  # 2: treeroot, 1: subroot, 3: prev, 4: after
                 setProb(treeroot, 2)
                 if subroot is not None:
                     setProb(subroot, 1)
@@ -608,8 +658,9 @@ for i, xss in enumerate(prlist):
                     setProb(aftersubroot, 4)
                 if presubroot is not None:
                     setProb(presubroot, 3)
-                #print(containID(subroot))
-                cid = set(containID(subroot)) # range of subroot statement's line number
+                # print(containID(subroot))
+                # range of subroot statement's line number
+                cid = set(containID(subroot))
                 maxl = -1
                 minl = 1e10
                 for l in cid:
@@ -625,11 +676,11 @@ for i, xss in enumerate(prlist):
                 troot, vardic, typedic = solveLongTree(treeroot, subroot)
                 if troot is None:
                     continue
-                data.append({'bugid': bugid, 'treeroot':treeroot, 'troot':troot, 'oldcode':oldcode,
-                        'filepath':filepath, 'subroot':subroot, 'vardic':vardic,
-                        'typedic':typedic, 'idss':idss, 'classname':classname,
-                        'precode':precode, 'aftercode':aftercode, 'tree':troot.printTreeWithVar(troot, vardic),
-                        'prob':troot.getTreeProb(troot), 'mode':0, 'line':lineid, 'isa':False, 'fl_score': fl_score})
+                data.append({'bugid': bugid, 'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode,
+                             'filepath': filepath, 'subroot': subroot, 'vardic': vardic,
+                             'typedic': typedic, 'idss': idss, 'classname': classname,
+                             'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic),
+                             'prob': troot.getTreeProb(troot), 'mode': 0, 'line': lineid, 'isa': False, 'fl_score': fl_score})
                 #patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
         os.makedirs(f"d4j/{bugid}", exist_ok=True)
         with open(f"d4j/{bugid}/func_loc.json", "w") as f:
@@ -640,6 +691,4 @@ for i, xss in enumerate(prlist):
             json.dump(ans, f, indent=2)
         #save_code_as_file("./d4j", bugid, ans, func_map)
 
-
-        #assert(0)
-
+        # assert(0)

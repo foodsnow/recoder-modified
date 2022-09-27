@@ -7,6 +7,8 @@ import os
 from nltk import word_tokenize
 from vocab import VocabEntry
 import numpy as np
+
+
 class SumDataset(data.Dataset):
     def __init__(self, config, dataName="train"):
         self.train_path = "DataProcess/train.txt"
@@ -31,17 +33,20 @@ class SumDataset(data.Dataset):
             if os.path.exists("data_sum.pkl"):
                 self.data = pickle.load(open("data_sum.pkl", "rb"))
                 return
-            self.data = self.preProcessData(open(self.train_path, "r", encoding='iso-8859-1'))
+            self.data = self.preProcessData(
+                open(self.train_path, "r", encoding='iso-8859-1'))
         elif dataName == "val":
             if os.path.exists("valdata_sum.pkl"):
                 self.data = pickle.load(open("valdata_sum.pkl", "rb"))
                 return
-            self.data = self.preProcessData(open(self.val_path, "r", encoding='iso-8859-1'))
+            self.data = self.preProcessData(
+                open(self.val_path, "r", encoding='iso-8859-1'))
         else:
             if os.path.exists("testdata_sum.pkl"):
                 self.data = pickle.load(open("testdata_sum.pkl", "rb"))
                 return
-            self.data = self.preProcessData(open(self.test_path, "r", encoding='iso-8859-1'))
+            self.data = self.preProcessData(
+                open(self.test_path, "r", encoding='iso-8859-1'))
 
     def Load_Voc(self):
         if os.path.exists("nl_sum_voc.pkl"):
@@ -63,8 +68,8 @@ class SumDataset(data.Dataset):
         for i in range(int(len(lines) / 2)):
             Code = lines[2 * i + 1].strip()
             Nl = lines[2 * i].strip()
-            #if "^" in Nl
-                #print(Nl)
+            # if "^" in Nl
+            # print(Nl)
             Nl_tokens = ["<start>"] + word_tokenize(Nl.lower()) + ["<end>"]
             Code_Tokens = Code.lower().split()
             Nls.append(Nl_tokens)
@@ -95,9 +100,10 @@ class SumDataset(data.Dataset):
         open("nl_sum_voc.pkl", "wb").write(pickle.dumps(self.Nl_Voc))
         open("code_sum_voc.pkl", "wb").write(pickle.dumps(self.Code_Voc))
         open("char_sum_voc.pkl", "wb").write(pickle.dumps(self.Char_Voc))
-        #print(self.Nl_Voc)
-        #print(self.Code_Voc)
+        # print(self.Nl_Voc)
+        # print(self.Code_Voc)
         print(maxNlLen, maxCodeLen, maxCharLen)
+
     def Get_Em(self, WordList, NlFlag=True):
         ans = []
         for x in WordList:
@@ -112,6 +118,7 @@ class SumDataset(data.Dataset):
                 else:
                     ans.append(self.Code_Voc[x])
         return ans
+
     def Get_Char_Em(self, WordList):
         ans = []
         for x in WordList:
@@ -121,6 +128,7 @@ class SumDataset(data.Dataset):
                 tmp.append(c_id)
             ans.append(tmp)
         return ans
+
     def pad_seq(self, seq, maxlen):
         act_len = len(seq)
         if len(seq) < maxlen:
@@ -130,16 +138,18 @@ class SumDataset(data.Dataset):
             seq = seq[:maxlen]
             act_len = maxlen
         return seq, act_len
-    def pad_list(self,seq, maxlen1, maxlen2):
+
+    def pad_list(self, seq, maxlen1, maxlen2):
         if len(seq) < maxlen1:
             seq = seq + [[self.PAD_token] * maxlen2] * maxlen1
             seq = seq[:maxlen1]
         else:
             seq = seq[:maxlen1]
         return seq
+
     def getAdMatrix(self, codetokens):
-        lst = codetokens#codetokens.split()
-        #print(codetokens)
+        lst = codetokens  # codetokens.split()
+        # print(codetokens)
         currNode = node(lst[0])
         currNode.id = 0
         nodedist = {}
@@ -181,8 +191,6 @@ class SumDataset(data.Dataset):
             admatrix.append(ids)
         return admatrix
 
-
-
     def preProcessData(self, dataFile):
         lines = dataFile.readlines()
         Nl_Sentences = []
@@ -205,30 +213,34 @@ class SumDataset(data.Dataset):
             Nl_Sentences.append(self.Get_Em(nl_tokens))
             Nl_Chars.append(self.Get_Char_Em(nl_tokens))
             Code_Chars.append(self.Get_Char_Em(code_tokens))
-            #admatrix.append(self.getAdMatrix(code_tokens))
+            # admatrix.append(self.getAdMatrix(code_tokens))
             res.append(Nl_Sentences[-1][1:])
         for i in range(len(Nl_Sentences)):
             Nl_Sentences[i], _ = self.pad_seq(Nl_Sentences[i], self.Nl_Len)
-            Code_Sentences[i], _ = self.pad_seq(Code_Sentences[i], self.Code_Len)
+            Code_Sentences[i], _ = self.pad_seq(
+                Code_Sentences[i], self.Code_Len)
             res[i], _ = self.pad_seq(res[i], self.Nl_Len)
             for j in range(len(Nl_Chars[i])):
                 Nl_Chars[i][j], _ = self.pad_seq(Nl_Chars[i][j], self.Char_Len)
             for j in range(len(Code_Chars[i])):
-                Code_Chars[i][j], _ = self.pad_seq(Code_Chars[i][j], self.Char_Len)
-            Nl_Chars[i] = self.pad_list(Nl_Chars[i], self.Nl_Len, self.Char_Len)
-            Code_Chars[i] = self.pad_list(Code_Chars[i], self.Code_Len, self.Char_Len)
-        batchs = [Nl_Sentences, Nl_Chars, Code_Sentences, Code_Chars, admatrix, res]
+                Code_Chars[i][j], _ = self.pad_seq(
+                    Code_Chars[i][j], self.Char_Len)
+            Nl_Chars[i] = self.pad_list(
+                Nl_Chars[i], self.Nl_Len, self.Char_Len)
+            Code_Chars[i] = self.pad_list(
+                Code_Chars[i], self.Code_Len, self.Char_Len)
+        batchs = [Nl_Sentences, Nl_Chars,
+                  Code_Sentences, Code_Chars, admatrix, res]
         batchs = np.array(batchs)
         self.data = batchs
         if self.dataName == "train":
             open("data_sum.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
         if self.dataName == "val":
-            open("valdata_sum.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
+            open("valdata_sum.pkl", "wb").write(
+                pickle.dumps(batchs, protocol=4))
         if self.dataName == "test":
             open("testdata_sum.pkl", "wb").write(pickle.dumps(batchs))
         return batchs
-
-
 
     def __getitem__(self, offset):
         ans = []
@@ -237,7 +249,8 @@ class SumDataset(data.Dataset):
                 tmp = []
                 for j in range(len(self.data[i][offset])):
                     #print(np.sum(np.eye(self.Code_Len)[self.data[i][offset][j]], axis=0))
-                    tmp.append(np.sum(np.eye(self.Code_Len)[self.data[i][offset][j]], axis=0))
+                    tmp.append(np.sum(np.eye(self.Code_Len)[
+                               self.data[i][offset][j]], axis=0))
                 tmp = self.pad_list(tmp, self.Code_Len, self.Code_Len)
                 tmp = np.array(tmp)
                 tmp = tmp.reshape(1, self.Code_Len, self.Code_Len)
@@ -245,8 +258,11 @@ class SumDataset(data.Dataset):
             else:
                 ans.append(np.array(self.data[i][offset]))
         return ans
+
     def __len__(self):
         return len(self.data[0])
+
+
 class node:
     def __init__(self, name):
         self.name = name

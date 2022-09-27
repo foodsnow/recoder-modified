@@ -57,16 +57,17 @@ class VocabEntry(object):
     @staticmethod
     def from_corpus(corpus, size, freq_cutoff=0):
         vocab_entry = VocabEntry()
-        #print(list(chain(*corpus)))
+        # print(list(chain(*corpus)))
         word_freq = Counter(chain(*corpus))
-        #print(word_freq)
+        # print(word_freq)
         non_singletons = [w for w in word_freq if word_freq[w] > 1]
         singletons = [w for w in word_freq if word_freq[w] == 1]
         print('number of word types: %d, number of word types w/ frequency > 1: %d' % (len(word_freq),
                                                                                        len(non_singletons)))
         print('singletons: %s' % singletons)
 
-        top_k_words = sorted(word_freq.keys(), reverse=True, key=word_freq.get)[:size]
+        top_k_words = sorted(word_freq.keys(), reverse=True,
+                             key=word_freq.get)[:size]
         words_not_included = []
         for word in top_k_words:
             if len(vocab_entry) < size:

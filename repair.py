@@ -11,26 +11,33 @@ import signal
 import traceback
 from typing import Dict, List, Set, Tuple
 #lst = ['Chart-1', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-13', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-1', 'Closure-10', 'Closure-14', 'Closure-15', 'Closure-18', 'Closure-31', 'Closure-33', 'Closure-38', 'Closure-51', 'Closure-62', 'Closure-63', 'Closure-70', 'Closure-73', 'Closure-86', 'Closure-92', 'Closure-93', 'Closure-107', 'Closure-118', 'Closure-113', 'Closure-124', 'Closure-125', 'Closure-129', 'Lang-6', 'Lang-16', 'Lang-26', 'Lang-29', 'Lang-33', 'Lang-38', 'Lang-39', 'Lang-43', 'Lang-45', 'Lang-51', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-5', 'Math-25', 'Math-30', 'Math-33', 'Math-34', 'Math-41', 'Math-57', 'Math-58', 'Math-59', 'Math-69', 'Math-70', 'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-105', 'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Lang-43', 'Math-50', 'Math-98', 'Time-7', 'Mockito-38', 'Mockito-22', 'Mockito-29', 'Mockito-34', 'Closure-104', 'Math-27']
-lst = ['Lang-39', 'Lang-63', 'Math-88', 'Math-82', 'Math-20', 'Math-28', 'Math-6', 'Math-72', 'Math-79', 'Math-8', 'Math-98']#['Closure-38', 'Closure-123', 'Closure-124', 'Lang-61', 'Math-3', 'Math-11', 'Math-48', 'Math-53', 'Math-63', 'Math-73', 'Math-101', 'Math-98', 'Lang-16']
+# ['Closure-38', 'Closure-123', 'Closure-124', 'Lang-61', 'Math-3', 'Math-11', 'Math-48', 'Math-53', 'Math-63', 'Math-73', 'Math-101', 'Math-98', 'Lang-16']
+lst = ['Lang-39', 'Lang-63', 'Math-88', 'Math-82', 'Math-20',
+       'Math-28', 'Math-6', 'Math-72', 'Math-79', 'Math-8', 'Math-98']
+
+
 def convert_time_to_str(time):
-    #时间数字转化成字符串，不够10的前面补个0
+    # 时间数字转化成字符串，不够10的前面补个0
     if (time < 10):
         time = '0' + str(time)
     else:
-        time=str(time)
+        time = str(time)
     return time
 
+
 def sec_to_data(y):
-    h=int(y//3600 % 24)
+    h = int(y//3600 % 24)
     d = int(y // 86400)
-    m =int((y % 3600) // 60)
-    s = round(y % 60,2)
-    h=convert_time_to_str(h)
-    m=convert_time_to_str(m)
-    s=convert_time_to_str(s)
-    d=convert_time_to_str(d)
+    m = int((y % 3600) // 60)
+    s = round(y % 60, 2)
+    h = convert_time_to_str(h)
+    m = convert_time_to_str(m)
+    s = convert_time_to_str(s)
+    d = convert_time_to_str(d)
     # 天 小时 分钟 秒
     return d + ":" + h + ":" + m + ":" + s
+
+
 def getroottree2(tokens, isex=False):
     root = Node(tokens[0], 0)
     currnode = root
@@ -46,6 +53,7 @@ def getroottree2(tokens, isex=False):
             currnode = currnode.father
     return root
 
+
 def add_tests(recoder_path: str, outdir: str, bugid: str, switch_info: dict) -> None:
     proj = bugid.split("-")[0]
     bid = bugid.split("-")[1]
@@ -60,7 +68,8 @@ def add_tests(recoder_path: str, outdir: str, bugid: str, switch_info: dict) -> 
     compile_fixed = f"defects4j compile -w {build_dir}f"
     os.system(compile_fixed)
     fix_test_cmd = ["defects4j", "test", "-w", build_dir + "f"]
-    test_proc = subprocess.Popen(fix_test_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    test_proc = subprocess.Popen(
+        fix_test_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     so, se = test_proc.communicate()
     result_str = so.decode("utf-8")
     err_str = se.decode("utf-8")
@@ -104,6 +113,7 @@ def add_tests(recoder_path: str, outdir: str, bugid: str, switch_info: dict) -> 
     switch_info["relevant_test_cases"] = relevent_test_cases
     switch_info["failed_passing_tests"] = failed_tests
 
+
 def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str, dict]) -> None:
     recoder_path = "."
     if "RECODER_HOME" in os.environ:
@@ -144,7 +154,8 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
         line_dict = file_dict[filename]
         line_num = int(p["line"])
         if line_num not in line_dict:
-            line_dict[line_num] = {"line": line_num, "id": id, "fl_score": fl_score, "cases": []}
+            line_dict[line_num] = {"line": line_num,
+                                   "id": id, "fl_score": fl_score, "cases": []}
         file_line = f"{filename}:{line_num}"
         if file_line not in file_line_id:
             file_line_id[file_line] = id
@@ -154,8 +165,10 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
                 print(f"{file_line} -> {file_line_id[file_line]} != {id}")
         case_dict = dict()
         case_dict["case"] = id_dict[id]
-        save_file = os.path.join(outdir, bugid, str(id), str(id_dict[id]), os.path.basename(filename))
-        case_dict["location"] = os.path.join(str(id), str(id_dict[id]), os.path.basename(filename))
+        save_file = os.path.join(outdir, bugid, str(id), str(
+            id_dict[id]), os.path.basename(filename))
+        case_dict["location"] = os.path.join(
+            str(id), str(id_dict[id]), os.path.basename(filename))
         case_dict["prob"] = p["prob"]
         case_dict["edit"] = p["code"]
         case_dict["mode"] = p["mode"]
@@ -167,7 +180,7 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
         try:
             root = getroottree2(p['code'].split())
         except:
-            #assert(0)
+            # assert(0)
             continue
         mode = p['mode']
         precode = p['precode']
@@ -188,12 +201,12 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
         if lines[0].strip() == '}' and mode == 1:
             precode += lines[0] + "\n"
             aftercode = "\n".join(lines[1:])
-        #print(aftercode.splitlines()[:10])
+        # print(aftercode.splitlines()[:10])
 
         try:
             code = stringfyRoot(root, False, mode)
         except:
-            #print(traceback.print_exc())
+            # print(traceback.print_exc())
             continue
         edit: str = p["code"]
         add_true = False
@@ -240,14 +253,16 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
                 ps = p
                 for p, y in enumerate(afterlines):
                     if ps['isa'] and y.strip() != '':
-                        aftercode = "\n".join(afterlines[:p + 1] + ['}'] + afterlines[p + 1:])
+                        aftercode = "\n".join(
+                            afterlines[:p + 1] + ['}'] + afterlines[p + 1:])
                         break
                     if '{' in y:
                         lnum += 1
                     if '}' in y:
                         if lnum == 0:
-                            aftercode = "\n".join(afterlines[:p] + ['}'] + afterlines[p:])
-                            #assert(0)
+                            aftercode = "\n".join(
+                                afterlines[:p] + ['}'] + afterlines[p:])
+                            # assert(0)
                             break
                         lnum -= 1
             print(code)
@@ -265,10 +280,10 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
             # with open("tmp.java", "w") as f:
             #     f.write(tmpcode)
             print(e)
-            #assert(0)
-            #print(code)
-            #assert(0)
-            #print('ttttt')
+            # assert(0)
+            # print(code)
+            # assert(0)
+            # print('ttttt')
             continue
         # print(filepath2)
         # open(filepath2, "w").write(tmpcode)
@@ -315,33 +330,37 @@ def main(bugid: str) -> None:
         if x != bugid:
             continue
         wf = open('patches/' + x + "patch.txt", 'w')
-        patches = json.load(open("patch/%s.json"%x, 'r'))
+        patches = json.load(open("patch/%s.json" % x, 'r'))
         curride = ""
         proj = x.split("-")[0]
         bid = x.split("-")[1]
         x = x.replace("-", "")
         if os.path.exists('buggy%s' % x):
             os.system('rm -rf buggy%s' % x)
-        os.system("defects4j checkout -p %s -v %s -w buggy%s" % (proj, bid + 'b', x))
+        os.system("defects4j checkout -p %s -v %s -w buggy%s" %
+                  (proj, bid + 'b', x))
         xsss = x
-        testmethods = os.popen('defects4j export -w buggy%s -p tests.trigger'%x).readlines()
+        testmethods = os.popen(
+            'defects4j export -w buggy%s -p tests.trigger' % x).readlines()
         for i, p in enumerate(patches):
             if i < 0:
                 continue
             endtime = time.time()
             if endtime - starttime > 18000:
-                open('timeg.txt', 'a').write(xsss + "\t" + sec_to_data(endtime - starttime) + "\n")
+                open('timeg.txt', 'a').write(xsss + "\t" +
+                                             sec_to_data(endtime - starttime) + "\n")
                 exit(0)
             iden = x + str(p['line']) + p['filename'].replace("/", "")[::-1]
             if iden != curride:
                 if curride != "":
-                    os.system('rm -rf buggy%s'%x)
-            os.system('defects4j checkout -p %s -v %s -w buggy%s' % (proj, bid + 'b', x))
+                    os.system('rm -rf buggy%s' % x)
+            os.system('defects4j checkout -p %s -v %s -w buggy%s' %
+                      (proj, bid + 'b', x))
             curride = iden
             try:
                 root = getroottree2(p['code'].split())
             except:
-                #assert(0)
+                # assert(0)
                 continue
             mode = p['mode']
             precode = p['precode']
@@ -362,12 +381,12 @@ def main(bugid: str) -> None:
             if lines[0].strip() == '}' and mode == 1:
                 precode += lines[0] + "\n"
                 aftercode = "\n".join(lines[1:])
-            #print(aftercode.splitlines()[:10])
+            # print(aftercode.splitlines()[:10])
 
             try:
                 code = stringfyRoot(root, False, mode)
             except:
-                #print(traceback.print_exc())
+                # print(traceback.print_exc())
                 continue
             if '<string>' in code:
                 if '\'.\'' in oldcode:
@@ -382,7 +401,7 @@ def main(bugid: str) -> None:
                 code = 'if' + code + "{"
             if code == "" and 'for' in oldcode and mode == 0:
                 code = oldcode + "if(0!=1)break;"
-            filepath2 = 'buggy%s'%x + p['filename'][5:]
+            filepath2 = 'buggy%s' % x + p['filename'][5:]
             lnum = 0
             for l in code.splitlines():
                 if l.strip() != "":
@@ -409,14 +428,16 @@ def main(bugid: str) -> None:
                     ps = p
                     for p, y in enumerate(afterlines):
                         if ps['isa'] and y.strip() != '':
-                            aftercode = "\n".join(afterlines[:p + 1] + ['}'] + afterlines[p + 1:])
+                            aftercode = "\n".join(
+                                afterlines[:p + 1] + ['}'] + afterlines[p + 1:])
                             break
                         if '{' in y:
                             lnum += 1
                         if '}' in y:
                             if lnum == 0:
-                                aftercode = "\n".join(afterlines[:p] + ['}'] + afterlines[p:])
-                                #assert(0)
+                                aftercode = "\n".join(
+                                    afterlines[:p] + ['}'] + afterlines[p:])
+                                # assert(0)
                                 break
                             lnum -= 1
                 print(code)
@@ -431,26 +452,27 @@ def main(bugid: str) -> None:
             try:
                 tree = parser.parse()
             except:
-                #assert(0)
-                #print(code)
-                #assert(0)
-                #print('ttttt')
+                # assert(0)
+                # print(code)
+                # assert(0)
+                # print('ttttt')
                 continue
             print(filepath2)
             open(filepath2, "w").write(tmpcode)
             bugg = False
             for t in testmethods:
-                #print(t.strip())
+                # print(t.strip())
                 cmd = 'defects4j test -w buggy%s/ -t %s' % (x, t.strip())
                 Returncode = ""
-                child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=-1, start_new_session=True)
+                child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
+                                         stderr=subprocess.PIPE, bufsize=-1, start_new_session=True)
                 while_begin = time.time()
                 while True:
                     Flag = child.poll()
-                    #print(Flag)
+                    # print(Flag)
                     #print(time.time() - while_begin)
-                    if  Flag == 0:
-                        Returncode = child.stdout.readlines()#child.stdout.read()
+                    if Flag == 0:
+                        Returncode = child.stdout.readlines()  # child.stdout.read()
                         break
                     elif Flag != 0 and Flag is not None:
                         bugg = True
@@ -473,13 +495,14 @@ def main(bugid: str) -> None:
                 print('s')
                 cmd = 'defects4j test -w buggy%s/' % (x)
                 Returncode = ""
-                child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=-1, start_new_session=True)
+                child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
+                                         stderr=subprocess.PIPE, bufsize=-1, start_new_session=True)
                 while_begin = time.time()
                 while True:
                     Flag = child.poll()
                     #print(time.time() - while_begin, Flag)
-                    if  Flag == 0:
-                        Returncode = child.stdout.readlines()#child.stdout.read()
+                    if Flag == 0:
+                        Returncode = child.stdout.readlines()  # child.stdout.read()
                         break
                     elif Flag != 0 and Flag is not None:
                         bugg = True
@@ -495,11 +518,12 @@ def main(bugid: str) -> None:
                 if len(log) > 0 and log[-1].decode('utf-8') == "Failing tests: 0\n":
                     print('success')
                     endtime = time.time()
-                    open('timeg.txt', 'a').write(xsss + "\t" + sec_to_data(endtime - starttime) + "\n")
+                    open('timeg.txt', 'a').write(xsss + "\t" +
+                                                 sec_to_data(endtime - starttime) + "\n")
                     #timelst.append(sec_to_data(endtime - starttime))
                     wf.write(curride + "\n")
                     wf.write("-" + oldcode + "\n")
-                    wf.write("+" +  code + "\n")
+                    wf.write("+" + code + "\n")
                     wf.write("🚀\n")
                     wf.flush()
                     if os.path.exists('buggy%s' % x):
@@ -507,6 +531,7 @@ def main(bugid: str) -> None:
                     exit(0)
 
         endtime = time.time()
+
 
 if __name__ == "__main__":
     # main(sys.argv[1])

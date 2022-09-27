@@ -12,12 +12,13 @@ class Attention(nn.Module):
 
     def forward(self, query, key, value, mask=None, dropout=None):
         scores = torch.matmul(query, key.transpose(-2, -1)) \
-                 / math.sqrt(query.size(-1))
+            / math.sqrt(query.size(-1))
 
         if mask is not None:
             if len(list(mask.size())) != 4:
-                mask = mask.unsqueeze(1).repeat(1, query.size(2), 1).unsqueeze(1)
-            #print(mask.shape)
+                mask = mask.unsqueeze(1).repeat(
+                    1, query.size(2), 1).unsqueeze(1)
+            # print(mask.shape)
             scores = scores.masked_fill(mask == 0, -1e9)
 
         p_attn = F.softmax(scores, dim=-1)

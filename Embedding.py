@@ -19,7 +19,8 @@ class Embedding(nn.Module):
         :param dropout: dropout rate
         """
         super().__init__()
-        self.token = TokenEmbedding(vocab_size=vocab_size, embed_size=embed_size)
+        self.token = TokenEmbedding(
+            vocab_size=vocab_size, embed_size=embed_size)
         self.position = PositionalEmbedding(d_model=self.token.embedding_dim)
         self.depth_embedding = nn.Embedding(20, embed_size, padding_idx=0)
         self.dropout = nn.Dropout(p=dropout)

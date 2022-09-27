@@ -1,7 +1,9 @@
 import pickle
 import traceback
+
+
 def stringfyNode(root):
-    #print(root.getTreestr())
+    # print(root.getTreestr())
     if root.name == 'LocalVariableDeclaration' or root.name == 'VariableDeclaration':
         typestr = ""
         idenname = ""
@@ -20,13 +22,13 @@ def stringfyNode(root):
             ans += x.name[:-4] + " "
         return ans
     elif root.name == 'BlockStatement' or root.name == 'parameter' or root.name == 'return_type' or root.name == 'type' or root.name == "initializer" or root.name == 'expression':
-        #print(root.getTreestr())
-        assert(len(root.child) == 1)
+        # print(root.getTreestr())
+        assert (len(root.child) == 1)
         return stringfyNode(root.child[0])
     elif root.name == 'BreakStatement_ter':
         return 'break;\n'
     elif root.name == 'BasicType':
-        #print(root.getTreestr())
+        # print(root.getTreestr())
         t = ""
         dim = ""
         for x in root.child:
@@ -36,7 +38,7 @@ def stringfyNode(root):
                 dim = stringfyNode(x)
             else:
                 print(x.name)
-                assert(0)
+                assert (0)
         return t + dim
     elif root.name == "None_ter":
         return ""
@@ -91,7 +93,7 @@ def stringfyNode(root):
                 con = 'while' + stringfyNode(x)
             if x.name == 'body':
                 body = stringfyNode(x)
-            #if x.name == 'else_statement':
+            # if x.name == 'else_statement':
             #    elses = stringfyNode(x.child[0])
         return con + '{\n' + body + "\n}"
     elif root.name == 'ArrayInitializer':
@@ -104,7 +106,7 @@ def stringfyNode(root):
     elif root.name == 'TypeArgument':
         t = ""
         t2 = ""
-        #print(root.getTreestr())
+        # print(root.getTreestr())
         for x in root.child:
             if x.name == 'type':
                 t = stringfyNode(x)
@@ -117,7 +119,7 @@ def stringfyNode(root):
     elif root.name == 'LambdaExpression':
         return ""
     elif root.name == 'ArrayCreator':
-        #print(root.getTreestr())
+        # print(root.getTreestr())
         t = ""
         dim = '[]'
         ini = ""
@@ -163,7 +165,7 @@ def stringfyNode(root):
         if dim != "":
             n = n + " " + dim
         if args != "":
-            ans = n +"<" + args + ">"
+            ans = n + "<" + args + ">"
         else:
             ans = n
         if sub != "":
@@ -190,7 +192,7 @@ def stringfyNode(root):
                 iftrue = stringfyNode(x.child[0])
             if x.name == 'if_false':
                 iffalse = stringfyNode(x.child[0])
-        return con + "?" + iftrue + ":" + iffalse 
+        return con + "?" + iftrue + ":" + iffalse
     elif root.name == 'ForStatement':
         con = ""
         body = ""
@@ -199,7 +201,7 @@ def stringfyNode(root):
                 con = stringfyNode(x.child[0])
             if x.name == 'body':
                 body = stringfyNode(x)
-        #print(root.getTreestr())
+        # print(root.getTreestr())
         return 'for' + con + "{\n" + body + "\n}"
     elif root.name == 'control':
         return stringfyNode(root.child[0])
@@ -236,7 +238,7 @@ def stringfyNode(root):
                 p = stringfyNode(x)
             if x.name == 'block':
                 b = stringfyNode(x)
-        return "catch(" + p + "){\n" + b + "\n}" 
+        return "catch(" + p + "){\n" + b + "\n}"
     elif root.name == 'MethodDeclaration':
         rettype = ""
         methodname = ""
@@ -249,7 +251,7 @@ def stringfyNode(root):
             if x.name == 'name':
                 methodname = stringfyNode(x)
             if x.name == 'throws':
-                throws = "throws " + stringfyNode(x) 
+                throws = "throws " + stringfyNode(x)
             if x.name == 'parameters':
                 for y in x.child:
                     args += stringfyNode(y) + ","
@@ -257,7 +259,7 @@ def stringfyNode(root):
                 body = stringfyNode(x)
         if rettype == "":
             rettype = 'void'
-        return rettype + " " + methodname + " (" + args[:-1] + ") " + throws + " {\n" + body + " }" 
+        return rettype + " " + methodname + " (" + args[:-1] + ") " + throws + " {\n" + body + " }"
     elif root.name == 'parameters':
         args = ""
         for x in root.child:
@@ -269,7 +271,7 @@ def stringfyNode(root):
             if x.name == 'arguments':
                 methodname += stringfyNode(x)
             else:
-                assert(0)
+                assert (0)
         methodname += ");"
         return methodname
     elif root.name == 'Assignment':
@@ -283,7 +285,7 @@ def stringfyNode(root):
                 val = stringfyNode(x.child[0])
             if x.name == 'type':
                 type = x.child[0].name[:-4]
-        return ass + " %s "%type + val
+        return ass + " %s " % type + val
     elif root.name == 'selectors':
         ans = ""
         for x in root.child:
@@ -297,7 +299,7 @@ def stringfyNode(root):
         sel = ""
         for x in root.child:
             if x.name == 'qualifier':
-                qual = stringfyNode(x)#x.child[0].name[:-4] + "."
+                qual = stringfyNode(x)  # x.child[0].name[:-4] + "."
             if x.name == "member":
                 member = stringfyNode(x)
             if x.name == "postfix_operators":
@@ -312,11 +314,11 @@ def stringfyNode(root):
     elif root.name == 'declarators':
         ans = ""
         for x in root.child:
-            ans += stringfyNode(root.child[0]) 
+            ans += stringfyNode(root.child[0])
             ans += ","
         return ans[:-1]
     elif root.name == 'VariableDeclarator':
-        #print(root.getTreestr())
+        # print(root.getTreestr())
         idenname = ""
         clname = ""
         for x in root.child:
@@ -324,8 +326,8 @@ def stringfyNode(root):
                 idenname = stringfyNode(x)
             if x.name == 'initializer':
                 clname = stringfyNode(x)
-        #print(idenname)
-        #print(clname)
+        # print(idenname)
+        # print(clname)
         return idenname + " = " + clname
     elif root.name == 'ArraySelector':
         qual = ""
@@ -335,7 +337,7 @@ def stringfyNode(root):
         sel = ""
         for x in root.child:
             if x.name == 'qualifier':
-                qual = stringfyNode(x)#x.child[0].name[:-4] + "."
+                qual = stringfyNode(x)  # x.child[0].name[:-4] + "."
             if x.name == "index":
                 index = stringfyNode(x.child[0])
             if x.name == "postfix_operators":
@@ -370,7 +372,7 @@ def stringfyNode(root):
             if x.name == 'arguments':
                 methodname += stringfyNode(x)
             else:
-                assert(0)
+                assert (0)
         methodname += ")"
         return methodname
     elif root.name == 'condition':
@@ -423,7 +425,7 @@ def stringfyNode(root):
                 lock = stringfyNode(x.child[0])
             if x.name == "block":
                 block = stringfyNode(x)
-        return "synchronized(" + lock + "){\n" + block + "}" 
+        return "synchronized(" + lock + "){\n" + block + "}"
     elif root.name == 'throws':
         thows = ""
         for x in root.child:
@@ -449,7 +451,7 @@ def stringfyNode(root):
         if len(root.child[0].child) == 0:
             return root.child[0].name[:-4] + "."
         return stringfyNode(root.child[0]) + "."
-        #return root.child[0].name[:-4] + "."
+        # return root.child[0].name[:-4] + "."
     elif root.name == 'MethodInvocation' or root.name == 'SuperMethodInvocation':
         ans = ""
         member = ""
@@ -493,13 +495,12 @@ def stringfyNode(root):
                 ca = stringfyNode(x)
             if x.name == 'finally_block':
                 fin = stringfyNode(x)
-        return 'try{\n' +  block + '}\n' + ca + 'finally{\n' + fin + "}\n"
+        return 'try{\n' + block + '}\n' + ca + 'finally{\n' + fin + "}\n"
     elif root.name == 'block':
-        ans= ""
+        ans = ""
         for x in root.child:
             ans += stringfyNode(x) + "\n"
         return ans
-
 
     elif root.name == 'throws_ter':
         return ""
@@ -541,8 +542,9 @@ def stringfyNode(root):
         return "(" + types + ")" + exp
     else:
         print(1, root.name)
-        assert(0)
-    #elif root.name == 'MemberReference':
+        assert (0)
+    # elif root.name == 'MemberReference':
+
 
 def stringfyRoot(root: 'Node', isIf: bool, mode: int) -> str:
     p = ""
@@ -552,7 +554,7 @@ def stringfyRoot(root: 'Node', isIf: bool, mode: int) -> str:
         try:
             s = stringfyNode(x)
         except:
-            #print(traceback.print_exc())
+            # print(traceback.print_exc())
             s = ""
         if x.name == 'IfStatement':
             if isIf == 1:
@@ -560,8 +562,10 @@ def stringfyRoot(root: 'Node', isIf: bool, mode: int) -> str:
                     s = "if(True){\n"
         p += s
     if len(root.child) > 0 and root.child[0].name == 'IfStatement' and len(root.child) > 1 and mode == 1:
-        p += "}"   
+        p += "}"
     return p
+
+
 class Node:
     def __init__(self, name, s):
         self.name = name
@@ -571,13 +575,15 @@ class Node:
         self.treestr = ""
         self.hasmatch = False
         self.possibility = 0.01
+
     def getprob(self):
         ans = [self.possibility]
         for x in self.child:
             ans.extend(x.getprob())
         return ans
+
     def printTree(self, r):
-        #s = r.name + " "#print(r.name)
+        # s = r.name + " "#print(r.name)
         if len(r.child) == 0:
             s = r.name + '_ter' + " "
             s += "^ "
@@ -586,8 +592,9 @@ class Node:
         #r.child = sorted(r.child, key=lambda x:x.name)
         for c in r.child:
             s += self.printTree(c)
-        s += "^ "#print(r.name + "^")
+        s += "^ "  # print(r.name + "^")
         return s
+
     def getTreestr(self):
         if self.treestr == "":
             self.treestr = self.printTree(self)
@@ -595,6 +602,8 @@ class Node:
         else:
             return self.treestr
         return self.treestr
+
+
 def getroottree(tokens, isex=False):
     if isex:
         root = Node(tokens[0], 0)
@@ -612,6 +621,8 @@ def getroottree(tokens, isex=False):
         else:
             currnode = currnode.father
     return root
+
+
 '''data = open('outval1.txt', "r").readlines()#pickle.load(open('process_datacopy.pkl', 'rb'))
 for i, x in enumerate(data):
     r = getroottree(x.split())
@@ -622,6 +633,6 @@ for i, x in enumerate(data):
         print(s)
     except:
         print(x)'''
-    #assert(0)
+# assert(0)
 #root = getroottree('root LocalVariableDeclaration type ReferenceType name Double_ter ^ ^ ^ ^ declarators VariableDeclarator name objTypePair_ter ^ ^ initializer ClassCreator type ReferenceType name Double_ter ^ ^ ^ ^ arguments MemberReference member x_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ StatementExpression expression SuperConstructorInvocation arguments MemberReference member f_ter ^ ^ ^ ^ ^ ^ ^ ^ '.split())
-#print(stringfyRoot(root))
+# print(stringfyRoot(root))

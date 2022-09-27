@@ -14,41 +14,50 @@ import io
 import subprocess
 from Searchnode import Node
 import traceback
-linenode = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration', 'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
+linenode = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration',
+            'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
 #os.environ["CUDA_VISIBLE_DEVICES"]="1, 4"
+
+
 def getLocVar(node):
-  varnames = []
-  if node.name == 'VariableDeclarator':
-    currnode = -1
+    varnames = []
+    if node.name == 'VariableDeclarator':
+        currnode = -1
+        for x in node.child:
+            if x.name == 'name':
+                currnode = x
+                break
+        varnames.append((currnode.child[0].name, node))
+    if node.name == 'FormalParameter':
+        currnode = -1
+        for x in node.child:
+            if x.name == 'name':
+                currnode = x
+                break
+        varnames.append((currnode.child[0].name, node))
+    if node.name == 'InferredFormalParameter':
+        currnode = -1
+        for x in node.child:
+            if x.name == 'name':
+                currnode = x
+                break
+        varnames.append((currnode.child[0].name, node))
     for x in node.child:
-      if x.name == 'name':
-        currnode = x
-        break
-    varnames.append((currnode.child[0].name, node))
-  if node.name == 'FormalParameter':
-    currnode = -1
-    for x in node.child:
-      if x.name == 'name':
-        currnode = x
-        break
-    varnames.append((currnode.child[0].name, node))
-  if node.name == 'InferredFormalParameter':
-    currnode = -1
-    for x in node.child:
-      if x.name == 'name':
-        currnode = x
-        break
-    varnames.append((currnode.child[0].name, node))
-  for x in node.child:
-    varnames.extend(getLocVar(x))
-  return varnames
+        varnames.extend(getLocVar(x))
+    return varnames
+
+
 n = 0
+
+
 def setid(root):
-  global n
-  root.id = n
-  n += 1
-  for x in root.child:
-    setid(x)
+    global n
+    root.id = n
+    n += 1
+    for x in root.child:
+        setid(x)
+
+
 def solveLongTree(root, subroot):
     global n
     m = 'None'
@@ -59,7 +68,7 @@ def solveLongTree(root, subroot):
     if len(root.getTreestr().strip().split()) >= 1000:
         tmp = subroot
         if len(tmp.getTreestr().split()) >= 1000:
-            assert(0)
+            assert (0)
         lasttmp = None
         while True:
             if len(tmp.getTreestr().split()) >= 1000:
@@ -101,11 +110,11 @@ def solveLongTree(root, subroot):
             vardic[x[0]] = 'loc' + str(vnum)
             t = -1
             for s in x[1].father.father.child:
-                #print(s.name)
+                # print(s.name)
                 if s.name == 'type':
                     t = s.child[0].child[0].child[0].name[:-4]
                     break
-            assert(t != -1)
+            assert (t != -1)
             typedic[x[0]] = t
         else:
             fnum += 1
@@ -115,45 +124,53 @@ def solveLongTree(root, subroot):
                 if s.name == 'type':
                     t = s.child[0].child[0].child[0].name[:-4]
                     break
-            assert(t != -1)
+            assert (t != -1)
             typedic[x[0]] = t
     return troot, vardic, typedic
+
+
 def addter(root):
     if len(root.child) == 0:
         root.name += "_ter"
     for x in root.child:
         addter(x)
     return
+
+
 def setProb(r, p):
-    r.possibility =  p#max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
+    r.possibility = p  # max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
     for x in r.child:
         setProb(x, p)
+
+
 def getLineNode(root, block, add=True):
-  ans = []
-  block = block + root.name
-  #print(root.name, 'lll')
-  for x in root.child:
-    if x.name in linenode:
-      if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
-        continue
-      x.block = block
-      ans.append(x)
-    else:
-      #print(x.name)
-      s = ""
-      if not add:
-        s = block
-        #tmp = getLineNode(x, block)
-      else:
-        s = block + root.name
-      #print(block + root.name + "--------")
-      tmp = getLineNode(x, block)
-      '''if x.name == 'then_statement' and tmp == []:
+    ans = []
+    block = block + root.name
+    #print(root.name, 'lll')
+    for x in root.child:
+        if x.name in linenode:
+            if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
+                continue
+            x.block = block
+            ans.append(x)
+        else:
+            # print(x.name)
+            s = ""
+            if not add:
+                s = block
+                #tmp = getLineNode(x, block)
+            else:
+                s = block + root.name
+            #print(block + root.name + "--------")
+            tmp = getLineNode(x, block)
+            '''if x.name == 'then_statement' and tmp == []:
         print(tmp)
         print(x.father.printTree(x.father))
         assert(0)'''
-      ans.extend(tmp)
-  return ans
+            ans.extend(tmp)
+    return ans
+
+
 def getroottree(tokens, isex=False):
     if isinstance(tokens[0], tuple):
         root = Node(tokens[0][0], 0)
@@ -175,6 +192,8 @@ def getroottree(tokens, isex=False):
         else:
             currnode = currnode.father
     return root
+
+
 def ismatch(root, subroot):
     index = 0
     #assert(len(subroot.child) <= len(root.child))
@@ -188,6 +207,8 @@ def ismatch(root, subroot):
             return False
         index += 1
     return True
+
+
 def findSubtree(root, subroot):
     if root.name == subroot.name:
         if ismatch(root, subroot):
@@ -197,6 +218,8 @@ def findSubtree(root, subroot):
         if tmp:
             return tmp
     return None
+
+
 def generateAST(tree):
     sub = []
     if not tree:
@@ -224,13 +247,13 @@ def generateAST(tree):
         return sub
     position = None
     if hasattr(tree, 'position'):
-        #assert(0)
+        # assert(0)
         position = tree.position
     curr = type(tree).__name__
-    #print(curr)
+    # print(curr)
     if True:
         if False:
-            assert(0)#sub.append((str(getLiteral(tree.children)))
+            assert (0)  # sub.append((str(getLiteral(tree.children)))
         else:
             sub.append((curr, position))
             try:
@@ -283,16 +306,18 @@ def generateAST(tree):
                         sub.append("^")
                     else:
                         print(type(node))
-                        assert(0)
+                        assert (0)
                     sub.append("^")
             except AttributeError:
-                assert(0)
+                assert (0)
                 pass
         sub.append('^')
         return sub
     else:
         print(curr)
     return sub
+
+
 def getroottree2(tokens, isex=False):
     root = Node(tokens[0], 0)
     currnode = root
@@ -307,6 +332,8 @@ def getroottree2(tokens, isex=False):
         else:
             currnode = currnode.father
     return root
+
+
 '''def setProb(root, subroot, prob):
     root.possibility = max(min(max(root.possibility, prob), 0.98), 0.01)
     index = 0
@@ -318,6 +345,8 @@ def getroottree2(tokens, isex=False):
             index += 1
         setProb(root.child[index], x, prob)
         index += 1'''
+
+
 def getSubroot(treeroot):
     currnode = treeroot
     lnode = None
@@ -334,6 +363,8 @@ def getSubroot(treeroot):
             break
         currnode = currnode.father
     return lnode, mnode
+
+
 def getNodeById(root, line):
     if root.position:
         if root.position.line == line and root.name != 'IfStatement' and root.name != 'ForStatement':
@@ -343,6 +374,8 @@ def getNodeById(root, line):
         if t:
             return t
     return None
+
+
 def containID(root):
     ans = []
     if root.position is not None:
@@ -350,6 +383,8 @@ def containID(root):
     for x in root.child:
         ans.extend(containID(x))
     return ans
+
+
 def getAssignMent(root):
     if root.name == 'Assignment':
         return root
@@ -358,6 +393,8 @@ def getAssignMent(root):
         if t:
             return t
     return None
+
+
 def isAssign(line):
     #sprint(4, line.getTreestr())
     if 'Assignment' not in line.getTreestr():
@@ -379,9 +416,10 @@ def isAssign(line):
         if "qualifier " + m in anode.child[1].getTreestr():
             return True
     return False
-import time
+
+
 st = time.time()
-dir: str = "." 
+dir: str = "."
 if len(sys.argv) > 1:
     dir = sys.argv[1]
 filepath = f"{dir}/code.java"
@@ -398,7 +436,7 @@ oldcode = liness[lineid - 1]
 subroot = lnode
 treeroot = mnode
 presubroot = None
-aftersubroot = None     
+aftersubroot = None
 linenodes = getLineNode(treeroot, "")
 currid = linenodes.index(subroot)
 if currid > 0:
@@ -416,19 +454,20 @@ if True:
         setProb(aftersubroot, 4)
     if presubroot is not None:
         setProb(presubroot, 3)
-                #print(containID(subroot))
+        # print(containID(subroot))
     cid = set(containID(subroot))
     maxl = -1
     minl = 1e10
     for l in cid:
         maxl = max(maxl, l - 1)
         minl = min(minl, l - 1)
-                #print(maxl, liness[maxl + 1])
+        #print(maxl, liness[maxl + 1])
     precode = "\n".join(liness[0:minl])
     aftercode = "\n".join(liness[maxl + 1:])
     oldcode = "\n".join(liness[minl:maxl + 1])
     troot, vardic, typedic = solveLongTree(treeroot, subroot)
-    data.append({'treeroot':treeroot, 'troot':troot, 'oldcode':oldcode, 'filepath':filepath, 'subroot':subroot, 'vardic':vardic, 'typedic':typedic, 'precode':precode, 'aftercode':aftercode, 'tree':troot.printTreeWithVar(troot, vardic), 'prob':troot.getTreeProb(troot), 'mode':0, 'line':lineid, 'isa':False})
+    data.append({'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode, 'filepath': filepath, 'subroot': subroot, 'vardic': vardic, 'typedic': typedic,
+                'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic), 'prob': troot.getTreeProb(troot), 'mode': 0, 'line': lineid, 'isa': False})
 print(time.time() - st)
 model = test()
 print(time.time() - st)
@@ -441,7 +480,7 @@ tans = []
 for p in ans:
     mode = p['mode']
     precode = p['precode']
-    aftercode = p['aftercode']        
+    aftercode = p['aftercode']
     oldcode = p['oldcode']
     root = getroottree2(p['code'].split())
     myprob = p['prob']
@@ -494,7 +533,7 @@ for p in ans:
         aftercode = "\n".join(lines[i:]) + "\n" + aftercode
     if lnum == 1 and 'if' in code and mode == 1:
         if len(precode.splitlines()) > 0 and 'for' in precode.splitlines()[-1]:
-            code = code + 'continue;\n}\n'    
+            code = code + 'continue;\n}\n'
         else:
             afterlines = aftercode.splitlines()
             lnum = 0
@@ -505,8 +544,9 @@ for p in ans:
                     lnum += 1
                 if '}' in y:
                     if lnum == 0:
-                        aftercode = "\n".join(afterlines[:p] + ['}'] + afterlines[p:])
-                            #assert(0)
+                        aftercode = "\n".join(
+                            afterlines[:p] + ['}'] + afterlines[p:])
+                        # assert(0)
                         break
                     lnum -= 1
         tmpcode = precode + "\n" + code + aftercode
@@ -520,4 +560,3 @@ for p in ans:
     tans.append(f"prob: {myprob}")
 print(time.time() - st)
 open(f"{dir}/ans.txt", "w").write("\n\n-------\n\n".join(tans))
-    

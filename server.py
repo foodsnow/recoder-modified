@@ -1,3 +1,5 @@
+import subprocess
+import psutil
 import tornado.ioloop
 import tornado.web
 import json
@@ -13,12 +15,12 @@ import os
 from tornado.httpserver import *
 #from predict import *
 import threading
-attr = ["NAME","ATK", "DEF", "COST","DUR","TYPE","PLAYER_CLS", "RACE","RARITY"]
-dir = {"ATIS":"ATIS", "GEO":"GEO", "HS":"Compare"}
-import psutil
-import os
-import subprocess
-print ("load")
+attr = ["NAME", "ATK", "DEF", "COST", "DUR",
+        "TYPE", "PLAYER_CLS", "RACE", "RARITY"]
+dir = {"ATIS": "ATIS", "GEO": "GEO", "HS": "Compare"}
+print("load")
+
+
 class UploadFileHandler(tornado.web.RequestHandler):
     def post(self):
         self.set_header('Access-Control-Allow-Origin', "*")
@@ -29,7 +31,7 @@ class UploadFileHandler(tornado.web.RequestHandler):
         res = ""
         ans = "fail to generate"
         open("ans.txt", "w").write(ans)
-        if(data['type'] == 'Repair'):
+        if (data['type'] == 'Repair'):
             open("code.java", "w").write(data['data'])
             open("line.txt", 'w').write(data['data1'])
             os.system("python3 testone.py")
@@ -38,12 +40,13 @@ class UploadFileHandler(tornado.web.RequestHandler):
         f.close()
         self.finish(ans)
 
-app=tornado.web.Application([
+
+app = tornado.web.Application([
     (r'/', UploadFileHandler),
 ])
 
 if __name__ == '__main__':
     server = HTTPServer(app)
     server.listen(12000)
-    #app.listen(12000)
+    # app.listen(12000)
     tornado.ioloop.IOLoop.instance().start()

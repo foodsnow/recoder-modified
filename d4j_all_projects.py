@@ -16,6 +16,7 @@ for i in range(1, 39):
 # for i in range(1, 28):
 #     d4j_projects.append("Time-" + str(i))
 
+
 def run(bugid):
     print("Starting", bugid)
     cmd = ["python3", "testDefect4j.py", bugid]
@@ -32,8 +33,10 @@ def run(bugid):
             f.write('stderr: '+subp.stderr)
     print("Exited with code", subp.returncode)
 
+
 for proj in d4j_projects:
     run(proj)
+
 
 def run_reapir(bugid):
     print("Starting", bugid)
@@ -50,6 +53,7 @@ def run_reapir(bugid):
         with open(f'emsemble-out/gen-{bugid}-repair.log', 'w+') as f:
             f.write('stderr: '+subp.stderr)
     print("Exited with code", subp.returncode)
+
 
 for proj in d4j_projects:
     run_reapir(proj)

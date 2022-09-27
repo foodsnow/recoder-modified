@@ -5,7 +5,9 @@ import numpy as np
 terminalsFather = ["value", "name", "member", "qualifier"]
 
 #Statement = ["BlockStatement", "Statement", "IfStatement", "AssertStatement", "SwitchStatement", "WhileStatement", "DoStatement", "ForStatement", "BreakStatement", "ContinueStatement", "ReturnStatement", "ThrowStatement", "SynchronizedStatement", "TryStatement", "StatementExpression"]
-Statement = ["IfStatement", "then_statement", "cases", "else_statement", "AssertStatement", "SwitchStatement", "WhileStatement", "DoStatement", "ForStatement", "BreakStatement", "ContinueStatement", "ReturnStatement", "ThrowStatement", "SynchronizedStatement", "TryStatement", "StatementExpression"]
+Statement = ["IfStatement", "then_statement", "cases", "else_statement", "AssertStatement", "SwitchStatement", "WhileStatement", "DoStatement",
+             "ForStatement", "BreakStatement", "ContinueStatement", "ReturnStatement", "ThrowStatement", "SynchronizedStatement", "TryStatement", "StatementExpression"]
+
 
 class Node:
     def __init__(self, name):
@@ -28,33 +30,32 @@ class Node:
             return [self.terminals[0]]
         if len(self.child) > 0 and self.name in ["VariableDeclaration", "LocalVariableDeclaration"]:
             return [self.terminals[0]]
-        
 
-        #if len(self.child) > 0 and self.name in Statement:
-            #if self.name in ["IfStatement", "SwitchStatement"]:
-                #return None  # 控制流 未完成
+        # if len(self.child) > 0 and self.name in Statement:
+            # if self.name in ["IfStatement", "SwitchStatement"]:
+            # return None  # 控制流 未完成
         for c in self.child:
             self.avaTerminals += c.getavaterms()
-        return self.avaTerminals 
+        return self.avaTerminals
 
-    def getTerminals(self, fatherName = ""):
+    def getTerminals(self, fatherName=""):
         if len(self.child) == 0 and fatherName in terminalsFather:
             if fatherName == "qualifier" and self.name == "None":
-                return [] # 可删
+                return []  # 可删
             self.terminals += [[self.index, self.name]]
             return self.terminals
-        
+
         #self.availableTerminals = avaterms
         for c in self.child:
             self.terminals += c.getTerminals(self.name)
-        
-        #if len(self.child) != 0 and self.name in ["Assignment"]:
+
+        # if len(self.child) != 0 and self.name in ["Assignment"]:
         #    return self.terminals # the left most Terminal!
         if len(self.child) != 0 and self.name in ["MethodInvocation"]:
             #print (self.terminals)
             return [self.terminals[-1]]
 
-        #if len(self.child) != 0 and self.name in ["ArraySelector"]:
+        # if len(self.child) != 0 and self.name in ["ArraySelector"]:
         #    return [self.terminals[-1]]
 
         if len(self.child) != 0 and self.name in ["type"]:
@@ -72,7 +73,7 @@ class Node:
 
         return mat
 
-    def parseFlow(self, mat): # [500, 500]
+    def parseFlow(self, mat):  # [500, 500]
         # Example  a = b(c, d) : c -> b, d -> b, b -> a
         if len(self.child) == 0:
             return mat
@@ -91,24 +92,24 @@ class Node:
 
         return mat
 
-    def parseFlow(self, mat): # [500, 500]
+    def parseFlow(self, mat):  # [500, 500]
         # Example  a = b(c, d) : c -> b, d -> b, b -> a
         if len(self.child) == 0:
             return mat
-        if self.name == "Assignment": 
+        if self.name == "Assignment":
             now = self.terminals[0][0]
             for i in range(1, len(self.terminals)):
                 flow = self.terminals[i][0]
                 if now < 500 and flow < 500:
                     mat[now][flow] = mat[flow][now] = 1
-        
+
         if self.name in ["MethodInvocation"]:
             now = self.terminals[-1][0]
             for i in range(len(self.terminals) - 1):
                 flow = self.terminals[i][0]
                 if now < 500 and flow < 500:
                     mat[now][flow] = mat[flow][now] = 1
-        
+
         for c in self.child:
             mat = c.parseFlow(mat)
 
@@ -120,12 +121,13 @@ class Node:
             s += " " + self.child[i].print2Tree()
         s += " ^"
         return s
-    
+
 
 flowData = ["Assignment"]
 
 
-ParsePointer = 0 # !!!!!!!!!!!!!!! Please Do Not use this variable
+ParsePointer = 0  # !!!!!!!!!!!!!!! Please Do Not use this variable
+
 
 def parseTree2Node(tokens):
     # Must init ParsePointer to 0 !!!!!!!!!!!!!!!!!!!!!!!!!
@@ -137,12 +139,14 @@ def parseTree2Node(tokens):
         newnode.child.append(parseTree2Node(tokens))
         ParsePointer += 1
     return newnode
-    
+
+
 def getTreeStruct(tokens):
-    global ParsePointer 
+    global ParsePointer
     ParsePointer = 0
     root = parseTree2Node(tokens)
     return root
+
 
 def parseTree(line):
     tokens = line.strip().split()
@@ -166,7 +170,8 @@ def parseTree(line):
                 index.append(flist[-1])
             flist.append(i)
             if tokens[i + 1] == "^":
-                if len(flist) >= 2 and tokens[flist[-2]] in terminalsFather: #["value", "name", "member"]:
+                # ["value", "name", "member"]:
+                if len(flist) >= 2 and tokens[flist[-2]] in terminalsFather:
                     terminals.append(1)
                 else:
                     terminals.append(0)
@@ -176,15 +181,17 @@ def parseTree(line):
 
     #global ParsePointer
     #ParsePointer = 0
-    root = getTreeStruct(tokens)#parseTree2Node(tokens)
-    print (root.print2Tree())
+    root = getTreeStruct(tokens)  # parseTree2Node(tokens)
+    print(root.print2Tree())
 
     return tokens, index, terminals, nodefatherlist, root
+
 
 def findFather(list1, list2):
     for i in range(min(len(list1), len(list2))):
         if list1[i] != list2[i]:
             return list1[i - 1]
+
 
 def GetFlow(line):
     tokens, index, terminals, nodefatherlist, root = parseTree(line)
@@ -199,7 +206,7 @@ def GetFlow(line):
     avalist = [root.avaTerminals[i][0] for i in range(len(root.avaTerminals))]
     flowMat = np.zeros([500, 500])
     flowMat = root.parseFlow(flowMat)
-    
+
     #bflist = []
     #aflist = []
 
@@ -208,7 +215,7 @@ def GetFlow(line):
     af = []
     depth = 0
     for i in range(len(tokens)):
-        token = tokens[i] 
+        token = tokens[i]
         if terminals[i] == 1:
             for t in bf:
                 if tokens[t] == tokens[i] and t < 500 and i < 500:
@@ -222,12 +229,12 @@ def GetFlow(line):
             af = newaf
             if len(stmtlist) == 0:
                 bf = af
-            #af.append(i)
+            # af.append(i)
         if token == "^":
             depth -= 1
             if len(stmtlist) == 0:
                 continue
-            
+
             if depth < stmtlist[-1][0]:
                 if stmtlist[-1][1] in ["IfStatement", "SwitchStatement"]:
                     # merge
@@ -248,39 +255,38 @@ def GetFlow(line):
                 if stmtlist[-1][1] in ["IfStatement", "SwitchStatement"]:
                     stmtlist[-1][3].append(af)
                     bf = af = stmtlist[-1][2]
-                
+
         else:
             depth += 1
-        
+
         if token in Statement:
             stmtlist.append([depth, token, af, []])
 
-        
-    
     flow = []
     for i in range(500):
         for t in range(i + 1, 500):
             if flowMat[i][t] == 1:
-                print (tokens[i], tokens[t])
+                print(tokens[i], tokens[t])
                 flow.append([i, t])
 
     return flow
-    #for i in range(len(terminals)):
+    # for i in range(len(terminals)):
     #    if terminals[i] == 1:
     #        terminalsIndex.append(i)
-    #for i in range(len(terminalsIndex)):
+    # for i in range(len(terminalsIndex)):
     #    for t in range(i + 1, len(terminalsIndex)):
     #        terma = terminalsIndex[i]
     #        termb = terminalsIndex[t]
     #        ana = findFather(nodefatherlist[terma], nodefatherlist[termb])
     #        print (tokens[terma], tokens[termb], tokens[ana])
 
-#def test():
+# def test():
     #GetFlow("CompilationUnit types list ClassDeclaration modifiers set ^ ^ name ROOT ^ ^ body list MethodDeclaration modifiers set public ^ ^ ^ name showDeadlockQueryStats ^ ^ body list StatementExpression expression MethodInvocation qualifier dlqTotStats ^ ^ arguments list MemberReference qualifier None ^ ^ member dlqCurStats ^ ^ ^ ^ ^ member sumFrom ^ ^ ^ ^ ^ IfStatement condition MethodInvocation prefix_operators list ! ^ ^ ^ qualifier dlqTotStats ^ ^ arguments list MemberReference qualifier None ^ ^ member dlqCurStats ^ ^ ^ ^ ^ member equals ^ ^ ^ ^ then_statement BlockStatement statements list StatementExpression expression MethodInvocation qualifier None ^ ^ arguments list Literal value <string> ^ ^ ^ MemberReference qualifier None ^ ^ member dlqTotStats ^ ^ ^ Literal value 0 ^ ^ ^ ^ ^ member show1DLQStats ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ StatementExpression expression MethodInvocation qualifier None ^ ^ arguments list Literal value <string> ^ ^ ^ MemberReference qualifier None ^ ^ member dlqCurStats ^ ^ ^ MemberReference qualifier dlqTotStats ^ ^ member dlqAsked ^ ^ ^ ^ ^ member show1DLQStats ^ ^ ^ ^ ^ StatementExpression expression MethodInvocation qualifier dlqCurStats ^ ^ member clear ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^")
     #GetFlow("CompilationUnit types list ClassDeclaration modifiers set ^ ^ name ROOT ^ ^ body list MethodDeclaration modifiers set public ^ ^ ^ return_type BasicType name boolean ^ ^ ^ ^ name getValue ^ ^ body list TryStatement block list ReturnStatement expression MethodInvocation qualifier field ^ ^ arguments list Literal value null ^ ^ ^ ^ ^ member getBoolean ^ ^ ^ ^ ^ ^ ^ catches list CatchClause parameter CatchClauseParameter types list IllegalArgumentException ^ ^ ^ name e ^ ^ ^ ^ block list StatementExpression expression MethodInvocation qualifier e ^ ^ member printStackTrace ^ ^ ^ ^ ^ ^ ^ ^ CatchClause parameter CatchClauseParameter types list IllegalAccessException ^ ^ ^ name e ^ ^ ^ ^ block list StatementExpression expression MethodInvocation qualifier e ^ ^ member printStackTrace ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ReturnStatement expression Literal value false ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^")
     #GetFlow("CompilationUnit types list ClassDeclaration modifiers set ^ ^ name ROOT ^ ^ body list MethodDeclaration modifiers set public ^ final ^ ^ ^ return_type BasicType name int ^ ^ ^ ^ name getPlayerPosition ^ ^ body list ReturnStatement expression MemberReference qualifier None ^ ^ selectors list ArraySelector index MemberReference qualifier None ^ ^ member boxCount ^ ^ ^ ^ ^ ^ ^ member positions ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^")
-    
-#test()
+
+
+# test()
 '''
 def readdata(filePath, tar):
     l = []
@@ -296,5 +302,3 @@ def readdata(filePath, tar):
 readdata("train.txt", "flowtrain.pkl")
 readdata("test.txt", "flowtest.pkl")
 readdata("dev.txt", "flowdev.pkl")'''
-
-

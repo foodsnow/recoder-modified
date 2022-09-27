@@ -1,5 +1,7 @@
-lines1 = open("location2/JacksonDatabind/16/parsed_ochiai_result", "r").readlines()
-lines2 = open("location2/JacksonDatabind/2/parsed_ochiai_result", "r").readlines()
+lines1 = open(
+    "location2/JacksonDatabind/16/parsed_ochiai_result", "r").readlines()
+lines2 = open("location2/JacksonDatabind/2/parsed_ochiai_result",
+              "r").readlines()
 d = []
 for x in lines2:
     d.append(x.split("#")[0])
