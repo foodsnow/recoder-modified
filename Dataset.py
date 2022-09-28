@@ -239,7 +239,7 @@ class SumDataset(data.Dataset):
             nltmp: List[str] = ['root']    # nl without terminal
             nodes: List[Node] = [node_root]      # nodes without terminal
 
-            for j, token in enumerate(tree_as_str_with_var_tokens[1:]):
+            for token in tree_as_str_with_var_tokens[1:]:
                 if token != "^":
                     temp_node = Node(token, idx)
                     idx += 1
