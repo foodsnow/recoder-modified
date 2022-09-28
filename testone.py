@@ -467,7 +467,7 @@ if True:
     oldcode = "\n".join(liness[minl:maxl + 1])
     troot, vardic, typedic = solveLongTree(treeroot, subroot)
     data.append({'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode, 'filepath': filepath, 'subroot': subroot, 'vardic': vardic, 'typedic': typedic,
-                'precode': precode, 'aftercode': aftercode, 'tree': troot.tree_as_str_with_var(troot, vardic), 'prob': troot.get_node_possibilities(troot), 'mode': 0, 'line': lineid, 'isa': False})
+                'precode': precode, 'aftercode': aftercode, 'tree': troot.get_tree_as_str_with_var(troot, vardic), 'prob': troot.get_node_possibilities(troot), 'mode': 0, 'line': lineid, 'isa': False})
 print(time.time() - st)
 model = test()
 print(time.time() - st)

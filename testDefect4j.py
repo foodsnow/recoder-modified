@@ -836,7 +836,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     'classname': buggy_class_name,
                     'precode': pre_code,
                     'aftercode': after_code,
-                    'tree': troot.tree_as_str_with_var(troot, var_dict),
+                    'tree': troot.get_tree_as_str_with_var(troot, var_dict),
                     'prob': troot.get_node_possibilities(troot),
                     'mode': 0,
                     'line': buggy_line_number,

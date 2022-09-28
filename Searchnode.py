@@ -213,7 +213,7 @@ class Node:
         else:
             return self.treestr
 
-    def tree_as_str_with_var(self, node: 'Node', var_dict: Dict[str, str]) -> str:
+    def get_tree_as_str_with_var(self, node: 'Node', var_dict: Dict[str, str]) -> str:
         '''
         NOTE recursive
         '''
@@ -226,7 +226,7 @@ class Node:
             tree_as_str += node.name + ' '
 
         for child in node.child:
-            tree_as_str += self.tree_as_str_with_var(child, var_dict)
+            tree_as_str += self.get_tree_as_str_with_var(child, var_dict)
 
         tree_as_str += '^ '
         return tree_as_str
