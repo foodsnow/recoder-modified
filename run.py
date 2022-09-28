@@ -13,6 +13,8 @@ from torch import optim
 from tqdm import tqdm
 from typing import List, Dict, Set, Tuple
 
+from base_logger import logger
+
 import json
 import numpy as np
 import os
@@ -499,6 +501,8 @@ beamss = []
 
 
 def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
+    logger.info('starting beam search')
+
     # beamsize=150, batch_size=20, k=1
     batch_size = len(inputnl[0].view(-1, args.NlLen))
     rrdic = {}

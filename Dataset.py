@@ -16,6 +16,7 @@ from parse_dataflow import GetFlow
 from typing import List, Dict, Set, Tuple, Union
 sys.setrecursionlimit(500000000)
 
+from base_logger import logger
 
 class SumDataset(data.Dataset):
     def __init__(self, config, dataName="train"):
@@ -85,10 +86,13 @@ class SumDataset(data.Dataset):
 
     def Load_Voc(self):
         if os.path.exists("nl_voc.pkl"):
+            logger.info('loading nl_voc.pkl')
             self.Nl_Voc = pickle.load(open("nl_voc.pkl", "rb"))
         if os.path.exists("code_voc.pkl"):
+            logger.info('loading code_voc.pkl')
             self.Code_Voc = pickle.load(open("code_voc.pkl", "rb"))
         if os.path.exists("char_voc.pkl"):
+            logger.info('loading char_voc.pkl')
             self.Char_Voc = pickle.load(open("char_voc.pkl", "rb"))
         self.Nl_Voc["<emptynode>"] = len(self.Nl_Voc)
         self.Code_Voc["<emptynode>"] = len(self.Code_Voc)

@@ -9,6 +9,8 @@ from Searchnode import Node
 from stringfycode import stringfyRoot
 from tqdm import tqdm
 
+from base_logger import logger
+
 import io
 import javalang
 import javalang.tree
@@ -667,11 +669,17 @@ IDS_V1_2 = [
     list(range(1, 28)),
 ]
 
+
+logger.info('Starting')
+
+logger.info('Loading decoder module')
 decoder_model = test()
+logger.info('Decoder model has been loaded')
 
 user_given_bug_id = sys.argv[1]
 user_given_project_name = [user_given_bug_id.split("-")[0]]
 user_given_project_id = [[int(user_given_bug_id.split("-")[1])]]
+logger.info(f'User given bug id is {sys.argv[1]}')
 
 for i, project_name in enumerate(PROJECTS_V1_2):
     for idx in IDS_V1_2[i]:
@@ -727,6 +735,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         method_map: Dict[str, List[dict]] = dict()
 
         for buggy_location_idx, buggy_location in enumerate(buggy_locations):
+            logger.info(f'Buggy location: {buggy_location}')
             patch_dict = {}
 
             buggy_class_name = buggy_location[0]
