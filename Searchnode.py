@@ -213,16 +213,23 @@ class Node:
         else:
             return self.treestr
 
-    def printTreeWithVar(self, node, var):
-        ans = ""
-        if node.name in var:
-            ans += var[node.name] + " "
+    def printTreeWithVar(self, node: 'Node', var_dict: Dict[str, str]) -> str:
+        '''
+        NOTE recursive
+        '''
+
+        tree_as_str = ''
+
+        if node.name in var_dict:
+            tree_as_str += var_dict[node.name] + ' '
         else:
-            ans += node.name + " "
-        for x in node.child:
-            ans += self.printTreeWithVar(x, var)
-        ans += '^ '
-        return ans
+            tree_as_str += node.name + ' '
+
+        for child in node.child:
+            tree_as_str += self.printTreeWithVar(child, var_dict)
+
+        tree_as_str += '^ '
+        return tree_as_str
 
     def printTreeWithLine(self, node):
         ans = ""
