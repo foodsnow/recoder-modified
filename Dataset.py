@@ -222,9 +222,9 @@ class SumDataset(data.Dataset):
         
         for data_buggy_location in data_buggy_locations:
             # 2: treeroot, 1: subroot, 3: prev, 4: after
-            inputpos: List[int] = data_buggy_location['prob']
+            node_possibilities: List[int] = data_buggy_location['prob']
             tree: str = data_buggy_location['tree']
-            inputpos = self.pad_seq(inputpos, self.Nl_Len)
+            node_possibilities = self.pad_seq(node_possibilities, self.Nl_Len)
             nl = tree.split()
             Nl.append(nl)
             node = Node('root', 0)
@@ -296,7 +296,7 @@ class SumDataset(data.Dataset):
                 inputnlchar, self.Nl_Len, self.Char_Len)
             inputNl.append(inputnls)
             inputNlad.append(nlad)
-            inputPos.append(inputpos)
+            inputPos.append(node_possibilities)
             inputNlchar.append(inputnlchar)
         self.data = [inputNl, inputNlad, inputPos, inputNlchar]
         self.nl = Nl
