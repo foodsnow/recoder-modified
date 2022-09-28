@@ -304,7 +304,8 @@ class SumDataset(data.Dataset):
             '''
 
             tree_as_str_with_var_tokens = nltmp
-            inputnls = self.pad_seq(self.Get_Em(tree_as_str_with_var_tokens, self.Nl_Voc), self.Nl_Len)
+            embeddings = self.Get_Em(tree_as_str_with_var_tokens, self.Nl_Voc)
+            inputnls = self.pad_seq(embeddings, self.Nl_Len)
             nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(tree_as_str_with_var_tokens)
 
