@@ -233,23 +233,23 @@ class SumDataset(data.Dataset):
             tree_as_str_with_var_tokens = tree_as_str_with_var.split()
             Nl.append(tree_as_str_with_var_tokens)
 
-            node = Node('root', 0)
-            currnode = node
+            node_root = Node('root', 0)
+            current_node = node_root
             idx = 1
             nltmp: List[str] = ['root']    # nl without terminal
-            nodes: List[Node] = [node]      # nodes without terminal
+            nodes: List[Node] = [node_root]      # nodes without terminal
 
-            for j, data_buggy_location in enumerate(tree_as_str_with_var_tokens[1:]):
-                if data_buggy_location != "^":
-                    nnode = Node(data_buggy_location, idx)
+            for j, token in enumerate(tree_as_str_with_var_tokens[1:]):
+                if token != "^":
+                    temp_node = Node(token, idx)
                     idx += 1
-                    nnode.father = currnode
-                    currnode.child.append(nnode)
-                    currnode = nnode
-                    nltmp.append(data_buggy_location)
-                    nodes.append(nnode)
+                    temp_node.father = current_node
+                    current_node.child.append(temp_node)
+                    current_node = temp_node
+                    nltmp.append(token)
+                    nodes.append(temp_node)
                 else:
-                    currnode = currnode.father
+                    current_node = current_node.father
 
             nladrow = []
             nladcol = []
