@@ -636,7 +636,7 @@ for i, xss in enumerate(prlist):
                 #print(troot.printTree(treeroot), typedic)
                 # assert(0)
                 data.append({'treeroot': treeroot, 'troot': troot, 'oldcode': oldcode, 'filepath': filepath, 'subroot': subroot, 'vardic': vardic, 'typedic': typedic, 'idss': idss, 'classname': classname,
-                            'precode': precode, 'aftercode': aftercode, 'tree': troot.printTreeWithVar(troot, vardic), 'prob': troot.get_node_possibilities(troot), 'mode': 0, 'line': lineid, 'isa': False})
+                            'precode': precode, 'aftercode': aftercode, 'tree': troot.tree_as_str_with_var(troot, vardic), 'prob': troot.get_node_possibilities(troot), 'mode': 0, 'line': lineid, 'isa': False})
                 #patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
             '''if True:
                 setProb(treeroot, 2)
