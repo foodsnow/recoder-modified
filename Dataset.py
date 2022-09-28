@@ -227,14 +227,14 @@ class SumDataset(data.Dataset):
             node_possibilities: List[int] = data_buggy_location['prob']
             tree_as_str_with_var: str = data_buggy_location['tree']
             node_possibilities = self.pad_seq(node_possibilities, self.Nl_Len)
-            nl = tree_as_str_with_var.split()
-            Nl.append(nl)
+            tree_as_str_with_var_tokens = tree_as_str_with_var.split()
+            Nl.append(tree_as_str_with_var_tokens)
             node = Node('root', 0)
             currnode = node
             idx = 1
             nltmp: List[str] = ['root']    # nl without terminal
             nodes: List[Node] = [node]      # nodes without terminal
-            for j, data_buggy_location in enumerate(nl[1:]):
+            for j, data_buggy_location in enumerate(tree_as_str_with_var_tokens[1:]):
                 if data_buggy_location != "^":
                     nnode = Node(data_buggy_location, idx)
                     idx += 1
@@ -264,7 +264,7 @@ class SumDataset(data.Dataset):
                         nladrow.append(data_buggy_location.id)
                         nladcol.append(s.id)
                         nladdata.append(1)
-            nl = nltmp
+            tree_as_str_with_var_tokens = nltmp
             #tmp = GetFlow()
             # for p in range(len(tmp)):
             #    for l in range(len(tmp[0])):
@@ -287,11 +287,11 @@ class SumDataset(data.Dataset):
                         nladrow.append(x.id)
                         nladcol.append(s.id)
                         nladdata.append(1)'''
-            nl = nltmp
-            inputnls = self.pad_seq(self.Get_Em(nl, self.Nl_Voc), self.Nl_Len)
+            tree_as_str_with_var_tokens = nltmp
+            inputnls = self.pad_seq(self.Get_Em(tree_as_str_with_var_tokens, self.Nl_Voc), self.Nl_Len)
             nlad = sparse.coo_matrix(
                 (nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
-            inputnlchar = self.Get_Char_Em(nl)
+            inputnlchar = self.Get_Char_Em(tree_as_str_with_var_tokens)
             for j in range(len(inputnlchar)):
                 inputnlchar[j] = self.pad_seq(inputnlchar[j], self.Char_Len)
             inputnlchar = self.pad_list(
