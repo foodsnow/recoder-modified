@@ -837,7 +837,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     'precode': pre_code,
                     'aftercode': after_code,
                     'tree': troot.printTreeWithVar(troot, var_dict),
-                    'prob': troot.getTreeProb(troot),
+                    'prob': troot.get_node_possibilities(troot),
                     'mode': 0,
                     'line': buggy_line_number,
                     'isa': False,

@@ -190,7 +190,7 @@ class Node:
     def getNum(self):
         return len(self.getTreestr().strip().split())
 
-    def getTreeProb(self, node: 'Node') -> List[int]:
+    def get_node_possibilities(self, node: 'Node') -> List[int]:
         '''
         Recursively, from node down to children,
         get node.possibility attributes as a list
@@ -202,7 +202,7 @@ class Node:
             return node_possibilities
 
         for child in node.child:
-            node_possibilities += self.getTreeProb(child)
+            node_possibilities += self.get_node_possibilities(child)
 
         return node_possibilities
 
