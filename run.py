@@ -1187,7 +1187,7 @@ def extarctmode(root):
     return mode, root
 
 
-def solve_one(data: List[Dict], model: Decoder) -> list:
+def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
     '''
     data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
     '''
@@ -1196,7 +1196,7 @@ def solve_one(data: List[Dict], model: Decoder) -> list:
 
     args.batch_size = 20
     dev_set = SumDataset(args, "test")
-    dev_set.preProcessOne(data)
+    dev_set.preProcessOne(data_buggy_locations)
 
     # x = dev_set.preProcessOne(treestr, prob)
     # dev_set.nl = [treestr.split()]
@@ -1223,11 +1223,11 @@ def solve_one(data: List[Dict], model: Decoder) -> list:
             currid = indexs * args.batch_size + i
             tmp_data_list = list()
             tmp_data_file = os.path.join(
-                "d4j", data[currid]["bugid"], f"temp-{currid}.json")
-            idss = data[currid]['idss']
-            if "fl_score" not in data[currid]:
-                data[currid]["fl_score"] = -1.0
-            subroot = data[currid]['subroot']
+                "d4j", data_buggy_locations[currid]["bugid"], f"temp-{currid}.json")
+            idss = data_buggy_locations[currid]['idss']
+            if "fl_score" not in data_buggy_locations[currid]:
+                data_buggy_locations[currid]["fl_score"] = -1.0
+            subroot = data_buggy_locations[currid]['subroot']
             if os.path.exists("result/%s.json" % idss):
                 classcontent = json.load(open("result/%s.json" % idss, 'r'))
             else:
@@ -1238,13 +1238,13 @@ def solve_one(data: List[Dict], model: Decoder) -> list:
                 rrdicts[x['filename']] = x
                 if 'package_name' in x:
                     rrdicts[x['package_name'] + "." + x['filename']] = x
-            vardic = data[currid]['vardic']
-            typedic = data[currid]['typedic']
+            vardic = data_buggy_locations[currid]['vardic']
+            typedic = data_buggy_locations[currid]['typedic']
             # data[currid]['classname'].split(".")[-1]
-            classname = data[currid]['classname']
+            classname = data_buggy_locations[currid]['classname']
             # print(classname)
             # assert(0)
-            mode = data[currid]['mode']
+            mode = data_buggy_locations[currid]['mode']
             rrdict = {}
             for x in vardic:
                 rrdict[vardic[x]] = x
@@ -1273,12 +1273,12 @@ def solve_one(data: List[Dict], model: Decoder) -> list:
                     prob = ans[i][j].prob
                     if code.split(" ")[0] != 'root':
                         assert (0)
-                    if str(mode) + code + str(data[currid]['line']) not in patch:
-                        patch[str(mode) + code + str(data[currid]['line'])] = 1
+                    if str(mode) + code + str(data_buggy_locations[currid]['line']) not in patch:
+                        patch[str(mode) + code + str(data_buggy_locations[currid]['line'])] = 1
                     else:
                         continue
-                    obj = {'id': currid, 'idss': idss, 'precode': data[currid]['precode'], 'aftercode': data[currid]['aftercode'], 'oldcode': data[currid]['oldcode'], 'filename': data[currid]
-                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data[currid]['line'], 'isa': data[currid]['isa'], 'fl_score': data[currid]['fl_score'], 'actlist': ans[i][j].actlist}
+                    obj = {'id': currid, 'idss': idss, 'precode': data_buggy_locations[currid]['precode'], 'aftercode': data_buggy_locations[currid]['aftercode'], 'oldcode': data_buggy_locations[currid]['oldcode'], 'filename': data_buggy_locations[currid]
+                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[currid]['line'], 'isa': data_buggy_locations[currid]['isa'], 'fl_score': data_buggy_locations[currid]['fl_score'], 'actlist': ans[i][j].actlist}
                     savedata.append(obj)
                     tmp_data_list.append(obj)
             with open(tmp_data_file, "w") as tmp_df:
