@@ -207,7 +207,7 @@ class SumDataset(data.Dataset):
             seq = seq[:maxlen1]
         return seq
 
-    def preProcessOne(self, data):
+    def preProcessOne(self, data_buggy_locations):
         '''
         preprocess data:
         Remove terminal node and their position
@@ -220,10 +220,10 @@ class SumDataset(data.Dataset):
         inputNlad = []
         Nl: List[List[str]] = []
         
-        for x in data:
+        for data_buggy_location in data_buggy_locations:
             # 2: treeroot, 1: subroot, 3: prev, 4: after
-            inputpos: List[int] = x['prob']
-            tree: str = x['tree']
+            inputpos: List[int] = data_buggy_location['prob']
+            tree: str = data_buggy_location['tree']
             inputpos = self.pad_seq(inputpos, self.Nl_Len)
             nl = tree.split()
             Nl.append(nl)
@@ -232,34 +232,34 @@ class SumDataset(data.Dataset):
             idx = 1
             nltmp: List[str] = ['root']    # nl without terminal
             nodes: List[Node] = [node]      # nodes without terminal
-            for j, x in enumerate(nl[1:]):
-                if x != "^":
-                    nnode = Node(x, idx)
+            for j, data_buggy_location in enumerate(nl[1:]):
+                if data_buggy_location != "^":
+                    nnode = Node(data_buggy_location, idx)
                     idx += 1
                     nnode.father = currnode
                     currnode.child.append(nnode)
                     currnode = nnode
-                    nltmp.append(x)
+                    nltmp.append(data_buggy_location)
                     nodes.append(nnode)
                 else:
                     currnode = currnode.father
             nladrow = []
             nladcol = []
             nladdata = []
-            for x in nodes:
-                if x.father:
-                    if x.id < self.Nl_Len and x.father.id < self.Nl_Len:
-                        nladrow.append(x.id)
-                        nladcol.append(x.father.id)
+            for data_buggy_location in nodes:
+                if data_buggy_location.father:
+                    if data_buggy_location.id < self.Nl_Len and data_buggy_location.father.id < self.Nl_Len:
+                        nladrow.append(data_buggy_location.id)
+                        nladcol.append(data_buggy_location.father.id)
                         nladdata.append(1)
-                    for s in x.father.child:
-                        if x.id < self.Nl_Len and s.id < self.Nl_Len:
-                            nladrow.append(x.id)
+                    for s in data_buggy_location.father.child:
+                        if data_buggy_location.id < self.Nl_Len and s.id < self.Nl_Len:
+                            nladrow.append(data_buggy_location.id)
                             nladcol.append(s.id)
                             nladdata.append(1)
-                for s in x.child:
-                    if x.id < self.Nl_Len and s.id < self.Nl_Len:
-                        nladrow.append(x.id)
+                for s in data_buggy_location.child:
+                    if data_buggy_location.id < self.Nl_Len and s.id < self.Nl_Len:
+                        nladrow.append(data_buggy_location.id)
                         nladcol.append(s.id)
                         nladdata.append(1)
             nl = nltmp
