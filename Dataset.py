@@ -25,7 +25,7 @@ class SumDataset(data.Dataset):
         self.Nl_Voc = {"pad": 0, "Unknown": 1}
         self.Code_Voc = {"pad": 0, "Unknown": 1}
         self.Char_Voc = {"pad": 0, "Unknown": 1}
-        self.Nl_Len = config.NlLen
+        self.Nl_Len: int = config.NlLen
         self.Code_Len = config.CodeLen
         self.Char_Len = config.WoLen
         self.batch_size = config.batch_size
@@ -171,15 +171,17 @@ class SumDataset(data.Dataset):
             ans.append(tmp)
         return ans
 
-    def pad_seq(self, seq, maxlen):
-        act_len = len(seq)
-        if len(seq) < maxlen:
-            seq = seq + [self.PAD_token] * maxlen
-            seq = seq[:maxlen]
+    def pad_seq(self, sequence: List[int], max_len: int):
+        '''
+        NOTE mutate sequence
+        '''
+
+        if len(sequence) < max_len:
+            sequence = sequence + [self.PAD_token] * max_len
+            sequence = sequence[:max_len]
         else:
-            seq = seq[:maxlen]
-            act_len = maxlen
-        return seq
+            sequence = sequence[:max_len]
+        return sequence
 
     def pad_str_seq(self, seq, maxlen):
         act_len = len(seq)
@@ -213,13 +215,13 @@ class SumDataset(data.Dataset):
         Remove terminal node and their position
         Get embedding, character embedding, 
         '''
-        
+
         inputNl = []
         inputNlchar = []
         inputPos = []
         inputNlad = []
         Nl: List[List[str]] = []
-        
+
         for data_buggy_location in data_buggy_locations:
             # 2: treeroot, 1: subroot, 3: prev, 4: after
             node_possibilities: List[int] = data_buggy_location['prob']
