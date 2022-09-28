@@ -723,7 +723,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         wf.close()
         '''
 
-        data: List[Dict] = []
+        data_buggy_locations: List[Dict] = []
         method_map: Dict[str, List[dict]] = dict()
 
         for buggy_location_idx, buggy_location in enumerate(buggy_locations):
@@ -823,7 +823,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 if troot is None:
                     continue
 
-                data.append({
+                data_buggy_locations.append({
                     'bugid': user_given_bug_id,
                     'treeroot': tree_root,
                     'troot': troot,
@@ -851,9 +851,9 @@ for i, project_name in enumerate(PROJECTS_V1_2):
         with open(f"d4j/{user_given_bug_id}/func_loc.json", "w") as f:
             json.dump(method_map, f)
 
-        print(data)
+        print(data_buggy_locations)
 
-        ans = solve_one(data, decoder_model)
+        ans = solve_one(data_buggy_locations, decoder_model)
 
         with open(f"d4j/{user_given_bug_id}/{user_given_bug_id}.json", "w") as f:
             json.dump(ans, f)
