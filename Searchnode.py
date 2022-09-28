@@ -190,14 +190,21 @@ class Node:
     def getNum(self):
         return len(self.getTreestr().strip().split())
 
-    def getTreeProb(self, r: 'Node') -> List[int]:
-        ans = [r.possibility]
-        if len(r.child) == 0:
-            return ans
-        #r.child = sorted(r.child, key=lambda x:x.name)
-        for c in r.child:
-            ans += self.getTreeProb(c)
-        return ans
+    def getTreeProb(self, node: 'Node') -> List[int]:
+        '''
+        Recursively, from node down to children,
+        get node.possibility attributes as a list
+        '''
+
+        node_possibilities = [node.possibility]
+
+        if len(node.child) == 0:
+            return node_possibilities
+
+        for child in node.child:
+            node_possibilities += self.getTreeProb(child)
+
+        return node_possibilities
 
     def getTreestr(self):
         if self.treestr == "":
