@@ -223,17 +223,22 @@ class SumDataset(data.Dataset):
         Nl: List[List[str]] = []
 
         for data_buggy_location in data_buggy_locations:
+
             # 2: treeroot, 1: subroot, 3: prev, 4: after
             node_possibilities: List[int] = data_buggy_location['prob']
             tree_as_str_with_var: str = data_buggy_location['tree']
+
             node_possibilities = self.pad_seq(node_possibilities, self.Nl_Len)
+
             tree_as_str_with_var_tokens = tree_as_str_with_var.split()
             Nl.append(tree_as_str_with_var_tokens)
+
             node = Node('root', 0)
             currnode = node
             idx = 1
             nltmp: List[str] = ['root']    # nl without terminal
             nodes: List[Node] = [node]      # nodes without terminal
+
             for j, data_buggy_location in enumerate(tree_as_str_with_var_tokens[1:]):
                 if data_buggy_location != "^":
                     nnode = Node(data_buggy_location, idx)
@@ -245,33 +250,42 @@ class SumDataset(data.Dataset):
                     nodes.append(nnode)
                 else:
                     currnode = currnode.father
+
             nladrow = []
             nladcol = []
             nladdata = []
+
             for data_buggy_location in nodes:
                 if data_buggy_location.father:
+
                     if data_buggy_location.id < self.Nl_Len and data_buggy_location.father.id < self.Nl_Len:
                         nladrow.append(data_buggy_location.id)
                         nladcol.append(data_buggy_location.father.id)
                         nladdata.append(1)
+
                     for s in data_buggy_location.father.child:
                         if data_buggy_location.id < self.Nl_Len and s.id < self.Nl_Len:
                             nladrow.append(data_buggy_location.id)
                             nladcol.append(s.id)
                             nladdata.append(1)
+
                 for s in data_buggy_location.child:
                     if data_buggy_location.id < self.Nl_Len and s.id < self.Nl_Len:
                         nladrow.append(data_buggy_location.id)
                         nladcol.append(s.id)
                         nladdata.append(1)
+
             tree_as_str_with_var_tokens = nltmp
-            #tmp = GetFlow()
+
+            # tmp = GetFlow()
             # for p in range(len(tmp)):
             #    for l in range(len(tmp[0])):
             #        nladrow.append(p)
             #        nladcol.append(l)
             #        nladdata.append(1)
-            '''for x in nodes:
+
+            '''
+            for x in nodes:
                 if x.father:
                     if x.id < self.Nl_Len and x.father.id < self.Nl_Len:
                         nladrow.append(x.id)
@@ -286,22 +300,27 @@ class SumDataset(data.Dataset):
                     if x.id < self.Nl_Len and s.id < self.Nl_Len:
                         nladrow.append(x.id)
                         nladcol.append(s.id)
-                        nladdata.append(1)'''
+                        nladdata.append(1)
+            '''
+
             tree_as_str_with_var_tokens = nltmp
             inputnls = self.pad_seq(self.Get_Em(tree_as_str_with_var_tokens, self.Nl_Voc), self.Nl_Len)
-            nlad = sparse.coo_matrix(
-                (nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
+            nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(tree_as_str_with_var_tokens)
+
             for j in range(len(inputnlchar)):
                 inputnlchar[j] = self.pad_seq(inputnlchar[j], self.Char_Len)
-            inputnlchar = self.pad_list(
-                inputnlchar, self.Nl_Len, self.Char_Len)
+
+            inputnlchar = self.pad_list(inputnlchar, self.Nl_Len, self.Char_Len)
+
             inputNl.append(inputnls)
             inputNlad.append(nlad)
             inputPos.append(node_possibilities)
             inputNlchar.append(inputnlchar)
+
         self.data = [inputNl, inputNlad, inputPos, inputNlchar]
         self.nl = Nl
+
         return
         # return np.array([inputnls]), np.array([nlad.toarray()]), np.array([inputpos]), np.array([inputnlchar])
 
