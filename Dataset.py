@@ -255,23 +255,23 @@ class SumDataset(data.Dataset):
             nladcol = []
             nladdata = []
 
-            for data_buggy_location in nodes:
-                if data_buggy_location.father:
+            for node_ in nodes:
+                if node_.father:
 
-                    if data_buggy_location.id < self.Nl_Len and data_buggy_location.father.id < self.Nl_Len:
-                        nladrow.append(data_buggy_location.id)
-                        nladcol.append(data_buggy_location.father.id)
+                    if node_.id < self.Nl_Len and node_.father.id < self.Nl_Len:
+                        nladrow.append(node_.id)
+                        nladcol.append(node_.father.id)
                         nladdata.append(1)
 
-                    for s in data_buggy_location.father.child:
-                        if data_buggy_location.id < self.Nl_Len and s.id < self.Nl_Len:
-                            nladrow.append(data_buggy_location.id)
+                    for s in node_.father.child:
+                        if node_.id < self.Nl_Len and s.id < self.Nl_Len:
+                            nladrow.append(node_.id)
                             nladcol.append(s.id)
                             nladdata.append(1)
 
-                for s in data_buggy_location.child:
-                    if data_buggy_location.id < self.Nl_Len and s.id < self.Nl_Len:
-                        nladrow.append(data_buggy_location.id)
+                for s in node_.child:
+                    if node_.id < self.Nl_Len and s.id < self.Nl_Len:
+                        nladrow.append(node_.id)
                         nladcol.append(s.id)
                         nladdata.append(1)
 
