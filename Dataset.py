@@ -142,16 +142,16 @@ class SumDataset(data.Dataset):
                 embedding.append(vocab[word])
         return embedding
 
-    def Get_Char_Em(self, WordList):
-        ans = []
-        for x in WordList:
-            x = x.lower()
-            tmp = []
-            for c in x:
-                c_id = self.CHAR_VOCAB[c] if c in self.CHAR_VOCAB else 1
-                tmp.append(c_id)
-            ans.append(tmp)
-        return ans
+    def get_char_embedding(self, word_list: List[str]) -> List[List[int]]:
+        embedding = []
+        for word in word_list:
+            word = word.lower()
+            word_emb = []
+            for ch in word:
+                ch_emb = self.CHAR_VOCAB[ch] if ch in self.CHAR_VOCAB else 1
+                word_emb.append(ch_emb)
+            embedding.append(word_emb)
+        return embedding
 
     def pad_seq(self, sequence: List[int], max_len: int):
         '''
@@ -268,20 +268,21 @@ class SumDataset(data.Dataset):
 
             tokens_of_tree_as_str_with_var = tokens_without_jumps
 
-            embeddings = self.get_embedding(tokens_of_tree_as_str_with_var, self.NL_VOCAB)
-            input_nls = self.pad_seq(embeddings, self.Nl_Len)
-            nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
-            inputnlchar = self.Get_Char_Em(tokens_of_tree_as_str_with_var)
+            embedding = self.get_embedding(tokens_of_tree_as_str_with_var, self.NL_VOCAB)
+            input_nls = self.pad_seq(embedding, self.Nl_Len)
 
-            for j in range(len(inputnlchar)):
-                inputnlchar[j] = self.pad_seq(inputnlchar[j], self.Char_Len)
+            nl_ad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
+            input_nl_char = self.get_char_embedding(tokens_of_tree_as_str_with_var)
 
-            inputnlchar = self.pad_list(inputnlchar, self.Nl_Len, self.Char_Len)
+            for j in range(len(input_nl_char)):
+                input_nl_char[j] = self.pad_seq(input_nl_char[j], self.Char_Len)
+
+            input_nl_char = self.pad_list(input_nl_char, self.Nl_Len, self.Char_Len)
 
             inputNl.append(input_nls)
-            inputNlad.append(nlad)
+            inputNlad.append(nl_ad)
             inputPos.append(node_possibilities)
-            inputNlchar.append(inputnlchar)
+            inputNlchar.append(input_nl_char)
 
         self.data = [inputNl, inputNlad, inputPos, inputNlchar]
         self.nl = Nl
@@ -397,7 +398,7 @@ class SumDataset(data.Dataset):
             #depth = self.pad_seq([1] + depth, self.Code_Len)
             inputnls = self.get_embedding(nl, self.NL_VOCAB)
             inputNl.append(self.pad_seq(inputnls, self.Nl_Len))
-            inputnlchar = self.Get_Char_Em(nl)
+            inputnlchar = self.get_char_embedding(nl)
             for j in range(len(inputnlchar)):
                 inputnlchar[j] = self.pad_seq(inputnlchar[j], self.Char_Len)
             inputnlchar = self.pad_list(

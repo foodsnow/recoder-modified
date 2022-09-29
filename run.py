@@ -125,7 +125,7 @@ def getAstPkl(vds: SumDataset):
     inputchar = []
     for i in range(len(vds.CODE_VOCAB)):
         rule = rrdict[i].strip().lower()
-        inputchar.append(vds.pad_seq(vds.Get_Char_Em([rule])[0], vds.Char_Len))
+        inputchar.append(vds.pad_seq(vds.get_char_embedding([rule])[0], vds.Char_Len))
     return np.array(inputchar)
 
 
