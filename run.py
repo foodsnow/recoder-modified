@@ -756,10 +756,10 @@ def getroot(strlst):
     return root
 
 
-def getMember(node):
-    for x in node.child:
-        if x.name == 'member':
-            return x.child[0].name
+def get_member(node: Node):
+    for child in node.child:
+        if child.name == 'member':
+            return child.child[0].name
 
 
 def apply_operator(search_node: SearchNode, sub_root: Node):
@@ -781,8 +781,7 @@ def apply_operator(search_node: SearchNode, sub_root: Node):
             if node.name == 'member':
                 type = node.child[0].name
             elif node.name == 'MemberReference':
-                type = getMember(node)
-                print(6, type)
+                type = get_member(node)
             elif node.name == 'qualifier':
                 type = node.child[0].name
             elif node.name == 'operator' or node.name == 'Literal' or node.name == 'BasicType':
