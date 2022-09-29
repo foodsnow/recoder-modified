@@ -151,7 +151,7 @@ def evalacc(model, dev_set: SumDataset):
     antimask2 = antimask.unsqueeze(0).repeat(len(dev_set), 1, 1).unsqueeze(1)
     rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
                              ).float().unsqueeze(0).repeat(4, 1, 1)
-    tmpindex = to_torch_tensor(np.arange(len(dev_set.ruledict))
+    tmpindex = to_torch_tensor(np.arange(len(dev_set.rule_dict))
                                ).unsqueeze(0).repeat(4, 1).long()
     tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
     tmpindex2 = to_torch_tensor(np.arange(len(dev_set.CODE_VOCAB))
@@ -195,7 +195,7 @@ def train():
     a, b = get_rule_pkl(train_set)
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
     tmpc = to_torch_tensor(b).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex = to_torch_tensor(np.arange(len(train_set.ruledict))
+    tmpindex = to_torch_tensor(np.arange(len(train_set.rule_dict))
                                ).unsqueeze(0).repeat(4, 1).long()
     tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
     tmpindex2 = to_torch_tensor(np.arange(len(train_set.CODE_VOCAB))
@@ -203,7 +203,7 @@ def train():
     args.Code_Vocsize = len(train_set.CODE_VOCAB)
     args.Nl_Vocsize = len(train_set.NL_VOCAB)
     args.Vocsize = len(train_set.CHAR_VOCAB)
-    args.rulenum = len(train_set.ruledict) + args.NlLen
+    args.rulenum = len(train_set.rule_dict) + args.NlLen
     #dev_set = SumDataset(args, "val")
     test_set = SumDataset(args, "test")
     print(len(test_set))
@@ -280,8 +280,8 @@ def train():
 
 
 class SearchNode:
-    def __init__(self, ds, nl):
-        self.state = [ds.ruledict["start -> root"]]
+    def __init__(self, ds: SumDataset, nl):
+        self.state = [ds.rule_dict["start -> root"]]
         self.prob = 0
         self.aprob = 0
         self.bprob = 0
@@ -296,7 +296,7 @@ class SearchNode:
         #self.ruledict = ds.rrdict
         self.expandedname = []
         self.depth = [1]
-        for x in ds.ruledict:
+        for x in ds.rule_dict:
             self.expandedname.append(x.strip().split()[0])
         root = Node('root', 0)
         idx = 1
@@ -369,20 +369,20 @@ class SearchNode:
         return ds.pad_list(self.everTreepath, ds.Code_Len, 10)
 
     def checkapply(self, rule: int, ds: SumDataset) -> bool:
-        if rule >= len(ds.ruledict):
-            if self.expanded.name == 'root' and rule - len(ds.ruledict) >= args.NlLen:
-                if rule - len(ds.ruledict) - args.NlLen not in self.idmap:
+        if rule >= len(ds.rule_dict):
+            if self.expanded.name == 'root' and rule - len(ds.rule_dict) >= args.NlLen:
+                if rule - len(ds.rule_dict) - args.NlLen not in self.idmap:
                     return False
-                if self.idmap[rule - len(ds.ruledict) - args.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
+                if self.idmap[rule - len(ds.rule_dict) - args.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
                     return False
-                if '.0' in self.idmap[rule - len(ds.ruledict) - args.NlLen].getTreestr():
+                if '.0' in self.idmap[rule - len(ds.rule_dict) - args.NlLen].getTreestr():
                     return False
                 #print(self.idmap[rule - len(ds.ruledict)].name)
                 # assert(0)
                 return True
-            if rule - len(ds.ruledict) >= args.NlLen:
+            if rule - len(ds.rule_dict) >= args.NlLen:
                 return False
-            idx = rule - len(ds.ruledict)
+            idx = rule - len(ds.rule_dict)
             if idx not in self.idmap:
                 return False
             if self.idmap[idx].name != self.expanded.name:
@@ -420,16 +420,16 @@ class SearchNode:
             print('copy', self.idmap[rule - len(ds.ruledict) - args.NlLen].name)
         else:
             print('copy2', self.idmap[rule - len(ds.ruledict)].name)'''
-        if rule >= len(ds.ruledict):
-            if rule >= len(ds.ruledict) + args.NlLen:
-                idx = rule - len(ds.ruledict) - args.NlLen
+        if rule >= len(ds.rule_dict):
+            if rule >= len(ds.rule_dict) + args.NlLen:
+                idx = rule - len(ds.rule_dict) - args.NlLen
             else:
-                idx = rule - len(ds.ruledict)
+                idx = rule - len(ds.rule_dict)
             self.actlist.append('copy-' + self.idmap[idx].name)
         else:
             self.actlist.append(ds.rrdict[rule])
-        if rule >= len(ds.ruledict):
-            nodesid = rule - len(ds.ruledict)
+        if rule >= len(ds.rule_dict):
+            nodesid = rule - len(ds.rule_dict)
             if nodesid >= args.NlLen:
                 nodesid = nodesid - args.NlLen
                 nnode = Node(self.idmap[nodesid].name, nodesid)
@@ -482,16 +482,16 @@ class SearchNode:
         # self.parent.append(self.expanded.fatherlistID)
         self.parent[args.NlLen + len(self.depth),
                     args.NlLen + self.expanded.fatherlistID] = 1
-        if rule >= len(ds.ruledict) + args.NlLen:
+        if rule >= len(ds.rule_dict) + args.NlLen:
             self.parent[args.NlLen + len(self.depth),
-                        rule - len(ds.ruledict) - args.NlLen] = 1
-        elif rule >= len(ds.ruledict):
+                        rule - len(ds.rule_dict) - args.NlLen] = 1
+        elif rule >= len(ds.rule_dict):
             self.parent[args.NlLen +
-                        len(self.depth), rule - len(ds.ruledict)] = 1
-        if rule >= len(ds.ruledict) + args.NlLen:
-            self.state.append(ds.ruledict['start -> copyword2'])
-        elif rule >= len(ds.ruledict):
-            self.state.append(ds.ruledict['start -> copyword'])
+                        len(self.depth), rule - len(ds.rule_dict)] = 1
+        if rule >= len(ds.rule_dict) + args.NlLen:
+            self.state.append(ds.rule_dict['start -> copyword2'])
+        elif rule >= len(ds.rule_dict):
+            self.state.append(ds.rule_dict['start -> copyword'])
         else:
             self.state.append(rule)
         # self.state.append(rule)
@@ -535,7 +535,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(2, 1).long()
     tmpc = to_torch_tensor(b).unsqueeze(0).repeat(2, 1, 1).long()
     rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
-    tmpindex = to_torch_tensor(np.arange(len(sum_dataset.ruledict))).unsqueeze(0).repeat(2, 1).long()
+    tmpindex = to_torch_tensor(np.arange(len(sum_dataset.rule_dict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = to_torch_tensor(temp_ast).unsqueeze(0).repeat(2, 1, 1).long()
     tmpindex2 = to_torch_tensor(np.arange(len(sum_dataset.CODE_VOCAB))).unsqueeze(0).repeat(2, 1).long()
 
@@ -725,7 +725,7 @@ def test():
     args.Nl_Vocsize = len(dev_set.NL_VOCAB)
     args.Code_Vocsize = len(dev_set.CODE_VOCAB)
     args.Vocsize = len(dev_set.CHAR_VOCAB)
-    args.rulenum = len(dev_set.ruledict) + args.NlLen
+    args.rulenum = len(dev_set.rule_dict) + args.NlLen
     args.batch_size = 12
 
     model = Decoder(args)

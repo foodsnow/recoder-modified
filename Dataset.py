@@ -36,11 +36,11 @@ class SumDataset(data.Dataset):
         self.Codes = []
         self.Nls = []
         self.num_step = 50
-        self.ruledict = pickle.load(open("rule.pkl", "rb"))
-        self.ruledict['start -> copyword2'] = len(self.ruledict)
+        self.rule_dict: Dict[str, int] = pickle.load(open("rule.pkl", "rb"))
+        self.rule_dict['start -> copyword2'] = len(self.rule_dict)
         self.rrdict = {}
-        for x in self.ruledict:
-            self.rrdict[self.ruledict[x]] = x
+        for x in self.rule_dict:
+            self.rrdict[self.rule_dict[x]] = x
         if not os.path.exists("nl_voc.pkl"):
             self.init_dic()
         self.Load_Voc()
@@ -105,7 +105,7 @@ class SumDataset(data.Dataset):
         self.Code_Voc = code_voc.word2id'''
         code_voc = VocabEntry.from_corpus(nls, size=50000, freq_cutoff=10)
         self.CODE_VOCAB = code_voc.word2id
-        for x in self.ruledict:
+        for x in self.rule_dict:
             print(x)
             lst = x.strip().lower().split()
             tmp = [lst[0]] + lst[2:]
@@ -363,34 +363,34 @@ class SumDataset(data.Dataset):
             inputadcol = []
             inputaddata = []
             #inputad = np.zeros([self.Nl_Len + self.Code_Len, self.Nl_Len + self.Code_Len])
-            inputrule = [self.ruledict["start -> root"]]
+            inputrule = [self.rule_dict["start -> root"]]
             for j in range(len(inputres)):
                 inputres[j] = int(inputres[j])
                 inputparent[j] = int(inputparent[j]) + 1
                 child.setdefault(inputparent[j], []).append(j + 1)
                 if inputres[j] >= 2000000:
                     # assert(0)
-                    inputres[j] = len(self.ruledict) + inputres[j] - 2000000
+                    inputres[j] = len(self.rule_dict) + inputres[j] - 2000000
                     if j + 1 < self.Code_Len:
                         inputadrow.append(self.Nl_Len + j + 1)
-                        inputadcol.append(inputres[j] - len(self.ruledict))
+                        inputadcol.append(inputres[j] - len(self.rule_dict))
                         inputaddata.append(1)
                         #inputad[self.Nl_Len + j + 1, inputres[j] - len(self.ruledict)] = 1
-                    inputrule.append(self.ruledict['start -> copyword'])
+                    inputrule.append(self.rule_dict['start -> copyword'])
                 elif inputres[j] >= 1000000:
-                    inputres[j] = len(self.ruledict) + \
+                    inputres[j] = len(self.rule_dict) + \
                         inputres[j] - 1000000 + self.Nl_Len
                     if j + 1 < self.Code_Len:
                         inputadrow.append(self.Nl_Len + j + 1)
                         inputadcol.append(
-                            inputres[j] - len(self.ruledict) - self.Nl_Len)
+                            inputres[j] - len(self.rule_dict) - self.Nl_Len)
                         inputaddata.append(1)
                         #inputad[self.Nl_Len + j + 1, inputres[j] - len(self.ruledict)] = 1
-                    inputrule.append(self.ruledict['start -> copyword2'])
+                    inputrule.append(self.rule_dict['start -> copyword2'])
                 else:
                     inputrule.append(inputres[j])
-                if inputres[j] - len(self.ruledict) >= self.Nl_Len:
-                    print(inputres[j] - len(self.ruledict))
+                if inputres[j] - len(self.rule_dict) >= self.Nl_Len:
+                    print(inputres[j] - len(self.rule_dict))
                 if j + 1 < self.Code_Len:
                     inputadrow.append(self.Nl_Len + j + 1)
                     inputadcol.append(self.Nl_Len + inputparent[j])
