@@ -66,11 +66,6 @@ def getAntiMask(size):
         for j in range(0, i + 1):
             ans[i, j] = 1.0
     return ans
-def getAdMask(size):
-    ans = np.zeros([size, size])
-    for i in range(size - 1):
-        ans[i, i + 1] = 1.0
-    return ans
 def getRulePkl(vds):
     inputruleparent = []
     inputrulechild = []
