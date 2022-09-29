@@ -1127,7 +1127,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             indexs += 1
             continue
 
-        ans = BeamSearch(
+        result_beam_search = BeamSearch(
             input_nl=(x[0], x[1], None, None, None, None, None, None, x[2], x[3]),
             sum_dataset=dev_set,
             decoder_model=model,
@@ -1136,7 +1136,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             k=indexs
         )
 
-        for i in range(len(ans)):
+        for i in range(len(result_beam_search)):
             currid = indexs * ARGS.batch_size + i
             tmp_data_list = list()
             tmp_data_file = os.path.join(
@@ -1162,24 +1162,24 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             rrdict = {}
             for x in vardic:
                 rrdict[vardic[x]] = x
-            for j in range(len(ans[i])):
+            for j in range(len(result_beam_search[i])):
                 if j > 60 and idss != 'Lang-33':
                     break
-                mode, ans[i][j].root_node = extarctmode(ans[i][j].root_node)
-                if ans[i][j].root_node is None:
+                mode, result_beam_search[i][j].root_node = extarctmode(result_beam_search[i][j].root_node)
+                if result_beam_search[i][j].root_node is None:
                     continue
-                applyoperater(ans[i][j], subroot)
-                an = replaceVar(ans[i][j].solveroot, rrdict)
+                applyoperater(result_beam_search[i][j], subroot)
+                an = replaceVar(result_beam_search[i][j].solveroot, rrdict)
                 if not an:
                     continue
                 try:
                     tcodes = solveUnknown(
-                        ans[i][j], vardic, typedic, rrdicts, classname, mode)
+                        result_beam_search[i][j], vardic, typedic, rrdicts, classname, mode)
                 except Exception as e:
                     traceback.print_exc()
                     tcodes = []
                 for code in tcodes:
-                    prob = ans[i][j].prob
+                    prob = result_beam_search[i][j].prob
                     if code.split(" ")[0] != 'root':
                         assert (0)
                     if str(mode) + code + str(data_buggy_locations[currid]['line']) not in patch:
@@ -1187,7 +1187,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     else:
                         continue
                     obj = {'id': currid, 'idss': idss, 'precode': data_buggy_locations[currid]['precode'], 'aftercode': data_buggy_locations[currid]['aftercode'], 'oldcode': data_buggy_locations[currid]['oldcode'], 'filename': data_buggy_locations[currid]
-                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[currid]['line'], 'isa': data_buggy_locations[currid]['isa'], 'fl_score': data_buggy_locations[currid]['fl_score'], 'actlist': ans[i][j].act_list}
+                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[currid]['line'], 'isa': data_buggy_locations[currid]['isa'], 'fl_score': data_buggy_locations[currid]['fl_score'], 'actlist': result_beam_search[i][j].act_list}
                     savedata.append(obj)
                     tmp_data_list.append(obj)
             with open(tmp_data_file, "w") as tmp_df:
