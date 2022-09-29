@@ -26,7 +26,7 @@ import torch.nn.functional as F
 import traceback
 
 
-onelist = [
+ONE_LIST = [
     'root',
     'body',
     'statements',
@@ -312,14 +312,14 @@ class SearchNode:
 
     def selcetNode(self, root: Node) -> Node:
         # and self.state[root.fatherlistID] < len(self.ruledict):
-        if not root.expanded and root.name in self.expandedname and root.name not in onelist:
+        if not root.expanded and root.name in self.expandedname and root.name not in ONE_LIST:
             return root
         else:
             for x in root.child:
                 ans = self.selcetNode(x)
                 if ans:
                     return ans
-            if root.name in onelist and root.expanded == False:
+            if root.name in ONE_LIST and root.expanded == False:
                 return root
         return None
 
@@ -490,7 +490,7 @@ class SearchNode:
         # self.state.append(rule)
         self.inputparent.append(self.expanded.name.lower())
         self.depth.append(1)
-        if self.expanded.name not in onelist:
+        if self.expanded.name not in ONE_LIST:
             self.expanded.expanded = True
         return True
 
