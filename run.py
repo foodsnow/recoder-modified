@@ -789,8 +789,8 @@ def apply_operator(search_node: SearchNode, sub_root: Node):
             else:
                 assert False, f'should not happen. node name: {node.name}'
 
-            idx = node.father.child.index(node)
-            node.father.child[idx] = child
+            idx_of_itself = node.father.child.index(node)
+            node.father.child[idx_of_itself] = child
             child.father = node.father
 
     if change:
