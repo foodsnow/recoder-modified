@@ -92,7 +92,7 @@ def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
     return tensor
 
 
-def getAntiMask(size):
+def get_anti_mask(size):
     ans = np.zeros([size, size])
     for i in range(size):
         for j in range(0, i + 1):
@@ -138,7 +138,7 @@ def get_AST_pkl(sum_dataset: SumDataset) -> np.array:
 
 
 def evalacc(model, dev_set: SumDataset):
-    antimask = to_torch_tensor(getAntiMask(args.CodeLen))
+    antimask = to_torch_tensor(get_anti_mask(args.CodeLen))
     a, b = get_rule_pkl(dev_set)
     tmpast = get_AST_pkl(dev_set)
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
@@ -225,7 +225,7 @@ def train():
         #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
         model = nn.DataParallel(model, device_ids=[0, 1])
-    antimask = to_torch_tensor(getAntiMask(args.CodeLen))
+    antimask = to_torch_tensor(get_anti_mask(args.CodeLen))
     # model.to()
     for epoch in range(100000):
         j = 0
@@ -543,14 +543,14 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 
     with torch.no_grad():
         beams: Dict[int, List[SearchNode]] = {}
-        hisTree: Dict[int, Dict[str, int]] = {}
+        his_tree: Dict[int, Dict[str, int]] = {}
 
         for i in range(batch_size):
             beams[i] = [SearchNode(sum_dataset, sum_dataset.nl[args.batch_size * k + i])]
-            hisTree[i] = {}
+            his_tree[i] = {}
 
         index = 0
-        antimask = to_torch_tensor(getAntiMask(args.CodeLen))
+        antimask = to_torch_tensor(get_anti_mask(args.CodeLen))
         endnum = {}
         continueSet = {}
         tansV: Dict[int, List[SearchNode]] = {}
@@ -693,11 +693,11 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                             copynode.applyrule(word[1], sum_dataset)
                             print(f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.actlist}")
                             tree_str = copynode.getTreestr()
-                            if tree_str in hisTree:
+                            if tree_str in his_tree:
                                 continue
                             copynode.prob = word[0]
                             beams[j].append(copynode)
-                            hisTree[j][tree_str] = 1
+                            his_tree[j][tree_str] = 1
                         else:
                             beams[j].append(word[2])
             index += 1
