@@ -287,8 +287,6 @@ class SumDataset(data.Dataset):
         self.data = [inputNl, inputNlad, inputPos, inputNlchar]
         self.nl = Nl
 
-        return
-
     def preProcessData(self, dataFile):
         #lines = dataFile.readlines()
         inputNl = []
