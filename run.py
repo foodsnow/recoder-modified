@@ -760,7 +760,6 @@ def apply_operator(ans: SearchNode, subroot: Node):
 
     logger.info('starting apply_operator()')
 
-    # print(ans.root.printTree(ans.root))
     copynode = pickle.loads(pickle.dumps(subroot))
     change = False
     type = ''
@@ -772,9 +771,8 @@ def apply_operator(ans: SearchNode, subroot: Node):
                 continue
             if node.name == 'member':
                 type = node.child[0].name
-                # assert(0)
             elif node.name == 'MemberReference':
-                type = getMember(node)  # node.child[0].child[0].name
+                type = getMember(node)
                 print(6, type)
             elif node.name == 'qualifier':
                 type = node.child[0].name
@@ -783,7 +781,6 @@ def apply_operator(ans: SearchNode, subroot: Node):
             else:
                 print(node.name)
                 assert (0)
-            # print(node.name)
             idx = node.father.child.index(node)
             node.father.child[idx] = x
             x.father = node.father
@@ -791,14 +788,11 @@ def apply_operator(ans: SearchNode, subroot: Node):
         node = Node('root', -1)
         node.child.append(copynode)
         copynode.father = node
-        ans.solveroot = node  # copynode
+        ans.solveroot = node
         ans.type = type
-        # print(node.printTree(ans.solveroot))
     else:
         ans.solveroot = ans.root_node
         ans.type = type
-    # print(copynode.printTree(copynode))
-    # assert(0)
     return
 
 
