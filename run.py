@@ -845,6 +845,9 @@ def get_unknown(node: Node) -> List[Node]:
 
 
 def solve_unknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
+
+    logger.info('starting solve_unknown()')
+
     nodes = get_unknown(ans.solveroot)
     fans: List[str] = list()
     #fans_prob: List[float] = list()
