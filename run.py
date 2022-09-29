@@ -646,7 +646,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 )
 
                 print(f"after@{index} batch{i_batch_size} x: {word_search_node.prob}: {word_search_node.getTreestr()} ; {word_search_node.act_list}")
-                
+
                 results = result.data.cpu().numpy()
                 currIndex = 0
                 tmp_prob_list: List[Tuple[int, float]] = list()
@@ -685,38 +685,41 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     if j in ansV:
                         for word_search_node in ansV[j]:
                             temp_beam[j].append([word_search_node.prob, -1, word_search_node])
-                    tmp = sorted(temp_beam[j], key=lambda x: x[0], reverse=True)
+
+                    temp_var = sorted(temp_beam[j], key=lambda x: x[0], reverse=True)
                     beams[j] = []
-                    for word_search_node in tmp:  # x: (prob, index, SearchNode)
+
+                    for word_search_node in temp_var:
                         if len(beams[j]) >= beam_size:
                             break
+
                         if word_search_node[1] != -1:
-                            x_prob: float = word_search_node[0]
-                            x_rule: int = word_search_node[1]
-                            copynode: SearchNode = pickle.loads(pickle.dumps(word_search_node[2]))
-                            copynode.applyrule(word_search_node[1], sum_dataset)
-                            print(f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.act_list}")
-                            tree_str = copynode.getTreestr()
+                            copy_word_search_node: SearchNode = pickle.loads(pickle.dumps(word_search_node[2]))
+                            copy_word_search_node.applyrule(word_search_node[1], sum_dataset)
+
+                            tree_str = copy_word_search_node.getTreestr()
                             if tree_str in his_tree:
                                 continue
-                            copynode.prob = word_search_node[0]
-                            beams[j].append(copynode)
+
+                            copy_word_search_node.prob = word_search_node[0]
+                            beams[j].append(copy_word_search_node)
                             his_tree[j][tree_str] = 1
+
                         else:
                             beams[j].append(word_search_node[2])
             index += 1
 
         for j in range(batch_size):
             visit = {}
-            tmp = []
+            temp_var = []
             for word_search_node in tansV[j]:
                 tree_str = word_search_node.getTreestr()
                 if tree_str not in visit and word_search_node.finish:
                     visit[tree_str] = 1
-                    tmp.append(word_search_node)
+                    temp_var.append(word_search_node)
                 else:
                     continue
-            beams[j] = sorted(tmp, key=lambda x: x.prob, reverse=True)[:beam_size]
+            beams[j] = sorted(temp_var, key=lambda x: x.prob, reverse=True)[:beam_size]
 
         return beams
 
