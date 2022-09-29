@@ -38,16 +38,12 @@ class SumDataset(data.Dataset):
         self.num_step = 50
         self.ruledict = pickle.load(open("rule.pkl", "rb"))
         self.ruledict['start -> copyword2'] = len(self.ruledict)
-        # print(self.ruledict)
-        #self.ruledict["start -> Module"] = len(self.ruledict)
-        #self.ruledict["start -> copyword"] = len(self.ruledict)
         self.rrdict = {}
         for x in self.ruledict:
             self.rrdict[self.ruledict[x]] = x
         if not os.path.exists("nl_voc.pkl"):
             self.init_dic()
         self.Load_Voc()
-        # print(self.Nl_Voc)
         if dataName == "train":
             if os.path.exists("data.pkl"):
                 self.data = pickle.load(open("data.pkl", "rb"))
@@ -65,24 +61,6 @@ class SumDataset(data.Dataset):
                 open(self.val_path, "r", encoding='utf-8'))
         else:
             return
-            if os.path.exists("testdata.pkl"):
-                #data = pickle.load(open('process_datacopy.pkl', 'rb'))
-                #train_size = int(len(data) / 8 * 7)
-                #data = data[train_size:]
-                '''print(data[5])
-                print(self.rrdict[152])
-                print(data[6])
-                print(data[11])
-                print(data[13])
-                exit(0)'''
-                self.datam = pickle.load(open("testdata.pkl", "rb"))
-                #self.code = pickle.load(open("testcode.pkl", "rb"))
-                self.nl = pickle.load(open("testnl.pkl", "rb"))
-                return
-            data = pickle.load(open('testcopy.pkl', 'rb'))
-            #train_size = int(len(data) / 8 * 7)
-            self.data = self.preProcessData(data)
-            #self.data = self.preProcessData(open(self.test_path, "r", encoding='utf-8'))
 
     def Load_Voc(self):
         if os.path.exists("nl_voc.pkl"):
@@ -283,32 +261,6 @@ class SumDataset(data.Dataset):
 
             tree_as_str_with_var_tokens = nltmp
 
-            # tmp = GetFlow()
-            # for p in range(len(tmp)):
-            #    for l in range(len(tmp[0])):
-            #        nladrow.append(p)
-            #        nladcol.append(l)
-            #        nladdata.append(1)
-
-            '''
-            for x in nodes:
-                if x.father:
-                    if x.id < self.Nl_Len and x.father.id < self.Nl_Len:
-                        nladrow.append(x.id)
-                        nladcol.append(x.father.id)
-                        nladdata.append(1)
-                    for s in x.father.child:
-                        if x.id < self.Nl_Len and s.id < self.Nl_Len:
-                            nladrow.append(x.id)
-                            nladcol.append(s.id)
-                            nladdata.append(1)
-                for s in x.child:
-                    if x.id < self.Nl_Len and s.id < self.Nl_Len:
-                        nladrow.append(x.id)
-                        nladcol.append(s.id)
-                        nladdata.append(1)
-            '''
-
             tree_as_str_with_var_tokens = nltmp
             embeddings = self.Get_Em(tree_as_str_with_var_tokens, self.Nl_Voc)
             inputnls = self.pad_seq(embeddings, self.Nl_Len)
@@ -329,7 +281,6 @@ class SumDataset(data.Dataset):
         self.nl = Nl
 
         return
-        # return np.array([inputnls]), np.array([nlad.toarray()]), np.array([inputpos]), np.array([inputnlchar])
 
     def preProcessData(self, dataFile):
         #lines = dataFile.readlines()

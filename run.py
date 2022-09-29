@@ -1198,14 +1198,9 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
 
     logger.info('starting solve_one()')
 
-    # os.environ["CUDA_VISIBLE_DEVICES"] = "2, 3"
-
     args.batch_size = 20
     dev_set = SumDataset(args, "test")
     dev_set.preProcessOne(data_buggy_locations)
-
-    # x = dev_set.preProcessOne(treestr, prob)
-    # dev_set.nl = [treestr.split()]
 
     indexs = 0
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
@@ -1216,13 +1211,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
         if indexs < 0:
             indexs += 1
             continue
-        #print(indexs,indexs * args.batch_size, data[5]['oldcode'])
-        #print(x[0][0], dev_set.data[0][idx])
-        #assert(np.array_equal(x[0][0], dev_set.datam[0][4]))
-        #assert(np.array_equal(x[1][0], dev_set.datam[1][4].toarray()))
-        #assert(np.array_equal(x[2][0], dev_set.datam[8][4]))
-        #assert(np.array_equal(x[3][0], dev_set.datam[9][4]))
-        #print(data[indexs]['mode'], data[indexs]['oldcode'])
+
         ans = BeamSearch((x[0], x[1], None, None, None, None, None, None,
                          x[2], x[3]), dev_set, model, 100, args.batch_size, indexs)
         for i in range(len(ans)):
@@ -1246,10 +1235,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     rrdicts[x['package_name'] + "." + x['filename']] = x
             vardic = data_buggy_locations[currid]['vardic']
             typedic = data_buggy_locations[currid]['typedic']
-            # data[currid]['classname'].split(".")[-1]
             classname = data_buggy_locations[currid]['classname']
-            # print(classname)
-            # assert(0)
             mode = data_buggy_locations[currid]['mode']
             rrdict = {}
             for x in vardic:
@@ -1260,21 +1246,16 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                 mode, ans[i][j].root = extarctmode(ans[i][j].root)
                 if ans[i][j].root is None:
                     continue
-                #print(j, ans[i][j].root.printTree(ans[i][j].root))
                 applyoperater(ans[i][j], subroot)
-                #print(j, ans[i][j].root.printTree(ans[i][j].solveroot))
                 an = replaceVar(ans[i][j].solveroot, rrdict)
-                #print(j, ans[i][j].root.printTree(ans[i][j].solveroot))
                 if not an:
                     continue
-                #print(7, ans[i][j].type)
                 try:
                     tcodes = solveUnknown(
                         ans[i][j], vardic, typedic, rrdicts, classname, mode)
                 except Exception as e:
                     traceback.print_exc()
                     tcodes = []
-                # print(tcodes)
                 for code in tcodes:
                     prob = ans[i][j].prob
                     if code.split(" ")[0] != 'root':
@@ -1290,18 +1271,6 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             with open(tmp_data_file, "w") as tmp_df:
                 json.dump(tmp_data_list, tmp_df, indent=2)
         indexs += 1
-        # for x in savedata:
-        #    print(x['oldcode'], x['code'])
-        # exit(0)
-        #f.write(" ".join(ans.ans[1:-1]))
-        # f.write("\n")
-        # f.flush()#print(ans)
-    #print(x[0][0], dev_set.data[0][idx])
-    #assert(np.array_equal(x[0][0], dev_set.data[0][idx]))
-    #assert(np.array_equal(x[1][0], dev_set.data[1][idx].toarray()))
-    #assert(np.array_equal(x[2][0], dev_set.data[8][idx]))
-    #assert(np.array_equal(x[3][0], dev_set.data[9][idx]))
-    #open('patch/%s.json' % data[0]['idss'], 'w').write(json.dumps(savedata, indent=4))
     return savedata
 
 

@@ -174,14 +174,12 @@ class Node:
         self.fname = ""
         self.position = None
         self.possibility = 0
-        # max(min(np.random.normal(0.1, 0.08, 10)[0], 1), 0)
 
     def printTree(self, r):
         result = r.name + "" + " "
         if len(r.child) == 0:
             result += "^ "
             return result
-        # r.child = sorted(r.child, key=lambda x:x.name)
         for c in r.child:
             result += self.printTree(c)
         result += "^ "

@@ -515,21 +515,6 @@ def findSubtree(root, subroot):
     return None
 
 
-'''
-def setProb(root, subroot, prob):
-    root.possibility = max(min(max(root.possibility, prob), 0.98), 0.01)
-    index = 0
-    assert(len(subroot.child) <= len(root.child))
-    #print(len(subroot.child), len(root.child))
-    for x in subroot.child:
-        while root.child[index].name != x.name:
-            #print(root.child[index].name, x.name)
-            index += 1
-        setProb(root.child[index], x, prob)
-        index += 1
-'''
-
-
 def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, mode, subroot, vardic, typedic, idxs, testmethods, idss, classname):
     global after_code
     global pre_code
@@ -538,17 +523,12 @@ def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, i
     for x in actionlist:
         if x.strip() in patch_dict:
             continue
-        #print('-', x)
         patch_dict[x.strip()] = 1
-        # print(x.split())
         root = convert_AST_as_list_to_tree(x.split())
         code = stringfyRoot(root, isIf, mode)
-        # print(oldcode)
         print(pre_code[-1000:])
         print(code)
         print(after_code[:1000])
-        #copycode = deepcopy(liness)
-        #copycode[lineid - 1] = code
         lnum = 0
         for x in code.splitlines():
             if x.strip() != "":
@@ -634,7 +614,6 @@ def getAssignMent(root):
 
 
 def isAssign(line):
-    #sprint(4, line.getTreestr())
     if 'Assignment' not in line.getTreestr():
         return False
     anode = getAssignMent(line)
@@ -654,9 +633,6 @@ def isAssign(line):
         if "qualifier " + m in anode.child[1].getTreestr():
             return True
     return False
-    #lst = line.split("=")
-    #print(lst[0].split()[-1], lst[1])
-    # return lst[0].split()[-1].strip() in lst[1].strip()
 
 
 PROJECTS_V1_2 = ['Chart', 'Closure', 'Lang', 'Math', 'Mockito', 'Time']
@@ -702,13 +678,6 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         patchnum = 0
 
-        '''
-        s = os.popen('defects4j export -p classes.modified -w buggy').readlines()
-        if len(s) != 1:
-            continue
-        s = s[-1]
-        '''
-
         buggy_lines_info = open(file_with_buggy_line_info, 'r').readlines()
         buggy_locations = []
         for buggy_line_info in buggy_lines_info:
@@ -719,17 +688,6 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 (buggy_class_name, 1, eval(buggy_line_number)))
         source_dir_for_bug_id = os.popen(
             f'defects4j export -p dir.src.classes -w buggy/{bug_id}').readlines()[-1]
-
-        # correctpath = os.popen('defects4j export -p classes.modified -w fixed').readlines()[-1]
-        # fpath = "fixed/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
-        # fpathx = "buggy/%s/%s.java"%(dirs, correctpath.replace('.', '/'))
-        # testmethods = os.popen('defects4j export -w buggy -p tests.trigger').readlines()
-        '''
-        wf = open(patchpath + 'correct.txt', 'w')
-        wf.write(fpath + "\n")
-        wf.write("".join(os.popen('diff -u %s %s'%(fpath, fpathx)).readlines()) + "\n")
-        wf.close()
-        '''
 
         data_buggy_locations: List[Dict] = []
         method_map: Dict[str, List[dict]] = dict()
@@ -800,9 +758,6 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             if sub_root is None:
                 continue
 
-            # print(lineid, 3, liness[lineid - 1], subroot.getTreestr(), len(data))
-            # print(treeroot.printTreeWithLine(subroot))
-
             if True:  # 2: treeroot, 1: subroot, 3: prev, 4: after
                 set_probability(tree_root, 2)
                 if sub_root is not None:
@@ -812,17 +767,13 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 if pre_sub_root is not None:
                     set_probability(pre_sub_root, 3)
 
-                # print(containID(subroot))
                 # range of subroot statement's line number
-
                 unique_line_numbers = set(get_line_numbers(sub_root))
                 max_line_number = -1
                 min_line_number = 1e10
                 for unique_line_number in unique_line_numbers:
                     max_line_number = max(max_line_number, unique_line_number - 1)
                     min_line_number = min(min_line_number, unique_line_number - 1)
-
-                # print(maxl, liness[maxl + 1])
 
                 pre_code = "\n".join(buggy_class_src_lines[0:min_line_number])
                 after_code = "\n".join(buggy_class_src_lines[max_line_number + 1:])
@@ -853,8 +804,6 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     'fl_score': fl_score
                 })
 
-                # patchnum = repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, 0, subroot, vardic, typedic, idxs, testmethods, idss, classname)
-
         os.makedirs(f"d4j/{user_given_bug_id}", exist_ok=True)
 
         with open(f"d4j/{user_given_bug_id}/func_loc.json", "w") as f:
@@ -866,5 +815,3 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         with open(f"d4j/{user_given_bug_id}/{user_given_bug_id}.json", "w") as f:
             json.dump(ans, f)
-
-        # save_code_as_file("./d4j", bugid, ans, func_map)
