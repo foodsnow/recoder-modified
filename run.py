@@ -505,14 +505,13 @@ class SearchNode:
         return True
 
     def printTree(self, r):
-        s = r.name + r.fname + " "  # print(r.name)
+        s = r.name + r.fname + " "
         if len(r.child) == 0:
             s += "^ "
             return s
-        #r.child = sorted(r.child, key=lambda x:x.name)
         for c in r.child:
             s += self.printTree(c)
-        s += "^ "  # print(r.name + "^")
+        s += "^ "
         return s
 
     def getTreestr(self):
@@ -610,8 +609,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 if len(temp_rule) == 0:
                     continue
 
-                antimasks = antimask.unsqueeze(0).repeat(
-                    len(temp_rule), 1, 1).unsqueeze(1)
+                antimasks = antimask.unsqueeze(0).repeat(len(temp_rule), 1, 1).unsqueeze(1)
 
                 temp_rule = np.array(temp_rule)
                 temp_rule_child = np.array(temp_rule_child)
@@ -647,6 +645,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 )
 
                 print(f"after@{index} batch{i_batch_size} x: {word.prob}: {word.getTreestr()} ; {word.actlist}")
+                
                 results = result.data.cpu().numpy()
                 currIndex = 0
                 tmp_prob_list: List[Tuple[int, float]] = list()
