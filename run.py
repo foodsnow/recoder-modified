@@ -287,7 +287,7 @@ class SearchNode:
         self.prob = 0
         self.aprob = 0
         self.bprob = 0
-        self.root = Node("root", 2)
+        self.root_node = Node("root", 2)
         self.inputparent = ["root"]
         self.finish = False
         self.unum = 0
@@ -330,7 +330,7 @@ class SearchNode:
         return None
 
     def select_expanded_node(self):
-        self.expanded = self.select_node(self.root)
+        self.expanded = self.select_node(self.root_node)
 
     def getRuleEmbedding(self, ds: SumDataset, nl):
         inputruleparent = []
@@ -512,7 +512,7 @@ class SearchNode:
         return s
 
     def getTreestr(self):
-        return self.printTree(self.root)
+        return self.printTree(self.root_node)
 
 
 beamss = []
@@ -776,7 +776,7 @@ def applyoperater(ans: SearchNode, subroot: Node):
     copynode = pickle.loads(pickle.dumps(subroot))
     change = False
     type = ''
-    for x in ans.root.child:
+    for x in ans.root_node.child:
         if x.id != -1:
             change = True
             node = findnodebyid(copynode, x.id)
@@ -807,7 +807,7 @@ def applyoperater(ans: SearchNode, subroot: Node):
         ans.type = type
         # print(node.printTree(ans.solveroot))
     else:
-        ans.solveroot = ans.root
+        ans.solveroot = ans.root_node
         ans.type = type
     # print(copynode.printTree(copynode))
     # assert(0)
@@ -846,7 +846,7 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
     elif len(nodes) == 0:
         # print(ans.root.printTree(ans.solveroot))
         # ([ans.root.printTree(ans.solveroot)], [ans.prob])
-        return [ans.root.printTree(ans.solveroot)]
+        return [ans.root_node.printTree(ans.solveroot)]
     else:
         # print(2)
         unknown = nodes[0]
@@ -928,7 +928,7 @@ def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str
                             # fans_prob.append(ans.solveroot.prob)
             else:
                 #print("a", args)
-                if mode == 0 and ans.root == ans.solveroot and len(args) == 0 and classname != 'EndTag':
+                if mode == 0 and ans.root_node == ans.solveroot and len(args) == 0 and classname != 'EndTag':
                     return []  # ([], [])
                 otype = ""
                 if classname == 'EndTag':
@@ -1170,8 +1170,8 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             for j in range(len(ans[i])):
                 if j > 60 and idss != 'Lang-33':
                     break
-                mode, ans[i][j].root = extarctmode(ans[i][j].root)
-                if ans[i][j].root is None:
+                mode, ans[i][j].root_node = extarctmode(ans[i][j].root_node)
+                if ans[i][j].root_node is None:
                     continue
                 applyoperater(ans[i][j], subroot)
                 an = replaceVar(ans[i][j].solveroot, rrdict)
@@ -1240,9 +1240,9 @@ def solveone2(data, model):
             for x in vardic:
                 rrdict[vardic[x]] = x
             for j in range(len(ans[i])):
-                print(ans[i][j].printTree(ans[i][j].root))
-                mode, ans[i][j].root = extarctmode(ans[i][j].root)
-                if ans[i][j].root is None:
+                print(ans[i][j].printTree(ans[i][j].root_node))
+                mode, ans[i][j].root_node = extarctmode(ans[i][j].root_node)
+                if ans[i][j].root_node is None:
                     print('debug1')
                     continue
                 applyoperater(ans[i][j], subroot)
@@ -1251,7 +1251,7 @@ def solveone2(data, model):
                     print('debug2')
                     continue
                 savedata.append({'precode': data[currid]['precode'], 'aftercode': data[currid]['aftercode'], 'oldcode': data[currid]['oldcode'],
-                                'mode': mode, 'code': ans[i][j].root.printTree(ans[i][j].solveroot), 'prob': ans[i][j].prob, 'line': data[currid]['line']})
+                                'mode': mode, 'code': ans[i][j].root_node.printTree(ans[i][j].solveroot), 'prob': ans[i][j].prob, 'line': data[currid]['line']})
     # print(savedata)
     return savedata
     # for x in savedata:
