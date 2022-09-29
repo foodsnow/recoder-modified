@@ -1311,8 +1311,8 @@ def solveone2(data, model):
 
 if __name__ == "__main__":
     np.set_printoptions(threshold=sys.maxsize)
+
     if sys.argv[1] == "train":
         train()
     else:
         test()
-     # test()
