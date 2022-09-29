@@ -287,17 +287,20 @@ class SearchNode:
         self.prob = 0
         self.aprob = 0
         self.bprob = 0
-        self.root_node = Node("root", 2)
+        self.root_node: Node = Node("root", 2)
         self.inputparent = ["root"]
         self.finish = False
         self.unum = 0
-        self.parent = np.zeros(
-            [ARGS.NlLen + ARGS.CodeLen, ARGS.NlLen + ARGS.CodeLen])
-        self.expanded = None
-        self.expandedname = []
+        self.parent = np.zeros([ARGS.NlLen + ARGS.CodeLen, ARGS.NlLen + ARGS.CodeLen])
+
+        self.expanded_node: Node = None
+        self.expanded_node_names: List[str] = []
+
         self.depths: List[int] = [1]
+
         for x in sum_dataset.rule_dict:
-            self.expandedname.append(x.strip().split()[0])
+            self.expanded_node_names.append(x.strip().split()[0])
+
         root = Node('root', 0)
         idx = 1
         self.idmap = {}
@@ -318,7 +321,7 @@ class SearchNode:
         self.solveroot: Node = None
 
     def select_node(self, root: Node) -> Node:
-        if not root.expanded and root.name in self.expandedname and root.name not in ONE_LIST:
+        if not root.expanded and root.name in self.expanded_node_names and root.name not in ONE_LIST:
             return root
         else:
             for x in root.child:
@@ -330,7 +333,7 @@ class SearchNode:
         return None
 
     def select_expanded_node(self):
-        self.expanded = self.select_node(self.root_node)
+        self.expanded_node = self.select_node(self.root_node)
 
     def get_rule_embedding(self, arg_ds: SumDataset):
 
@@ -355,19 +358,22 @@ class SearchNode:
 
         return input_rule, input_rule_child, input_rule_parent, input_depth
 
-    def getTreePath(self, ds: SumDataset):
-        tmppath = [self.expanded.name.lower()]
-        node = self.expanded.father
+    def getTreePath(self, sum_dataset: SumDataset):
+        temp_path = [self.expanded_node.name.lower()]
+        node = self.expanded_node.father
+
         while node:
-            tmppath.append(node.name.lower())
+            temp_path.append(node.name.lower())
             node = node.father
-        tmp = ds.pad_seq(ds.get_embedding(tmppath, ds.CODE_VOCAB), 10)
-        self.ever_tree_path.append(tmp)
-        return ds.pad_list(self.ever_tree_path, ds.Code_Len, 10)
+
+        temp_var = sum_dataset.pad_seq(sum_dataset.get_embedding(temp_path, sum_dataset.CODE_VOCAB), 10)
+        self.ever_tree_path.append(temp_var)
+
+        return sum_dataset.pad_list(self.ever_tree_path, sum_dataset.Code_Len, 10)
 
     def checkapply(self, rule: int, ds: SumDataset) -> bool:
         if rule >= len(ds.rule_dict):
-            if self.expanded.name == 'root' and rule - len(ds.rule_dict) >= ARGS.NlLen:
+            if self.expanded_node.name == 'root' and rule - len(ds.rule_dict) >= ARGS.NlLen:
                 if rule - len(ds.rule_dict) - ARGS.NlLen not in self.idmap:
                     return False
                 if self.idmap[rule - len(ds.rule_dict) - ARGS.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
@@ -382,7 +388,7 @@ class SearchNode:
             idx = rule - len(ds.rule_dict)
             if idx not in self.idmap:
                 return False
-            if self.idmap[idx].name != self.expanded.name:
+            if self.idmap[idx].name != self.expanded_node.name:
                 if self.idmap[idx].name in ['VariableDeclarator', 'FormalParameter', 'InferredFormalParameter']:
                     return True
                 #print(self.idmap[idx].name, self.expanded.name, idx)
@@ -397,7 +403,7 @@ class SearchNode:
                 # print(rules)
             #    if rules != 'root -> modified' or rules != 'root -> add':
             #        return False
-            if rules.strip().split()[0].lower() != self.expanded.name.lower():
+            if rules.strip().split()[0].lower() != self.expanded_node.name.lower():
                 return False
         return True
 
@@ -431,13 +437,13 @@ class SearchNode:
                 nodesid = nodesid - ARGS.NlLen
                 nnode = Node(self.idmap[nodesid].name, nodesid)
                 nnode.fatherlistID = len(self.states)
-                nnode.father = self.expanded
+                nnode.father = self.expanded_node
                 nnode.fname = "-" + self.printTree(self.idmap[nodesid])
-                self.expanded.child.append(nnode)
+                self.expanded_node.child.append(nnode)
             else:
                 nnode = self.idmap[nodesid]
-                if nnode.name == self.expanded.name:
-                    self.copynode(self.expanded, nnode)
+                if nnode.name == self.expanded_node.name:
+                    self.copynode(self.expanded_node, nnode)
                     nnode.fatherlistID = len(self.states)
                 else:
                     if nnode.name == 'VariableDeclarator':
@@ -454,10 +460,10 @@ class SearchNode:
                                 currnode = x
                                 break
                         nnnode = Node(currnode.child[0].name, -1)
-                    nnnode.father = self.expanded
-                    self.expanded.child.append(nnnode)
+                    nnnode.father = self.expanded_node
+                    self.expanded_node.child.append(nnnode)
                     nnnode.fatherlistID = len(self.states)
-                self.expanded.expanded = True
+                self.expanded_node.expanded = True
         else:
             rules = ds.rule_reverse_dict[rule]
             if rules == 'start -> unknown':
@@ -467,18 +473,18 @@ class SearchNode:
             #    assert(0)
             #    return False
             #assert(rules.strip().split()[0] == self.expanded.name)
-            if rules.strip() == self.expanded.name + " -> End":
-                self.expanded.expanded = True
+            if rules.strip() == self.expanded_node.name + " -> End":
+                self.expanded_node.expanded = True
             else:
                 for x in rules.strip().split()[2:]:
                     nnode = Node(x, -1)
                     #nnode = Node(x, self.expanded.depth + 1)
-                    self.expanded.child.append(nnode)
-                    nnode.father = self.expanded
+                    self.expanded_node.child.append(nnode)
+                    nnode.father = self.expanded_node
                     nnode.fatherlistID = len(self.states)
         # self.parent.append(self.expanded.fatherlistID)
         self.parent[ARGS.NlLen + len(self.depths),
-                    ARGS.NlLen + self.expanded.fatherlistID] = 1
+                    ARGS.NlLen + self.expanded_node.fatherlistID] = 1
         if rule >= len(ds.rule_dict) + ARGS.NlLen:
             self.parent[ARGS.NlLen + len(self.depths),
                         rule - len(ds.rule_dict) - ARGS.NlLen] = 1
@@ -492,10 +498,10 @@ class SearchNode:
         else:
             self.states.append(rule)
         # self.state.append(rule)
-        self.inputparent.append(self.expanded.name.lower())
+        self.inputparent.append(self.expanded_node.name.lower())
         self.depths.append(1)
-        if self.expanded.name not in ONE_LIST:
-            self.expanded.expanded = True
+        if self.expanded_node.name not in ONE_LIST:
+            self.expanded_node.expanded = True
         return True
 
     def printTree(self, r):
@@ -580,7 +586,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     word: SearchNode = beams[i_batch_size][i_beam_size]
                     word.select_expanded_node()
 
-                    if word.expanded == None or len(word.states) >= ARGS.CodeLen:
+                    if word.expanded_node == None or len(word.states) >= ARGS.CodeLen:
                         word.finish = True
                         ansV.setdefault(i_batch_size, []).append(word)
                     else:
