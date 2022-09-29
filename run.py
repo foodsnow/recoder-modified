@@ -320,7 +320,6 @@ class SearchNode:
         self.solveroot: Node = None
 
     def select_node(self, root: Node) -> Node:
-        # and self.state[root.fatherlistID] < len(self.ruledict):
         if not root.expanded and root.name in self.expandedname and root.name not in ONE_LIST:
             return root
         else:
@@ -582,7 +581,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     if i_beam_size >= len(beams[i_batch_size]):
                         continue
 
-                    word = beams[i_batch_size][i_beam_size]
+                    word: SearchNode = beams[i_batch_size][i_beam_size]
                     word.select_expanded_node()
 
                     if word.expanded == None or len(word.state) >= ARGS.CodeLen:
