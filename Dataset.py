@@ -23,9 +23,9 @@ class SumDataset(data.Dataset):
         self.train_path = "train_process.txt"
         self.val_path = "dev_process.txt"  # "validD.txt"
         self.test_path = "test_process.txt"
-        self.Nl_Voc = {"pad": 0, "Unknown": 1}
-        self.Code_Voc = {"pad": 0, "Unknown": 1}
-        self.Char_Voc = {"pad": 0, "Unknown": 1}
+        self.NL_VOCAB = {"pad": 0, "Unknown": 1}
+        self.CODE_VOCAB = {"pad": 0, "Unknown": 1}
+        self.CHAR_VOCAB = {"pad": 0, "Unknown": 1}
         self.Nl_Len: int = config.NlLen
         self.Code_Len = config.CodeLen
         self.Char_Len = config.WoLen
@@ -65,15 +65,15 @@ class SumDataset(data.Dataset):
     def Load_Voc(self):
         if os.path.exists("nl_voc.pkl"):
             logger.info('loading nl_voc.pkl')
-            self.Nl_Voc = pickle.load(open("nl_voc.pkl", "rb"))
+            self.NL_VOCAB = pickle.load(open("nl_voc.pkl", "rb"))
         if os.path.exists("code_voc.pkl"):
             logger.info('loading code_voc.pkl')
-            self.Code_Voc = pickle.load(open("code_voc.pkl", "rb"))
+            self.CODE_VOCAB = pickle.load(open("code_voc.pkl", "rb"))
         if os.path.exists("char_voc.pkl"):
             logger.info('loading char_voc.pkl')
-            self.Char_Voc = pickle.load(open("char_voc.pkl", "rb"))
-        self.Nl_Voc["<emptynode>"] = len(self.Nl_Voc)
-        self.Code_Voc["<emptynode>"] = len(self.Code_Voc)
+            self.CHAR_VOCAB = pickle.load(open("char_voc.pkl", "rb"))
+        self.NL_VOCAB["<emptynode>"] = len(self.NL_VOCAB)
+        self.CODE_VOCAB["<emptynode>"] = len(self.CODE_VOCAB)
 
     def init_dic(self):
         print("initVoc")
@@ -104,32 +104,32 @@ class SumDataset(data.Dataset):
         self.Nl_Voc = nl_voc.word2id
         self.Code_Voc = code_voc.word2id'''
         code_voc = VocabEntry.from_corpus(nls, size=50000, freq_cutoff=10)
-        self.Code_Voc = code_voc.word2id
+        self.CODE_VOCAB = code_voc.word2id
         for x in self.ruledict:
             print(x)
             lst = x.strip().lower().split()
             tmp = [lst[0]] + lst[2:]
             for y in tmp:
-                if y not in self.Code_Voc:
-                    self.Code_Voc[y] = len(self.Code_Voc)
+                if y not in self.CODE_VOCAB:
+                    self.CODE_VOCAB[y] = len(self.CODE_VOCAB)
             #rules.append([lst[0]] + lst[2:])
         # print(self.Code_Voc)
-        self.Nl_Voc = self.Code_Voc
+        self.NL_VOCAB = self.CODE_VOCAB
         # print(self.Code_Voc)
-        assert ("root" in self.Code_Voc)
-        for x in self.Nl_Voc:
+        assert ("root" in self.CODE_VOCAB)
+        for x in self.NL_VOCAB:
             maxCharLen = max(maxCharLen, len(x))
             for c in x:
-                if c not in self.Char_Voc:
-                    self.Char_Voc[c] = len(self.Char_Voc)
-        for x in self.Code_Voc:
+                if c not in self.CHAR_VOCAB:
+                    self.CHAR_VOCAB[c] = len(self.CHAR_VOCAB)
+        for x in self.CODE_VOCAB:
             maxCharLen = max(maxCharLen, len(x))
             for c in x:
-                if c not in self.Char_Voc:
-                    self.Char_Voc[c] = len(self.Char_Voc)
-        open("nl_voc.pkl", "wb").write(pickle.dumps(self.Nl_Voc))
-        open("code_voc.pkl", "wb").write(pickle.dumps(self.Code_Voc))
-        open("char_voc.pkl", "wb").write(pickle.dumps(self.Char_Voc))
+                if c not in self.CHAR_VOCAB:
+                    self.CHAR_VOCAB[c] = len(self.CHAR_VOCAB)
+        open("nl_voc.pkl", "wb").write(pickle.dumps(self.NL_VOCAB))
+        open("code_voc.pkl", "wb").write(pickle.dumps(self.CODE_VOCAB))
+        open("char_voc.pkl", "wb").write(pickle.dumps(self.CHAR_VOCAB))
         print(maxNlLen, maxCodeLen, maxCharLen)
 
     def Get_Em(self, WordList, voc):
@@ -148,7 +148,7 @@ class SumDataset(data.Dataset):
             x = x.lower()
             tmp = []
             for c in x:
-                c_id = self.Char_Voc[c] if c in self.Char_Voc else 1
+                c_id = self.CHAR_VOCAB[c] if c in self.CHAR_VOCAB else 1
                 tmp.append(c_id)
             ans.append(tmp)
         return ans
@@ -262,7 +262,7 @@ class SumDataset(data.Dataset):
             tree_as_str_with_var_tokens = nltmp
 
             tree_as_str_with_var_tokens = nltmp
-            embeddings = self.Get_Em(tree_as_str_with_var_tokens, self.Nl_Voc)
+            embeddings = self.Get_Em(tree_as_str_with_var_tokens, self.NL_VOCAB)
             inputnls = self.pad_seq(embeddings, self.Nl_Len)
             nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(tree_as_str_with_var_tokens)
@@ -389,7 +389,7 @@ class SumDataset(data.Dataset):
                     #inputad[self.Nl_Len + j + 1, self.Nl_Len + inputparent[j]] = 1
             #inputrule = [self.ruledict["start -> Module"]] + inputres
             #depth = self.pad_seq([1] + depth, self.Code_Len)
-            inputnls = self.Get_Em(nl, self.Nl_Voc)
+            inputnls = self.Get_Em(nl, self.NL_VOCAB)
             inputNl.append(self.pad_seq(inputnls, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(nl)
             for j in range(len(inputnlchar)):
@@ -398,16 +398,16 @@ class SumDataset(data.Dataset):
                 inputnlchar, self.Nl_Len, self.Char_Len)
             inputNlChar.append(inputnlchar)
             inputruleparent = self.pad_seq(self.Get_Em(
-                ["start"] + parentname, self.Code_Voc), self.Code_Len)
+                ["start"] + parentname, self.CODE_VOCAB), self.Code_Len)
             inputrulechild = []
             for x in inputrule:
                 if x >= len(self.rrdict):
                     inputrulechild.append(self.pad_seq(self.Get_Em(
-                        ["copyword"], self.Code_Voc), self.Char_Len))
+                        ["copyword"], self.CODE_VOCAB), self.Char_Len))
                 else:
                     rule = self.rrdict[x].strip().lower().split()
                     inputrulechild.append(self.pad_seq(
-                        self.Get_Em(rule[2:], self.Code_Voc), self.Char_Len))
+                        self.Get_Em(rule[2:], self.CODE_VOCAB), self.Char_Len))
 
             inputparentpath = []
             for j in range(len(inputres)):
@@ -443,12 +443,12 @@ class SumDataset(data.Dataset):
                     curr = inputparent[curr - 1]
                 # print(tmppath)
                 inputparentpath.append(self.pad_seq(
-                    self.Get_Em(tmppath, self.Code_Voc), 10))
+                    self.Get_Em(tmppath, self.CODE_VOCAB), 10))
             # assert(0)
             inputrule = self.pad_seq(inputrule, self.Code_Len)
             inputres = self.pad_seq(inputres, self.Code_Len)
             tmp = [self.pad_seq(self.Get_Em(
-                ['start'], self.Code_Voc), 10)] + inputparentpath
+                ['start'], self.CODE_VOCAB), 10)] + inputparentpath
             inputrulechild = self.pad_list(tmp, self.Code_Len, 10)
             inputRuleParent.append(inputruleparent)
             inputRuleChild.append(inputrulechild)

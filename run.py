@@ -95,29 +95,29 @@ def getAdMask(size):
     return ans
 
 
-def getRulePkl(vds):
+def getRulePkl(vds: SumDataset):
     inputruleparent = []
     inputrulechild = []
     for i in range(args.cnum):
         rule = vds.rrdict[i].strip().lower().split()
         inputrulechild.append(vds.pad_seq(
-            vds.Get_Em(rule[2:], vds.Code_Voc), vds.Char_Len))
-        inputruleparent.append(vds.Code_Voc[rule[0].lower()])
+            vds.Get_Em(rule[2:], vds.CODE_VOCAB), vds.Char_Len))
+        inputruleparent.append(vds.CODE_VOCAB[rule[0].lower()])
     return np.array(inputruleparent), np.array(inputrulechild)
 
 
-def getAstPkl(vds):
+def getAstPkl(vds: SumDataset):
     rrdict = {}
-    for x in vds.Code_Voc:
-        rrdict[vds.Code_Voc[x]] = x
+    for x in vds.CODE_VOCAB:
+        rrdict[vds.CODE_VOCAB[x]] = x
     inputchar = []
-    for i in range(len(vds.Code_Voc)):
+    for i in range(len(vds.CODE_VOCAB)):
         rule = rrdict[i].strip().lower()
         inputchar.append(vds.pad_seq(vds.Get_Char_Em([rule])[0], vds.Char_Len))
     return np.array(inputchar)
 
 
-def evalacc(model, dev_set):
+def evalacc(model, dev_set: SumDataset):
     antimask = gVar(getAntiMask(args.CodeLen))
     a, b = getRulePkl(dev_set)
     tmpast = getAstPkl(dev_set)
@@ -135,7 +135,7 @@ def evalacc(model, dev_set):
     tmpindex = gVar(np.arange(len(dev_set.ruledict))
                     ).unsqueeze(0).repeat(4, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))
+    tmpindex2 = gVar(np.arange(len(dev_set.CODE_VOCAB))
                      ).unsqueeze(0).repeat(4, 1).long()
     for devBatch in tqdm(devloader):
         for i in range(len(devBatch)):
@@ -179,11 +179,11 @@ def train():
     tmpindex = gVar(np.arange(len(train_set.ruledict))
                     ).unsqueeze(0).repeat(4, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(train_set.Code_Voc))
+    tmpindex2 = gVar(np.arange(len(train_set.CODE_VOCAB))
                      ).unsqueeze(0).repeat(4, 1).long()
-    args.Code_Vocsize = len(train_set.Code_Voc)
-    args.Nl_Vocsize = len(train_set.Nl_Voc)
-    args.Vocsize = len(train_set.Char_Voc)
+    args.Code_Vocsize = len(train_set.CODE_VOCAB)
+    args.Nl_Vocsize = len(train_set.NL_VOCAB)
+    args.Vocsize = len(train_set.CHAR_VOCAB)
     args.rulenum = len(train_set.ruledict) + args.NlLen
     #dev_set = SumDataset(args, "val")
     test_set = SumDataset(args, "test")
@@ -319,17 +319,17 @@ class SearchNode:
         inputrulechild = []
         for x in self.state:
             if x >= len(ds.rrdict):
-                inputruleparent.append(ds.Get_Em(["value"], ds.Code_Voc)[0])
+                inputruleparent.append(ds.Get_Em(["value"], ds.CODE_VOCAB)[0])
                 inputrulechild.append(ds.pad_seq(
-                    ds.Get_Em(["copyword"], ds.Code_Voc), ds.Char_Len))
+                    ds.Get_Em(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
             else:
                 rule = ds.rrdict[x].strip().lower().split()
                 # print(rule[0])
-                inputruleparent.append(ds.Get_Em([rule[0]], ds.Code_Voc)[0])
+                inputruleparent.append(ds.Get_Em([rule[0]], ds.CODE_VOCAB)[0])
                 #print(ds.Get_Em([rule[0]], ds.Code_Voc))
                 inputrulechild.append(ds.pad_seq(
-                    ds.Get_Em(rule[2:], ds.Code_Voc), ds.Char_Len))
-        tmp = [ds.pad_seq(ds.Get_Em(['start'], ds.Code_Voc), 10)
+                    ds.Get_Em(rule[2:], ds.CODE_VOCAB), ds.Char_Len))
+        tmp = [ds.pad_seq(ds.Get_Em(['start'], ds.CODE_VOCAB), 10)
                ] + self.everTreepath
         inputrulechild = ds.pad_list(tmp, ds.Code_Len, 10)
         inputrule = ds.pad_seq(self.state, ds.Code_Len)
@@ -339,13 +339,13 @@ class SearchNode:
         # print(inputruleparent)
         return inputrule, inputrulechild, inputruleparent, inputdepth
 
-    def getTreePath(self, ds):
+    def getTreePath(self, ds: SumDataset):
         tmppath = [self.expanded.name.lower()]
         node = self.expanded.father
         while node:
             tmppath.append(node.name.lower())
             node = node.father
-        tmp = ds.pad_seq(ds.Get_Em(tmppath, ds.Code_Voc), 10)
+        tmp = ds.pad_seq(ds.Get_Em(tmppath, ds.CODE_VOCAB), 10)
         self.everTreepath.append(tmp)
         return ds.pad_list(self.everTreepath, ds.Code_Len, 10)
 
@@ -506,8 +506,8 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
     # beamsize=150, batch_size=20, k=1
     batch_size = len(inputnl[0].view(-1, args.NlLen))
     rrdic = {}
-    for x in vds.Code_Voc:
-        rrdic[vds.Code_Voc[x]] = x
+    for x in vds.CODE_VOCAB:
+        rrdic[vds.CODE_VOCAB[x]] = x
     # print(rrdic[684])
     # print(rrdic[2])
     # print(rrdic[183])
@@ -520,7 +520,7 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
     tmpindex = gVar(np.arange(len(vds.ruledict))
                     ).unsqueeze(0).repeat(2, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(vds.Code_Voc))
+    tmpindex2 = gVar(np.arange(len(vds.CODE_VOCAB))
                      ).unsqueeze(0).repeat(2, 1).long()
     with torch.no_grad():
         beams: Dict[int, List[SearchNode]] = {}
@@ -743,19 +743,19 @@ def test():
     tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
     tmpindex = gVar(np.arange(len(dev_set.ruledict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))).unsqueeze(0).repeat(2, 1).long()
+    tmpindex2 = gVar(np.arange(len(dev_set.CODE_VOCAB))).unsqueeze(0).repeat(2, 1).long()
 
-    args.Nl_Vocsize = len(dev_set.Nl_Voc)
-    args.Code_Vocsize = len(dev_set.Code_Voc)
-    args.Vocsize = len(dev_set.Char_Voc)
+    args.Nl_Vocsize = len(dev_set.NL_VOCAB)
+    args.Code_Vocsize = len(dev_set.CODE_VOCAB)
+    args.Vocsize = len(dev_set.CHAR_VOCAB)
     args.rulenum = len(dev_set.ruledict) + args.NlLen
     args.batch_size = 12
 
     print(dev_set.rrdict[152])
 
     rdic = {}
-    for x in dev_set.Nl_Voc:
-        rdic[dev_set.Nl_Voc[x]] = x
+    for x in dev_set.NL_VOCAB:
+        rdic[dev_set.NL_VOCAB[x]] = x
 
     model = Decoder(args)
 

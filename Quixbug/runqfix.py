@@ -141,10 +141,10 @@ def train():
     tmpc = gVar(b).unsqueeze(0).repeat(4, 1, 1).long()
     tmpindex = gVar(np.arange(len(train_set.ruledict))).unsqueeze(0).repeat(4, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(train_set.Code_Voc))).unsqueeze(0).repeat(4, 1).long()
-    args.Code_Vocsize = len(train_set.Code_Voc)
-    args.Nl_Vocsize = len(train_set.Nl_Voc)
-    args.Vocsize = len(train_set.Char_Voc)
+    tmpindex2 = gVar(np.arange(len(train_set.CODE_VOCAB))).unsqueeze(0).repeat(4, 1).long()
+    args.Code_Vocsize = len(train_set.CODE_VOCAB)
+    args.Nl_Vocsize = len(train_set.NL_VOCAB)
+    args.Vocsize = len(train_set.CHAR_VOCAB)
     args.rulenum = len(train_set.ruledict) + args.NlLen
     #dev_set = SumDataset(args, "val")
     test_set = SumDataset(args, "test")
@@ -645,17 +645,17 @@ def test():
     tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
     tmpindex = gVar(np.arange(len(dev_set.ruledict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.Code_Voc))).unsqueeze(0).repeat(2, 1).long()
+    tmpindex2 = gVar(np.arange(len(dev_set.CODE_VOCAB))).unsqueeze(0).repeat(2, 1).long()
     #print(len(dev_set))
-    args.Nl_Vocsize = len(dev_set.Nl_Voc)
-    args.Code_Vocsize = len(dev_set.Code_Voc)
-    args.Vocsize = len(dev_set.Char_Voc)
+    args.Nl_Vocsize = len(dev_set.NL_VOCAB)
+    args.Code_Vocsize = len(dev_set.CODE_VOCAB)
+    args.Vocsize = len(dev_set.CHAR_VOCAB)
     args.rulenum = len(dev_set.ruledict) + args.NlLen
     print(dev_set.rrdict[152])
     args.batch_size = 12
     rdic = {}
-    for x in dev_set.Nl_Voc:
-        rdic[dev_set.Nl_Voc[x]] = x
+    for x in dev_set.NL_VOCAB:
+        rdic[dev_set.NL_VOCAB[x]] = x
     #print(dev_set.Nl_Voc)
     model = Decoder(args)
     if torch.cuda.is_available():
