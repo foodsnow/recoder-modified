@@ -182,13 +182,13 @@ class SumDataset(data.Dataset):
             act_len = maxlen
         return seq
 
-    def pad_list(self, seq, maxlen1, maxlen2):
-        if len(seq) < maxlen1:
-            seq = seq + [[self.PAD_token] * maxlen2] * maxlen1
-            seq = seq[:maxlen1]
+    def pad_list(self, sequence: list, maxlen1, maxlen2):
+        if len(sequence) < maxlen1:
+            sequence = sequence + [[self.PAD_token] * maxlen2] * maxlen1
+            sequence = sequence[:maxlen1]
         else:
-            seq = seq[:maxlen1]
-        return seq
+            sequence = sequence[:maxlen1]
+        return sequence
 
     def pad_multilist(self, seq, maxlen1, maxlen2, maxlen3):
         if len(seq) < maxlen1:

@@ -295,7 +295,7 @@ class SearchNode:
             [ARGS.NlLen + ARGS.CodeLen, ARGS.NlLen + ARGS.CodeLen])
         self.expanded = None
         self.expandedname = []
-        self.depth = [1]
+        self.depths: List[int] = [1]
         for x in sum_dataset.rule_dict:
             self.expandedname.append(x.strip().split()[0])
         root = Node('root', 0)
@@ -351,7 +351,7 @@ class SearchNode:
         input_rule_child = arg_ds.pad_list(temp_var, arg_ds.Code_Len, 10)
         input_rule = arg_ds.pad_seq(self.states, arg_ds.Code_Len)
         input_rule_parent = arg_ds.pad_seq(input_rule_parent, arg_ds.Code_Len)
-        input_depth = arg_ds.pad_list(self.depth, arg_ds.Code_Len, 40)
+        input_depth = arg_ds.pad_list(self.depths, arg_ds.Code_Len, 40)
 
         return input_rule, input_rule_child, input_rule_parent, input_depth
 
@@ -477,14 +477,14 @@ class SearchNode:
                     nnode.father = self.expanded
                     nnode.fatherlistID = len(self.states)
         # self.parent.append(self.expanded.fatherlistID)
-        self.parent[ARGS.NlLen + len(self.depth),
+        self.parent[ARGS.NlLen + len(self.depths),
                     ARGS.NlLen + self.expanded.fatherlistID] = 1
         if rule >= len(ds.rule_dict) + ARGS.NlLen:
-            self.parent[ARGS.NlLen + len(self.depth),
+            self.parent[ARGS.NlLen + len(self.depths),
                         rule - len(ds.rule_dict) - ARGS.NlLen] = 1
         elif rule >= len(ds.rule_dict):
             self.parent[ARGS.NlLen +
-                        len(self.depth), rule - len(ds.rule_dict)] = 1
+                        len(self.depths), rule - len(ds.rule_dict)] = 1
         if rule >= len(ds.rule_dict) + ARGS.NlLen:
             self.states.append(ds.rule_dict['start -> copyword2'])
         elif rule >= len(ds.rule_dict):
@@ -493,7 +493,7 @@ class SearchNode:
             self.states.append(rule)
         # self.state.append(rule)
         self.inputparent.append(self.expanded.name.lower())
-        self.depth.append(1)
+        self.depths.append(1)
         if self.expanded.name not in ONE_LIST:
             self.expanded.expanded = True
         return True
