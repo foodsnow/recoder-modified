@@ -306,7 +306,7 @@ class SearchNode:
         self.idmap = {}
         self.idmap[0] = root
         currnode = root
-        self.actlist: List[str] = []
+        self.act_list: List[str] = []
         for x in nl[1:]:
             if x != "^":
                 nnode = Node(x, idx)
@@ -428,9 +428,9 @@ class SearchNode:
                 idx = rule - len(ds.rule_dict) - ARGS.NlLen
             else:
                 idx = rule - len(ds.rule_dict)
-            self.actlist.append('copy-' + self.idmap[idx].name)
+            self.act_list.append('copy-' + self.idmap[idx].name)
         else:
-            self.actlist.append(ds.rule_reverse_dict[rule])
+            self.act_list.append(ds.rule_reverse_dict[rule])
         if rule >= len(ds.rule_dict):
             nodesid = rule - len(ds.rule_dict)
             if nodesid >= ARGS.NlLen:
@@ -622,7 +622,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 temp_nl_8 = np.array(temp_nl_8)
                 temp_nl_9 = np.array(temp_nl_9)
 
-                print(f"before@{index} batch{i_batch_size} x: {word.prob}: {word.getTreestr()} ; {word.actlist}")
+                print(f"before@{index} batch{i_batch_size} x: {word.prob}: {word.getTreestr()} ; {word.act_list}")
                 result = decoder_model(
                     to_torch_tensor(temp_nl),
                     to_torch_tensor(temp_nl_ad),
@@ -644,7 +644,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     "test"
                 )
 
-                print(f"after@{index} batch{i_batch_size} x: {word.prob}: {word.getTreestr()} ; {word.actlist}")
+                print(f"after@{index} batch{i_batch_size} x: {word.prob}: {word.getTreestr()} ; {word.act_list}")
                 
                 results = result.data.cpu().numpy()
                 currIndex = 0
@@ -694,7 +694,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                             x_rule: int = word[1]
                             copynode: SearchNode = pickle.loads(pickle.dumps(word[2]))
                             copynode.applyrule(word[1], sum_dataset)
-                            print(f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.actlist}")
+                            print(f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.act_list}")
                             tree_str = copynode.getTreestr()
                             if tree_str in his_tree:
                                 continue
@@ -1198,7 +1198,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     else:
                         continue
                     obj = {'id': currid, 'idss': idss, 'precode': data_buggy_locations[currid]['precode'], 'aftercode': data_buggy_locations[currid]['aftercode'], 'oldcode': data_buggy_locations[currid]['oldcode'], 'filename': data_buggy_locations[currid]
-                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[currid]['line'], 'isa': data_buggy_locations[currid]['isa'], 'fl_score': data_buggy_locations[currid]['fl_score'], 'actlist': ans[i][j].actlist}
+                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[currid]['line'], 'isa': data_buggy_locations[currid]['isa'], 'fl_score': data_buggy_locations[currid]['fl_score'], 'actlist': ans[i][j].act_list}
                     savedata.append(obj)
                     tmp_data_list.append(obj)
             with open(tmp_data_file, "w") as tmp_df:
