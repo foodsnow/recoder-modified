@@ -1127,8 +1127,15 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             indexs += 1
             continue
 
-        ans = BeamSearch((x[0], x[1], None, None, None, None, None, None,
-                         x[2], x[3]), dev_set, model, 100, ARGS.batch_size, indexs)
+        ans = BeamSearch(
+            input_nl=(x[0], x[1], None, None, None, None, None, None, x[2], x[3]),
+            sum_dataset=dev_set,
+            decoder_model=model,
+            beam_size=100,
+            batch_size=ARGS.batch_size,
+            k=indexs
+        )
+
         for i in range(len(ans)):
             currid = indexs * ARGS.batch_size + i
             tmp_data_list = list()
