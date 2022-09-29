@@ -1150,9 +1150,9 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
 
             sub_root = data_buggy_locations[current_id]['subroot']
             if os.path.exists("result/%s.json" % bug_id):
-                class_content = json.load(open("result/%s.json" % bug_id, 'r'))
+                class_content: list = json.load(open("result/%s.json" % bug_id, 'r'))
             else:
-                class_content = []
+                class_content: list = []
             class_content.extend(json.load(open("temp.json", 'r')))
 
             rrdicts = {}
