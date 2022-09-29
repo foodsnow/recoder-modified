@@ -282,8 +282,8 @@ def train():
 
 
 class SearchNode:
-    def __init__(self, ds: SumDataset, nl):
-        self.state = [ds.rule_dict["start -> root"]]
+    def __init__(self, sum_dataset: SumDataset, nl):
+        self.states: List[int] = [sum_dataset.rule_dict["start -> root"]]
         self.prob = 0
         self.aprob = 0
         self.bprob = 0
@@ -296,7 +296,7 @@ class SearchNode:
         self.expanded = None
         self.expandedname = []
         self.depth = [1]
-        for x in ds.rule_dict:
+        for x in sum_dataset.rule_dict:
             self.expandedname.append(x.strip().split()[0])
         root = Node('root', 0)
         idx = 1
@@ -337,19 +337,18 @@ class SearchNode:
         input_rule_parent = []
         input_rule_child = []
 
-        for x in self.state:
-            if x >= len(ds.rule_reverse_dict):
+        for state_ in self.states:
+            if state_ >= len(ds.rule_reverse_dict):
                 input_rule_parent.append(ds.get_embedding(["value"], ds.CODE_VOCAB)[0])
-                input_rule_child.append(ds.pad_seq(
-                    ds.get_embedding(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
+                input_rule_child.append(ds.pad_seq(ds.get_embedding(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
             else:
-                rule = ds.rule_reverse_dict[x].strip().lower().split()
+                rule = ds.rule_reverse_dict[state_].strip().lower().split()
                 input_rule_parent.append(ds.get_embedding([rule[0]], ds.CODE_VOCAB)[0])
                 input_rule_child.append(ds.pad_seq(ds.get_embedding(rule[2:], ds.CODE_VOCAB), ds.Char_Len))
 
         tmp = [ds.pad_seq(ds.get_embedding(['start'], ds.CODE_VOCAB), 10)] + self.everTreepath
         input_rule_child = ds.pad_list(tmp, ds.Code_Len, 10)
-        input_rule = ds.pad_seq(self.state, ds.Code_Len)
+        input_rule = ds.pad_seq(self.states, ds.Code_Len)
         input_rule_parent = ds.pad_seq(input_rule_parent, ds.Code_Len)
         input_depth = ds.pad_list(self.depth, ds.Code_Len, 40)
         return input_rule, input_rule_child, input_rule_parent, input_depth
@@ -429,7 +428,7 @@ class SearchNode:
             if nodesid >= ARGS.NlLen:
                 nodesid = nodesid - ARGS.NlLen
                 nnode = Node(self.idmap[nodesid].name, nodesid)
-                nnode.fatherlistID = len(self.state)
+                nnode.fatherlistID = len(self.states)
                 nnode.father = self.expanded
                 nnode.fname = "-" + self.printTree(self.idmap[nodesid])
                 self.expanded.child.append(nnode)
@@ -437,7 +436,7 @@ class SearchNode:
                 nnode = self.idmap[nodesid]
                 if nnode.name == self.expanded.name:
                     self.copynode(self.expanded, nnode)
-                    nnode.fatherlistID = len(self.state)
+                    nnode.fatherlistID = len(self.states)
                 else:
                     if nnode.name == 'VariableDeclarator':
                         currnode = -1
@@ -455,7 +454,7 @@ class SearchNode:
                         nnnode = Node(currnode.child[0].name, -1)
                     nnnode.father = self.expanded
                     self.expanded.child.append(nnnode)
-                    nnnode.fatherlistID = len(self.state)
+                    nnnode.fatherlistID = len(self.states)
                 self.expanded.expanded = True
         else:
             rules = ds.rule_reverse_dict[rule]
@@ -474,7 +473,7 @@ class SearchNode:
                     #nnode = Node(x, self.expanded.depth + 1)
                     self.expanded.child.append(nnode)
                     nnode.father = self.expanded
-                    nnode.fatherlistID = len(self.state)
+                    nnode.fatherlistID = len(self.states)
         # self.parent.append(self.expanded.fatherlistID)
         self.parent[ARGS.NlLen + len(self.depth),
                     ARGS.NlLen + self.expanded.fatherlistID] = 1
@@ -485,11 +484,11 @@ class SearchNode:
             self.parent[ARGS.NlLen +
                         len(self.depth), rule - len(ds.rule_dict)] = 1
         if rule >= len(ds.rule_dict) + ARGS.NlLen:
-            self.state.append(ds.rule_dict['start -> copyword2'])
+            self.states.append(ds.rule_dict['start -> copyword2'])
         elif rule >= len(ds.rule_dict):
-            self.state.append(ds.rule_dict['start -> copyword'])
+            self.states.append(ds.rule_dict['start -> copyword'])
         else:
-            self.state.append(rule)
+            self.states.append(rule)
         # self.state.append(rule)
         self.inputparent.append(self.expanded.name.lower())
         self.depth.append(1)
@@ -579,7 +578,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     word: SearchNode = beams[i_batch_size][i_beam_size]
                     word.select_expanded_node()
 
-                    if word.expanded == None or len(word.state) >= ARGS.CodeLen:
+                    if word.expanded == None or len(word.states) >= ARGS.CodeLen:
                         word.finish = True
                         ansV.setdefault(i_batch_size, []).append(word)
                     else:
