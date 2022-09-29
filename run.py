@@ -93,12 +93,12 @@ def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
     return tensor
 
 
-def get_anti_mask(size):
-    ans = np.zeros([size, size])
+def get_anti_mask(size: int) -> np.ndarray:
+    anti_mask = np.zeros([size, size])
     for i in range(size):
         for j in range(0, i + 1):
-            ans[i, j] = 1.0
-    return ans
+            anti_mask[i, j] = 1.0
+    return anti_mask
 
 
 def getAdMask(size):
