@@ -844,7 +844,7 @@ def get_unknown(node: Node) -> List[Node]:
     return unknown_nodes
 
 
-def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
+def solve_unknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
     nodes = get_unknown(ans.solveroot)
     fans: List[str] = list()
     #fans_prob: List[float] = list()
@@ -1204,7 +1204,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     continue
 
                 try:
-                    tcodes = solveUnknown(result_beam_search[i][j], var_dict, type_dict, reverse_dict_classes_content, class_name, mode)
+                    tcodes = solve_unknown(result_beam_search[i][j], var_dict, type_dict, reverse_dict_classes_content, class_name, mode)
                 except Exception as e:
                     traceback.print_exc()
                     tcodes = []
