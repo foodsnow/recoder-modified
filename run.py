@@ -1150,16 +1150,16 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
 
             sub_root = data_buggy_locations[current_id]['subroot']
             if os.path.exists("result/%s.json" % bug_id):
-                class_content: list = json.load(open("result/%s.json" % bug_id, 'r'))
+                classes_content: list = json.load(open("result/%s.json" % bug_id, 'r'))
             else:
-                class_content: list = []
-            class_content.extend(json.load(open("temp.json", 'r')))
+                classes_content:list = []
+            classes_content.extend(json.load(open("temp.json", 'r')))
 
-            rrdicts = {}
-            for x in class_content:
-                rrdicts[x['filename']] = x
-                if 'package_name' in x:
-                    rrdicts[x['package_name'] + "." + x['filename']] = x
+            reverse_dict_classes_content = {}
+            for class_content in classes_content:
+                reverse_dict_classes_content[class_content['filename']] = class_content
+                if 'package_name' in class_content:
+                    reverse_dict_classes_content[class_content['package_name'] + "." + class_content['filename']] = class_content
 
             vardic = data_buggy_locations[current_id]['vardic']
             typedic = data_buggy_locations[current_id]['typedic']
@@ -1180,7 +1180,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     continue
                 try:
                     tcodes = solveUnknown(
-                        result_beam_search[i][j], vardic, typedic, rrdicts, classname, mode)
+                        result_beam_search[i][j], vardic, typedic, reverse_dict_classes_content, classname, mode)
                 except Exception as e:
                     traceback.print_exc()
                     tcodes = []
