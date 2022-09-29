@@ -807,17 +807,24 @@ def apply_operator(search_node: SearchNode, sub_root: Node):
     return
 
 
-def replaceVar(root, rrdict, place=False):
-    if root.name in rrdict:
-        root.name = rrdict[root.name]
-    elif root.name == 'unknown' and place:
-        root.name = "placeholder_ter"
-    elif len(root.child) == 0:
-        if re.match('loc%d', root.name) is not None or re.match('par%d', root.name) is not None:
+def replace_var(node: Node, reverse_dict_var_dict: Dict, place=False):
+    '''
+    Recursively goes down to children
+    stop when this function returns False for a Node
+    '''
+
+    if node.name in reverse_dict_var_dict:
+        node.name = reverse_dict_var_dict[node.name]
+    elif node.name == 'unknown' and place:
+        node.name = "placeholder_ter"
+    elif len(node.child) == 0:
+        if re.match('loc%d', node.name) is not None or re.match('par%d', node.name) is not None:
             return False
+
     ans = True
-    for x in root.child:
-        ans = ans and replaceVar(x, rrdict)
+    for child in node.child:
+        ans = ans and replace_var(child, reverse_dict_var_dict)
+
     return ans
 
 
@@ -1184,7 +1191,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     continue
 
                 apply_operator(result_beam_search[i][j], sub_root)
-                an = replaceVar(result_beam_search[i][j].solveroot, reverse_dict_var_dict)
+                an = replace_var(result_beam_search[i][j].solveroot, reverse_dict_var_dict)
                 if not an:
                     continue
                 try:
@@ -1256,7 +1263,7 @@ def solveone2(data, model):
                     print('debug1')
                     continue
                 apply_operator(ans[i][j], subroot)
-                an = replaceVar(ans[i][j].solveroot, rrdict)
+                an = replace_var(ans[i][j].solveroot, rrdict)
                 if not an:
                     print('debug2')
                     continue
