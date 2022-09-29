@@ -332,7 +332,7 @@ class SearchNode:
     def select_expanded_node(self):
         self.expanded = self.select_node(self.root_node)
 
-    def get_rule_embedding(self, ds: SumDataset, nl):
+    def get_rule_embedding(self, ds: SumDataset):
 
         input_rule_parent = []
         input_rule_child = []
@@ -344,18 +344,14 @@ class SearchNode:
                     ds.get_embedding(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
             else:
                 rule = ds.rule_reverse_dict[x].strip().lower().split()
-                # print(rule[0])
                 input_rule_parent.append(ds.get_embedding([rule[0]], ds.CODE_VOCAB)[0])
-                #print(ds.Get_Em([rule[0]], ds.Code_Voc))
-                input_rule_child.append(ds.pad_seq(
-                    ds.get_embedding(rule[2:], ds.CODE_VOCAB), ds.Char_Len))
+                input_rule_child.append(ds.pad_seq(ds.get_embedding(rule[2:], ds.CODE_VOCAB), ds.Char_Len))
+
         tmp = [ds.pad_seq(ds.get_embedding(['start'], ds.CODE_VOCAB), 10)] + self.everTreepath
         input_rule_child = ds.pad_list(tmp, ds.Code_Len, 10)
         input_rule = ds.pad_seq(self.state, ds.Code_Len)
-        #inputrulechild = ds.pad_list(inputrulechild, ds.Code_Len, ds.Char_Len)
         input_rule_parent = ds.pad_seq(input_rule_parent, ds.Code_Len)
         input_depth = ds.pad_list(self.depth, ds.Code_Len, 40)
-        # print(inputruleparent)
         return input_rule, input_rule_child, input_rule_parent, input_depth
 
     def getTreePath(self, ds: SumDataset):
@@ -594,7 +590,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         temp_nl_8.append(input_nl[8][i_batch_size].data.cpu().numpy())
                         temp_nl_9.append(input_nl[9][i_batch_size].data.cpu().numpy())
 
-                        a, b, c, d = word.get_rule_embedding(sum_dataset, sum_dataset.nl[ARGS.batch_size * k + i_batch_size])
+                        a, b, c, d = word.get_rule_embedding(sum_dataset)
 
                         temp_rule.append(a)
                         temp_rule_child.append(b)
