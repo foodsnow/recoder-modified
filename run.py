@@ -552,7 +552,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 
         index = 0
         antimask = to_torch_tensor(get_anti_mask(ARGS.CodeLen))
-        endnum = {}
+        end_num = {}
         continueSet = {}
         tansV: Dict[int, List[SearchNode]] = {}
 
@@ -560,7 +560,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
             tmpbeam: Dict[int, List[list]] = {}
             ansV: Dict[int, List[SearchNode]] = {}
 
-            if len(endnum) == batch_size:
+            if len(end_num) == batch_size:
                 break
 
             if index >= ARGS.CodeLen:
@@ -674,7 +674,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
             for i in range(batch_size):
                 if i in ansV:
                     if len(ansV[i]) == beam_size:
-                        endnum[i] = 1
+                        end_num[i] = 1
                     tansV.setdefault(i, []).extend(ansV[i])
 
             for j in range(batch_size):
