@@ -768,7 +768,10 @@ def getMember(node):
             return x.child[0].name
 
 
-def applyoperater(ans, subroot):
+def applyoperater(ans: SearchNode, subroot: Node):
+
+    logger.info('starting apply_operator()')
+
     # print(ans.root.printTree(ans.root))
     copynode = pickle.loads(pickle.dumps(subroot))
     change = False
