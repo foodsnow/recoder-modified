@@ -64,8 +64,18 @@ def load_model(model, dirs='checkpointSearch/'):
     model.load_state_dict(torch.load(dirs + 'best_model.ckpt', map_location=device))
 
 
-onelist = ['root', 'body', 'statements', 'block', 'arguments',
-           'initializers', 'parameters', 'case', 'cases', 'selectors']
+onelist = [
+    'root',
+    'body',
+    'statements',
+    'block',
+    'arguments',
+    'initializers',
+    'parameters',
+    'case',
+    'cases',
+    'selectors'
+]
 
 
 def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
