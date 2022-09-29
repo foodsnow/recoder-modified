@@ -794,14 +794,16 @@ def apply_operator(search_node: SearchNode, sub_root: Node):
             child.father = node.father
 
     if change:
-        node = Node('root', -1)
-        node.child.append(copy_node)
-        copy_node.father = node
-        search_node.solveroot = node
+        temp_node = Node('root', -1)
+        temp_node.child.append(copy_node)
+        copy_node.father = temp_node
+        search_node.solveroot = temp_node
         search_node.type = type
+
     else:
         search_node.solveroot = search_node.root_node
         search_node.type = type
+
     return
 
 
