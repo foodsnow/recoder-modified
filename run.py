@@ -756,19 +756,22 @@ def getMember(node):
             return x.child[0].name
 
 
-def apply_operator(ans: SearchNode, subroot: Node):
+def apply_operator(search_node: SearchNode, sub_root: Node):
 
     logger.info('starting apply_operator()')
 
-    copynode = pickle.loads(pickle.dumps(subroot))
+    copy_node = pickle.loads(pickle.dumps(sub_root))
     change = False
     type = ''
-    for x in ans.root_node.child:
-        if x.id != -1:
+
+    for child in search_node.root_node.child:
+        if child.id != -1:
             change = True
-            node = findnodebyid(copynode, x.id)
+            node = findnodebyid(copy_node, child.id)
+
             if node is None:
                 continue
+
             if node.name == 'member':
                 type = node.child[0].name
             elif node.name == 'MemberReference':
@@ -781,18 +784,20 @@ def apply_operator(ans: SearchNode, subroot: Node):
             else:
                 print(node.name)
                 assert (0)
+
             idx = node.father.child.index(node)
-            node.father.child[idx] = x
-            x.father = node.father
+            node.father.child[idx] = child
+            child.father = node.father
+
     if change:
         node = Node('root', -1)
-        node.child.append(copynode)
-        copynode.father = node
-        ans.solveroot = node
-        ans.type = type
+        node.child.append(copy_node)
+        copy_node.father = node
+        search_node.solveroot = node
+        search_node.type = type
     else:
-        ans.solveroot = ans.root_node
-        ans.type = type
+        search_node.solveroot = search_node.root_node
+        search_node.type = type
     return
 
 
