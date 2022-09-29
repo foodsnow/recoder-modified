@@ -849,7 +849,7 @@ def solve_unknown(
         var_dict: Dict[str, str],
         type_dict: Dict[str, str],
         reverse_dict_classes_content: Dict,
-        class_name: str,
+        arg_class_name: str,
         mode: int) -> List[str]:
 
     logger.info('starting solve_unknown()')
@@ -865,21 +865,21 @@ def solve_unknown(
     else:
         unknown_node: Node = nodes[0]
         if unknown_node.father.father and unknown_node.father.father.name == 'MethodInvocation':
-            classname = ''
+            local_class_name = ''
             args = []
             
             if unknown_node.father.name == 'member':
                 for child in unknown_node.father.father.child:
                     if child.name == 'qualifier':
                         if child.child[0].name in type_dict:
-                            classname = type_dict[child.child[0].name]
+                            local_class_name = type_dict[child.child[0].name]
                             break
                         else:
-                            if class_name == 'org.jsoup.nodes.Element':
-                                class_name = 'org.jsoup.nodes.Node'
-                            for f in reverse_dict_classes_content[class_name + '.java']['classes'][0]['fields']:
+                            if arg_class_name == 'org.jsoup.nodes.Element':
+                                arg_class_name = 'org.jsoup.nodes.Node'
+                            for f in reverse_dict_classes_content[arg_class_name + '.java']['classes'][0]['fields']:
                                 if f['name'] == child.child[0].name[:-4]:
-                                    classname = f['type']
+                                    local_class_name = f['type']
                                     break
                 for child in unknown_node.father.father.child:
                     if child.name == 'arguments':
@@ -901,12 +901,12 @@ def solve_unknown(
                             else:
                                 return []
 
-            if classname == '':
-                classbody = reverse_dict_classes_content[class_name + '.java']['classes']
-            elif classname != '':
-                if classname + ".java" not in reverse_dict_classes_content:
+            if local_class_name == '':
+                classbody = reverse_dict_classes_content[arg_class_name + '.java']['classes']
+            elif local_class_name != '':
+                if local_class_name + ".java" not in reverse_dict_classes_content:
                     return []
-                classbody = reverse_dict_classes_content[classname + '.java']['classes']
+                classbody = reverse_dict_classes_content[local_class_name + '.java']['classes']
             if unknown_node.father.name == 'qualifier':
                 vtype = ""
                 for child in classbody[0]['fields']:
@@ -927,10 +927,10 @@ def solve_unknown(
                             unknown_node.name = child['name'] + "_ter"
                             fans.append(unknown_node.printTree(search_node.solveroot))
             else:
-                if mode == 0 and search_node.root_node == search_node.solveroot and len(args) == 0 and classname != 'EndTag':
+                if mode == 0 and search_node.root_node == search_node.solveroot and len(args) == 0 and local_class_name != 'EndTag':
                     return []
                 otype = ""
-                if classname == 'EndTag':
+                if local_class_name == 'EndTag':
                     otype = "String"
 
                 if mode == 0 and search_node.type != '':
@@ -989,7 +989,7 @@ def solve_unknown(
                             unknown_node.name = " ".join(tmpnode.printTree(tmpnode).split()[:-1])
                             fans.append(unknown_node.printTree(search_node.solveroot))
         elif unknown_node.father.name == 'qualifier':
-            classbody = reverse_dict_classes_content[class_name + '.java']['classes']
+            classbody = reverse_dict_classes_content[arg_class_name + '.java']['classes']
             vtype = ""
             for child in classbody[0]['fields']:
                 if child['name'] == search_node.type[:-4]:
@@ -1011,26 +1011,26 @@ def solve_unknown(
                     unknown_node.name = " ".join(tmpnode.printTree(tmpnode).split()[:-1])
                     fans.append(unknown_node.printTree(search_node.solveroot))
         elif unknown_node.father.name == 'member':
-            classname = ''
+            local_class_name = ''
             if unknown_node.father.name == 'member':
                 for child in unknown_node.father.father.child:
                     if child.name == 'qualifier':
                         if child.child[0].name in type_dict:
-                            classname = type_dict[child.child[0].name]
+                            local_class_name = type_dict[child.child[0].name]
                             break
                         else:
-                            for f in reverse_dict_classes_content[class_name + '.java']['classes'][0]['fields']:
+                            for f in reverse_dict_classes_content[arg_class_name + '.java']['classes'][0]['fields']:
                                 if f['name'] == child.child[0].name[:-4]:
-                                    classname = f['type']
+                                    local_class_name = f['type']
                                     break
                         if child.child[0].name[:-4] + ".java" in reverse_dict_classes_content:
-                            classname = child.child[0].name[:-4]
-            if classname == '':
-                classbody = reverse_dict_classes_content[class_name + '.java']['classes']
-            elif classname != '':
-                if classname + ".java" not in reverse_dict_classes_content:
+                            local_class_name = child.child[0].name[:-4]
+            if local_class_name == '':
+                classbody = reverse_dict_classes_content[arg_class_name + '.java']['classes']
+            elif local_class_name != '':
+                if local_class_name + ".java" not in reverse_dict_classes_content:
                     return []
-                classbody = reverse_dict_classes_content[classname + '.java']['classes']
+                classbody = reverse_dict_classes_content[local_class_name + '.java']['classes']
             vtype = ""
             for child in classbody[0]['fields']:
                 if child['name'] == search_node.type[:-4]:
@@ -1170,7 +1170,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                         var_dict=var_dict,
                         type_dict=type_dict,
                         reverse_dict_classes_content=reverse_dict_classes_content,
-                        class_name=class_name,
+                        arg_class_name=class_name,
                         mode=mode
                     )
                 except Exception as e:
