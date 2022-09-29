@@ -511,9 +511,9 @@ class SumDataset(data.Dataset):
 
 
 class Node:
-    def __init__(self, name: str, s: int):
+    def __init__(self, name: str, id_: int):
         self.name = name
-        self.id = s
+        self.id = id_
         self.father: Node = None
         self.child: List[Node] = []
         self.sibiling = None
