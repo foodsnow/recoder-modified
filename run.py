@@ -513,52 +513,47 @@ beamss = []
 
 
 def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
+
     logger.info('starting beam search')
 
-    # beamsize=150, batch_size=20, k=1
     batch_size = len(inputnl[0].view(-1, args.NlLen))
     rrdic = {}
     for x in vds.CODE_VOCAB:
         rrdic[vds.CODE_VOCAB[x]] = x
-    # print(rrdic[684])
-    # print(rrdic[2])
-    # print(rrdic[183])
+
     tmpast = getAstPkl(vds)
     a, b = getRulePkl(vds)
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(2, 1).long()
     tmpc = to_torch_tensor(b).unsqueeze(0).repeat(2, 1, 1).long()
-    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
-                             ).float().unsqueeze(0).repeat(2, 1, 1)
-    tmpindex = to_torch_tensor(np.arange(len(vds.ruledict))
-                               ).unsqueeze(0).repeat(2, 1).long()
+    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
+    tmpindex = to_torch_tensor(np.arange(len(vds.ruledict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = to_torch_tensor(np.arange(len(vds.CODE_VOCAB))
-                                ).unsqueeze(0).repeat(2, 1).long()
+    tmpindex2 = to_torch_tensor(np.arange(len(vds.CODE_VOCAB))).unsqueeze(0).repeat(2, 1).long()
+
     with torch.no_grad():
         beams: Dict[int, List[SearchNode]] = {}
         hisTree: Dict[int, Dict[str, int]] = {}
-        # print(len(vds.nl))
+
         for i in range(batch_size):
             beams[i] = [SearchNode(vds, vds.nl[args.batch_size * k + i])]
             hisTree[i] = {}
+
         index = 0
         antimask = to_torch_tensor(getAntiMask(args.CodeLen))
         endnum = {}
         continueSet = {}
         tansV: Dict[int, List[SearchNode]] = {}
+
         while True:
-            # print(index)
             tmpbeam: Dict[int, List[list]] = {}
             ansV: Dict[int, List[SearchNode]] = {}
-            # for x in beams[0]:
-            #    print(x.getTreestr())
-            #    print(x.actlist)
-            #    print(x.prob)
-            # print("kkkkkkkkkkkkk")
+
             if len(endnum) == batch_size:
                 break
+
             if index >= args.CodeLen:
                 break
+
             for ba in range(batch_size):
                 tmprule = []
                 tmprulechild = []
@@ -571,18 +566,18 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                 tmpnlad = []
                 tmpnl8 = []
                 tmpnl9 = []
+
                 for p in range(beamsize):
                     if p >= len(beams[ba]):
                         continue
+
                     x = beams[ba][p]
-                    # print(x.getTreestr())
                     x.selectExpandedNode()
-                    # print(x.expanded.name)
+
                     if x.expanded == None or len(x.state) >= args.CodeLen:
                         x.finish = True
                         ansV.setdefault(ba, []).append(x)
                     else:
-                        # print(x.expanded.name)
                         validnum.append(p)
                         tmpnl.append(inputnl[0][ba].data.cpu().numpy())
                         tmpnlad.append(inputnl[1][ba].data.cpu().numpy())
@@ -594,44 +589,53 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                         tmprulechild.append(b)
                         tmpruleparent.append(c)
                         tmptreepath.append(x.getTreePath(vds))
-                        #tmp = np.eye(vds.Code_Len)[x.parent]
-                        # tmp = np.concatenate([tmp, np.zeros([vds.Code_Len, vds.Code_Len])], axis=0)[:vds.Code_Len,:]#self.pad_list(tmp, self.Code_Len, self.Code_Len)
                         tmpAd.append(x.parent)
                         tmpdepth.append(d)
-                # print("--------------------------")
+
                 if len(tmprule) == 0:
                     continue
-                #batch_size = len(tmprule)
+
                 antimasks = antimask.unsqueeze(0).repeat(
                     len(tmprule), 1, 1).unsqueeze(1)
+
                 tmprule = np.array(tmprule)
                 tmprulechild = np.array(tmprulechild)
                 tmpruleparent = np.array(tmpruleparent)
                 tmptreepath = np.array(tmptreepath)
                 tmpAd = np.array(tmpAd)
                 tmpdepth = np.array(tmpdepth)
-                # print(tmpnl)
                 tmpnl = np.array(tmpnl)
                 tmpnlad = np.array(tmpnlad)
                 tmpnl8 = np.array(tmpnl8)
                 tmpnl9 = np.array(tmpnl9)
-                '''print(inputnl[7][0][:index + 1], tmptreepath[0][:index + 1])
-                assert(np.array_equal(inputnl[2][0][:index + 1], tmprule[0][:index + 1]))
-                #assert(np.array_equal(inputnl[3][0][:index + 1], tmpruleparent[0][:index + 1]))
-                assert(np.array_equal(inputnl[4][0][:index + 1], tmprulechild[0][:index + 1]))
-                assert(np.array_equal(inputnl[6][0][:index + 1], tmpAd[0][:index + 1]))
-                assert(np.array_equal(inputnl[7][0][:index + 1], tmptreepath[0][:index + 1]))
-                #assert(np.array_equal(inputnl[8][0][:index + 1], tmpdepth[0][:index + 1]))'''
-                print(
-                    f"before@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
-                result = model(to_torch_tensor(tmpnl), to_torch_tensor(tmpnlad), to_torch_tensor(tmprule), to_torch_tensor(tmpruleparent), to_torch_tensor(tmprulechild), to_torch_tensor(tmpAd), to_torch_tensor(
-                    tmptreepath), to_torch_tensor(tmpnl8), to_torch_tensor(tmpnl9), tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimasks, None, "test")
-                print(
-                    f"after@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
+
+                print(f"before@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
+                result = model(
+                    to_torch_tensor(tmpnl),
+                    to_torch_tensor(tmpnlad),
+                    to_torch_tensor(tmprule),
+                    to_torch_tensor(tmpruleparent),
+                    to_torch_tensor(tmprulechild),
+                    to_torch_tensor(tmpAd),
+                    to_torch_tensor(tmptreepath),
+                    to_torch_tensor(tmpnl8),
+                    to_torch_tensor(tmpnl9),
+                    tmpf,
+                    tmpc,
+                    tmpindex,
+                    tmpchar,
+                    tmpindex2,
+                    rulead,
+                    antimasks,
+                    None,
+                    "test"
+                )
+
+                print(f"after@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
                 results = result.data.cpu().numpy()
-                #print(result, inputCode)
                 currIndex = 0
                 tmp_prob_list: List[Tuple[int, float]] = list()
+
                 for j in range(beamsize):
                     if j not in validnum:
                         continue
@@ -650,29 +654,17 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                         c = x.checkapply(indexs[i], vds)
                         if c:
                             tmpbeamsize += 1
-                            # continue
                         else:
                             continue
-                        '''copynode = deepcopy(x)
-                        #if indexs[i] >= len(vds.rrdict):
-                            #print(cresult[indexs[i]])
-                        c = copynode.applyrule(indexs[i], vds.nl[args.batch_size * k + j])
-                        if not c:
-                            tmpbeamsize += 1
-                            continue'''
-                        #copynode.prob = copynode.prob + np.log(cresult[indexs[i]])
-                        # negative log-likelihood
-                        # maximize!
-                        # copynode.prob = copynode.prob + np.log(cresult[indexs[i]])
                         prob = x.prob + np.log(cresult[indexs[i]])
                         tmpbeam.setdefault(ba, []).append([prob, indexs[i], x])
-                        #tmpbeam.setdefault(j, []).append(copynode)
-                    # print(tmpbeam[0].prob)
+
             for i in range(batch_size):
                 if i in ansV:
                     if len(ansV[i]) == beamsize:
                         endnum[i] = 1
                     tansV.setdefault(i, []).extend(ansV[i])
+
             for j in range(batch_size):
                 if j in tmpbeam:
                     if j in ansV:
@@ -686,19 +678,9 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                         if x[1] != -1:
                             x_prob: float = x[0]
                             x_rule: int = x[1]
-                            copynode: SearchNode = pickle.loads(
-                                pickle.dumps(x[2]))
-                            '''if x[1] >= len(vds.rrdict) + args.CodeLen:
-                                print(len(vds.tablename[s[args.batch_size * k + j]['database_id']]['column_names']))
-                                if (x[1] - len(vds.rrdict) - args.CodeLen >= 4 and args.batch_size * k + j == 20) or x[1] - len(vds.rrdict) - args.CodeLen >= len(vds.tablename[s[args.batch_size * k + j]['database_id']]['table_names']) + len(vds.tablename[s[args.batch_size * k + j]['database_id']]['column_names']):
-                                    print(vds.tabless[args.batch_size * k + j])
-                                    print(x[1] - len(vds.rrdict) - args.CodeLen)
-                                    assert(0)'''
-                            # print(x[1])
+                            copynode: SearchNode = pickle.loads(pickle.dumps(x[2]))
                             copynode.applyrule(x[1], vds)
-                            print(
-                                f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.actlist}")
-                            # print(x[0])
+                            print(f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.actlist}")
                             tree_str = copynode.getTreestr()
                             if tree_str in hisTree:
                                 continue
@@ -707,9 +689,8 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                             hisTree[j][tree_str] = 1
                         else:
                             beams[j].append(x[2])
-            # if index >= 2:
-            #    assert(0)
             index += 1
+
         for j in range(batch_size):
             visit = {}
             tmp = []
@@ -720,24 +701,9 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                     tmp.append(x)
                 else:
                     continue
-            beams[j] = sorted(tmp, key=lambda x: x.prob,
-                              reverse=True)[:beamsize]
-        # for x in beams:
-        #    beams[x] = sorted(beams[x], key=lambda x: x.prob, reverse=True)
+            beams[j] = sorted(tmp, key=lambda x: x.prob, reverse=True)[:beamsize]
+
         return beams
-        for i in range(len(beams)):
-            mans = -1000000
-            lst = beams[i]
-            tmpans = 0
-            for y in lst:
-                # print(y.getTreestr())
-                if y.prob > mans:
-                    mans = y.prob
-                    tmpans = y
-            beams[i] = tmpans
-        #open("beams.pkl", "wb").write(pickle.dumps(beamss))
-        return beams
-        # return beams
 
 
 def test():
