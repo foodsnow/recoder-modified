@@ -174,7 +174,7 @@ def train():
 class Node:
     def __init__(self, name: Union[str, tuple], id_: int):
         self.name = name
-        self.id = id_
+        self.id: int = id_
         self.father: Node = None
         self.child: List[Node] = []
         self.sibling = None

@@ -760,7 +760,7 @@ def apply_operator(search_node: SearchNode, sub_root: Node):
 
     logger.info('starting apply_operator()')
 
-    copy_node = pickle.loads(pickle.dumps(sub_root))
+    copy_node: Node = pickle.loads(pickle.dumps(sub_root))
     change = False
     type = ''
 
