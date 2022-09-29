@@ -729,87 +729,24 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
 
 
 def test():
-    # pre()
-    # os.environ["CUDA_VISIBLE_DEVICES"] = "5, 7"
 
     dev_set = SumDataset(args, "test")
-
     rulead = gVar(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
+
     args.cnum = rulead.size(1)
-    tmpast = getAstPkl(dev_set)
-    a, b = getRulePkl(dev_set)
-
-    tmpf = gVar(a).unsqueeze(0).repeat(2, 1).long()
-    tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex = gVar(np.arange(len(dev_set.ruledict))).unsqueeze(0).repeat(2, 1).long()
-    tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.CODE_VOCAB))).unsqueeze(0).repeat(2, 1).long()
-
     args.Nl_Vocsize = len(dev_set.NL_VOCAB)
     args.Code_Vocsize = len(dev_set.CODE_VOCAB)
     args.Vocsize = len(dev_set.CHAR_VOCAB)
     args.rulenum = len(dev_set.ruledict) + args.NlLen
     args.batch_size = 12
 
-    print(dev_set.rrdict[152])
-
-    rdic = {}
-    for x in dev_set.NL_VOCAB:
-        rdic[dev_set.NL_VOCAB[x]] = x
-
     model = Decoder(args)
-
     if torch.cuda.is_available():
-        print('using GPU')
-        # os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
-
-    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size, shuffle=False, drop_last=False, num_workers=0)
-
     model = model.eval()
     load_model(model)
-    return model
 
-    # return model
-    f = open("outval.txt", "w")
-    index = 0
-    indexs = 0
-    antimask = gVar(getAntiMask(args.CodeLen))
-    antimask2 = antimask.unsqueeze(0).repeat(1, 1, 1).unsqueeze(1)
-    for x in tqdm(devloader):
-        '''if indexs < 5:
-            indexs += 1
-            continue'''
-        # if indexs > 5:
-        #    break
-        '''pre = model(gVar(x[0]), gVar(x[1]), gVar(x[2]), gVar(x[3]), gVar(x[4]), gVar(x[6]), gVar(x[7]), gVar(x[8]), tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, None, 'test')
-        #print(pre[0,3,4020], pre[0,3,317])
-        pred = pre.argmax(dim=-1)
-        #print(len(dev_set.ruledict))
-        print(x[5])
-        resmask = torch.gt(gVar(x[5]), 0)
-        acc = (torch.eq(pred, gVar(x[5])) * resmask).float()#.mean(dim=-1)
-        predres = (1 - acc) * pred.float() * resmask.float()
-        accsum = torch.sum(acc, dim=-1)
-        resTruelen = torch.sum(resmask, dim=-1).float()
-        cnum = (torch.eq(accsum, resTruelen)).sum().float()
-        if cnum.item() != 1:
-            indexs += 1
-            continue'''
-        ans = BeamSearch((x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7],
-                         x[8], x[9]), dev_set, model, 80, args.batch_size, indexs)
-        for i in range(args.batch_size):
-            beam = ans[i]
-            f.write(str(indexs * args.batch_size + i))
-            for x in beam:
-                f.write(x.getTreestr() + "\n")
-            f.write("-------\n")
-            # print(x.getTreestr())
-        indexs += 1
-        # exit(0)
-        # f.write(" ".join(ans.ans[1:-1]))
-        # f.write("\n")
-        # f.flush()#print(ans)
+    return model
 
 
 def findnodebyid(root, idx):
