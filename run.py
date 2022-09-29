@@ -1204,6 +1204,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                         mode=mode
                     )
                 except Exception as e:
+                    logger.error('error in solving unknown')
                     traceback.print_exc()
                     tcodes = []
 
