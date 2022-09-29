@@ -756,7 +756,7 @@ def getMember(node):
             return x.child[0].name
 
 
-def applyoperater(ans: SearchNode, subroot: Node):
+def apply_operator(ans: SearchNode, subroot: Node):
 
     logger.info('starting apply_operator()')
 
@@ -1178,7 +1178,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                 if result_beam_search[i][j].root_node is None:
                     continue
 
-                applyoperater(result_beam_search[i][j], sub_root)
+                apply_operator(result_beam_search[i][j], sub_root)
                 an = replaceVar(result_beam_search[i][j].solveroot, reverse_dict_var_dict)
                 if not an:
                     continue
@@ -1250,7 +1250,7 @@ def solveone2(data, model):
                 if ans[i][j].root_node is None:
                     print('debug1')
                     continue
-                applyoperater(ans[i][j], subroot)
+                apply_operator(ans[i][j], subroot)
                 an = replaceVar(ans[i][j].solveroot, rrdict)
                 if not an:
                     print('debug2')
