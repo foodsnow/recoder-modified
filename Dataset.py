@@ -260,10 +260,10 @@ class SumDataset(data.Dataset):
                             nladcol.append(sibling.id)
                             nladdata.append(1)
 
-                for sibling in node_.children:
-                    if node_.id < self.Nl_Len and sibling.id < self.Nl_Len:
+                for child in node_.children:
+                    if node_.id < self.Nl_Len and child.id < self.Nl_Len:
                         nladrow.append(node_.id)
-                        nladcol.append(sibling.id)
+                        nladcol.append(child.id)
                         nladdata.append(1)
 
             tokens_of_tree_as_str_with_var = tokens_without_jumps
