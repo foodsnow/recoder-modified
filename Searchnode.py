@@ -3,7 +3,19 @@
 #from pythonBottom.run import pre
 # wandb.init("sql")
 import time
+import sys
+import pickle
 from typing import List, Dict, Set, Tuple, Union
+import torch
+import os
+import numpy as np
+from Dataset import SumDataset
+from Model import Decoder
+from ScheduledOptim import ScheduledOptim
+from tqdm import tqdm
+from copy import deepcopy
+# from pythonBottom.run import finetune
+# from pythonBottom.run import pre
 
 
 class dotdict(dict):
@@ -48,7 +60,7 @@ def gVar(data):
         tensor = torch.from_numpy(data)
     else:
         assert isinstance(tensor, torch.Tensor)
-    if use_cuda:
+    if torch.cuda.is_available():
         tensor = tensor.cuda()
     return tensor
 
@@ -80,7 +92,7 @@ def train():
                                               shuffle=True, drop_last=True, num_workers=1)
     model = Decoder(args)
     load_model(model)
-    optimizer = optim.Adam(model.parameters(), lr=1e-4)
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
     optimizer = ScheduledOptim(
         optimizer, d_model=args.embedding_size, n_warmup_steps=4000)
     maxAcc = 0
@@ -89,7 +101,7 @@ def train():
         print('using GPU')
         #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
-        model = nn.DataParallel(model, device_ids=[0, 1])
+        model = torch.nn.DataParallel(model, device_ids=[0, 1])
     antimask = gVar(getAntiMask(args.CodeLen))
     # model.to()
     for epoch in range(100000):
