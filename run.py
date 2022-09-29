@@ -293,9 +293,7 @@ class SearchNode:
         self.unum = 0
         self.parent = np.zeros(
             [ARGS.NlLen + ARGS.CodeLen, ARGS.NlLen + ARGS.CodeLen])
-        # self.parent[args.NlLen]
         self.expanded = None
-        #self.ruledict = ds.rrdict
         self.expandedname = []
         self.depth = [1]
         for x in ds.rule_dict:
