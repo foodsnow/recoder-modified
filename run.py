@@ -591,8 +591,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         temp_nl_ad.append(input_nl[1][i_batch_size].data.cpu().numpy())
                         temp_nl_8.append(input_nl[8][i_batch_size].data.cpu().numpy())
                         temp_nl_9.append(input_nl[9][i_batch_size].data.cpu().numpy())
-                        a, b, c, d = word.getRuleEmbedding(
-                            sum_dataset, sum_dataset.nl[ARGS.batch_size * k + i_batch_size])
+                        a, b, c, d = word.getRuleEmbedding(sum_dataset, sum_dataset.nl[ARGS.batch_size * k + i_batch_size])
                         temp_rule.append(a)
                         temp_rule_child.append(b)
                         temp_rule_parent.append(c)
