@@ -992,12 +992,12 @@ def solve_unknown(
                             temp_node1 = Node('MethodInvocation', -1)
                             temp_node2 = Node('member', -1)
                             temp_node3 = Node(class_method_['name'] + "_ter", -1)
-                            
+
                             temp_node1.class_method_.append(temp_node2)
                             temp_node2.father = temp_node1
                             temp_node2.class_method_.append(temp_node3)
                             temp_node3.father = temp_node2
-                            
+
                             unknown_node.name = " ".join(temp_node1.printTree(temp_node1).split()[:-1])
                             fans.append(unknown_node.printTree(search_node.solveroot))
 
@@ -1020,12 +1020,12 @@ def solve_unknown(
                     temp_node1 = Node('MethodInvocation', -1)
                     temp_node2 = Node('member', -1)
                     temp_node3 = Node(class_method_['name'] + "_ter", -1)
-                    
+
                     temp_node1.class_method_.append(temp_node2)
                     temp_node2.father = temp_node1
                     temp_node2.class_method_.append(temp_node3)
                     temp_node3.father = temp_node2
-                    
+
                     unknown_node.name = " ".join(temp_node1.printTree(temp_node1).split()[:-1])
                     fans.append(unknown_node.printTree(search_node.solveroot))
 
@@ -1210,20 +1210,40 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
 
                 for code in tcodes:
                     prob = result_beam_search[i][j].prob
+
                     if code.split(" ")[0] != 'root':
                         logger.error('some error')
                         assert (0)
+
                     if str(mode) + code + str(data_buggy_locations[current_id]['line']) not in patch:
                         patch[str(mode) + code + str(data_buggy_locations[current_id]['line'])] = 1
                     else:
                         continue
-                    obj = {'id': current_id, 'idss': bug_id, 'precode': data_buggy_locations[current_id]['precode'], 'aftercode': data_buggy_locations[current_id]['aftercode'], 'oldcode': data_buggy_locations[current_id]['oldcode'], 'filename': data_buggy_locations[current_id]
-                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[current_id]['line'], 'isa': data_buggy_locations[current_id]['isa'], 'fl_score': data_buggy_locations[current_id]['fl_score'], 'actlist': result_beam_search[i][j].act_list}
+
+                    obj = {
+                        'id': current_id,
+                        'idss': bug_id,
+                        'precode': data_buggy_locations[current_id]['precode'],
+                        'aftercode': data_buggy_locations[current_id]['aftercode'],
+                        'oldcode': data_buggy_locations[current_id]['oldcode'],
+                        'filename': data_buggy_locations[current_id]['filepath'],
+                        'mode': mode,
+                        'code': code,
+                        'prob': prob,
+                        'line': data_buggy_locations[current_id]['line'],
+                        'isa': data_buggy_locations[current_id]['isa'],
+                        'fl_score': data_buggy_locations[current_id]['fl_score'],
+                        'actlist': result_beam_search[i][j].act_list
+                    }
+
                     savedata.append(obj)
                     tmp_data_list.append(obj)
+
             with open(tmp_data_file, "w") as tmp_df:
                 json.dump(tmp_data_list, tmp_df, indent=2)
+
         indexs += 1
+
     return savedata
 
 
