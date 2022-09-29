@@ -1,21 +1,17 @@
-#from ScheduledOptim import *
-#from pythonBottom.run import finetune
-#from pythonBottom.run import pre
-# wandb.init("sql")
-import time
-import sys
-import pickle
-from typing import List, Dict, Set, Tuple, Union
-import torch
 import os
+import pickle
+import sys
+import time
+from copy import deepcopy
+from typing import Dict, List, Set, Tuple, Union
+
 import numpy as np
+import torch
+from tqdm import tqdm
+
 from Dataset import SumDataset
 from Model import Decoder
 from ScheduledOptim import ScheduledOptim
-from tqdm import tqdm
-from copy import deepcopy
-# from pythonBottom.run import finetune
-# from pythonBottom.run import pre
 
 
 class dotdict(dict):

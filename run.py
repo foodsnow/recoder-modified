@@ -1,30 +1,24 @@
-# wandb.init("sql")
-# from pythonBottom.run import finetune
-# from pythonBottom.run import pre
-# import wandb
-
+import json
+import os
+import pickle
+import re
+import sys
+import traceback
 from copy import deepcopy
+from typing import Dict, List, Set, Tuple, Union
+
+import numpy as np
+import torch
+import torch.nn.functional as F
+from torch import optim
+from tqdm import tqdm
+
+from base_logger import logger
 from Dataset import SumDataset
 from Model import *
 from Radam import RAdam
 from ScheduledOptim import *
 from Searchnode import Node
-from torch import optim
-from tqdm import tqdm
-from typing import List, Dict, Set, Tuple, Union
-
-from base_logger import logger
-
-import json
-import numpy as np
-import os
-import pickle
-import re
-import sys
-import torch
-import torch.nn.functional as F
-import traceback
-
 
 ONE_LIST = [
     'root',

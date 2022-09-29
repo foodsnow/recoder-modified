@@ -1,20 +1,24 @@
-from base_logger import logger
+import json
+import os
+import pickle
+import random
+import re
 import sys
+from typing import Dict, List, Set, Tuple, Union
+
+import h5py
+import numpy as np
 import torch
 import torch.utils.data as data
-import random
-import pickle
-import os
 from nltk import word_tokenize
-from vocab import VocabEntry
-import numpy as np
-import re
-import h5py
-from tqdm import tqdm
-import json
 from scipy import sparse
+from tqdm import tqdm
+
+from base_logger import logger
 from parse_dataflow import GetFlow
-from typing import List, Dict, Set, Tuple, Union
+from vocab import VocabEntry
+
+
 sys.setrecursionlimit(500000000)
 
 
