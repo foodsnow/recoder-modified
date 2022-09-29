@@ -591,14 +591,15 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         temp_nl_8.append(input_nl[8][i_batch_size].data.cpu().numpy())
                         temp_nl_9.append(input_nl[9][i_batch_size].data.cpu().numpy())
 
-                        a, b, c, d = word.get_rule_embedding(sum_dataset)
+                        input_rule, input_rule_child, input_rule_parent, input_depth =\
+                            word.get_rule_embedding(sum_dataset)
 
-                        temp_rule.append(a)
-                        temp_rule_child.append(b)
-                        temp_rule_parent.append(c)
+                        temp_rule.append(input_rule)
+                        temp_rule_child.append(input_rule_child)
+                        temp_rule_parent.append(input_rule_parent)
                         temp_tree_path.append(word.getTreePath(sum_dataset))
                         temp_Ad.append(word.parent)
-                        temp_depth.append(d)
+                        temp_depth.append(input_depth)
 
                 if len(temp_rule) == 0:
                     continue
@@ -659,8 +660,8 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                             break
                         if cresult[indexs[i]] == 0:
                             break
-                        c = word.checkapply(indexs[i], sum_dataset)
-                        if c:
+                        input_rule_parent = word.checkapply(indexs[i], sum_dataset)
+                        if input_rule_parent:
                             tmpbeamsize += 1
                         else:
                             continue
