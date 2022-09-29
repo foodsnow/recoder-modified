@@ -417,12 +417,7 @@ class SearchNode:
         return
 
     def applyrule(self, rule: int, ds: SumDataset) -> bool:
-        '''if rule < len(ds.ruledict):
-            print(rule, ds.rrdict[rule])
-        elif rule >= len(ds.ruledict) + args.NlLen:
-            print('copy', self.idmap[rule - len(ds.ruledict) - args.NlLen].name)
-        else:
-            print('copy2', self.idmap[rule - len(ds.ruledict)].name)'''
+
         if rule >= len(ds.rule_dict):
             if rule >= len(ds.rule_dict) + ARGS.NlLen:
                 idx = rule - len(ds.rule_dict) - ARGS.NlLen
@@ -431,8 +426,10 @@ class SearchNode:
             self.act_list.append('copy-' + self.idmap[idx].name)
         else:
             self.act_list.append(ds.rule_reverse_dict[rule])
+
         if rule >= len(ds.rule_dict):
             nodesid = rule - len(ds.rule_dict)
+
             if nodesid >= ARGS.NlLen:
                 nodesid = nodesid - ARGS.NlLen
                 nnode = Node(self.idmap[nodesid].name, nodesid)
@@ -464,44 +461,40 @@ class SearchNode:
                     self.expanded_node.child.append(nnnode)
                     nnnode.fatherlistID = len(self.states)
                 self.expanded_node.expanded = True
+
         else:
             rules = ds.rule_reverse_dict[rule]
             if rules == 'start -> unknown':
                 self.unum += 1
-            # if rules.strip().split()[0] != self.expanded.name:
-            #    #print(self.expanded.name)
-            #    assert(0)
-            #    return False
-            #assert(rules.strip().split()[0] == self.expanded.name)
+
             if rules.strip() == self.expanded_node.name + " -> End":
                 self.expanded_node.expanded = True
             else:
                 for x in rules.strip().split()[2:]:
                     nnode = Node(x, -1)
-                    #nnode = Node(x, self.expanded.depth + 1)
                     self.expanded_node.child.append(nnode)
                     nnode.father = self.expanded_node
                     nnode.fatherlistID = len(self.states)
-        # self.parent.append(self.expanded.fatherlistID)
-        self.parent[ARGS.NlLen + len(self.depths),
-                    ARGS.NlLen + self.expanded_node.fatherlistID] = 1
+
+        self.parent[ARGS.NlLen + len(self.depths), ARGS.NlLen + self.expanded_node.fatherlistID] = 1
+
         if rule >= len(ds.rule_dict) + ARGS.NlLen:
-            self.parent[ARGS.NlLen + len(self.depths),
-                        rule - len(ds.rule_dict) - ARGS.NlLen] = 1
+            self.parent[ARGS.NlLen + len(self.depths), rule - len(ds.rule_dict) - ARGS.NlLen] = 1
         elif rule >= len(ds.rule_dict):
-            self.parent[ARGS.NlLen +
-                        len(self.depths), rule - len(ds.rule_dict)] = 1
+            self.parent[ARGS.NlLen + len(self.depths), rule - len(ds.rule_dict)] = 1
+
         if rule >= len(ds.rule_dict) + ARGS.NlLen:
             self.states.append(ds.rule_dict['start -> copyword2'])
         elif rule >= len(ds.rule_dict):
             self.states.append(ds.rule_dict['start -> copyword'])
         else:
             self.states.append(rule)
-        # self.state.append(rule)
+
         self.inputparent.append(self.expanded_node.name.lower())
         self.depths.append(1)
         if self.expanded_node.name not in ONE_LIST:
             self.expanded_node.expanded = True
+
         return True
 
     def printTree(self, r):
