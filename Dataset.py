@@ -233,7 +233,7 @@ class SumDataset(data.Dataset):
                     node_id += 1
 
                     token_as_node.father = current_node
-                    current_node.child.append(token_as_node)
+                    current_node.children.append(token_as_node)
                     current_node = token_as_node
 
                     tokens_without_jumps.append(token_as_str)
@@ -254,16 +254,16 @@ class SumDataset(data.Dataset):
                         nladcol.append(node_.father.id)
                         nladdata.append(1)
 
-                    for s in node_.father.child:
-                        if node_.id < self.Nl_Len and s.id < self.Nl_Len:
+                    for sibling in node_.father.children:
+                        if node_.id < self.Nl_Len and sibling.id < self.Nl_Len:
                             nladrow.append(node_.id)
-                            nladcol.append(s.id)
+                            nladcol.append(sibling.id)
                             nladdata.append(1)
 
-                for s in node_.child:
-                    if node_.id < self.Nl_Len and s.id < self.Nl_Len:
+                for sibling in node_.children:
+                    if node_.id < self.Nl_Len and sibling.id < self.Nl_Len:
                         nladrow.append(node_.id)
-                        nladcol.append(s.id)
+                        nladcol.append(sibling.id)
                         nladdata.append(1)
 
             tokens_of_tree_as_str_with_var = tokens_without_jumps
@@ -317,7 +317,7 @@ class SumDataset(data.Dataset):
                     nnode = SimpleNode(x, idx)
                     idx += 1
                     nnode.father = currnode
-                    currnode.child.append(nnode)
+                    currnode.children.append(nnode)
                     currnode = nnode
                     nltmp.append(x)
                     nodes.append(nnode)
@@ -332,12 +332,12 @@ class SumDataset(data.Dataset):
                         nladrow.append(x.id)
                         nladcol.append(x.father.id)
                         nladdata.append(1)
-                    for s in x.father.child:
+                    for s in x.father.children:
                         if x.id < self.Nl_Len and s.id < self.Nl_Len:
                             nladrow.append(x.id)
                             nladcol.append(s.id)
                             nladdata.append(1)
-                for s in x.child:
+                for s in x.children:
                     if x.id < self.Nl_Len and s.id < self.Nl_Len:
                         nladrow.append(x.id)
                         nladcol.append(s.id)
@@ -519,7 +519,7 @@ class SimpleNode:
         self.name = name
         self.id = id_
         self.father: SimpleNode = None
-        self.child: List[SimpleNode] = []
+        self.children: List[SimpleNode] = []
         self.sibiling = None
 
 #dset = SumDataset(args)
