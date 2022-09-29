@@ -132,15 +132,15 @@ class SumDataset(data.Dataset):
         open("char_voc.pkl", "wb").write(pickle.dumps(self.CHAR_VOCAB))
         print(maxNlLen, maxCodeLen, maxCharLen)
 
-    def Get_Em(self, WordList, voc):
-        ans = []
-        for x in WordList:
-            x = x.lower()
-            if x not in voc:
-                ans.append(1)
+    def get_embedding(self, word_list: List[str], vocab: Dict[str, int]):
+        embedding = []
+        for word in word_list:
+            word = word.lower()
+            if word not in vocab:
+                embedding.append(1)
             else:
-                ans.append(voc[x])
-        return ans
+                embedding.append(vocab[word])
+        return embedding
 
     def Get_Char_Em(self, WordList):
         ans = []
@@ -268,7 +268,7 @@ class SumDataset(data.Dataset):
 
             tokens_of_tree_as_str_with_var = tokens_without_jumps
 
-            embeddings = self.Get_Em(tokens_of_tree_as_str_with_var, self.NL_VOCAB)
+            embeddings = self.get_embedding(tokens_of_tree_as_str_with_var, self.NL_VOCAB)
             inputnls = self.pad_seq(embeddings, self.Nl_Len)
             nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(tokens_of_tree_as_str_with_var)
@@ -395,7 +395,7 @@ class SumDataset(data.Dataset):
                     #inputad[self.Nl_Len + j + 1, self.Nl_Len + inputparent[j]] = 1
             #inputrule = [self.ruledict["start -> Module"]] + inputres
             #depth = self.pad_seq([1] + depth, self.Code_Len)
-            inputnls = self.Get_Em(nl, self.NL_VOCAB)
+            inputnls = self.get_embedding(nl, self.NL_VOCAB)
             inputNl.append(self.pad_seq(inputnls, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(nl)
             for j in range(len(inputnlchar)):
@@ -403,17 +403,17 @@ class SumDataset(data.Dataset):
             inputnlchar = self.pad_list(
                 inputnlchar, self.Nl_Len, self.Char_Len)
             inputNlChar.append(inputnlchar)
-            inputruleparent = self.pad_seq(self.Get_Em(
+            inputruleparent = self.pad_seq(self.get_embedding(
                 ["start"] + parentname, self.CODE_VOCAB), self.Code_Len)
             inputrulechild = []
             for x in inputrule:
                 if x >= len(self.rrdict):
-                    inputrulechild.append(self.pad_seq(self.Get_Em(
+                    inputrulechild.append(self.pad_seq(self.get_embedding(
                         ["copyword"], self.CODE_VOCAB), self.Char_Len))
                 else:
                     rule = self.rrdict[x].strip().lower().split()
                     inputrulechild.append(self.pad_seq(
-                        self.Get_Em(rule[2:], self.CODE_VOCAB), self.Char_Len))
+                        self.get_embedding(rule[2:], self.CODE_VOCAB), self.Char_Len))
 
             inputparentpath = []
             for j in range(len(inputres)):
@@ -449,11 +449,11 @@ class SumDataset(data.Dataset):
                     curr = inputparent[curr - 1]
                 # print(tmppath)
                 inputparentpath.append(self.pad_seq(
-                    self.Get_Em(tmppath, self.CODE_VOCAB), 10))
+                    self.get_embedding(tmppath, self.CODE_VOCAB), 10))
             # assert(0)
             inputrule = self.pad_seq(inputrule, self.Code_Len)
             inputres = self.pad_seq(inputres, self.Code_Len)
-            tmp = [self.pad_seq(self.Get_Em(
+            tmp = [self.pad_seq(self.get_embedding(
                 ['start'], self.CODE_VOCAB), 10)] + inputparentpath
             inputrulechild = self.pad_list(tmp, self.Code_Len, 10)
             inputRuleParent.append(inputruleparent)

@@ -113,7 +113,7 @@ def getRulePkl(vds: SumDataset):
     for i in range(args.cnum):
         rule = vds.rrdict[i].strip().lower().split()
         inputrulechild.append(vds.pad_seq(
-            vds.Get_Em(rule[2:], vds.CODE_VOCAB), vds.Char_Len))
+            vds.get_embedding(rule[2:], vds.CODE_VOCAB), vds.Char_Len))
         inputruleparent.append(vds.CODE_VOCAB[rule[0].lower()])
     return np.array(inputruleparent), np.array(inputrulechild)
 
@@ -331,17 +331,17 @@ class SearchNode:
         inputrulechild = []
         for x in self.state:
             if x >= len(ds.rrdict):
-                inputruleparent.append(ds.Get_Em(["value"], ds.CODE_VOCAB)[0])
+                inputruleparent.append(ds.get_embedding(["value"], ds.CODE_VOCAB)[0])
                 inputrulechild.append(ds.pad_seq(
-                    ds.Get_Em(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
+                    ds.get_embedding(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
             else:
                 rule = ds.rrdict[x].strip().lower().split()
                 # print(rule[0])
-                inputruleparent.append(ds.Get_Em([rule[0]], ds.CODE_VOCAB)[0])
+                inputruleparent.append(ds.get_embedding([rule[0]], ds.CODE_VOCAB)[0])
                 #print(ds.Get_Em([rule[0]], ds.Code_Voc))
                 inputrulechild.append(ds.pad_seq(
-                    ds.Get_Em(rule[2:], ds.CODE_VOCAB), ds.Char_Len))
-        tmp = [ds.pad_seq(ds.Get_Em(['start'], ds.CODE_VOCAB), 10)
+                    ds.get_embedding(rule[2:], ds.CODE_VOCAB), ds.Char_Len))
+        tmp = [ds.pad_seq(ds.get_embedding(['start'], ds.CODE_VOCAB), 10)
                ] + self.everTreepath
         inputrulechild = ds.pad_list(tmp, ds.Code_Len, 10)
         inputrule = ds.pad_seq(self.state, ds.Code_Len)
@@ -357,7 +357,7 @@ class SearchNode:
         while node:
             tmppath.append(node.name.lower())
             node = node.father
-        tmp = ds.pad_seq(ds.Get_Em(tmppath, ds.CODE_VOCAB), 10)
+        tmp = ds.pad_seq(ds.get_embedding(tmppath, ds.CODE_VOCAB), 10)
         self.everTreepath.append(tmp)
         return ds.pad_list(self.everTreepath, ds.Code_Len, 10)
 
