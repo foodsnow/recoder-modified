@@ -269,7 +269,7 @@ class SumDataset(data.Dataset):
             tokens_of_tree_as_str_with_var = tokens_without_jumps
 
             embeddings = self.get_embedding(tokens_of_tree_as_str_with_var, self.NL_VOCAB)
-            inputnls = self.pad_seq(embeddings, self.Nl_Len)
+            input_nls = self.pad_seq(embeddings, self.Nl_Len)
             nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
             inputnlchar = self.Get_Char_Em(tokens_of_tree_as_str_with_var)
 
@@ -278,7 +278,7 @@ class SumDataset(data.Dataset):
 
             inputnlchar = self.pad_list(inputnlchar, self.Nl_Len, self.Char_Len)
 
-            inputNl.append(inputnls)
+            inputNl.append(input_nls)
             inputNlad.append(nlad)
             inputPos.append(node_possibilities)
             inputNlchar.append(inputnlchar)
