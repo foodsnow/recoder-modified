@@ -11,7 +11,7 @@ from ScheduledOptim import *
 from Searchnode import Node
 from torch import optim
 from tqdm import tqdm
-from typing import List, Dict, Set, Tuple
+from typing import List, Dict, Set, Tuple, Union
 
 from base_logger import logger
 
@@ -69,14 +69,17 @@ onelist = ['root', 'body', 'statements', 'block', 'arguments',
            'initializers', 'parameters', 'case', 'cases', 'selectors']
 
 
-def gVar(data):
+def gVar(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
     tensor = data
+
     if isinstance(data, np.ndarray):
         tensor = torch.from_numpy(data)
     else:
         assert isinstance(tensor, torch.Tensor)
+
     if use_cuda:
         tensor = tensor.cuda()
+
     return tensor
 
 
