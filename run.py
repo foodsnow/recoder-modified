@@ -416,7 +416,9 @@ class SearchNode:
             self.copynode(nnode, x)
         return
 
-    def applyrule(self, rule: int, ds: SumDataset) -> bool:
+    def apply_rule(self, rule: int, ds: SumDataset) -> bool:
+
+        logger.info('apply_rule() is starting')
 
         if rule >= len(ds.rule_dict):
             if rule >= len(ds.rule_dict) + ARGS.NlLen:
@@ -688,7 +690,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 
                         if word_search_node[1] != -1:
                             copy_word_search_node: SearchNode = pickle.loads(pickle.dumps(word_search_node[2]))
-                            copy_word_search_node.applyrule(word_search_node[1], sum_dataset)
+                            copy_word_search_node.apply_rule(word_search_node[1], sum_dataset)
 
                             tree_str = copy_word_search_node.getTreestr()
                             if tree_str in his_tree:
