@@ -5,7 +5,7 @@ import numpy as np
 
 
 cwd = Path(os.getcwd())
-first_n = 1
+first_n = 1000
 
 for pklfile in cwd.glob('*.pkl'):
     print(pklfile)
