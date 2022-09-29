@@ -153,7 +153,7 @@ class SumDataset(data.Dataset):
             embedding.append(word_emb)
         return embedding
 
-    def pad_seq(self, sequence: List[int], max_len: int):
+    def pad_seq(self, sequence: List[int], max_len: int) -> List[int]:
         '''
         NOTE mutates sequence
         '''
@@ -163,6 +163,7 @@ class SumDataset(data.Dataset):
             sequence = sequence[:max_len]
         else:
             sequence = sequence[:max_len]
+
         return sequence
 
     def pad_str_seq(self, seq, maxlen):
