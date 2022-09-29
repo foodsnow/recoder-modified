@@ -724,13 +724,19 @@ def test():
     return model
 
 
-def findnodebyid(root, idx):
+def find_node_by_id(root: Node, idx: int) -> Node:
+    '''
+    Recursively down to children find a Node by id
+    '''
+
     if root.id == idx:
         return root
-    for x in root.child:
-        t = findnodebyid(x, idx)
-        if t:
-            return t
+    for child in root.child:
+        node = find_node_by_id(child, idx)
+        if node:
+            return node
+
+    return None
 
 
 def getroot(strlst):
@@ -767,7 +773,7 @@ def apply_operator(search_node: SearchNode, sub_root: Node):
     for child in search_node.root_node.child:
         if child.id != -1:
             change = True
-            node = findnodebyid(copy_node, child.id)
+            node = find_node_by_id(copy_node, child.id)
 
             if node is None:
                 continue
