@@ -40,12 +40,12 @@ ONE_LIST = [
 ]
 
 
-class dotdict(dict):
+class DotDict(dict):
     def __getattr__(self, name):
         return self[name]
 
 
-args = dotdict({
+ARGS = DotDict({
     'NlLen': 500,
     'CodeLen': 30,
     'batch_size': 120,
@@ -112,7 +112,7 @@ def get_rule_pkl(sum_dataset: SumDataset) -> Tuple[np.array, np.array]:
     input_rule_parent = []
     input_rule_child = []
 
-    for i in range(args.cnum):
+    for i in range(ARGS.cnum):
         rule = sum_dataset.rule_reverse_dict[i].strip().lower().split()
         input_rule_child.append(sum_dataset.pad_seq(sum_dataset.get_embedding(rule[2:], sum_dataset.CODE_VOCAB), sum_dataset.Char_Len))
         input_rule_parent.append(sum_dataset.CODE_VOCAB[rule[0].lower()])
@@ -138,7 +138,7 @@ def get_AST_pkl(sum_dataset: SumDataset) -> np.array:
 
 
 def evalacc(model, dev_set: SumDataset):
-    antimask = to_torch_tensor(get_anti_mask(args.CodeLen))
+    antimask = to_torch_tensor(get_anti_mask(ARGS.CodeLen))
     a, b = get_rule_pkl(dev_set)
     tmpast = get_AST_pkl(dev_set)
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
@@ -187,11 +187,11 @@ def evalacc(model, dev_set: SumDataset):
 
 
 def train():
-    train_set = SumDataset(args, "train")
+    train_set = SumDataset(ARGS, "train")
     print(len(train_set.rule_reverse_dict))
     rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
                              ).float().unsqueeze(0).repeat(4, 1, 1)
-    args.cnum = rulead.size(1)
+    ARGS.cnum = rulead.size(1)
     tmpast = get_AST_pkl(train_set)
     a, b = get_rule_pkl(train_set)
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
@@ -201,20 +201,20 @@ def train():
     tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
     tmpindex2 = to_torch_tensor(np.arange(len(train_set.CODE_VOCAB))
                                 ).unsqueeze(0).repeat(4, 1).long()
-    args.Code_Vocsize = len(train_set.CODE_VOCAB)
-    args.Nl_Vocsize = len(train_set.NL_VOCAB)
-    args.Vocsize = len(train_set.CHAR_VOCAB)
-    args.rulenum = len(train_set.rule_dict) + args.NlLen
+    ARGS.Code_Vocsize = len(train_set.CODE_VOCAB)
+    ARGS.Nl_Vocsize = len(train_set.NL_VOCAB)
+    ARGS.Vocsize = len(train_set.CHAR_VOCAB)
+    ARGS.rulenum = len(train_set.rule_dict) + ARGS.NlLen
     #dev_set = SumDataset(args, "val")
-    test_set = SumDataset(args, "test")
+    test_set = SumDataset(ARGS, "test")
     print(len(test_set))
-    data_loader = torch.utils.data.DataLoader(dataset=train_set, batch_size=args.batch_size,
+    data_loader = torch.utils.data.DataLoader(dataset=train_set, batch_size=ARGS.batch_size,
                                               shuffle=False, drop_last=True, num_workers=1)
-    model = Decoder(args)
+    model = Decoder(ARGS)
     # load_model(model)
     optimizer = optim.Adam(model.parameters(), lr=1e-4)
     optimizer = ScheduledOptim(
-        optimizer, d_model=args.embedding_size, n_warmup_steps=4000)
+        optimizer, d_model=ARGS.embedding_size, n_warmup_steps=4000)
     maxAcc = 0
     maxC = 0
     maxAcc2 = 0
@@ -225,7 +225,7 @@ def train():
         #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
         model = nn.DataParallel(model, device_ids=[0, 1])
-    antimask = to_torch_tensor(get_anti_mask(args.CodeLen))
+    antimask = to_torch_tensor(get_anti_mask(ARGS.CodeLen))
     # model.to()
     for epoch in range(100000):
         j = 0
@@ -244,7 +244,7 @@ def train():
                     print("find better acc " + str(maxAcc2))
                     save_model(model.module)
             antimask2 = antimask.unsqueeze(0).repeat(
-                args.batch_size, 1, 1).unsqueeze(1)
+                ARGS.batch_size, 1, 1).unsqueeze(1)
             model = model.train()
             for i in range(len(dBatch)):
                 dBatch[i] = to_torch_tensor(dBatch[i])
@@ -291,7 +291,7 @@ class SearchNode:
         self.finish = False
         self.unum = 0
         self.parent = np.zeros(
-            [args.NlLen + args.CodeLen, args.NlLen + args.CodeLen])
+            [ARGS.NlLen + ARGS.CodeLen, ARGS.NlLen + ARGS.CodeLen])
         # self.parent[args.NlLen]
         self.expanded = None
         #self.ruledict = ds.rrdict
@@ -371,17 +371,17 @@ class SearchNode:
 
     def checkapply(self, rule: int, ds: SumDataset) -> bool:
         if rule >= len(ds.rule_dict):
-            if self.expanded.name == 'root' and rule - len(ds.rule_dict) >= args.NlLen:
-                if rule - len(ds.rule_dict) - args.NlLen not in self.idmap:
+            if self.expanded.name == 'root' and rule - len(ds.rule_dict) >= ARGS.NlLen:
+                if rule - len(ds.rule_dict) - ARGS.NlLen not in self.idmap:
                     return False
-                if self.idmap[rule - len(ds.rule_dict) - args.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
+                if self.idmap[rule - len(ds.rule_dict) - ARGS.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
                     return False
-                if '.0' in self.idmap[rule - len(ds.rule_dict) - args.NlLen].getTreestr():
+                if '.0' in self.idmap[rule - len(ds.rule_dict) - ARGS.NlLen].getTreestr():
                     return False
                 #print(self.idmap[rule - len(ds.ruledict)].name)
                 # assert(0)
                 return True
-            if rule - len(ds.rule_dict) >= args.NlLen:
+            if rule - len(ds.rule_dict) >= ARGS.NlLen:
                 return False
             idx = rule - len(ds.rule_dict)
             if idx not in self.idmap:
@@ -422,8 +422,8 @@ class SearchNode:
         else:
             print('copy2', self.idmap[rule - len(ds.ruledict)].name)'''
         if rule >= len(ds.rule_dict):
-            if rule >= len(ds.rule_dict) + args.NlLen:
-                idx = rule - len(ds.rule_dict) - args.NlLen
+            if rule >= len(ds.rule_dict) + ARGS.NlLen:
+                idx = rule - len(ds.rule_dict) - ARGS.NlLen
             else:
                 idx = rule - len(ds.rule_dict)
             self.actlist.append('copy-' + self.idmap[idx].name)
@@ -431,8 +431,8 @@ class SearchNode:
             self.actlist.append(ds.rule_reverse_dict[rule])
         if rule >= len(ds.rule_dict):
             nodesid = rule - len(ds.rule_dict)
-            if nodesid >= args.NlLen:
-                nodesid = nodesid - args.NlLen
+            if nodesid >= ARGS.NlLen:
+                nodesid = nodesid - ARGS.NlLen
                 nnode = Node(self.idmap[nodesid].name, nodesid)
                 nnode.fatherlistID = len(self.state)
                 nnode.father = self.expanded
@@ -481,15 +481,15 @@ class SearchNode:
                     nnode.father = self.expanded
                     nnode.fatherlistID = len(self.state)
         # self.parent.append(self.expanded.fatherlistID)
-        self.parent[args.NlLen + len(self.depth),
-                    args.NlLen + self.expanded.fatherlistID] = 1
-        if rule >= len(ds.rule_dict) + args.NlLen:
-            self.parent[args.NlLen + len(self.depth),
-                        rule - len(ds.rule_dict) - args.NlLen] = 1
+        self.parent[ARGS.NlLen + len(self.depth),
+                    ARGS.NlLen + self.expanded.fatherlistID] = 1
+        if rule >= len(ds.rule_dict) + ARGS.NlLen:
+            self.parent[ARGS.NlLen + len(self.depth),
+                        rule - len(ds.rule_dict) - ARGS.NlLen] = 1
         elif rule >= len(ds.rule_dict):
-            self.parent[args.NlLen +
+            self.parent[ARGS.NlLen +
                         len(self.depth), rule - len(ds.rule_dict)] = 1
-        if rule >= len(ds.rule_dict) + args.NlLen:
+        if rule >= len(ds.rule_dict) + ARGS.NlLen:
             self.state.append(ds.rule_dict['start -> copyword2'])
         elif rule >= len(ds.rule_dict):
             self.state.append(ds.rule_dict['start -> copyword'])
@@ -524,7 +524,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 
     logger.info('starting beam search')
 
-    batch_size = len(input_nl[0].view(-1, args.NlLen))
+    batch_size = len(input_nl[0].view(-1, ARGS.NlLen))
 
     reversed_dict_code_vocab = {}
     for word in sum_dataset.CODE_VOCAB:
@@ -546,11 +546,11 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
         his_tree: Dict[int, Dict[str, int]] = {}
 
         for i in range(batch_size):
-            beams[i] = [SearchNode(sum_dataset, sum_dataset.nl[args.batch_size * k + i])]
+            beams[i] = [SearchNode(sum_dataset, sum_dataset.nl[ARGS.batch_size * k + i])]
             his_tree[i] = {}
 
         index = 0
-        antimask = to_torch_tensor(get_anti_mask(args.CodeLen))
+        antimask = to_torch_tensor(get_anti_mask(ARGS.CodeLen))
         endnum = {}
         continueSet = {}
         tansV: Dict[int, List[SearchNode]] = {}
@@ -562,7 +562,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
             if len(endnum) == batch_size:
                 break
 
-            if index >= args.CodeLen:
+            if index >= ARGS.CodeLen:
                 break
 
             for ba in range(batch_size):
@@ -585,7 +585,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     word = beams[ba][p]
                     word.selectExpandedNode()
 
-                    if word.expanded == None or len(word.state) >= args.CodeLen:
+                    if word.expanded == None or len(word.state) >= ARGS.CodeLen:
                         word.finish = True
                         ansV.setdefault(ba, []).append(word)
                     else:
@@ -595,7 +595,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         tmpnl8.append(input_nl[8][ba].data.cpu().numpy())
                         tmpnl9.append(input_nl[9][ba].data.cpu().numpy())
                         a, b, c, d = word.getRuleEmbedding(
-                            sum_dataset, sum_dataset.nl[args.batch_size * k + ba])
+                            sum_dataset, sum_dataset.nl[ARGS.batch_size * k + ba])
                         tmprule.append(a)
                         tmprulechild.append(b)
                         tmpruleparent.append(c)
@@ -719,18 +719,18 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 
 def test():
 
-    dev_set = SumDataset(args, "test")
+    dev_set = SumDataset(ARGS, "test")
     rulead_tensor = to_torch_tensor(pickle.load(open("rulead.pkl", "rb")))
     rulead = rulead_tensor.float().unsqueeze(0).repeat(2, 1, 1)
 
-    args.cnum = rulead.size(1)
-    args.Nl_Vocsize = len(dev_set.NL_VOCAB)
-    args.Code_Vocsize = len(dev_set.CODE_VOCAB)
-    args.Vocsize = len(dev_set.CHAR_VOCAB)
-    args.rulenum = len(dev_set.rule_dict) + args.NlLen
-    args.batch_size = 12
+    ARGS.cnum = rulead.size(1)
+    ARGS.Nl_Vocsize = len(dev_set.NL_VOCAB)
+    ARGS.Code_Vocsize = len(dev_set.CODE_VOCAB)
+    ARGS.Vocsize = len(dev_set.CHAR_VOCAB)
+    ARGS.rulenum = len(dev_set.rule_dict) + ARGS.NlLen
+    ARGS.batch_size = 12
 
-    model = Decoder(args)
+    model = Decoder(ARGS)
     if torch.cuda.is_available():
         model = model.cuda()
     model = model.eval()
@@ -1125,12 +1125,12 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
 
     logger.info('starting solve_one()')
 
-    args.batch_size = 20
-    dev_set = SumDataset(args, "test")
+    ARGS.batch_size = 20
+    dev_set = SumDataset(ARGS, "test")
     dev_set.preProcessOne(data_buggy_locations)
 
     indexs = 0
-    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
+    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=ARGS.batch_size,
                                             shuffle=False, drop_last=False, num_workers=0)
     savedata = []
     patch = {}
@@ -1140,9 +1140,9 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             continue
 
         ans = BeamSearch((x[0], x[1], None, None, None, None, None, None,
-                         x[2], x[3]), dev_set, model, 100, args.batch_size, indexs)
+                         x[2], x[3]), dev_set, model, 100, ARGS.batch_size, indexs)
         for i in range(len(ans)):
-            currid = indexs * args.batch_size + i
+            currid = indexs * ARGS.batch_size + i
             tmp_data_list = list()
             tmp_data_file = os.path.join(
                 "d4j", data_buggy_locations[currid]["bugid"], f"temp-{currid}.json")
@@ -1205,12 +1205,12 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
 def solveone2(data, model):
     #os.environ["CUDA_VISIBLE_DEVICES"]="2, 3"
     #assert(len(data) <= 40)
-    args.batch_size = 20
-    dev_set = SumDataset(args, "test")
+    ARGS.batch_size = 20
+    dev_set = SumDataset(ARGS, "test")
     dev_set.preProcessOne(data)  # x = dev_set.preProcessOne(treestr, prob)
     #dev_set.nl = [treestr.split()]
     indexs = 0
-    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=args.batch_size,
+    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=ARGS.batch_size,
                                             shuffle=False, drop_last=False, num_workers=0)
     savedata = []
     patch = {}
@@ -1226,10 +1226,10 @@ def solveone2(data, model):
         #assert(np.array_equal(x[3][0], dev_set.datam[9][4]))
         #print(data[indexs]['mode'], data[indexs]['oldcode'])
         ans = BeamSearch((x[0], x[1], None, None, None, None, None, None,
-                         x[2], x[3]), dev_set, model, 60, args.batch_size, indexs)
+                         x[2], x[3]), dev_set, model, 60, ARGS.batch_size, indexs)
         print('debug', len(ans[0]))
         for i in range(len(ans)):
-            currid = indexs * args.batch_size + i
+            currid = indexs * ARGS.batch_size + i
             subroot = data[currid]['subroot']
             vardic = data[currid]['vardic']
             typedic = data[currid]['typedic']
