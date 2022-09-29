@@ -354,7 +354,7 @@ class SearchNode:
             if nodesid >= args.NlLen:
                 nodesid = nodesid - args.NlLen
                 nnode = Node(self.idmap[nodesid].name, nodesid)
-                nnode.fatherlistID = len(self.state)
+                nnode.father_list_ID = len(self.state)
                 nnode.father = self.expanded
                 nnode.fname = "-" + self.printTree(self.idmap[nodesid])
                 self.expanded.child.append(nnode)
@@ -380,7 +380,7 @@ class SearchNode:
                         nnnode = Node(currnode.child[0].name, -1)
                     nnnode.father = self.expanded
                     self.expanded.child.append(nnnode)
-                    nnnode.fatherlistID = len(self.state)
+                    nnnode.father_list_ID = len(self.state)
                 self.expanded.expanded = True
         else:
             rules = ds.rrdict[rule]
@@ -399,9 +399,9 @@ class SearchNode:
                     #nnode = Node(x, self.expanded.depth + 1)
                     self.expanded.child.append(nnode)
                     nnode.father = self.expanded
-                    nnode.fatherlistID = len(self.state)
+                    nnode.father_list_ID = len(self.state)
         #self.parent.append(self.expanded.fatherlistID)
-        self.parent[args.NlLen + len(self.depth), args.NlLen + self.expanded.fatherlistID] = 1
+        self.parent[args.NlLen + len(self.depth), args.NlLen + self.expanded.father_list_ID] = 1
         if rule >= len(ds.ruledict) + args.NlLen:
             self.parent[args.NlLen + len(self.depth), rule - len(ds.ruledict) - args.NlLen] = 1
         elif rule >= len(ds.ruledict):

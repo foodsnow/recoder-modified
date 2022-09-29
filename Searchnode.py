@@ -179,7 +179,7 @@ class Node:
         self.child: List[Node] = []
         self.sibling = None
         self.expanded = False
-        self.fatherlistID = 0
+        self.father_list_ID = 0
         self.treestr = ""
         self.block = ""
         self.num = 0
@@ -347,7 +347,7 @@ class SearchNode:
                              self.expanded.depth + 1)
             self.expanded.child.append(nnode)
             nnode.father = self.expanded
-            nnode.fatherlistID = len(self.state)
+            nnode.father_list_ID = len(self.state)
         else:
             rules = self.ruledict[rule]
             # print(rules)
@@ -365,7 +365,7 @@ class SearchNode:
                     #nnode = Node(x, self.expanded.depth + 1)
                     self.expanded.child.append(nnode)
                     nnode.father = self.expanded
-                    nnode.fatherlistID = len(self.state)
+                    nnode.father_list_ID = len(self.state)
         # self.parent.append(self.expanded.fatherlistID)
         self.parent[args.NlLen + len(self.depth),
                     args.NlLen + self.expanded.fatherlistID] = 1

@@ -437,7 +437,7 @@ class SearchNode:
             if node_id >= ARGS.NlLen:
                 node_id = node_id - ARGS.NlLen
                 temp_node = Node(self.id_map[node_id].name, node_id)
-                temp_node.fatherlistID = len(self.states)
+                temp_node.father_list_ID = len(self.states)
                 temp_node.father = self.expanded_node
                 temp_node.fname = "-" + self.printTree(self.id_map[node_id])
                 self.expanded_node.child.append(temp_node)
@@ -445,7 +445,7 @@ class SearchNode:
                 temp_node = self.id_map[node_id]
                 if temp_node.name == self.expanded_node.name:
                     self.copynode(self.expanded_node, temp_node)
-                    temp_node.fatherlistID = len(self.states)
+                    temp_node.father_list_ID = len(self.states)
                 else:
                     if temp_node.name == 'VariableDeclarator':
                         currnode = -1
@@ -463,7 +463,7 @@ class SearchNode:
                         nnnode = Node(currnode.child[0].name, -1)
                     nnnode.father = self.expanded_node
                     self.expanded_node.child.append(nnnode)
-                    nnnode.fatherlistID = len(self.states)
+                    nnnode.father_list_ID = len(self.states)
                 self.expanded_node.expanded = True
 
         else:
@@ -478,9 +478,9 @@ class SearchNode:
                     temp_node = Node(x, -1)
                     self.expanded_node.child.append(temp_node)
                     temp_node.father = self.expanded_node
-                    temp_node.fatherlistID = len(self.states)
+                    temp_node.father_list_ID = len(self.states)
 
-        self.parent[ARGS.NlLen + len(self.depths), ARGS.NlLen + self.expanded_node.fatherlistID] = 1
+        self.parent[ARGS.NlLen + len(self.depths), ARGS.NlLen + self.expanded_node.father_list_ID] = 1
 
         if rule >= len(ds.rule_dict) + ARGS.NlLen:
             self.parent[ARGS.NlLen + len(self.depths), rule - len(ds.rule_dict) - ARGS.NlLen] = 1
