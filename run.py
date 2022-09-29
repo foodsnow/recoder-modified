@@ -64,7 +64,6 @@ def load_model(model, dirs='checkpointSearch/'):
     model.load_state_dict(torch.load(dirs + 'best_model.ckpt', map_location=device))
 
 
-use_cuda = torch.cuda.is_available()  # True#True#torch.cuda.is_available()
 onelist = ['root', 'body', 'statements', 'block', 'arguments',
            'initializers', 'parameters', 'case', 'cases', 'selectors']
 
@@ -77,7 +76,7 @@ def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
     else:
         assert isinstance(tensor, torch.Tensor)
 
-    if use_cuda:
+    if torch.cuda.is_available():
         tensor = tensor.cuda()
 
     return tensor
@@ -203,7 +202,7 @@ def train():
     maxAcc2 = 0
     maxC2 = 0
     maxL = 1e10
-    if use_cuda:
+    if torch.cuda.is_available():
         print('using GPU')
         #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
