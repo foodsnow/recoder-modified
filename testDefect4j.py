@@ -702,8 +702,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
             # inner class
             if '$' in buggy_class_name:
-                buggy_class_name = buggy_class_name[:buggy_class_name.index(
-                    '$')]
+                buggy_class_name = buggy_class_name[:buggy_class_name.index('$')]
             s = buggy_class_name
 
             print('path', s)

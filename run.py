@@ -1152,7 +1152,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             if os.path.exists("result/%s.json" % bug_id):
                 classes_content: list = json.load(open("result/%s.json" % bug_id, 'r'))
             else:
-                classes_content:list = []
+                classes_content: list = []
             classes_content.extend(json.load(open("temp.json", 'r')))
 
             reverse_dict_classes_content = {}
@@ -1161,29 +1161,33 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                 if 'package_name' in class_content:
                     reverse_dict_classes_content[class_content['package_name'] + "." + class_content['filename']] = class_content
 
-            vardic = data_buggy_locations[current_id]['vardic']
-            typedic = data_buggy_locations[current_id]['typedic']
-            classname = data_buggy_locations[current_id]['classname']
-            mode = data_buggy_locations[current_id]['mode']
-            rrdict = {}
-            for x in vardic:
-                rrdict[vardic[x]] = x
+            var_dict = data_buggy_locations[current_id]['vardic']
+            type_dict = data_buggy_locations[current_id]['typedic']
+            class_name: str = data_buggy_locations[current_id]['classname']
+            mode: int = data_buggy_locations[current_id]['mode']
+
+            reverse_dict_var_dict = {}
+            for x in var_dict:
+                reverse_dict_var_dict[var_dict[x]] = x
+
             for j in range(len(result_beam_search[i])):
                 if j > 60 and bug_id != 'Lang-33':
                     break
+
                 mode, result_beam_search[i][j].root_node = extarctmode(result_beam_search[i][j].root_node)
                 if result_beam_search[i][j].root_node is None:
                     continue
+
                 applyoperater(result_beam_search[i][j], sub_root)
-                an = replaceVar(result_beam_search[i][j].solveroot, rrdict)
+                an = replaceVar(result_beam_search[i][j].solveroot, reverse_dict_var_dict)
                 if not an:
                     continue
                 try:
-                    tcodes = solveUnknown(
-                        result_beam_search[i][j], vardic, typedic, reverse_dict_classes_content, classname, mode)
+                    tcodes = solveUnknown(result_beam_search[i][j], var_dict, type_dict, reverse_dict_classes_content, class_name, mode)
                 except Exception as e:
                     traceback.print_exc()
                     tcodes = []
+
                 for code in tcodes:
                     prob = result_beam_search[i][j].prob
                     if code.split(" ")[0] != 'root':
