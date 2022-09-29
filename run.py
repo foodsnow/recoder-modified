@@ -95,13 +95,6 @@ def get_anti_mask(size: int) -> np.ndarray:
     return anti_mask
 
 
-def getAdMask(size):
-    ans = np.zeros([size, size])
-    for i in range(size - 1):
-        ans[i, i + 1] = 1.0
-    return ans
-
-
 def get_rule_pkl(sum_dataset: SumDataset) -> Tuple[np.array, np.array]:
 
     input_rule_parent = []

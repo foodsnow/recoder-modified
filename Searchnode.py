@@ -69,13 +69,6 @@ def getAntiMask(size):
     return ans
 
 
-def getAdMask(size):
-    ans = np.zeros([size, size])
-    for i in range(size - 1):
-        ans[i, i + 1] = 1.0
-    return ans
-
-
 def train():
     train_set = SumDataset(args, "train")
     # print(len(train_set.data[0]))
