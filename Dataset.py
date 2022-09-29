@@ -214,15 +214,17 @@ class SumDataset(data.Dataset):
 
             node_possibilities = self.pad_seq(node_possibilities, self.Nl_Len)
 
+            # result of tree_as_str_with_var.split():
+            # ['MethodDeclaration', 'modifiers', 'public_ter', '^', '^', 'return_type', 'ReferenceType', ...]
             tokens_of_tree_as_str_with_var = tree_as_str_with_var.split()
             Nl.append(tokens_of_tree_as_str_with_var)
 
             node_root = Node('root', 0)
-            current_node = node_root
-            idx = 1
             nltmp: List[str] = ['root']    # nl without terminal
             nodes: List[Node] = [node_root]      # nodes without terminal
-
+            
+            current_node = node_root
+            idx = 1
             for token in tokens_of_tree_as_str_with_var[1:]:
                 if token != "^":
                     temp_node = Node(token, idx)
