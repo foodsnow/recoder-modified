@@ -303,20 +303,22 @@ class SearchNode:
 
         root = Node('root', 0)
         idx = 1
-        self.idmap = {}
-        self.idmap[0] = root
+        self.id_map: Dict[int, Node] = {}
+        self.id_map[0] = root
+
         currnode = root
         self.act_list: List[str] = []
         for x in nl[1:]:
             if x != "^":
                 nnode = Node(x, idx)
-                self.idmap[idx] = nnode
+                self.id_map[idx] = nnode
                 idx += 1
                 nnode.father = currnode
                 currnode.child.append(nnode)
                 currnode = nnode
             else:
                 currnode = currnode.father
+
         self.ever_tree_path = []
         self.solveroot: Node = None
 
@@ -374,11 +376,11 @@ class SearchNode:
     def checkapply(self, rule: int, ds: SumDataset) -> bool:
         if rule >= len(ds.rule_dict):
             if self.expanded_node.name == 'root' and rule - len(ds.rule_dict) >= ARGS.NlLen:
-                if rule - len(ds.rule_dict) - ARGS.NlLen not in self.idmap:
+                if rule - len(ds.rule_dict) - ARGS.NlLen not in self.id_map:
                     return False
-                if self.idmap[rule - len(ds.rule_dict) - ARGS.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
+                if self.id_map[rule - len(ds.rule_dict) - ARGS.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
                     return False
-                if '.0' in self.idmap[rule - len(ds.rule_dict) - ARGS.NlLen].getTreestr():
+                if '.0' in self.id_map[rule - len(ds.rule_dict) - ARGS.NlLen].getTreestr():
                     return False
                 #print(self.idmap[rule - len(ds.ruledict)].name)
                 # assert(0)
@@ -386,10 +388,10 @@ class SearchNode:
             if rule - len(ds.rule_dict) >= ARGS.NlLen:
                 return False
             idx = rule - len(ds.rule_dict)
-            if idx not in self.idmap:
+            if idx not in self.id_map:
                 return False
-            if self.idmap[idx].name != self.expanded_node.name:
-                if self.idmap[idx].name in ['VariableDeclarator', 'FormalParameter', 'InferredFormalParameter']:
+            if self.id_map[idx].name != self.expanded_node.name:
+                if self.id_map[idx].name in ['VariableDeclarator', 'FormalParameter', 'InferredFormalParameter']:
                     return True
                 #print(self.idmap[idx].name, self.expanded.name, idx)
                 return False
@@ -425,7 +427,7 @@ class SearchNode:
                 idx = rule - len(ds.rule_dict) - ARGS.NlLen
             else:
                 idx = rule - len(ds.rule_dict)
-            self.act_list.append('copy-' + self.idmap[idx].name)
+            self.act_list.append('copy-' + self.id_map[idx].name)
         else:
             self.act_list.append(ds.rule_reverse_dict[rule])
 
@@ -434,13 +436,13 @@ class SearchNode:
 
             if nodesid >= ARGS.NlLen:
                 nodesid = nodesid - ARGS.NlLen
-                nnode = Node(self.idmap[nodesid].name, nodesid)
+                nnode = Node(self.id_map[nodesid].name, nodesid)
                 nnode.fatherlistID = len(self.states)
                 nnode.father = self.expanded_node
-                nnode.fname = "-" + self.printTree(self.idmap[nodesid])
+                nnode.fname = "-" + self.printTree(self.id_map[nodesid])
                 self.expanded_node.child.append(nnode)
             else:
-                nnode = self.idmap[nodesid]
+                nnode = self.id_map[nodesid]
                 if nnode.name == self.expanded_node.name:
                     self.copynode(self.expanded_node, nnode)
                     nnode.fatherlistID = len(self.states)
