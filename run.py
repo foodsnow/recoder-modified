@@ -332,7 +332,7 @@ class SearchNode:
     def select_expanded_node(self):
         self.expanded = self.select_node(self.root_node)
 
-    def getRuleEmbedding(self, ds: SumDataset, nl):
+    def get_rule_embedding(self, ds: SumDataset, nl):
         inputruleparent = []
         inputrulechild = []
         for x in self.state:
@@ -593,7 +593,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         temp_nl_8.append(input_nl[8][i_batch_size].data.cpu().numpy())
                         temp_nl_9.append(input_nl[9][i_batch_size].data.cpu().numpy())
 
-                        a, b, c, d = word.getRuleEmbedding(sum_dataset, sum_dataset.nl[ARGS.batch_size * k + i_batch_size])
+                        a, b, c, d = word.get_rule_embedding(sum_dataset, sum_dataset.nl[ARGS.batch_size * k + i_batch_size])
 
                         temp_rule.append(a)
                         temp_rule_child.append(b)
