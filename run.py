@@ -409,14 +409,18 @@ class SearchNode:
                 return False
         return True
 
-    def copynode(self, newnode, original):
-        for x in original.child:
-            nnode = Node(x.name, -1)
-            nnode.father = newnode
-            nnode.expanded = True
-            newnode.child.append(nnode)
-            self.copynode(nnode, x)
-        return
+    def copy_node(self, new_node: Node, original: Node):
+        '''
+        NOTE: mutates new_node
+        NOTE: recursive
+        '''
+
+        for child in original.child:
+            node = Node(child.name, -1)
+            node.father = new_node
+            node.expanded = True
+            new_node.child.append(node)
+            self.copy_node(node, child)
 
     def apply_rule(self, rule: int, ds: SumDataset) -> bool:
 
@@ -444,7 +448,7 @@ class SearchNode:
             else:
                 temp_node = self.id_map[node_id]
                 if temp_node.name == self.expanded_node.name:
-                    self.copynode(self.expanded_node, temp_node)
+                    self.copy_node(self.expanded_node, temp_node)
                     temp_node.father_list_ID = len(self.states)
                 else:
                     if temp_node.name == 'VariableDeclarator':
