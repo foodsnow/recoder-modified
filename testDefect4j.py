@@ -2,9 +2,9 @@
 # from graphviz import Digraph
 
 from copy import deepcopy
-from typing import Union, List
+from typing import Union, List, Tuple, Dict
 from repair import save_code_as_file
-from run import *
+import run as run_py
 from Searchnode import Node
 from stringfycode import stringfyRoot
 from tqdm import tqdm
@@ -518,7 +518,7 @@ def findSubtree(root, subroot):
 def repair(treeroot, troot, oldcode, filepath, filepath2, patchpath, patchnum, isIf, mode, subroot, vardic, typedic, idxs, testmethods, idss, classname):
     global after_code
     global pre_code
-    actionlist = solve_one(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
+    actionlist = run_py.solve_one(troot.printTreeWithVar(troot, vardic), troot.getTreeProb(
         troot), model, subroot, vardic, typedic, idxs, idss, classname, mode)
     for x in actionlist:
         if x.strip() in patch_dict:
@@ -649,7 +649,7 @@ IDS_V1_2 = [
 logger.info('Starting')
 
 logger.info('Loading decoder module')
-decoder_model = test()
+decoder_model = run_py.test()
 logger.info('Decoder model has been loaded')
 
 user_given_bug_id = sys.argv[1]
@@ -811,7 +811,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         print(data_buggy_locations)
 
-        ans = solve_one(data_buggy_locations, decoder_model)
+        ans = run_py.solve_one(data_buggy_locations, decoder_model)
 
         with open(f"d4j/{user_given_bug_id}/{user_given_bug_id}.json", "w") as f:
             json.dump(ans, f)
