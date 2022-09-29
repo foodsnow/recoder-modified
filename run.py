@@ -314,7 +314,7 @@ class SearchNode:
                 currnode = nnode
             else:
                 currnode = currnode.father
-        self.everTreepath = []
+        self.ever_tree_path = []
         self.solveroot: Node = None
 
     def select_node(self, root: Node) -> Node:
@@ -346,11 +346,13 @@ class SearchNode:
                 input_rule_parent.append(arg_ds.get_embedding([rule[0]], arg_ds.CODE_VOCAB)[0])
                 input_rule_child.append(arg_ds.pad_seq(arg_ds.get_embedding(rule[2:], arg_ds.CODE_VOCAB), arg_ds.Char_Len))
 
-        tmp = [arg_ds.pad_seq(arg_ds.get_embedding(['start'], arg_ds.CODE_VOCAB), 10)] + self.everTreepath
-        input_rule_child = arg_ds.pad_list(tmp, arg_ds.Code_Len, 10)
+        temp_var = [arg_ds.pad_seq(arg_ds.get_embedding(['start'], arg_ds.CODE_VOCAB), 10)] + self.ever_tree_path
+
+        input_rule_child = arg_ds.pad_list(temp_var, arg_ds.Code_Len, 10)
         input_rule = arg_ds.pad_seq(self.states, arg_ds.Code_Len)
         input_rule_parent = arg_ds.pad_seq(input_rule_parent, arg_ds.Code_Len)
         input_depth = arg_ds.pad_list(self.depth, arg_ds.Code_Len, 40)
+
         return input_rule, input_rule_child, input_rule_parent, input_depth
 
     def getTreePath(self, ds: SumDataset):
@@ -360,8 +362,8 @@ class SearchNode:
             tmppath.append(node.name.lower())
             node = node.father
         tmp = ds.pad_seq(ds.get_embedding(tmppath, ds.CODE_VOCAB), 10)
-        self.everTreepath.append(tmp)
-        return ds.pad_list(self.everTreepath, ds.Code_Len, 10)
+        self.ever_tree_path.append(tmp)
+        return ds.pad_list(self.ever_tree_path, ds.Code_Len, 10)
 
     def checkapply(self, rule: int, ds: SumDataset) -> bool:
         if rule >= len(ds.rule_dict):
