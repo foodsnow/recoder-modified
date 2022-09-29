@@ -828,13 +828,20 @@ def replace_var(node: Node, reverse_dict_var_dict: Dict, place=False):
     return ans
 
 
-def get_unknown(root: Node) -> List[Node]:
-    if root.name == 'unknown':
-        return [root]
-    ans = []
-    for x in root.child:
-        ans.extend(get_unknown(x))
-    return ans
+def get_unknown(node: Node) -> List[Node]:
+    '''
+    Recursively down to all children,
+    get all Node's with .name attribute equal to `unknown`
+    '''
+
+    if node.name == 'unknown':
+        return [node]
+
+    unknown_nodes = []
+    for child in node.child:
+        unknown_nodes.extend(get_unknown(child))
+
+    return unknown_nodes
 
 
 def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
