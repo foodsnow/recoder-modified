@@ -226,17 +226,17 @@ class SumDataset(data.Dataset):
             # traverse the tree and do sth
             current_node = node_root
             node_id = 1
-            for token in tokens_of_tree_as_str_with_var[1:]:
+            for token_as_str in tokens_of_tree_as_str_with_var[1:]:
 
-                if token != "^":
-                    token_as_node = SimpleNode(token, node_id)
+                if token_as_str != "^":
+                    token_as_node = SimpleNode(token_as_str, node_id)
                     node_id += 1
 
                     token_as_node.father = current_node
                     current_node.child.append(token_as_node)
                     current_node = token_as_node
 
-                    tokens_without_jumps.append(token)
+                    tokens_without_jumps.append(token_as_str)
                     nodes_without_jumps.append(token_as_node)
 
                 else:
