@@ -1191,9 +1191,11 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     continue
 
                 apply_operator(result_beam_search[i][j], sub_root)
-                an = replace_var(result_beam_search[i][j].solveroot, reverse_dict_var_dict)
-                if not an:
+                replaced_all_vars = replace_var(result_beam_search[i][j].solveroot, reverse_dict_var_dict)
+
+                if not replaced_all_vars:
                     continue
+
                 try:
                     tcodes = solveUnknown(result_beam_search[i][j], var_dict, type_dict, reverse_dict_classes_content, class_name, mode)
                 except Exception as e:
