@@ -214,8 +214,8 @@ class SumDataset(data.Dataset):
 
             node_possibilities = self.pad_seq(node_possibilities, self.Nl_Len)
 
-            tree_as_str_with_var_tokens = tree_as_str_with_var.split()
-            Nl.append(tree_as_str_with_var_tokens)
+            tokens_of_tree_as_str_with_var = tree_as_str_with_var.split()
+            Nl.append(tokens_of_tree_as_str_with_var)
 
             node_root = Node('root', 0)
             current_node = node_root
@@ -223,7 +223,7 @@ class SumDataset(data.Dataset):
             nltmp: List[str] = ['root']    # nl without terminal
             nodes: List[Node] = [node_root]      # nodes without terminal
 
-            for token in tree_as_str_with_var_tokens[1:]:
+            for token in tokens_of_tree_as_str_with_var[1:]:
                 if token != "^":
                     temp_node = Node(token, idx)
                     idx += 1
@@ -259,13 +259,13 @@ class SumDataset(data.Dataset):
                         nladcol.append(s.id)
                         nladdata.append(1)
 
-            tree_as_str_with_var_tokens = nltmp
+            tokens_of_tree_as_str_with_var = nltmp
 
-            tree_as_str_with_var_tokens = nltmp
-            embeddings = self.Get_Em(tree_as_str_with_var_tokens, self.NL_VOCAB)
+            tokens_of_tree_as_str_with_var = nltmp
+            embeddings = self.Get_Em(tokens_of_tree_as_str_with_var, self.NL_VOCAB)
             inputnls = self.pad_seq(embeddings, self.Nl_Len)
             nlad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
-            inputnlchar = self.Get_Char_Em(tree_as_str_with_var_tokens)
+            inputnlchar = self.Get_Char_Em(tokens_of_tree_as_str_with_var)
 
             for j in range(len(inputnlchar)):
                 inputnlchar[j] = self.pad_seq(inputnlchar[j], self.Char_Len)
