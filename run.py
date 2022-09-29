@@ -787,8 +787,7 @@ def apply_operator(search_node: SearchNode, sub_root: Node):
             elif node.name == 'operator' or node.name == 'Literal' or node.name == 'BasicType':
                 type = 'valid'
             else:
-                print(node.name)
-                assert (0)
+                assert False, f'should not happen. node name: {node.name}'
 
             idx = node.father.child.index(node)
             node.father.child[idx] = child
