@@ -155,6 +155,9 @@ class SumDataset(data.Dataset):
 
     def pad_seq(self, sequence: List[int], max_len: int) -> List[int]:
         '''
+        Truncate sequence to max_len,
+        if size is smaller than max_len, fill with self.PAD_token
+
         NOTE mutates sequence
         '''
 
