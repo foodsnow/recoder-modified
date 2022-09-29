@@ -743,7 +743,8 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
 def test():
 
     dev_set = SumDataset(args, "test")
-    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
+    rulead_tensor = to_torch_tensor(pickle.load(open("rulead.pkl", "rb")))
+    rulead = rulead_tensor.float().unsqueeze(0).repeat(2, 1, 1)
 
     args.cnum = rulead.size(1)
     args.Nl_Vocsize = len(dev_set.NL_VOCAB)
