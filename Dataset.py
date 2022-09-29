@@ -220,6 +220,8 @@ class SumDataset(data.Dataset):
         Get embedding, character embedding, 
         '''
 
+        logger.info('starting to pre-process data about buggy location')
+
         inputNl = []
         inputNlchar = []
         inputPos = []
