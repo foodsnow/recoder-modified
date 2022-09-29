@@ -262,7 +262,7 @@ def train():
 class SearchNode:
     def __init__(self, sum_dataset: SumDataset, nl):
         self.states: List[int] = [sum_dataset.rule_dict["start -> root"]]
-        self.prob = 0
+        self.prob: int = 0
         self.aprob = 0
         self.bprob = 0
         self.root_node: Node = Node("root", 2)
