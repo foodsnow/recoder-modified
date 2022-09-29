@@ -116,7 +116,7 @@ def get_rule_pkl(sum_dataset: SumDataset) -> Tuple[np.array, np.array]:
         rule = sum_dataset.rule_reverse_dict[i].strip().lower().split()
         input_rule_child.append(sum_dataset.pad_seq(sum_dataset.get_embedding(rule[2:], sum_dataset.CODE_VOCAB), sum_dataset.Char_Len))
         input_rule_parent.append(sum_dataset.CODE_VOCAB[rule[0].lower()])
-    
+
     return np.array(input_rule_parent), np.array(input_rule_child)
 
 
@@ -531,10 +531,11 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
         reversed_dict_code_vocab[sum_dataset.CODE_VOCAB[word]] = word
 
     temp_ast = get_AST_pkl(sum_dataset)
-    a, b = get_rule_pkl(sum_dataset)
 
-    tmpf = to_torch_tensor(a).unsqueeze(0).repeat(2, 1).long()
-    tmpc = to_torch_tensor(b).unsqueeze(0).repeat(2, 1, 1).long()
+    input_rule_parent, input_rule_child = get_rule_pkl(sum_dataset)
+
+    tmpf = to_torch_tensor(input_rule_parent).unsqueeze(0).repeat(2, 1).long()
+    tmpc = to_torch_tensor(input_rule_child).unsqueeze(0).repeat(2, 1, 1).long()
     rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
     tmpindex = to_torch_tensor(np.arange(len(sum_dataset.rule_dict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = to_torch_tensor(temp_ast).unsqueeze(0).repeat(2, 1, 1).long()
