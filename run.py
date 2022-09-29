@@ -528,8 +528,8 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
     batch_size = len(input_nl[0].view(-1, ARGS.NlLen))
 
     reversed_dict_code_vocab = {}
-    for word in sum_dataset.CODE_VOCAB:
-        reversed_dict_code_vocab[sum_dataset.CODE_VOCAB[word]] = word
+    for word_search_node in sum_dataset.CODE_VOCAB:
+        reversed_dict_code_vocab[sum_dataset.CODE_VOCAB[word_search_node]] = word_search_node
 
     temp_ast = get_AST_pkl(sum_dataset)
 
@@ -582,12 +582,12 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     if i_beam_size >= len(beams[i_batch_size]):
                         continue
 
-                    word: SearchNode = beams[i_batch_size][i_beam_size]
-                    word.select_expanded_node()
+                    word_search_node: SearchNode = beams[i_batch_size][i_beam_size]
+                    word_search_node.select_expanded_node()
 
-                    if word.expanded_node == None or len(word.states) >= ARGS.CodeLen:
-                        word.finish = True
-                        ansV.setdefault(i_batch_size, []).append(word)
+                    if word_search_node.expanded_node == None or len(word_search_node.states) >= ARGS.CodeLen:
+                        word_search_node.finish = True
+                        ansV.setdefault(i_batch_size, []).append(word_search_node)
                     else:
                         valid_num.append(i_beam_size)
 
@@ -597,13 +597,13 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         temp_nl_9.append(input_nl[9][i_batch_size].data.cpu().numpy())
 
                         input_rule, input_rule_child, input_rule_parent, input_depth =\
-                            word.get_rule_embedding(sum_dataset)
+                            word_search_node.get_rule_embedding(sum_dataset)
 
                         temp_rule.append(input_rule)
                         temp_rule_child.append(input_rule_child)
                         temp_rule_parent.append(input_rule_parent)
-                        temp_tree_path.append(word.getTreePath(sum_dataset))
-                        temp_Ad.append(word.parent)
+                        temp_tree_path.append(word_search_node.getTreePath(sum_dataset))
+                        temp_Ad.append(word_search_node.parent)
                         temp_depth.append(input_depth)
 
                 if len(temp_rule) == 0:
@@ -622,7 +622,8 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 temp_nl_8 = np.array(temp_nl_8)
                 temp_nl_9 = np.array(temp_nl_9)
 
-                print(f"before@{index} batch{i_batch_size} x: {word.prob}: {word.getTreestr()} ; {word.act_list}")
+                print(f"before@{index} batch{i_batch_size} x: {word_search_node.prob}: {word_search_node.getTreestr()} ; {word_search_node.act_list}")
+
                 result = decoder_model(
                     to_torch_tensor(temp_nl),
                     to_torch_tensor(temp_nl_ad),
@@ -644,7 +645,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     "test"
                 )
 
-                print(f"after@{index} batch{i_batch_size} x: {word.prob}: {word.getTreestr()} ; {word.act_list}")
+                print(f"after@{index} batch{i_batch_size} x: {word_search_node.prob}: {word_search_node.getTreestr()} ; {word_search_node.act_list}")
                 
                 results = result.data.cpu().numpy()
                 currIndex = 0
@@ -653,7 +654,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 for j in range(beam_size):
                     if j not in valid_num:
                         continue
-                    word = beams[i_batch_size][j]
+                    word_search_node = beams[i_batch_size][j]
                     tmpbeamsize = 0  # beamsize
                     result: np.ndarray[float] = np.negative(
                         results[currIndex, index])
@@ -665,13 +666,13 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                             break
                         if cresult[indexs[i]] == 0:
                             break
-                        input_rule_parent = word.checkapply(indexs[i], sum_dataset)
+                        input_rule_parent = word_search_node.checkapply(indexs[i], sum_dataset)
                         if input_rule_parent:
                             tmpbeamsize += 1
                         else:
                             continue
-                        prob = word.prob + np.log(cresult[indexs[i]])
-                        temp_beam.setdefault(i_batch_size, []).append([prob, indexs[i], word])
+                        prob = word_search_node.prob + np.log(cresult[indexs[i]])
+                        temp_beam.setdefault(i_batch_size, []).append([prob, indexs[i], word_search_node])
 
             for i in range(batch_size):
                 if i in ansV:
@@ -682,37 +683,37 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
             for j in range(batch_size):
                 if j in temp_beam:
                     if j in ansV:
-                        for word in ansV[j]:
-                            temp_beam[j].append([word.prob, -1, word])
+                        for word_search_node in ansV[j]:
+                            temp_beam[j].append([word_search_node.prob, -1, word_search_node])
                     tmp = sorted(temp_beam[j], key=lambda x: x[0], reverse=True)
                     beams[j] = []
-                    for word in tmp:  # x: (prob, index, SearchNode)
+                    for word_search_node in tmp:  # x: (prob, index, SearchNode)
                         if len(beams[j]) >= beam_size:
                             break
-                        if word[1] != -1:
-                            x_prob: float = word[0]
-                            x_rule: int = word[1]
-                            copynode: SearchNode = pickle.loads(pickle.dumps(word[2]))
-                            copynode.applyrule(word[1], sum_dataset)
+                        if word_search_node[1] != -1:
+                            x_prob: float = word_search_node[0]
+                            x_rule: int = word_search_node[1]
+                            copynode: SearchNode = pickle.loads(pickle.dumps(word_search_node[2]))
+                            copynode.applyrule(word_search_node[1], sum_dataset)
                             print(f"copynode {copynode.prob}:  {copynode.getTreestr()}; {copynode.act_list}")
                             tree_str = copynode.getTreestr()
                             if tree_str in his_tree:
                                 continue
-                            copynode.prob = word[0]
+                            copynode.prob = word_search_node[0]
                             beams[j].append(copynode)
                             his_tree[j][tree_str] = 1
                         else:
-                            beams[j].append(word[2])
+                            beams[j].append(word_search_node[2])
             index += 1
 
         for j in range(batch_size):
             visit = {}
             tmp = []
-            for word in tansV[j]:
-                tree_str = word.getTreestr()
-                if tree_str not in visit and word.finish:
+            for word_search_node in tansV[j]:
+                tree_str = word_search_node.getTreestr()
+                if tree_str not in visit and word_search_node.finish:
                     visit[tree_str] = 1
-                    tmp.append(word)
+                    tmp.append(word_search_node)
                 else:
                     continue
             beams[j] = sorted(tmp, key=lambda x: x.prob, reverse=True)[:beam_size]
