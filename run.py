@@ -553,7 +553,6 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
         index = 0
         antimask = to_torch_tensor(get_anti_mask(ARGS.CodeLen))
         end_num = {}
-        continueSet = {}
         tansV: Dict[int, List[SearchNode]] = {}
 
         while True:
