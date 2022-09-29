@@ -69,7 +69,7 @@ onelist = ['root', 'body', 'statements', 'block', 'arguments',
            'initializers', 'parameters', 'case', 'cases', 'selectors']
 
 
-def gVar(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
+def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
     tensor = data
 
     if isinstance(data, np.ndarray):
@@ -121,11 +121,11 @@ def getAstPkl(vds: SumDataset):
 
 
 def evalacc(model, dev_set: SumDataset):
-    antimask = gVar(getAntiMask(args.CodeLen))
+    antimask = to_torch_tensor(getAntiMask(args.CodeLen))
     a, b = getRulePkl(dev_set)
     tmpast = getAstPkl(dev_set)
-    tmpf = gVar(a).unsqueeze(0).repeat(4, 1).long()
-    tmpc = gVar(b).unsqueeze(0).repeat(4, 1, 1).long()
+    tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
+    tmpc = to_torch_tensor(b).unsqueeze(0).repeat(4, 1, 1).long()
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=len(dev_set),
                                             shuffle=False, drop_last=True, num_workers=1)
     model = model.eval()
@@ -133,16 +133,16 @@ def evalacc(model, dev_set: SumDataset):
     tcard = []
     loss = []
     antimask2 = antimask.unsqueeze(0).repeat(len(dev_set), 1, 1).unsqueeze(1)
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
+    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
                   ).float().unsqueeze(0).repeat(4, 1, 1)
-    tmpindex = gVar(np.arange(len(dev_set.ruledict))
+    tmpindex = to_torch_tensor(np.arange(len(dev_set.ruledict))
                     ).unsqueeze(0).repeat(4, 1).long()
-    tmpchar = gVar(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(dev_set.CODE_VOCAB))
+    tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
+    tmpindex2 = to_torch_tensor(np.arange(len(dev_set.CODE_VOCAB))
                      ).unsqueeze(0).repeat(4, 1).long()
     for devBatch in tqdm(devloader):
         for i in range(len(devBatch)):
-            devBatch[i] = gVar(devBatch[i])
+            devBatch[i] = to_torch_tensor(devBatch[i])
         with torch.no_grad():
             l, pre = model(devBatch[0], devBatch[1], devBatch[2], devBatch[3], devBatch[4], devBatch[6], devBatch[7],
                            devBatch[8], devBatch[9], tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, devBatch[5])
@@ -172,17 +172,17 @@ def evalacc(model, dev_set: SumDataset):
 def train():
     train_set = SumDataset(args, "train")
     print(len(train_set.rrdict))
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
+    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
                   ).float().unsqueeze(0).repeat(4, 1, 1)
     args.cnum = rulead.size(1)
     tmpast = getAstPkl(train_set)
     a, b = getRulePkl(train_set)
-    tmpf = gVar(a).unsqueeze(0).repeat(4, 1).long()
-    tmpc = gVar(b).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex = gVar(np.arange(len(train_set.ruledict))
+    tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
+    tmpc = to_torch_tensor(b).unsqueeze(0).repeat(4, 1, 1).long()
+    tmpindex = to_torch_tensor(np.arange(len(train_set.ruledict))
                     ).unsqueeze(0).repeat(4, 1).long()
-    tmpchar = gVar(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(train_set.CODE_VOCAB))
+    tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
+    tmpindex2 = to_torch_tensor(np.arange(len(train_set.CODE_VOCAB))
                      ).unsqueeze(0).repeat(4, 1).long()
     args.Code_Vocsize = len(train_set.CODE_VOCAB)
     args.Nl_Vocsize = len(train_set.NL_VOCAB)
@@ -208,7 +208,7 @@ def train():
         #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
         model = model.cuda()
         model = nn.DataParallel(model, device_ids=[0, 1])
-    antimask = gVar(getAntiMask(args.CodeLen))
+    antimask = to_torch_tensor(getAntiMask(args.CodeLen))
     # model.to()
     for epoch in range(100000):
         j = 0
@@ -230,7 +230,7 @@ def train():
                 args.batch_size, 1, 1).unsqueeze(1)
             model = model.train()
             for i in range(len(dBatch)):
-                dBatch[i] = gVar(dBatch[i])
+                dBatch[i] = to_torch_tensor(dBatch[i])
             loss, _ = model(dBatch[0], dBatch[1], dBatch[2], dBatch[3], dBatch[4], dBatch[6], dBatch[7],
                             dBatch[8], dBatch[9], tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, dBatch[5])
             # print(loss.mean())
@@ -516,14 +516,14 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
     # print(rrdic[183])
     tmpast = getAstPkl(vds)
     a, b = getRulePkl(vds)
-    tmpf = gVar(a).unsqueeze(0).repeat(2, 1).long()
-    tmpc = gVar(b).unsqueeze(0).repeat(2, 1, 1).long()
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))
+    tmpf = to_torch_tensor(a).unsqueeze(0).repeat(2, 1).long()
+    tmpc = to_torch_tensor(b).unsqueeze(0).repeat(2, 1, 1).long()
+    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
                   ).float().unsqueeze(0).repeat(2, 1, 1)
-    tmpindex = gVar(np.arange(len(vds.ruledict))
+    tmpindex = to_torch_tensor(np.arange(len(vds.ruledict))
                     ).unsqueeze(0).repeat(2, 1).long()
-    tmpchar = gVar(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
-    tmpindex2 = gVar(np.arange(len(vds.CODE_VOCAB))
+    tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(2, 1, 1).long()
+    tmpindex2 = to_torch_tensor(np.arange(len(vds.CODE_VOCAB))
                      ).unsqueeze(0).repeat(2, 1).long()
     with torch.no_grad():
         beams: Dict[int, List[SearchNode]] = {}
@@ -533,7 +533,7 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
             beams[i] = [SearchNode(vds, vds.nl[args.batch_size * k + i])]
             hisTree[i] = {}
         index = 0
-        antimask = gVar(getAntiMask(args.CodeLen))
+        antimask = to_torch_tensor(getAntiMask(args.CodeLen))
         endnum = {}
         continueSet = {}
         tansV: Dict[int, List[SearchNode]] = {}
@@ -615,8 +615,8 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
                 #assert(np.array_equal(inputnl[8][0][:index + 1], tmpdepth[0][:index + 1]))'''
                 print(
                     f"before@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
-                result = model(gVar(tmpnl), gVar(tmpnlad), gVar(tmprule), gVar(tmpruleparent), gVar(tmprulechild), gVar(tmpAd), gVar(
-                    tmptreepath), gVar(tmpnl8), gVar(tmpnl9), tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimasks, None, "test")
+                result = model(to_torch_tensor(tmpnl), to_torch_tensor(tmpnlad), to_torch_tensor(tmprule), to_torch_tensor(tmpruleparent), to_torch_tensor(tmprulechild), to_torch_tensor(tmpAd), to_torch_tensor(
+                    tmptreepath), to_torch_tensor(tmpnl8), to_torch_tensor(tmpnl9), tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimasks, None, "test")
                 print(
                     f"after@{index} batch{ba} x: {x.prob}: {x.getTreestr()} ; {x.actlist}")
                 results = result.data.cpu().numpy()
@@ -734,7 +734,7 @@ def BeamSearch(inputnl, vds: SumDataset, model: Decoder, beamsize: int, batch_si
 def test():
 
     dev_set = SumDataset(args, "test")
-    rulead = gVar(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
+    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
 
     args.cnum = rulead.size(1)
     args.Nl_Vocsize = len(dev_set.NL_VOCAB)
