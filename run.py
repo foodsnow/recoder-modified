@@ -844,16 +844,22 @@ def get_unknown(node: Node) -> List[Node]:
     return unknown_nodes
 
 
-def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
+def solve_unknown(
+    search_node: SearchNode,
+    var_dict: Dict[str, str],
+    type_dict: Dict[str, str],
+    reverse_dict_classes_content: Dict,
+    class_name: str,
+    mode: int) -> List[str]:
 
     logger.info('starting solve_unknown()')
 
-    nodes = get_unknown(ans.solveroot)
+    nodes = get_unknown(search_node.solveroot)
     fans: List[str] = list()
     if len(nodes) >= 2:
         return []
     elif len(nodes) == 0:
-        return [ans.root_node.printTree(ans.solveroot)]
+        return [search_node.root_node.printTree(search_node.solveroot)]
     else:
         unknown = nodes[0]
         if unknown.father.father and unknown.father.father.name == 'MethodInvocation':
@@ -862,13 +868,13 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
             if unknown.father.name == 'member':
                 for x in unknown.father.father.child:
                     if x.name == 'qualifier':
-                        if x.child[0].name in typedic:
-                            classname = typedic[x.child[0].name]
+                        if x.child[0].name in type_dict:
+                            classname = type_dict[x.child[0].name]
                             break
                         else:
-                            if sclassname == 'org.jsoup.nodes.Element':
-                                sclassname = 'org.jsoup.nodes.Node'
-                            for f in classcontent[sclassname + '.java']['classes'][0]['fields']:
+                            if class_name == 'org.jsoup.nodes.Element':
+                                class_name = 'org.jsoup.nodes.Node'
+                            for f in reverse_dict_classes_content[class_name + '.java']['classes'][0]['fields']:
                                 if f['name'] == x.child[0].name[:-4]:
                                     classname = f['type']
                                     break
@@ -877,9 +883,9 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                         for y in x.child:
                             if y.name == 'MemberReference':
                                 try:
-                                    if y.child[0].child[0].name in typedic:
+                                    if y.child[0].child[0].name in type_dict:
                                         args.append(
-                                            typedic[y.child[0].child[0].name])
+                                            type_dict[y.child[0].child[0].name])
                                     else:
                                         args.append('int')
                                 except:
@@ -892,44 +898,44 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                             else:
                                 return []
             if classname == '':
-                classbody = classcontent[sclassname + '.java']['classes']
+                classbody = reverse_dict_classes_content[class_name + '.java']['classes']
             elif classname != '':
-                if classname + ".java" not in classcontent:
+                if classname + ".java" not in reverse_dict_classes_content:
                     return []
-                classbody = classcontent[classname + '.java']['classes']
+                classbody = reverse_dict_classes_content[classname + '.java']['classes']
             if unknown.father.name == 'qualifier':
                 vtype = ""
                 for x in classbody[0]['fields']:
-                    if x['name'] == ans.type[:-4]:
+                    if x['name'] == search_node.type[:-4]:
                         vtype = x['type']
                         break
-            if 'IfStatement' in ans.getTreestr():
-                if mode == 1 and len(ans.solveroot.child) == 1:
+            if 'IfStatement' in search_node.getTreestr():
+                if mode == 1 and len(search_node.solveroot.child) == 1:
                     return []
                 if unknown.father.name == 'member':
                     for x in classbody[0]['methods']:
                         if len(x['params']) == 0 and x['type'] == 'boolean':
                             unknown.name = x['name'] + "_ter"
-                            fans.append(unknown.printTree(ans.solveroot))
+                            fans.append(unknown.printTree(search_node.solveroot))
                 elif unknown.father.name == 'qualifier':
                     for x in classbody[0]['fields']:
                         if x['type'] == vtype:
                             unknown.name = x['name'] + "_ter"
-                            fans.append(unknown.printTree(ans.solveroot))
+                            fans.append(unknown.printTree(search_node.solveroot))
             else:
-                if mode == 0 and ans.root_node == ans.solveroot and len(args) == 0 and classname != 'EndTag':
+                if mode == 0 and search_node.root_node == search_node.solveroot and len(args) == 0 and classname != 'EndTag':
                     return []
                 otype = ""
                 if classname == 'EndTag':
                     otype = "String"
 
-                if mode == 0 and ans.type != '':
+                if mode == 0 and search_node.type != '':
                     args = []
 
-                    if ans.type == "valid":
+                    if search_node.type == "valid":
                         return []
                     for m in classbody[0]['methods']:
-                        if m['name'] == ans.type[:-4]:
+                        if m['name'] == search_node.type[:-4]:
                             otype = m['type']
                             for y in m['params']:
                                 args.append(y['type'])
@@ -942,8 +948,8 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                             if mode == 1 and x['type'] is not None:
                                 continue
                             unknown.name = x['name'] + "_ter"
-                            fans.append(unknown.printTree(ans.solveroot))
-                        if ans.type != '':
+                            fans.append(unknown.printTree(search_node.solveroot))
+                        if search_node.type != '':
                             if mode == 0 and len(args) > 0 and x['type'] == otype:
                                 targ = []
                                 for y in x['params']:
@@ -951,7 +957,7 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                                 if args == targ:
                                     unknown.name = x['name'] + "_ter"
                                     fans.append(
-                                        unknown.printTree(ans.solveroot))
+                                        unknown.printTree(search_node.solveroot))
                         else:
                             if mode == 0 and len(args) > 0:
                                 targ = []
@@ -959,14 +965,14 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                                     targ.append(y['type'])
                                 if args == targ and 'type' in x and x['type'] is None:
                                     unknown.name = x['name'] + "_ter"
-                                    fans.append(unknown.printTree(ans.solveroot))
+                                    fans.append(unknown.printTree(search_node.solveroot))
                 elif unknown.father.name == 'qualifier':
-                    if ans.type == 'valid':
+                    if search_node.type == 'valid':
                         return []
                     for x in classbody[0]['fields']:
                         if x['type'] == vtype:
                             unknown.name = x['name'] + "_ter"
-                            fans.append(unknown.printTree(ans.solveroot))
+                            fans.append(unknown.printTree(search_node.solveroot))
                     for x in classbody[0]['methods']:
                         if x['type'] == vtype and len(x['params']) == 0:
                             tmpnode = Node('MethodInvocation', -1)
@@ -977,18 +983,18 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                             tmpnode1.child.append(tmpnode2)
                             tmpnode2.father = tmpnode1
                             unknown.name = " ".join(tmpnode.printTree(tmpnode).split()[:-1])
-                            fans.append(unknown.printTree(ans.solveroot))
+                            fans.append(unknown.printTree(search_node.solveroot))
         elif unknown.father.name == 'qualifier':
-            classbody = classcontent[sclassname + '.java']['classes']
+            classbody = reverse_dict_classes_content[class_name + '.java']['classes']
             vtype = ""
             for x in classbody[0]['fields']:
-                if x['name'] == ans.type[:-4]:
+                if x['name'] == search_node.type[:-4]:
                     vtype = x['type']
                     break
             for x in classbody[0]['fields']:
                 if x['type'] == vtype:
                     unknown.name = x['name'] + "_ter"
-                    fans.append(unknown.printTree(ans.solveroot))
+                    fans.append(unknown.printTree(search_node.solveroot))
             for x in classbody[0]['methods']:
                 if x['type'] == vtype and len(x['params']) == 0:
                     tmpnode = Node('MethodInvocation', -1)
@@ -999,34 +1005,34 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                     tmpnode1.child.append(tmpnode2)
                     tmpnode2.father = tmpnode1
                     unknown.name = " ".join(tmpnode.printTree(tmpnode).split()[:-1])
-                    fans.append(unknown.printTree(ans.solveroot))
+                    fans.append(unknown.printTree(search_node.solveroot))
         elif unknown.father.name == 'member':
             classname = ''
             if unknown.father.name == 'member':
                 for x in unknown.father.father.child:
                     if x.name == 'qualifier':
-                        if x.child[0].name in typedic:
-                            classname = typedic[x.child[0].name]
+                        if x.child[0].name in type_dict:
+                            classname = type_dict[x.child[0].name]
                             break
                         else:
-                            for f in classcontent[sclassname + '.java']['classes'][0]['fields']:
+                            for f in reverse_dict_classes_content[class_name + '.java']['classes'][0]['fields']:
                                 if f['name'] == x.child[0].name[:-4]:
                                     classname = f['type']
                                     break
-                        if x.child[0].name[:-4] + ".java" in classcontent:
+                        if x.child[0].name[:-4] + ".java" in reverse_dict_classes_content:
                             classname = x.child[0].name[:-4]
             if classname == '':
-                classbody = classcontent[sclassname + '.java']['classes']
+                classbody = reverse_dict_classes_content[class_name + '.java']['classes']
             elif classname != '':
-                if classname + ".java" not in classcontent:
+                if classname + ".java" not in reverse_dict_classes_content:
                     return []
-                classbody = classcontent[classname + '.java']['classes']
+                classbody = reverse_dict_classes_content[classname + '.java']['classes']
             vtype = ""
             for x in classbody[0]['fields']:
-                if x['name'] == ans.type[:-4]:
+                if x['name'] == search_node.type[:-4]:
                     vtype = x['type']
                     break
-            if unknown.father.father.father.father and (unknown.father.father.father.father.name == 'MethodInvocation' or unknown.father.father.father.father.name == 'ClassCreator') and ans.type == "":
+            if unknown.father.father.father.father and (unknown.father.father.father.father.name == 'MethodInvocation' or unknown.father.father.father.father.name == 'ClassCreator') and search_node.type == "":
                 mname = ""
                 tname = ""
                 if unknown.father.father.father.father.name == "MethodInvocation":
@@ -1046,9 +1052,9 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                             print(vtype, f['name'])
                             break
                 else:
-                    if mname[:-4] + ".java" not in classcontent:
+                    if mname[:-4] + ".java" not in reverse_dict_classes_content:
                         return []
-                    for f in classcontent[mname[:-4] + ".java"]['classes'][0]['methods']:
+                    for f in reverse_dict_classes_content[mname[:-4] + ".java"]['classes'][0]['methods']:
                         if f['name'] == mname[:-4] and idx < len(f['params']):
                             vtype = f['params'][idx]['type']
                             break
@@ -1056,7 +1062,7 @@ def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, 
                 for x in classbody[0]['fields']:
                     if x['type'] == vtype or (x['type'] == 'double' and vtype == 'int'):
                         unknown.name = x['name'] + "_ter"
-                        fans.append(unknown.printTree(ans.solveroot))
+                        fans.append(unknown.printTree(search_node.solveroot))
     return fans
 
 
@@ -1155,7 +1161,14 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     continue
 
                 try:
-                    tcodes = solve_unknown(result_beam_search[i][j], var_dict, type_dict, reverse_dict_classes_content, class_name, mode)
+                    tcodes = solve_unknown(
+                        search_node=result_beam_search[i][j],
+                        var_dict=var_dict,
+                        type_dict=type_dict,
+                        reverse_dict_classes_content=reverse_dict_classes_content,
+                        class_name=class_name,
+                        mode=mode
+                    )
                 except Exception as e:
                     traceback.print_exc()
                     tcodes = []
