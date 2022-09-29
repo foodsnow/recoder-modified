@@ -333,29 +333,30 @@ class SearchNode:
         self.expanded = self.select_node(self.root_node)
 
     def get_rule_embedding(self, ds: SumDataset, nl):
-        inputruleparent = []
-        inputrulechild = []
+
+        input_rule_parent = []
+        input_rule_child = []
+
         for x in self.state:
             if x >= len(ds.rule_reverse_dict):
-                inputruleparent.append(ds.get_embedding(["value"], ds.CODE_VOCAB)[0])
-                inputrulechild.append(ds.pad_seq(
+                input_rule_parent.append(ds.get_embedding(["value"], ds.CODE_VOCAB)[0])
+                input_rule_child.append(ds.pad_seq(
                     ds.get_embedding(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
             else:
                 rule = ds.rule_reverse_dict[x].strip().lower().split()
                 # print(rule[0])
-                inputruleparent.append(ds.get_embedding([rule[0]], ds.CODE_VOCAB)[0])
+                input_rule_parent.append(ds.get_embedding([rule[0]], ds.CODE_VOCAB)[0])
                 #print(ds.Get_Em([rule[0]], ds.Code_Voc))
-                inputrulechild.append(ds.pad_seq(
+                input_rule_child.append(ds.pad_seq(
                     ds.get_embedding(rule[2:], ds.CODE_VOCAB), ds.Char_Len))
-        tmp = [ds.pad_seq(ds.get_embedding(['start'], ds.CODE_VOCAB), 10)
-               ] + self.everTreepath
-        inputrulechild = ds.pad_list(tmp, ds.Code_Len, 10)
-        inputrule = ds.pad_seq(self.state, ds.Code_Len)
+        tmp = [ds.pad_seq(ds.get_embedding(['start'], ds.CODE_VOCAB), 10)] + self.everTreepath
+        input_rule_child = ds.pad_list(tmp, ds.Code_Len, 10)
+        input_rule = ds.pad_seq(self.state, ds.Code_Len)
         #inputrulechild = ds.pad_list(inputrulechild, ds.Code_Len, ds.Char_Len)
-        inputruleparent = ds.pad_seq(inputruleparent, ds.Code_Len)
-        inputdepth = ds.pad_list(self.depth, ds.Code_Len, 40)
+        input_rule_parent = ds.pad_seq(input_rule_parent, ds.Code_Len)
+        input_depth = ds.pad_list(self.depth, ds.Code_Len, 40)
         # print(inputruleparent)
-        return inputrule, inputrulechild, inputruleparent, inputdepth
+        return input_rule, input_rule_child, input_rule_parent, input_depth
 
     def getTreePath(self, ds: SumDataset):
         tmppath = [self.expanded.name.lower()]
