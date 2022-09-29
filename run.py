@@ -46,21 +46,22 @@ class DotDict(dict):
 
 
 ARGS = DotDict({
-    'NlLen': 500,
-    'CodeLen': 30,
-    'batch_size': 120,
-    'embedding_size': 256,
-    'WoLen': 15,
-    'Vocsize': 100,
-    'Nl_Vocsize': 100,
-    'max_step': 3,
-    'margin': 0.5,
-    'poolsize': 50,
-    'Code_Vocsize': 100,
-    'num_steps': 50,
-    'rulenum': 10,
-    'cnum': 695
+    'NlLen':            500,
+    'CodeLen':          30,
+    'batch_size':       120,
+    'embedding_size':   256,
+    'WoLen':            15,
+    'Vocsize':          100,
+    'Nl_Vocsize':       100,
+    'max_step':         3,
+    'margin':           0.5,
+    'poolsize':         50,
+    'Code_Vocsize':     100,
+    'num_steps':        50,
+    'rulenum':          10,
+    'cnum':             695
 })
+
 
 # os.environ["CUDA_VISIBLE_DEVICES"]="5, 7"
 # os.environ['CUDA_LAUNCH_BLOCKING']="2"
