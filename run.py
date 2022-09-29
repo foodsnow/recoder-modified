@@ -107,7 +107,7 @@ def getAdMask(size):
     return ans
 
 
-def getRulePkl(vds: SumDataset):
+def get_rule_pkl(vds: SumDataset):
     inputruleparent = []
     inputrulechild = []
     for i in range(args.cnum):
@@ -118,7 +118,7 @@ def getRulePkl(vds: SumDataset):
     return np.array(inputruleparent), np.array(inputrulechild)
 
 
-def getAstPkl(sum_dataset: SumDataset) -> np.array:
+def get_AST_pkl(sum_dataset: SumDataset) -> np.array:
     
     reversed_dict_code_vocab = {}
     for word in sum_dataset.CODE_VOCAB:
@@ -137,8 +137,8 @@ def getAstPkl(sum_dataset: SumDataset) -> np.array:
 
 def evalacc(model, dev_set: SumDataset):
     antimask = to_torch_tensor(getAntiMask(args.CodeLen))
-    a, b = getRulePkl(dev_set)
-    tmpast = getAstPkl(dev_set)
+    a, b = get_rule_pkl(dev_set)
+    tmpast = get_AST_pkl(dev_set)
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
     tmpc = to_torch_tensor(b).unsqueeze(0).repeat(4, 1, 1).long()
     devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=len(dev_set),
@@ -190,8 +190,8 @@ def train():
     rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
                              ).float().unsqueeze(0).repeat(4, 1, 1)
     args.cnum = rulead.size(1)
-    tmpast = getAstPkl(train_set)
-    a, b = getRulePkl(train_set)
+    tmpast = get_AST_pkl(train_set)
+    a, b = get_rule_pkl(train_set)
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
     tmpc = to_torch_tensor(b).unsqueeze(0).repeat(4, 1, 1).long()
     tmpindex = to_torch_tensor(np.arange(len(train_set.ruledict))
@@ -528,8 +528,9 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
     for word in sum_dataset.CODE_VOCAB:
         reversed_dict_code_vocab[sum_dataset.CODE_VOCAB[word]] = word
 
-    temp_ast = getAstPkl(sum_dataset)
-    a, b = getRulePkl(sum_dataset)
+    temp_ast = get_AST_pkl(sum_dataset)
+    a, b = get_rule_pkl(sum_dataset)
+    
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(2, 1).long()
     tmpc = to_torch_tensor(b).unsqueeze(0).repeat(2, 1, 1).long()
     rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
