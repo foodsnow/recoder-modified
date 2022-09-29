@@ -828,17 +828,17 @@ def replace_var(node: Node, reverse_dict_var_dict: Dict, place=False):
     return ans
 
 
-def getUnknown(root: Node) -> List[Node]:
+def get_unknown(root: Node) -> List[Node]:
     if root.name == 'unknown':
         return [root]
     ans = []
     for x in root.child:
-        ans.extend(getUnknown(x))
+        ans.extend(get_unknown(x))
     return ans
 
 
 def solveUnknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
-    nodes = getUnknown(ans.solveroot)
+    nodes = get_unknown(ans.solveroot)
     fans: List[str] = list()
     #fans_prob: List[float] = list()
     if len(nodes) >= 2:
