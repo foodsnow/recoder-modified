@@ -1,3 +1,4 @@
+from base_logger import logger
 import sys
 import torch
 import torch.utils.data as data
@@ -16,7 +17,6 @@ from parse_dataflow import GetFlow
 from typing import List, Dict, Set, Tuple, Union
 sys.setrecursionlimit(500000000)
 
-from base_logger import logger
 
 class SumDataset(data.Dataset):
     def __init__(self, config, dataName="train"):
@@ -219,21 +219,26 @@ class SumDataset(data.Dataset):
             tokens_of_tree_as_str_with_var = tree_as_str_with_var.split()
             Nl.append(tokens_of_tree_as_str_with_var)
 
-            node_root = Node('root', 0)
+            node_root = NodeSimple('root', 0)
             nltmp: List[str] = ['root']    # nl without terminal
-            nodes: List[Node] = [node_root]      # nodes without terminal
-            
+            nodes: List[NodeSimple] = [node_root]      # nodes without terminal
+
+            # traverse the tree and do sth
             current_node = node_root
-            idx = 1
+            node_id = 1
             for token in tokens_of_tree_as_str_with_var[1:]:
+
                 if token != "^":
-                    temp_node = Node(token, idx)
-                    idx += 1
+                    temp_node = NodeSimple(token, node_id)
+                    node_id += 1
+
                     temp_node.father = current_node
                     current_node.child.append(temp_node)
                     current_node = temp_node
+
                     nltmp.append(token)
                     nodes.append(temp_node)
+
                 else:
                     current_node = current_node.father
 
@@ -303,14 +308,14 @@ class SumDataset(data.Dataset):
                 continue
             child = {}
             nl = dataFile[i]['input']  # lines[5 * i].lower().strip().split()
-            node = Node('root', 0)
+            node = NodeSimple('root', 0)
             currnode = node
             idx = 1
             nltmp = ['root']
             nodes = [node]
             for x in nl[1:]:
                 if x != "^":
-                    nnode = Node(x, idx)
+                    nnode = NodeSimple(x, idx)
                     idx += 1
                     nnode.father = currnode
                     currnode.child.append(nnode)
@@ -510,12 +515,12 @@ class SumDataset(data.Dataset):
         return len(self.data[0])
 
 
-class Node:
+class NodeSimple:
     def __init__(self, name: str, id_: int):
         self.name = name
         self.id = id_
-        self.father: Node = None
-        self.child: List[Node] = []
+        self.father: NodeSimple = None
+        self.child: List[NodeSimple] = []
         self.sibiling = None
 
 #dset = SumDataset(args)
