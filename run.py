@@ -1196,6 +1196,8 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
     data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
     '''
 
+    logger.info('starting solve_one()')
+
     # os.environ["CUDA_VISIBLE_DEVICES"] = "2, 3"
 
     args.batch_size = 20
