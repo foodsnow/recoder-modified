@@ -432,31 +432,31 @@ class SearchNode:
             self.act_list.append(ds.rule_reverse_dict[rule])
 
         if rule >= len(ds.rule_dict):
-            nodesid = rule - len(ds.rule_dict)
+            node_id = rule - len(ds.rule_dict)
 
-            if nodesid >= ARGS.NlLen:
-                nodesid = nodesid - ARGS.NlLen
-                nnode = Node(self.id_map[nodesid].name, nodesid)
-                nnode.fatherlistID = len(self.states)
-                nnode.father = self.expanded_node
-                nnode.fname = "-" + self.printTree(self.id_map[nodesid])
-                self.expanded_node.child.append(nnode)
+            if node_id >= ARGS.NlLen:
+                node_id = node_id - ARGS.NlLen
+                temp_node = Node(self.id_map[node_id].name, node_id)
+                temp_node.fatherlistID = len(self.states)
+                temp_node.father = self.expanded_node
+                temp_node.fname = "-" + self.printTree(self.id_map[node_id])
+                self.expanded_node.child.append(temp_node)
             else:
-                nnode = self.id_map[nodesid]
-                if nnode.name == self.expanded_node.name:
-                    self.copynode(self.expanded_node, nnode)
-                    nnode.fatherlistID = len(self.states)
+                temp_node = self.id_map[node_id]
+                if temp_node.name == self.expanded_node.name:
+                    self.copynode(self.expanded_node, temp_node)
+                    temp_node.fatherlistID = len(self.states)
                 else:
-                    if nnode.name == 'VariableDeclarator':
+                    if temp_node.name == 'VariableDeclarator':
                         currnode = -1
-                        for x in nnode.child:
+                        for x in temp_node.child:
                             if x.name == 'name':
                                 currnode = x
                                 break
                         nnnode = Node(currnode.child[0].name, -1)
                     else:
                         currnode = -1
-                        for x in nnode.child:
+                        for x in temp_node.child:
                             if x.name == 'name':
                                 currnode = x
                                 break
@@ -475,10 +475,10 @@ class SearchNode:
                 self.expanded_node.expanded = True
             else:
                 for x in rules.strip().split()[2:]:
-                    nnode = Node(x, -1)
-                    self.expanded_node.child.append(nnode)
-                    nnode.father = self.expanded_node
-                    nnode.fatherlistID = len(self.states)
+                    temp_node = Node(x, -1)
+                    self.expanded_node.child.append(temp_node)
+                    temp_node.father = self.expanded_node
+                    temp_node.fatherlistID = len(self.states)
 
         self.parent[ARGS.NlLen + len(self.depths), ARGS.NlLen + self.expanded_node.fatherlistID] = 1
 
