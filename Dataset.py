@@ -155,7 +155,7 @@ class SumDataset(data.Dataset):
 
     def pad_seq(self, sequence: List[int], max_len: int):
         '''
-        NOTE mutate sequence
+        NOTE mutates sequence
         '''
 
         if len(sequence) < max_len:
