@@ -1137,38 +1137,44 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
         )
 
         for i in range(len(result_beam_search)):
-            currid = indexs * ARGS.batch_size + i
+
+            current_id = indexs * ARGS.batch_size + i
+
             tmp_data_list = list()
-            tmp_data_file = os.path.join(
-                "d4j", data_buggy_locations[currid]["bugid"], f"temp-{currid}.json")
-            idss = data_buggy_locations[currid]['idss']
-            if "fl_score" not in data_buggy_locations[currid]:
-                data_buggy_locations[currid]["fl_score"] = -1.0
-            subroot = data_buggy_locations[currid]['subroot']
-            if os.path.exists("result/%s.json" % idss):
-                classcontent = json.load(open("result/%s.json" % idss, 'r'))
+            tmp_data_file = os.path.join("d4j", data_buggy_locations[current_id]["bugid"], f"temp-{current_id}.json")
+            bug_id: str = data_buggy_locations[current_id]['idss']
+
+            # NOTE may throw IndexError
+            if "fl_score" not in data_buggy_locations[current_id]:
+                data_buggy_locations[current_id]["fl_score"] = -1.0
+
+            sub_root = data_buggy_locations[current_id]['subroot']
+            if os.path.exists("result/%s.json" % bug_id):
+                class_content = json.load(open("result/%s.json" % bug_id, 'r'))
             else:
-                classcontent = []
-            classcontent.extend(json.load(open("temp.json", 'r')))
+                class_content = []
+            class_content.extend(json.load(open("temp.json", 'r')))
+
             rrdicts = {}
-            for x in classcontent:
+            for x in class_content:
                 rrdicts[x['filename']] = x
                 if 'package_name' in x:
                     rrdicts[x['package_name'] + "." + x['filename']] = x
-            vardic = data_buggy_locations[currid]['vardic']
-            typedic = data_buggy_locations[currid]['typedic']
-            classname = data_buggy_locations[currid]['classname']
-            mode = data_buggy_locations[currid]['mode']
+
+            vardic = data_buggy_locations[current_id]['vardic']
+            typedic = data_buggy_locations[current_id]['typedic']
+            classname = data_buggy_locations[current_id]['classname']
+            mode = data_buggy_locations[current_id]['mode']
             rrdict = {}
             for x in vardic:
                 rrdict[vardic[x]] = x
             for j in range(len(result_beam_search[i])):
-                if j > 60 and idss != 'Lang-33':
+                if j > 60 and bug_id != 'Lang-33':
                     break
                 mode, result_beam_search[i][j].root_node = extarctmode(result_beam_search[i][j].root_node)
                 if result_beam_search[i][j].root_node is None:
                     continue
-                applyoperater(result_beam_search[i][j], subroot)
+                applyoperater(result_beam_search[i][j], sub_root)
                 an = replaceVar(result_beam_search[i][j].solveroot, rrdict)
                 if not an:
                     continue
@@ -1182,12 +1188,12 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     prob = result_beam_search[i][j].prob
                     if code.split(" ")[0] != 'root':
                         assert (0)
-                    if str(mode) + code + str(data_buggy_locations[currid]['line']) not in patch:
-                        patch[str(mode) + code + str(data_buggy_locations[currid]['line'])] = 1
+                    if str(mode) + code + str(data_buggy_locations[current_id]['line']) not in patch:
+                        patch[str(mode) + code + str(data_buggy_locations[current_id]['line'])] = 1
                     else:
                         continue
-                    obj = {'id': currid, 'idss': idss, 'precode': data_buggy_locations[currid]['precode'], 'aftercode': data_buggy_locations[currid]['aftercode'], 'oldcode': data_buggy_locations[currid]['oldcode'], 'filename': data_buggy_locations[currid]
-                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[currid]['line'], 'isa': data_buggy_locations[currid]['isa'], 'fl_score': data_buggy_locations[currid]['fl_score'], 'actlist': result_beam_search[i][j].act_list}
+                    obj = {'id': current_id, 'idss': bug_id, 'precode': data_buggy_locations[current_id]['precode'], 'aftercode': data_buggy_locations[current_id]['aftercode'], 'oldcode': data_buggy_locations[current_id]['oldcode'], 'filename': data_buggy_locations[current_id]
+                           ['filepath'], 'mode': mode, 'code': code, 'prob': prob, 'line': data_buggy_locations[current_id]['line'], 'isa': data_buggy_locations[current_id]['isa'], 'fl_score': data_buggy_locations[current_id]['fl_score'], 'actlist': result_beam_search[i][j].act_list}
                     savedata.append(obj)
                     tmp_data_list.append(obj)
             with open(tmp_data_file, "w") as tmp_df:
