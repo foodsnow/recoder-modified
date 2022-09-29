@@ -1211,6 +1211,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                 for code in tcodes:
                     prob = result_beam_search[i][j].prob
                     if code.split(" ")[0] != 'root':
+                        logger.error('some error')
                         assert (0)
                     if str(mode) + code + str(data_buggy_locations[current_id]['line']) not in patch:
                         patch[str(mode) + code + str(data_buggy_locations[current_id]['line'])] = 1
