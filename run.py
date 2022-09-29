@@ -107,7 +107,7 @@ def getAdMask(size):
     return ans
 
 
-def get_rule_pkl(sum_dataset: SumDataset) -> np.array:
+def get_rule_pkl(sum_dataset: SumDataset) -> Tuple[np.array, np.array]:
 
     input_rule_parent = []
     input_rule_child = []
@@ -116,6 +116,7 @@ def get_rule_pkl(sum_dataset: SumDataset) -> np.array:
         rule = sum_dataset.rule_reverse_dict[i].strip().lower().split()
         input_rule_child.append(sum_dataset.pad_seq(sum_dataset.get_embedding(rule[2:], sum_dataset.CODE_VOCAB), sum_dataset.Char_Len))
         input_rule_parent.append(sum_dataset.CODE_VOCAB[rule[0].lower()])
+    
     return np.array(input_rule_parent), np.array(input_rule_child)
 
 
