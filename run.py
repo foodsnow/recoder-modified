@@ -259,28 +259,6 @@ def train():
             j += 1
 
 
-'''class Node:
-    def __init__(self, name, d):
-        self.name = name
-        self.id = d
-        self.father = None
-        self.child = []
-        self.sibiling = None
-        self.expanded = False
-        self.fatherlistID = 0
-        self.fname = ""
-    def printTree(self, r):
-        s = r.name + " "#print(r.name)
-        if len(r.child) == 0:
-            s += "^ "
-            return s
-        #r.child = sorted(r.child, key=lambda x:x.name)
-        for c in r.child:
-            s += self.printTree(c)
-        s += "^ "#print(r.name + "^")
-        return s'''
-
-
 class SearchNode:
     def __init__(self, sum_dataset: SumDataset, nl):
         self.states: List[int] = [sum_dataset.rule_dict["start -> root"]]
@@ -650,7 +628,6 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 
                 results = result.data.cpu().numpy()
                 currIndex = 0
-                tmp_prob_list: List[Tuple[int, float]] = list()
 
                 for j in range(beam_size):
                     if j not in valid_num:
