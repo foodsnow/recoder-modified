@@ -844,7 +844,7 @@ def get_unknown(node: Node) -> List[Node]:
     return unknown_nodes
 
 
-def solve_unknown(ans: SearchNode, vardic: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
+def solve_unknown(ans: SearchNode, var_dict: Dict[str, str], typedic: Dict[str, str], classcontent, sclassname: str, mode: int) -> List[str]:
 
     logger.info('starting solve_unknown()')
 
