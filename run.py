@@ -556,7 +556,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
         tansV: Dict[int, List[SearchNode]] = {}
 
         while True:
-            tmpbeam: Dict[int, List[list]] = {}
+            temp_beam: Dict[int, List[list]] = {}
             ansV: Dict[int, List[SearchNode]] = {}
 
             if len(end_num) == batch_size:
@@ -566,17 +566,17 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 break
 
             for ba in range(batch_size):
-                tmprule = []
-                tmprulechild = []
-                tmpruleparent = []
-                tmptreepath = []
-                tmpAd = []
-                validnum = []
-                tmpdepth = []
-                tmpnl = []
-                tmpnlad = []
-                tmpnl8 = []
-                tmpnl9 = []
+                temp_rule = []
+                temp_rule_child = []
+                temp_rule_parent = []
+                temp_tree_path = []
+                temp_Ad = []
+                valid_num = []
+                temp_depth = []
+                temp_nl = []
+                temp_nl_ad = []
+                temp_nl_8 = []
+                temp_nl_9 = []
 
                 for p in range(beam_size):
                     if p >= len(beams[ba]):
@@ -589,48 +589,48 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         word.finish = True
                         ansV.setdefault(ba, []).append(word)
                     else:
-                        validnum.append(p)
-                        tmpnl.append(input_nl[0][ba].data.cpu().numpy())
-                        tmpnlad.append(input_nl[1][ba].data.cpu().numpy())
-                        tmpnl8.append(input_nl[8][ba].data.cpu().numpy())
-                        tmpnl9.append(input_nl[9][ba].data.cpu().numpy())
+                        valid_num.append(p)
+                        temp_nl.append(input_nl[0][ba].data.cpu().numpy())
+                        temp_nl_ad.append(input_nl[1][ba].data.cpu().numpy())
+                        temp_nl_8.append(input_nl[8][ba].data.cpu().numpy())
+                        temp_nl_9.append(input_nl[9][ba].data.cpu().numpy())
                         a, b, c, d = word.getRuleEmbedding(
                             sum_dataset, sum_dataset.nl[ARGS.batch_size * k + ba])
-                        tmprule.append(a)
-                        tmprulechild.append(b)
-                        tmpruleparent.append(c)
-                        tmptreepath.append(word.getTreePath(sum_dataset))
-                        tmpAd.append(word.parent)
-                        tmpdepth.append(d)
+                        temp_rule.append(a)
+                        temp_rule_child.append(b)
+                        temp_rule_parent.append(c)
+                        temp_tree_path.append(word.getTreePath(sum_dataset))
+                        temp_Ad.append(word.parent)
+                        temp_depth.append(d)
 
-                if len(tmprule) == 0:
+                if len(temp_rule) == 0:
                     continue
 
                 antimasks = antimask.unsqueeze(0).repeat(
-                    len(tmprule), 1, 1).unsqueeze(1)
+                    len(temp_rule), 1, 1).unsqueeze(1)
 
-                tmprule = np.array(tmprule)
-                tmprulechild = np.array(tmprulechild)
-                tmpruleparent = np.array(tmpruleparent)
-                tmptreepath = np.array(tmptreepath)
-                tmpAd = np.array(tmpAd)
-                tmpdepth = np.array(tmpdepth)
-                tmpnl = np.array(tmpnl)
-                tmpnlad = np.array(tmpnlad)
-                tmpnl8 = np.array(tmpnl8)
-                tmpnl9 = np.array(tmpnl9)
+                temp_rule = np.array(temp_rule)
+                temp_rule_child = np.array(temp_rule_child)
+                temp_rule_parent = np.array(temp_rule_parent)
+                temp_tree_path = np.array(temp_tree_path)
+                temp_Ad = np.array(temp_Ad)
+                temp_depth = np.array(temp_depth)
+                temp_nl = np.array(temp_nl)
+                temp_nl_ad = np.array(temp_nl_ad)
+                temp_nl_8 = np.array(temp_nl_8)
+                temp_nl_9 = np.array(temp_nl_9)
 
                 print(f"before@{index} batch{ba} x: {word.prob}: {word.getTreestr()} ; {word.actlist}")
                 result = decoder_model(
-                    to_torch_tensor(tmpnl),
-                    to_torch_tensor(tmpnlad),
-                    to_torch_tensor(tmprule),
-                    to_torch_tensor(tmpruleparent),
-                    to_torch_tensor(tmprulechild),
-                    to_torch_tensor(tmpAd),
-                    to_torch_tensor(tmptreepath),
-                    to_torch_tensor(tmpnl8),
-                    to_torch_tensor(tmpnl9),
+                    to_torch_tensor(temp_nl),
+                    to_torch_tensor(temp_nl_ad),
+                    to_torch_tensor(temp_rule),
+                    to_torch_tensor(temp_rule_parent),
+                    to_torch_tensor(temp_rule_child),
+                    to_torch_tensor(temp_Ad),
+                    to_torch_tensor(temp_tree_path),
+                    to_torch_tensor(temp_nl_8),
+                    to_torch_tensor(temp_nl_9),
                     tmpf,
                     tmpc,
                     tmpindex,
@@ -648,7 +648,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                 tmp_prob_list: List[Tuple[int, float]] = list()
 
                 for j in range(beam_size):
-                    if j not in validnum:
+                    if j not in valid_num:
                         continue
                     word = beams[ba][j]
                     tmpbeamsize = 0  # beamsize
@@ -668,7 +668,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                         else:
                             continue
                         prob = word.prob + np.log(cresult[indexs[i]])
-                        tmpbeam.setdefault(ba, []).append([prob, indexs[i], word])
+                        temp_beam.setdefault(ba, []).append([prob, indexs[i], word])
 
             for i in range(batch_size):
                 if i in ansV:
@@ -677,11 +677,11 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
                     tansV.setdefault(i, []).extend(ansV[i])
 
             for j in range(batch_size):
-                if j in tmpbeam:
+                if j in temp_beam:
                     if j in ansV:
                         for word in ansV[j]:
-                            tmpbeam[j].append([word.prob, -1, word])
-                    tmp = sorted(tmpbeam[j], key=lambda x: x[0], reverse=True)
+                            temp_beam[j].append([word.prob, -1, word])
+                    tmp = sorted(temp_beam[j], key=lambda x: x[0], reverse=True)
                     beams[j] = []
                     for word in tmp:  # x: (prob, index, SearchNode)
                         if len(beams[j]) >= beam_size:
