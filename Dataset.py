@@ -36,13 +36,16 @@ class SumDataset(data.Dataset):
         self.Codes = []
         self.Nls = []
         self.num_step = 50
+
         self.rule_dict: Dict[str, int] = pickle.load(open("rule.pkl", "rb"))
         self.rule_dict['start -> copyword2'] = len(self.rule_dict)
-        self.rrdict = {}
+        self.rule_reverse_dict = {}
         for x in self.rule_dict:
-            self.rrdict[self.rule_dict[x]] = x
+            self.rule_reverse_dict[self.rule_dict[x]] = x
+
         if not os.path.exists("nl_voc.pkl"):
             self.init_dic()
+
         self.Load_Voc()
         if dataName == "train":
             if os.path.exists("data.pkl"):
@@ -410,18 +413,18 @@ class SumDataset(data.Dataset):
                 ["start"] + parentname, self.CODE_VOCAB), self.Code_Len)
             inputrulechild = []
             for x in inputrule:
-                if x >= len(self.rrdict):
+                if x >= len(self.rule_reverse_dict):
                     inputrulechild.append(self.pad_seq(self.get_embedding(
                         ["copyword"], self.CODE_VOCAB), self.Char_Len))
                 else:
-                    rule = self.rrdict[x].strip().lower().split()
+                    rule = self.rule_reverse_dict[x].strip().lower().split()
                     inputrulechild.append(self.pad_seq(
                         self.get_embedding(rule[2:], self.CODE_VOCAB), self.Char_Len))
 
             inputparentpath = []
             for j in range(len(inputres)):
-                if inputres[j] in self.rrdict:
-                    tmppath = [self.rrdict[inputres[j]].strip().lower().split()[
+                if inputres[j] in self.rule_reverse_dict:
+                    tmppath = [self.rule_reverse_dict[inputres[j]].strip().lower().split()[
                         0]]
                     if tmppath[0] != parentname[j].lower() and tmppath[0] == 'statements' and parentname[j].lower() == 'root':
                         # print(tmppath, parentname[j].lower())
@@ -440,13 +443,13 @@ class SumDataset(data.Dataset):
                 # print(inputparent[j])
                 curr = inputparent[j]
                 while curr != 0:
-                    if inputres[curr - 1] >= len(self.rrdict):
+                    if inputres[curr - 1] >= len(self.rule_reverse_dict):
                         #print(parentname[curr - 1].lower())
                         rule = 'root'
                         # assert(0)
                     else:
-                        rule = self.rrdict[inputres[curr - 1]
-                                           ].strip().lower().split()[0]
+                        rule = self.rule_reverse_dict[inputres[curr - 1]
+                                                      ].strip().lower().split()[0]
                     # print(rule)
                     tmppath.append(rule)
                     curr = inputparent[curr - 1]

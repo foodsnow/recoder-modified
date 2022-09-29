@@ -113,7 +113,7 @@ def get_rule_pkl(sum_dataset: SumDataset) -> np.array:
     input_rule_child = []
 
     for i in range(args.cnum):
-        rule = sum_dataset.rrdict[i].strip().lower().split()
+        rule = sum_dataset.rule_reverse_dict[i].strip().lower().split()
         input_rule_child.append(sum_dataset.pad_seq(sum_dataset.get_embedding(rule[2:], sum_dataset.CODE_VOCAB), sum_dataset.Char_Len))
         input_rule_parent.append(sum_dataset.CODE_VOCAB[rule[0].lower()])
     return np.array(input_rule_parent), np.array(input_rule_child)
@@ -187,7 +187,7 @@ def evalacc(model, dev_set: SumDataset):
 
 def train():
     train_set = SumDataset(args, "train")
-    print(len(train_set.rrdict))
+    print(len(train_set.rule_reverse_dict))
     rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
                              ).float().unsqueeze(0).repeat(4, 1, 1)
     args.cnum = rulead.size(1)
@@ -337,12 +337,12 @@ class SearchNode:
         inputruleparent = []
         inputrulechild = []
         for x in self.state:
-            if x >= len(ds.rrdict):
+            if x >= len(ds.rule_reverse_dict):
                 inputruleparent.append(ds.get_embedding(["value"], ds.CODE_VOCAB)[0])
                 inputrulechild.append(ds.pad_seq(
                     ds.get_embedding(["copyword"], ds.CODE_VOCAB), ds.Char_Len))
             else:
-                rule = ds.rrdict[x].strip().lower().split()
+                rule = ds.rule_reverse_dict[x].strip().lower().split()
                 # print(rule[0])
                 inputruleparent.append(ds.get_embedding([rule[0]], ds.CODE_VOCAB)[0])
                 #print(ds.Get_Em([rule[0]], ds.Code_Voc))
@@ -391,7 +391,7 @@ class SearchNode:
                 #print(self.idmap[idx].name, self.expanded.name, idx)
                 return False
         else:
-            rules = ds.rrdict[rule]
+            rules = ds.rule_reverse_dict[rule]
             if rules == 'start -> unknown':
                 if self.unum >= 1:
                     return False
@@ -427,7 +427,7 @@ class SearchNode:
                 idx = rule - len(ds.rule_dict)
             self.actlist.append('copy-' + self.idmap[idx].name)
         else:
-            self.actlist.append(ds.rrdict[rule])
+            self.actlist.append(ds.rule_reverse_dict[rule])
         if rule >= len(ds.rule_dict):
             nodesid = rule - len(ds.rule_dict)
             if nodesid >= args.NlLen:
@@ -462,7 +462,7 @@ class SearchNode:
                     nnnode.fatherlistID = len(self.state)
                 self.expanded.expanded = True
         else:
-            rules = ds.rrdict[rule]
+            rules = ds.rule_reverse_dict[rule]
             if rules == 'start -> unknown':
                 self.unum += 1
             # if rules.strip().split()[0] != self.expanded.name:
