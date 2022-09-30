@@ -625,7 +625,7 @@ def BeamSearch(inputnl, vds, model, beamsize, batch_size, k):
                     mans = y.prob
                     tmpans = y
             beams[i] = tmpans
-        #open("beams.pkl", "wb").write(pickle.dumps(beamss))
+        #open("data_beams.pkl", "wb").write(pickle.dumps(beamss))
         return beams
         #return beams
 def test():

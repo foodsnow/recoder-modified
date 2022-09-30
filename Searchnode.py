@@ -560,7 +560,7 @@ def test():
         #f.write(" ".join(ans.ans[1:-1]))
         # f.write("\n")
         # f.flush()#print(ans)
-    open("beams.pkl", "wb").write(pickle.dumps(beamss))
+    open("data_beams.pkl", "wb").write(pickle.dumps(beamss))
 
 
 if __name__ == "__main__":
