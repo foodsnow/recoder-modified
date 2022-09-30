@@ -59,8 +59,8 @@ class SumDataset(data.Dataset):
                 self.data = pickle.load(open("data.pkl", "rb"))
                 logger.info('loaded data.pkl')
                 return
-            data = pickle.load(open('process_datacopy.pkl', 'rb'))
-            logger.info('loaded process_datacopy.pkl')
+            data = pickle.load(open('data_process_datacopy.pkl', 'rb'))
+            logger.info('loaded data_process_datacopy.pkl')
             print(len(data))
             train_size = int(len(data) / 8 * 7)
             self.data = self.preProcessData(data)
@@ -97,7 +97,7 @@ class SumDataset(data.Dataset):
         maxCharLen = 0
         nls = []
         rules = []
-        data = pickle.load(open('process_datacopy.pkl', 'rb'))
+        data = pickle.load(open('data_process_datacopy.pkl', 'rb'))
         for x in data:
             if len(x['rule']) > self.Code_Len:
                 continue

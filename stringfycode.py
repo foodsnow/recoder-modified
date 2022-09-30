@@ -623,7 +623,7 @@ def getroottree(tokens, isex=False):
     return root
 
 
-'''data = open('outval1.txt', "r").readlines()#pickle.load(open('process_datacopy.pkl', 'rb'))
+'''data = open('outval1.txt', "r").readlines()#pickle.load(open('data_process_datacopy.pkl', 'rb'))
 for i, x in enumerate(data):
     r = getroottree(x.split())
     print(i)
