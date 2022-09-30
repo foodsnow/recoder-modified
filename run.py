@@ -1225,6 +1225,10 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                     traceback.print_exc()
                     tcodes = []
 
+                # NOTE
+                # hack to keep unknown nodes
+                # code = result_beam_search[i][j].root_node.printTree(result_beam_search[i][j].root_node)
+
                 for code in tcodes:
                     prob = result_beam_search[i][j].prob
 
