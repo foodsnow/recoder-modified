@@ -504,8 +504,8 @@ class SumDataset(data.Dataset):
         if self.dataName == "test":
             open("data_test_data.pkl", "wb").write(pickle.dumps(batchs))
             #open("testcode.pkl", "wb").write(pickle.dumps(self.code))
-            open("testnl.pkl", "wb").write(pickle.dumps(self.nl))
-            logger.info('saved data_test_data.pkl and testnl.pkl')
+            open("data_test_nl.pkl", "wb").write(pickle.dumps(self.nl))
+            logger.info('saved data_test_data.pkl and data_test_nl.pkl')
         return batchs
 
     def __getitem__(self, offset):
