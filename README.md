@@ -3,6 +3,9 @@
 ## Terms
 - `NL` - natural language
 
+## NOTES
+- `input` in process_datacopy is fixed version
+
 ## Scripts
 
 `testDefects4j.py` - run inference on Defects4j v1.2 benchmark
