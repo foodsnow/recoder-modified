@@ -495,8 +495,8 @@ class SumDataset(data.Dataset):
         #self.code = codes
         if self.dataName == "train":
             open("data_train_data.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
-            open("nl.pkl", "wb").write(pickle.dumps(nls))
-            logger.info('saved data_train_data.pkl and nl.pkl')
+            open("data_train_nl.pkl", "wb").write(pickle.dumps(nls))
+            logger.info('saved data_train_data.pkl and data_train_nl.pkl')
         if self.dataName == "val":
             open("valdata.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
             open("valnl.pkl", "wb").write(pickle.dumps(nls))
