@@ -1,5 +1,8 @@
 # NOTES
 
+## Terms
+- `NL` - natural language
+
 ## Scripts
 
 `testDefects4j.py` - run inference on Defects4j v1.2 benchmark
