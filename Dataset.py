@@ -55,9 +55,9 @@ class SumDataset(data.Dataset):
 
         self.Load_Voc()
         if dataName == "train":
-            if os.path.exists("data.pkl"):
-                self.data = pickle.load(open("data.pkl", "rb"))
-                logger.info('loaded data.pkl')
+            if os.path.exists("data_train_data.pkl"):
+                self.data = pickle.load(open("data_train_data.pkl", "rb"))
+                logger.info('loaded data_train_data.pkl')
                 return
             data = pickle.load(open('data_process_datacopy.pkl', 'rb'))
             logger.info('loaded data_process_datacopy.pkl')
@@ -494,9 +494,9 @@ class SumDataset(data.Dataset):
         self.nl = nls
         #self.code = codes
         if self.dataName == "train":
-            open("data.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
+            open("data_train_data.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
             open("nl.pkl", "wb").write(pickle.dumps(nls))
-            logger.info('saved data.pkl and nl.pkl')
+            logger.info('saved data_train_data.pkl and nl.pkl')
         if self.dataName == "val":
             open("valdata.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
             open("valnl.pkl", "wb").write(pickle.dumps(nls))
