@@ -42,7 +42,7 @@ class DotDict(dict):
 ARGS = DotDict({
     'NlLen':            500,
     'CodeLen':          30,
-    'batch_size':       120,
+    'batch_size':       40,
     'embedding_size':   256,
     'WoLen':            15,
     'Vocsize':          100,
