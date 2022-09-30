@@ -8,38 +8,25 @@ import sys
 import re
 import random
 import time
-#from stringfycode import stringfyNode
-#lines1 = open("process1_1.txt", "r").read().strip()
-#lines2 = open("process1_2.txt", "r").read().strip()
+
 onelist = ['SRoot', 'arguments', 'parameters', 'body', 'block', 'selectors', 'cases', 'statements', 'throws', 'initializers', 'declarators', 'annotations', 'prefix_operators', 'postfix_operators', 'catches', 'types', 'dimensions', 'modifiers', 'case', 'finally_block', 'type_parameters']
 rulelist = []
 fatherlist = []
 fathername = []
 depthlist = []
 copynode = {}
-rules = pickle.load(open("rule.pkl", "rb"))  # {"pad":0}
+rules = pickle.load(open("rule.pkl", "rb"))
+
 assert ('value -> <string>_ter' in rules)
-#rules['start -> unknown'] = len(rules)
-# print(len(rules))
-# assert(0)
-#ruleter = pickle.load(open("ruleter.pkl", "rb"))
-#rulenoter = pickle.load(open("rulenoter.pkl", "rb"))
-# print(rulenoter)
-# print(len(rulenoter))
-# exit(0)
-# print(rules)
-#rules['delete -> node'] = len(rules)
+
 cnum = len(rules)
-# print(cnum)
-# assert(0)
 rulead = np.zeros([cnum, cnum])
-#rules['statements -> End'] = len(rules)
-#rulenoter['root -> End'] = 1
 linenode = ['Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement', 'ContinueStatement_ter', 'LocalVariableDeclaration', 'condition', 'control', 'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters", 'StatementExpression', 'return_type']
-# print(len(rules))
 rrdict = {}
+
 for x in rules:
     rrdict[rules[x]] = x
+
 hascopy = {}
 
 
@@ -58,7 +45,7 @@ def find_all(sub, s):
 
 def getcopyid(nls, name, idx):
     original = " ".join(nls)
-    idxs = find_all(name, original)  # original.find(name)
+    idxs = find_all(name, original)
     if len(idxs) != 0:
         minv = 100000
         idxx = -1
@@ -116,28 +103,23 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
     if len(node.child) == 0:
         return [], []
     copyid = -1
-    child = node.child  # sorted(node.child, key=lambda x:x.name)
+    child = node.child
     if len(node.child) == 1 and len(node.child[0].child) == 0 and copyid == -1 and copy:
         if node.child[0].name in varnames:
             rule = node.name + " -> " + varnames[node.child[0].name]
             if rule in rules:
                 rulelist.append(rules[rule])
             else:
-                # assert(0)
-                #rules[rule] = len(rules)
-                # rulelist.append(rules[rule])
-                #print('b', rule)
                 isvalid = False
                 return
-                # assert(0)
-                #rules[rule] = len(rules)
+
             fatherlist.append(currId)
             fathername.append(node.name)
             depthlist.append(d)
             return
     if copyid == -1:
         copyid = getcopyid(nls, node.getTreestr(), node.id)
-        if node.name == 'MemberReference' or node.name == 'operator' or node.name == 'type' or node.name == 'prefix_operators' or node.name == 'value':  # or node.name == 'Literal' or node.name == 'value':
+        if node.name == 'MemberReference' or node.name == 'operator' or node.name == 'type' or node.name == 'prefix_operators' or node.name == 'value':
             copyid = -1
         if node.name == 'operandl' or node.name == 'operandr':
             if node.child[0].name == 'MemberReference' and node.child[0].child[0].name == 'member':
@@ -145,13 +127,6 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
         if node.name == 'Literal':
             if 'value -> ' + node.child[0].child[0].name in rules:
                 copyid = -1
-            #varname = node.child[0].child[0].name
-            # for i in range(len(varnames)):
-            #  v = varnames[len(varnames) - 1 - i]
-            #  if varname == v[0]:
-            #    copyid = -1#2000000 + v[1].id
-            #    #assert(0)
-            #    break
     if len(node.child) == 1 and len(node.child[0].child) == 0 and copyid == -1:
         rule = node.name + " -> " + node.child[0].name
         if rule not in rules and (node.name == 'member' or node.name == 'qualifier'):
@@ -162,8 +137,6 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
             depthlist.append(d)
             return
     if copyid != -1:
-        # assert(0)
-        # print(node.printTree(node))
         copynode[node.name] = 1
         rulelist.append(copyid)
         fatherlist.append(currId)
@@ -179,10 +152,6 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
             rulead[rules['start -> copyword'], rules['start -> root']] = 1
             rulead[rules['start -> root'], rules['start -> copyword']] = 1
         return
-        # for x in child:
-        #  getRule(x, nls, currid, d + 1)
-        # rulelist.extend(a)
-        # fatherlist.extend(b)
     else:
         if node.name not in onelist:
             rule = node.name + " -> "
@@ -195,53 +164,29 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
                 print('b', rule)
                 isvalid = False
                 return
-                rulelist.append(rules['start -> unknown'])
-                # print(rule)
-                #rule = node.name + " -> " + 'unknown_var'
-                #isvalid = False
-                # return
-                # if rule not in rules:
-                # assert(0)
-                #  rules[rule] = len(rules)
-                # rulelist.append(rules[rule])
             fatherlist.append(currId)
             fathername.append(node.name)
             depthlist.append(d)
-            if rulelist[-1] < cnum and rulelist[currId] < cnum:  # not (len(child) == 1 and len(child[0].child) == 0):
+            if rulelist[-1] < cnum and rulelist[currId] < cnum:
                 if currId != -1:
                     rulead[rulelist[currId], rulelist[-1]] = 1
                     rulead[rulelist[-1], rulelist[currId]] = 1
                 else:
-                    # print(rulelist)
                     rulead[rules['start -> root'], rulelist[-1]] = 1
                     rulead[rulelist[-1], rules['start -> root']] = 1
             currid = len(rulelist) - 1
             for x in child:
                 getRule(x, nls, currid, d + 1, idx, varnames)
         else:
-            # print(node.name)
             for x in (child):
                 rule = node.name + " -> " + x.name
                 rule = rule.strip()
                 if rule in rules:
                     rulelist.append(rules[rule])
                 else:
-                    # if calvalid:
                     print('b', rule)
                     isvalid = False
                     return
-                    rulelist.append(rules['start -> unknown'])
-                    # rule = 'start -> unknown_var'#node.name + " -> " + 'unknown_var'
-                    #isvalid = False
-                    # return
-                    # if rule not in rules:
-                    #  rules[rule] = len(rules)
-                    '''if len(x.child) == 0:
-            ruleter[rule] = 1
-          else: 
-            rulenoter[rule] = 1
-          rules[rule] = len(rules)'''
-                    # rulelist.append(rules[rule])
                 if rulelist[-1] < cnum and rulelist[currId] < cnum:
                     rulead[rulelist[currId], rulelist[-1]] = 1
                     rulead[rulelist[-1], rulelist[currId]] = 1
@@ -255,7 +200,6 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
                 rulelist.append(rules[rule])
             else:
                 print(rule)
-                rulenoter[rule] = 1
                 assert (0)
                 rules[rule] = len(rules)
                 rulelist.append(rules[rule])
@@ -298,8 +242,7 @@ action = []
 
 
 def setProb(r, p):
-    r.possibility = p  # max(min(np.random.normal(0.8, 0.1, 10)[0], 1), 0)
-    # print(r.possibility)
+    r.possibility = p
     for x in r.child:
         setProb(x, p)
 
@@ -307,7 +250,6 @@ def setProb(r, p):
 def getLineNode(root, block, add=True):
     ans = []
     block = block + root.name
-    #print(root.name, 'lll')
     for x in root.child:
         if x.name in linenode:
             if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
@@ -315,19 +257,12 @@ def getLineNode(root, block, add=True):
             x.block = block
             ans.append(x)
         else:
-            # print(x.name)
             s = ""
             if not add:
                 s = block
-                #tmp = getLineNode(x, block)
             else:
                 s = block + root.name
-            #print(block + root.name + "--------")
             tmp = getLineNode(x, block)
-            '''if x.name == 'then_statement' and tmp == []:
-        print(tmp)
-        print(x.father.printTree(x.father))
-        assert(0)'''
             ans.extend(tmp)
     return ans
 
@@ -352,7 +287,6 @@ def isexpanded(lst):
 
 
 def ischanged(root1, root2):
-    # root1.name ==
     if root1.name != root2.name:
         return False
     if root1 == root2:
@@ -361,10 +295,6 @@ def ischanged(root1, root2):
         return True
     if len(root1.child) != len(root2.child):
         return False
-        # if root1.father.father.name == 'MemberReference' or root1.father.father.name == 'BasicType' or root1.father.name == 'operator':
-        #  return True
-        # else:
-        #  return False
     ans = True
     for i in range(len(root1.child)):
         node1 = root1.child[i]
@@ -379,11 +309,6 @@ def getchangednode(root1, root2):
     ans = []
     if root1.name == 'MemberReference' or root1.name == 'BasicType' or root1.name == 'operator' or root1.name == 'qualifier' or root1.name == 'member' or root1.name == 'Literal':
         return [(root1, root2)]
-    # if len(root1.child) == 0:
-        # if root1.father.father.name == 'MemberReference' or root1.father.father.name == 'BasicType':
-        #  return [(root1.father.father, root2.father.father)]
-        # if root1.father.name == 'operator':
-        #  return [(root1.father, root2.father)]
     for i in range(len(root1.child)):
         ans.extend(getchangednode(root1.child[i], root2.child[i]))
     return ans
@@ -401,24 +326,15 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
     global fathername
     global n
     global isvalid
-    #print(len(linenode1), len(linenode2))
-    # for i in range(len(linenode1)):
-    #  print(linenode1[i].getTreestr())
-    # for i in range(len(linenode2)):
-    #  print(linenode2[i].getTreestr())
     deletenode = []
     addnode = []
     node2id = {}
-    #varnames = getLocVar(root)
     for i, x in enumerate(linenode1):
         node2id[str(x)] = i
     dic = {}
     dic2 = {}
-    #linenode1 = list(reversed(linenode1))
-    #linenode2 = list(reversed(linenode2))
     for i, x in enumerate(linenode1):
         hasSame = False
-        # print('oooo')
         for j, y in enumerate(linenode2):
             if x == y and not y.expanded and not hasSame:
                 y.expanded = True
@@ -426,14 +342,9 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                 dic[i] = j
                 dic2[j] = i
                 hasSame = True
-                # print('ccccccc')
                 continue
             if x == y and not y.expanded and hasSame:
-                if x.getTreestr().strip() == 'StatementExpression expression MethodInvocation arguments MemberReference member pos_ter ^ ^ ^ ^ member next_ter ^ ^ ^ ^ ^':
-                    print(linenode1[i - 1].getTreestr())
                 if i - 1 in dic and dic[i - 1] == j - 1:
-                    print('pppppp')
-                    print(x.getTreestr())
                     hasSame = True
                     linenode2[dic[i]].expanded = False
                     y.expaned = True
@@ -442,52 +353,7 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     dic2[j] = i
                     break
         if not hasSame:
-            print('d', x.getTreestr())
             deletenode.append(x)
-    '''tdic = {}
-  for i, x in enumerate(linenode1):
-    #hasSame = False
-    for j, y in enumerate(linenode2):
-      if x == y:
-        tdic.setdefault(i, []).append(j)
-    #if not hasSame:
-    #  print(linenode1[i].getTreestr())
-    #  deletenode.append(x)
-  for i, x in enumerate(linenode1):
-    if i not in tdic:
-      deletenode.append(linenode1[i])
-    elif i == 0 or tdic[i][0] == 0:
-      dic[i] = tdic[i][0]
-      dic2[tdic[i][0]] = i
-      linenode2[tdic[i][0]].expanded = True
-      linenode1[i].expanded = True
-  for i, x in enumerate(linenode1):
-    if i in tdic:
-      bid = -1
-      bscore = -1
-      for yid in tdic[i]:
-        ts = 0
-        if i - 1 >= 0 and i - 1 in dic:
-          if dic[i - 1] == yid - 1:
-            ts += 1
-        if i + 1 < len(linenode1) and i + 1 in dic:
-          if dic[i + 1] == yid + 1:
-            ts += 1
-        if ts > bscore and ts != 0:
-          bid = yid
-          bscore = ts
-      if bid == -1:
-        deletenode.append(linenode1[yid])
-      else:
-        dic[i] = bid
-        dic2[bid] = i
-        assert(not linenode2[bid].expanded)
-        linenode2[bid].expanded = True
-        linenode1[i].expanded = True
-  print('ps', len(deletenode))
-  print(dic2)'''
-    print('ps', len(deletenode))
-    # assert(0)
     if len(deletenode) > 1:
         return
     preiddict = {}
@@ -514,21 +380,18 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
             afterid = afteriddict[i]
             preid2 = dic[preiddict[i]]
             afterid2 = dic[afteriddict[i]]
-            print('ttt', preid, afterid, preid2, afterid2)
             if preid + 2 == afterid and preid2 + 2 == afterid2:
                 troot = root
                 if len(root.getTreestr().strip().split()) >= 1000:
                     tmp = linenode1[preid + 1]
                     if len(tmp.getTreestr().split()) >= 1000:
                         continue
-                    # print(tmp.getTreestr())
                     lasttmp = None
                     while True:
                         if len(tmp.getTreestr().split()) >= 1000:
                             break
                         lasttmp = tmp
                         tmp = tmp.father
-                    # print(tmp.child)
                     index = tmp.child.index(lasttmp)
                     ansroot = Node(tmp.name, 0)
                     ansroot.child.append(lasttmp)
@@ -543,7 +406,7 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                         prenode = tmp.child.index(ansroot.child[0]) - 1
                         if prenode >= 0 and ansroot.num + tmp.child[prenode].getNum() < 1000:
                             b = False
-                            ansroot.child = [tmp.child[prenode]] + ansroot.child  # .child.append(tmp.child[prenode])
+                            ansroot.child = [tmp.child[prenode]] + ansroot.child
                             ansroot.num += tmp.child[prenode].getNum()
                         if b:
                             break
@@ -556,11 +419,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     setProb(linenode1[preid], 3)
                 if afterid < len(linenode1):
                     setProb(linenode1[afterid], 4)
-                '''if linenode1[preid + 1].name == 'condition':
-          for k in range(preid2 + 1, afterid2):
-            sys.stderr.write(linenode2[k].getTreestr() + "\n")
-          sys.stderr.write(linenode1[preid + 1].getTreestr() + "\n")
-          sys.stderr.write("-----------------------------\n")'''
                 nls = troot.getTreestr().split()
                 n = 0
                 setid(troot)
@@ -590,31 +448,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                             getRule(x[1], nls, len(rulelist) - 1, 0, 0, vardic, False, calvalid=False)
                         else:
                             getRule(x[1], nls, len(rulelist) - 1, 0, 0, vardic, calvalid=False)
-                        '''if x[0].father.name == 'operator':
-              rule = 'operator -> ' + x[1].name
-              rulelist.append(rules[rule])
-              fathername.append('operator')
-              fatherlist.append(len(rulelist) - 2)
-            else:
-              copyid = -1
-              for i in range(len(varnames)):
-                v = varnames[len(varnames) - 1 - i]
-                if x[1] == v[0]:
-                  copyid = 2000000 + v[1].id
-                  break
-              if copyid != -1:
-                rulelist.append(copyid)
-                fathername.append(x[0].father.name)
-                fatherlist.append(len(rulelist) - 2)
-              else:
-                rule = x[0].father.name + " -> " + x[1]
-                if rule not in rules:
-                  rules[rule] = len(rules)
-                  print(rule)
-                  assert(0)
-                rulelist.append(rules[rule])
-                fathername.append(x[0].father.name)
-                fatherlist.append(len(rulelist) - 2)'''
                     rulelist.append(rules['root -> End'])
                     fatherlist.append(-1)
                     fathername.append('root')
@@ -632,7 +465,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     else:
                         rule = 'root -> ' + linenode2[k].name
                     if rule not in rules:
-                        rulenoter[rule] = 1
                         rules[rule] = len(rules)
                     rulelist.append(rules[rule])
                     fathername.append('root')
@@ -644,7 +476,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     else:
                         getRule(linenode2[k], nls, len(rulelist) - 1, 0, 0, vardic)
                 if not isvalid:
-                    # assert(0)
                     isvalid = True
                     rulelist = []
                     fathername = []
@@ -654,15 +485,8 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                 rulelist.append(rules['root -> End'])
                 fatherlist.append(-1)
                 fathername.append('root')
-                '''if afterid2 == preid2 + 1:
-          fatherlist.append(-1)
-          fathername.append('root')
-          rule = 'delete -> node'
-          rulelist.append(rules[rule])'''
-                #reslist.append({'input': ansroot.getTreestr().strip().split(), 'rule':rulelist, 'problist':root.getTreeProb(root), 'fatherlist':fatherlist, 'fathername':fathername})
                 assert (len(root.printTree(troot).strip().split()) <= 1000)
                 reslist.append({'input': root.printTreeWithVar(troot, vardic).strip().split(), 'rule': rulelist, 'problist': root.getTreeProb(troot), 'fatherlist': fatherlist, 'fathername': fathername})
-                # print(reslist[-1])
                 rulelist = []
                 fathername = []
                 fatherlist = []
@@ -689,27 +513,18 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
         else:
             afteriddict[i] = afterid
     for i in range(len(linenode2)):
-        # print(linenode2[i].getTreestr())
         if linenode2[i].expanded:
             continue
         else:
-            print('dddddd', linenode2[i].getTreestr())
             preid = preiddict[i]
             afterid = afteriddict[i]
             if preiddict[i] not in dic2:
-                # print(1)
                 return
             preid2 = dic2[preiddict[i]]
             if afteriddict[i] not in dic2:
-                # print(2)
                 return
             afterid2 = dic2[afteriddict[i]]
             if preid2 + 1 != afterid2:
-                if len(linenode1) > 16:
-                    print(linenode1[15].getTreestr())
-                    print(linenode1[15].getTreestr())
-                    print(linenode1[16].getTreestr())
-                print(4, preid2, afterid2)
                 continue
             troot = root
             if len(root.getTreestr().strip().split()) >= 1000:
@@ -741,7 +556,7 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     prenode = tmp.child.index(ansroot.child[0]) - 1
                     if prenode >= 0 and ansroot.num + tmp.child[prenode].getNum() < 1000:
                         b = False
-                        ansroot.child = [tmp.child[prenode]] + ansroot.child  # .child.append(tmp.child[prenode])
+                        ansroot.child = [tmp.child[prenode]] + ansroot.child
                         ansroot.num += tmp.child[prenode].getNum()
                     if b:
                         break
@@ -749,7 +564,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
             nls = troot.getTreestr().split()
             n = 0
             setid(troot)
-            print('oo', troot.id)
             varnames = getLocVar(troot)
             fnum = -1
             vnum = -1
@@ -763,10 +577,8 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     fnum += 1
                     vardic[x[0]] = 'par' + str(fnum)
             if preid2 >= 0:
-                print('ll', linenode1[preid2].getTreestr())
                 setProb(linenode1[preid2], 3)
             if afterid2 < len(linenode1):
-                print('ll', linenode1[afterid2].getTreestr())
                 setProb(linenode1[afterid2], 1)
             if afterid2 + 1 < len(linenode1):
                 setProb(linenode1[afterid2 + 1], 4)
@@ -775,13 +587,11 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
             fatherlist.append(-1)
             for k in range(preid + 1, afterid):
                 linenode2[k].expanded = True
-                print('ll', linenode2[k].getTreestr())
                 if linenode2[k].name == 'condition':
                     rule = 'root -> ' + linenode2[k].father.name
                 else:
                     rule = 'root -> ' + linenode2[k].name
                 if rule not in rules:
-                    rulenoter[rule] = 1
                     rules[rule] = len(rules)
                 rulelist.append(rules[rule])
                 fathername.append('root')
@@ -804,7 +614,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
             fathername.append('root')
             assert (len(root.printTree(troot).strip().split()) <= 1000)
             reslist.append({'input': root.printTreeWithVar(troot, vardic).strip().split(), 'rule': rulelist, 'problist': root.getTreeProb(troot), 'fatherlist': fatherlist, 'fathername': fathername})
-            # print(reslist[-1])
             rulelist = []
             fathername = []
             fatherlist = []
@@ -815,20 +624,14 @@ lst = ['Chart-1', 'Chart-4', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Char
 if __name__ == '__main__':
     res = []
     tres = []
-    # data = pickle.load(open('dataextra.pkl', 'rb'))#pickle.load(open('/data/zqh/data/detection_dataset/data.pkl', "rb"))
-    #data = pickle.load(open('/home/zqh/dedata.pkl', "rb"))
-    data = []  # data * 100
-    #data.extend(pickle.load(open('data2.pkl', "rb")))
+    data = []
     data.extend(pickle.load(open('data0.pkl', "rb")))
-    #data.extend(pickle.load(open('/raid/zqh/copyhome/data1.pkl', "rb")))
-    #data.extend(pickle.load(open('/data/zqh/data/detection_dataset/data.pkl', "rb")))
     print(data[0])
     assert (0)
     newdata = []
     v = int(sys.argv[1])
-    data = data[v * 10000:v*10000 + 10000]  # data[v * 10000:v*10000+10000]
+    data = data[v * 10000:v*10000 + 10000]
     i = 0
-    #wf = open('deresult.txt', 'w')
     for xs in tqdm(data):
         if 'oldtree' in xs:
             lines1 = xs['oldtree']
@@ -836,34 +639,17 @@ if __name__ == '__main__':
         else:
             lines1 = xs['old']
             lines2 = xs['new']
-        # print(xs['old'])
-        # print(xs['new'])
-        # if i > 10:
-        #  assert(0)
         i += 1
-        # print(lines1)
-        # print(lines2)
-        # if i > 1000:
-        #  break
         lines1, lines2 = lines2, lines1
         if lines1.strip().lower() == lines2.strip().lower():
             continue
-        # if xs['id'] not in lst:
-        #  continue
         tokens = lines1.strip().split()
-        # print(tokens)
-        # if len(tokens) > 1800:
-        #  continue
-        # print(x['old'])
-        # print(x['new'])
-        # print(i)
         root = Node(tokens[0], 0)
         currnode = root
         idx1 = 1
         for j, x in enumerate(tokens[1:]):
             if x != "^":
                 if tokens[j + 2] == '^':
-                    # assert(0)
                     x = x + "_ter"
                 nnode = Node(x, idx1)
                 idx1 += 1
@@ -887,20 +673,10 @@ if __name__ == '__main__':
                 currnode = nnode
             else:
                 currnode = currnode.father
-        print(lines1)
-        print(len(tres))
-        # print(stringfyNode(root))
-        print("------------\n")
-        print(lines2)
-        # print(stringfyNode(root2))
-        print("&&&&&&&&&&&&&&\n")
         linenode1 = getLineNode(root, "")
         linenode2 = getLineNode(root2, "")
         if len(linenode1) == 0 or len(linenode2) == 0:
             continue
-        # if linenode1[0].name == 'parameters' and linenode1[0].getTreestr() != linenode2[0].getTreestr():
-        #  continue
-        # print('**********')
         setProb(root, 2)
         olen = len(reslist)
         m = 'None'
@@ -908,50 +684,11 @@ if __name__ == '__main__':
             if x.name == 'name':
                 m = x.child[0].name
         getDiffNode(linenode1, linenode2, root, root.printTree(root).strip().split(), m)
-        # print(stringfyNode(root))
-        # print(stringfyNode(root2))
         if len(reslist) - olen == 1:
-            #wf.write(xs['id'] + "\n")
-            #wf.write("\n".join(xs['df']) + "\n")
             tres.append(reslist[-1])
             newdata.append(xs)
-            '''rrdict = {}
-        for x in rules:
-          rrdict[rules[x]] = x
-        for x in [tres[-1]]:
-          print(x['input'])
-          print(x['rule'])
-          tmp = []
-          for s in x['input']:
-            if s != '^':
-              tmp.append(s) 
-          for x in x['rule']:
-            if x < 2000000:
-              print(rrdict[x], end=',')
-            else:
-              i = x - 2000000
-              print('copy-' + tmp[i], end=',')
-          print()'''
-        # else:
-            #print(len(reslist) - olen)
-            #print("\n".join(xs['df']), xs['id'])
-            #print(len(lines1), len(lines2))
-            # if xs['id'] != 'Math-50':
-            #  assert(0)
-        # print(reslist)
-        # print('----------')
-        #computedist(root, root2, 2, root.printTree(root).strip().split())
         if i <= -5:
             assert (0)
-        # if len(rulelist) == 0:
-        # continue
-        #res.append({'input': root.printTree(root).strip().split(), 'rule':rulelist, 'problist':root.getTreeProb(root), 'fatherlist':fatherlist, 'fathername':fathername, 'depth':depthlist})
-        #print(idx1, res[-1]['rule'], len(res[-1]['input']))
-        # print(action)
-        # for x in res[-1]['rule']:
-        #  if x >= 2000000:
-        #    ind = x - 2000000
-        #    assert(ind < idx1)
         rulelist = []
         fatherlist = []
         fathername = []
@@ -959,29 +696,10 @@ if __name__ == '__main__':
         copynode = {}
         hascopy = {}
         action = []
-        # print(root.printprob())
-        # assert(0)
-        '''print(lines1.strip())
-      print(lines2.strip())
-      print(res[-1]['rule'])
-      rrdict = {}
-      for x in rules:
-        rrdict[rules[x]] = x
-      for x in res[-1]['rule']:
-        if x < 2000000:
-          print(rrdict[x])
-        else:
-          print(x - 2000000)
-          print('copy' + res[-1]['input'][x - 2000000])'''
-        # print(res[-1])
-        # exit(0)
     rrdict = {}
     for x in rules:
         rrdict[rules[x]] = x
     for p, x in enumerate(tres):
-        print(x['input'])
-        print(x['rule'])
-        print(p)
         tmp = []
         for s in x['input']:
             if s != '^':
@@ -994,14 +712,7 @@ if __name__ == '__main__':
                     i = x - 2000000
                 else:
                     i = x - 1000000
-                print('copy-' + tmp[i], end=',')
-        print()
-    # print(tres[0])
-    print(rules)
     open('rulead%d.pkl' % v, "wb").write(pickle.dumps(rulead))
     open('rule2.pkl', "wb").write(pickle.dumps(rules))
     open('process_datacopy%d.pkl' % v, "wb").write(pickle.dumps(tres))
-    #open('dataour.pkl', "wb").write(pickle.dumps(newdata))
-    print(len(tres))
-    print(len(lst))
     exit(0)
