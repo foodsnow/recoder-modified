@@ -67,8 +67,8 @@ class SumDataset(data.Dataset):
         elif dataName == "val":
             if os.path.exists("data_val_data.pkl"):
                 self.data = pickle.load(open("data_val_data.pkl", "rb"))
-                self.nl = pickle.load(open("valnl.pkl", "rb"))
-                logger.info('loaded data_val_data.pkl and valnl.pkl')
+                self.nl = pickle.load(open("data_val_nl.pkl", "rb"))
+                logger.info('loaded data_val_data.pkl and data_val_nl.pkl')
                 return
             self.data = self.preProcessData(
                 open(self.val_path, "r", encoding='utf-8'))
@@ -499,8 +499,8 @@ class SumDataset(data.Dataset):
             logger.info('saved data_train_data.pkl and data_train_nl.pkl')
         if self.dataName == "val":
             open("data_val_data.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
-            open("valnl.pkl", "wb").write(pickle.dumps(nls))
-            logger.info('saved data_val_data.pkl and valnl.pkl')
+            open("data_val_nl.pkl", "wb").write(pickle.dumps(nls))
+            logger.info('saved data_val_data.pkl and data_val_nl.pkl')
         if self.dataName == "test":
             open("testdata.pkl", "wb").write(pickle.dumps(batchs))
             #open("testcode.pkl", "wb").write(pickle.dumps(self.code))
