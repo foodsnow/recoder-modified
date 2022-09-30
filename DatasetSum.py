@@ -26,7 +26,7 @@ class SumDataset(data.Dataset):
         self.dataName = dataName
         self.Codes = []
         self.Nls = []
-        if not os.path.exists("nl_sum_voc.pkl"):
+        if not os.path.exists("data_nl_sum_voc.pkl"):
             self.init_dic()
         self.Load_Voc()
         if dataName == "train":
@@ -36,25 +36,25 @@ class SumDataset(data.Dataset):
             self.data = self.preProcessData(
                 open(self.train_path, "r", encoding='iso-8859-1'))
         elif dataName == "val":
-            if os.path.exists("valdata_sum.pkl"):
-                self.data = pickle.load(open("valdata_sum.pkl", "rb"))
+            if os.path.exists("data_valdata_sum.pkl"):
+                self.data = pickle.load(open("data_valdata_sum.pkl", "rb"))
                 return
             self.data = self.preProcessData(
                 open(self.val_path, "r", encoding='iso-8859-1'))
         else:
-            if os.path.exists("testdata_sum.pkl"):
-                self.data = pickle.load(open("testdata_sum.pkl", "rb"))
+            if os.path.exists("data_testdata_sum.pkl"):
+                self.data = pickle.load(open("data_testdata_sum.pkl", "rb"))
                 return
             self.data = self.preProcessData(
                 open(self.test_path, "r", encoding='iso-8859-1'))
 
     def Load_Voc(self):
-        if os.path.exists("nl_sum_voc.pkl"):
-            self.Nl_Voc = pickle.load(open("nl_sum_voc.pkl", "rb"))
-        if os.path.exists("code_sum_voc.pkl"):
-            self.Code_Voc = pickle.load(open("code_sum_voc.pkl", "rb"))
-        if os.path.exists("char_sum_voc.pkl"):
-            self.Char_Voc = pickle.load(open("char_sum_voc.pkl", "rb"))
+        if os.path.exists("data_nl_sum_voc.pkl"):
+            self.Nl_Voc = pickle.load(open("data_nl_sum_voc.pkl", "rb"))
+        if os.path.exists("data_code_sum_voc.pkl"):
+            self.Code_Voc = pickle.load(open("data_code_sum_voc.pkl", "rb"))
+        if os.path.exists("data_char_sum_voc.pkl"):
+            self.Char_Voc = pickle.load(open("data_char_sum_voc.pkl", "rb"))
 
     def init_dic(self):
         print("initVoc")
@@ -97,9 +97,9 @@ class SumDataset(data.Dataset):
         if "<start>" in self.Nl_Voc:
             print("right")
         print(len(self.Nl_Voc), len(self.Code_Voc))
-        open("nl_sum_voc.pkl", "wb").write(pickle.dumps(self.Nl_Voc))
-        open("code_sum_voc.pkl", "wb").write(pickle.dumps(self.Code_Voc))
-        open("char_sum_voc.pkl", "wb").write(pickle.dumps(self.Char_Voc))
+        open("data_nl_sum_voc.pkl", "wb").write(pickle.dumps(self.Nl_Voc))
+        open("data_code_sum_voc.pkl", "wb").write(pickle.dumps(self.Code_Voc))
+        open("data_char_sum_voc.pkl", "wb").write(pickle.dumps(self.Char_Voc))
         # print(self.Nl_Voc)
         # print(self.Code_Voc)
         print(maxNlLen, maxCodeLen, maxCharLen)
@@ -236,10 +236,9 @@ class SumDataset(data.Dataset):
         if self.dataName == "train":
             open("data_sum.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
         if self.dataName == "val":
-            open("valdata_sum.pkl", "wb").write(
-                pickle.dumps(batchs, protocol=4))
+            open("data_valdata_sum.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
         if self.dataName == "test":
-            open("testdata_sum.pkl", "wb").write(pickle.dumps(batchs))
+            open("data_testdata_sum.pkl", "wb").write(pickle.dumps(batchs))
         return batchs
 
     def __getitem__(self, offset):

@@ -299,6 +299,6 @@ def readdata(filePath, tar):
     with open(tar, "wb") as f:
         f.write(pickle.dumps(l))
 
-readdata("train.txt", "flowtrain.pkl")
-readdata("test.txt", "flowtest.pkl")
-readdata("dev.txt", "flowdev.pkl")'''
+readdata("train.txt", "data_flowtrain.pkl")
+readdata("test.txt", "data_flowtest.pkl")
+readdata("dev.txt", "data_flowdev.pkl")'''

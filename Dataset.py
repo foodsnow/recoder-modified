@@ -503,7 +503,7 @@ class SumDataset(data.Dataset):
             logger.info('saved data_val_data.pkl and data_val_nl.pkl')
         if self.dataName == "test":
             open("data_test_data.pkl", "wb").write(pickle.dumps(batchs))
-            #open("testcode.pkl", "wb").write(pickle.dumps(self.code))
+            #open("data_testcode.pkl", "wb").write(pickle.dumps(self.code))
             open("data_test_nl.pkl", "wb").write(pickle.dumps(self.nl))
             logger.info('saved data_test_data.pkl and data_test_nl.pkl')
         return batchs
