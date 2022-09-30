@@ -673,65 +673,85 @@ if __name__ == '__main__':
 
     which_10k = int(sys.argv[1])
     data = data[which_10k * 10000:which_10k*10000 + 10000]
+    data = [data[7]]
 
     i = 0
-    for xs in tqdm(data):
-        if 'oldtree' in xs:
-            lines1 = xs['oldtree']
-            lines2 = xs['newtree']
+    for data_record_idx, data_record in tqdm(enumerate(data)):
+        if 'oldtree' in data_record:
+            lines_old = data_record['oldtree']
+            lines_new = data_record['newtree']
         else:
-            lines1 = xs['old']
-            lines2 = xs['new']
+            lines_old = data_record['old']
+            lines_new = data_record['new']
         i += 1
-        lines1, lines2 = lines2, lines1
-        if lines1.strip().lower() == lines2.strip().lower():
+
+        lines_old, lines_new = lines_new, lines_old
+
+        # skip if identical pair
+        if lines_old.strip().lower() == lines_new.strip().lower():
             continue
-        tokens = lines1.strip().split()
-        root = Node(tokens[0], 0)
-        currnode = root
+
+        tokens_old = lines_old.strip().split()
+        root_node_old_tree = Node(tokens_old[0], 0)
+
+        current_node = root_node_old_tree
+
         idx1 = 1
-        for j, x in enumerate(tokens[1:]):
+        for j, x in enumerate(tokens_old[1:]):
             if x != "^":
-                if tokens[j + 2] == '^':
+                if tokens_old[j + 2] == '^':
                     x = x + "_ter"
-                nnode = Node(x, idx1)
+                temp_node = Node(x, idx1)
                 idx1 += 1
-                nnode.father = currnode
-                currnode.child.append(nnode)
-                currnode = nnode
+                temp_node.father = current_node
+                current_node.child.append(temp_node)
+                current_node = temp_node
             else:
-                currnode = currnode.father
-        root2 = Node(tokens[0], 0)
-        currnode = root2
-        tokens = lines2.strip().split()
+                current_node = current_node.father
+
+        # TODO should it be constructed from tokens_new?
+        root_node_new_tree = Node(tokens_old[0], 0)
+
+        current_node = root_node_new_tree
+        tokens_new = lines_new.strip().split()
+
         idx = 1
-        for j, x in enumerate(tokens[1:]):
+        for j, x in enumerate(tokens_new[1:]):
             if x != "^":
-                if tokens[j + 2] == '^':
+                if tokens_new[j + 2] == '^':
                     x = x + "_ter"
-                nnode = Node(x, idx)
+                temp_node = Node(x, idx)
                 idx += 1
-                nnode.father = currnode
-                currnode.child.append(nnode)
-                currnode = nnode
+                temp_node.father = current_node
+                current_node.child.append(temp_node)
+                current_node = temp_node
             else:
-                currnode = currnode.father
-        linenode1 = getLineNode(root, "")
-        linenode2 = getLineNode(root2, "")
-        if len(linenode1) == 0 or len(linenode2) == 0:
+                current_node = current_node.father
+
+        line_node_old_tree = getLineNode(root_node_old_tree, "")
+        line_node_new_tree = getLineNode(root_node_new_tree, "")
+
+        if len(line_node_old_tree) == 0 or len(line_node_new_tree) == 0:
             continue
-        setProb(root, 2)
+
+        setProb(root_node_old_tree, 2)
+
         olen = len(RES_LIST)
+
         m = 'None'
-        for x in root.child:
+        for x in root_node_old_tree.child:
             if x.name == 'name':
                 m = x.child[0].name
-        getDiffNode(linenode1, linenode2, root, root.printTree(root).strip().split(), m)
+
+        getDiffNode(line_node_old_tree, line_node_new_tree, root_node_old_tree, root_node_old_tree.printTree(root_node_old_tree).strip().split(), m)
+
         if len(RES_LIST) - olen == 1:
             tres.append(RES_LIST[-1])
-            newdata.append(xs)
+            newdata.append(data_record)
+
         if i <= -5:
             assert (0)
+
         RULE_LIST = []
         FATHER_LIST = []
         FATHER_NAMES = []
@@ -741,6 +761,7 @@ if __name__ == '__main__':
         ACTION = []
 
     REVERSE_RULES_DICT = {}
+
     for x in RULES:
         REVERSE_RULES_DICT[RULES[x]] = x
 
