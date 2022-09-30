@@ -129,6 +129,9 @@ def getLocVar(node):
 
 
 def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
+
+    logger.info('starting get_rule()')
+
     global RULES
     global ONE_LIST
     global RULE_LIST
