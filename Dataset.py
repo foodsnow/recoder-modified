@@ -73,9 +73,9 @@ class SumDataset(data.Dataset):
         if os.path.exists("data_nl_voc.pkl"):
             logger.info('loading data_nl_voc.pkl')
             self.NL_VOCAB = pickle.load(open("data_nl_voc.pkl", "rb"))
-        if os.path.exists("code_voc.pkl"):
-            logger.info('loading code_voc.pkl')
-            self.CODE_VOCAB = pickle.load(open("code_voc.pkl", "rb"))
+        if os.path.exists("data_code_voc.pkl"):
+            logger.info('loading data_code_voc.pkl')
+            self.CODE_VOCAB = pickle.load(open("data_code_voc.pkl", "rb"))
         if os.path.exists("data_char_voc.pkl"):
             logger.info('loading data_char_voc.pkl')
             self.CHAR_VOCAB = pickle.load(open("data_char_voc.pkl", "rb"))
@@ -135,7 +135,7 @@ class SumDataset(data.Dataset):
                 if c not in self.CHAR_VOCAB:
                     self.CHAR_VOCAB[c] = len(self.CHAR_VOCAB)
         open("data_nl_voc.pkl", "wb").write(pickle.dumps(self.NL_VOCAB))
-        open("code_voc.pkl", "wb").write(pickle.dumps(self.CODE_VOCAB))
+        open("data_code_voc.pkl", "wb").write(pickle.dumps(self.CODE_VOCAB))
         open("data_char_voc.pkl", "wb").write(pickle.dumps(self.CHAR_VOCAB))
         print(maxNlLen, maxCodeLen, maxCharLen)
 
