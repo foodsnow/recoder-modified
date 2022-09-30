@@ -5,6 +5,24 @@
 `testDefects4j.py` - run inference on Defects4j v1.2 benchmark
 
 
+## Data
+```bash
+# data0.pkl
+md5sum newdata/data0.pkl data0.pkl 
+f084a09e6cd8acff6a4e9880024b3b54  newdata/data0.pkl
+f084a09e6cd8acff6a4e9880024b3b54  data0.pkl
+
+# rule.pkl
+md5sum newdata/rule.pkl data_rule.pkl 
+68e9247f478f0fde91ee066701fc2e0b  newdata/rule.pkl
+50dc97b116e8d7140d846bcad46df692  data_rule.pkl
+
+# rulead.pkl
+md5sum newdata/rulead.pkl data_rulead.pkl 
+efe7d0d66695ee56c28749642a332eaf  newdata/rulead.pkl
+1927a5c4b0cb74c773321e08803f3667  data_rulead.pkl
+```
+
 ---------------------------------------------------------
 
 # Recoder
