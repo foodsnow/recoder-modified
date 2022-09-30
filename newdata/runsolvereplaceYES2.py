@@ -206,7 +206,6 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
             if rule in RULES:
                 RULE_LIST.append(RULES[rule])
             else:
-                print('b', rule)
                 IS_VALID = False
                 return
             FATHER_LIST.append(currId)
@@ -229,7 +228,6 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
                 if rule in RULES:
                     RULE_LIST.append(RULES[rule])
                 else:
-                    print('b', rule)
                     IS_VALID = False
                     return
                 if RULE_LIST[-1] < CNUM and RULE_LIST[currId] < CNUM:
@@ -244,7 +242,6 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
             if rule in RULES:
                 RULE_LIST.append(RULES[rule])
             else:
-                print(rule)
                 assert (0)
                 RULES[rule] = len(RULES)
                 RULE_LIST.append(RULES[rule])
@@ -455,7 +452,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                             break
                     troot = ansroot
                 for k in range(preid + 1, afterid):
-                    print('--', linenode1[k].printTree(linenode1[k]))
                     linenode1[k].expanded = True
                     setProb(linenode1[k], 1)
                 if preid >= 0:
@@ -465,7 +461,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                 nls = troot.getTreestr().split()
                 N = 0
                 setid(troot)
-                print('oo', troot.id)
                 varnames = getLocVar(troot)
                 fnum = -1
                 vnum = -1
@@ -502,7 +497,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     continue
                 for k in range(preid2 + 1, afterid2):
                     linenode2[k].expanded = True
-                    print('--2', linenode2[k].getTreestr())
                     if linenode2[k].name == 'condition':
                         rule = 'root -> ' + linenode2[k].father.name
                     else:
@@ -549,7 +543,6 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
     afterid = len(linenode2)
     dic2[afterid] = len(linenode1)
     dic2[-1] = -1
-    print(dic)
     for i in range(len(linenode2) - 1, -1, -1):
         if linenode2[i].expanded:
             afterid = i
@@ -670,8 +663,6 @@ if __name__ == '__main__':
     tres = []
     data = []
     data.extend(pickle.load(open('data0.pkl', "rb")))
-    print(data[0])
-    assert (0)
     newdata = []
     v = int(sys.argv[1])
     data = data[v * 10000:v*10000 + 10000]
