@@ -15,6 +15,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+from base_logger import logger
+
 
 class TreeAttEncoder(nn.Module):
     def __init__(self, args):
@@ -93,6 +95,8 @@ class CopyNet(nn.Module):
 
 class Decoder(nn.Module):
     def __init__(self, args):
+
+        logger.info('starting to initialize Decoder model instance')
 
         super(Decoder, self).__init__()
 

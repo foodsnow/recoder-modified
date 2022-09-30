@@ -24,6 +24,9 @@ sys.setrecursionlimit(500000000)
 
 class SumDataset(data.Dataset):
     def __init__(self, config, dataName="train"):
+
+        logger.info('starting to initialize SumDataset')
+
         self.train_path = "train_process.txt"
         self.val_path = "dev_process.txt"  # "validD.txt"
         self.test_path = "test_process.txt"
@@ -54,8 +57,10 @@ class SumDataset(data.Dataset):
         if dataName == "train":
             if os.path.exists("data.pkl"):
                 self.data = pickle.load(open("data.pkl", "rb"))
+                logger.info('loaded data.pkl')
                 return
             data = pickle.load(open('process_datacopy.pkl', 'rb'))
+            logger.info('loaded process_datacopy.pkl')
             print(len(data))
             train_size = int(len(data) / 8 * 7)
             self.data = self.preProcessData(data)
@@ -63,6 +68,7 @@ class SumDataset(data.Dataset):
             if os.path.exists("valdata.pkl"):
                 self.data = pickle.load(open("valdata.pkl", "rb"))
                 self.nl = pickle.load(open("valnl.pkl", "rb"))
+                logger.info('loaded valdata.pkl and valnl.pkl')
                 return
             self.data = self.preProcessData(
                 open(self.val_path, "r", encoding='utf-8'))
@@ -299,6 +305,9 @@ class SumDataset(data.Dataset):
         self.nl = Nl
 
     def preProcessData(self, dataFile):
+
+        logger.info('starting data pre-processing')
+
         #lines = dataFile.readlines()
         inputNl = []
         inputNlad = []
@@ -487,13 +496,16 @@ class SumDataset(data.Dataset):
         if self.dataName == "train":
             open("data.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
             open("nl.pkl", "wb").write(pickle.dumps(nls))
+            logger.info('saved data.pkl and nl.pkl')
         if self.dataName == "val":
             open("valdata.pkl", "wb").write(pickle.dumps(batchs, protocol=4))
             open("valnl.pkl", "wb").write(pickle.dumps(nls))
+            logger.info('saved valdata.pkl and valnl.pkl')
         if self.dataName == "test":
             open("testdata.pkl", "wb").write(pickle.dumps(batchs))
             #open("testcode.pkl", "wb").write(pickle.dumps(self.code))
             open("testnl.pkl", "wb").write(pickle.dumps(self.nl))
+            logger.info('saved testdata.pkl and testnl.pkl')
         return batchs
 
     def __getitem__(self, offset):

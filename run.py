@@ -175,6 +175,9 @@ def evalacc(model, dev_set: SumDataset):
 
 
 def train():
+
+    logger.info('starting to train()')
+
     train_set = SumDataset(ARGS, "train")
     print(len(train_set.rule_reverse_dict))
     rulead = to_torch_tensor(pickle.load(open("data_rulead.pkl", "rb"))
