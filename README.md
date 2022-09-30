@@ -1,3 +1,12 @@
+# NOTES
+
+## Scripts
+
+`testDefects4j.py` - run inference on Defects4j v1.2 benchmark
+
+
+---------------------------------------------------------
+
 # Recoder
 A PyTorch Implementation of "A Syntax-Guided Edits Decoder for Neural Program Repair"
 
