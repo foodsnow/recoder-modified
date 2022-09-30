@@ -47,7 +47,7 @@ class SumDataset(data.Dataset):
         for x in self.rule_dict:
             self.rule_reverse_dict[self.rule_dict[x]] = x
 
-        if not os.path.exists("nl_voc.pkl"):
+        if not os.path.exists("data_nl_voc.pkl"):
             self.init_dic()
 
         self.Load_Voc()
@@ -70,9 +70,9 @@ class SumDataset(data.Dataset):
             return
 
     def Load_Voc(self):
-        if os.path.exists("nl_voc.pkl"):
-            logger.info('loading nl_voc.pkl')
-            self.NL_VOCAB = pickle.load(open("nl_voc.pkl", "rb"))
+        if os.path.exists("data_nl_voc.pkl"):
+            logger.info('loading data_nl_voc.pkl')
+            self.NL_VOCAB = pickle.load(open("data_nl_voc.pkl", "rb"))
         if os.path.exists("code_voc.pkl"):
             logger.info('loading code_voc.pkl')
             self.CODE_VOCAB = pickle.load(open("code_voc.pkl", "rb"))
@@ -134,7 +134,7 @@ class SumDataset(data.Dataset):
             for c in x:
                 if c not in self.CHAR_VOCAB:
                     self.CHAR_VOCAB[c] = len(self.CHAR_VOCAB)
-        open("nl_voc.pkl", "wb").write(pickle.dumps(self.NL_VOCAB))
+        open("data_nl_voc.pkl", "wb").write(pickle.dumps(self.NL_VOCAB))
         open("code_voc.pkl", "wb").write(pickle.dumps(self.CODE_VOCAB))
         open("data_char_voc.pkl", "wb").write(pickle.dumps(self.CHAR_VOCAB))
         print(maxNlLen, maxCodeLen, maxCharLen)
