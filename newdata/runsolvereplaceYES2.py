@@ -6,7 +6,7 @@ import numpy as np
 from tqdm import tqdm
 
 from Searchnode1 import Node
-from ..base_logger import logger
+from base_logger import logger
 
 ONE_LIST = [
     'SRoot',
@@ -666,11 +666,14 @@ if __name__ == '__main__':
 
     res = []
     tres = []
+    newdata = []
+
     data = []
     data.extend(pickle.load(open('data0.pkl', "rb")))
-    newdata = []
+
     which_10k = int(sys.argv[1])
     data = data[which_10k * 10000:which_10k*10000 + 10000]
+
     i = 0
     for xs in tqdm(data):
         if 'oldtree' in xs:
