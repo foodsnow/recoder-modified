@@ -76,9 +76,9 @@ class SumDataset(data.Dataset):
         if os.path.exists("code_voc.pkl"):
             logger.info('loading code_voc.pkl')
             self.CODE_VOCAB = pickle.load(open("code_voc.pkl", "rb"))
-        if os.path.exists("char_voc.pkl"):
-            logger.info('loading char_voc.pkl')
-            self.CHAR_VOCAB = pickle.load(open("char_voc.pkl", "rb"))
+        if os.path.exists("data_char_voc.pkl"):
+            logger.info('loading data_char_voc.pkl')
+            self.CHAR_VOCAB = pickle.load(open("data_char_voc.pkl", "rb"))
         self.NL_VOCAB["<emptynode>"] = len(self.NL_VOCAB)
         self.CODE_VOCAB["<emptynode>"] = len(self.CODE_VOCAB)
 
@@ -136,7 +136,7 @@ class SumDataset(data.Dataset):
                     self.CHAR_VOCAB[c] = len(self.CHAR_VOCAB)
         open("nl_voc.pkl", "wb").write(pickle.dumps(self.NL_VOCAB))
         open("code_voc.pkl", "wb").write(pickle.dumps(self.CODE_VOCAB))
-        open("char_voc.pkl", "wb").write(pickle.dumps(self.CHAR_VOCAB))
+        open("data_char_voc.pkl", "wb").write(pickle.dumps(self.CHAR_VOCAB))
         print(maxNlLen, maxCodeLen, maxCharLen)
 
     def get_embedding(self, word_list: List[str], vocab: Dict[str, int]):
