@@ -6,6 +6,7 @@ import numpy as np
 from tqdm import tqdm
 
 from Searchnode1 import Node
+from ..base_logger import logger
 
 ONE_LIST = [
     'SRoot',
@@ -136,16 +137,16 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
     global COPY_NODE
     global RULEAD
     global IS_VALID
-    
+
     if not IS_VALID:
         return
-    
+
     if len(node.child) == 0:
         return [], []
-    
+
     copyid = -1
     child = node.child
-    
+
     if len(node.child) == 1 and len(node.child[0].child) == 0 and copyid == -1 and copy:
         if node.child[0].name in varnames:
             rule = node.name + " -> " + varnames[node.child[0].name]
@@ -159,7 +160,7 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
             return
-    
+
     if copyid == -1:
         copyid = getcopyid(nls, node.getTreestr(), node.id)
         if node.name == 'MemberReference' or node.name == 'operator' or node.name == 'type' or node.name == 'prefix_operators' or node.name == 'value':
@@ -170,7 +171,7 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
         if node.name == 'Literal':
             if 'value -> ' + node.child[0].child[0].name in RULES:
                 copyid = -1
-    
+
     if len(node.child) == 1 and len(node.child[0].child) == 0 and copyid == -1:
         rule = node.name + " -> " + node.child[0].name
         if rule not in RULES and (node.name == 'member' or node.name == 'qualifier'):
@@ -180,7 +181,7 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
             return
-    
+
     if copyid != -1:
         COPY_NODE[node.name] = 1
         RULE_LIST.append(copyid)
@@ -280,8 +281,6 @@ def hassamechild(l1, l2):
     return False
 
 
-
-
 def setProb(r, p):
     r.possibility = p
     for x in r.child:
@@ -306,9 +305,6 @@ def getLineNode(root, block, add=True):
             tmp = getLineNode(x, block)
             ans.extend(tmp)
     return ans
-
-
-
 
 
 def setid(root):
@@ -355,6 +351,9 @@ def getchangednode(root1, root2):
 
 
 def getDiffNode(linenode1, linenode2, root, nls, m):
+
+    logger.info('starting get_diff_node()')
+
     global RES_LIST
     global RULES
     global ONE_LIST
@@ -659,13 +658,16 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
 lst = ['Chart-1', 'Chart-4', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-13', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-10', 'Closure-14', 'Closure-18', 'Closure-20', 'Closure-31', 'Closure-38', 'Closure-51', 'Closure-52', 'Closure-55', 'Closure-57', 'Closure-59', 'Closure-62', 'Closure-71', 'Closure-73', 'Closure-86', 'Closure-104', 'Closure-107', 'Closure-113', 'Closure-123', 'Closure-124', 'Closure-125', 'Closure-130', 'Closure-133', 'Lang-6', 'Lang-16', 'Lang-24', 'Lang-26', 'Lang-29', 'Lang-33', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-3', 'Math-5', 'Math-11', 'Math-27', 'Math-30', 'Math-32', 'Math-33', 'Math-34', 'Math-41', 'Math-48', 'Math-53', 'Math-57', 'Math-58', 'Math-59', 'Math-63', 'Math-69', 'Math-70', 'Math-73', 'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-96', 'Math-101', 'Math-105', 'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Time-27', 'Lang-43', 'Math-50', 'Math-98', 'Time-7', 'Mockito-38']
 
 if __name__ == '__main__':
+
+    logger.info('starting run solve replace script')
+
     res = []
     tres = []
     data = []
     data.extend(pickle.load(open('data0.pkl', "rb")))
     newdata = []
-    v = int(sys.argv[1])
-    data = data[v * 10000:v*10000 + 10000]
+    which_10k = int(sys.argv[1])
+    data = data[which_10k * 10000:which_10k*10000 + 10000]
     i = 0
     for xs in tqdm(data):
         if 'oldtree' in xs:
@@ -731,11 +733,11 @@ if __name__ == '__main__':
         COPY_NODE = {}
         HAS_COPY = {}
         ACTION = []
-    
+
     REVERSE_RULES_DICT = {}
     for x in RULES:
         REVERSE_RULES_DICT[RULES[x]] = x
-    
+
     for p, x in enumerate(tres):
         tmp = []
         for s in x['input']:
@@ -749,9 +751,9 @@ if __name__ == '__main__':
                     i = x - 2000000
                 else:
                     i = x - 1000000
-    
-    open('rulead%d.pkl' % v, "wb").write(pickle.dumps(RULEAD))
-    open('rule2.pkl', "wb").write(pickle.dumps(RULES))
-    open('process_datacopy%d.pkl' % v, "wb").write(pickle.dumps(tres))
-    
+
+    open('rulead%d.pkl' % which_10k, "wb").write(pickle.dumps(RULEAD))
+    open('rule%d.pkl' % which_10k, "wb").write(pickle.dumps(RULES))
+    open('process_datacopy%d.pkl' % which_10k, "wb").write(pickle.dumps(tres))
+
     exit(0)
