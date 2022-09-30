@@ -41,7 +41,7 @@ class SumDataset(data.Dataset):
         self.Nls = []
         self.num_step = 50
 
-        self.rule_dict: Dict[str, int] = pickle.load(open("rule.pkl", "rb"))
+        self.rule_dict: Dict[str, int] = pickle.load(open("data_rule.pkl", "rb"))
         self.rule_dict['start -> copyword2'] = len(self.rule_dict)
         self.rule_reverse_dict = {}
         for x in self.rule_dict:

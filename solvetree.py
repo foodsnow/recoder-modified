@@ -145,7 +145,7 @@ for x in lst:
         # print(rules)
         # print(asts)
 wf.close()
-wf = open("rule.pkl", "wb")
+wf = open("data_rule.pkl", "wb")
 wf.write(pickle.dumps(rules))
 wf.close()
 print(copynode)
