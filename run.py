@@ -138,7 +138,7 @@ def evalacc(model, dev_set: SumDataset):
     tcard = []
     loss = []
     antimask2 = antimask.unsqueeze(0).repeat(len(dev_set), 1, 1).unsqueeze(1)
-    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
+    rulead = to_torch_tensor(pickle.load(open("data_rulead.pkl", "rb"))
                              ).float().unsqueeze(0).repeat(4, 1, 1)
     tmpindex = to_torch_tensor(np.arange(len(dev_set.rule_dict))
                                ).unsqueeze(0).repeat(4, 1).long()
@@ -177,7 +177,7 @@ def evalacc(model, dev_set: SumDataset):
 def train():
     train_set = SumDataset(ARGS, "train")
     print(len(train_set.rule_reverse_dict))
-    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))
+    rulead = to_torch_tensor(pickle.load(open("data_rulead.pkl", "rb"))
                              ).float().unsqueeze(0).repeat(4, 1, 1)
     ARGS.cnum = rulead.size(1)
     tmpast = get_AST_pkl(train_set)
@@ -503,7 +503,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 
     tmpf = to_torch_tensor(input_rule_parent).unsqueeze(0).repeat(2, 1).long()
     tmpc = to_torch_tensor(input_rule_child).unsqueeze(0).repeat(2, 1, 1).long()
-    rulead = to_torch_tensor(pickle.load(open("rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
+    rulead = to_torch_tensor(pickle.load(open("data_rulead.pkl", "rb"))).float().unsqueeze(0).repeat(2, 1, 1)
     tmpindex = to_torch_tensor(np.arange(len(sum_dataset.rule_dict))).unsqueeze(0).repeat(2, 1).long()
     tmpchar = to_torch_tensor(temp_ast).unsqueeze(0).repeat(2, 1, 1).long()
     tmpindex2 = to_torch_tensor(np.arange(len(sum_dataset.CODE_VOCAB))).unsqueeze(0).repeat(2, 1).long()
@@ -692,7 +692,7 @@ def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_s
 def test():
 
     dev_set = SumDataset(ARGS, "test")
-    rulead_tensor = to_torch_tensor(pickle.load(open("rulead.pkl", "rb")))
+    rulead_tensor = to_torch_tensor(pickle.load(open("data_rulead.pkl", "rb")))
     rulead = rulead_tensor.float().unsqueeze(0).repeat(2, 1, 1)
 
     ARGS.cnum = rulead.size(1)
