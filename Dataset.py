@@ -60,9 +60,7 @@ class SumDataset(data.Dataset):
                 logger.info('loaded data_train_data.pkl')
                 return
             data = pickle.load(open('data_process_datacopy.pkl', 'rb'))
-            logger.info('loaded data_process_datacopy.pkl')
-            print(len(data))
-            train_size = int(len(data) / 8 * 7)
+            logger.info('loaded data_process_datacopy.pkl for train')
             self.data = self.preProcessData(data)
         elif dataName == "val":
             if os.path.exists("data_val_data.pkl"):
@@ -70,10 +68,15 @@ class SumDataset(data.Dataset):
                 self.nl = pickle.load(open("data_val_nl.pkl", "rb"))
                 logger.info('loaded data_val_data.pkl and data_val_nl.pkl')
                 return
-            self.data = self.preProcessData(
-                open(self.val_path, "r", encoding='utf-8'))
+            self.data = self.preProcessData(open(self.val_path, "r", encoding='utf-8'))
         else:
-            return
+            if os.path.exists("data_test_data.pkl"):
+                self.data = pickle.load(open("data_test_data.pkl", "rb"))
+                self.nl = pickle.load(open("data_test_nl.pkl", "rb"))
+                return
+            data = pickle.load(open('data_process_testcopy.pkl', 'rb'))
+            logger.info('loaded data_process_testcopy.pkl for test')
+            self.data = self.preProcessData(data)
 
     def Load_Voc(self):
         if os.path.exists("data_nl_voc.pkl"):
