@@ -180,72 +180,99 @@ def train():
 
     train_set = SumDataset(ARGS, "train")
     print(len(train_set.rule_reverse_dict))
-    rulead = to_torch_tensor(pickle.load(open("data_rulead.pkl", "rb"))
-                             ).float().unsqueeze(0).repeat(4, 1, 1)
+
+    rulead = to_torch_tensor(pickle.load(open("data_rulead.pkl", "rb"))).float().unsqueeze(0).repeat(4, 1, 1)
     ARGS.cnum = rulead.size(1)
+
     tmpast = get_AST_pkl(train_set)
     a, b = get_rule_pkl(train_set)
+
     tmpf = to_torch_tensor(a).unsqueeze(0).repeat(4, 1).long()
     tmpc = to_torch_tensor(b).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex = to_torch_tensor(np.arange(len(train_set.rule_dict))
-                               ).unsqueeze(0).repeat(4, 1).long()
+    tmpindex = to_torch_tensor(np.arange(len(train_set.rule_dict))).unsqueeze(0).repeat(4, 1).long()
     tmpchar = to_torch_tensor(tmpast).unsqueeze(0).repeat(4, 1, 1).long()
-    tmpindex2 = to_torch_tensor(np.arange(len(train_set.CODE_VOCAB))
-                                ).unsqueeze(0).repeat(4, 1).long()
+    tmpindex2 = to_torch_tensor(np.arange(len(train_set.CODE_VOCAB))).unsqueeze(0).repeat(4, 1).long()
+
     ARGS.Code_Vocsize = len(train_set.CODE_VOCAB)
     ARGS.Nl_Vocsize = len(train_set.NL_VOCAB)
     ARGS.Vocsize = len(train_set.CHAR_VOCAB)
     ARGS.rulenum = len(train_set.rule_dict) + ARGS.NlLen
-    #dev_set = SumDataset(args, "val")
+
     test_set = SumDataset(ARGS, "test")
-    print(len(test_set))
-    data_loader = torch.utils.data.DataLoader(dataset=train_set, batch_size=ARGS.batch_size,
-                                              shuffle=False, drop_last=True, num_workers=1)
+
+    data_loader = torch.utils.data.DataLoader(
+        dataset=train_set,
+        batch_size=ARGS.batch_size,
+        shuffle=False,
+        drop_last=True,
+        num_workers=1
+    )
+
     model = Decoder(ARGS)
-    # load_model(model)
+
     optimizer = optim.Adam(model.parameters(), lr=1e-4)
-    optimizer = ScheduledOptim(
-        optimizer, d_model=ARGS.embedding_size, n_warmup_steps=4000)
+    optimizer = ScheduledOptim(optimizer, d_model=ARGS.embedding_size, n_warmup_steps=4000)
+
     maxAcc = 0
     maxC = 0
     maxAcc2 = 0
     maxC2 = 0
     maxL = 1e10
+
     if torch.cuda.is_available():
-        print('using GPU')
-        #os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+        logger.info('using GPU for training')
         model = model.cuda()
         model = nn.DataParallel(model, device_ids=[0, 1])
+
     antimask = to_torch_tensor(get_anti_mask(ARGS.CodeLen))
-    # model.to()
+
     for epoch in range(100000):
         j = 0
         for dBatch in tqdm(data_loader):
             if j % 3000 == 10:
-                #acc, tnum = evalacc(model, dev_set)
                 acc2, tnum2, l = evalacc(model, test_set)
-                #print("for dev " + str(acc) + " " + str(tnum) + " max is " + str(maxC))
-                print("for test " + str(acc2) + " " + str(tnum2) +
-                      " max is " + str(maxC2) + "loss is " + str(l))
-                # exit(0)
-                if maxL > l:  # if maxC2 < tnum2 or maxC2 == tnum2 and maxAcc2 < acc2:
+
+                print("for test " + str(acc2) + " " + str(tnum2) + " max is " + str(maxC2) + "loss is " + str(l))
+
+                if maxL > l:
                     maxC2 = tnum2
                     maxAcc2 = acc2
                     maxL = l
+
                     print("find better acc " + str(maxAcc2))
                     save_model(model.module)
-            antimask2 = antimask.unsqueeze(0).repeat(
-                ARGS.batch_size, 1, 1).unsqueeze(1)
+
+            antimask2 = antimask.unsqueeze(0).repeat(ARGS.batch_size, 1, 1).unsqueeze(1)
+
             model = model.train()
             for i in range(len(dBatch)):
                 dBatch[i] = to_torch_tensor(dBatch[i])
-            loss, _ = model(dBatch[0], dBatch[1], dBatch[2], dBatch[3], dBatch[4], dBatch[6], dBatch[7],
-                            dBatch[8], dBatch[9], tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask2, dBatch[5])
-            # print(loss.mean())
-            loss = torch.mean(loss)  # + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 2, 1).squeeze(0).squeeze(0).mean() + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 3, 1).squeeze(0).squeeze(0).mean() + F.max_pool1d(loss.unsqueeze(0).unsqueeze(0), 4, 1).squeeze(0).squeeze(0).mean()
+
+            loss, _ = model(
+                dBatch[0],
+                dBatch[1],
+                dBatch[2],
+                dBatch[3],
+                dBatch[4],
+                dBatch[6],
+                dBatch[7],
+                dBatch[8],
+                dBatch[9],
+                tmpf,
+                tmpc,
+                tmpindex,
+                tmpchar,
+                tmpindex2,
+                rulead,
+                antimask2,
+                dBatch[5]
+            )
+
+            loss = torch.mean(loss)
             optimizer.zero_grad()
             loss.backward()
             optimizer.step_and_update_lr()
+
             j += 1
 
 
