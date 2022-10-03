@@ -733,9 +733,9 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
             tree = parser.parse()
             ast_as_list = convert_to_AST_as_list(tree)
-            tmp_tree_root = convert_AST_as_list_to_tree(ast_as_list)
+            tmp_tree = convert_AST_as_list_to_tree(ast_as_list)
 
-            current_root_at_buggy_line = get_node_by_line_number(tmp_tree_root, buggy_line_number)
+            current_root_at_buggy_line = get_node_by_line_number(tmp_tree, buggy_line_number)
             lnode, mnode = get_subroot(current_root_at_buggy_line)
             if mnode is None:
                 continue
