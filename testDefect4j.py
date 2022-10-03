@@ -307,7 +307,7 @@ def get_line_numbers(node: Node) -> List[int]:
     return line_numbers
 
 
-def get_line_node(node: Node, block: str, add=True) -> List[Node]:
+def get_line_nodes(node: Node, block: str, add=True) -> List[Node]:
     '''
     NOTE Mutates node
     NOTE recursive
@@ -334,7 +334,7 @@ def get_line_node(node: Node, block: str, add=True) -> List[Node]:
             else:
                 s = block + node.name
 
-            tmp = get_line_node(child, block)
+            tmp = get_line_nodes(child, block)
             '''
             if x.name == 'then_statement' and tmp == []:
                 print(tmp)
@@ -376,6 +376,7 @@ def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
         temp_node = sub_root
         tree_str = temp_node.getTreestr().strip()
 
+        # consider buggy statements with 1000 tokens max
         if len(tree_str.split()) >= 1000:
             print("ERROR! TOO LONG STATEMENT!")
             return None, None, None
@@ -396,16 +397,16 @@ def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
             b = True
 
             after_node = temp_node.child.index(answer_node.child[-1]) + 1
-            if after_node < len(temp_node.child) and answer_node.num + temp_node.child[after_node].getNum() < 1000:
+            if after_node < len(temp_node.child) and answer_node.num + temp_node.child[after_node].get_num_tokens() < 1000:
                 b = False
                 answer_node.child.append(temp_node.child[after_node])
-                answer_node.num += temp_node.child[after_node].getNum()
+                answer_node.num += temp_node.child[after_node].get_num_tokens()
 
             pre_node = temp_node.child.index(answer_node.child[0]) - 1
-            if pre_node >= 0 and answer_node.num + temp_node.child[pre_node].getNum() < 1000:
+            if pre_node >= 0 and answer_node.num + temp_node.child[pre_node].get_num_tokens() < 1000:
                 b = False
                 answer_node.child.append(temp_node.child[pre_node])
-                answer_node.num += temp_node.child[pre_node].getNum()
+                answer_node.num += temp_node.child[pre_node].get_num_tokens()
 
             if b:
                 break
@@ -736,13 +737,13 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             tmp_tree = convert_AST_as_list_to_tree(ast_as_list)
 
             current_root_at_buggy_line = get_node_by_line_number(tmp_tree, buggy_line_number)
-            lnode, mnode = get_subroot(current_root_at_buggy_line)
+            line_node, method_node = get_subroot(current_root_at_buggy_line)
 
             # skip if buggy line is not in method nor in constructor
-            if mnode is None:
+            if method_node is None:
                 continue
 
-            method_name, start_line, end_line = get_method_name_and_range(tree, mnode, buggy_line_number)
+            method_name, start_line, end_line = get_method_name_and_range(tree, method_node, buggy_line_number)
             if buggy_class_java_path not in method_map:
                 method_map[buggy_class_java_path] = list()
             method_map[buggy_class_java_path].append({"function": method_name, "begin": start_line, "end": end_line})
@@ -750,11 +751,11 @@ for i, project_name in enumerate(PROJECTS_V1_2):
             old_code = buggy_class_src_lines[buggy_line_number - 1]
 
             is_if = True
-            sub_root = lnode  # line root
-            tree_root = mnode  # method decl
+            sub_root = line_node  # line root
+            tree_root = method_node  # method decl
             pre_sub_root = None
             after_sub_root = None
-            line_nodes = get_line_node(tree_root, '')
+            line_nodes = get_line_nodes(tree_root, '')
 
             if sub_root not in line_nodes:
                 continue

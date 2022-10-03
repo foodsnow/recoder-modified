@@ -186,7 +186,7 @@ class Node:
         result += "^ "
         return result
 
-    def getNum(self):
+    def get_num_tokens(self):
         return len(self.getTreestr().strip().split())
 
     def get_node_possibilities(self, node: 'Node') -> List[int]:
