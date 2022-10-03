@@ -1150,13 +1150,13 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
 
     savedata = []
     patch = {}
-    for x in tqdm(dev_loader):
+    for batch_data in tqdm(dev_loader):
         if indexs < 0:
             indexs += 1
             continue
 
         result_beam_search = BeamSearch(
-            input_nl=(x[0], x[1], None, None, None, None, None, None, x[2], x[3]),
+            input_nl=(batch_data[0], batch_data[1], None, None, None, None, None, None, batch_data[2], batch_data[3]),
             sum_dataset=dev_set,
             decoder_model=model,
             beam_size=100,
