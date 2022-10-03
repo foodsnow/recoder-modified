@@ -220,11 +220,11 @@ class SumDataset(data.Dataset):
 
         logger.info('starting to pre-process data about buggy location')
 
-        inputNl = []
-        inputNlchar = []
-        inputPos = []
-        inputNlad = []
-        Nl: List[List[str]] = []
+        input_embeddings_padded = []
+        input_sparce_matrices = []
+        input_node_possibilities_padded = []
+        input_char_embeddigns_padded = []
+        tokens_of_tree_as_str_without_jumps_with_var_list: List[List[str]] = []
 
         for data_buggy_location in data_buggy_locations:
 
@@ -239,8 +239,8 @@ class SumDataset(data.Dataset):
             # from troot:
             # arguments MemberReference member loc4 ^ ^ ^ ^ member getItemCount_ter ^ ^ ^ ^ ^ ^ ^ ForStatement 
             # control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator
-            tokens_of_tree_as_str_with_var = tree_as_str_with_var.split()
-            Nl.append(tokens_of_tree_as_str_with_var)
+            tokens_of_tree_as_str_without_jumps_with_var = tree_as_str_with_var.split()
+            tokens_of_tree_as_str_without_jumps_with_var_list.append(tokens_of_tree_as_str_without_jumps_with_var)
 
             node_root = SimpleNode('root', 0)
             tokens_without_jumps: List[str] = ['root']    # nl without terminal
@@ -249,7 +249,7 @@ class SumDataset(data.Dataset):
             # traverse the tree and do sth
             current_node = node_root
             node_id = 1
-            for token_as_str in tokens_of_tree_as_str_with_var[1:]:
+            for token_as_str in tokens_of_tree_as_str_without_jumps_with_var[1:]:
 
                 if token_as_str != "^":
                     token_as_node = SimpleNode(token_as_str, node_id)
@@ -265,6 +265,7 @@ class SumDataset(data.Dataset):
                 else:
                     current_node = current_node.father
 
+            # data to construct sparse matrix
             nladrow = []
             nladcol = []
             nladdata = []
@@ -289,26 +290,27 @@ class SumDataset(data.Dataset):
                         nladcol.append(child.id)
                         nladdata.append(1)
 
-            tokens_of_tree_as_str_with_var = tokens_without_jumps
+            tokens_of_tree_as_str_without_jumps_with_var = tokens_without_jumps
 
-            embedding = self.get_embedding(tokens_of_tree_as_str_with_var, self.NL_VOCAB)
-            input_nls = self.pad_seq(embedding, self.Nl_Len)
+            embedding = self.get_embedding(tokens_of_tree_as_str_without_jumps_with_var, self.NL_VOCAB)
+            embedding_padded = self.pad_seq(embedding, self.Nl_Len)
 
-            nl_ad = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
-            input_nl_char = self.get_char_embedding(tokens_of_tree_as_str_with_var)
+            # https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.coo_matrix.html
+            sparce_matrix = sparse.coo_matrix((nladdata, (nladrow, nladcol)), shape=(self.Nl_Len, self.Nl_Len))
+            char_embeddings = self.get_char_embedding(tokens_of_tree_as_str_without_jumps_with_var)
 
-            for j in range(len(input_nl_char)):
-                input_nl_char[j] = self.pad_seq(input_nl_char[j], self.Char_Len)
+            for j in range(len(char_embeddings)):
+                char_embeddings[j] = self.pad_seq(char_embeddings[j], self.Char_Len)
 
-            input_nl_char = self.pad_list(input_nl_char, self.Nl_Len, self.Char_Len)
+            char_embeddings_padded = self.pad_list(char_embeddings, self.Nl_Len, self.Char_Len)
 
-            inputNl.append(input_nls)
-            inputNlad.append(nl_ad)
-            inputPos.append(node_possibilities)
-            inputNlchar.append(input_nl_char)
+            input_embeddings_padded.append(embedding_padded)
+            input_sparce_matrices.append(sparce_matrix)
+            input_node_possibilities_padded.append(node_possibilities)
+            input_char_embeddigns_padded.append(char_embeddings_padded)
 
-        self.data = [inputNl, inputNlad, inputPos, inputNlchar]
-        self.nl = Nl
+        self.data = [input_embeddings_padded, input_sparce_matrices, input_node_possibilities_padded, input_char_embeddigns_padded]
+        self.nl = tokens_of_tree_as_str_without_jumps_with_var_list
 
     def preProcessData(self, dataFile):
 
