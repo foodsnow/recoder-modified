@@ -264,9 +264,6 @@ def get_method_name_and_range(tree: javalang.tree.CompilationUnit, mnode: Node, 
     # iterate method decls in tree
     for path, node in tree.filter(javalang.tree.MethodDeclaration):
         if start_line <= node.position.line <= end_line:
-            print(node.name)
-            print(node.position)
-            print("FOUND IT!")
             found_method = True
             last_node = node
             break
@@ -279,9 +276,6 @@ def get_method_name_and_range(tree: javalang.tree.CompilationUnit, mnode: Node, 
     # iterate constructor decls in tree
     for path, node in tree.filter(javalang.tree.ConstructorDeclaration):
         if start_line <= node.position.line <= end_line:
-            print(node.name)
-            print(node.position)
-            print("FOUND IT!")
             found_method = True
             last_node = node
             break
