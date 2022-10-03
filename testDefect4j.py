@@ -737,6 +737,8 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
             current_root_at_buggy_line = get_node_by_line_number(tmp_tree, buggy_line_number)
             lnode, mnode = get_subroot(current_root_at_buggy_line)
+
+            # skip if buggy line is not in method nor in constructor
             if mnode is None:
                 continue
 
