@@ -419,7 +419,7 @@ def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
     # set id: root is 0, and increase the id by preorder traversal
     set_id(troot)
 
-    var_names = get_loc_var(troot)
+    local_var_names = get_local_var_names(troot)
 
     fnum = -1
     vnum = -1
@@ -427,31 +427,31 @@ def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
     var_dict[m] = 'meth0'
     type_dict = {}
 
-    for child in var_names:
+    for local_var in local_var_names:
 
-        if child[1].name == 'VariableDeclarator':
+        if local_var[1].name == 'VariableDeclarator':
             vnum += 1
-            var_dict[child[0]] = 'loc' + str(vnum)
+            var_dict[local_var[0]] = 'loc' + str(vnum)
 
             type_name = -1
-            for s in child[1].father.father.child:
+            for s in local_var[1].father.father.local_var:
                 if s.name == 'type':
-                    type_name = s.child[0].child[0].child[0].name[:-4]
+                    type_name = s.local_var[0].local_var[0].local_var[0].name[:-4]
                     break
             assert (type_name != -1)
-            type_dict[child[0]] = type_name
+            type_dict[local_var[0]] = type_name
 
         else:
             fnum += 1
-            var_dict[child[0]] = 'par' + str(fnum)
+            var_dict[local_var[0]] = 'par' + str(fnum)
 
             type_name = -1
-            for s in child[1].child:
+            for s in local_var[1].local_var:
                 if s.name == 'type':
-                    type_name = s.child[0].child[0].child[0].name[:-4]
+                    type_name = s.local_var[0].local_var[0].local_var[0].name[:-4]
                     break
             assert (type_name != -1)
-            type_dict[child[0]] = type_name
+            type_dict[local_var[0]] = type_name
 
     return troot, var_dict, type_dict
 
@@ -464,7 +464,7 @@ def set_id(root):
         set_id(child)
 
 
-def get_loc_var(node: Node) -> Tuple[str, Node]:
+def get_local_var_names(node: Node) -> Tuple[str, Node]:
     '''
     NOTE recursive: down to children
     '''
@@ -497,7 +497,7 @@ def get_loc_var(node: Node) -> Tuple[str, Node]:
 
     # recursive call
     for child in node.child:
-        var_names.extend(get_loc_var(child))
+        var_names.extend(get_local_var_names(child))
 
     return var_names
 
