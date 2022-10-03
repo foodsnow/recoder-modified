@@ -232,10 +232,13 @@ class SumDataset(data.Dataset):
             node_possibilities: List[int] = data_buggy_location['prob']
             tree_as_str_with_var: str = data_buggy_location['tree']
 
+            # truncate or pad with 0's
             node_possibilities = self.pad_seq(node_possibilities, self.Nl_Len)
 
             # result of tree_as_str_with_var.split():
-            # ['MethodDeclaration', 'modifiers', 'public_ter', '^', '^', 'return_type', 'ReferenceType', ...]
+            # from troot:
+            # arguments MemberReference member loc4 ^ ^ ^ ^ member getItemCount_ter ^ ^ ^ ^ ^ ^ ^ ForStatement 
+            # control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator
             tokens_of_tree_as_str_with_var = tree_as_str_with_var.split()
             Nl.append(tokens_of_tree_as_str_with_var)
 
