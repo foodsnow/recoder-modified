@@ -518,12 +518,7 @@ class SumDataset(data.Dataset):
 
     def __getitem__(self, offset):
         ans = []
-        '''if self.dataName == "train":
-            h5f = h5py.File("data.h5", 'r')
-        if self.dataName == "val":
-            h5f = h5py.File("valdata.h5", 'r')
-        if self.dataName == "test":
-            h5f = h5py.File("testdata.h5", 'r')'''
+
         for i in range(len(self.data)):
             d = self.data[i][offset]
             if i == 1 or i == 6:
@@ -531,13 +526,7 @@ class SumDataset(data.Dataset):
                 ans.append(tmp)
             else:
                 ans.append(np.array(d))
-            '''if i == 6:
-                #print(self.data[i][offset])
-                tmp = np.eye(self.Code_Len)[d]
-                #print(tmp.shape)
-                tmp = np.concatenate([tmp, np.zeros([self.Code_Len, self.Code_Len])], axis=0)[:self.Code_Len,:]#self.pad_list(tmp, self.Code_Len, self.Code_Len)
-                ans.append(np.array(tmp))
-            else:'''
+
         return ans
 
     def __len__(self):
