@@ -312,6 +312,8 @@ class SumDataset(data.Dataset):
         self.data = [input_embeddings_padded, input_sparce_matrices, input_node_possibilities_padded, input_char_embeddings_padded]
         self.nl = tokens_of_tree_as_str_with_var_list
 
+        logger.info('ending to pre-process data about buggy location')
+
     def preProcessData(self, dataFile):
 
         logger.info('starting data pre-processing')
