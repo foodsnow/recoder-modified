@@ -434,9 +434,9 @@ def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
             var_dict[local_var[0]] = 'loc' + str(vnum)
 
             type_name = -1
-            for s in local_var[1].father.father.local_var:
+            for s in local_var[1].father.father.child:
                 if s.name == 'type':
-                    type_name = s.local_var[0].local_var[0].local_var[0].name[:-4]
+                    type_name = s.child[0].child[0].child[0].name[:-4]
                     break
             assert (type_name != -1)
             type_dict[local_var[0]] = type_name
@@ -446,9 +446,9 @@ def solve_long_tree(node: Node, sub_root: Node) -> Tuple[Node, Dict[str, str], D
             var_dict[local_var[0]] = 'par' + str(fnum)
 
             type_name = -1
-            for s in local_var[1].local_var:
+            for s in local_var[1].child:
                 if s.name == 'type':
-                    type_name = s.local_var[0].local_var[0].local_var[0].name[:-4]
+                    type_name = s.child[0].child[0].child[0].name[:-4]
                     break
             assert (type_name != -1)
             type_dict[local_var[0]] = type_name
@@ -793,6 +793,16 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 after_code = "\n".join(buggy_class_src_lines[max_line_number + 1:])
                 old_code = "\n".join(buggy_class_src_lines[min_line_number:max_line_number + 1])
 
+                '''
+                subroot is a root node of a buggy statement
+                troot is an oldest ancestor of subroot with number of tokens < 1000
+
+                var_dict looks like this:
+                {'iterateDomainBounds_ter': 'meth0', 'intervalXYData_ter': 'loc0', 'series_ter': 'loc4', 'itemCount_ter': 'loc5', 'item_ter': 'loc6', 'uvalue_ter': 'loc7'}
+
+                type_dict looks like this:
+                {'intervalXYData_ter': 'IntervalXYDataset', 'series_ter': 'int', 'itemCount_ter': 'int', 'item_ter': 'int', 'uvalue_ter': 'double'}
+                '''
                 troot, var_dict, type_dict = solve_long_tree(tree_root, sub_root)
                 if troot is None:
                     continue
