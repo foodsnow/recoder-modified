@@ -793,9 +793,18 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 after_code = "\n".join(buggy_class_src_lines[max_line_number + 1:])
                 old_code = "\n".join(buggy_class_src_lines[min_line_number:max_line_number + 1])
 
+                troot, var_dict, type_dict = solve_long_tree(tree_root, sub_root)
+                if troot is None:
+                    continue
+
                 '''
                 subroot is a root node of a buggy statement
+                tree_root is a root node of an enclosing method of subroot
                 troot is an oldest ancestor of subroot with number of tokens < 1000
+
+                old_code is a src of buggy line
+                pre_code is a src of everything before the buggy line
+                after_code is a src of everything after the buggy line
 
                 var_dict looks like this:
                 {'iterateDomainBounds_ter': 'meth0', 'intervalXYData_ter': 'loc0', 'series_ter': 'loc4', 'itemCount_ter': 'loc5', 'item_ter': 'loc6', 'uvalue_ter': 'loc7'}
@@ -803,10 +812,6 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 type_dict looks like this:
                 {'intervalXYData_ter': 'IntervalXYDataset', 'series_ter': 'int', 'itemCount_ter': 'int', 'item_ter': 'int', 'uvalue_ter': 'double'}
                 '''
-                troot, var_dict, type_dict = solve_long_tree(tree_root, sub_root)
-                if troot is None:
-                    continue
-
                 data_buggy_locations.append({
                     'bugid': user_given_bug_id,
                     'treeroot': tree_root,
