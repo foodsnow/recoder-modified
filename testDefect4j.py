@@ -46,10 +46,26 @@ def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]
     Recursively convert the argument into a Recoder compatible
     AST as list.
 
-    Example:
-    IfStatement condition BinaryOperation operator &&_ter ^ ^ 
-    operandl BinaryOperation operator !=_ter ^ ^ operandl 
-    MemberReference member loc2 ^ ^ ^ ^ operandr
+    Result example for chart-1 [:100]
+    [('CompilationUnit', None), 
+    'package', ('PackageDeclaration', Position(line=114, column=9)), 
+    'name', 'org.jfree.chart.renderer.category', '^', '^', '^', '^', 
+    'imports', 
+    ('Import', Position(line=116, column=1)), 'path', 'java.awt.AlphaComposite', '^', '^', '^', 
+    ('Import', Position(line=117, column=1)), 'path', 'java.awt.Composite', '^', '^', '^', 
+    ('Import', Position(line=118, column=1)), 'path', 'java.awt.Font', '^', '^', '^', 
+    ('Import', Position(line=119, column=1)), 'path', 'java.awt.GradientPaint', '^', '^', '^', 
+    ('Import', Position(line=120, column=1)), 'path', 'java.awt.Graphics2D', '^', '^', '^', 
+    ('Import', Position(line=121, column=1)), 'path', 'java.awt.Paint', '^', '^', '^', 
+    ('Import', Position(line=122, column=1)), 'path', 'java.awt.Rectangle', '^', '^', '^', 
+    ('Import', Position(line=123, column=1)), 'path', 'java.awt.Shape', '^', '^', '^', 
+    ('Import', Position(line=124, column=1)), 'path', 'java.awt.Stroke', '^', '^', '^', 
+    ('Import', Position(line=125, column=1)), 'path', 'java.awt.geom.Ellipse2D', '^', '^', '^', 
+    ('Import', Position(line=126, column=1)), 'path', 'java.awt.geom.Line2D', '^', '^', '^', 
+    ('Import', Position(line=127, column=1)), 'path', 'java.awt.geom.Point2D', '^', '^', '^', 
+    ('Import', Position(line=128, column=1)), 'path', 'java.awt.geom.Rectangle2D', '^', '^', '^', 
+    ('Import', Position(line=129, column=1)), 'path', 'java.io.Serializable', '^', '^', '^', 
+    ('Import', Position(line=130, column=1)), 'path', 'java.util.ArrayList', '^', '^', '^']
     '''
 
     tree_as_list = []
