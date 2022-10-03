@@ -1145,11 +1145,12 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
     dev_set.preProcessOne(data_buggy_locations)
 
     indexs = 0
-    devloader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=ARGS.batch_size,
+    dev_loader = torch.utils.data.DataLoader(dataset=dev_set, batch_size=ARGS.batch_size,
                                             shuffle=False, drop_last=False, num_workers=0)
+
     savedata = []
     patch = {}
-    for x in tqdm(devloader):
+    for x in tqdm(dev_loader):
         if indexs < 0:
             indexs += 1
             continue

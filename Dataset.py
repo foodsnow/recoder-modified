@@ -223,8 +223,8 @@ class SumDataset(data.Dataset):
         input_embeddings_padded = []
         input_sparce_matrices = []
         input_node_possibilities_padded = []
-        input_char_embeddigns_padded = []
-        tokens_of_tree_as_str_without_jumps_with_var_list: List[List[str]] = []
+        input_char_embeddings_padded = []
+        tokens_of_tree_as_str_with_var_list: List[List[str]] = []
 
         for data_buggy_location in data_buggy_locations:
 
@@ -239,8 +239,8 @@ class SumDataset(data.Dataset):
             # from troot:
             # arguments MemberReference member loc4 ^ ^ ^ ^ member getItemCount_ter ^ ^ ^ ^ ^ ^ ^ ForStatement 
             # control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator
-            tokens_of_tree_as_str_without_jumps_with_var = tree_as_str_with_var.split()
-            tokens_of_tree_as_str_without_jumps_with_var_list.append(tokens_of_tree_as_str_without_jumps_with_var)
+            tokens_of_tree_as_str_with_var = tree_as_str_with_var.split()
+            tokens_of_tree_as_str_with_var_list.append(tokens_of_tree_as_str_with_var)
 
             node_root = SimpleNode('root', 0)
             tokens_without_jumps: List[str] = ['root']    # nl without terminal
@@ -249,7 +249,7 @@ class SumDataset(data.Dataset):
             # traverse the tree and do sth
             current_node = node_root
             node_id = 1
-            for token_as_str in tokens_of_tree_as_str_without_jumps_with_var[1:]:
+            for token_as_str in tokens_of_tree_as_str_with_var[1:]:
 
                 if token_as_str != "^":
                     token_as_node = SimpleNode(token_as_str, node_id)
@@ -307,10 +307,10 @@ class SumDataset(data.Dataset):
             input_embeddings_padded.append(embedding_padded)
             input_sparce_matrices.append(sparce_matrix)
             input_node_possibilities_padded.append(node_possibilities)
-            input_char_embeddigns_padded.append(char_embeddings_padded)
+            input_char_embeddings_padded.append(char_embeddings_padded)
 
-        self.data = [input_embeddings_padded, input_sparce_matrices, input_node_possibilities_padded, input_char_embeddigns_padded]
-        self.nl = tokens_of_tree_as_str_without_jumps_with_var_list
+        self.data = [input_embeddings_padded, input_sparce_matrices, input_node_possibilities_padded, input_char_embeddings_padded]
+        self.nl = tokens_of_tree_as_str_with_var_list
 
     def preProcessData(self, dataFile):
 
