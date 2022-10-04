@@ -88,6 +88,15 @@ def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
 
 
 def get_anti_mask(size: int) -> np.ndarray:
+    '''
+    returns this kind of matrix: 
+
+    size=3
+    1, 0, 0
+    1, 1, 0
+    1, 1, 1
+    '''
+
     anti_mask = np.zeros([size, size])
     for i in range(size):
         for j in range(0, i + 1):
@@ -279,7 +288,7 @@ def train():
 
 
 class SearchNode:
-    def __init__(self, sum_dataset: SumDataset, nl):
+    def __init__(self, sum_dataset: SumDataset, tokens_of_tree_as_str_with_var: List[str]):
 
         logger.info('initializing SearchNode')
 
@@ -308,7 +317,7 @@ class SearchNode:
 
         currnode = root
         self.act_list: List[str] = []
-        for x in nl[1:]:
+        for x in tokens_of_tree_as_str_with_var[1:]:
             if x != "^":
                 nnode = Node(x, idx)
                 self.id_map[idx] = nnode
@@ -545,7 +554,7 @@ def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model:
     for word_search_node in sum_dataset.CODE_VOCAB:
         reversed_dict_code_vocab[sum_dataset.CODE_VOCAB[word_search_node]] = word_search_node
 
-    temp_ast = get_AST_pkl(sum_dataset)
+    temp_ast: np.ndarray = get_AST_pkl(sum_dataset)
 
     input_rule_parent, input_rule_child = get_rule_pkl(sum_dataset)
 
@@ -557,10 +566,26 @@ def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model:
     tmpindex2 = to_torch_tensor(np.arange(len(sum_dataset.CODE_VOCAB))).unsqueeze(0).repeat(2, 1).long()
 
     with torch.no_grad():
+        '''
+        beams:
+        {
+            batch 0: list of SearchNode's
+            batch 1: list of SearchNode's
+            ...
+        }
+        '''
         beams: Dict[int, List[SearchNode]] = {}
         his_tree: Dict[int, Dict[str, int]] = {}
 
         for i in range(batch_size):
+            '''
+            sum_dataset.nl[ARGS.batch_size * k + i]
+            is a list
+
+            sum_dataset.nl is a list of 
+            list of tokens of `tree as string` with var (troot)
+            --> i.e. size of sum_dataset.nl is equal to the number of buggy locations.
+            '''
             beams[i] = [SearchNode(sum_dataset, sum_dataset.nl[ARGS.batch_size * k + i])]
             his_tree[i] = {}
 
