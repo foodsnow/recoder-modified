@@ -40,7 +40,7 @@ class TreeAttEncoder(nn.Module):
 
     def forward(self, input_code, input_codechar, inputAd):
 
-        logger.info('starting forward() pass')
+        logger.info('starting TreeAttEncoder.forward() pass')
 
         codemask = torch.gt(input_code, 0)
         charEm = self.char_embedding(input_codechar)
@@ -75,7 +75,7 @@ class NlEncoder(nn.Module):
 
     def forward(self, nlencoding, nlad, input_nl, inputpos, charEm):
 
-        logger.info('starting forward() pass')
+        logger.info('starting NlEncoder.forward() pass')
 
         nlmask = torch.gt(input_nl, 0)
         posEm = self.pos_embedding(inputpos)
@@ -101,7 +101,7 @@ class CopyNet(nn.Module):
 
     def forward(self, source, traget):
 
-        logger.info('starting forward() pass')
+        logger.info('starting CopyNet.forward() pass')
 
         sourceLinear = self.LinearSource(source)
         targetLinear = self.LinearTarget(traget)
@@ -156,7 +156,7 @@ class Decoder(nn.Module):
 
     def getBleu(self, losses, ngram):
 
-        logger.info('starting to calculate BLEU score')
+        logger.info('starting Decoder.getBleu()')
 
         bleuloss = F.max_pool1d(losses.unsqueeze(1), ngram, 1).squeeze(1)
         bleuloss = torch.sum(bleuloss, dim=-1)
@@ -164,7 +164,7 @@ class Decoder(nn.Module):
 
     def forward(self, inputnl, inputnlad, inputrule, inputruleparent, inputrulechild, inputParent, inputParentPath, inputdepth, inputcodechar, tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask, inputRes=None, mode="train"):
 
-        logger.info('starting forward() pass')
+        logger.info('starting Decoder.forward() pass')
 
         selfmask = antimask
 
