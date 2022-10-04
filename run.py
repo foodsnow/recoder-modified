@@ -517,7 +517,7 @@ class SearchNode:
 beamss = []
 
 
-def BeamSearch(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_size: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
+def perform_beam_search(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_size: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
 
     logger.info('starting beam search')
 
@@ -1155,7 +1155,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             indexs += 1
             continue
 
-        result_beam_search = BeamSearch(
+        result_beam_search = perform_beam_search(
             input_nl=(batch_data[0], batch_data[1], None, None, None, None, None, None, batch_data[2], batch_data[3]),
             sum_dataset=dev_set,
             decoder_model=model,
@@ -1293,7 +1293,7 @@ def solveone2(data, model):
         #assert(np.array_equal(x[2][0], dev_set.datam[8][4]))
         #assert(np.array_equal(x[3][0], dev_set.datam[9][4]))
         #print(data[indexs]['mode'], data[indexs]['oldcode'])
-        ans = BeamSearch((x[0], x[1], None, None, None, None, None, None,
+        ans = perform_beam_search((x[0], x[1], None, None, None, None, None, None,
                          x[2], x[3]), dev_set, model, 60, ARGS.batch_size, indexs)
         print('debug', len(ans[0]))
         for i in range(len(ans)):
