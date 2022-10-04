@@ -524,6 +524,19 @@ beamss = []
 
 def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model: Decoder, beam_size: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
 
+    '''
+    input_nl[0] - input_embeddings_padded - torch.Size([1, 500])
+    input_nl[1] - input_sparce_matrices - torch.Size([1, 500, 500])
+    input_nl[2] - None or sth else (probably used somewhere else)
+    input_nl[3] - None or sth else (probably used somewhere else)
+    input_nl[4] - None or sth else (probably used somewhere else)
+    input_nl[5] - None or sth else (probably used somewhere else)
+    input_nl[6] - None or sth else (probably used somewhere else)
+    input_nl[7] - None or sth else (probably used somewhere else)
+    input_nl[8] - input_node_possibilities_padded - torch.Size([1, 500])
+    input_nl[9] - input_char_embeddings_padded - torch.Size([1, 500, 15])
+    '''
+
     logger.info('starting beam search')
 
     batch_size = len(input_nl[0].view(-1, ARGS.NlLen))
