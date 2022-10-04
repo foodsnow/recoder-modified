@@ -110,6 +110,8 @@ def get_rule_pkl(sum_dataset: SumDataset) -> Tuple[np.array, np.array]:
 
 def get_AST_pkl(sum_dataset: SumDataset) -> np.array:
 
+    logger.info('starting get_AST_pkl()')
+
     reversed_dict_code_vocab = {}
     for word in sum_dataset.CODE_VOCAB:
         reversed_dict_code_vocab[sum_dataset.CODE_VOCAB[word]] = word
@@ -278,6 +280,9 @@ def train():
 
 class SearchNode:
     def __init__(self, sum_dataset: SumDataset, nl):
+
+        logger.info('initializing SearchNode')
+
         self.states: List[int] = [sum_dataset.rule_dict["start -> root"]]
         self.prob: int = 0
         self.aprob = 0
@@ -517,7 +522,7 @@ class SearchNode:
 beamss = []
 
 
-def perform_beam_search(input_nl, sum_dataset: SumDataset, decoder_model: Decoder, beam_size: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
+def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model: Decoder, beam_size: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
 
     logger.info('starting beam search')
 
@@ -618,7 +623,7 @@ def perform_beam_search(input_nl, sum_dataset: SumDataset, decoder_model: Decode
                 temp_nl_8 = np.array(temp_nl_8)
                 temp_nl_9 = np.array(temp_nl_9)
 
-                print(f"before@{index} batch{i_batch_size} x: {word_search_node.prob}: {word_search_node.getTreestr()} ; {word_search_node.act_list}")
+                logger.info(f"before@{index} batch{i_batch_size} x: {word_search_node.prob}: {word_search_node.getTreestr()} ; {word_search_node.act_list}")
 
                 result = decoder_model(
                     to_torch_tensor(temp_nl),
@@ -641,7 +646,7 @@ def perform_beam_search(input_nl, sum_dataset: SumDataset, decoder_model: Decode
                     "test"
                 )
 
-                print(f"after@{index} batch{i_batch_size} x: {word_search_node.prob}: {word_search_node.getTreestr()} ; {word_search_node.act_list}")
+                logger.info(f"after@{index} batch{i_batch_size} x: {word_search_node.prob}: {word_search_node.getTreestr()} ; {word_search_node.act_list}")
 
                 results = result.data.cpu().numpy()
                 currIndex = 0

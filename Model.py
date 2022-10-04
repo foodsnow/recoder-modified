@@ -20,6 +20,9 @@ from base_logger import logger
 
 class TreeAttEncoder(nn.Module):
     def __init__(self, args):
+
+        logger.info('starting to initialize TreeAttEncoder')
+
         super(TreeAttEncoder, self).__init__()
 
         self.embedding_size = args.embedding_size
@@ -36,6 +39,9 @@ class TreeAttEncoder(nn.Module):
         self.transformerBlocksTree = nn.ModuleList([TransformerBlock(self.embedding_size, 8, self.feed_forward_hidden, 0.1) for _ in range(3)])
 
     def forward(self, input_code, input_codechar, inputAd):
+
+        logger.info('starting forward() pass')
+
         codemask = torch.gt(input_code, 0)
         charEm = self.char_embedding(input_codechar)
         charEm = self.conv(charEm.permute(0, 3, 1, 2))
@@ -50,6 +56,9 @@ class TreeAttEncoder(nn.Module):
 
 class NlEncoder(nn.Module):
     def __init__(self, args):
+
+        logger.info('starting to initialize NlEncoder')
+
         super(NlEncoder, self).__init__()
         self.embedding_size = args.embedding_size
         self.nl_len = args.NlLen
@@ -65,6 +74,9 @@ class NlEncoder(nn.Module):
             [TransformerBlock(self.embedding_size, 8, self.feed_forward_hidden, 0.1) for _ in range(5)])'''
 
     def forward(self, nlencoding, nlad, input_nl, inputpos, charEm):
+
+        logger.info('starting forward() pass')
+
         nlmask = torch.gt(input_nl, 0)
         posEm = self.pos_embedding(inputpos)
         x = nlencoding
@@ -75,6 +87,9 @@ class NlEncoder(nn.Module):
 
 class CopyNet(nn.Module):
     def __init__(self, args):
+
+        logger.info('starting to initialize CopyNet')
+
         super(CopyNet, self).__init__()
         self.embedding_size = args.embedding_size
         self.LinearSource = nn.Linear(
@@ -85,6 +100,9 @@ class CopyNet(nn.Module):
         self.LinearProb = nn.Linear(self.embedding_size, 4)
 
     def forward(self, source, traget):
+
+        logger.info('starting forward() pass')
+
         sourceLinear = self.LinearSource(source)
         targetLinear = self.LinearTarget(traget)
         genP = self.LinearRes(F.tanh(sourceLinear.unsqueeze(
@@ -137,11 +155,17 @@ class Decoder(nn.Module):
         self.position = PositionalEmbedding(self.embedding_size)
 
     def getBleu(self, losses, ngram):
+
+        logger.info('starting to calculate BLEU score')
+
         bleuloss = F.max_pool1d(losses.unsqueeze(1), ngram, 1).squeeze(1)
         bleuloss = torch.sum(bleuloss, dim=-1)
         return bleuloss
 
     def forward(self, inputnl, inputnlad, inputrule, inputruleparent, inputrulechild, inputParent, inputParentPath, inputdepth, inputcodechar, tmpf, tmpc, tmpindex, tmpchar, tmpindex2, rulead, antimask, inputRes=None, mode="train"):
+
+        logger.info('starting forward() pass')
+
         selfmask = antimask
 
         # selfmask = antimask.unsqueeze(0).repeat(inputtype.size(0), 1, 1).unsqueeze(1)
@@ -247,47 +271,3 @@ class Decoder(nn.Module):
         # totalloss = torch.mean(totalloss)
         return totalloss, resSoftmax
 
-
-# this model is not used anywhere
-class JointEmbber(nn.Module):
-    def __init__(self, args):
-        super(JointEmbber, self).__init__()
-        self.embedding_size = args.embedding_size
-        self.codeEncoder = TreeAttEncoder(args)
-        self.margin = args.margin
-        self.nlEncoder = NlEncoder(args)
-        self.poolConvnl = nn.Conv1d(
-            self.embedding_size, self.embedding_size, 3)
-        self.poolConvcode = nn.Conv1d(
-            self.embedding_size, self.embedding_size, 3)
-        self.maxPoolnl = nn.MaxPool1d(args.NlLen)
-        self.maxPoolcode = nn.MaxPool1d(args.CodeLen)
-
-    def scoring(self, qt_repr, cand_repr):
-        sim = F.cosine_similarity(qt_repr, cand_repr)
-        return sim
-
-    def nlencoding(self, inputnl, inputnlchar):
-        nl = self.nlEncoder(inputnl, inputnlchar)
-        nl = self.maxPoolnl(self.poolConvnl(nl.permute(0, 2, 1))).squeeze(-1)
-        return nl
-
-    def codeencoding(self, inputcode, inputcodechar, ad):
-        code = self.codeEncoder(inputcode, inputcodechar, ad)
-        code = self.maxPoolcode(self.poolConvcode(
-            code.permute(0, 2, 1))).squeeze(-1)
-        return code
-
-    def forward(self, inputnl, inputnlchar, inputcode, inputcodechar, ad, inputcodeneg, inputcodenegchar, adneg):
-        nl = self.nlEncoder(inputnl, inputnlchar)
-        code = self.codeEncoder(inputcode, inputcodechar, ad)
-        codeneg = self.codeEncoder(inputcodeneg, inputcodenegchar, adneg)
-        nl = self.maxPoolnl(self.poolConvnl(nl.permute(0, 2, 1))).squeeze(-1)
-        code = self.maxPoolcode(self.poolConvcode(
-            code.permute(0, 2, 1))).squeeze(-1)
-        codeneg = self.maxPoolcode(self.poolConvcode(
-            codeneg.permute(0, 2, 1))).squeeze(-1)
-        good_score = self.scoring(nl, code)
-        bad_score = self.scoring(nl, codeneg)
-        loss = (self.margin - good_score + bad_score).clamp(min=1e-6).mean()
-        return loss, good_score, bad_score
