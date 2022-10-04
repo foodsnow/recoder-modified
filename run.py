@@ -521,9 +521,6 @@ class SearchNode:
         return self.printTree(self.root_node)
 
 
-beamss = []
-
-
 def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model: Decoder, beam_size: int, batch_size: int, k: int) -> Dict[int, List[SearchNode]]:
 
     '''
