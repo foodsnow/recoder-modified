@@ -382,38 +382,31 @@ class SearchNode:
 
         return sum_dataset.pad_list(self.ever_tree_path, sum_dataset.Code_Len, 10)
 
-    def checkapply(self, rule: int, ds: SumDataset) -> bool:
-        if rule >= len(ds.rule_dict):
-            if self.expanded_node.name == 'root' and rule - len(ds.rule_dict) >= ARGS.NlLen:
-                if rule - len(ds.rule_dict) - ARGS.NlLen not in self.id_map:
+    def check_apply(self, rule: int, sum_dataset: SumDataset) -> bool:
+        if rule >= len(sum_dataset.rule_dict):
+            if self.expanded_node.name == 'root' and rule - len(sum_dataset.rule_dict) >= ARGS.NlLen:
+                if rule - len(sum_dataset.rule_dict) - ARGS.NlLen not in self.id_map:
                     return False
-                if self.id_map[rule - len(ds.rule_dict) - ARGS.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
+                if self.id_map[rule - len(sum_dataset.rule_dict) - ARGS.NlLen].name not in ['MemberReference', 'BasicType', 'operator', 'qualifier', 'member', 'Literal']:
                     return False
-                if '.0' in self.id_map[rule - len(ds.rule_dict) - ARGS.NlLen].getTreestr():
+                if '.0' in self.id_map[rule - len(sum_dataset.rule_dict) - ARGS.NlLen].getTreestr():
                     return False
-                #print(self.idmap[rule - len(ds.ruledict)].name)
-                # assert(0)
                 return True
-            if rule - len(ds.rule_dict) >= ARGS.NlLen:
+            if rule - len(sum_dataset.rule_dict) >= ARGS.NlLen:
                 return False
-            idx = rule - len(ds.rule_dict)
+            idx = rule - len(sum_dataset.rule_dict)
             if idx not in self.id_map:
                 return False
             if self.id_map[idx].name != self.expanded_node.name:
                 if self.id_map[idx].name in ['VariableDeclarator', 'FormalParameter', 'InferredFormalParameter']:
                     return True
-                #print(self.idmap[idx].name, self.expanded.name, idx)
                 return False
         else:
-            rules = ds.rule_reverse_dict[rule]
+            rules = sum_dataset.rule_reverse_dict[rule]
             if rules == 'start -> unknown':
                 if self.unum >= 1:
                     return False
                 return True
-            # if len(self.depth) == 1:
-                # print(rules)
-            #    if rules != 'root -> modified' or rules != 'root -> add':
-            #        return False
             if rules.strip().split()[0].lower() != self.expanded_node.name.lower():
                 return False
         return True
@@ -431,21 +424,21 @@ class SearchNode:
             new_node.child.append(node)
             self.copy_node(node, child)
 
-    def apply_rule(self, rule: int, ds: SumDataset) -> bool:
+    def apply_rule(self, rule: int, sum_dataset: SumDataset) -> bool:
 
         logger.info('apply_rule() is starting')
 
-        if rule >= len(ds.rule_dict):
-            if rule >= len(ds.rule_dict) + ARGS.NlLen:
-                idx = rule - len(ds.rule_dict) - ARGS.NlLen
+        if rule >= len(sum_dataset.rule_dict):
+            if rule >= len(sum_dataset.rule_dict) + ARGS.NlLen:
+                idx = rule - len(sum_dataset.rule_dict) - ARGS.NlLen
             else:
-                idx = rule - len(ds.rule_dict)
+                idx = rule - len(sum_dataset.rule_dict)
             self.act_list.append('copy-' + self.id_map[idx].name)
         else:
-            self.act_list.append(ds.rule_reverse_dict[rule])
+            self.act_list.append(sum_dataset.rule_reverse_dict[rule])
 
-        if rule >= len(ds.rule_dict):
-            node_id = rule - len(ds.rule_dict)
+        if rule >= len(sum_dataset.rule_dict):
+            node_id = rule - len(sum_dataset.rule_dict)
 
             if node_id >= ARGS.NlLen:
                 node_id = node_id - ARGS.NlLen
@@ -480,7 +473,7 @@ class SearchNode:
                 self.expanded_node.expanded = True
 
         else:
-            rules = ds.rule_reverse_dict[rule]
+            rules = sum_dataset.rule_reverse_dict[rule]
             if rules == 'start -> unknown':
                 self.unum += 1
 
@@ -495,15 +488,15 @@ class SearchNode:
 
         self.parent[ARGS.NlLen + len(self.depths), ARGS.NlLen + self.expanded_node.father_list_ID] = 1
 
-        if rule >= len(ds.rule_dict) + ARGS.NlLen:
-            self.parent[ARGS.NlLen + len(self.depths), rule - len(ds.rule_dict) - ARGS.NlLen] = 1
-        elif rule >= len(ds.rule_dict):
-            self.parent[ARGS.NlLen + len(self.depths), rule - len(ds.rule_dict)] = 1
+        if rule >= len(sum_dataset.rule_dict) + ARGS.NlLen:
+            self.parent[ARGS.NlLen + len(self.depths), rule - len(sum_dataset.rule_dict) - ARGS.NlLen] = 1
+        elif rule >= len(sum_dataset.rule_dict):
+            self.parent[ARGS.NlLen + len(self.depths), rule - len(sum_dataset.rule_dict)] = 1
 
-        if rule >= len(ds.rule_dict) + ARGS.NlLen:
-            self.states.append(ds.rule_dict['start -> copyword2'])
-        elif rule >= len(ds.rule_dict):
-            self.states.append(ds.rule_dict['start -> copyword'])
+        if rule >= len(sum_dataset.rule_dict) + ARGS.NlLen:
+            self.states.append(sum_dataset.rule_dict['start -> copyword2'])
+        elif rule >= len(sum_dataset.rule_dict):
+            self.states.append(sum_dataset.rule_dict['start -> copyword'])
         else:
             self.states.append(rule)
 
@@ -694,8 +687,7 @@ def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model:
                         continue
                     word_search_node = beams[i_batch_size][j]
                     tmpbeamsize = 0  # beamsize
-                    result: np.ndarray[float] = np.negative(
-                        results[currIndex, index])
+                    result: np.ndarray[float] = np.negative(results[currIndex, index])
                     currIndex += 1
                     cresult: np.ndarray[float] = np.negative(result)
                     indexs: np.ndarray[int] = np.argsort(result)
@@ -704,7 +696,8 @@ def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model:
                             break
                         if cresult[indexs[i]] == 0:
                             break
-                        input_rule_parent = word_search_node.checkapply(indexs[i], sum_dataset)
+
+                        input_rule_parent: bool = word_search_node.check_apply(indexs[i], sum_dataset)
                         if input_rule_parent:
                             tmpbeamsize += 1
                         else:
