@@ -717,24 +717,24 @@ def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model:
                     temp_var = sorted(temp_beam[j], key=lambda x: x[0], reverse=True)
                     beams[j] = []
 
-                    for word_search_node in temp_var:
+                    for temp_var_item in temp_var:
                         if len(beams[j]) >= beam_size:
                             break
 
-                        if word_search_node[1] != -1:
-                            copy_word_search_node: SearchNode = pickle.loads(pickle.dumps(word_search_node[2]))
-                            copy_word_search_node.apply_rule(word_search_node[1], sum_dataset)
+                        if temp_var_item[1] != -1:
+                            copy_word_search_node: SearchNode = pickle.loads(pickle.dumps(temp_var_item[2]))
+                            copy_word_search_node.apply_rule(temp_var_item[1], sum_dataset)
 
                             tree_str = copy_word_search_node.getTreestr()
                             if tree_str in his_tree:
                                 continue
 
-                            copy_word_search_node.prob = word_search_node[0]
+                            copy_word_search_node.prob = temp_var_item[0]
                             beams[j].append(copy_word_search_node)
                             his_tree[j][tree_str] = 1
 
                         else:
-                            beams[j].append(word_search_node[2])
+                            beams[j].append(temp_var_item[2])
             index += 1
 
         for j in range(batch_size):
