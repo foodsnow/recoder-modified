@@ -807,7 +807,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                 {'intervalXYData_ter': 'IntervalXYDataset', 'series_ter': 'int', 'itemCount_ter': 'int', 'item_ter': 'int', 'uvalue_ter': 'double'}
                 '''
                 data_buggy_locations.append({
-                    'bugid': user_given_bug_id,
+                    'bugid': bug_id,
                     'treeroot': tree_root,
                     'troot': troot,
                     'oldcode': old_code,
@@ -827,14 +827,14 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     'fl_score': fl_score
                 })
 
-        os.makedirs(f"d4j/{user_given_bug_id}", exist_ok=True)
+        os.makedirs(f"d4j/{bug_id}", exist_ok=True)
 
-        with open(f"d4j/{user_given_bug_id}/func_loc.json", "w") as f:
+        with open(f"d4j/{bug_id}/func_loc.json", "w") as f:
             json.dump(method_map, f)
 
         print(data_buggy_locations)
 
         ans = run_py.solve_one(data_buggy_locations, decoder_model)
 
-        with open(f"d4j/{user_given_bug_id}/{user_given_bug_id}.json", "w") as f:
+        with open(f"d4j/{bug_id}/{bug_id}.json", "w") as f:
             json.dump(ans, f)
