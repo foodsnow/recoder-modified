@@ -721,6 +721,8 @@ def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model:
                     continue
             beams[j] = sorted(temp_var, key=lambda x: x.prob, reverse=True)[:beam_size]
 
+        logger.info('beam search complete')
+
         return beams
 
 
