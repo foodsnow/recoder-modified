@@ -1,6 +1,6 @@
 import pickle
 import sys
-from typing import Dict
+from typing import Dict, List
 
 import numpy as np
 from tqdm import tqdm
@@ -290,24 +290,30 @@ def setProb(r, p):
         setProb(x, p)
 
 
-def getLineNode(root, block, add=True):
-    ans = []
-    block = block + root.name
-    for x in root.child:
-        if x.name in LINE_NODE:
-            if 'info' in x.getTreestr() or 'assert' in x.getTreestr() or 'logger' in x.getTreestr() or 'LOGGER' in x.getTreestr() or 'system.out' in x.getTreestr().lower():
+def get_line_nodes(root_node: Node, block: str) -> List[Node]:
+    '''
+    return all the nodes (with their children) in root_node
+    that have names one of in LINE_NODE
+
+    recursive
+    modifies tree: sets .block attribute
+    '''
+
+    global LINE_NODE
+
+    line_nodes = []
+    block = block + root_node.name
+    for child in root_node.child:
+        if child.name in LINE_NODE:
+            if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or \
+                'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
                 continue
-            x.block = block
-            ans.append(x)
+            child.block = block
+            line_nodes.append(child)
         else:
-            s = ""
-            if not add:
-                s = block
-            else:
-                s = block + root.name
-            tmp = getLineNode(x, block)
-            ans.extend(tmp)
-    return ans
+            tmp = get_line_nodes(child, block)
+            line_nodes.extend(tmp)
+    return line_nodes
 
 
 def setid(root):
@@ -724,10 +730,10 @@ if __name__ == '__main__':
             else:
                 current_node = current_node.father
 
-        line_node_old_tree = getLineNode(root_node_old_tree, "")
-        line_node_new_tree = getLineNode(root_node_new_tree, "")
+        line_nodes_old_tree = get_line_nodes(root_node_old_tree, "")
+        line_nodes_new_tree = get_line_nodes(root_node_new_tree, "")
 
-        if len(line_node_old_tree) == 0 or len(line_node_new_tree) == 0:
+        if len(line_nodes_old_tree) == 0 or len(line_nodes_new_tree) == 0:
             continue
 
         setProb(root_node_old_tree, 2)
@@ -739,7 +745,7 @@ if __name__ == '__main__':
             if x.name == 'name':
                 m = x.child[0].name
 
-        getDiffNode(line_node_old_tree, line_node_new_tree, root_node_old_tree, root_node_old_tree.printTree(root_node_old_tree).strip().split(), m)
+        getDiffNode(line_nodes_old_tree, line_nodes_new_tree, root_node_old_tree, root_node_old_tree.printTree(root_node_old_tree).strip().split(), m)
 
         if len(RES_LIST) - olen == 1:
             tres.append(RES_LIST[-1])
