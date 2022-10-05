@@ -306,7 +306,7 @@ def get_line_nodes(root_node: Node, block: str) -> List[Node]:
     for child in root_node.child:
         if child.name in LINE_NODE:
             if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or \
-                'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
+                    'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
                 continue
             child.block = block
             line_nodes.append(child)
@@ -359,7 +359,12 @@ def getchangednode(root1, root2):
     return ans
 
 
-def getDiffNode(linenode1, linenode2, root, nls, m):
+def getDiffNode(
+        line_nodes_old_tree: List[Node],
+        line_nodes_new_tree: List[Node],
+        root_node_old_tree: Node,
+        old_tree_tokens: List[str],
+        method_name: str):
 
     logger.info('starting get_diff_node()')
 
@@ -374,16 +379,20 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
     global FATHER_NAMES
     global N
     global IS_VALID
+
     deletenode = []
     addnode = []
     node2id = {}
-    for i, x in enumerate(linenode1):
+
+    for i, x in enumerate(line_nodes_old_tree):
         node2id[str(x)] = i
+
     dic = {}
     dic2 = {}
-    for i, x in enumerate(linenode1):
+
+    for i, x in enumerate(line_nodes_old_tree):
         hasSame = False
-        for j, y in enumerate(linenode2):
+        for j, y in enumerate(line_nodes_new_tree):
             if x == y and not y.expanded and not hasSame:
                 y.expanded = True
                 x.expanded = True
@@ -394,7 +403,7 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
             if x == y and not y.expanded and hasSame:
                 if i - 1 in dic and dic[i - 1] == j - 1:
                     hasSame = True
-                    linenode2[dic[i]].expanded = False
+                    line_nodes_new_tree[dic[i]].expanded = False
                     y.expaned = True
                     del dic2[dic[i]]
                     dic[i] = j
@@ -407,21 +416,21 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
     preiddict = {}
     afteriddict = {}
     preid = -1
-    for i in range(len(linenode1)):
-        if linenode1[i].expanded:
+    for i in range(len(line_nodes_old_tree)):
+        if line_nodes_old_tree[i].expanded:
             preid = i
         else:
             preiddict[i] = preid
-    afterid = len(linenode1)
-    dic[afterid] = len(linenode2)
+    afterid = len(line_nodes_old_tree)
+    dic[afterid] = len(line_nodes_new_tree)
     dic[-1] = -1
-    for i in range(len(linenode1) - 1, -1, -1):
-        if linenode1[i].expanded:
+    for i in range(len(line_nodes_old_tree) - 1, -1, -1):
+        if line_nodes_old_tree[i].expanded:
             afterid = i
         else:
             afteriddict[i] = afterid
-    for i in range(len(linenode1)):
-        if linenode1[i].expanded:
+    for i in range(len(line_nodes_old_tree)):
+        if line_nodes_old_tree[i].expanded:
             continue
         else:
             preid = preiddict[i]
@@ -429,9 +438,9 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
             preid2 = dic[preiddict[i]]
             afterid2 = dic[afteriddict[i]]
             if preid + 2 == afterid and preid2 + 2 == afterid2:
-                troot = root
-                if len(root.getTreestr().strip().split()) >= 1000:
-                    tmp = linenode1[preid + 1]
+                troot = root_node_old_tree
+                if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
+                    tmp = line_nodes_old_tree[preid + 1]
                     if len(tmp.getTreestr().split()) >= 1000:
                         continue
                     lasttmp = None
@@ -460,20 +469,20 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                             break
                     troot = ansroot
                 for k in range(preid + 1, afterid):
-                    linenode1[k].expanded = True
-                    setProb(linenode1[k], 1)
+                    line_nodes_old_tree[k].expanded = True
+                    setProb(line_nodes_old_tree[k], 1)
                 if preid >= 0:
-                    setProb(linenode1[preid], 3)
-                if afterid < len(linenode1):
-                    setProb(linenode1[afterid], 4)
-                nls = troot.getTreestr().split()
+                    setProb(line_nodes_old_tree[preid], 3)
+                if afterid < len(line_nodes_old_tree):
+                    setProb(line_nodes_old_tree[afterid], 4)
+                old_tree_tokens = troot.getTreestr().split()
                 N = 0
                 setid(troot)
                 varnames = getLocVar(troot)
                 fnum = -1
                 vnum = -1
                 vardic = {}
-                vardic[m] = 'meth0'
+                vardic[method_name] = 'meth0'
                 for x in varnames:
                     if x[1].name == 'VariableDeclarator':
                         vnum += 1
@@ -484,58 +493,58 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                 RULE_LIST.append(RULES['root -> modified'])
                 FATHER_NAMES.append('root')
                 FATHER_LIST.append(-1)
-                if ischanged(linenode1[preid + 1], linenode2[preid2 + 1]) and len(getchangednode(linenode1[preid + 1], linenode2[preid2 + 1])) <= 1:
-                    nodes = getchangednode(linenode1[preid + 1], linenode2[preid2 + 1])
+                if ischanged(line_nodes_old_tree[preid + 1], line_nodes_new_tree[preid2 + 1]) and len(getchangednode(line_nodes_old_tree[preid + 1], line_nodes_new_tree[preid2 + 1])) <= 1:
+                    nodes = getchangednode(line_nodes_old_tree[preid + 1], line_nodes_new_tree[preid2 + 1])
                     for x in nodes:
                         RULE_LIST.append(1000000 + x[0].id)
                         FATHER_NAMES.append('root')
                         FATHER_LIST.append(-1)
                         if x[0].name == 'BasicType' or x[0].name == 'operator':
-                            getRule(x[1], nls, len(RULE_LIST) - 1, 0, 0, vardic, False, calvalid=False)
+                            getRule(x[1], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic, False, calvalid=False)
                         else:
-                            getRule(x[1], nls, len(RULE_LIST) - 1, 0, 0, vardic, calvalid=False)
+                            getRule(x[1], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic, calvalid=False)
                     RULE_LIST.append(RULES['root -> End'])
                     FATHER_LIST.append(-1)
                     FATHER_NAMES.append('root')
-                    RES_LIST.append({'input': root.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES, 'vardic': vardic})
+                    RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES, 'vardic': vardic})
                     RULE_LIST = []
                     FATHER_NAMES = []
                     FATHER_LIST = []
-                    setProb(root, 2)
+                    setProb(root_node_old_tree, 2)
                     continue
                 for k in range(preid2 + 1, afterid2):
-                    linenode2[k].expanded = True
-                    if linenode2[k].name == 'condition':
-                        rule = 'root -> ' + linenode2[k].father.name
+                    line_nodes_new_tree[k].expanded = True
+                    if line_nodes_new_tree[k].name == 'condition':
+                        rule = 'root -> ' + line_nodes_new_tree[k].father.name
                     else:
-                        rule = 'root -> ' + linenode2[k].name
+                        rule = 'root -> ' + line_nodes_new_tree[k].name
                     if rule not in RULES:
                         RULES[rule] = len(RULES)
                     RULE_LIST.append(RULES[rule])
                     FATHER_NAMES.append('root')
                     FATHER_LIST.append(-1)
-                    if linenode2[k].name == 'condition':
-                        tmpnode = Node(linenode2[k].father.name, 0)
-                        tmpnode.child.append(linenode2[k])
-                        getRule(tmpnode, nls, len(RULE_LIST) - 1, 0, 0, vardic)
+                    if line_nodes_new_tree[k].name == 'condition':
+                        tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
+                        tmpnode.child.append(line_nodes_new_tree[k])
+                        getRule(tmpnode, old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
                     else:
-                        getRule(linenode2[k], nls, len(RULE_LIST) - 1, 0, 0, vardic)
+                        getRule(line_nodes_new_tree[k], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
                 if not IS_VALID:
                     IS_VALID = True
                     RULE_LIST = []
                     FATHER_NAMES = []
                     FATHER_LIST = []
-                    setProb(root, 2)
+                    setProb(root_node_old_tree, 2)
                     continue
                 RULE_LIST.append(RULES['root -> End'])
                 FATHER_LIST.append(-1)
                 FATHER_NAMES.append('root')
-                assert (len(root.printTree(troot).strip().split()) <= 1000)
-                RES_LIST.append({'input': root.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
+                assert (len(root_node_old_tree.printTree(troot).strip().split()) <= 1000)
+                RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
                 RULE_LIST = []
                 FATHER_NAMES = []
                 FATHER_LIST = []
-                setProb(root, 2)
+                setProb(root_node_old_tree, 2)
                 IS_VALID = True
                 continue
             else:
@@ -543,21 +552,21 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
     preiddict = {}
     afteriddict = {}
     preid = -1
-    for i in range(len(linenode2)):
-        if linenode2[i].expanded:
+    for i in range(len(line_nodes_new_tree)):
+        if line_nodes_new_tree[i].expanded:
             preid = i
         else:
             preiddict[i] = preid
-    afterid = len(linenode2)
-    dic2[afterid] = len(linenode1)
+    afterid = len(line_nodes_new_tree)
+    dic2[afterid] = len(line_nodes_old_tree)
     dic2[-1] = -1
-    for i in range(len(linenode2) - 1, -1, -1):
-        if linenode2[i].expanded:
+    for i in range(len(line_nodes_new_tree) - 1, -1, -1):
+        if line_nodes_new_tree[i].expanded:
             afterid = i
         else:
             afteriddict[i] = afterid
-    for i in range(len(linenode2)):
-        if linenode2[i].expanded:
+    for i in range(len(line_nodes_new_tree)):
+        if line_nodes_new_tree[i].expanded:
             continue
         else:
             preid = preiddict[i]
@@ -570,12 +579,12 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
             afterid2 = dic2[afteriddict[i]]
             if preid2 + 1 != afterid2:
                 continue
-            troot = root
-            if len(root.getTreestr().strip().split()) >= 1000:
+            troot = root_node_old_tree
+            if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
                 if preid2 >= 0:
-                    tmp = linenode1[preid2]
-                elif afterid2 < len(linenode1):
-                    tmp = linenode1[afterid2]
+                    tmp = line_nodes_old_tree[preid2]
+                elif afterid2 < len(line_nodes_old_tree):
+                    tmp = line_nodes_old_tree[afterid2]
                 else:
                     assert (0)
                 if len(tmp.getTreestr().split()) >= 1000:
@@ -605,14 +614,14 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     if b:
                         break
                 troot = ansroot
-            nls = troot.getTreestr().split()
+            old_tree_tokens = troot.getTreestr().split()
             N = 0
             setid(troot)
             varnames = getLocVar(troot)
             fnum = -1
             vnum = -1
             vardic = {}
-            vardic[m] = 'meth0'
+            vardic[method_name] = 'meth0'
             for x in varnames:
                 if x[1].name == 'VariableDeclarator':
                     vnum += 1
@@ -621,47 +630,47 @@ def getDiffNode(linenode1, linenode2, root, nls, m):
                     fnum += 1
                     vardic[x[0]] = 'par' + str(fnum)
             if preid2 >= 0:
-                setProb(linenode1[preid2], 3)
-            if afterid2 < len(linenode1):
-                setProb(linenode1[afterid2], 1)
-            if afterid2 + 1 < len(linenode1):
-                setProb(linenode1[afterid2 + 1], 4)
+                setProb(line_nodes_old_tree[preid2], 3)
+            if afterid2 < len(line_nodes_old_tree):
+                setProb(line_nodes_old_tree[afterid2], 1)
+            if afterid2 + 1 < len(line_nodes_old_tree):
+                setProb(line_nodes_old_tree[afterid2 + 1], 4)
             RULE_LIST.append(RULES['root -> add'])
             FATHER_NAMES.append('root')
             FATHER_LIST.append(-1)
             for k in range(preid + 1, afterid):
-                linenode2[k].expanded = True
-                if linenode2[k].name == 'condition':
-                    rule = 'root -> ' + linenode2[k].father.name
+                line_nodes_new_tree[k].expanded = True
+                if line_nodes_new_tree[k].name == 'condition':
+                    rule = 'root -> ' + line_nodes_new_tree[k].father.name
                 else:
-                    rule = 'root -> ' + linenode2[k].name
+                    rule = 'root -> ' + line_nodes_new_tree[k].name
                 if rule not in RULES:
                     RULES[rule] = len(RULES)
                 RULE_LIST.append(RULES[rule])
                 FATHER_NAMES.append('root')
                 FATHER_LIST.append(-1)
-                if linenode2[k].name == 'condition':
-                    tmpnode = Node(linenode2[k].father.name, 0)
-                    tmpnode.child.append(linenode2[k])
-                    getRule(tmpnode, nls, len(RULE_LIST) - 1, 0, 0, vardic)
+                if line_nodes_new_tree[k].name == 'condition':
+                    tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
+                    tmpnode.child.append(line_nodes_new_tree[k])
+                    getRule(tmpnode, old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
                 else:
-                    getRule(linenode2[k], nls, len(RULE_LIST) - 1, 0, 0, vardic)
+                    getRule(line_nodes_new_tree[k], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
             if not IS_VALID:
                 IS_VALID = True
                 RULE_LIST = []
                 FATHER_NAMES = []
                 FATHER_LIST = []
-                setProb(root, 2)
+                setProb(root_node_old_tree, 2)
                 continue
             RULE_LIST.append(RULES['root -> End'])
             FATHER_LIST.append(-1)
             FATHER_NAMES.append('root')
-            assert (len(root.printTree(troot).strip().split()) <= 1000)
-            RES_LIST.append({'input': root.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
+            assert (len(root_node_old_tree.printTree(troot).strip().split()) <= 1000)
+            RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
             RULE_LIST = []
             FATHER_NAMES = []
             FATHER_LIST = []
-            setProb(root, 2)
+            setProb(root_node_old_tree, 2)
 
 
 lst = ['Chart-1', 'Chart-4', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-13', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-10', 'Closure-14', 'Closure-18', 'Closure-20', 'Closure-31', 'Closure-38', 'Closure-51', 'Closure-52', 'Closure-55', 'Closure-57', 'Closure-59', 'Closure-62', 'Closure-71', 'Closure-73', 'Closure-86', 'Closure-104', 'Closure-107', 'Closure-113', 'Closure-123', 'Closure-124', 'Closure-125', 'Closure-130', 'Closure-133', 'Lang-6', 'Lang-16', 'Lang-24', 'Lang-26', 'Lang-29', 'Lang-33', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-3', 'Math-5', 'Math-11', 'Math-27', 'Math-30', 'Math-32', 'Math-33', 'Math-34', 'Math-41', 'Math-48', 'Math-53', 'Math-57', 'Math-58', 'Math-59', 'Math-63', 'Math-69', 'Math-70', 'Math-73', 'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-96', 'Math-101', 'Math-105', 'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Time-27', 'Lang-43', 'Math-50', 'Math-98', 'Time-7', 'Mockito-38']
@@ -740,12 +749,18 @@ if __name__ == '__main__':
 
         olen = len(RES_LIST)
 
-        m = 'None'
+        method_name = 'None'
         for x in root_node_old_tree.child:
             if x.name == 'name':
-                m = x.child[0].name
+                method_name = x.child[0].name
 
-        getDiffNode(line_nodes_old_tree, line_nodes_new_tree, root_node_old_tree, root_node_old_tree.printTree(root_node_old_tree).strip().split(), m)
+        getDiffNode(
+            line_nodes_old_tree,
+            line_nodes_new_tree,
+            root_node_old_tree,
+            root_node_old_tree.printTree(root_node_old_tree).strip().split(),
+            method_name
+        )
 
         if len(RES_LIST) - olen == 1:
             tres.append(RES_LIST[-1])
