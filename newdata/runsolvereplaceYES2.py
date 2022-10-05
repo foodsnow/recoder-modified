@@ -669,7 +669,7 @@ if __name__ == '__main__':
     newdata = []
 
     data = []
-    data.extend(pickle.load(open('data0.pkl', "rb")))
+    data.extend(pickle.load(open('data0_small.pkl', "rb")))
 
     which_10k = int(sys.argv[1])
     data = data[which_10k * 10000:which_10k*10000 + 10000]
@@ -690,11 +690,10 @@ if __name__ == '__main__':
         if lines_old.strip().lower() == lines_new.strip().lower():
             continue
 
+        # constructing a tree from old tree tokens
         tokens_old = lines_old.strip().split()
         root_node_old_tree = Node(tokens_old[0], 0)
-
         current_node = root_node_old_tree
-
         idx1 = 1
         for j, x in enumerate(tokens_old[1:]):
             if x != "^":
@@ -708,19 +707,17 @@ if __name__ == '__main__':
             else:
                 current_node = current_node.father
 
-        # TODO should it be constructed from tokens_new?
-        root_node_new_tree = Node(tokens_old[0], 0)
-
-        current_node = root_node_new_tree
+        # constructing a tree from new tree tokens
         tokens_new = lines_new.strip().split()
-
-        idx = 1
+        root_node_new_tree = Node(tokens_new[0], 0)
+        current_node = root_node_new_tree
+        idx2 = 1
         for j, x in enumerate(tokens_new[1:]):
             if x != "^":
                 if tokens_new[j + 2] == '^':
                     x = x + "_ter"
-                temp_node = Node(x, idx)
-                idx += 1
+                temp_node = Node(x, idx2)
+                idx2 += 1
                 temp_node.father = current_node
                 current_node.child.append(temp_node)
                 current_node = temp_node
