@@ -381,18 +381,13 @@ def getDiffNode(
     global IS_VALID
 
     deletenode = []
-    addnode = []
-    node2id = {}
-
-    for i, x in enumerate(line_nodes_old_tree):
-        node2id[str(x)] = i
-
     dic = {}
     dic2 = {}
 
     for i, x in enumerate(line_nodes_old_tree):
         hasSame = False
         for j, y in enumerate(line_nodes_new_tree):
+
             if x == y and not y.expanded and not hasSame:
                 y.expanded = True
                 x.expanded = True
@@ -400,6 +395,7 @@ def getDiffNode(
                 dic2[j] = i
                 hasSame = True
                 continue
+
             if x == y and not y.expanded and hasSame:
                 if i - 1 in dic and dic[i - 1] == j - 1:
                     hasSame = True
@@ -409,6 +405,7 @@ def getDiffNode(
                     dic[i] = j
                     dic2[j] = i
                     break
+
         if not hasSame:
             deletenode.append(x)
     if len(deletenode) > 1:
