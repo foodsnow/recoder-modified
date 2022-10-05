@@ -673,7 +673,6 @@ if __name__ == '__main__':
 
     which_10k = int(sys.argv[1])
     data = data[which_10k * 10000:which_10k*10000 + 10000]
-    data = [data[7]]
 
     i = 0
     for data_record_idx, data_record in tqdm(enumerate(data)):
