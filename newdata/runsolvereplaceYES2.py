@@ -1,6 +1,6 @@
 import pickle
 import sys
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Union
 
 import numpy as np
 from tqdm import tqdm
@@ -72,12 +72,13 @@ RES_LIST = []
 N = 0
 
 
-def find_all(sub, s):
+def find_all(sub_string: str, super_string: str) -> List[int]:
     index_list = []
-    index = s.find(sub)
+    index = super_string.find(sub_string)
+
     while index != -1:
         index_list.append(index)
-        index = s.find(sub, index+1)
+        index = super_string.find(sub_string, index+1)
 
     if len(index_list) > 0:
         return index_list
@@ -85,18 +86,22 @@ def find_all(sub, s):
         return []
 
 
-def getcopyid(nls, name, idx):
-    original = " ".join(nls)
+def get_copy_id(tokens: List[str], name: str, idx: int):
+    original = " ".join(tokens)
     idxs = find_all(name, original)
+
     if len(idxs) != 0:
         minv = 100000
         idxx = -1
+
         for x in idxs:
             tmpid = len(original[:x].replace("^", "").split())
             if minv > abs(idx - tmpid):
                 minv = abs(idx - tmpid)
                 idxx = tmpid
+
         return 2000000 + idxx
+
     return -1
 
 
@@ -138,7 +143,15 @@ def get_local_var_names(node: Node) -> Tuple[str, Node]:
     return var_names
 
 
-def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
+def getRule(
+        node: Node,
+        tokens: List[str],
+        current_id: int,
+        d: int,
+        idx: int,
+        var_dict: Dict[str, str],
+        copy=True,
+        calvalid=True) -> Union[Tuple, None]:
 
     logger.info('starting get_rule()')
 
@@ -158,29 +171,38 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
         return [], []
 
     copyid = -1
-    child = node.child
+    children = node.child
 
+    # case 1
     if len(node.child) == 1 and len(node.child[0].child) == 0 and copyid == -1 and copy:
-        if node.child[0].name in varnames:
-            rule = node.name + " -> " + varnames[node.child[0].name]
+        if node.child[0].name in var_dict:
+            rule = node.name + " -> " + var_dict[node.child[0].name]
+
             if rule in RULES:
                 RULE_LIST.append(RULES[rule])
             else:
                 IS_VALID = False
                 return
 
-            FATHER_LIST.append(currId)
+            FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
             return
 
+    # case 2
     if copyid == -1:
-        copyid = getcopyid(nls, node.getTreestr(), node.id)
-        if node.name == 'MemberReference' or node.name == 'operator' or node.name == 'type' or node.name == 'prefix_operators' or node.name == 'value':
+        copyid = get_copy_id(tokens, node.getTreestr(), node.id)
+
+        if node.name == 'MemberReference' or node.name == 'operator' or \
+                node.name == 'type' or node.name == 'prefix_operators' or \
+                node.name == 'value':
             copyid = -1
+
         if node.name == 'operandl' or node.name == 'operandr':
-            if node.child[0].name == 'MemberReference' and node.child[0].child[0].name == 'member':
+            if node.child[0].name == 'MemberReference' and \
+                    node.child[0].child[0].name == 'member':
                 copyid = -1
+
         if node.name == 'Literal':
             if 'value -> ' + node.child[0].child[0].name in RULES:
                 copyid = -1
@@ -190,23 +212,24 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
         if rule not in RULES and (node.name == 'member' or node.name == 'qualifier'):
             rule = RULES['start -> unknown']
             RULE_LIST.append(rule)
-            FATHER_LIST.append(currId)
+            FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
             return
 
+    # case 3
     if copyid != -1:
         COPY_NODE[node.name] = 1
         RULE_LIST.append(copyid)
-        FATHER_LIST.append(currId)
+        FATHER_LIST.append(current_id)
         FATHER_NAMES.append(node.name)
         DEPTH_LIST.append(d)
         currid = len(RULE_LIST) - 1
-        if RULE_LIST[currId] >= CNUM:
+        if RULE_LIST[current_id] >= CNUM:
             pass
-        elif currId != -1:
-            RULEAD[RULE_LIST[currId], RULES['start -> copyword']] = 1
-            RULEAD[RULES['start -> copyword'], RULE_LIST[currId]] = 1
+        elif current_id != -1:
+            RULEAD[RULE_LIST[current_id], RULES['start -> copyword']] = 1
+            RULEAD[RULES['start -> copyword'], RULE_LIST[current_id]] = 1
         else:
             RULEAD[RULES['start -> copyword'], RULES['start -> root']] = 1
             RULEAD[RULES['start -> root'], RULES['start -> copyword']] = 1
@@ -214,7 +237,7 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
     else:
         if node.name not in ONE_LIST:
             rule = node.name + " -> "
-            for x in child:
+            for x in children:
                 rule += x.name + " "
             rule = rule.strip()
             if rule in RULES:
@@ -222,21 +245,21 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
             else:
                 IS_VALID = False
                 return
-            FATHER_LIST.append(currId)
+            FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
-            if RULE_LIST[-1] < CNUM and RULE_LIST[currId] < CNUM:
-                if currId != -1:
-                    RULEAD[RULE_LIST[currId], RULE_LIST[-1]] = 1
-                    RULEAD[RULE_LIST[-1], RULE_LIST[currId]] = 1
+            if RULE_LIST[-1] < CNUM and RULE_LIST[current_id] < CNUM:
+                if current_id != -1:
+                    RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
+                    RULEAD[RULE_LIST[-1], RULE_LIST[current_id]] = 1
                 else:
                     RULEAD[RULES['start -> root'], RULE_LIST[-1]] = 1
                     RULEAD[RULE_LIST[-1], RULES['start -> root']] = 1
             currid = len(RULE_LIST) - 1
-            for x in child:
-                getRule(x, nls, currid, d + 1, idx, varnames)
+            for x in children:
+                getRule(x, tokens, currid, d + 1, idx, var_dict)
         else:
-            for x in (child):
+            for x in children:
                 rule = node.name + " -> " + x.name
                 rule = rule.strip()
                 if rule in RULES:
@@ -244,13 +267,13 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
                 else:
                     IS_VALID = False
                     return
-                if RULE_LIST[-1] < CNUM and RULE_LIST[currId] < CNUM:
-                    RULEAD[RULE_LIST[currId], RULE_LIST[-1]] = 1
-                    RULEAD[RULE_LIST[-1], RULE_LIST[currId]] = 1
-                FATHER_LIST.append(currId)
+                if RULE_LIST[-1] < CNUM and RULE_LIST[current_id] < CNUM:
+                    RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
+                    RULEAD[RULE_LIST[-1], RULE_LIST[current_id]] = 1
+                FATHER_LIST.append(current_id)
                 FATHER_NAMES.append(node.name)
                 DEPTH_LIST.append(d)
-                getRule(x, nls, len(RULE_LIST) - 1, d + 1, idx, varnames)
+                getRule(x, tokens, len(RULE_LIST) - 1, d + 1, idx, var_dict)
             rule = node.name + " -> End "
             rule = rule.strip()
             if rule in RULES:
@@ -259,9 +282,9 @@ def getRule(node, nls, currId, d, idx, varnames, copy=True, calvalid=True):
                 assert (0)
                 RULES[rule] = len(RULES)
                 RULE_LIST.append(RULES[rule])
-            RULEAD[RULE_LIST[currId], RULE_LIST[-1]] = 1
-            RULEAD[RULE_LIST[-1], RULE_LIST[currId]] = 1
-            FATHER_LIST.append(currId)
+            RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
+            RULEAD[RULE_LIST[-1], RULE_LIST[current_id]] = 1
+            FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
 
@@ -341,31 +364,45 @@ def isexpanded(lst):
     return ans
 
 
-def ischanged(root1, root2):
-    if root1.name != root2.name:
+def is_changed(node1: Node, node2: Node) -> bool:
+
+    if node1.name != node2.name:
         return False
-    if root1 == root2:
+
+    if node1 == node2:
         return True
-    if root1.name == 'MemberReference' or root1.name == 'BasicType' or root1.name == 'operator' or root1.name == 'qualifier' or root1.name == 'member' or root1.name == 'Literal':
+
+    if node1.name == 'MemberReference' or node1.name == 'BasicType' or \
+            node1.name == 'operator' or node1.name == 'qualifier' or \
+            node1.name == 'member' or node1.name == 'Literal':
         return True
-    if len(root1.child) != len(root2.child):
+
+    if len(node1.child) != len(node2.child):
         return False
+
     ans = True
-    for i in range(len(root1.child)):
-        node1 = root1.child[i]
-        node2 = root2.child[i]
-        ans = ans and ischanged(node1, node2)
+    for i in range(len(node1.child)):
+        node1 = node1.child[i]
+        node2 = node2.child[i]
+        ans = ans and is_changed(node1, node2)
+
     return ans
 
 
-def getchangednode(root1, root2):
-    if root1 == root2:
+def get_changed_nodes(node1: Node, node2: Node) -> List[Tuple[Node, Node]]:
+
+    if node1 == node2:
         return []
+
     ans = []
-    if root1.name == 'MemberReference' or root1.name == 'BasicType' or root1.name == 'operator' or root1.name == 'qualifier' or root1.name == 'member' or root1.name == 'Literal':
-        return [(root1, root2)]
-    for i in range(len(root1.child)):
-        ans.extend(getchangednode(root1.child[i], root2.child[i]))
+    if node1.name == 'MemberReference' or node1.name == 'BasicType' or \
+            node1.name == 'operator' or node1.name == 'qualifier' or \
+            node1.name == 'member' or node1.name == 'Literal':
+        return [(node1, node2)]
+
+    for i in range(len(node1.child)):
+        ans.extend(get_changed_nodes(node1.child[i], node2.child[i]))
+
     return ans
 
 
@@ -456,6 +493,7 @@ def getDiffNode(
             if pre_id + 2 == after_id and pre_id2 + 2 == after_id2:
                 troot = root_node_old_tree
 
+                # this part of the code is similar to testDefect4j.py
                 # num_tokens(troot) >= 1000
                 if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
                     temp_lnode_old = line_nodes_old_tree[pre_id + 1]
@@ -502,40 +540,69 @@ def getDiffNode(
                 N = 0
                 setid(troot)
 
-                varnames = get_local_var_names(troot)
+                local_var_names = get_local_var_names(troot)
                 fnum = -1
                 vnum = -1
-                vardic = {}
-                vardic[method_name] = 'meth0'
-                for x in varnames:
-                    if x[1].name == 'VariableDeclarator':
+                var_dict: Dict[str, str] = {}
+                var_dict[method_name] = 'meth0'
+
+                for local_var_name in local_var_names:
+                    if local_var_name[1].name == 'VariableDeclarator':
                         vnum += 1
-                        vardic[x[0]] = 'loc' + str(vnum)
+                        var_dict[local_var_name[0]] = 'loc' + str(vnum)
                     else:
                         fnum += 1
-                        vardic[x[0]] = 'par' + str(fnum)
+                        var_dict[local_var_name[0]] = 'par' + str(fnum)
+
                 RULE_LIST.append(RULES['root -> modified'])
                 FATHER_NAMES.append('root')
                 FATHER_LIST.append(-1)
-                if ischanged(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1]) and len(getchangednode(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])) <= 1:
-                    nodes = getchangednode(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])
-                    for x in nodes:
-                        RULE_LIST.append(1000000 + x[0].id)
+
+                if is_changed(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1]) and \
+                        len(get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])) <= 1:
+                    changed_nodes = get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])
+
+                    for ch_node in changed_nodes:
+                        RULE_LIST.append(1000000 + ch_node[0].id)
                         FATHER_NAMES.append('root')
                         FATHER_LIST.append(-1)
-                        if x[0].name == 'BasicType' or x[0].name == 'operator':
-                            getRule(x[1], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic, False, calvalid=False)
+
+                        if ch_node[0].name == 'BasicType' or ch_node[0].name == 'operator':
+                            getRule(
+                                node=ch_node[1],
+                                tokens=old_tree_tokens,
+                                current_id=len(RULE_LIST) - 1,
+                                d=0,
+                                idx=0,
+                                var_dict=var_dict,
+                                copy=False,
+                                calvalid=False
+                            )
                         else:
-                            getRule(x[1], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic, calvalid=False)
+                            getRule(
+                                node=ch_node[1],
+                                tokens=old_tree_tokens,
+                                current_id=len(RULE_LIST) - 1,
+                                d=0,
+                                idx=0,
+                                var_dict=var_dict,
+                                calvalid=False
+                            )
+
                     RULE_LIST.append(RULES['root -> End'])
                     FATHER_LIST.append(-1)
                     FATHER_NAMES.append('root')
-                    RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES, 'vardic': vardic})
+
+                    RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, var_dict).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES, 'vardic': var_dict})
+
                     RULE_LIST = []
                     FATHER_NAMES = []
                     FATHER_LIST = []
+
                     setProb(root_node_old_tree, 2)
+
                     continue
+
                 for k in range(pre_id2 + 1, after_id2):
                     line_nodes_new_tree[k].expanded = True
                     if line_nodes_new_tree[k].name == 'condition':
@@ -550,9 +617,9 @@ def getDiffNode(
                     if line_nodes_new_tree[k].name == 'condition':
                         tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
                         tmpnode.child.append(line_nodes_new_tree[k])
-                        getRule(tmpnode, old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
+                        getRule(tmpnode, old_tree_tokens, len(RULE_LIST) - 1, 0, 0, var_dict)
                     else:
-                        getRule(line_nodes_new_tree[k], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
+                        getRule(line_nodes_new_tree[k], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, var_dict)
                 if not IS_VALID:
                     IS_VALID = True
                     RULE_LIST = []
@@ -564,7 +631,7 @@ def getDiffNode(
                 FATHER_LIST.append(-1)
                 FATHER_NAMES.append('root')
                 assert (len(root_node_old_tree.printTree(troot).strip().split()) <= 1000)
-                RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
+                RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, var_dict).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
                 RULE_LIST = []
                 FATHER_NAMES = []
                 FATHER_LIST = []
@@ -640,18 +707,18 @@ def getDiffNode(
             old_tree_tokens = troot.getTreestr().split()
             N = 0
             setid(troot)
-            varnames = get_local_var_names(troot)
+            local_var_names = get_local_var_names(troot)
             fnum = -1
             vnum = -1
-            vardic = {}
-            vardic[method_name] = 'meth0'
-            for x in varnames:
+            var_dict = {}
+            var_dict[method_name] = 'meth0'
+            for x in local_var_names:
                 if x[1].name == 'VariableDeclarator':
                     vnum += 1
-                    vardic[x[0]] = 'loc' + str(vnum)
+                    var_dict[x[0]] = 'loc' + str(vnum)
                 else:
                     fnum += 1
-                    vardic[x[0]] = 'par' + str(fnum)
+                    var_dict[x[0]] = 'par' + str(fnum)
             if pre_id2 >= 0:
                 setProb(line_nodes_old_tree[pre_id2], 3)
             if after_id2 < len(line_nodes_old_tree):
@@ -675,9 +742,9 @@ def getDiffNode(
                 if line_nodes_new_tree[k].name == 'condition':
                     tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
                     tmpnode.child.append(line_nodes_new_tree[k])
-                    getRule(tmpnode, old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
+                    getRule(tmpnode, old_tree_tokens, len(RULE_LIST) - 1, 0, 0, var_dict)
                 else:
-                    getRule(line_nodes_new_tree[k], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, vardic)
+                    getRule(line_nodes_new_tree[k], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, var_dict)
             if not IS_VALID:
                 IS_VALID = True
                 RULE_LIST = []
@@ -689,7 +756,7 @@ def getDiffNode(
             FATHER_LIST.append(-1)
             FATHER_NAMES.append('root')
             assert (len(root_node_old_tree.printTree(troot).strip().split()) <= 1000)
-            RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, vardic).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
+            RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, var_dict).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
             RULE_LIST = []
             FATHER_NAMES = []
             FATHER_LIST = []
