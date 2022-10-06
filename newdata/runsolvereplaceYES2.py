@@ -63,21 +63,23 @@ def find_all(sub_string: str, super_string: str) -> List[int]:
         return []
 
 
-def get_copy_id(tokens: List[str], name: str, idx: int):
-    original = " ".join(tokens)
-    idxs = find_all(name, original)
+def get_copy_id(tokens: List[str], node_str: str, node_idx: int):
+    tokens_str = " ".join(tokens)
+    node_str_idxs = find_all(node_str, tokens_str)
 
-    if len(idxs) != 0:
+    if len(node_str_idxs) != 0:
         minv = 100000
-        idxx = -1
+        copy_id = -1
 
-        for x in idxs:
-            tmpid = len(original[:x].replace("^", "").split())
-            if minv > abs(idx - tmpid):
-                minv = abs(idx - tmpid)
-                idxx = tmpid
+        for node_str_idx in node_str_idxs:
+            num_tokens_before = len(tokens_str[:node_str_idx].replace("^", "").split())
 
-        return 2000000 + idxx
+            # closest num_tokens_before
+            if minv > abs(node_idx - num_tokens_before):
+                minv = abs(node_idx - num_tokens_before)
+                copy_id = num_tokens_before
+
+        return 2000000 + copy_id
 
     return -1
 
