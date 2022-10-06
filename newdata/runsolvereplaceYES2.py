@@ -744,89 +744,114 @@ def get_diff_node(
         if pre_id_dict_new[i] not in map_new2old:
             return
         pre_id_old = map_new2old[pre_id_dict_new[i]]
-        
+
         # if after node of unmapped node from new tree does not have a mapping pair
         if after_id_dict_new[i] not in map_new2old:
             return
         after_id_old = map_new2old[after_id_dict_new[i]]
-        
+
         # skip if pre node and after node do not come one after another
         if pre_id_old + 1 != after_id_old:
             continue
 
         troot = root_node_old_tree
         if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
+
             if pre_id_old >= 0:
-                temp_lnode2 = line_nodes_old_tree[pre_id_old]
+                temp_lnode_old = line_nodes_old_tree[pre_id_old]
             elif after_id_old < len(line_nodes_old_tree):
-                temp_lnode2 = line_nodes_old_tree[after_id_old]
+                temp_lnode_old = line_nodes_old_tree[after_id_old]
             else:
                 assert (0)
 
-            if len(temp_lnode2.getTreestr().split()) >= 1000:
+            if len(temp_lnode_old.getTreestr().split()) >= 1000:
                 continue
 
-            lasttmp = None
+            # choose the largest ancestor of unmapped_lnode_old
+            # such that its size is less than 1000
+            last_temp_lnode_old2 = None
             while True:
-                if len(temp_lnode2.getTreestr().split()) >= 1000:
+                if len(temp_lnode_old.getTreestr().split()) >= 1000:
                     break
-                lasttmp = temp_lnode2
-                temp_lnode2 = temp_lnode2.father
+                last_temp_lnode_old2 = temp_lnode_old
+                temp_lnode_old = temp_lnode_old.father
 
-            ansroot = Node(temp_lnode2.name, 0)
-            ansroot.child.append(lasttmp)
-            ansroot.num = 2 + len(lasttmp.getTreestr().strip().split())
+            # reconstruct the tree at ans_root_node
+            ans_root_node2 = Node(temp_lnode_old.name, 0)
+            ans_root_node2.child.append(last_temp_lnode_old2)
+            ans_root_node2.num = 2 + len(last_temp_lnode_old2.getTreestr().strip().split())
+
+            # add the children until size of 1000 is reached
+            # some children may not be added
             while True:
-                b = True
-                after_node_idx = temp_lnode2.child.index(ansroot.child[-1]) + 1
-                if after_node_idx < len(temp_lnode2.child) and ansroot.num + temp_lnode2.child[after_node_idx].getNum() < 1000:
-                    b = False
-                    ansroot.child.append(temp_lnode2.child[after_node_idx])
-                    ansroot.num += temp_lnode2.child[after_node_idx].getNum()
-                prenode = temp_lnode2.child.index(ansroot.child[0]) - 1
-                if prenode >= 0 and ansroot.num + temp_lnode2.child[prenode].getNum() < 1000:
-                    b = False
-                    ansroot.child = [temp_lnode2.child[prenode]] + ansroot.child
-                    ansroot.num += temp_lnode2.child[prenode].getNum()
-                if b:
+                some_flag2 = True
+
+                after_node_idx = temp_lnode_old.child.index(ans_root_node2.child[-1]) + 1
+
+                if after_node_idx < len(temp_lnode_old.child) and \
+                        ans_root_node2.num + temp_lnode_old.child[after_node_idx].getNum() < 1000:
+
+                    some_flag2 = False
+                    ans_root_node2.child.append(temp_lnode_old.child[after_node_idx])
+                    ans_root_node2.num += temp_lnode_old.child[after_node_idx].getNum()
+
+                pre_node_idx2 = temp_lnode_old.child.index(ans_root_node2.child[0]) - 1
+
+                if pre_node_idx2 >= 0 and \
+                        ans_root_node2.num + temp_lnode_old.child[pre_node_idx2].getNum() < 1000:
+
+                    some_flag2 = False
+                    ans_root_node2.child = [temp_lnode_old.child[pre_node_idx2]] + ans_root_node2.child
+                    ans_root_node2.num += temp_lnode_old.child[pre_node_idx2].getNum()
+
+                if some_flag2:
                     break
-            troot = ansroot
+
+            troot = ans_root_node2
 
         troot_tokens_old = troot.getTreestr().split()
         N = 0
         set_id(troot)
+
         local_var_names = get_local_var_names(troot)
         fnum = -1
         vnum = -1
         var_dict = {}
         var_dict[method_name] = 'meth0'
-        for x in local_var_names:
-            if x[1].name == 'VariableDeclarator':
+
+        for local_var_name in local_var_names:
+            if local_var_name[1].name == 'VariableDeclarator':
                 vnum += 1
-                var_dict[x[0]] = 'loc' + str(vnum)
+                var_dict[local_var_name[0]] = 'loc' + str(vnum)
             else:
                 fnum += 1
-                var_dict[x[0]] = 'par' + str(fnum)
+                var_dict[local_var_name[0]] = 'par' + str(fnum)
+
         if pre_id_old >= 0:
             set_prob(line_nodes_old_tree[pre_id_old], 3)
         if after_id_old < len(line_nodes_old_tree):
             set_prob(line_nodes_old_tree[after_id_old], 1)
         if after_id_old + 1 < len(line_nodes_old_tree):
             set_prob(line_nodes_old_tree[after_id_old + 1], 4)
+
         RULE_LIST.append(RULES['root -> add'])
         FATHER_NAMES.append('root')
         FATHER_LIST.append(-1)
+
         for k in range(pre_id_new + 1, after_id_new):
             line_nodes_new_tree[k].mapped = True
+
             if line_nodes_new_tree[k].name == 'condition':
                 rule = 'root -> ' + line_nodes_new_tree[k].father.name
             else:
                 rule = 'root -> ' + line_nodes_new_tree[k].name
             if rule not in RULES:
                 RULES[rule] = len(RULES)
+
             RULE_LIST.append(RULES[rule])
             FATHER_NAMES.append('root')
             FATHER_LIST.append(-1)
+
             if line_nodes_new_tree[k].name == 'condition':
                 tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
                 tmpnode.child.append(line_nodes_new_tree[k])
