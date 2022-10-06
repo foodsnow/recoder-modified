@@ -923,14 +923,14 @@ if __name__ == '__main__':
         REVERSE_RULES_DICT[RULES[x]] = x
 
     for p, x in enumerate(tres):
-        for x in x['rule']:
-            if x < 1000000:
-                print(REVERSE_RULES_DICT[x], end=',')
+        for rule_idx in x['rule']:
+            if rule_idx < 1000000:
+                print(REVERSE_RULES_DICT[rule_idx], end=',')
             else:
-                if x >= 2000000:
-                    i = x - 2000000
+                if rule_idx >= 2000000:
+                    i = rule_idx - 2000000
                 else:
-                    i = x - 1000000
+                    i = rule_idx - 1000000
 
     open('rulead%d.pkl' % which_10k, "wb").write(pickle.dumps(RULEAD))
     open('rule%d.pkl' % which_10k, "wb").write(pickle.dumps(RULES))
