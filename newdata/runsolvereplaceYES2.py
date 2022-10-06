@@ -203,7 +203,6 @@ def get_rule(
         return [], []
 
     copyid = -1
-    children = node.child
 
     # case 1
     if len(node.child) == 1 and len(node.child[0].child) == 0 and copyid == -1 and copy:
@@ -223,6 +222,7 @@ def get_rule(
 
     # case 2
     if copyid == -1:
+
         copyid = get_copy_id(tokens, node.getTreestr(), node.id)
 
         if node.name == 'MemberReference' or node.name == 'operator' or \
@@ -269,7 +269,7 @@ def get_rule(
     else:
         if node.name not in ONE_LIST:
             rule = node.name + " -> "
-            for x in children:
+            for x in node.child:
                 rule += x.name + " "
             rule = rule.strip()
             if rule in RULES:
@@ -288,10 +288,10 @@ def get_rule(
                     RULEAD[RULES['start -> root'], RULE_LIST[-1]] = 1
                     RULEAD[RULE_LIST[-1], RULES['start -> root']] = 1
             currid = len(RULE_LIST) - 1
-            for x in children:
+            for x in node.child:
                 get_rule(x, tokens, currid, d + 1, idx, var_dict)
         else:
-            for x in children:
+            for x in node.child:
                 rule = node.name + " -> " + x.name
                 rule = rule.strip()
                 if rule in RULES:
