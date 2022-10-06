@@ -554,6 +554,8 @@ def get_diff_node(
             FATHER_NAMES.append('root')
             FATHER_LIST.append(-1)
 
+            # changed node is one of the following
+            # MemberReference, BasicType, operator, qualifier, member, Literal
             if is_changed(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1]) and \
                     len(get_changed_nodes(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1])) <= 1:
 
