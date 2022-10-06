@@ -911,10 +911,6 @@ if __name__ == '__main__':
         HAS_COPY = {}
         ACTION = []
 
-    REVERSE_RULES_DICT = {}
-    for x in RULES:
-        REVERSE_RULES_DICT[RULES[x]] = x
-
     # print the rules
     for p, x in enumerate(tres):
         for rule_idx in x['rule']:
