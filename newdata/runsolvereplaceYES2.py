@@ -486,6 +486,7 @@ def get_diff_node(
             after_id_dict_old[i] = after_id
 
     # loop over unmapped nodes in line_nodes_old_tree
+    # there might be more than one unmapped nodes
     for i in range(len(line_nodes_old_tree)):
         if line_nodes_old_tree[i].mapped:
             continue
@@ -731,6 +732,7 @@ def get_diff_node(
             after_id_dict_new[i] = after_id
 
     # loop over unmapped nodes in line_nodes_old_tree
+    # there might be more than one unmapped nodes
     for i in range(len(line_nodes_new_tree)):
         if line_nodes_new_tree[i].mapped:
             continue
