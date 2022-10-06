@@ -460,36 +460,49 @@ def get_diff_node(
             # this part of the code is similar to testDefect4j.py
             # num_tokens(troot) >= 1000
             if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
-                temp_lnode_old = line_nodes_old_tree[pre_id_old + 1]
+                unmapped_lnode_old = line_nodes_old_tree[pre_id_old + 1]
 
-                if len(temp_lnode_old.getTreestr().split()) >= 1000:
+                # skip the iteration if the unmapped line node is too big
+                if len(unmapped_lnode_old.getTreestr().split()) >= 1000:
                     continue
 
+                # choose the largest ancestor of unmapped_lnode_old
+                # such that its size is less than 1000
                 last_temp_lnode_old = None
                 while True:
-                    if len(temp_lnode_old.getTreestr().split()) >= 1000:
+                    if len(unmapped_lnode_old.getTreestr().split()) >= 1000:
                         break
-                    last_temp_lnode_old = temp_lnode_old
-                    temp_lnode_old = temp_lnode_old.father
+                    last_temp_lnode_old = unmapped_lnode_old
+                    unmapped_lnode_old = unmapped_lnode_old.father
 
-                ans_root_node = Node(temp_lnode_old.name, 0)
+                ans_root_node = Node(unmapped_lnode_old.name, 0)
                 ans_root_node.child.append(last_temp_lnode_old)
                 ans_root_node.num = 2 + len(last_temp_lnode_old.getTreestr().strip().split())
 
                 while True:
                     some_flag = True
-                    after_node_idx = temp_lnode_old.child.index(ans_root_node.child[-1]) + 1
-                    if after_node_idx < len(temp_lnode_old.child) and ans_root_node.num + temp_lnode_old.child[after_node_idx].getNum() < 1000:
+                    
+                    after_node_idx = unmapped_lnode_old.child.index(ans_root_node.child[-1]) + 1
+                    
+                    if after_node_idx < len(unmapped_lnode_old.child) and \
+                        ans_root_node.num + unmapped_lnode_old.child[after_node_idx].getNum() < 1000:
+                    
                         some_flag = False
-                        ans_root_node.child.append(temp_lnode_old.child[after_node_idx])
-                        ans_root_node.num += temp_lnode_old.child[after_node_idx].getNum()
-                    prenode = temp_lnode_old.child.index(ans_root_node.child[0]) - 1
-                    if prenode >= 0 and ans_root_node.num + temp_lnode_old.child[prenode].getNum() < 1000:
+                        ans_root_node.child.append(unmapped_lnode_old.child[after_node_idx])
+                        ans_root_node.num += unmapped_lnode_old.child[after_node_idx].getNum()
+                    
+                    pre_node_idx = unmapped_lnode_old.child.index(ans_root_node.child[0]) - 1
+                    
+                    if pre_node_idx >= 0 and \
+                        ans_root_node.num + unmapped_lnode_old.child[pre_node_idx].getNum() < 1000:
+                        
                         some_flag = False
-                        ans_root_node.child = [temp_lnode_old.child[prenode]] + ans_root_node.child
-                        ans_root_node.num += temp_lnode_old.child[prenode].getNum()
+                        ans_root_node.child = [unmapped_lnode_old.child[pre_node_idx]] + ans_root_node.child
+                        ans_root_node.num += unmapped_lnode_old.child[pre_node_idx].getNum()
+                    
                     if some_flag:
                         break
+                
                 troot = ans_root_node
 
             for k in range(pre_id_old + 1, after_id_old):
