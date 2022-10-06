@@ -122,6 +122,53 @@ def get_local_var_names(node: Node) -> Tuple[str, Node]:
     return var_names
 
 
+def set_prob(r, p):
+    r.possibility = p
+    for x in r.child:
+        set_prob(x, p)
+
+
+def set_id(root_node: Node):
+    '''
+    set numerical IDs starting from the root and id=1
+    in DFS traversal
+    '''
+
+    global N
+
+    root_node.id = N
+    N += 1
+
+    for child in root_node.child:
+        set_id(child)
+
+
+def get_line_nodes(root_node: Node, block: str) -> List[Node]:
+    '''
+    return all the nodes (with their children) in root_node
+    that have names one of in LINE_NODE
+
+    recursive
+    modifies tree: sets .block attribute
+    '''
+
+    global LINE_NODE
+
+    line_nodes = []
+    block = block + root_node.name
+    for child in root_node.child:
+        if child.name in LINE_NODE:
+            if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or \
+                    'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
+                continue
+            child.block = block
+            line_nodes.append(child)
+        else:
+            tmp = get_line_nodes(child, block)
+            line_nodes.extend(tmp)
+    return line_nodes
+
+
 def get_rule(
         node: Node,
         tokens: List[str],
@@ -266,46 +313,6 @@ def get_rule(
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
-
-
-def set_prob(r, p):
-    r.possibility = p
-    for x in r.child:
-        set_prob(x, p)
-
-
-def get_line_nodes(root_node: Node, block: str) -> List[Node]:
-    '''
-    return all the nodes (with their children) in root_node
-    that have names one of in LINE_NODE
-
-    recursive
-    modifies tree: sets .block attribute
-    '''
-
-    global LINE_NODE
-
-    line_nodes = []
-    block = block + root_node.name
-    for child in root_node.child:
-        if child.name in LINE_NODE:
-            if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or \
-                    'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
-                continue
-            child.block = block
-            line_nodes.append(child)
-        else:
-            tmp = get_line_nodes(child, block)
-            line_nodes.extend(tmp)
-    return line_nodes
-
-
-def set_id(root):
-    global N
-    root.id = N
-    N += 1
-    for x in root.child:
-        set_id(x)
 
 
 def is_changed(node1: Node, node2: Node) -> bool:
