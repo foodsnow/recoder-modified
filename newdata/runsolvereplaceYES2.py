@@ -25,7 +25,7 @@ LINE_NODES_NAMES = [
 RULE_LIST = []
 FATHER_LIST = []
 FATHER_NAMES = []
-DEPTH_LIST = []
+
 COPY_NODE = {}
 HAS_COPY: Dict = {}
 IS_VALID = True
@@ -190,7 +190,6 @@ def get_rule(
     global ONE_LIST
     global RULE_LIST
     global FATHER_LIST
-    global DEPTH_LIST
     global COPY_NODE
     global RULEAD
     global IS_VALID
@@ -216,7 +215,6 @@ def get_rule(
 
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
-            DEPTH_LIST.append(d)
             return
 
     # case 2
@@ -245,7 +243,6 @@ def get_rule(
             RULE_LIST.append(rule)
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
-            DEPTH_LIST.append(d)
             return
 
     # case 3
@@ -254,7 +251,6 @@ def get_rule(
         RULE_LIST.append(copyid)
         FATHER_LIST.append(current_id)
         FATHER_NAMES.append(node.name)
-        DEPTH_LIST.append(d)
         if RULE_LIST[current_id] >= NUM_RULES:
             pass
         elif current_id != -1:
@@ -281,7 +277,6 @@ def get_rule(
 
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
-            DEPTH_LIST.append(d)
 
             if RULE_LIST[-1] < NUM_RULES and RULE_LIST[current_id] < NUM_RULES:
                 if current_id != -1:
@@ -322,7 +317,6 @@ def get_rule(
 
                 FATHER_LIST.append(current_id)
                 FATHER_NAMES.append(node.name)
-                DEPTH_LIST.append(d)
 
                 get_rule(
                     node=_child,
@@ -349,7 +343,6 @@ def get_rule(
 
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
-            DEPTH_LIST.append(d)
 
 
 def is_changed(node_old: Node, node_new: Node) -> bool:
@@ -419,7 +412,6 @@ def get_diff_node(
     global RULES
     global RULE_LIST
     global FATHER_LIST
-    global DEPTH_LIST
     global COPY_NODE
     global RULEAD
     global FATHER_NAMES
@@ -996,7 +988,6 @@ if __name__ == '__main__':
         RULE_LIST = []
         FATHER_LIST = []
         FATHER_NAMES = []
-        DEPTH_LIST = []
         COPY_NODE = {}
         HAS_COPY = {}
         ACTION = []
