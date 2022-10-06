@@ -385,47 +385,48 @@ def get_diff_node(
 
     # step 1
     # do mapping between line nodes in old tree and line nodes in new tree
-    unmapped_node: Node = []
+    unmapped_nodes: List[Node] = []
     map_old2new: Dict[int, int] = {}
     map_new2old: Dict[int, int] = {}
 
     for i, lnode_old in enumerate(line_nodes_old_tree):
 
-        has_same = False
+        _has_same = False
         for j, lnode_new in enumerate(line_nodes_new_tree):
 
-            if lnode_old == lnode_new and not lnode_new.expanded and not has_same:
-                lnode_new.expanded = True
-                lnode_old.expanded = True
+            if lnode_old == lnode_new and not lnode_new.mapped and not _has_same:
+                lnode_new.mapped = True
+                lnode_old.mapped = True
                 map_old2new[i] = j
                 map_new2old[j] = i
-                has_same = True
+                _has_same = True
                 continue
 
-            if lnode_old == lnode_new and not lnode_new.expanded and has_same:
+            if lnode_old == lnode_new and not lnode_new.mapped and _has_same:
                 if i - 1 in map_old2new and map_old2new[i - 1] == j - 1:
-                    has_same = True
-                    line_nodes_new_tree[map_old2new[i]].expanded = False
-                    lnode_new.expanded = True
+                    _has_same = True
+                    line_nodes_new_tree[map_old2new[i]].mapped = False
+                    lnode_new.mapped = True
                     del map_new2old[map_old2new[i]]
                     map_old2new[i] = j
                     map_new2old[j] = i
                     break
 
-        if not has_same:
-            unmapped_node.append(lnode_old)
+        if not _has_same:
+            unmapped_nodes.append(lnode_old)
 
     # do not consider cases when there are more than 1 unmapped node
     # from the old tree to the new tree
-    if len(unmapped_node) > 1:
+    if len(unmapped_nodes) > 1:
         return
 
     # step 2
     pre_id_dict = {}
     after_id_dict = {}
+    
     pre_id = -1
     for i in range(len(line_nodes_old_tree)):
-        if line_nodes_old_tree[i].expanded:
+        if line_nodes_old_tree[i].mapped:
             pre_id = i
         else:
             pre_id_dict[i] = pre_id
@@ -434,13 +435,13 @@ def get_diff_node(
     map_old2new[after_id] = len(line_nodes_new_tree)
     map_old2new[-1] = -1
     for i in range(len(line_nodes_old_tree) - 1, -1, -1):
-        if line_nodes_old_tree[i].expanded:
+        if line_nodes_old_tree[i].mapped:
             after_id = i
         else:
             after_id_dict[i] = after_id
 
     for i in range(len(line_nodes_old_tree)):
-        if line_nodes_old_tree[i].expanded:
+        if line_nodes_old_tree[i].mapped:
             continue
         else:
             pre_id = pre_id_dict[i]
@@ -487,7 +488,7 @@ def get_diff_node(
                     troot = ans_root_node
 
                 for k in range(pre_id + 1, after_id):
-                    line_nodes_old_tree[k].expanded = True
+                    line_nodes_old_tree[k].mapped = True
                     set_prob(line_nodes_old_tree[k], 1)
                 if pre_id >= 0:
                     set_prob(line_nodes_old_tree[pre_id], 3)
@@ -571,7 +572,7 @@ def get_diff_node(
                     continue
 
                 for k in range(pre_id2 + 1, after_id2):
-                    line_nodes_new_tree[k].expanded = True
+                    line_nodes_new_tree[k].mapped = True
 
                     if line_nodes_new_tree[k].name == 'condition':
                         rule = 'root -> ' + line_nodes_new_tree[k].father.name
@@ -645,7 +646,7 @@ def get_diff_node(
     after_id_dict = {}
     pre_id = -1
     for i in range(len(line_nodes_new_tree)):
-        if line_nodes_new_tree[i].expanded:
+        if line_nodes_new_tree[i].mapped:
             pre_id = i
         else:
             pre_id_dict[i] = pre_id
@@ -655,13 +656,13 @@ def get_diff_node(
     map_new2old[-1] = -1
 
     for i in range(len(line_nodes_new_tree) - 1, -1, -1):
-        if line_nodes_new_tree[i].expanded:
+        if line_nodes_new_tree[i].mapped:
             after_id = i
         else:
             after_id_dict[i] = after_id
 
     for i in range(len(line_nodes_new_tree)):
-        if line_nodes_new_tree[i].expanded:
+        if line_nodes_new_tree[i].mapped:
             continue
         else:
             pre_id = pre_id_dict[i]
@@ -741,7 +742,7 @@ def get_diff_node(
             FATHER_NAMES.append('root')
             FATHER_LIST.append(-1)
             for k in range(pre_id + 1, after_id):
-                line_nodes_new_tree[k].expanded = True
+                line_nodes_new_tree[k].mapped = True
                 if line_nodes_new_tree[k].name == 'condition':
                     rule = 'root -> ' + line_nodes_new_tree[k].father.name
                 else:

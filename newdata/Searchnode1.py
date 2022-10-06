@@ -183,7 +183,7 @@ class Node:
         self.father = None
         self.child = []
         self.sibiling = None
-        self.expanded = False
+        self.mapped = False
         self.fatherlistID = 0
         self.treestr = ""
         self.block = ""
