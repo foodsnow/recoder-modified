@@ -382,9 +382,9 @@ def is_changed(node1: Node, node2: Node) -> bool:
 
     ans = True
     for i in range(len(node1.child)):
-        node1 = node1.child[i]
-        node2 = node2.child[i]
-        ans = ans and is_changed(node1, node2)
+        child1 = node1.child[i]
+        child2 = node2.child[i]
+        ans = ans and is_changed(child1, child2)
 
     return ans
 
