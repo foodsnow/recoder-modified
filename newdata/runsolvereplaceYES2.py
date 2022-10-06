@@ -9,27 +9,9 @@ from Searchnode1 import Node
 from base_logger import logger
 
 ONE_LIST = [
-    'SRoot',
-    'arguments',
-    'parameters',
-    'body',
-    'block',
-    'selectors',
-    'cases',
-    'statements',
-    'throws',
-    'initializers',
-    'declarators',
-    'annotations',
-    'prefix_operators',
-    'postfix_operators',
-    'catches',
-    'types',
-    'dimensions',
-    'modifiers',
-    'case',
-    'finally_block',
-    'type_parameters'
+    'SRoot', 'arguments', 'parameters', 'body', 'block', 'selectors', 'cases', 'statements',
+    'throws', 'initializers', 'declarators', 'annotations', 'prefix_operators', 'postfix_operators',
+    'catches', 'types', 'dimensions', 'modifiers', 'case', 'finally_block', 'type_parameters'
 ]
 
 RULE_LIST = []
@@ -45,20 +27,10 @@ CNUM = len(RULES)
 RULEAD = np.zeros([CNUM, CNUM])
 
 LINE_NODE = [
-    'Statement_ter',
-    'BreakStatement_ter',
-    'ReturnStatement_ter',
-    'ContinueStatement',
-    'ContinueStatement_ter',
-    'LocalVariableDeclaration',
-    'condition',
-    'control',
-    'BreakStatement',
-    'ContinueStatement',
-    'ReturnStatement',
-    "parameters",
-    'StatementExpression',
-    'return_type'
+    'Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement',
+    'ContinueStatement_ter', 'LocalVariableDeclaration', 'condition', 'control',
+    'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters",
+    'StatementExpression', 'return_type'
 ]
 
 REVERSE_RULES_DICT = {}
