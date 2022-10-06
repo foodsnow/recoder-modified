@@ -45,6 +45,11 @@ for x in RULES:
 
 
 def find_all(sub_string: str, super_string: str) -> List[int]:
+    '''
+    find all indices of sub_string in super_string
+    return as a list
+    '''
+    
     index_list = []
     index = super_string.find(sub_string)
 
