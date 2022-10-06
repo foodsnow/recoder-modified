@@ -447,18 +447,20 @@ def get_diff_node(
         if line_nodes_old_tree[i].mapped:
             continue
 
-        pre_id = pre_id_dict[i]
-        after_id = after_id_dict[i]
-        pre_id2 = map_old2new[pre_id_dict[i]]
-        after_id2 = map_old2new[after_id_dict[i]]
+        pre_id_old = pre_id_dict[i]
+        after_id_old = after_id_dict[i]
+        pre_id_new = map_old2new[pre_id_dict[i]]
+        after_id_new = map_old2new[after_id_dict[i]]
 
-        if pre_id + 2 == after_id and pre_id2 + 2 == after_id2:
+        # if the unmapped node is in-between pre_id and after_id in both old and new tree
+        if pre_id_old + 2 == after_id_old and pre_id_new + 2 == after_id_new:
+
             troot = root_node_old_tree
 
             # this part of the code is similar to testDefect4j.py
             # num_tokens(troot) >= 1000
             if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
-                temp_lnode_old = line_nodes_old_tree[pre_id + 1]
+                temp_lnode_old = line_nodes_old_tree[pre_id_old + 1]
 
                 if len(temp_lnode_old.getTreestr().split()) >= 1000:
                     continue
@@ -490,13 +492,13 @@ def get_diff_node(
                         break
                 troot = ans_root_node
 
-            for k in range(pre_id + 1, after_id):
+            for k in range(pre_id_old + 1, after_id_old):
                 line_nodes_old_tree[k].mapped = True
                 set_prob(line_nodes_old_tree[k], 1)
-            if pre_id >= 0:
-                set_prob(line_nodes_old_tree[pre_id], 3)
-            if after_id < len(line_nodes_old_tree):
-                set_prob(line_nodes_old_tree[after_id], 4)
+            if pre_id_old >= 0:
+                set_prob(line_nodes_old_tree[pre_id_old], 3)
+            if after_id_old < len(line_nodes_old_tree):
+                set_prob(line_nodes_old_tree[after_id_old], 4)
 
             old_tree_tokens = troot.getTreestr().split()
             N = 0
@@ -520,9 +522,9 @@ def get_diff_node(
             FATHER_NAMES.append('root')
             FATHER_LIST.append(-1)
 
-            if is_changed(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1]) and \
-                    len(get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])) <= 1:
-                changed_nodes = get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])
+            if is_changed(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1]) and \
+                    len(get_changed_nodes(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1])) <= 1:
+                changed_nodes = get_changed_nodes(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1])
 
                 for ch_node in changed_nodes:
                     RULE_LIST.append(1000000 + ch_node[0].id)
@@ -574,7 +576,7 @@ def get_diff_node(
 
                 continue
 
-            for k in range(pre_id2 + 1, after_id2):
+            for k in range(pre_id_new + 1, after_id_new):
                 line_nodes_new_tree[k].mapped = True
 
                 if line_nodes_new_tree[k].name == 'condition':
