@@ -442,186 +442,118 @@ def get_diff_node(
         else:
             after_id_dict[i] = after_id
 
+    # loop over unmapped nodes in line_nodes_old_tree
     for i in range(len(line_nodes_old_tree)):
         if line_nodes_old_tree[i].mapped:
             continue
-        else:
-            pre_id = pre_id_dict[i]
-            after_id = after_id_dict[i]
-            pre_id2 = map_old2new[pre_id_dict[i]]
-            after_id2 = map_old2new[after_id_dict[i]]
 
-            if pre_id + 2 == after_id and pre_id2 + 2 == after_id2:
-                troot = root_node_old_tree
+        pre_id = pre_id_dict[i]
+        after_id = after_id_dict[i]
+        pre_id2 = map_old2new[pre_id_dict[i]]
+        after_id2 = map_old2new[after_id_dict[i]]
 
-                # this part of the code is similar to testDefect4j.py
-                # num_tokens(troot) >= 1000
-                if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
-                    temp_lnode_old = line_nodes_old_tree[pre_id + 1]
+        if pre_id + 2 == after_id and pre_id2 + 2 == after_id2:
+            troot = root_node_old_tree
 
+            # this part of the code is similar to testDefect4j.py
+            # num_tokens(troot) >= 1000
+            if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
+                temp_lnode_old = line_nodes_old_tree[pre_id + 1]
+
+                if len(temp_lnode_old.getTreestr().split()) >= 1000:
+                    continue
+
+                last_temp_lnode_old = None
+                while True:
                     if len(temp_lnode_old.getTreestr().split()) >= 1000:
-                        continue
+                        break
+                    last_temp_lnode_old = temp_lnode_old
+                    temp_lnode_old = temp_lnode_old.father
 
-                    last_temp_lnode_old = None
-                    while True:
-                        if len(temp_lnode_old.getTreestr().split()) >= 1000:
-                            break
-                        last_temp_lnode_old = temp_lnode_old
-                        temp_lnode_old = temp_lnode_old.father
+                ans_root_node = Node(temp_lnode_old.name, 0)
+                ans_root_node.child.append(last_temp_lnode_old)
+                ans_root_node.num = 2 + len(last_temp_lnode_old.getTreestr().strip().split())
 
-                    ans_root_node = Node(temp_lnode_old.name, 0)
-                    ans_root_node.child.append(last_temp_lnode_old)
-                    ans_root_node.num = 2 + len(last_temp_lnode_old.getTreestr().strip().split())
+                while True:
+                    some_flag = True
+                    after_node_idx = temp_lnode_old.child.index(ans_root_node.child[-1]) + 1
+                    if after_node_idx < len(temp_lnode_old.child) and ans_root_node.num + temp_lnode_old.child[after_node_idx].getNum() < 1000:
+                        some_flag = False
+                        ans_root_node.child.append(temp_lnode_old.child[after_node_idx])
+                        ans_root_node.num += temp_lnode_old.child[after_node_idx].getNum()
+                    prenode = temp_lnode_old.child.index(ans_root_node.child[0]) - 1
+                    if prenode >= 0 and ans_root_node.num + temp_lnode_old.child[prenode].getNum() < 1000:
+                        some_flag = False
+                        ans_root_node.child = [temp_lnode_old.child[prenode]] + ans_root_node.child
+                        ans_root_node.num += temp_lnode_old.child[prenode].getNum()
+                    if some_flag:
+                        break
+                troot = ans_root_node
 
-                    while True:
-                        some_flag = True
-                        after_node_idx = temp_lnode_old.child.index(ans_root_node.child[-1]) + 1
-                        if after_node_idx < len(temp_lnode_old.child) and ans_root_node.num + temp_lnode_old.child[after_node_idx].getNum() < 1000:
-                            some_flag = False
-                            ans_root_node.child.append(temp_lnode_old.child[after_node_idx])
-                            ans_root_node.num += temp_lnode_old.child[after_node_idx].getNum()
-                        prenode = temp_lnode_old.child.index(ans_root_node.child[0]) - 1
-                        if prenode >= 0 and ans_root_node.num + temp_lnode_old.child[prenode].getNum() < 1000:
-                            some_flag = False
-                            ans_root_node.child = [temp_lnode_old.child[prenode]] + ans_root_node.child
-                            ans_root_node.num += temp_lnode_old.child[prenode].getNum()
-                        if some_flag:
-                            break
-                    troot = ans_root_node
+            for k in range(pre_id + 1, after_id):
+                line_nodes_old_tree[k].mapped = True
+                set_prob(line_nodes_old_tree[k], 1)
+            if pre_id >= 0:
+                set_prob(line_nodes_old_tree[pre_id], 3)
+            if after_id < len(line_nodes_old_tree):
+                set_prob(line_nodes_old_tree[after_id], 4)
 
-                for k in range(pre_id + 1, after_id):
-                    line_nodes_old_tree[k].mapped = True
-                    set_prob(line_nodes_old_tree[k], 1)
-                if pre_id >= 0:
-                    set_prob(line_nodes_old_tree[pre_id], 3)
-                if after_id < len(line_nodes_old_tree):
-                    set_prob(line_nodes_old_tree[after_id], 4)
+            old_tree_tokens = troot.getTreestr().split()
+            N = 0
+            set_id(troot)
 
-                old_tree_tokens = troot.getTreestr().split()
-                N = 0
-                set_id(troot)
+            local_var_names = get_local_var_names(troot)
+            fnum = -1
+            vnum = -1
+            var_dict: Dict[str, str] = {}
+            var_dict[method_name] = 'meth0'
 
-                local_var_names = get_local_var_names(troot)
-                fnum = -1
-                vnum = -1
-                var_dict: Dict[str, str] = {}
-                var_dict[method_name] = 'meth0'
+            for local_var_name in local_var_names:
+                if local_var_name[1].name == 'VariableDeclarator':
+                    vnum += 1
+                    var_dict[local_var_name[0]] = 'loc' + str(vnum)
+                else:
+                    fnum += 1
+                    var_dict[local_var_name[0]] = 'par' + str(fnum)
 
-                for local_var_name in local_var_names:
-                    if local_var_name[1].name == 'VariableDeclarator':
-                        vnum += 1
-                        var_dict[local_var_name[0]] = 'loc' + str(vnum)
-                    else:
-                        fnum += 1
-                        var_dict[local_var_name[0]] = 'par' + str(fnum)
+            RULE_LIST.append(RULES['root -> modified'])
+            FATHER_NAMES.append('root')
+            FATHER_LIST.append(-1)
 
-                RULE_LIST.append(RULES['root -> modified'])
-                FATHER_NAMES.append('root')
-                FATHER_LIST.append(-1)
+            if is_changed(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1]) and \
+                    len(get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])) <= 1:
+                changed_nodes = get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])
 
-                if is_changed(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1]) and \
-                        len(get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])) <= 1:
-                    changed_nodes = get_changed_nodes(line_nodes_old_tree[pre_id + 1], line_nodes_new_tree[pre_id2 + 1])
-
-                    for ch_node in changed_nodes:
-                        RULE_LIST.append(1000000 + ch_node[0].id)
-                        FATHER_NAMES.append('root')
-                        FATHER_LIST.append(-1)
-
-                        if ch_node[0].name == 'BasicType' or ch_node[0].name == 'operator':
-                            get_rule(
-                                node=ch_node[1],
-                                tokens=old_tree_tokens,
-                                current_id=len(RULE_LIST) - 1,
-                                d=0,
-                                idx=0,
-                                var_dict=var_dict,
-                                copy=False,
-                                calvalid=False
-                            )
-                        else:
-                            get_rule(
-                                node=ch_node[1],
-                                tokens=old_tree_tokens,
-                                current_id=len(RULE_LIST) - 1,
-                                d=0,
-                                idx=0,
-                                var_dict=var_dict,
-                                calvalid=False
-                            )
-
-                    RULE_LIST.append(RULES['root -> End'])
-                    FATHER_LIST.append(-1)
-                    FATHER_NAMES.append('root')
-
-                    RES_LIST.append(
-                        {
-                            'input': root_node_old_tree.printTreeWithVar(troot, var_dict).strip().split(),
-                            'rule': RULE_LIST,
-                            'problist': root_node_old_tree.getTreeProb(troot),
-                            'fatherlist': FATHER_LIST,
-                            'fathername': FATHER_NAMES,
-                            'vardic': var_dict
-                        }
-                    )
-
-                    RULE_LIST = []
-                    FATHER_NAMES = []
-                    FATHER_LIST = []
-
-                    set_prob(root_node_old_tree, 2)
-
-                    continue
-
-                for k in range(pre_id2 + 1, after_id2):
-                    line_nodes_new_tree[k].mapped = True
-
-                    if line_nodes_new_tree[k].name == 'condition':
-                        rule = 'root -> ' + line_nodes_new_tree[k].father.name
-                    else:
-                        rule = 'root -> ' + line_nodes_new_tree[k].name
-
-                    if rule not in RULES:
-                        RULES[rule] = len(RULES)
-
-                    RULE_LIST.append(RULES[rule])
+                for ch_node in changed_nodes:
+                    RULE_LIST.append(1000000 + ch_node[0].id)
                     FATHER_NAMES.append('root')
                     FATHER_LIST.append(-1)
 
-                    if line_nodes_new_tree[k].name == 'condition':
-                        tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
-                        tmpnode.child.append(line_nodes_new_tree[k])
+                    if ch_node[0].name == 'BasicType' or ch_node[0].name == 'operator':
                         get_rule(
-                            node=tmpnode,
+                            node=ch_node[1],
                             tokens=old_tree_tokens,
                             current_id=len(RULE_LIST) - 1,
                             d=0,
                             idx=0,
-                            var_dict=var_dict
+                            var_dict=var_dict,
+                            copy=False,
+                            calvalid=False
                         )
                     else:
                         get_rule(
-                            node=line_nodes_new_tree[k],
+                            node=ch_node[1],
                             tokens=old_tree_tokens,
                             current_id=len(RULE_LIST) - 1,
                             d=0,
                             idx=0,
-                            var_dict=var_dict
+                            var_dict=var_dict,
+                            calvalid=False
                         )
-
-                if not IS_VALID:
-                    IS_VALID = True
-                    RULE_LIST = []
-                    FATHER_NAMES = []
-                    FATHER_LIST = []
-                    set_prob(root_node_old_tree, 2)
-                    continue
 
                 RULE_LIST.append(RULES['root -> End'])
                 FATHER_LIST.append(-1)
                 FATHER_NAMES.append('root')
-
-                assert len(root_node_old_tree.printTree(troot).strip().split()) <= 1000
 
                 RES_LIST.append(
                     {
@@ -629,19 +561,85 @@ def get_diff_node(
                         'rule': RULE_LIST,
                         'problist': root_node_old_tree.getTreeProb(troot),
                         'fatherlist': FATHER_LIST,
-                        'fathername': FATHER_NAMES
+                        'fathername': FATHER_NAMES,
+                        'vardic': var_dict
                     }
                 )
 
                 RULE_LIST = []
                 FATHER_NAMES = []
                 FATHER_LIST = []
+
                 set_prob(root_node_old_tree, 2)
-                IS_VALID = True
+
                 continue
 
-            else:
+            for k in range(pre_id2 + 1, after_id2):
+                line_nodes_new_tree[k].mapped = True
+
+                if line_nodes_new_tree[k].name == 'condition':
+                    rule = 'root -> ' + line_nodes_new_tree[k].father.name
+                else:
+                    rule = 'root -> ' + line_nodes_new_tree[k].name
+
+                if rule not in RULES:
+                    RULES[rule] = len(RULES)
+
+                RULE_LIST.append(RULES[rule])
+                FATHER_NAMES.append('root')
+                FATHER_LIST.append(-1)
+
+                if line_nodes_new_tree[k].name == 'condition':
+                    tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
+                    tmpnode.child.append(line_nodes_new_tree[k])
+                    get_rule(
+                        node=tmpnode,
+                        tokens=old_tree_tokens,
+                        current_id=len(RULE_LIST) - 1,
+                        d=0,
+                        idx=0,
+                        var_dict=var_dict
+                    )
+                else:
+                    get_rule(
+                        node=line_nodes_new_tree[k],
+                        tokens=old_tree_tokens,
+                        current_id=len(RULE_LIST) - 1,
+                        d=0,
+                        idx=0,
+                        var_dict=var_dict
+                    )
+
+            if not IS_VALID:
+                IS_VALID = True
+                RULE_LIST = []
+                FATHER_NAMES = []
+                FATHER_LIST = []
+                set_prob(root_node_old_tree, 2)
                 continue
+
+            RULE_LIST.append(RULES['root -> End'])
+            FATHER_LIST.append(-1)
+            FATHER_NAMES.append('root')
+
+            assert len(root_node_old_tree.printTree(troot).strip().split()) <= 1000
+
+            RES_LIST.append(
+                {
+                    'input': root_node_old_tree.printTreeWithVar(troot, var_dict).strip().split(),
+                    'rule': RULE_LIST,
+                    'problist': root_node_old_tree.getTreeProb(troot),
+                    'fatherlist': FATHER_LIST,
+                    'fathername': FATHER_NAMES
+                }
+            )
+
+            RULE_LIST = []
+            FATHER_NAMES = []
+            FATHER_LIST = []
+            set_prob(root_node_old_tree, 2)
+            IS_VALID = True
+            continue
 
     # step 3
     pre_id_dict = {}
