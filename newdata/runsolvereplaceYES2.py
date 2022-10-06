@@ -268,14 +268,6 @@ def getRule(
             DEPTH_LIST.append(d)
 
 
-def hassamechild(l1, l2):
-    for x in l1.child:
-        for y in l2.child:
-            if x == y:
-                return True
-    return False
-
-
 def setProb(r, p):
     r.possibility = p
     for x in r.child:
