@@ -738,14 +738,17 @@ def get_diff_node(
         pre_id_new = pre_id_dict_new[i]
         after_id_new = after_id_dict_new[i]
 
+        # if pre node of unmapped node from new tree does not have a mapping pair
         if pre_id_dict_new[i] not in map_new2old:
             return
-
         pre_id_old = map_new2old[pre_id_dict_new[i]]
+        
+        # if after node of unmapped node from new tree does not have a mapping pair
         if after_id_dict_new[i] not in map_new2old:
             return
-
         after_id_old = map_new2old[after_id_dict_new[i]]
+        
+        # skip if pre node and after node do not come one after another
         if pre_id_old + 1 != after_id_old:
             continue
 
