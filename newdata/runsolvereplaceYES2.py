@@ -855,9 +855,24 @@ def get_diff_node(
             if line_nodes_new_tree[k].name == 'condition':
                 tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
                 tmpnode.child.append(line_nodes_new_tree[k])
-                get_rule(tmpnode, troot_tokens_old, len(RULE_LIST) - 1, 0, 0, var_dict)
+                get_rule(
+                    node=tmpnode,
+                    tokens=troot_tokens_old,
+                    current_id=len(RULE_LIST) - 1,
+                    d=0,
+                    idx=0,
+                    var_dict=var_dict
+                )
             else:
-                get_rule(line_nodes_new_tree[k], troot_tokens_old, len(RULE_LIST) - 1, 0, 0, var_dict)
+                get_rule(
+                    node=line_nodes_new_tree[k],
+                    tokens=troot_tokens_old,
+                    current_id=len(RULE_LIST) - 1,
+                    d=0,
+                    idx=0,
+                    var_dict=var_dict
+                )
+
         if not IS_VALID:
             IS_VALID = True
             RULE_LIST = []
@@ -865,14 +880,27 @@ def get_diff_node(
             FATHER_LIST = []
             set_prob(root_node_old_tree, 2)
             continue
+
         RULE_LIST.append(RULES['root -> End'])
         FATHER_LIST.append(-1)
         FATHER_NAMES.append('root')
+
         assert (len(root_node_old_tree.printTree(troot).strip().split()) <= 1000)
-        RES_LIST.append({'input': root_node_old_tree.printTreeWithVar(troot, var_dict).strip().split(), 'rule': RULE_LIST, 'problist': root_node_old_tree.getTreeProb(troot), 'fatherlist': FATHER_LIST, 'fathername': FATHER_NAMES})
+
+        RES_LIST.append(
+            {
+                'input': root_node_old_tree.printTreeWithVar(troot, var_dict).strip().split(),
+                'rule': RULE_LIST,
+                'problist': root_node_old_tree.getTreeProb(troot),
+                'fatherlist': FATHER_LIST,
+                'fathername': FATHER_NAMES
+            }
+        )
+
         RULE_LIST = []
         FATHER_NAMES = []
         FATHER_LIST = []
+
         set_prob(root_node_old_tree, 2)
 
 
