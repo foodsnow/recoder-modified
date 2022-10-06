@@ -821,7 +821,6 @@ if __name__ == '__main__':
 
     logger.info('starting run solve replace script')
 
-    res = []
     tres = []
 
     data = []
@@ -830,7 +829,6 @@ if __name__ == '__main__':
     which_10k = int(sys.argv[1])
     data = data[which_10k * 10000:which_10k*10000 + 10000]
 
-    i = 0
     for data_record_idx, data_record in tqdm(enumerate(data)):
         if 'oldtree' in data_record:
             lines_old = data_record['oldtree']
@@ -838,7 +836,6 @@ if __name__ == '__main__':
         else:
             lines_old = data_record['old']
             lines_new = data_record['new']
-        i += 1
 
         lines_old, lines_new = lines_new, lines_old
 
@@ -906,9 +903,6 @@ if __name__ == '__main__':
         if len(RES_LIST) - olen == 1:
             tres.append(RES_LIST[-1])
 
-        if i <= -5:
-            assert (0)
-
         RULE_LIST = []
         FATHER_LIST = []
         FATHER_NAMES = []
@@ -918,19 +912,14 @@ if __name__ == '__main__':
         ACTION = []
 
     REVERSE_RULES_DICT = {}
-
     for x in RULES:
         REVERSE_RULES_DICT[RULES[x]] = x
 
+    # print the rules
     for p, x in enumerate(tres):
         for rule_idx in x['rule']:
             if rule_idx < 1000000:
                 print(REVERSE_RULES_DICT[rule_idx], end=',')
-            else:
-                if rule_idx >= 2000000:
-                    i = rule_idx - 2000000
-                else:
-                    i = rule_idx - 1000000
 
     open('rulead%d.pkl' % which_10k, "wb").write(pickle.dumps(RULEAD))
     open('rule%d.pkl' % which_10k, "wb").write(pickle.dumps(RULES))
