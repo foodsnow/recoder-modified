@@ -823,7 +823,6 @@ if __name__ == '__main__':
 
     res = []
     tres = []
-    newdata = []
 
     data = []
     data.extend(pickle.load(open('data0_small.pkl', "rb")))
@@ -906,7 +905,6 @@ if __name__ == '__main__':
 
         if len(RES_LIST) - olen == 1:
             tres.append(RES_LIST[-1])
-            newdata.append(data_record)
 
         if i <= -5:
             assert (0)
