@@ -32,8 +32,8 @@ N = 0
 
 RULES: Dict[str, int] = pickle.load(open("rule.pkl", "rb"))
 assert ('value -> <string>_ter' in RULES)
-NUM_RULES: int = len(RULES)
 
+NUM_RULES: int = len(RULES)
 RULEAD: np.ndarray = np.zeros([NUM_RULES, NUM_RULES])
 
 
