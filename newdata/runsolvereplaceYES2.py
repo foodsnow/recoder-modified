@@ -367,7 +367,7 @@ def get_diff_node(
         line_nodes_old_tree: List[Node],
         line_nodes_new_tree: List[Node],
         root_node_old_tree: Node,
-        old_tree_tokens: List[str],
+        troot_tokens_old: List[str],
         method_name: str):
 
     logger.info('starting get_diff_node()')
@@ -425,7 +425,7 @@ def get_diff_node(
     # before and after the unmapped node
     pre_id_dict = {}
     after_id_dict = {}
-    
+
     pre_id = -1
     for i in range(len(line_nodes_old_tree)):
         if line_nodes_old_tree[i].mapped:
@@ -457,6 +457,7 @@ def get_diff_node(
 
             troot = root_node_old_tree
 
+            # reconstruct the troot of which unmapped node is a child
             # this part of the code is similar to testDefect4j.py
             # num_tokens(troot) >= 1000
             if len(root_node_old_tree.getTreestr().strip().split()) >= 1000:
@@ -475,45 +476,51 @@ def get_diff_node(
                     last_temp_lnode_old = unmapped_lnode_old
                     unmapped_lnode_old = unmapped_lnode_old.father
 
+                # reconstruct the tree at ans_root_node
                 ans_root_node = Node(unmapped_lnode_old.name, 0)
                 ans_root_node.child.append(last_temp_lnode_old)
                 ans_root_node.num = 2 + len(last_temp_lnode_old.getTreestr().strip().split())
 
+                # add the children until size of 1000 is reached
+                # some children may not be added
                 while True:
                     some_flag = True
-                    
+
                     after_node_idx = unmapped_lnode_old.child.index(ans_root_node.child[-1]) + 1
-                    
+
                     if after_node_idx < len(unmapped_lnode_old.child) and \
-                        ans_root_node.num + unmapped_lnode_old.child[after_node_idx].getNum() < 1000:
-                    
+                            ans_root_node.num + unmapped_lnode_old.child[after_node_idx].getNum() < 1000:
+
                         some_flag = False
                         ans_root_node.child.append(unmapped_lnode_old.child[after_node_idx])
                         ans_root_node.num += unmapped_lnode_old.child[after_node_idx].getNum()
-                    
+
                     pre_node_idx = unmapped_lnode_old.child.index(ans_root_node.child[0]) - 1
-                    
+
                     if pre_node_idx >= 0 and \
-                        ans_root_node.num + unmapped_lnode_old.child[pre_node_idx].getNum() < 1000:
-                        
+                            ans_root_node.num + unmapped_lnode_old.child[pre_node_idx].getNum() < 1000:
+
                         some_flag = False
                         ans_root_node.child = [unmapped_lnode_old.child[pre_node_idx]] + ans_root_node.child
                         ans_root_node.num += unmapped_lnode_old.child[pre_node_idx].getNum()
-                    
+
                     if some_flag:
                         break
-                
+
                 troot = ans_root_node
 
+            # theoretically, this loop has only one iteration, of k being the index of unmapped node
             for k in range(pre_id_old + 1, after_id_old):
                 line_nodes_old_tree[k].mapped = True
                 set_prob(line_nodes_old_tree[k], 1)
+
             if pre_id_old >= 0:
                 set_prob(line_nodes_old_tree[pre_id_old], 3)
+
             if after_id_old < len(line_nodes_old_tree):
                 set_prob(line_nodes_old_tree[after_id_old], 4)
 
-            old_tree_tokens = troot.getTreestr().split()
+            troot_tokens_old = troot.getTreestr().split()
             N = 0
             set_id(troot)
 
@@ -537,6 +544,7 @@ def get_diff_node(
 
             if is_changed(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1]) and \
                     len(get_changed_nodes(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1])) <= 1:
+
                 changed_nodes = get_changed_nodes(line_nodes_old_tree[pre_id_old + 1], line_nodes_new_tree[pre_id_new + 1])
 
                 for ch_node in changed_nodes:
@@ -547,7 +555,7 @@ def get_diff_node(
                     if ch_node[0].name == 'BasicType' or ch_node[0].name == 'operator':
                         get_rule(
                             node=ch_node[1],
-                            tokens=old_tree_tokens,
+                            tokens=troot_tokens_old,
                             current_id=len(RULE_LIST) - 1,
                             d=0,
                             idx=0,
@@ -558,7 +566,7 @@ def get_diff_node(
                     else:
                         get_rule(
                             node=ch_node[1],
-                            tokens=old_tree_tokens,
+                            tokens=troot_tokens_old,
                             current_id=len(RULE_LIST) - 1,
                             d=0,
                             idx=0,
@@ -609,7 +617,7 @@ def get_diff_node(
                     tmpnode.child.append(line_nodes_new_tree[k])
                     get_rule(
                         node=tmpnode,
-                        tokens=old_tree_tokens,
+                        tokens=troot_tokens_old,
                         current_id=len(RULE_LIST) - 1,
                         d=0,
                         idx=0,
@@ -618,7 +626,7 @@ def get_diff_node(
                 else:
                     get_rule(
                         node=line_nodes_new_tree[k],
-                        tokens=old_tree_tokens,
+                        tokens=troot_tokens_old,
                         current_id=len(RULE_LIST) - 1,
                         d=0,
                         idx=0,
@@ -732,7 +740,7 @@ def get_diff_node(
                         break
                 troot = ansroot
 
-            old_tree_tokens = troot.getTreestr().split()
+            troot_tokens_old = troot.getTreestr().split()
             N = 0
             set_id(troot)
             local_var_names = get_local_var_names(troot)
@@ -770,9 +778,9 @@ def get_diff_node(
                 if line_nodes_new_tree[k].name == 'condition':
                     tmpnode = Node(line_nodes_new_tree[k].father.name, 0)
                     tmpnode.child.append(line_nodes_new_tree[k])
-                    get_rule(tmpnode, old_tree_tokens, len(RULE_LIST) - 1, 0, 0, var_dict)
+                    get_rule(tmpnode, troot_tokens_old, len(RULE_LIST) - 1, 0, 0, var_dict)
                 else:
-                    get_rule(line_nodes_new_tree[k], old_tree_tokens, len(RULE_LIST) - 1, 0, 0, var_dict)
+                    get_rule(line_nodes_new_tree[k], troot_tokens_old, len(RULE_LIST) - 1, 0, 0, var_dict)
             if not IS_VALID:
                 IS_VALID = True
                 RULE_LIST = []
