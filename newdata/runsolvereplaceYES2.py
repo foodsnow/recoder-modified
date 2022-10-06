@@ -255,7 +255,6 @@ def get_rule(
         FATHER_LIST.append(current_id)
         FATHER_NAMES.append(node.name)
         DEPTH_LIST.append(d)
-        currid = len(RULE_LIST) - 1
         if RULE_LIST[current_id] >= NUM_RULES:
             pass
         elif current_id != -1:
