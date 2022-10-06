@@ -384,9 +384,11 @@ def get_diff_node(
     global IS_VALID
 
     # step 1
-    delete_node = []
-    dic = {}
-    dic2 = {}
+    # do mapping between line nodes in old tree and line nodes in new tree
+    unmapped_node: Node = []
+    map_old2new: Dict[int, int] = {}
+    map_new2old: Dict[int, int] = {}
+
     for i, lnode_old in enumerate(line_nodes_old_tree):
 
         has_same = False
@@ -395,25 +397,27 @@ def get_diff_node(
             if lnode_old == lnode_new and not lnode_new.expanded and not has_same:
                 lnode_new.expanded = True
                 lnode_old.expanded = True
-                dic[i] = j
-                dic2[j] = i
+                map_old2new[i] = j
+                map_new2old[j] = i
                 has_same = True
                 continue
 
             if lnode_old == lnode_new and not lnode_new.expanded and has_same:
-                if i - 1 in dic and dic[i - 1] == j - 1:
+                if i - 1 in map_old2new and map_old2new[i - 1] == j - 1:
                     has_same = True
-                    line_nodes_new_tree[dic[i]].expanded = False
+                    line_nodes_new_tree[map_old2new[i]].expanded = False
                     lnode_new.expanded = True
-                    del dic2[dic[i]]
-                    dic[i] = j
-                    dic2[j] = i
+                    del map_new2old[map_old2new[i]]
+                    map_old2new[i] = j
+                    map_new2old[j] = i
                     break
 
         if not has_same:
-            delete_node.append(lnode_old)
+            unmapped_node.append(lnode_old)
 
-    if len(delete_node) > 1:
+    # do not consider cases when there are more than 1 unmapped node
+    # from the old tree to the new tree
+    if len(unmapped_node) > 1:
         return
 
     # step 2
@@ -427,8 +431,8 @@ def get_diff_node(
             pre_id_dict[i] = pre_id
 
     after_id = len(line_nodes_old_tree)
-    dic[after_id] = len(line_nodes_new_tree)
-    dic[-1] = -1
+    map_old2new[after_id] = len(line_nodes_new_tree)
+    map_old2new[-1] = -1
     for i in range(len(line_nodes_old_tree) - 1, -1, -1):
         if line_nodes_old_tree[i].expanded:
             after_id = i
@@ -441,8 +445,8 @@ def get_diff_node(
         else:
             pre_id = pre_id_dict[i]
             after_id = after_id_dict[i]
-            pre_id2 = dic[pre_id_dict[i]]
-            after_id2 = dic[after_id_dict[i]]
+            pre_id2 = map_old2new[pre_id_dict[i]]
+            after_id2 = map_old2new[after_id_dict[i]]
 
             if pre_id + 2 == after_id and pre_id2 + 2 == after_id2:
                 troot = root_node_old_tree
@@ -647,8 +651,8 @@ def get_diff_node(
             pre_id_dict[i] = pre_id
 
     after_id = len(line_nodes_new_tree)
-    dic2[after_id] = len(line_nodes_old_tree)
-    dic2[-1] = -1
+    map_new2old[after_id] = len(line_nodes_old_tree)
+    map_new2old[-1] = -1
 
     for i in range(len(line_nodes_new_tree) - 1, -1, -1):
         if line_nodes_new_tree[i].expanded:
@@ -663,14 +667,14 @@ def get_diff_node(
             pre_id = pre_id_dict[i]
             after_id = after_id_dict[i]
 
-            if pre_id_dict[i] not in dic2:
+            if pre_id_dict[i] not in map_new2old:
                 return
 
-            pre_id2 = dic2[pre_id_dict[i]]
-            if after_id_dict[i] not in dic2:
+            pre_id2 = map_new2old[pre_id_dict[i]]
+            if after_id_dict[i] not in map_new2old:
                 return
 
-            after_id2 = dic2[after_id_dict[i]]
+            after_id2 = map_new2old[after_id_dict[i]]
             if pre_id2 + 1 != after_id2:
                 continue
 
