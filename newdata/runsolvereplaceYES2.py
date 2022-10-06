@@ -268,10 +268,10 @@ def getRule(
             DEPTH_LIST.append(d)
 
 
-def setProb(r, p):
+def set_prob(r, p):
     r.possibility = p
     for x in r.child:
-        setProb(x, p)
+        set_prob(x, p)
 
 
 def get_line_nodes(root_node: Node, block: str) -> List[Node]:
@@ -300,12 +300,12 @@ def get_line_nodes(root_node: Node, block: str) -> List[Node]:
     return line_nodes
 
 
-def setid(root):
+def set_id(root):
     global N
     root.id = N
     N += 1
     for x in root.child:
-        setid(x)
+        set_id(x)
 
 
 def isexpanded(lst):
@@ -357,7 +357,7 @@ def get_changed_nodes(node1: Node, node2: Node) -> List[Tuple[Node, Node]]:
     return ans
 
 
-def getDiffNode(
+def get_diff_node(
         line_nodes_old_tree: List[Node],
         line_nodes_new_tree: List[Node],
         root_node_old_tree: Node,
@@ -478,15 +478,15 @@ def getDiffNode(
 
                 for k in range(pre_id + 1, after_id):
                     line_nodes_old_tree[k].expanded = True
-                    setProb(line_nodes_old_tree[k], 1)
+                    set_prob(line_nodes_old_tree[k], 1)
                 if pre_id >= 0:
-                    setProb(line_nodes_old_tree[pre_id], 3)
+                    set_prob(line_nodes_old_tree[pre_id], 3)
                 if after_id < len(line_nodes_old_tree):
-                    setProb(line_nodes_old_tree[after_id], 4)
+                    set_prob(line_nodes_old_tree[after_id], 4)
 
                 old_tree_tokens = troot.getTreestr().split()
                 N = 0
-                setid(troot)
+                set_id(troot)
 
                 local_var_names = get_local_var_names(troot)
                 fnum = -1
@@ -556,7 +556,7 @@ def getDiffNode(
                     FATHER_NAMES = []
                     FATHER_LIST = []
 
-                    setProb(root_node_old_tree, 2)
+                    set_prob(root_node_old_tree, 2)
 
                     continue
 
@@ -601,7 +601,7 @@ def getDiffNode(
                     RULE_LIST = []
                     FATHER_NAMES = []
                     FATHER_LIST = []
-                    setProb(root_node_old_tree, 2)
+                    set_prob(root_node_old_tree, 2)
                     continue
 
                 RULE_LIST.append(RULES['root -> End'])
@@ -623,7 +623,7 @@ def getDiffNode(
                 RULE_LIST = []
                 FATHER_NAMES = []
                 FATHER_LIST = []
-                setProb(root_node_old_tree, 2)
+                set_prob(root_node_old_tree, 2)
                 IS_VALID = True
                 continue
 
@@ -708,7 +708,7 @@ def getDiffNode(
 
             old_tree_tokens = troot.getTreestr().split()
             N = 0
-            setid(troot)
+            set_id(troot)
             local_var_names = get_local_var_names(troot)
             fnum = -1
             vnum = -1
@@ -722,11 +722,11 @@ def getDiffNode(
                     fnum += 1
                     var_dict[x[0]] = 'par' + str(fnum)
             if pre_id2 >= 0:
-                setProb(line_nodes_old_tree[pre_id2], 3)
+                set_prob(line_nodes_old_tree[pre_id2], 3)
             if after_id2 < len(line_nodes_old_tree):
-                setProb(line_nodes_old_tree[after_id2], 1)
+                set_prob(line_nodes_old_tree[after_id2], 1)
             if after_id2 + 1 < len(line_nodes_old_tree):
-                setProb(line_nodes_old_tree[after_id2 + 1], 4)
+                set_prob(line_nodes_old_tree[after_id2 + 1], 4)
             RULE_LIST.append(RULES['root -> add'])
             FATHER_NAMES.append('root')
             FATHER_LIST.append(-1)
@@ -752,7 +752,7 @@ def getDiffNode(
                 RULE_LIST = []
                 FATHER_NAMES = []
                 FATHER_LIST = []
-                setProb(root_node_old_tree, 2)
+                set_prob(root_node_old_tree, 2)
                 continue
             RULE_LIST.append(RULES['root -> End'])
             FATHER_LIST.append(-1)
@@ -762,10 +762,21 @@ def getDiffNode(
             RULE_LIST = []
             FATHER_NAMES = []
             FATHER_LIST = []
-            setProb(root_node_old_tree, 2)
+            set_prob(root_node_old_tree, 2)
 
 
-lst = ['Chart-1', 'Chart-4', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-13', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-10', 'Closure-14', 'Closure-18', 'Closure-20', 'Closure-31', 'Closure-38', 'Closure-51', 'Closure-52', 'Closure-55', 'Closure-57', 'Closure-59', 'Closure-62', 'Closure-71', 'Closure-73', 'Closure-86', 'Closure-104', 'Closure-107', 'Closure-113', 'Closure-123', 'Closure-124', 'Closure-125', 'Closure-130', 'Closure-133', 'Lang-6', 'Lang-16', 'Lang-24', 'Lang-26', 'Lang-29', 'Lang-33', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-3', 'Math-5', 'Math-11', 'Math-27', 'Math-30', 'Math-32', 'Math-33', 'Math-34', 'Math-41', 'Math-48', 'Math-53', 'Math-57', 'Math-58', 'Math-59', 'Math-63', 'Math-69', 'Math-70', 'Math-73', 'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-96', 'Math-101', 'Math-105', 'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Time-27', 'Lang-43', 'Math-50', 'Math-98', 'Time-7', 'Mockito-38']
+lst = ['Chart-1', 'Chart-4', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-13', 
+'Chart-20', 'Chart-24', 'Chart-26', 'Closure-10', 'Closure-14', 'Closure-18', 
+'Closure-20', 'Closure-31', 'Closure-38', 'Closure-51', 'Closure-52', 'Closure-55', 
+'Closure-57', 'Closure-59', 'Closure-62', 'Closure-71', 'Closure-73', 'Closure-86', 
+'Closure-104', 'Closure-107', 'Closure-113', 'Closure-123', 'Closure-124', 'Closure-125', 
+'Closure-130', 'Closure-133', 'Lang-6', 'Lang-16', 'Lang-24', 'Lang-26', 'Lang-29', 
+'Lang-33', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-3', 'Math-5', 
+'Math-11', 'Math-27', 'Math-30', 'Math-32', 'Math-33', 'Math-34', 'Math-41', 'Math-48', 
+'Math-53', 'Math-57', 'Math-58', 'Math-59', 'Math-63', 'Math-69', 'Math-70', 'Math-73', 
+'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-96', 'Math-101', 'Math-105', 
+'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Time-27', 'Lang-43', 'Math-50', 'Math-98', 
+'Time-7', 'Mockito-38']
 
 if __name__ == '__main__':
 
@@ -833,7 +844,7 @@ if __name__ == '__main__':
         if len(line_nodes_old_tree) == 0 or len(line_nodes_new_tree) == 0:
             continue
 
-        setProb(root_node_old_tree, 2)
+        set_prob(root_node_old_tree, 2)
 
         olen = len(RES_LIST)
 
@@ -842,7 +853,7 @@ if __name__ == '__main__':
             if x.name == 'name':
                 method_name = x.child[0].name
 
-        getDiffNode(
+        get_diff_node(
             line_nodes_old_tree,
             line_nodes_new_tree,
             root_node_old_tree,
