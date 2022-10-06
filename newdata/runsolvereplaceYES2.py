@@ -26,10 +26,7 @@ RULE_LIST = []
 FATHER_LIST = []
 FATHER_NAMES = []
 
-COPY_NODE = {}
-HAS_COPY: Dict = {}
 IS_VALID = True
-ACTION = []
 RES_LIST = []
 N = 0
 
@@ -38,10 +35,6 @@ assert ('value -> <string>_ter' in RULES)
 NUM_RULES: int = len(RULES)
 
 RULEAD: np.ndarray = np.zeros([NUM_RULES, NUM_RULES])
-
-REVERSE_RULES_DICT: Dict[int, str] = {}
-for x in RULES:
-    REVERSE_RULES_DICT[RULES[x]] = x
 
 
 def find_all(sub_string: str, super_string: str) -> List[int]:
@@ -190,7 +183,6 @@ def get_rule(
     global ONE_LIST
     global RULE_LIST
     global FATHER_LIST
-    global COPY_NODE
     global RULEAD
     global IS_VALID
 
@@ -247,7 +239,6 @@ def get_rule(
 
     # case 3
     if copyid != -1:
-        COPY_NODE[node.name] = 1
         RULE_LIST.append(copyid)
         FATHER_LIST.append(current_id)
         FATHER_NAMES.append(node.name)
@@ -412,7 +403,6 @@ def get_diff_node(
     global RULES
     global RULE_LIST
     global FATHER_LIST
-    global COPY_NODE
     global RULEAD
     global FATHER_NAMES
     global N
@@ -988,18 +978,14 @@ if __name__ == '__main__':
         RULE_LIST = []
         FATHER_LIST = []
         FATHER_NAMES = []
-        COPY_NODE = {}
-        HAS_COPY = {}
-        ACTION = []
 
     # print the rules
+    rev_rules: Dict[int, str] = {v: k for k, v in RULES.items()}
     for p, x in enumerate(tres):
         for rule_idx in x['rule']:
             if rule_idx < 1000000:
-                print(REVERSE_RULES_DICT[rule_idx], end=',')
+                print(rev_rules[rule_idx], end=',')
 
     open('rulead%d.pkl' % which_10k, "wb").write(pickle.dumps(RULEAD))
     open('rule%d.pkl' % which_10k, "wb").write(pickle.dumps(RULES))
     open('process_datacopy%d.pkl' % which_10k, "wb").write(pickle.dumps(tres))
-
-    exit(0)
