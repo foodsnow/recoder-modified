@@ -268,26 +268,6 @@ def getRule(
             DEPTH_LIST.append(d)
 
 
-def dist(l1, l2):
-    if l1[0] != l2[0]:
-        return 0
-    ans = []
-    dic = {}
-    for i in range(0, len(l1) + 1):
-        dic[(i, 0)] = 0
-    for i in range(0, len(l2) + 1):
-        dic[(0, i)] = 0
-    for i in range(1, len(l1) + 1):
-        for j in range(1, len(l2) + 1):
-            if l1[i - 1] == l2[j - 1]:
-                dic[(i, j)] = dic[(i - 1, j - 1)] + 1
-            elif dic[(i - 1, j)] > dic[(i, j - 1)]:
-                dic[(i, j)] = dic[(i - 1, j)]
-            else:
-                dic[(i, j)] = dic[(i, j - 1)]
-    return -dic[(len(l1), len(l2))] / min(len(l1), len(l2))
-
-
 def hassamechild(l1, l2):
     for x in l1.child:
         for y in l2.child:
