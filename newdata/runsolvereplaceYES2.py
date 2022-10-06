@@ -15,7 +15,7 @@ ONE_LIST = [
     'catches', 'types', 'dimensions', 'modifiers', 'case', 'finally_block', 'type_parameters'
 ]
 
-LINE_NODES = [
+LINE_NODES_NAMES = [
     'Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement',
     'ContinueStatement_ter', 'LocalVariableDeclaration', 'condition', 'control',
     'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters",
@@ -49,7 +49,7 @@ def find_all(sub_string: str, super_string: str) -> List[int]:
     find all indices of sub_string in super_string
     return as a list
     '''
-    
+
     index_list = []
     index = super_string.find(sub_string)
 
@@ -152,20 +152,26 @@ def get_line_nodes(root_node: Node, block: str) -> List[Node]:
     modifies tree: sets .block attribute
     '''
 
-    global LINE_NODES
+    global LINE_NODES_NAMES
 
     line_nodes = []
+
     block = block + root_node.name
+
     for child in root_node.child:
-        if child.name in LINE_NODES:
+
+        if child.name in LINE_NODES_NAMES:
+            # skip certain nodes
             if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or \
                     'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
                 continue
+
             child.block = block
             line_nodes.append(child)
         else:
-            tmp = get_line_nodes(child, block)
-            line_nodes.extend(tmp)
+            lnodes_child = get_line_nodes(child, block)
+            line_nodes.extend(lnodes_child)
+
     return line_nodes
 
 
