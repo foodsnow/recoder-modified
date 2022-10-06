@@ -266,20 +266,25 @@ def get_rule(
             RULEAD[RULES['start -> copyword'], RULES['start -> root']] = 1
             RULEAD[RULES['start -> root'], RULES['start -> copyword']] = 1
         return
+
     else:
         if node.name not in ONE_LIST:
+
             rule = node.name + " -> "
-            for x in node.child:
-                rule += x.name + " "
+            for _child in node.child:
+                rule += _child.name + " "
             rule = rule.strip()
+
             if rule in RULES:
                 RULE_LIST.append(RULES[rule])
             else:
                 IS_VALID = False
                 return
+
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
+
             if RULE_LIST[-1] < NUM_RULES and RULE_LIST[current_id] < NUM_RULES:
                 if current_id != -1:
                     RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
@@ -287,35 +292,61 @@ def get_rule(
                 else:
                     RULEAD[RULES['start -> root'], RULE_LIST[-1]] = 1
                     RULEAD[RULE_LIST[-1], RULES['start -> root']] = 1
-            currid = len(RULE_LIST) - 1
-            for x in node.child:
-                get_rule(x, tokens, currid, d + 1, idx, var_dict)
+
+            _rec_current_id = len(RULE_LIST) - 1
+            for _child in node.child:
+                get_rule(
+                    node=_child,
+                    tokens=tokens,
+                    current_id=_rec_current_id,
+                    d=d + 1,
+                    idx=idx,
+                    var_dict=var_dict
+                )
+
         else:
-            for x in node.child:
-                rule = node.name + " -> " + x.name
+
+            for _child in node.child:
+
+                rule = node.name + " -> " + _child.name
                 rule = rule.strip()
+
                 if rule in RULES:
                     RULE_LIST.append(RULES[rule])
                 else:
                     IS_VALID = False
                     return
+
                 if RULE_LIST[-1] < NUM_RULES and RULE_LIST[current_id] < NUM_RULES:
                     RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
                     RULEAD[RULE_LIST[-1], RULE_LIST[current_id]] = 1
+
                 FATHER_LIST.append(current_id)
                 FATHER_NAMES.append(node.name)
                 DEPTH_LIST.append(d)
-                get_rule(x, tokens, len(RULE_LIST) - 1, d + 1, idx, var_dict)
-            rule = node.name + " -> End "
+
+                get_rule(
+                    node=_child,
+                    tokens=tokens,
+                    current_id=len(RULE_LIST) - 1,
+                    d=d + 1,
+                    idx=idx,
+                    var_dict=var_dict
+                )
+
+            rule = node.name + " -> End"
             rule = rule.strip()
+
             if rule in RULES:
                 RULE_LIST.append(RULES[rule])
             else:
                 assert (0)
                 RULES[rule] = len(RULES)
                 RULE_LIST.append(RULES[rule])
+
             RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
             RULEAD[RULE_LIST[-1], RULE_LIST[current_id]] = 1
+
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
