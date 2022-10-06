@@ -15,7 +15,7 @@ ONE_LIST = [
     'catches', 'types', 'dimensions', 'modifiers', 'case', 'finally_block', 'type_parameters'
 ]
 
-LINE_NODE = [
+LINE_NODES = [
     'Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement',
     'ContinueStatement_ter', 'LocalVariableDeclaration', 'condition', 'control',
     'BreakStatement', 'ContinueStatement', 'ReturnStatement', "parameters",
@@ -152,12 +152,12 @@ def get_line_nodes(root_node: Node, block: str) -> List[Node]:
     modifies tree: sets .block attribute
     '''
 
-    global LINE_NODE
+    global LINE_NODES
 
     line_nodes = []
     block = block + root_node.name
     for child in root_node.child:
-        if child.name in LINE_NODE:
+        if child.name in LINE_NODES:
             if 'info' in child.getTreestr() or 'assert' in child.getTreestr() or \
                     'logger' in child.getTreestr() or 'LOGGER' in child.getTreestr() or 'system.out' in child.getTreestr().lower():
                 continue
