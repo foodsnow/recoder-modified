@@ -923,10 +923,6 @@ if __name__ == '__main__':
         REVERSE_RULES_DICT[RULES[x]] = x
 
     for p, x in enumerate(tres):
-        tmp = []
-        for s in x['input']:
-            if s != '^':
-                tmp.append(s)
         for x in x['rule']:
             if x < 1000000:
                 print(REVERSE_RULES_DICT[x], end=',')
