@@ -182,8 +182,7 @@ def get_rule(
         d: int,
         idx: int,
         var_dict: Dict[str, str],
-        copy=True,
-        calvalid=True) -> Union[Tuple, None]:
+        copy=True) -> Union[Tuple, None]:
 
     logger.info('starting get_rule()')
 
@@ -301,7 +300,8 @@ def get_rule(
                     current_id=_rec_current_id,
                     d=d + 1,
                     idx=idx,
-                    var_dict=var_dict
+                    var_dict=var_dict,
+                    copy=True
                 )
 
         else:
@@ -331,7 +331,8 @@ def get_rule(
                     current_id=len(RULE_LIST) - 1,
                     d=d + 1,
                     idx=idx,
-                    var_dict=var_dict
+                    var_dict=var_dict,
+                    copy=True
                 )
 
             rule = node.name + " -> End"
@@ -606,8 +607,7 @@ def get_diff_node(
                             d=0,
                             idx=0,
                             var_dict=var_dict,
-                            copy=False,
-                            calvalid=False
+                            copy=False
                         )
                     else:
                         get_rule(
@@ -617,7 +617,7 @@ def get_diff_node(
                             d=0,
                             idx=0,
                             var_dict=var_dict,
-                            calvalid=False
+                            copy=True
                         )
 
                 RULE_LIST.append(RULES['root -> End'])
@@ -667,7 +667,8 @@ def get_diff_node(
                         current_id=len(RULE_LIST) - 1,
                         d=0,
                         idx=0,
-                        var_dict=var_dict
+                        var_dict=var_dict,
+                        copy=True
                     )
                 else:
                     get_rule(
@@ -676,7 +677,8 @@ def get_diff_node(
                         current_id=len(RULE_LIST) - 1,
                         d=0,
                         idx=0,
-                        var_dict=var_dict
+                        var_dict=var_dict,
+                        copy=True
                     )
 
             if not IS_VALID:
@@ -861,7 +863,8 @@ def get_diff_node(
                     current_id=len(RULE_LIST) - 1,
                     d=0,
                     idx=0,
-                    var_dict=var_dict
+                    var_dict=var_dict,
+                    copy=True
                 )
             else:
                 get_rule(
@@ -870,7 +873,8 @@ def get_diff_node(
                     current_id=len(RULE_LIST) - 1,
                     d=0,
                     idx=0,
-                    var_dict=var_dict
+                    var_dict=var_dict,
+                    copy=True
                 )
 
         if not IS_VALID:
