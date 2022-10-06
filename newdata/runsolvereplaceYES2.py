@@ -321,28 +321,40 @@ def get_rule(
             DEPTH_LIST.append(d)
 
 
-def is_changed(node1: Node, node2: Node) -> bool:
+def is_changed(node_old: Node, node_new: Node) -> bool:
 
-    if node1.name != node2.name:
+    # names are not identical -> False
+    if node_old.name != node_new.name:
         return False
 
-    if node1 == node2:
+    # names are identical
+    # trees are identical -> True
+    if node_old == node_new:
         return True
 
-    if node1.name == 'MemberReference' or node1.name == 'BasicType' or \
-            node1.name == 'operator' or node1.name == 'qualifier' or \
-            node1.name == 'member' or node1.name == 'Literal':
+    # names are identical
+    # trees are not identical
+    # names are one of the following -> True
+    if node_old.name == 'MemberReference' or node_old.name == 'BasicType' or \
+            node_old.name == 'operator' or node_old.name == 'qualifier' or \
+            node_old.name == 'member' or node_old.name == 'Literal':
         return True
 
-    if len(node1.child) != len(node2.child):
+    # names are identical
+    # trees are not identical
+    # names are not one of the above
+    # number of children are not same -> False
+    if len(node_old.child) != len(node_new.child):
         return False
 
     ans = True
-    for i in range(len(node1.child)):
-        child1 = node1.child[i]
-        child2 = node2.child[i]
+    for i in range(len(node_old.child)):
+        child1 = node_old.child[i]
+        child2 = node_new.child[i]
         ans = ans and is_changed(child1, child2)
 
+    # for the result to be True
+    # the above base case conditions should be True for all children
     return ans
 
 
