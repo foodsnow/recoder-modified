@@ -466,15 +466,15 @@ def get_diff_node(
     # step 2
     # these two dictionaries contain indices to nodes in line_nodes_old_tree
     # before and after the unmapped node
-    pre_id_dict = {}
-    after_id_dict = {}
+    pre_id_dict_old = {}
+    after_id_dict_old = {}
 
     pre_id = -1
     for i in range(len(line_nodes_old_tree)):
         if line_nodes_old_tree[i].mapped:
             pre_id = i
         else:
-            pre_id_dict[i] = pre_id
+            pre_id_dict_old[i] = pre_id
 
     after_id = len(line_nodes_old_tree)
     map_old2new[after_id] = len(line_nodes_new_tree)
@@ -483,17 +483,17 @@ def get_diff_node(
         if line_nodes_old_tree[i].mapped:
             after_id = i
         else:
-            after_id_dict[i] = after_id
+            after_id_dict_old[i] = after_id
 
     # loop over unmapped nodes in line_nodes_old_tree
     for i in range(len(line_nodes_old_tree)):
         if line_nodes_old_tree[i].mapped:
             continue
 
-        pre_id_old = pre_id_dict[i]
-        after_id_old = after_id_dict[i]
-        pre_id_new = map_old2new[pre_id_dict[i]]
-        after_id_new = map_old2new[after_id_dict[i]]
+        pre_id_old = pre_id_dict_old[i]
+        after_id_old = after_id_dict_old[i]
+        pre_id_new = map_old2new[pre_id_dict_old[i]]
+        after_id_new = map_old2new[after_id_dict_old[i]]
 
         # if the unmapped node is in-between pre_id and after_id in both old and new tree
         if pre_id_old + 2 == after_id_old and pre_id_new + 2 == after_id_new:
