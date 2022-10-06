@@ -421,6 +421,8 @@ def get_diff_node(
         return
 
     # step 2
+    # these two dictionaries contain indices to nodes in line_nodes_old_tree
+    # before and after the unmapped node
     pre_id_dict = {}
     after_id_dict = {}
     
