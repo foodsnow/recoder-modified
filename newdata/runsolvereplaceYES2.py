@@ -351,16 +351,16 @@ def get_changed_nodes(node1: Node, node2: Node) -> List[Tuple[Node, Node]]:
     if node1 == node2:
         return []
 
-    ans = []
     if node1.name == 'MemberReference' or node1.name == 'BasicType' or \
             node1.name == 'operator' or node1.name == 'qualifier' or \
             node1.name == 'member' or node1.name == 'Literal':
         return [(node1, node2)]
 
+    changed_nodes = []
     for i in range(len(node1.child)):
-        ans.extend(get_changed_nodes(node1.child[i], node2.child[i]))
+        changed_nodes.extend(get_changed_nodes(node1.child[i], node2.child[i]))
 
-    return ans
+    return changed_nodes
 
 
 def get_diff_node(
