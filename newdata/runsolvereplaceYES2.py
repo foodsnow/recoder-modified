@@ -826,7 +826,7 @@ if __name__ == '__main__':
 
         set_prob(root_node_old_tree, 2)
 
-        olen = len(RES_LIST)
+        old_len = len(RES_LIST)
 
         method_name = 'None'
         for x in root_node_old_tree.child:
@@ -841,7 +841,7 @@ if __name__ == '__main__':
             method_name
         )
 
-        if len(RES_LIST) - olen == 1:
+        if len(RES_LIST) - old_len == 1:
             tres.append(RES_LIST[-1])
 
         RULE_LIST = []
