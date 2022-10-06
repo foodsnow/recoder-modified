@@ -8,23 +8,12 @@ from tqdm import tqdm
 from Searchnode1 import Node
 from base_logger import logger
 
+
 ONE_LIST = [
     'SRoot', 'arguments', 'parameters', 'body', 'block', 'selectors', 'cases', 'statements',
     'throws', 'initializers', 'declarators', 'annotations', 'prefix_operators', 'postfix_operators',
     'catches', 'types', 'dimensions', 'modifiers', 'case', 'finally_block', 'type_parameters'
 ]
-
-RULE_LIST = []
-FATHER_LIST = []
-FATHER_NAMES = []
-DEPTH_LIST = []
-COPY_NODE = {}
-RULES = pickle.load(open("rule.pkl", "rb"))
-
-assert ('value -> <string>_ter' in RULES)
-
-CNUM = len(RULES)
-RULEAD = np.zeros([CNUM, CNUM])
 
 LINE_NODE = [
     'Statement_ter', 'BreakStatement_ter', 'ReturnStatement_ter', 'ContinueStatement',
@@ -33,15 +22,26 @@ LINE_NODE = [
     'StatementExpression', 'return_type'
 ]
 
-REVERSE_RULES_DICT = {}
-for x in RULES:
-    REVERSE_RULES_DICT[RULES[x]] = x
-
+RULE_LIST = []
+FATHER_LIST = []
+FATHER_NAMES = []
+DEPTH_LIST = []
+COPY_NODE = {}
 HAS_COPY: Dict = {}
 IS_VALID = True
 ACTION = []
 RES_LIST = []
 N = 0
+
+RULES: Dict[str, int] = pickle.load(open("rule.pkl", "rb"))
+assert ('value -> <string>_ter' in RULES)
+NUM_RULES: int = len(RULES)
+
+RULEAD: np.ndarray = np.zeros([NUM_RULES, NUM_RULES])
+
+REVERSE_RULES_DICT: Dict[int, str] = {}
+for x in RULES:
+    REVERSE_RULES_DICT[RULES[x]] = x
 
 
 def find_all(sub_string: str, super_string: str) -> List[int]:
@@ -197,7 +197,7 @@ def getRule(
         FATHER_NAMES.append(node.name)
         DEPTH_LIST.append(d)
         currid = len(RULE_LIST) - 1
-        if RULE_LIST[current_id] >= CNUM:
+        if RULE_LIST[current_id] >= NUM_RULES:
             pass
         elif current_id != -1:
             RULEAD[RULE_LIST[current_id], RULES['start -> copyword']] = 1
@@ -220,7 +220,7 @@ def getRule(
             FATHER_LIST.append(current_id)
             FATHER_NAMES.append(node.name)
             DEPTH_LIST.append(d)
-            if RULE_LIST[-1] < CNUM and RULE_LIST[current_id] < CNUM:
+            if RULE_LIST[-1] < NUM_RULES and RULE_LIST[current_id] < NUM_RULES:
                 if current_id != -1:
                     RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
                     RULEAD[RULE_LIST[-1], RULE_LIST[current_id]] = 1
@@ -239,7 +239,7 @@ def getRule(
                 else:
                     IS_VALID = False
                     return
-                if RULE_LIST[-1] < CNUM and RULE_LIST[current_id] < CNUM:
+                if RULE_LIST[-1] < NUM_RULES and RULE_LIST[current_id] < NUM_RULES:
                     RULEAD[RULE_LIST[current_id], RULE_LIST[-1]] = 1
                     RULEAD[RULE_LIST[-1], RULE_LIST[current_id]] = 1
                 FATHER_LIST.append(current_id)
@@ -389,7 +389,6 @@ def getDiffNode(
 
     global RES_LIST
     global RULES
-    global ONE_LIST
     global RULE_LIST
     global FATHER_LIST
     global DEPTH_LIST
