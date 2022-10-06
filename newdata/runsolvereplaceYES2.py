@@ -358,19 +358,19 @@ def is_changed(node_old: Node, node_new: Node) -> bool:
     return ans
 
 
-def get_changed_nodes(node1: Node, node2: Node) -> List[Tuple[Node, Node]]:
+def get_changed_nodes(node_old: Node, node_new: Node) -> List[Tuple[Node, Node]]:
 
-    if node1 == node2:
+    if node_old == node_new:
         return []
 
-    if node1.name == 'MemberReference' or node1.name == 'BasicType' or \
-            node1.name == 'operator' or node1.name == 'qualifier' or \
-            node1.name == 'member' or node1.name == 'Literal':
-        return [(node1, node2)]
+    if node_old.name == 'MemberReference' or node_old.name == 'BasicType' or \
+            node_old.name == 'operator' or node_old.name == 'qualifier' or \
+            node_old.name == 'member' or node_old.name == 'Literal':
+        return [(node_old, node_new)]
 
     changed_nodes = []
-    for i in range(len(node1.child)):
-        changed_nodes.extend(get_changed_nodes(node1.child[i], node2.child[i]))
+    for i in range(len(node_old.child)):
+        changed_nodes.extend(get_changed_nodes(node_old.child[i], node_new.child[i]))
 
     return changed_nodes
 
