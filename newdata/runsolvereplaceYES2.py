@@ -431,7 +431,13 @@ def get_diff_node(
                 if i - 1 in map_old2new and map_old2new[i - 1] == j - 1:
                     _has_same = True
                     line_nodes_new_tree[map_old2new[i]].mapped = False
+
+                    # NOTE
+                    # typo -> no regression errors
+                    # no typo -> regression errors
+                    # lnode_new.maped = True
                     lnode_new.mapped = True
+
                     del map_new2old[map_old2new[i]]
                     map_old2new[i] = j
                     map_new2old[j] = i
