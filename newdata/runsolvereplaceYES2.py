@@ -988,9 +988,13 @@ if __name__ == '__main__':
     # print the rules
     rev_rules: Dict[int, str] = {v: k for k, v in RULES.items()}
     for p, x in enumerate(tres):
+        tmp = [_ for _ in x['input'] if _ != '^']
         for rule_idx in x['rule']:
             if rule_idx < 1000000:
                 print(rev_rules[rule_idx], end=',')
+            else:
+                i = rule_idx - (2000000 if rule_idx >= 2000000 else 1000000)
+                print('copy-' + tmp[i], end=',')
 
     open('rulead%d.pkl' % which_10k, "wb").write(pickle.dumps(RULEAD))
     open('rule%d.pkl' % which_10k, "wb").write(pickle.dumps(RULES))
