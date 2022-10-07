@@ -915,6 +915,8 @@ if __name__ == '__main__':
             lines_old = data_record['old']
             lines_new = data_record['new']
 
+        # NOTE swap the lines
+        # Probably in the original data0.pkl, the buggy-fixed pairs are swapped
         lines_old, lines_new = lines_new, lines_old
 
         # skip if identical pair
