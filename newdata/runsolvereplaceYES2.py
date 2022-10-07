@@ -983,6 +983,35 @@ if __name__ == '__main__':
         if len(RES_LIST) - old_len == 1:
             tres.append(RES_LIST[-1])
 
+            ### the remaining lines of this if statement are for debugging
+            # src_old = data_record['old']
+            # src_new = data_record['new']
+            # src_old, src_new = src_new, src_old  # NOTE refer to the note above
+
+            # print()
+            # print('data_record_idx', data_record_idx)
+            # print()
+            # with open('temp.old.java', 'w') as fout:
+            #     fout.write(src_old.replace(r'\n', '\n'))
+            # with open('temp.new.java', 'w') as fout:
+            #     fout.write(src_new.replace(r'\n', '\n'))
+
+            # rev_rules: Dict[int, str] = {v: k for k, v in RULES.items()}
+            # tmp = [_ for _ in RES_LIST[-1]['input'] if _ != '^']
+            # for rule_idx in RES_LIST[-1]['rule']:
+            #     if rule_idx < 1000000:
+            #         print(rev_rules[rule_idx])
+            #     else:
+            #         if rule_idx >= 2000000:
+            #             print('copy2-' + tmp[rule_idx - 2000000])
+            #         elif rule_idx >= 1000000:
+            #             print('copy1-' + tmp[rule_idx - 1000000])
+            # print()
+            # if 'vardic' in RES_LIST[-1]:
+            #     print(RES_LIST[-1]['vardic'])
+            # print()
+            ### end of debugging section
+
         RULE_LIST = []
         FATHER_LIST = []
         FATHER_NAMES = []
