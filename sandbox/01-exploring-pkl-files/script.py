@@ -20,4 +20,8 @@ for pklfile in cwd.glob('*.pkl'):
             sample = pkldata.tolist()
         else:
             assert 0
-        fout.write(json.dumps(sample))
+
+        try:
+            fout.write(json.dumps(sample))
+        except:
+            print('some error for', fname)
