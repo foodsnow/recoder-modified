@@ -653,26 +653,40 @@ IDS_V1_2 = [
 ]
 
 
+'''
+USAGE:
+
+# old
+python testDefect4j.py Chart-1
+
+# new
+                       <bugid> <range-inclusive>
+python testDefect4j.py Chart 1-20
+'''
+
+assert len(sys.argv) == 3
+
 logger.info('Starting')
+
+user_given_project_name = sys.argv[1]
+_low, _high = sys.argv[2].split('-')
+_low, _high = int(_low), int(_high)
+user_given_ids_range = list(range(_low, _high + 1))
+
+PROJECTS_V1_2 = [user_given_project_name]
+IDS_V1_2 = [user_given_ids_range]
+
+logger.info(f'User given project name is {user_given_project_name} and ids range is {user_given_ids_range}')
 
 logger.info('Loading decoder module')
 decoder_model = run_py.test()
 logger.info('Decoder model has been loaded')
 
-user_given_bug_id = sys.argv[1]
-user_given_project_name = [user_given_bug_id.split("-")[0]]
-user_given_project_id = [[int(user_given_bug_id.split("-")[1])]]
-logger.info(f'User given bug id is {sys.argv[1]}')
 
 for i, project_name in enumerate(PROJECTS_V1_2):
     for idx in IDS_V1_2[i]:
         bug_id = project_name + "-" + str(idx)
-
-        # comment this if to run for all versions
-        if bug_id != user_given_bug_id:
-            continue
-
-        print('p')
+        logger.info(f'Starting inference on {bug_id}')
 
         file_with_buggy_line_info = 'location/groundtruth/%s/%d' % (
             project_name.lower(), idx)
