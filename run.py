@@ -70,6 +70,10 @@ def save_model(model, dirs='checkpointSearch/'):
 def load_model(model, dirs='checkpointSearch/'):
     assert os.path.exists(dirs + 'best_model.ckpt'), 'Weights for saved model not found'
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    # in case need to use specific GPU
+    # device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+
     model.load_state_dict(torch.load(dirs + 'best_model.ckpt', map_location=device))
 
 
@@ -83,6 +87,9 @@ def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
 
     if torch.cuda.is_available():
         tensor = tensor.cuda()
+
+        # in case need to use specific GPU
+        # tensor = tensor.cuda(torch.device('cuda:1'))
 
     return tensor
 
@@ -770,6 +777,10 @@ def test():
     model = Decoder(ARGS)
     if torch.cuda.is_available():
         model = model.cuda()
+
+        # in case need to use specific GPU
+        # model = model.cuda(torch.device('cuda:1'))
+
     model = model.eval()
     load_model(model)
 
