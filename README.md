@@ -6,10 +6,29 @@
 ## NOTES
 - `input` in process_datacopy is fixed version
 
-## Scripts
+## Directory Structure
+```
+Starred entries are created by us
 
-`testDefects4j.py` - run inference on Defects4j v1.2 benchmark
+* artifacts/                        - some non-source files
+buggy/                              - Defects4J checked out versions
+checkpointSearch/                   - trained model
+d4j/                                - results of inference
+data/                               - N/A
+emsemble-out/                       - N/A
+location/                           - N/A
+location2/                          - N/A
+newdata/                            - files for preparing training data
+picture/                            - N/A
+Quixbug/                            - N/A
+result/                             - N/A
+Result/                             - N/A
+* sandbox/                          - testing various stuff related to Recoder
+script/                             - N/A
+target/                             - N/A
 
+testDefects4j.py                    - run inference on Defects4j v1.2 benchmark
+```
 
 ## Data
 ```bash
@@ -30,6 +49,20 @@ efe7d0d66695ee56c28749642a332eaf  newdata/rulead.pkl
 ```
 
 ---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Recoder
 A PyTorch Implementation of "A Syntax-Guided Edits Decoder for Neural Program Repair"
