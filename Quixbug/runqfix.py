@@ -1086,7 +1086,7 @@ def solveone(data, model):#(treestr, prob, model, subroot, vardic, typedic, idx,
             else:
                 assert(0)
                 classcontent = []
-            classcontent.extend(json.load(open("temp.json", 'r')))
+            classcontent.extend(json.load(open("data_class_content.json", 'r')))
             rrdicts = {}
             for x in classcontent:
                 rrdicts[x['filename']] = x

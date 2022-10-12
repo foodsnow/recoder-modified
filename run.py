@@ -1227,7 +1227,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
                 classes_content: list = json.load(open("result/%s.json" % bug_id, 'r'))
             else:
                 classes_content: list = []
-            classes_content.extend(json.load(open("temp.json", 'r')))
+            classes_content.extend(json.load(open("data_class_content.json", 'r')))
 
             reverse_dict_classes_content = {}
             for class_content in classes_content:
