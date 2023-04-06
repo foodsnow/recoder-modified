@@ -1,1 +1,4 @@
-stdout: stderr: 
+stdout: stderr: Traceback (most recent call last):
+  File "/root/projects/recoder-original/repair.py", line 540, in <module>
+    patches = json.load(open(f"d4j/{bugid}/{bugid}.json", 'r'))
+FileNotFoundError: [Errno 2] No such file or directory: 'd4j/Lang-56/Lang-56.json'

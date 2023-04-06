@@ -66,66 +66,6 @@ ReturnStatement expression Cast type ReferenceType name Complex_ter ^ ^ ^ ^ expr
 arg 
 arg 
 return (Complex)(isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isNaN_ter ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN.isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isInfinite_ter ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite.isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isZero_ter ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero.isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN().isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite().isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isNaN_ter ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN.INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isInfinite_ter ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite.INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isZero_ter ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero.INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN().INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite().INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier I_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:I.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier NaN_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:NaN.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier INF_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:INF.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ONE_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ONE.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ZERO_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ZERO.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:conjugate().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:negate().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:acos().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:asin().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:atan().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cos().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cosh().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:exp().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:log().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sin().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sinh().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt1z().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tan().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tanh().isZero;
 ReturnStatement expression TernaryExpression condition MemberReference qualifier divisor_ter ^ ^ member isNaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
 return (divisor.isNaN)?NaN:INF;
 ReturnStatement expression TernaryExpression condition MemberReference qualifier divisor_ter ^ ^ member isInfinite_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
@@ -138,46 +78,6 @@ ReturnStatement expression TernaryExpression condition MemberReference member is
 return (isZero)?null:INF;
 ReturnStatement expression MemberReference member INF_ter ^ ^ ^ ^ ^ 
 return INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier I_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:I.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier NaN_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:NaN.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier INF_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:INF.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ONE_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ONE.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ZERO_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ZERO.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:conjugate().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:negate().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:acos().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:asin().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:atan().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cos().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cosh().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:exp().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:log().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sin().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sinh().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt1z().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tan().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tanh().INF;
 ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator +_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member imaginary_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl BinaryOperation operator -_ter ^ ^ operandl BinaryOperation operator *_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member q_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member real_ter ^ ^ ^ ^ ^ ^ operandr MemberReference member denominator_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
 return createComplex((((real * q) + imaginary) / denominator), (((imaginary * q) - real) / denominator));
 ReturnStatement expression TernaryExpression condition MemberReference qualifier divisor_ter ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
@@ -185,16 +85,6 @@ return (divisor.INF)?NaN:INF;
 ReturnStatement expression MemberReference member NaN_ter ^ ^ ^ ^ ^ 
 if (true) { return NaN; }
 
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isNaN_ter ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN.NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isInfinite_ter ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite.NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isZero_ter ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero.NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN().NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite().NaN)?NaN:INF;
 ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier divisor_ter ^ ^ member I_ter ^ ^ ^ ^ ^ ^ ^ 
 return (isZero)?NaN:divisor.I;
 ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier divisor_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
@@ -207,46 +97,6 @@ ReturnStatement expression TernaryExpression condition MemberReference member is
 return (isZero)?NaN:divisor.ZERO;
 ReturnStatement expression TernaryExpression condition MemberReference qualifier divisor_ter ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
 return (divisor.NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier I_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:I.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier NaN_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:NaN.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier INF_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:INF.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ONE_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ONE.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ZERO_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ZERO.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:conjugate().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:negate().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:acos().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:asin().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:atan().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cos().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cosh().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:exp().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:log().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sin().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sinh().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt1z().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tan().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tanh().NaN;
 IfStatement condition MemberReference qualifier divisor_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ 
 if(divisor.isZero){
 
@@ -297,132 +147,12 @@ ReturnStatement expression TernaryExpression condition MemberReference member ZE
 return (ZERO)?NaN:INF;
 ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member isZero_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
 return (isZero)?isZero:INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier I_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:I.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier NaN_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:NaN.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier INF_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:INF.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ONE_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ONE.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ZERO_ter ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ZERO.INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:conjugate().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:negate().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:acos().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:asin().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:atan().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cos().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cosh().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:exp().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:log().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sin().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sinh().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt1z().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tan().INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tanh().INF;
 ReturnStatement expression TernaryExpression condition MemberReference member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
 return (INF)?NaN:INF;
 ReturnStatement expression Cast type ReferenceType name Complex_ter ^ ^ ^ ^ expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 
 return (Complex)(isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier I_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:I.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier NaN_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:NaN.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier INF_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:INF.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ONE_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ONE.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ZERO_ter ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ZERO.isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:conjugate().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:negate().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:acos().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:asin().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:atan().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cos().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cosh().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:exp().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:log().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sin().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sinh().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt1z().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tan().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tanh().isZero;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier I_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:I.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier NaN_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:NaN.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier INF_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:INF.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ONE_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ONE.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier ZERO_ter ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:ZERO.NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member conjugate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:conjugate().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member negate_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:negate().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member acos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:acos().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member asin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:asin().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member atan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:atan().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cos_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cos().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member cosh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:cosh().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member exp_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:exp().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member log_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:log().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sin_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sin().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sinh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sinh().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member sqrt1z_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:sqrt1z().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tan_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tan().NaN;
-ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference qualifier MethodInvocation member tanh_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero)?NaN:tanh().NaN;
 ReturnStatement expression TernaryExpression condition MemberReference member imaginary_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
 return (imaginary)?NaN:INF;
 ReturnStatement expression MemberReference member isZero_ter ^ ^ ^ ^ ^ 
@@ -437,42 +167,12 @@ ReturnStatement expression TernaryExpression condition MethodInvocation prefix_o
 return (!isInfinite())?ZERO:NaN;
 ReturnStatement expression MemberReference member INF_ter ^ ^ ^ ^ ^ 
 return INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isNaN_ter ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN.INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isInfinite_ter ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite.INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isZero_ter ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero.INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN().INF)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member INF_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite().INF)?NaN:INF;
 ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true Literal value null_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
 return (isZero)?null:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isNaN_ter ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN.isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isInfinite_ter ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite.isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isZero_ter ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero.isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN().isZero)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite().isZero)?NaN:INF;
 ReturnStatement expression MethodInvocation arguments BinaryOperation operator /_ter ^ ^ operandl MemberReference member real_ter ^ ^ ^ ^ operandr MemberReference member divisor_ter ^ ^ ^ ^ ^ BinaryOperation operator /_ter ^ ^ operandl MemberReference member imaginary_ter ^ ^ ^ ^ operandr MemberReference member divisor_ter ^ ^ ^ ^ ^ ^ member createComplex_ter ^ ^ ^ ^ ^ 
 return createComplex((real / divisor), (imaginary / divisor));
 ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
 return (isZero)?NaN:null;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isNaN_ter ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN.NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isInfinite_ter ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite.NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier isZero_ter ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isZero.NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isNaN().NaN)?NaN:INF;
-ReturnStatement expression TernaryExpression condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member NaN_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
-return (isInfinite().NaN)?NaN:INF;
 ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member imaginary_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ 
 return (isZero)?imaginary:INF;
 ReturnStatement expression TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false TernaryExpression condition MemberReference member isZero_ter ^ ^ ^ ^ if_true MemberReference member NaN_ter ^ ^ ^ ^ if_false MemberReference member INF_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 

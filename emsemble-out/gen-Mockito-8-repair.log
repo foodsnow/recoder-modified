@@ -1,9 +1,6 @@
 stdout: StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
 contextualActualTypeParameters.put(typeParameter, actualTypeArgument);
 
-StatementExpression expression MethodInvocation qualifier MethodInvocation member actualTypeArguments_ter ^ ^ ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member actualTypeArgument_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
-actualTypeArguments().put(typeParameter, actualTypeArgument);
-
 StatementExpression expression MethodInvocation qualifier contextualActualTypeParameters_ter ^ ^ arguments MemberReference member typeParameter_ter ^ ^ ^ MemberReference member typeParameter_ter ^ ^ ^ ^ member put_ter ^ ^ ^ ^ ^ 
 contextualActualTypeParameters.put(typeParameter, typeParameter);
 

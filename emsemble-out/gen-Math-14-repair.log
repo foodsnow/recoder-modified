@@ -66,12 +66,6 @@ weightMatrix = LOG.createRealMatrix(dim, dim);
 StatementExpression expression MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ ^ 
 org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
 
-StatementExpression expression Assignment expressionl MemberReference qualifier weightMatrix_ter ^ ^ member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
-weightMatrix.weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
-
-StatementExpression expression Assignment expressionl MemberReference qualifier MethodInvocation member getWeight_ter ^ ^ ^ ^ member weightMatrix_ter ^ ^ ^ ^ value MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member dim_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
-getWeight().weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
-
 StatementExpression expression MethodInvocation qualifier org.apache.commons.math3.linear.MatrixUtils_ter ^ ^ arguments MemberReference member weightMatrix_ter ^ ^ ^ MemberReference member dim_ter ^ ^ ^ ^ member createRealMatrix_ter ^ ^ ^ ^ ^ 
 org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(weightMatrix, dim);
 

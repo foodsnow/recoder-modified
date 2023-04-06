@@ -2,14 +2,6 @@ stdout: condition MemberReference member isNaN_ter ^ ^ ^ ^
 if(isNaN){
 condition MemberReference member isInfinite_ter ^ ^ ^ ^ 
 if(isInfinite){
-condition MemberReference qualifier isNaN_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isNaN.isNaN){
-condition MemberReference qualifier isInfinite_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isInfinite.isNaN){
-condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isNaN().isNaN){
-condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isInfinite().isNaN){
 IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
 if(isNaN()){
 
@@ -99,14 +91,6 @@ condition MemberReference member isNaN_ter ^ ^ ^ ^
 if(isNaN){
 condition MemberReference member isInfinite_ter ^ ^ ^ ^ 
 if(isInfinite){
-condition MemberReference qualifier isNaN_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isNaN.isNaN){
-condition MemberReference qualifier isInfinite_ter ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isInfinite.isNaN){
-condition MemberReference qualifier MethodInvocation member isNaN_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isNaN().isNaN){
-condition MemberReference qualifier MethodInvocation member isInfinite_ter ^ ^ ^ ^ member isNaN_ter ^ ^ ^ ^ 
-if(isInfinite().isNaN){
 IfStatement condition MethodInvocation member isNaN_ter ^ ^ ^ ^ ^ 
 if(isNaN()){
 

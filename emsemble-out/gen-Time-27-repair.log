@@ -222,15 +222,15 @@ arg
 arg 
 PeriodFormatter f = toFormatter(elementPairs.subList(2, size), notPrinter, notPrinter);
 
-LocalVariableDeclaration type ReferenceType name PeriodFormatter_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier elementPairs_ter ^ ^ arguments Literal value 2_ter ^ ^ ^ MemberReference member size_ter ^ ^ ^ ^ member subList_ter ^ ^ ^ MemberReference member notPrinter_ter ^ ^ ^ MemberReference member notParser_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-PeriodFormatter f = get(elementPairs.subList(2, size), notPrinter, notParser);
-
 LocalVariableDeclaration type ReferenceType name PeriodFormatter_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier elementPairs_ter ^ ^ arguments Literal value 2_ter ^ ^ ^ MemberReference member size_ter ^ ^ ^ ^ member subList_ter ^ ^ ^ MemberReference member elementPairs_ter ^ ^ ^ MemberReference member notParser_ter ^ ^ ^ ^ member toFormatter_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 
 PeriodFormatter f = toFormatter(elementPairs.subList(2, size), elementPairs, notParser);
+
+LocalVariableDeclaration type ReferenceType name PeriodFormatter_ter ^ ^ ^ ^ declarators VariableDeclarator name f_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier elementPairs_ter ^ ^ arguments Literal value 2_ter ^ ^ ^ MemberReference member size_ter ^ ^ ^ ^ member subList_ter ^ ^ ^ MemberReference member notPrinter_ter ^ ^ ^ MemberReference member notParser_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+PeriodFormatter f = get(elementPairs.subList(2, size), notPrinter, notParser);
 
 StatementExpression expression MethodInvocation member clear_ter ^ ^ ^ ^ ^ 
 clear();

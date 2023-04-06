@@ -1,7 +1,5 @@
 stdout: ReturnStatement expression MethodInvocation qualifier method_ter ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
 return method.equals(o);
-ReturnStatement expression MethodInvocation qualifier MethodInvocation member getJavaMethod_ter ^ ^ ^ ^ arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
-return getJavaMethod().equals(o);
 ReturnStatement expression MethodInvocation arguments MemberReference member o_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
 return equals(o);
 ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 

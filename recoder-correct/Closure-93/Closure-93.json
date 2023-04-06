@@ -1,0 +1,24 @@
+{
+    "bugid": "Closure-93",
+    "tool": "recoder",
+    "correct_patch": {
+        "id": "12-2",
+        "location": "12/2/ProcessClosurePrimitives.java",
+        "file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java"
+    },
+    "correct_patches": [
+        {
+            "id": "12-2",
+            "location": "12/2/ProcessClosurePrimitives.java",
+            "file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java",
+            "line": 789
+        }
+    ],
+    "plausible_patches": [
+        {
+            "id": "12-34",
+            "location": "12/34/ProcessClosurePrimitives.java",
+            "file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java"
+        }
+    ]
+}

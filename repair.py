@@ -9,6 +9,7 @@ import subprocess
 import time
 import signal
 import traceback
+import shutil
 from typing import Dict, List, Set, Tuple
 #lst = ['Chart-1', 'Chart-8', 'Chart-9', 'Chart-11', 'Chart-12', 'Chart-13', 'Chart-20', 'Chart-24', 'Chart-26', 'Closure-1', 'Closure-10', 'Closure-14', 'Closure-15', 'Closure-18', 'Closure-31', 'Closure-33', 'Closure-38', 'Closure-51', 'Closure-62', 'Closure-63', 'Closure-70', 'Closure-73', 'Closure-86', 'Closure-92', 'Closure-93', 'Closure-107', 'Closure-118', 'Closure-113', 'Closure-124', 'Closure-125', 'Closure-129', 'Lang-6', 'Lang-16', 'Lang-26', 'Lang-29', 'Lang-33', 'Lang-38', 'Lang-39', 'Lang-43', 'Lang-45', 'Lang-51', 'Lang-55', 'Lang-57', 'Lang-59', 'Lang-61', 'Math-2', 'Math-5', 'Math-25', 'Math-30', 'Math-33', 'Math-34', 'Math-41', 'Math-57', 'Math-58', 'Math-59', 'Math-69', 'Math-70', 'Math-75', 'Math-80', 'Math-82', 'Math-85', 'Math-94', 'Math-105', 'Time-4', 'Time-15', 'Time-16', 'Time-19', 'Lang-43', 'Math-50', 'Math-98', 'Time-7', 'Mockito-38', 'Mockito-22', 'Mockito-29', 'Mockito-34', 'Closure-104', 'Math-27']
 # ['Closure-38', 'Closure-123', 'Closure-124', 'Lang-61', 'Math-3', 'Math-11', 'Math-48', 'Math-53', 'Math-63', 'Math-73', 'Math-101', 'Math-98', 'Lang-16']
@@ -148,6 +149,7 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
             id_dict[id] = 0
         id_dict[id] += 1
         filename = p["filename"].replace(f"buggy/{bugid}/", "", 1)
+        buggy_file_location = p["filename"]
         fl_score = p["fl_score"]
         if filename not in file_dict:
             file_dict[filename] = dict()
@@ -167,6 +169,8 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
         case_dict["case"] = id_dict[id]
         save_file = os.path.join(outdir, bugid, str(id), str(
             id_dict[id]), os.path.basename(filename))
+        buggy_save_file = os.path.join(outdir, bugid, str(id), str(
+            id_dict[id]), "buggy.java")
         case_dict["location"] = os.path.join(
             str(id), str(id_dict[id]), os.path.basename(filename))
         case_dict["prob"] = p["prob"]
@@ -294,6 +298,7 @@ def save_code_as_file(outdir: str, bugid: str, patches: dict, func_map: Dict[str
         os.makedirs(os.path.dirname(save_file), exist_ok=True)
         with open(save_file, "w") as sf:
             sf.write(tmpcode)
+        shutil.copyfile(buggy_file_location, buggy_save_file)
     switch_info_file = os.path.join(outdir, bugid, "switch-info.json")
     file_list = list()
     for file in file_dict:

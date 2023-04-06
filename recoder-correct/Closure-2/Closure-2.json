@@ -1,0 +1,36 @@
+{
+    "bugid": "Closure-2",
+    "tool": "recoder",
+    "correct_patch": {
+        "id": "3-13",
+        "location": "3/13/TypeCheck.java",
+        "file": "src/com/google/javascript/jscomp/TypeCheck.java"
+    },
+    "correct_patches": [
+        {
+            "id": "2-19",
+            "location": "2/19/TypeCheck.java",
+            "file": "src/com/google/javascript/jscomp/TypeCheck.java",
+            "line": 1570
+        },
+        {
+            "id": "2-25",
+            "location": "2/25/TypeCheck.java",
+            "file": "src/com/google/javascript/jscomp/TypeCheck.java",
+            "line": 1570
+        },
+        {
+            "id": "3-13",
+            "location": "3/13/TypeCheck.java",
+            "file": "src/com/google/javascript/jscomp/TypeCheck.java",
+            "line": 1574
+        }
+    ],
+    "plausible_patches": [
+        {
+            "id": "2-29",
+            "location": "2/29/TypeCheck.java",
+            "file": "src/com/google/javascript/jscomp/TypeCheck.java"
+        }
+    ]
+}

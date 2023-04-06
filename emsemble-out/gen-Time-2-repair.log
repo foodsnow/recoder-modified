@@ -136,16 +136,6 @@ arg
 arg 
 DurationField rangeField = fieldType.getRangeDurationType().getRangeDurationType(iChronology);
 
-LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier iChronology_ter ^ ^ member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-DurationField rangeField = fieldType.getRangeDurationType().getField(iChronology.iChronology);
-
-LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier MethodInvocation member getChronology_ter ^ ^ ^ ^ member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-DurationField rangeField = fieldType.getRangeDurationType().getField(getChronology().iChronology);
-
 ReturnStatement_ter ^ 
 if (true) { return;
  }
@@ -216,16 +206,6 @@ if((iChronology != null)){
 
 IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member compare_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
 if((compare == null)){
-
-LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier iChronology_ter ^ ^ member length_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-DurationField rangeField = fieldType.getRangeDurationType().getField(iChronology.length);
-
-LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier MethodInvocation member getChronology_ter ^ ^ ^ ^ member length_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-DurationField rangeField = fieldType.getRangeDurationType().getField(getChronology().length);
 
 LocalVariableDeclaration type ReferenceType name DurationField_ter ^ ^ ^ ^ declarators VariableDeclarator name rangeField_ter ^ ^ initializer MethodInvocation qualifier fieldType_ter ^ ^ selectors MethodInvocation arguments MemberReference qualifier iTypes_ter ^ ^ member iChronology_ter ^ ^ ^ ^ member getField_ter ^ ^ ^ ^ member getRangeDurationType_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 

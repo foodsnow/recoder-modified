@@ -1,4 +1,127 @@
-stdout: stderr: Traceback (most recent call last):
-  File "repair.py", line 515, in <module>
-    patches = json.load(open(f"d4j/{bugid}/{bugid}.json", 'r'))
-FileNotFoundError: [Errno 2] No such file or directory: 'd4j/Mockito-17/Mockito-17.json'
+stdout: StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = (interfaces == null);
+
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ancillaryTypes != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((ancillaryTypes == null))?new Class<?>[0]:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value MemberReference member ancillaryTypes_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = ancillaryTypes;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member ancillaryTypes_ter ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = ((interfaces == null))?ancillaryTypes:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value Cast type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member ancillaryTypes_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = (Class<?>)ancillaryTypes;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member interfaces_ter ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = ((interfaces == null))?interfaces:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value MethodInvocation qualifier settings_ter ^ ^ member getSpiedInstance_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = settings.getSpiedInstance();
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value MethodInvocation qualifier settings_ter ^ ^ member getExtraInterfaces_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = settings.getExtraInterfaces();
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:(interfaces == null);
+
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((ancillaryTypes == null)){
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = new Class<?>();
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value Cast type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = (Class<?>)interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:((interfaces == null))?new Class<?>[0]:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces != null))?new Class<?>[0]:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 1_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[1]:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value Cast type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ expression BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = (Class<?>)(interfaces == null);
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true Literal value null_ter ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = ((interfaces == null))?null:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member ancillaryTypes_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:ancillaryTypes;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value MethodInvocation qualifier settings_ter ^ ^ arguments MemberReference member classToMock_ter ^ ^ ^ ^ member initiateMockName_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+ancillaryTypes = settings.initiateMockName(classToMock);
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member ancillaryTypes_ter ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:((interfaces == null))?ancillaryTypes:interfaces;
+
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+if((interfaces != null)){
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false ClassCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:new Class<?>();
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member mockHandler_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:mockHandler;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true MemberReference member interfaces_ter ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:((interfaces == null))?interfaces:interfaces;
+
+StatementExpression expression MethodInvocation qualifier settings_ter ^ ^ arguments MemberReference member classToMock_ter ^ ^ ^ ^ member initiateMockName_ter ^ ^ ^ ^ ^ 
+settings.initiateMockName(classToMock);
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member filter_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false MemberReference member interfaces_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((filter == null))?new Class<?>[0]:interfaces;
+
+StatementExpression expression Assignment expressionl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ value TernaryExpression condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member interfaces_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ if_true ArrayCreator type ReferenceType name Class_ter ^ ^ arguments TypeArgument pattern_type ?_ter ^ ^ ^ ^ ^ ^ dimensions Literal value 0_ter ^ ^ ^ ^ ^ ^ if_false BinaryOperation operator +_ter ^ ^ operandl MemberReference member ancillaryTypes_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
+arg ?
+arg ?
+ancillaryTypes = ((interfaces == null))?new Class<?>[0]:(ancillaryTypes + null);
+
+stderr: 

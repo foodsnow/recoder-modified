@@ -1,0 +1,30 @@
+{
+    "bugid": "Closure-118",
+    "tool": "recoder",
+    "correct_patch": {
+        "id": "0-122",
+        "location": "0/122/DisambiguateProperties.java",
+        "file": "src/com/google/javascript/jscomp/DisambiguateProperties.java"
+    },
+    "correct_patches": [
+        {
+            "id": "0-36",
+            "location": "0/36/DisambiguateProperties.java",
+            "file": "src/com/google/javascript/jscomp/DisambiguateProperties.java",
+            "line": 497
+        },
+        {
+            "id": "0-122",
+            "location": "0/122/DisambiguateProperties.java",
+            "file": "src/com/google/javascript/jscomp/DisambiguateProperties.java",
+            "line": 497
+        }
+    ],
+    "plausible_patches": [
+        {
+            "id": "9-172",
+            "location": "9/172/DisambiguateProperties.java",
+            "file": "src/com/google/javascript/jscomp/DisambiguateProperties.java"
+        }
+    ]
+}

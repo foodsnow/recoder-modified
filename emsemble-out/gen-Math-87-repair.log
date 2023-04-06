@@ -22,10 +22,6 @@ if(!equals(i, col)){
 
 condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getBasicRow_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
 if(!MathUtils.equals(getBasicRow(i, col), 0.0, epsilon)){
-condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference qualifier epsilon_ter ^ ^ member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
-if(!MathUtils.equals(getEntry(i, col), 0.0, epsilon.epsilon)){
-condition MethodInvocation prefix_operators !_ter ^ ^ qualifier MathUtils_ter ^ ^ arguments MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member getEntry_ter ^ ^ ^ Literal value 0.0_ter ^ ^ ^ MemberReference qualifier MethodInvocation member getData_ter ^ ^ ^ ^ member epsilon_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ 
-if(!MathUtils.equals(getEntry(i, col), 0.0, getData().epsilon)){
 IfStatement condition MethodInvocation arguments MemberReference member i_ter ^ ^ ^ MemberReference member col_ter ^ ^ ^ ^ member equals_ter ^ ^ ^ ^ ^ 
 if(equals(i, col)){
 

@@ -1,0 +1,3326 @@
+{
+    "bugid": "Closure-115",
+    "tool": "recoder",
+    "correct_patch": {
+        "id": "12-40",
+        "location": "12/40/FunctionInjector.java",
+        "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+    },
+    "correct_patches": [
+        {
+            "id": "0-1",
+            "location": "0/1/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java",
+            "line": 731
+        },
+        {
+            "id": "12-3",
+            "location": "12/3/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java",
+            "line": 730
+        },
+        {
+            "id": "12-40",
+            "location": "12/40/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java",
+            "line": 730
+        }
+    ],
+    "plausible_patches": [
+        {
+            "id": "0-30",
+            "location": "0/30/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "0-32",
+            "location": "0/32/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-12",
+            "location": "12/12/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-43",
+            "location": "12/43/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-44",
+            "location": "12/44/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-48",
+            "location": "12/48/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-49",
+            "location": "12/49/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-50",
+            "location": "12/50/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-51",
+            "location": "12/51/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-52",
+            "location": "12/52/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-53",
+            "location": "12/53/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-54",
+            "location": "12/54/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-55",
+            "location": "12/55/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-58",
+            "location": "12/58/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-60",
+            "location": "12/60/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-62",
+            "location": "12/62/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-63",
+            "location": "12/63/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-64",
+            "location": "12/64/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-65",
+            "location": "12/65/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-66",
+            "location": "12/66/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-67",
+            "location": "12/67/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-68",
+            "location": "12/68/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-69",
+            "location": "12/69/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-70",
+            "location": "12/70/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-71",
+            "location": "12/71/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-72",
+            "location": "12/72/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-73",
+            "location": "12/73/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-74",
+            "location": "12/74/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-75",
+            "location": "12/75/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-76",
+            "location": "12/76/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-77",
+            "location": "12/77/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-78",
+            "location": "12/78/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-79",
+            "location": "12/79/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-80",
+            "location": "12/80/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-81",
+            "location": "12/81/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-82",
+            "location": "12/82/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-83",
+            "location": "12/83/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-84",
+            "location": "12/84/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-85",
+            "location": "12/85/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-86",
+            "location": "12/86/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-87",
+            "location": "12/87/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-88",
+            "location": "12/88/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-89",
+            "location": "12/89/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-90",
+            "location": "12/90/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-91",
+            "location": "12/91/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-93",
+            "location": "12/93/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-94",
+            "location": "12/94/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-95",
+            "location": "12/95/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-96",
+            "location": "12/96/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-98",
+            "location": "12/98/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-99",
+            "location": "12/99/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-100",
+            "location": "12/100/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-101",
+            "location": "12/101/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "12-104",
+            "location": "12/104/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "13-101",
+            "location": "13/101/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "13-102",
+            "location": "13/102/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-4",
+            "location": "97/4/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-5",
+            "location": "97/5/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-9",
+            "location": "97/9/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-10",
+            "location": "97/10/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-28",
+            "location": "97/28/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-40",
+            "location": "97/40/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-41",
+            "location": "97/41/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "97-45",
+            "location": "97/45/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-2",
+            "location": "98/2/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-4",
+            "location": "98/4/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-5",
+            "location": "98/5/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-6",
+            "location": "98/6/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-7",
+            "location": "98/7/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-8",
+            "location": "98/8/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-9",
+            "location": "98/9/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-10",
+            "location": "98/10/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-11",
+            "location": "98/11/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-12",
+            "location": "98/12/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-13",
+            "location": "98/13/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-14",
+            "location": "98/14/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-17",
+            "location": "98/17/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-18",
+            "location": "98/18/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-19",
+            "location": "98/19/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-20",
+            "location": "98/20/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-21",
+            "location": "98/21/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-22",
+            "location": "98/22/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-23",
+            "location": "98/23/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-24",
+            "location": "98/24/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-25",
+            "location": "98/25/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-26",
+            "location": "98/26/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-27",
+            "location": "98/27/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-28",
+            "location": "98/28/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-29",
+            "location": "98/29/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-30",
+            "location": "98/30/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-31",
+            "location": "98/31/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-32",
+            "location": "98/32/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-33",
+            "location": "98/33/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-34",
+            "location": "98/34/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-35",
+            "location": "98/35/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-36",
+            "location": "98/36/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-37",
+            "location": "98/37/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-38",
+            "location": "98/38/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-39",
+            "location": "98/39/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-40",
+            "location": "98/40/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-41",
+            "location": "98/41/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-42",
+            "location": "98/42/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-43",
+            "location": "98/43/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-44",
+            "location": "98/44/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-45",
+            "location": "98/45/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-46",
+            "location": "98/46/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-47",
+            "location": "98/47/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-48",
+            "location": "98/48/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-49",
+            "location": "98/49/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-50",
+            "location": "98/50/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-51",
+            "location": "98/51/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-52",
+            "location": "98/52/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-53",
+            "location": "98/53/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-54",
+            "location": "98/54/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-55",
+            "location": "98/55/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-56",
+            "location": "98/56/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-57",
+            "location": "98/57/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-58",
+            "location": "98/58/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-59",
+            "location": "98/59/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-60",
+            "location": "98/60/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-62",
+            "location": "98/62/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-63",
+            "location": "98/63/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-64",
+            "location": "98/64/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-65",
+            "location": "98/65/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-66",
+            "location": "98/66/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-67",
+            "location": "98/67/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-68",
+            "location": "98/68/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-69",
+            "location": "98/69/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-70",
+            "location": "98/70/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-71",
+            "location": "98/71/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-72",
+            "location": "98/72/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-73",
+            "location": "98/73/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-74",
+            "location": "98/74/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-75",
+            "location": "98/75/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-77",
+            "location": "98/77/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-79",
+            "location": "98/79/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-81",
+            "location": "98/81/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-82",
+            "location": "98/82/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-83",
+            "location": "98/83/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-84",
+            "location": "98/84/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-85",
+            "location": "98/85/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-86",
+            "location": "98/86/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-87",
+            "location": "98/87/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-88",
+            "location": "98/88/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-89",
+            "location": "98/89/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-90",
+            "location": "98/90/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-91",
+            "location": "98/91/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-94",
+            "location": "98/94/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-95",
+            "location": "98/95/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-96",
+            "location": "98/96/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-97",
+            "location": "98/97/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-98",
+            "location": "98/98/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-99",
+            "location": "98/99/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-100",
+            "location": "98/100/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-101",
+            "location": "98/101/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-102",
+            "location": "98/102/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-103",
+            "location": "98/103/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-104",
+            "location": "98/104/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-105",
+            "location": "98/105/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-106",
+            "location": "98/106/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-107",
+            "location": "98/107/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-108",
+            "location": "98/108/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-109",
+            "location": "98/109/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-110",
+            "location": "98/110/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-111",
+            "location": "98/111/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-112",
+            "location": "98/112/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-113",
+            "location": "98/113/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-114",
+            "location": "98/114/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-115",
+            "location": "98/115/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-116",
+            "location": "98/116/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-117",
+            "location": "98/117/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-118",
+            "location": "98/118/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-119",
+            "location": "98/119/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-120",
+            "location": "98/120/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-121",
+            "location": "98/121/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-122",
+            "location": "98/122/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-123",
+            "location": "98/123/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-124",
+            "location": "98/124/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-125",
+            "location": "98/125/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-126",
+            "location": "98/126/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-127",
+            "location": "98/127/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-128",
+            "location": "98/128/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-129",
+            "location": "98/129/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-130",
+            "location": "98/130/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-131",
+            "location": "98/131/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-132",
+            "location": "98/132/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-133",
+            "location": "98/133/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-134",
+            "location": "98/134/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-135",
+            "location": "98/135/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-136",
+            "location": "98/136/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-137",
+            "location": "98/137/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-138",
+            "location": "98/138/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-139",
+            "location": "98/139/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-140",
+            "location": "98/140/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-141",
+            "location": "98/141/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-142",
+            "location": "98/142/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-143",
+            "location": "98/143/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-144",
+            "location": "98/144/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-145",
+            "location": "98/145/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-146",
+            "location": "98/146/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-147",
+            "location": "98/147/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-148",
+            "location": "98/148/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-149",
+            "location": "98/149/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-150",
+            "location": "98/150/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-151",
+            "location": "98/151/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-153",
+            "location": "98/153/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-155",
+            "location": "98/155/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-156",
+            "location": "98/156/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-157",
+            "location": "98/157/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-158",
+            "location": "98/158/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-159",
+            "location": "98/159/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-160",
+            "location": "98/160/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-161",
+            "location": "98/161/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-162",
+            "location": "98/162/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-163",
+            "location": "98/163/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-164",
+            "location": "98/164/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-165",
+            "location": "98/165/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-168",
+            "location": "98/168/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-169",
+            "location": "98/169/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-170",
+            "location": "98/170/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-171",
+            "location": "98/171/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-172",
+            "location": "98/172/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-173",
+            "location": "98/173/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-174",
+            "location": "98/174/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-175",
+            "location": "98/175/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-176",
+            "location": "98/176/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-177",
+            "location": "98/177/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-178",
+            "location": "98/178/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-179",
+            "location": "98/179/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-180",
+            "location": "98/180/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-181",
+            "location": "98/181/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-182",
+            "location": "98/182/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-183",
+            "location": "98/183/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-184",
+            "location": "98/184/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-185",
+            "location": "98/185/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-186",
+            "location": "98/186/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-187",
+            "location": "98/187/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-188",
+            "location": "98/188/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-189",
+            "location": "98/189/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-190",
+            "location": "98/190/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-191",
+            "location": "98/191/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-192",
+            "location": "98/192/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-193",
+            "location": "98/193/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-194",
+            "location": "98/194/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-195",
+            "location": "98/195/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-196",
+            "location": "98/196/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-197",
+            "location": "98/197/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-198",
+            "location": "98/198/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-199",
+            "location": "98/199/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-200",
+            "location": "98/200/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-201",
+            "location": "98/201/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-202",
+            "location": "98/202/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-203",
+            "location": "98/203/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-204",
+            "location": "98/204/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-205",
+            "location": "98/205/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-206",
+            "location": "98/206/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-207",
+            "location": "98/207/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-208",
+            "location": "98/208/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-209",
+            "location": "98/209/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-210",
+            "location": "98/210/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-211",
+            "location": "98/211/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-213",
+            "location": "98/213/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-214",
+            "location": "98/214/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-215",
+            "location": "98/215/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-216",
+            "location": "98/216/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-217",
+            "location": "98/217/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-218",
+            "location": "98/218/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-219",
+            "location": "98/219/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-220",
+            "location": "98/220/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-221",
+            "location": "98/221/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-222",
+            "location": "98/222/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-223",
+            "location": "98/223/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-224",
+            "location": "98/224/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-225",
+            "location": "98/225/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-226",
+            "location": "98/226/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-231",
+            "location": "98/231/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-233",
+            "location": "98/233/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-245",
+            "location": "98/245/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-246",
+            "location": "98/246/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-291",
+            "location": "98/291/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-310",
+            "location": "98/310/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-387",
+            "location": "98/387/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-389",
+            "location": "98/389/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-401",
+            "location": "98/401/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-402",
+            "location": "98/402/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-462",
+            "location": "98/462/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-547",
+            "location": "98/547/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-549",
+            "location": "98/549/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-550",
+            "location": "98/550/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-551",
+            "location": "98/551/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-552",
+            "location": "98/552/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-553",
+            "location": "98/553/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-554",
+            "location": "98/554/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-555",
+            "location": "98/555/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-556",
+            "location": "98/556/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-557",
+            "location": "98/557/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-558",
+            "location": "98/558/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-559",
+            "location": "98/559/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-562",
+            "location": "98/562/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-563",
+            "location": "98/563/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-564",
+            "location": "98/564/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-565",
+            "location": "98/565/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-566",
+            "location": "98/566/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-567",
+            "location": "98/567/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-568",
+            "location": "98/568/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-569",
+            "location": "98/569/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-570",
+            "location": "98/570/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-571",
+            "location": "98/571/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-572",
+            "location": "98/572/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-573",
+            "location": "98/573/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-574",
+            "location": "98/574/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-575",
+            "location": "98/575/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-576",
+            "location": "98/576/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-577",
+            "location": "98/577/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-578",
+            "location": "98/578/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-579",
+            "location": "98/579/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-580",
+            "location": "98/580/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-581",
+            "location": "98/581/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-582",
+            "location": "98/582/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-583",
+            "location": "98/583/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-584",
+            "location": "98/584/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-585",
+            "location": "98/585/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-586",
+            "location": "98/586/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-587",
+            "location": "98/587/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-588",
+            "location": "98/588/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-589",
+            "location": "98/589/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-590",
+            "location": "98/590/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-591",
+            "location": "98/591/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-592",
+            "location": "98/592/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-593",
+            "location": "98/593/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-594",
+            "location": "98/594/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-595",
+            "location": "98/595/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-596",
+            "location": "98/596/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-597",
+            "location": "98/597/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-598",
+            "location": "98/598/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-599",
+            "location": "98/599/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-600",
+            "location": "98/600/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-601",
+            "location": "98/601/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-602",
+            "location": "98/602/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-603",
+            "location": "98/603/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-604",
+            "location": "98/604/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-605",
+            "location": "98/605/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-606",
+            "location": "98/606/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-607",
+            "location": "98/607/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-608",
+            "location": "98/608/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-609",
+            "location": "98/609/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-610",
+            "location": "98/610/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-611",
+            "location": "98/611/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-612",
+            "location": "98/612/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-613",
+            "location": "98/613/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-614",
+            "location": "98/614/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-615",
+            "location": "98/615/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-616",
+            "location": "98/616/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-617",
+            "location": "98/617/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-618",
+            "location": "98/618/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-619",
+            "location": "98/619/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-629",
+            "location": "98/629/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-631",
+            "location": "98/631/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-643",
+            "location": "98/643/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-644",
+            "location": "98/644/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "98-689",
+            "location": "98/689/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "99-19",
+            "location": "99/19/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "99-21",
+            "location": "99/21/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "99-37",
+            "location": "99/37/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "99-39",
+            "location": "99/39/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "99-44",
+            "location": "99/44/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "99-51",
+            "location": "99/51/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-2",
+            "location": "131/2/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-4",
+            "location": "131/4/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-5",
+            "location": "131/5/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-6",
+            "location": "131/6/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-7",
+            "location": "131/7/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-8",
+            "location": "131/8/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-9",
+            "location": "131/9/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-10",
+            "location": "131/10/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-11",
+            "location": "131/11/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-12",
+            "location": "131/12/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-13",
+            "location": "131/13/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-14",
+            "location": "131/14/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-17",
+            "location": "131/17/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-18",
+            "location": "131/18/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-19",
+            "location": "131/19/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-20",
+            "location": "131/20/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-21",
+            "location": "131/21/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-22",
+            "location": "131/22/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-24",
+            "location": "131/24/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-25",
+            "location": "131/25/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-26",
+            "location": "131/26/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-27",
+            "location": "131/27/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-28",
+            "location": "131/28/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-29",
+            "location": "131/29/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-30",
+            "location": "131/30/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-31",
+            "location": "131/31/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-32",
+            "location": "131/32/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-33",
+            "location": "131/33/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-34",
+            "location": "131/34/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-35",
+            "location": "131/35/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-36",
+            "location": "131/36/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-37",
+            "location": "131/37/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-38",
+            "location": "131/38/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-39",
+            "location": "131/39/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-40",
+            "location": "131/40/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-41",
+            "location": "131/41/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-42",
+            "location": "131/42/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-43",
+            "location": "131/43/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-44",
+            "location": "131/44/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-45",
+            "location": "131/45/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-46",
+            "location": "131/46/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-47",
+            "location": "131/47/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-48",
+            "location": "131/48/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-49",
+            "location": "131/49/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-50",
+            "location": "131/50/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-51",
+            "location": "131/51/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-52",
+            "location": "131/52/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-53",
+            "location": "131/53/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-54",
+            "location": "131/54/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-55",
+            "location": "131/55/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-56",
+            "location": "131/56/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-57",
+            "location": "131/57/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-58",
+            "location": "131/58/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-59",
+            "location": "131/59/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-60",
+            "location": "131/60/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-61",
+            "location": "131/61/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-62",
+            "location": "131/62/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-63",
+            "location": "131/63/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-64",
+            "location": "131/64/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-65",
+            "location": "131/65/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-66",
+            "location": "131/66/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-67",
+            "location": "131/67/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-68",
+            "location": "131/68/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-69",
+            "location": "131/69/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-70",
+            "location": "131/70/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-71",
+            "location": "131/71/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-72",
+            "location": "131/72/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-73",
+            "location": "131/73/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-74",
+            "location": "131/74/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-75",
+            "location": "131/75/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-79",
+            "location": "131/79/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-81",
+            "location": "131/81/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-82",
+            "location": "131/82/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-83",
+            "location": "131/83/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-84",
+            "location": "131/84/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-85",
+            "location": "131/85/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-86",
+            "location": "131/86/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-87",
+            "location": "131/87/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-88",
+            "location": "131/88/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-89",
+            "location": "131/89/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-90",
+            "location": "131/90/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-91",
+            "location": "131/91/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-94",
+            "location": "131/94/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-95",
+            "location": "131/95/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-96",
+            "location": "131/96/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-97",
+            "location": "131/97/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-98",
+            "location": "131/98/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-99",
+            "location": "131/99/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-101",
+            "location": "131/101/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-102",
+            "location": "131/102/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-103",
+            "location": "131/103/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-104",
+            "location": "131/104/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-105",
+            "location": "131/105/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-106",
+            "location": "131/106/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-107",
+            "location": "131/107/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-108",
+            "location": "131/108/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-109",
+            "location": "131/109/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-110",
+            "location": "131/110/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-111",
+            "location": "131/111/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-112",
+            "location": "131/112/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-113",
+            "location": "131/113/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-114",
+            "location": "131/114/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-115",
+            "location": "131/115/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-116",
+            "location": "131/116/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-117",
+            "location": "131/117/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-118",
+            "location": "131/118/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-119",
+            "location": "131/119/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-120",
+            "location": "131/120/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-121",
+            "location": "131/121/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-122",
+            "location": "131/122/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-123",
+            "location": "131/123/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-124",
+            "location": "131/124/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-125",
+            "location": "131/125/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-126",
+            "location": "131/126/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-127",
+            "location": "131/127/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-128",
+            "location": "131/128/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-129",
+            "location": "131/129/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-130",
+            "location": "131/130/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-131",
+            "location": "131/131/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-132",
+            "location": "131/132/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-133",
+            "location": "131/133/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-134",
+            "location": "131/134/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-135",
+            "location": "131/135/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-136",
+            "location": "131/136/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-137",
+            "location": "131/137/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-138",
+            "location": "131/138/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-139",
+            "location": "131/139/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-140",
+            "location": "131/140/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-141",
+            "location": "131/141/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-142",
+            "location": "131/142/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-143",
+            "location": "131/143/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-144",
+            "location": "131/144/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-145",
+            "location": "131/145/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-146",
+            "location": "131/146/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-147",
+            "location": "131/147/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-148",
+            "location": "131/148/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-149",
+            "location": "131/149/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-150",
+            "location": "131/150/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-151",
+            "location": "131/151/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-152",
+            "location": "131/152/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-154",
+            "location": "131/154/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-156",
+            "location": "131/156/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-157",
+            "location": "131/157/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-158",
+            "location": "131/158/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-159",
+            "location": "131/159/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-160",
+            "location": "131/160/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-161",
+            "location": "131/161/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-162",
+            "location": "131/162/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-163",
+            "location": "131/163/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-164",
+            "location": "131/164/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-165",
+            "location": "131/165/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-166",
+            "location": "131/166/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-169",
+            "location": "131/169/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-170",
+            "location": "131/170/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-171",
+            "location": "131/171/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-172",
+            "location": "131/172/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-173",
+            "location": "131/173/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-174",
+            "location": "131/174/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-176",
+            "location": "131/176/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-177",
+            "location": "131/177/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-178",
+            "location": "131/178/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-179",
+            "location": "131/179/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-180",
+            "location": "131/180/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-181",
+            "location": "131/181/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-182",
+            "location": "131/182/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-183",
+            "location": "131/183/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-184",
+            "location": "131/184/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-185",
+            "location": "131/185/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-186",
+            "location": "131/186/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-187",
+            "location": "131/187/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-188",
+            "location": "131/188/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-189",
+            "location": "131/189/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-190",
+            "location": "131/190/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-191",
+            "location": "131/191/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-192",
+            "location": "131/192/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-193",
+            "location": "131/193/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-194",
+            "location": "131/194/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-195",
+            "location": "131/195/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-196",
+            "location": "131/196/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-197",
+            "location": "131/197/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-198",
+            "location": "131/198/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-199",
+            "location": "131/199/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-200",
+            "location": "131/200/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-201",
+            "location": "131/201/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-202",
+            "location": "131/202/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-203",
+            "location": "131/203/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-204",
+            "location": "131/204/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-205",
+            "location": "131/205/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-206",
+            "location": "131/206/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-207",
+            "location": "131/207/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-208",
+            "location": "131/208/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-209",
+            "location": "131/209/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-210",
+            "location": "131/210/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-211",
+            "location": "131/211/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-212",
+            "location": "131/212/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-213",
+            "location": "131/213/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-214",
+            "location": "131/214/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-215",
+            "location": "131/215/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-216",
+            "location": "131/216/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-217",
+            "location": "131/217/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-218",
+            "location": "131/218/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-219",
+            "location": "131/219/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-220",
+            "location": "131/220/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-221",
+            "location": "131/221/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-222",
+            "location": "131/222/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-223",
+            "location": "131/223/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-224",
+            "location": "131/224/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-225",
+            "location": "131/225/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-226",
+            "location": "131/226/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-227",
+            "location": "131/227/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-229",
+            "location": "131/229/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-231",
+            "location": "131/231/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-243",
+            "location": "131/243/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-244",
+            "location": "131/244/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-251",
+            "location": "131/251/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-321",
+            "location": "131/321/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-322",
+            "location": "131/322/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-329",
+            "location": "131/329/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-625",
+            "location": "131/625/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-627",
+            "location": "131/627/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-628",
+            "location": "131/628/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-629",
+            "location": "131/629/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-630",
+            "location": "131/630/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-631",
+            "location": "131/631/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-632",
+            "location": "131/632/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-633",
+            "location": "131/633/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-634",
+            "location": "131/634/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-635",
+            "location": "131/635/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-636",
+            "location": "131/636/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-637",
+            "location": "131/637/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-640",
+            "location": "131/640/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-641",
+            "location": "131/641/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-642",
+            "location": "131/642/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-643",
+            "location": "131/643/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-644",
+            "location": "131/644/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-645",
+            "location": "131/645/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-647",
+            "location": "131/647/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-648",
+            "location": "131/648/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-649",
+            "location": "131/649/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-650",
+            "location": "131/650/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-651",
+            "location": "131/651/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-652",
+            "location": "131/652/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-653",
+            "location": "131/653/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-654",
+            "location": "131/654/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-655",
+            "location": "131/655/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-656",
+            "location": "131/656/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-657",
+            "location": "131/657/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-658",
+            "location": "131/658/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-659",
+            "location": "131/659/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-660",
+            "location": "131/660/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-661",
+            "location": "131/661/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-662",
+            "location": "131/662/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-663",
+            "location": "131/663/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-664",
+            "location": "131/664/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-665",
+            "location": "131/665/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-666",
+            "location": "131/666/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-667",
+            "location": "131/667/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-668",
+            "location": "131/668/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-669",
+            "location": "131/669/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-670",
+            "location": "131/670/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-671",
+            "location": "131/671/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-672",
+            "location": "131/672/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-673",
+            "location": "131/673/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-674",
+            "location": "131/674/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-675",
+            "location": "131/675/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-676",
+            "location": "131/676/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-677",
+            "location": "131/677/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-678",
+            "location": "131/678/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-679",
+            "location": "131/679/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-680",
+            "location": "131/680/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-681",
+            "location": "131/681/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-682",
+            "location": "131/682/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-683",
+            "location": "131/683/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-684",
+            "location": "131/684/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-685",
+            "location": "131/685/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-686",
+            "location": "131/686/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-687",
+            "location": "131/687/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-688",
+            "location": "131/688/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-689",
+            "location": "131/689/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-690",
+            "location": "131/690/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-691",
+            "location": "131/691/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-692",
+            "location": "131/692/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-693",
+            "location": "131/693/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-694",
+            "location": "131/694/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-695",
+            "location": "131/695/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-696",
+            "location": "131/696/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-697",
+            "location": "131/697/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "131-698",
+            "location": "131/698/FunctionInjector.java",
+            "file": "src/com/google/javascript/jscomp/FunctionInjector.java"
+        },
+        {
+            "id": "1-48",
+            "location": "1/48/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        },
+        {
+            "id": "1-50",
+            "location": "1/50/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        },
+        {
+            "id": "1-56",
+            "location": "1/56/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        },
+        {
+            "id": "1-70",
+            "location": "1/70/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        }
+    ]
+}

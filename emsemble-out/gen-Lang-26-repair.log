@@ -12,20 +12,6 @@ arg
 arg 
 Calendar c = new GregorianCalendar(mTimeZone, mLocale);
 
-LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference qualifier mTimeZone_ter ^ ^ member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-Calendar c = new GregorianCalendar(mTimeZone.mTimeZone);
-
-LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference qualifier MethodInvocation member getTimeZone_ter ^ ^ ^ ^ member mTimeZone_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-Calendar c = new GregorianCalendar(getTimeZone().mTimeZone);
-
 LocalVariableDeclaration type ReferenceType name Calendar_ter ^ ^ ^ ^ declarators VariableDeclarator name c_ter ^ ^ initializer ClassCreator type ReferenceType name GregorianCalendar_ter ^ ^ ^ ^ arguments MemberReference member date_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 

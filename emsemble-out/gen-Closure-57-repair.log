@@ -288,11 +288,11 @@ if(((target != null) && (target.isLocalResultCall() != null))){
 IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr BinaryOperation operator !=_ter ^ ^ operandl MethodInvocation qualifier target_ter ^ ^ member isQuotedString_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
 if(((target != null) && (target.isQuotedString() != null))){
 
-IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
-if(((target != null) && !target.isEmpty())){
-
 IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ 
 if(!target.isEmpty()){
+
+IfStatement condition BinaryOperation operator &&_ter ^ ^ operandl BinaryOperation operator !=_ter ^ ^ operandl MemberReference member target_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ operandr MethodInvocation prefix_operators !_ter ^ ^ qualifier target_ter ^ ^ member isEmpty_ter ^ ^ ^ ^ ^ ^ ^ 
+if(((target != null) && !target.isEmpty())){
 
 IfStatement condition MemberReference prefix_operators !_ter ^ ^ member target_ter ^ ^ ^ ^ ^ 
 if(!target){

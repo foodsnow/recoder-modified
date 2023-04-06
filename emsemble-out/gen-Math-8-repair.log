@@ -3,20 +3,6 @@ arg
 arg 
 final T [] out = java.lang.reflect.Array.newInstance(singletons.get(0).getClass(), sampleSize);
 
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Cast type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MethodInvocation qualifier java.lang.reflect.Array_ter ^ ^ arguments MethodInvocation qualifier singletons_ter ^ ^ selectors MethodInvocation member getClass_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ MemberReference member sampleSize_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final T [] out = (T [])java.lang.reflect.Array.newInstance(singletons.get(0).getClass(), sampleSize);
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Cast type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MethodInvocation qualifier java.lang.reflect.Array_ter ^ ^ arguments MethodInvocation qualifier MethodInvocation member getSamples_ter ^ ^ ^ ^ selectors MethodInvocation member getClass_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ MemberReference member sampleSize_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final T [] out = (T [])java.lang.reflect.Array.newInstance(getSamples().get(0).getClass(), sampleSize);
-
 LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer MethodInvocation qualifier singletons_ter ^ ^ selectors MethodInvocation member getClass_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -52,6 +38,13 @@ LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name T_ter ^
 arg 
 arg 
 final T [] out = java.lang.reflect.Array.newInstance(0);
+
+LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer Cast type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MethodInvocation qualifier java.lang.reflect.Array_ter ^ ^ arguments MethodInvocation qualifier singletons_ter ^ ^ selectors MethodInvocation member getClass_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ MemberReference member sampleSize_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+arg 
+arg 
+arg 
+arg 
+final T [] out = (T [])java.lang.reflect.Array.newInstance(singletons.get(0).getClass(), sampleSize);
 
 LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name T_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name out_ter ^ ^ initializer MethodInvocation arguments MethodInvocation qualifier singletons_ter ^ ^ selectors MethodInvocation member getClass_ter ^ ^ ^ ^ arguments Literal value 0_ter ^ ^ ^ ^ member get_ter ^ ^ ^ MemberReference member sampleSize_ter ^ ^ ^ ^ member newInstance_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 

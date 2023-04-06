@@ -70,6 +70,7 @@ class SumDataset(data.Dataset):
                 return
             self.data = self.preProcessData(open(self.val_path, "r", encoding='utf-8'))
         else:
+            return
             if os.path.exists("data_test_data.pkl"):
                 self.data = pickle.load(open("data_test_data.pkl", "rb"))
                 self.nl = pickle.load(open("data_test_nl.pkl", "rb"))
@@ -215,7 +216,7 @@ class SumDataset(data.Dataset):
         '''
         preprocess data:
         Remove terminal node and their position
-        Get embedding, character embedding, 
+        Get embedding, character embedding,
         '''
 
         logger.info('starting to pre-process data about buggy location')
@@ -237,7 +238,7 @@ class SumDataset(data.Dataset):
 
             # result of tree_as_str_with_var.split():
             # from troot:
-            # arguments MemberReference member loc4 ^ ^ ^ ^ member getItemCount_ter ^ ^ ^ ^ ^ ^ ^ ForStatement 
+            # arguments MemberReference member loc4 ^ ^ ^ ^ member getItemCount_ter ^ ^ ^ ^ ^ ^ ^ ForStatement
             # control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator
             tokens_of_tree_as_str_with_var = tree_as_str_with_var.split()
             tokens_of_tree_as_str_with_var_list.append(tokens_of_tree_as_str_with_var)

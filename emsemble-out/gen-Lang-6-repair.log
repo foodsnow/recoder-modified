@@ -53,11 +53,11 @@ pos += Character.charCount(Character.codePointAt(input, consumed));
 StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ MemberReference member pos_ter ^ ^ ^ ^ member codePointAt_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
 pos += Character.charCount(Character.codePointAt(c, pos));
 
-StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
-out.write(c);
-
 StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MethodInvocation qualifier Character_ter ^ ^ arguments MemberReference member input_ter ^ ^ ^ MemberReference member len_ter ^ ^ ^ ^ member charCount_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
 pos += Character.charCount(input, len);
+
+StatementExpression expression MethodInvocation qualifier out_ter ^ ^ arguments MemberReference member c_ter ^ ^ ^ ^ member write_ter ^ ^ ^ ^ ^ 
+out.write(c);
 
 StatementExpression expression Assignment expressionl MemberReference member pos_ter ^ ^ ^ ^ value MemberReference qualifier c_ter ^ ^ member length_ter ^ ^ ^ ^ type +=_ter ^ ^ ^ ^ ^ 
 pos += c.length;

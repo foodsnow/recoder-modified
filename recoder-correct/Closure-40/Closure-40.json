@@ -1,0 +1,24 @@
+{
+    "bugid": "Closure-40",
+    "tool": "recoder",
+    "correct_patch": {
+        "id": "14-1",
+        "location": "14/1/NameAnalyzer.java",
+        "file": "src/com/google/javascript/jscomp/NameAnalyzer.java"
+    },
+    "correct_patches": [
+        {
+            "id": "14-1",
+            "location": "14/1/NameAnalyzer.java",
+            "file": "src/com/google/javascript/jscomp/NameAnalyzer.java",
+            "line": 635
+        }
+    ],
+    "plausible_patches": [
+        {
+            "id": "14-23",
+            "location": "14/23/NameAnalyzer.java",
+            "file": "src/com/google/javascript/jscomp/NameAnalyzer.java"
+        }
+    ]
+}

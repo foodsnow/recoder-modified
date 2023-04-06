@@ -61,40 +61,40 @@ ReturnStatement expression MethodInvocation selectors MethodInvocation arguments
 arg 
 arg 
 return reportMatcher(clazz).reportMatcher(new InstanceOf(clazz));
-ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-return reportMatcher(clazz).returnNull().returnNull();
-ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-return reportMatcher().returnNull().returnNull();
 ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 arg 
 arg 
 return reportMatcher(new InstanceOf(clazz)).reportMatcher(new InstanceOf(clazz));
+ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+return reportMatcher().returnNull().returnNull();
+ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+return reportMatcher(clazz).returnNull().returnNull();
 ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ MemberReference member clazz_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new InstanceOf(clazz), clazz);
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return reportMatcher(new InstanceOf(clazz));
 ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 arg 
 arg 
 return reportMatcher(new InstanceOf(new InstanceOf(clazz)));
-ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-arg 
-arg 
-return reportMatcher(new InstanceOf(clazz));
-ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-arg 
-arg 
-return reportMatcher(new InstanceOf());
 ReturnStatement expression MethodInvocation selectors MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 arg 
 arg 
 return reportMatcher(new InstanceOf(clazz)).reportMatcher(new InstanceOf(clazz)).returnNull();
+ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name InstanceOf_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return reportMatcher(new InstanceOf());
 ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member clazz_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 return reportMatcher(clazz).reportMatcher(clazz).returnNull();
 ReturnStatement expression MethodInvocation arguments ClassCreator selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ type ReferenceType name InstanceOf_ter ^ ^ ^ ^ arguments MemberReference member clazz_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
@@ -161,33 +161,33 @@ ReturnStatement expression MethodInvocation selectors MethodInvocation arguments
 arg 
 arg 
 return reportMatcher(value).reportMatcher(new Equals(value));
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-return reportMatcher(value).reportMatcher(value).returnNull();
 ReturnStatement expression MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Equals(value));
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+return reportMatcher(value).reportMatcher(value).returnNull();
 ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Equals(value)).returnNull().returnNull();
-ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ ^ 
-return returnNull().returnNull();
 IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
 if((value != null)){
 
+ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ ^ 
+return returnNull().returnNull();
 ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 arg 
 arg 
 return reportMatcher(new Equals(value)).reportMatcher(new Equals());
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+return reportMatcher().reportMatcher(value);
 ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Equals()).returnNull();
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-return reportMatcher().reportMatcher(value);
 ReturnStatement expression MethodInvocation arguments ClassCreator selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ type ReferenceType name Equals_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -204,18 +204,18 @@ IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReferen
 ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
 if((value == null)){
 return null;}
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ ^ 
-return returnNull().reportMatcher(value);
 ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Equals());
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-return reportMatcher(value).reportMatcher(value);
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ ^ 
+return returnNull().reportMatcher(value);
 ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member eq_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Equals(value)).eq();
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+return reportMatcher(value).reportMatcher(value);
 ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name Equals_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -258,22 +258,22 @@ ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ arguments
 arg 
 arg 
 return !reportMatcher(new Same(value));
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-return reportMatcher(value).reportMatcher(value).returnNull();
 ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Same()).returnNull();
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+return reportMatcher(value).reportMatcher(value).returnNull();
 ReturnStatement expression MethodInvocation prefix_operators !_ter ^ ^ selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return !reportMatcher(new Same(value)).returnNull();
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+return reportMatcher().reportMatcher(value);
 ReturnStatement expression MethodInvocation arguments ClassCreator selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ type ReferenceType name Same_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Same());
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-return reportMatcher().reportMatcher(value);
 ReturnStatement expression MethodInvocation arguments ClassCreator selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -287,16 +287,20 @@ return reportMatcher(new Same(value)).reportMatcher(new Same());
 IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
 if((value != null)){
 
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-arg 
-arg 
-return reportMatcher(value).reportMatcher(new Same(value));
 ReturnStatement expression MethodInvocation selectors MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ MethodInvocation type_arguments TypeArgument type ReferenceType name T_ter ^ ^ ^ ^ ^ ^ member returnNull_ter ^ ^ ^ ^ arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
 return reportMatcher(new Same(value)).returnNull().returnNull();
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return reportMatcher(value).reportMatcher(new Same(value));
 ReturnStatement expression MethodInvocation arguments MemberReference member value_ter ^ ^ ^ ^ member same_ter ^ ^ ^ ^ ^ 
 return same(value);
+ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
+arg 
+arg 
+return reportMatcher().reportMatcher(new Same(value));
 ReturnStatement expression MethodInvocation arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ MemberReference member value_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -305,10 +309,6 @@ ReturnStatement expression MethodInvocation selectors MethodInvocation type_argu
 arg 
 arg 
 return reportMatcher(new Same(value)).same();
-ReturnStatement expression MethodInvocation selectors MethodInvocation arguments ClassCreator type ReferenceType name Same_ter ^ ^ ^ ^ arguments MemberReference member value_ter ^ ^ ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ member reportMatcher_ter ^ ^ ^ ^ ^ 
-arg 
-arg 
-return reportMatcher().reportMatcher(new Same(value));
 IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member value_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
 ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
 if((value == null)){

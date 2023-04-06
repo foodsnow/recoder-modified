@@ -149,11 +149,11 @@ int[] values = chrono.get(i, chrono.set(start, 0L), chrono.set(end, 0L));
 LocalVariableDeclaration type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name values_ter ^ ^ initializer MethodInvocation qualifier chrono_ter ^ ^ arguments MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member end_ter ^ ^ ^ Literal value 0L_ter ^ ^ ^ ^ member set_ter ^ ^ ^ MemberReference member zeroInstance_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
 int[] values = chrono.get(chrono.set(end, 0L), zeroInstance);
 
-LocalVariableDeclaration type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name values_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member zeroInstance_ter ^ ^ ^ MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member start_ter ^ ^ ^ Literal value 0L_ter ^ ^ ^ ^ member set_ter ^ ^ ^ MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member end_ter ^ ^ ^ Literal value 0L_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-int[] values = (int[])chrono.get(zeroInstance, chrono.set(start, 0L), chrono.set(end, 0L));
-
 LocalVariableDeclaration type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name values_ter ^ ^ initializer MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member zeroInstance_ter ^ ^ ^ MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member start_ter ^ ^ ^ Literal value 0L_ter ^ ^ ^ ^ member set_ter ^ ^ ^ MethodInvocation qualifier i_ter ^ ^ arguments MemberReference member end_ter ^ ^ ^ Literal value 0L_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
 int[] values = chrono.get(zeroInstance, chrono.set(start, 0L), i.set(end, 0L));
+
+LocalVariableDeclaration type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ declarators VariableDeclarator name values_ter ^ ^ initializer Cast type BasicType name int_ter ^ ^ dimensions None_ter ^ ^ ^ ^ expression MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member zeroInstance_ter ^ ^ ^ MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member start_ter ^ ^ ^ Literal value 0L_ter ^ ^ ^ ^ member set_ter ^ ^ ^ MethodInvocation qualifier chrono_ter ^ ^ arguments MemberReference member end_ter ^ ^ ^ Literal value 0L_ter ^ ^ ^ ^ member set_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+int[] values = (int[])chrono.get(zeroInstance, chrono.set(start, 0L), chrono.set(end, 0L));
 
 IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member chrono_ter ^ ^ ^ ^ operandr Literal value false_ter ^ ^ ^ ^ ^ ^ ^ 
 if((chrono == false)){

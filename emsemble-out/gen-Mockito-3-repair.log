@@ -2,10 +2,6 @@ stdout: ReturnStatement_ter ^
 if (true) { return;
  }
 
-control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
-for(int position = indexOfVararg;(position < matchers.size());position++) {
-control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier MethodInvocation member getMatchers_ter ^ ^ ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
-for(int position = indexOfVararg;(position < getMatchers().size());position++) {
 StatementExpression expression Cast type ReferenceType name CapturesArguments_ter ^ ^ ^ ^ expression MemberReference member m_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -18,6 +14,8 @@ break;
 
 control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator >=_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
 for(int position = indexOfVararg;(position >= matchers.size());position++) {
+control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member position_ter ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
+for(int position = indexOfVararg;(position < matchers.size());position++) {
 control ForControl init VariableDeclaration type BasicType name int_ter ^ ^ ^ ^ declarators VariableDeclarator name position_ter ^ ^ initializer MemberReference member indexOfVararg_ter ^ ^ ^ ^ ^ ^ ^ ^ condition BinaryOperation operator <_ter ^ ^ operandl MemberReference member loc4 ^ ^ ^ ^ operandr MethodInvocation qualifier matchers_ter ^ ^ member size_ter ^ ^ ^ ^ ^ ^ update MemberReference postfix_operators ++_ter ^ ^ member position_ter ^ ^ ^ ^ ^ ^ 
 for(int position = indexOfVararg;( < matchers.size());position++) {
 
@@ -117,11 +115,6 @@ LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators
 arg 
 arg 
 Matcher m = matchers.get(position);
-
-LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier MethodInvocation member getMatchers_ter ^ ^ ^ ^ arguments MemberReference member position_ter ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-Matcher m = getMatchers().get(position);
 
 LocalVariableDeclaration type ReferenceType name Matcher_ter ^ ^ ^ ^ declarators VariableDeclarator name m_ter ^ ^ initializer MethodInvocation qualifier matchers_ter ^ ^ arguments MemberReference member loc4 ^ ^ ^ ^ member get_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 

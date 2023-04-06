@@ -1,9 +1,6 @@
 stdout: StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
 mockInstance = classInstantiator.instantiate(mockedProxyType);
 
-StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier MethodInvocation member initializeClassInstantiator_ter ^ ^ ^ ^ arguments MemberReference member mockedProxyType_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
-mockInstance = initializeClassInstantiator().instantiate(mockedProxyType);
-
 StatementExpression expression Assignment expressionl MemberReference member mockInstance_ter ^ ^ ^ ^ value MethodInvocation qualifier classInstantiator_ter ^ ^ arguments MemberReference member mockInstance_ter ^ ^ ^ ^ member instantiate_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
 mockInstance = classInstantiator.instantiate(mockInstance);
 

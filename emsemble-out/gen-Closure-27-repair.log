@@ -270,16 +270,16 @@ finallyBody.detachChildren();
 StatementExpression expression MethodInvocation qualifier finallyBody_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
 finallyBody.setQuotedString();
 
-IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member tryBody_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
-ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
-if((tryBody == null)){
-return null;}
 StatementExpression expression MethodInvocation qualifier tryBody_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
 tryBody.detachChildren();
 
 StatementExpression expression MethodInvocation qualifier tryBody_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
 tryBody.setQuotedString();
 
+IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member tryBody_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
+if((tryBody == null)){
+return null;}
 IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member finallyBody_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
 if((finallyBody == null)){
 
@@ -487,13 +487,13 @@ arg
 arg 
 Node catchBody = block(catchNode).checkState(catchNode);
 
-StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member catchNode_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
-Preconditions.debug(catchNode);
-
 LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name catchBody_ter ^ ^ initializer MethodInvocation selectors MethodInvocation arguments MemberReference member catchNode_ter ^ ^ ^ ^ member copyInformationFrom_ter ^ ^ ^ ^ arguments MemberReference member catchNode_ter ^ ^ ^ ^ member tryCatch_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 
 Node catchBody = tryCatch(catchNode).copyInformationFrom(catchNode);
+
+StatementExpression expression MethodInvocation qualifier Preconditions_ter ^ ^ arguments MemberReference member catchNode_ter ^ ^ ^ ^ member debug_ter ^ ^ ^ ^ ^ 
+Preconditions.debug(catchNode);
 
 LocalVariableDeclaration type ReferenceType name Node_ter ^ ^ ^ ^ declarators VariableDeclarator name catchBody_ter ^ ^ initializer MethodInvocation arguments MemberReference member catchNode_ter ^ ^ ^ Literal value false_ter ^ ^ ^ ^ member block_ter ^ ^ ^ ^ ^ ^ ^ 
 arg 

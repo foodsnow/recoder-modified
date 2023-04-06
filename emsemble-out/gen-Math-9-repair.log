@@ -33,27 +33,6 @@ arg
 arg 
 final Line reverted = new Line(direction, zero.subtract(direction));
 
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier direction_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, direction.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier MethodInvocation member getDirection_ter ^ ^ ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, getDirection().subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier MethodInvocation member getOrigin_ter ^ ^ ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, getOrigin().subtract(direction));
-
 LocalVariableDeclaration type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -130,34 +109,6 @@ arg
 arg 
 final Line reverted = new Line(zero.subtract(direction), direction);
 
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier direction_ter ^ ^ member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(direction.direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier zero_ter ^ ^ member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(zero.direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getDirection_ter ^ ^ ^ ^ member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(getDirection().direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getOrigin_ter ^ ^ ^ ^ member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(getOrigin().direction));
-
 LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ MemberReference member zero_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
 arg 
 arg 
@@ -204,34 +155,6 @@ arg
 arg 
 arg 
 final Line reverted = new Line(zero.subtract(direction), true);
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier direction_ter ^ ^ member zero_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(direction.zero));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier zero_ter ^ ^ member zero_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(zero.zero));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getDirection_ter ^ ^ ^ ^ member zero_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(getDirection().zero));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference qualifier MethodInvocation member getOrigin_ter ^ ^ ^ ^ member zero_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero, zero.subtract(getOrigin().zero));
 
 IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReference member zero_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
 if((zero == null)){
@@ -281,62 +204,6 @@ arg
 arg 
 arg 
 final Line reverted = new Line(zero.subtract(direction), null);
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier direction_ter ^ ^ member direction_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(direction.direction, zero.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier zero_ter ^ ^ member direction_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero.direction, zero.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier MethodInvocation member getDirection_ter ^ ^ ^ ^ member direction_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(getDirection().direction, zero.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier MethodInvocation member getOrigin_ter ^ ^ ^ ^ member direction_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(getOrigin().direction, zero.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier direction_ter ^ ^ member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(direction.zero, zero.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier zero_ter ^ ^ member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(zero.zero, zero.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier MethodInvocation member getDirection_ter ^ ^ ^ ^ member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(getDirection().zero, zero.subtract(direction));
-
-LocalVariableDeclaration modifiers final_ter ^ ^ type ReferenceType name Line_ter ^ ^ ^ ^ declarators VariableDeclarator name reverted_ter ^ ^ initializer ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference qualifier MethodInvocation member getOrigin_ter ^ ^ ^ ^ member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ ^ ^ ^ 
-arg 
-arg 
-arg 
-arg 
-final Line reverted = new Line(getOrigin().zero, zero.subtract(direction));
 
 StatementExpression expression Assignment expressionl MemberReference member zero_ter ^ ^ ^ ^ value ClassCreator type ReferenceType name Line_ter ^ ^ ^ ^ arguments MemberReference member zero_ter ^ ^ ^ MethodInvocation qualifier zero_ter ^ ^ arguments MemberReference member direction_ter ^ ^ ^ ^ member subtract_ter ^ ^ ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
 arg 

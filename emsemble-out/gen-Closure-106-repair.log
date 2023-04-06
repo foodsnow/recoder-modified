@@ -138,50 +138,6 @@ if(hasAnySingletonTypeTags()){
 IfStatement condition MemberReference member parseDocumentation_ter ^ ^ ^ ^ ^ 
 if(parseDocumentation){
 
-condition MemberReference qualifier populated_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(populated.parseDocumentation){
-condition MemberReference qualifier parseDocumentation_ter ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(parseDocumentation.parseDocumentation){
-condition MemberReference qualifier MethodInvocation member isPopulated_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(isPopulated().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member isPopulatedWithFileOverview_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(isPopulatedWithFileOverview().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member isDescriptionRecorded_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(isDescriptionRecorded().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordConstancy_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordConstancy().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordHiddenness_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordHiddenness().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordNoTypeCheck_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordNoTypeCheck().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordConstructor_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordConstructor().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member isConstructorRecorded_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(isConstructorRecorded().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordPreserveTry_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordPreserveTry().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordOverride_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordOverride().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordNoAlias_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordNoAlias().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordDeprecated_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordDeprecated().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordInterface_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordInterface().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordExport_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordExport().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordNoShadow_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordNoShadow().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordImplicitCast_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordImplicitCast().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member recordNoSideEffects_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(recordNoSideEffects().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member isInterfaceRecorded_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(isInterfaceRecorded().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member hasAnyTypeRelatedTags_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(hasAnyTypeRelatedTags().parseDocumentation){
-condition MemberReference qualifier MethodInvocation member hasAnySingletonTypeTags_ter ^ ^ ^ ^ member parseDocumentation_ter ^ ^ ^ ^ 
-if(hasAnySingletonTypeTags().parseDocumentation){
 IfStatement condition MethodInvocation member parseDocumentation_ter ^ ^ ^ ^ ^ 
 if(parseDocumentation()){
 

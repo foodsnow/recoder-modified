@@ -16,11 +16,11 @@ ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member getFirstC
 return n.getFirstChild();
 ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
 return n;
-ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
-if (true) { return n; }
-
 ContinueStatement_ter ^ 
 continue;
+
+ReturnStatement expression MemberReference member n_ter ^ ^ ^ ^ ^ 
+if (true) { return n; }
 
 ReturnStatement expression MemberReference member c_ter ^ ^ ^ ^ ^ 
 return c;
@@ -132,6 +132,10 @@ if (true) { return c; }
 ReturnStatement expression MemberReference member par1 ^ ^ ^ ^ ^ 
 if (true) { return ; }
 
+IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
+ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
+if((n != null)){
+return false;}
 IfStatement condition MethodInvocation qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
 ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
 if(n.hasChildren()){
@@ -180,10 +184,6 @@ IfStatement condition MethodInvocation qualifier n_ter ^ ^ member isQuotedString
 ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
 if(n.isQuotedString()){
 return true;}
-IfStatement condition BinaryOperation operator !=_ter ^ ^ operandl MemberReference member n_ter ^ ^ ^ ^ operandr Literal value null_ter ^ ^ ^ ^ ^ ^ ^ 
-ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
-if((n != null)){
-return false;}
 ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member handleIf_ter ^ ^ ^ ^ ^ 
 return handleIf(n);
 ReturnStatement expression MethodInvocation arguments MemberReference member n_ter ^ ^ ^ ^ member handleWhile_ter ^ ^ ^ ^ ^ 
@@ -226,15 +226,6 @@ IfStatement condition BinaryOperation operator ==_ter ^ ^ operandl MemberReferen
 ReturnStatement expression Literal value true_ter ^ ^ ^ ^ ^ 
 if((n == null)){
 return true;}
-ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member detachChildren_ter ^ ^ ^ ^ ^ 
-if (true) { return n.detachChildren(); }
-
-ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member setIsNoSideEffectsCall_ter ^ ^ ^ ^ ^ 
-if (true) { return n.setIsNoSideEffectsCall(); }
-
-ReturnStatement expression MethodInvocation qualifier n_ter ^ ^ member setQuotedString_ter ^ ^ ^ ^ ^ 
-if (true) { return n.setQuotedString(); }
-
 IfStatement condition MethodInvocation prefix_operators !_ter ^ ^ qualifier n_ter ^ ^ member hasChildren_ter ^ ^ ^ ^ ^ 
 ReturnStatement expression Literal value false_ter ^ ^ ^ ^ ^ 
 if(!n.hasChildren()){

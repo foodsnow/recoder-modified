@@ -1,13 +1,9 @@
-stdout: ReturnStatement expression MethodInvocation qualifier chromosomes_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ 
-return chromosomes.iterator();
-ReturnStatement expression MethodInvocation qualifier MethodInvocation member getChromosomes_ter ^ ^ ^ ^ member iterator_ter ^ ^ ^ ^ ^ 
-return getChromosomes().iterator();
-ReturnStatement expression MethodInvocation qualifier MethodInvocation member getChromosomeList_ter ^ ^ ^ ^ member iterator_ter ^ ^ ^ ^ ^ 
-return getChromosomeList().iterator();
-ReturnStatement expression MethodInvocation member iterator_ter ^ ^ ^ ^ ^ 
+stdout: ReturnStatement expression MethodInvocation member iterator_ter ^ ^ ^ ^ ^ 
 return iterator();
 ReturnStatement expression MemberReference member iterator_ter ^ ^ ^ ^ ^ 
 return iterator;
+ReturnStatement expression MethodInvocation qualifier chromosomes_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ 
+return chromosomes.iterator();
 ReturnStatement expression Literal value null_ter ^ ^ ^ ^ ^ 
 return null;
 ReturnStatement expression MethodInvocation qualifier chromosomes_ter ^ ^ arguments This_ter ^ ^ member iterator_ter ^ ^ ^ ^ ^ 

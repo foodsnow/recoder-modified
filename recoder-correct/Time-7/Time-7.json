@@ -1,0 +1,24 @@
+{
+    "bugid": "Time-7",
+    "tool": "recoder",
+    "correct_patch": {
+        "id": "251-26",
+        "location": "251/26/DateTimeFormatter.java",
+        "file": "src/main/java/org/joda/time/format/DateTimeFormatter.java"
+    },
+    "correct_patches": [
+        {
+            "id": "251-26",
+            "location": "251/26/DateTimeFormatter.java",
+            "file": "src/main/java/org/joda/time/format/DateTimeFormatter.java",
+            "line": 710
+        }
+    ],
+    "plausible_patches": [
+        {
+            "id": "251-16",
+            "location": "251/16/DateTimeFormatter.java",
+            "file": "src/main/java/org/joda/time/format/DateTimeFormatter.java"
+        }
+    ]
+}

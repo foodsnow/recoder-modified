@@ -1,0 +1,44 @@
+{
+    "bugid": "Closure-92",
+    "tool": "recoder",
+    "correct_patch": {
+        "id": "12-2",
+        "location": "12/2/ProcessClosurePrimitives.java",
+        "file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java"
+    },
+    "correct_patches": [
+        {
+            "id": "12-2",
+            "location": "12/2/ProcessClosurePrimitives.java",
+            "file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java",
+            "line": 789
+        }
+    ],
+    "plausible_patches": [
+        {
+            "id": "3-47",
+            "location": "3/47/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        },
+        {
+            "id": "3-49",
+            "location": "3/49/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        },
+        {
+            "id": "3-50",
+            "location": "3/50/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        },
+        {
+            "id": "3-55",
+            "location": "3/55/Node.java",
+            "file": "src/com/google/javascript/rhino/Node.java"
+        },
+        {
+            "id": "12-44",
+            "location": "12/44/ProcessClosurePrimitives.java",
+            "file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java"
+        }
+    ]
+}

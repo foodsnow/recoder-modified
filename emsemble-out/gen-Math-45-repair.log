@@ -22,18 +22,6 @@ this.rowDimension = rowDimension;
 StatementExpression expression Assignment expressionl This selectors MemberReference member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member columnDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
 this.rows = columnDimension;
 
-StatementExpression expression Assignment expressionl This selectors MemberReference qualifier rows_ter ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
-this.rows.rows = rowDimension;
-
-StatementExpression expression Assignment expressionl This selectors MemberReference qualifier columns_ter ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
-this.columns.rows = rowDimension;
-
-StatementExpression expression Assignment expressionl This selectors MemberReference qualifier MethodInvocation member getColumnDimension_ter ^ ^ ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
-this.getColumnDimension().rows = rowDimension;
-
-StatementExpression expression Assignment expressionl This selectors MemberReference qualifier MethodInvocation member getRowDimension_ter ^ ^ ^ ^ member rows_ter ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
-this.getRowDimension().rows = rowDimension;
-
 StatementExpression expression SuperConstructorInvocation_ter ^ ^ ^ 
 1 SuperConstructorInvocation_ter
 StatementExpression expression Assignment expressionl This selectors MemberReference member par2 ^ ^ ^ ^ ^ ^ value MemberReference member rowDimension_ter ^ ^ ^ ^ type =_ter ^ ^ ^ ^ ^ 
