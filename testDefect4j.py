@@ -47,24 +47,24 @@ def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]
     AST as list.
 
     Result example for chart-1 [:100]
-    [('CompilationUnit', None), 
-    'package', ('PackageDeclaration', Position(line=114, column=9)), 
-    'name', 'org.jfree.chart.renderer.category', '^', '^', '^', '^', 
-    'imports', 
-    ('Import', Position(line=116, column=1)), 'path', 'java.awt.AlphaComposite', '^', '^', '^', 
-    ('Import', Position(line=117, column=1)), 'path', 'java.awt.Composite', '^', '^', '^', 
-    ('Import', Position(line=118, column=1)), 'path', 'java.awt.Font', '^', '^', '^', 
-    ('Import', Position(line=119, column=1)), 'path', 'java.awt.GradientPaint', '^', '^', '^', 
-    ('Import', Position(line=120, column=1)), 'path', 'java.awt.Graphics2D', '^', '^', '^', 
-    ('Import', Position(line=121, column=1)), 'path', 'java.awt.Paint', '^', '^', '^', 
-    ('Import', Position(line=122, column=1)), 'path', 'java.awt.Rectangle', '^', '^', '^', 
-    ('Import', Position(line=123, column=1)), 'path', 'java.awt.Shape', '^', '^', '^', 
-    ('Import', Position(line=124, column=1)), 'path', 'java.awt.Stroke', '^', '^', '^', 
-    ('Import', Position(line=125, column=1)), 'path', 'java.awt.geom.Ellipse2D', '^', '^', '^', 
-    ('Import', Position(line=126, column=1)), 'path', 'java.awt.geom.Line2D', '^', '^', '^', 
-    ('Import', Position(line=127, column=1)), 'path', 'java.awt.geom.Point2D', '^', '^', '^', 
-    ('Import', Position(line=128, column=1)), 'path', 'java.awt.geom.Rectangle2D', '^', '^', '^', 
-    ('Import', Position(line=129, column=1)), 'path', 'java.io.Serializable', '^', '^', '^', 
+    [('CompilationUnit', None),
+    'package', ('PackageDeclaration', Position(line=114, column=9)),
+    'name', 'org.jfree.chart.renderer.category', '^', '^', '^', '^',
+    'imports',
+    ('Import', Position(line=116, column=1)), 'path', 'java.awt.AlphaComposite', '^', '^', '^',
+    ('Import', Position(line=117, column=1)), 'path', 'java.awt.Composite', '^', '^', '^',
+    ('Import', Position(line=118, column=1)), 'path', 'java.awt.Font', '^', '^', '^',
+    ('Import', Position(line=119, column=1)), 'path', 'java.awt.GradientPaint', '^', '^', '^',
+    ('Import', Position(line=120, column=1)), 'path', 'java.awt.Graphics2D', '^', '^', '^',
+    ('Import', Position(line=121, column=1)), 'path', 'java.awt.Paint', '^', '^', '^',
+    ('Import', Position(line=122, column=1)), 'path', 'java.awt.Rectangle', '^', '^', '^',
+    ('Import', Position(line=123, column=1)), 'path', 'java.awt.Shape', '^', '^', '^',
+    ('Import', Position(line=124, column=1)), 'path', 'java.awt.Stroke', '^', '^', '^',
+    ('Import', Position(line=125, column=1)), 'path', 'java.awt.geom.Ellipse2D', '^', '^', '^',
+    ('Import', Position(line=126, column=1)), 'path', 'java.awt.geom.Line2D', '^', '^', '^',
+    ('Import', Position(line=127, column=1)), 'path', 'java.awt.geom.Point2D', '^', '^', '^',
+    ('Import', Position(line=128, column=1)), 'path', 'java.awt.geom.Rectangle2D', '^', '^', '^',
+    ('Import', Position(line=129, column=1)), 'path', 'java.io.Serializable', '^', '^', '^',
     ('Import', Position(line=130, column=1)), 'path', 'java.util.ArrayList', '^', '^', '^']
     '''
 
@@ -174,7 +174,7 @@ def convert_to_AST_as_list(tree: Union[javalang.tree.CompilationUnit, str, list]
 def convert_AST_as_list_to_tree(tree_as_list: List[Union[str, tuple]]) -> Node:
     '''
     Convert AST as list to a tree. Return tree root.
-    The Node class that makes up the tree is defined in 
+    The Node class that makes up the tree is defined in
     Searchnode.py
     '''
 
@@ -218,7 +218,7 @@ def get_node_by_line_number(root: Node, line: int) -> Node:
 
 def get_subroot(tree_root: Node) -> Tuple[Node, Node]:
     '''
-    lnode is a parent node of tree_root, 
+    lnode is a parent node of tree_root,
     and is one of nodes defined in LINENODE
 
     mnode is a parent node of tree_root,
@@ -664,7 +664,9 @@ python testDefect4j.py Chart-1
 python testDefect4j.py Chart 1-20
 '''
 
-assert len(sys.argv) == 3
+assert len(sys.argv) == 4
+
+beam_size = int(sys.args[3])
 
 logger.info('Starting')
 
@@ -848,7 +850,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
 
         print(data_buggy_locations)
 
-        ans = run_py.solve_one(data_buggy_locations, decoder_model)
+        ans = run_py.solve_one(data_buggy_locations, decoder_model, beam_size)
 
         with open(f"d4j/{bug_id}/{bug_id}.json", "w") as f:
             json.dump(ans, f)

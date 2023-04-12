@@ -96,7 +96,7 @@ def to_torch_tensor(data: Union[np.ndarray, torch.Tensor]) -> torch.Tensor:
 
 def get_anti_mask(size: int) -> np.ndarray:
     '''
-    returns this kind of matrix: 
+    returns this kind of matrix:
 
     size=3
     1, 0, 0
@@ -579,7 +579,7 @@ def perform_beam_search(input_nl: tuple, sum_dataset: SumDataset, decoder_model:
             sum_dataset.nl[ARGS.batch_size * k + i]
             is a list
 
-            sum_dataset.nl is a list of 
+            sum_dataset.nl is a list of
             list of tokens of `tree as string` with var (troot)
             --> i.e. size of sum_dataset.nl is equal to the number of buggy locations.
             '''
@@ -1179,7 +1179,7 @@ def extarctmode(root):
     return mode, root
 
 
-def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
+def solve_one(data_buggy_locations: List[Dict], model: Decoder, beam_size: int = 50) -> list:
     '''
     data: (treestr, prob, model, subroot, vardic, typedic, idx, idss, classname, mode):
     '''
@@ -1205,7 +1205,7 @@ def solve_one(data_buggy_locations: List[Dict], model: Decoder) -> list:
             input_nl=(batch_data[0], batch_data[1], None, None, None, None, None, None, batch_data[2], batch_data[3]),
             sum_dataset=dev_set,
             decoder_model=model,
-            beam_size=100,
+            beam_size=beam_size,
             batch_size=ARGS.batch_size,
             k=indexs
         )
