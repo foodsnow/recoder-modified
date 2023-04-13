@@ -5,6 +5,7 @@ import pickle
 import subprocess
 import sys
 import time
+import shutil
 from copy import deepcopy
 from typing import Dict, List, Tuple, Union
 
@@ -666,7 +667,7 @@ python testDefect4j.py Chart 1-20
 
 assert len(sys.argv) == 4
 
-beam_size = int(sys.args[3])
+beam_size = int(sys.argv[3])
 
 logger.info('Starting')
 
@@ -842,7 +843,7 @@ for i, project_name in enumerate(PROJECTS_V1_2):
                     'isa': False,
                     'fl_score': fl_score
                 })
-
+        shutil.rmtree(f"d4j/{bug_id}", ignore_errors=True)
         os.makedirs(f"d4j/{bug_id}", exist_ok=True)
 
         with open(f"d4j/{bug_id}/func_loc.json", "w") as f:

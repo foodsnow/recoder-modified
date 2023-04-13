@@ -898,6 +898,7 @@ def get_unknown(node: Node) -> List[Node]:
     '''
 
     if node.name == 'unknown':
+        node.name = "PL_UNK_ter"
         return [node]
 
     unknown_nodes = []
@@ -920,6 +921,8 @@ def solve_unknown(
     nodes = get_unknown(search_node.solveroot)
 
     fans: List[str] = list()
+
+    return [search_node.root_node.printTree(search_node.solveroot)]
 
     if len(nodes) >= 2:
         return []
